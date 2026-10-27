@@ -7,7 +7,9 @@ export default defineConfig({
   forbidOnly: !!env.CI,
   retries: env.CI ? 1 : 0,
   workers: env.CI ? 2 : 3,
-  reporter: [["list"], ["html", { open: "never" }]],
+  reporter: env.CI
+    ? [["github"], ["list"], ["html", { open: "never" }]]
+    : [["list"], ["html", { open: "never" }]],
   use: {
     baseURL: "http://127.0.0.1:4175/kaeltemeister-pro/",
     trace: "retain-on-failure",
