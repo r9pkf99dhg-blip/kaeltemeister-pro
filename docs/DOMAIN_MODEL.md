@@ -1,41 +1,33 @@
-# Fach- und Datenmodell · Version 0.3
+# Fach- und Datenmodell · Version 0.4
 
-## Unverändert stabile Inhalte
+## Inhalte und stabile Identitäten
 
-Zwölf Fachgebiete, Kapitel/Unterkapitel und fünf Module mit drei Niveaus bleiben erhalten. IDs von Modulen, Lernzielen, Quellen, Formeln und Optionen werden nicht umgedeutet. Die `legacyBridges` verbinden die alten Artikel mit den Akademiemodulen.
+Zwölf Fachgebiete, fünf bestehende Kälte- und fünf neue Elektro-Module, jeweils drei Niveaus. Alte IDs, Quellen, Optionen und Formeln werden nicht umgedeutet. Das gemeinsame Katalogmodul kombiniert die Bestände. Kapitel-/Unterkapitel-IDs des Elektrobereichs bleiben erhalten; ihre Zuordnungen werden ergänzt. Die elf weiteren Elektro-Themen bleiben als geplante Themen ausgewiesen.
 
-## Aufgaben und Berechnung
+`Module` erhält optionale `prerequisites: string[]` und `safety: string`. Neue Module nutzen vorhandene Lernziele, Inhalte, Formel-/Quellen-Referenzen, Verständnisfragen, Karten und Fortschrittsregeln. Voraussetzungen sind Lernempfehlungen, keine technischen Zugangssperren.
 
-`LearningItem = ChoiceTask | NumericTask`. Beide haben ID, Revision, Fachgebiet, Niveau, Thema und Artikelbezug. Auswahlaufgaben tragen stabile Optionen und Lösung-ID. Zahlenaufgaben tragen gegebene Größen mit Mengenart/Einheit, gesuchte Größe, Berechnungstyp, Antwort-Einheit, absolute SI-/relative Toleranz, Schritte, Fehlerhinweise, Annahmen, Formel-ID, Quellen-IDs und Prüfstatus.
+## Aufgaben und SI
 
-Mengenarten: Leistung, Massenstrom, spezifische Wärme, Temperaturdifferenz, absolute Temperatur, Spannung, Strom und dimensionsloses Verhältnis. Absolute Celsiuswerte erhalten bei der SI-Umrechnung einen Offset; Differenzen nicht. Die Engine prüft endliche Werte, passende Einheiten, nicht negative Beträge, Temperaturen ab absolutem Nullpunkt und strikt positive Nenner. Sie erfindet keine universellen Geräte-/Auslegungsgrenzen.
+`LearningItem = ChoiceTask | NumericTask`. Zahlenaufgaben enthalten ID/Revision/Thema/Fachgebiet/Niveau, Fachbezug, Formel-ID, gegebene Werte mit Einheit/Mengenart, gesuchte Größe, Berechnungstyp, Ergebniseinheit, SI-/relative Toleranz, Schritte, Fehlerhinweise, Annahmen und Quellen.
 
-Berechnungstypen: `heat`, `mass-flow`, `temperature-difference`, `superheat`, `subcooling`, `dc-power`, `cooling-cop`, `heating-cop`. Die Implementation ist an einer Stelle; Formeltexte sind keine ausführbaren Programme. Die COP-Aufgaben unterscheiden Nutzkälte und Nutzheizleistung bei derselben elektrischen Systemgrenze.
+24 Aufgaben: die bisherigen acht plus 16 Elektrovarianten. Mengenarten ergänzen Widerstand, Energie, Zeit und Ladung. Neue Einheiten sind mV, mA, Ω, kΩ, J, Wh, kWh, s, min, h und C. Absolute Temperatur erhält bei °C/K einen Offset, Differenzen nicht. Es werden nicht negative Beträge und positive Nenner betrachtet. Kein universeller Herstellerbereich wird erfunden.
 
-## Lernleistung und Fortschritt v3
+Rechentypen zusätzlich: `charge-current`, `ohm-current`, `ohm-voltage`, `ohm-resistance`, `electric-energy`, `series-resistance`, `parallel-resistance`. Der alte `dc-power`-Typ wird wiederverwendet. Eigene Referenzzahlen stehen getrennt in Tests, nicht als zweite produktive Berechnungslogik.
 
-Der vollständige Vertrag steht in `src/academy/model.ts` und den importierten Aufgaben-/Leistungstypen.
+## Fortschritt und Datei
 
-| Feld                                                       | Bedeutung                                                                                             |
-| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `schemaVersion: 3`                                         | Neuer Schlüssel v3; v2 wird validiert und bleibt als Rückfallbestand erhalten                         |
-| `read`, `answers`, `reviews`, `legacySummary`, `updatedAt` | Vorhandene Akademieinformationen bleiben erhalten                                                     |
-| `performance[itemId]`                                      | Revision, Thema, Typ, Versuche, richtige Versuche, Serie, letzte Bewertung/Zeit, Termin und Intervall |
-| `exerciseAnswers[itemId]`                                  | Letzte bewertete numerische Eingabe mit Einheit, Ergebnis, Revision und Zeitpunkt                     |
-| `recentModules`                                            | Höchstens fünf eindeutige zuletzt geöffnete/bearbeitete Module                                        |
-| `activeExam`                                               | Höchstens eine laufende Sitzung mit ID, Auswahl, Start/Deadline, Aufgaben-Snapshots und Antworten     |
-| `examHistory`                                              | Höchstens 20 abgeschlossene Ergebnisse mit Lösungen/Antworten, Status und Prozentwert                 |
+Die v3-Felder bleiben unverändert: `read`, `answers`, `reviews`, `legacySummary`, `updatedAt`, `performance`, `exerciseAnswers`, `recentModules`, `activeExam`, `examHistory`. Die letzte numerische Antwort und aggregierte Zähler sind keine lückenlose Ereignishistorie. Es bleiben maximal fünf letzte Module und 20 Prüfungsergebnisse erhalten. Prüfungs-Snapshots enthalten die damaligen Aufgaben und Lösungen; historische IDs/Revisionen bleiben lesbar.
 
-Kartenleistung ist als Selbsteinschätzung typisiert. Objektive Themenstatistik verwendet aktuelle Auswahl-/Zahlenaufgaben. Vergangene v2-Antworten bleiben sichtbar, ohne erfundene historische Zähler. Unbekannte v2-Zusatzfelder werden nicht als neue v3-Funktionen interpretiert; ihr Original bleibt im alten Datensatz erhalten.
+Das Sicherungsformat `kaeltemeister-pro-backup`, Version 1, verpackt den vollständigen v3-Stand, den verfügbaren alten v1-Fortschritt und die rohe v2-Rückfallkopie. Dateiversion ist nicht Speicherversion. `settings: {}` ist ausdrücklich leer, weil keine dauerhaft gespeicherten UI-Einstellungen existieren. Dateigröße und Strukturen sind begrenzt. Duplikate sind Fehler, keine stillschweigende Zusammenführung. Siehe [BACKUP_RESTORE.md](BACKUP_RESTORE.md).
 
-Prüfungs-Snapshots enthalten die vollständigen damaligen Aufgaben und erwarteten SI-Werte. Bewertung unterscheidet `correct`, `incorrect`, `invalid` und `unanswered`. Der gespeicherte Prozentwert muss zu den Ergebnissen passen. Beschädigte/unklare aktuelle Datensätze werden nicht durch Startwerte überschrieben.
+Journal und Speichergeneration sind Infrastruktur, keine Lernleistungen und kein Bestandteil der importierten fachlichen Historie. Ihre Identität wird lokal für den Restore erzeugt; das Backup kopiert keine fremde laufende Schreibtransaktion.
 
-## Quellen und Review
+## Fachprüfung
 
-`Source.access` unterscheidet `consulted`, `unavailable` und `internal`. Eingesehene Referenzen dokumentieren Prüfdatum, konkrete Fundstelle, unterstützte Aussage, Lizenzhinweis und Repository-Commit. Es wird nicht von einem nachgelesenen Wärmelehreabschnitt auf eine Freigabe aller kältetechnischen Aussagen geschlossen.
+`ReviewEntry` erfasst Inhalt-ID, Art, Fachgebiet, Status, Prüfumfang, Formel-/Quellen-IDs, Referenzrechnung, Annahmen, Fehler, offene Fragen und unabhängigen Prüfer. Fünf einheitliche Status sind definiert. Derzeit ist `independentReviewer` überall null. Die vorhandenen älteren Reviewfelder bleiben zur Abwärtskompatibilität erhalten; sie werden nicht als menschliche Freigabe interpretiert. Das ausführliche aktuelle Register ist für UI und Bericht maßgeblich.
 
-Die neuen Aufgaben tragen `calculation-tested-expert-review-pending`: Zahlen/Einheiten getestet, unabhängige Fachfreigabe offen. Eine vorgegebene didaktische Zahl ist keine reale Stoffeigenschaft. Zwei begrenzte Fachnotizen zu Gleichstromleistung und COP sind Referenztexte, kein angeblich fertiger Elektrotechnik-/Wärmepumpen-Lernpfad.
+`Source` unterscheidet weiterhin `consulted`, `unavailable`, `internal` samt Fundstelle, Zugriff, Lizenz und Commit. Quelleneinsicht belegt nur den angegebenen Umfang. Rechenprüfung ist nicht Modellfreigabe.
 
-## Spätere Integration
+## Zukunft
 
-Rechner, Diagramme, Kältemittel-/Bauteildaten, Diagnose und Projekte sollen dieselben stabilen Entitäten verwenden. Reale Stoffdaten benötigen eigene geprüfte Zustandsmodelle und Rechte/Aktualisierung. Für Synchronisation reichen Zeitstempel allein nicht: Ereignis-IDs, Reset-Generation und Konfliktbehandlung sind noch auszuarbeiten. Zuerst lokaler Export/Import und Wiederherstellung.
+Diagramme, Rechner, Stoffwerte, Komponenten, Diagnose und Projekte sollen stabile Fach- und Formel-IDs verwenden. Reale Stoff-/Bauteildaten brauchen eigene Herkunft, Referenzzustände und Aktualisierungsregeln. Optionale Synchronisation braucht einen gesonderten Ereignis-/Konfliktvertrag und bleibt außerhalb von 0.4.

@@ -1,18 +1,20 @@
-# KälteMeister Pro · Version 0.3
+# KälteMeister Pro · Version 0.4
 
 Kostenloser Lernbegleiter für die Kältemeisterschule auf iPad, Smartphone und Computer. React, TypeScript, Vite und Tailwind; kein Benutzerkonto, kein eigener Server, keine kostenpflichtige API.
 
 ## Was funktioniert
 
-- **Lernakademie:** fünf ausführliche Kältemodule mit Grundlagen-, Fachkraft- und Meisterniveau; zwölf strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
+- **Lernakademie:** fünf ausführliche Kälte- und fünf Elektro-Grundlagenmodule mit Grundlagen-, Fachkraft- und Meisterniveau; zwölf strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
 - **Adaptives Lernen:** richtige/falsche Versuche, Themenlücken, transparente Empfehlungen und Wiederholungsabstände nach Leistung und Zeit. Keine KI-Diagnose oder offizieller Kompetenznachweis.
-- **Rechenaufgaben:** Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
+- **Rechenaufgaben:** 24 Varianten, darunter Ohmsches Gesetz, elektrische Arbeit, Reihen-/Parallelschaltungen sowie Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
 - **Übungsprüfung:** selbst erstellte gemischte Auswahl-/Zahlenaufgaben, Fachgebiet, Niveaugrenze, Zeitlimit, Neuladen mit gleicher Endzeit, automatische Abgabe und Ergebnisanalyse. Keine offiziellen Meisterprüfungsaufgaben.
 - **Persönliches Dashboard:** Fortschritt je Fachgebiet, heutige Fälligkeiten, Schwächen, zuletzt bearbeitete Module, Empfehlungen und Prüfungsverlauf.
-- **Weiterhin vorhanden:** alte Artikel, Zwölf-Fragen-Rundentest, Wärmeleistungsrechner und zehn Karteikarten.
+- **Weiterhin vorhanden:** alte Artikel, Zwölf-Fragen-Rundentest, Wärmeleistungsrechner und zwanzig Karteikarten.
+- **Datensicherung:** vollständiger verfügbarer Lernstand als versionierte JSON-Datei; Import mit Prüfung, Vorschau, Bestätigung und Rücknahmejournal. Anleitung: [BACKUP_RESTORE.md](docs/BACKUP_RESTORE.md).
+- **Fachqualität:** durchsuchbares Prüfregister und bearbeitbarer Prüfbericht; keine behauptete menschliche Fachabnahme.
 - **Lokaler Fortschritt:** v3 übernimmt v2-Lesestände, Antworten und Termine, ohne das Original zu löschen oder eine frühere Versuchshistorie zu erfinden.
 
-Die Grundbeziehungen zu Wärme, Gleichstromleistung und COP wurden im offiziellen OpenStax-Quellarchiv nachgelesen; alle acht Zahlenbeispiele haben unabhängige Referenztests. Eine unabhängige fachliche Gesamtfreigabe ist weiterhin offen. Quellenumfang und Modellannahmen werden sichtbar angegeben. Keine Normen, realen Stofftabellen oder Herstellerwerte erfunden.
+Die Grundbeziehungen zu Wärme, Gleichstromleistung und COP wurden im offiziellen OpenStax-Quellarchiv nachgelesen; alle 24 Zahlenbeispiele haben unabhängige Referenztests. Eine unabhängige fachliche Gesamtfreigabe ist weiterhin offen. Quellenumfang und Modellannahmen werden sichtbar angegeben. Keine Normen, realen Stofftabellen oder Herstellerwerte erfunden.
 
 ## Auf dem Computer starten
 
@@ -33,13 +35,13 @@ Für das iPad nach Veröffentlichung einfach in Safari öffnen: **https://r9pkf9
 npm run typecheck
 npm test
 npm run build
-npx playwright install chromium
+npx playwright install --with-deps chromium webkit
 npm run test:e2e
 ```
 
-`npm test` prüft Fachlogik, Einheiten, Quellen-/Inhaltsverweise, Aufgaben, Empfehlungen, Migration und Oberfläche. `npm run test:e2e` baut frisch und prüft die App bei fünf Smartphone-/Tablet-/Desktopgrößen. Es sind Chromium-Tests, keine physischen iPad-Safari-Tests. Die Zeitablaufprüfung verwendet eine kontrollierte Browseruhr; sie wartet nicht fünf echte Minuten.
+`npm test` prüft Fachlogik, Einheiten, Quellen-/Inhaltsverweise, Aufgaben, Empfehlungen, Migration und Oberfläche. `npm run test:e2e` baut frisch und prüft fünf Chromium-Ansichtsgrößen sowie drei WebKit-Konfigurationen. Einzelne Browser: `npm run test:e2e:chromium` oder `npm run test:e2e:webkit`. Das sind keine physischen iPad-Safari-Tests. Der lokale WebKit-Download ist derzeit durch HTTP 403 blockiert; CI-Ergebnisse separat prüfen. Die Zeitablaufprüfung verwendet eine kontrollierte Browseruhr; sie wartet nicht fünf echte Minuten.
 
-Port 4175 muss für den Testserver frei sein. Bei Fehlern: `test-results/` und `playwright-report/`; `npx playwright show-report` öffnet den Bericht. Cloud-Alternative mit vorhandenem Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e`.
+Port 4175 muss für den Testserver frei sein. Bei Fehlern: `test-results/` und `playwright-report/`; `npx playwright show-report` öffnet den Bericht. Cloud-Alternative mit vorhandenem Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`.
 
 `npm run preview` startet eine lokale Vorschau von `dist/`, keinen dauerhaften Hostingdienst. Der vorhandene Rechner liefert bei 0,5 kg/s × 4,18 kJ/(kg·K) × 5 K unverändert **10,45 kW**. Für Phasenwechsel reicht diese einfache Formel nicht.
 
@@ -57,7 +59,7 @@ Für ein öffentliches Repository kann GitHub Pages mit GitHub Free genutzt werd
 
 ## Daten und Grenzen
 
-Fortschritt liegt nur im jeweiligen Browserprofil unter derselben Webadresse. Keine Geräte-/Tab-Synchronisation, noch kein Export/Import und kein Offline-Modus. Nur einen Tab für eine laufende Prüfung verwenden. Browseruhr und Speicher sind manipulierbar; die Prüfung ist eine Selbstlernübung ohne Aufsicht. Bei gesperrter Speicherung zeigt die App einen Hinweis. Das Löschen von Browserdaten entfernt Fortschritt; ältere Migrationsschlüssel bleiben bei normalem Versionswechsel erhalten.
+Fortschritt liegt nur im jeweiligen Browserprofil unter derselben Webadresse. Datei-Export/Import mit Vorschau und bestätigtem Ersetzen ist vorhanden. Keine Gerätesynchronisation und kein Offline-Modus. Änderungen aus anderen Tabs sperren veraltete Schreibzugriffe; neu laden. Nur einen Tab für eine laufende Prüfung verwenden. Browseruhr und Speicher sind manipulierbar; die Prüfung ist eine Selbstlernübung ohne Aufsicht. Bei gesperrter Speicherung zeigt die App einen Hinweis. Das Löschen von Browserdaten entfernt Fortschritt; ältere Migrationsschlüssel bleiben bei normalem Versionswechsel erhalten.
 
 ## Orientierung und Dokumentation
 
@@ -69,3 +71,5 @@ Fortschritt liegt nur im jeweiligen Browserprofil unter derselben Webadresse. Ke
 - [Quellen und Prüfumfang](docs/SOURCES.md), [Auslieferungsstand 0.3](docs/VERSION_0_3.md), [ROADMAP](docs/ROADMAP.md), [Übernahme und iPad-Test](docs/NEXT_STEPS.md).
 
 Die App erweitert die langfristige Plattform schrittweise. Diagramme, Stoff-/Bauteildaten, Diagnose, Auslegung und Projektdokumentation bleiben geplant und verwenden später dieselben Fach-, Formel- und Quellen-IDs.
+
+Version 0.4: [Änderungen und Prüfergebnisse](docs/VERSION_0_4.md), [iPad-Testplan](docs/APPLE_TEST_PLAN.md), [Elektro-Lernpfad](docs/ELECTRICAL_LEARNING_PATH.md), [fachlicher Prüfbericht](docs/REVIEW_REGISTER.md).

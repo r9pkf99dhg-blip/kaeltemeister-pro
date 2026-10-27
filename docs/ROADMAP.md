@@ -1,50 +1,59 @@
-# ROADMAP · Version 0.3 und Gesamtplattform
+# ROADMAP · Version 0.4 und Gesamtplattform
 
-## Gesamtvision bleibt erhalten
+## Gesamtvision
 
-| Hauptmodul                      | Aktueller Stand                                                                 | Späterer Anschluss                                                    |
-| ------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Lernakademie                    | Fünf Module, drei Niveaus, adaptives Lernen, Aufgaben, Karten und Übungsprüfung | Weitere geprüfte Lernpfade und belastbare Inhaltsfreigabe             |
-| Fachbibliothek                  | Alte Artikel, Fachbegriffe und begrenzte neue Fachnotizen                       | Gemeinsame Suche und bessere Verknüpfung                              |
-| Technische Berechnungen         | Sensibler Rechner + gemeinsamer SI-Kern für acht Aufgabentypen                  | Weitere Rechner über denselben Kern, keine doppelte Logik             |
-| log(p)-h-Diagramme/Simulation   | Noch nicht implementiert                                                        | Verifizierte Stoff-/Zustandsmodelle erforderlich                      |
-| Kältemittel-/Bauteildatenbank   | Noch nicht implementiert                                                        | Rechte, Qualität, Aktualisierung und Referenzzustände klären          |
-| Fehlersuche/Diagnose            | Erweiterungsbeziehungen vorhanden                                               | Geführte Messung mit Unsicherheit, keine pauschale Füllmengendiagnose |
-| Anlagenplanung/Auslegung        | Noch nicht implementiert                                                        | Geprüfte Rechenmodelle und eindeutig dokumentierte Randbedingungen    |
-| Technische Projektdokumentation | Noch nicht implementiert                                                        | Projektfälle referenzieren dieselben Formeln, Aufgaben und Quellen    |
+| Hauptmodul | Stand 0.4 | Nächster sinnvoller Anschluss |
+| --- | --- | --- |
+| Lernakademie | 10 Module, 3 Niveaus, 24 Zahlenaufgaben, adaptive Wiederholung, Karten, Übungsprüfung | Externe Fachabnahme, größerer niveaugestufter Aufgabenpool |
+| Fachbibliothek | Artikel, Glossar, gemeinsame Quellen/Formeln, Prüfregister | Konsistente fachübergreifende Suche |
+| Professionelle Berechnungen | Wärmeleistungsrechner + gemeinsamer SI-Kern für Lernaufgaben | Elektrorechner mit geprüften zusätzlichen Randbedingungen |
+| log-p-h-Diagramme | Nicht implementiert | Belastbare Zustandsmodelle, Stoffwerte und Nutzungsrechte |
+| Kältemittel-/Stoffwerte | Nicht implementiert | Herkunft, Referenzzustände, Unsicherheit und Aktualisierung |
+| Komponenten-/Bauteile | Nicht implementiert | Geprüfte Herstellerdaten und Versionsbezug |
+| Fehlersuche/Diagnose | Anschluss über Fach-/Formel-IDs vorbereitet | Geprüfter Fall mit mehreren Hypothesen und Messunsicherheit |
+| Planung/Auslegung | Nicht implementiert | Validierte Systemgrenzen, keine direkte Übernahme fiktiver Lernmodelle |
+| Wartung/Inbetriebnahme | Geplant | Qualifizierte Sicherheits-/Fachprüfung vor Arbeitsinhalten |
+| Technische Dokumentation | Geplant | Lokale Projekte mit denselben Fach-, Formel- und Quellen-IDs |
 
-Keine vorzeitigen Attrappen der späteren Module. Neue Daten sollen dieselben IDs, Einheiten und Quellenregister nutzen.
+Keine vorzeitigen Attrappen dieser zukünftigen Module. Keine kostenpflichtigen Dienste für die lokale Kernfunktion.
 
-## Version 0.3 · abgeschlossener technischer Umfang
+## Versionshistorie
 
-- V0.2-Integration in main und Pages-Erfolg vor Beginn nachgewiesen.
-- Transparente adaptive Zähler, Themenlücken, Empfehlungen mit Begründung und leistungsabhängige Abstände.
-- Acht ausführliche Zahlenaufgaben und ein wiederverwendbarer Aufgaben-/Bewertungskern.
-- Gemischte, selbst erstellte Übungsprüfungen mit Auswahl, Zeitlimit, Wiederherstellung und Analyse.
-- Persönliches Lern-Dashboard und begrenzter Prüfungsverlauf.
-- Verlustarme Migration v2→v3 mit erhaltenem Originalbestand; keine erfundene ältere Versuchshistorie.
-- Teilweiser echter Quellenabgleich plus unabhängige Zahlen-/Einheitentests, keine behauptete externe Fachfreigabe.
+0.2 brachte Fachgebietsstruktur und erste Lernmodule. 0.3 brachte adaptive Lernleistung, Aufgaben-Engine, zeitbegrenzte Übungsprüfung, persönliches Dashboard und konservative v3-Migration. Die Dokumente VERSION_0_2 und VERSION_0_3 bleiben historische Nachweise.
 
-## Version 0.4 · Empfehlung in Prioritätsreihenfolge
+## Version 0.4 · umgesetzter technischer Umfang
 
-### P0 · Vertrauen und Datensicherung
+- Versioniertes Backup, Dateidownload, validierter Import, Vorschau, ausdrückliche Bestätigung und Rücknahmejournal.
+- Unveränderte v1/v2/v3-Speicherschlüssel; zusätzliche Sicherung beschädigter v1-Originale vor automatischem Überschreiben.
+- Erkennung veralteter Tabs, Neuladen statt stiller weiterer Speicherung. Keine vollständige Mehrtab-Konfliktauflösung.
+- Einheitliches fachliches Prüfregister samt bearbeitbarem Bericht; keine behauptete menschliche Freigabe.
+- Neue Quellenabgleiche für physikalische Elektro-Grundbeziehungen.
+- Fünf nutzbare Elektro-Grundlagenmodule, 15 Fragen, 10 Karten, 16 neue Zahlenvarianten; alte Funktionen bleiben erhalten.
+- SI-Kern erweitert, Zahlenfälle unabhängig getestet, WebKit-Konfiguration/CI ergänzt, manueller Apple-Testplan vorhanden. Tatsächliche Browserergebnisse und lokale Downloadgrenzen stehen im Versionsbericht.
 
-1. Fachperson prüft die bestehenden Module und Aufgaben, insbesondere kältetechnische Messvoraussetzungen. Fundstellen und Umfang der Freigabe pro Inhalt festhalten.
-2. Export/Import mit Vorschau, strikter Validierung, unveränderter Rückfallkopie und Wiederherstellung testen. Ungültige Dateien dürfen nichts überschreiben.
-3. Safari auf echtem iPad/iPhone prüfen: Bildschirmtastatur, größere Schrift, Fokus, Timer, Hintergrundwechsel und lokale Speicherung. Chromium-Emulation genügt dafür nicht.
-4. Mehrtab-Konflikte und Reset-Generation lösen, bevor Gerätesynchronisation geplant wird.
+## Version 0.5 · priorisiert
 
-### P1 · Lernqualität statt Masse
+### P0 · Abnahme und Gerätevertrauen
 
-- Einen vollständigen weiteren Lernpfad, etwa sensible/latente Wärme oder elektrische Grundgrößen, auf allen drei Niveaus ausarbeiten und fachlich prüfen.
-- Mehr unabhängige Aufgabenvarianten pro Fachgebiet/Niveau, damit höhere Prüfungsstufen nicht überwiegend Grundlagen wiederholen.
-- Lernempfehlungen mit einem kleinen gleitenden Fenster evaluieren: Alte Fehler sollen nicht unbegrenzt stark nachwirken. Verfahren und Gründe weiterhin sichtbar halten.
-- Individuelle Aufgabenaktivierung aus Empfehlungen weiter ausbauen, etwa eine gezielte Folge aus Fragen und Rechnungen.
+1. Qualifizierte unabhängige Fachprüfung des vollständigen Registers: insbesondere Messvoraussetzungen, Elektro-Praxisinterpretation und Sicherheitsformulierungen. Freigabe pro Inhalt/Revision mit Belegen festhalten.
+2. Echte iPad-/iPhone-Safari-Prüfung nach Testplan; gefundene Fokus-/Dateien-/Hintergrundprobleme zuerst beheben.
+3. Backup-Verfahren unter echten Safari-Speicherquoten prüfen. Optional eine geschützte lokale Rettungsfunktion für beschädigte Rohbestände und sichere IndexedDB-Transaktionen planen.
 
-### P2 · Erst danach größere Plattformmodule
+### P1 · Lernqualität
 
-Lokaler Übungs-Projektfall, geführtes Messprotokoll, dann gegebenenfalls geprüfte Diagramm-/Stoffdatenintegration. Offline-/PWA-Funktion erst mit konsistenter Update-/Cache-Strategie. Optionale Synchronisation darf kein Konto für die lokale Kernfunktion erzwingen.
+- Wechselstrom als nächster vollständig ausgearbeiteter Abschnitt, danach Leistungsfaktor/Drehstrom mit geprüften Beispielen. Alle elf Folgethemen sind in ELECTRICAL_LEARNING_PATH dokumentiert.
+- Mehr Varianten je Niveau, echte Meistertransferfragen und transparentere Prüfungsabdeckung.
+- Gleitendes Leistungsfenster evaluieren, damit alte Fehler die Lernempfehlung nicht unbegrenzt prägen; Verlauf dafür versioniert erweitern.
+- Fortsetzen mit letztem Niveau/Abschnitt als optionale gespeicherte Einstellung.
+
+### P2 · Größere Plattform
+
+- Professioneller Elektrorechner über bestehenden Kern, einschließlich Modellgrenzen und Eingabeführung.
+- Ein lokaler technischer Projekt-/Diagnosefall mit geprüften Messbedingungen.
+- Erst danach Stoffdaten/log-p-h mit geklärten Rechten und Validierung.
+- Offline/PWA erst mit getesteter Update-/Cache-Strategie.
+- Gerätesynchronisation optional und freiwillig; Ereignis-/Reset-/Konfliktvertrag vor Cloudanbindung, kein Konto für lokale Funktionen erzwingen.
 
 ## Abnahme jedes Pakets
 
-Dokumentierte Modellgrenzen und Quellen; stabile IDs; unabhängige Referenzbeispiele; Migration/Datenschutz; Typprüfung, Funktions- und Browsertests; grüner PR; Kontrolle des tatsächlichen Deployments erst nach dem Merge. Keine offiziellen Prüfungsaufgaben oder garantierten Gerätespezifikationen ohne entsprechende Grundlage behaupten.
+Stabile IDs, belegte Quellen/Modellgrenzen, unabhängige Referenzrechnungen, Datenmigration und Rücknahme, Typprüfung, Funktions-/Browsertests, transparenter fachlicher Prüfstatus. Tatsächliche Veröffentlichung erst nach PR-Merge und erfolgreichem main-Pages-Lauf.

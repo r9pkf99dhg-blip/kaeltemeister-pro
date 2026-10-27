@@ -1,48 +1,38 @@
-# Version 0.3 übernehmen und auf dem iPad testen
+# Version 0.4 übernehmen und auf dem iPad testen
 
-## Übernehmen
+## Änderungen übernehmen
 
-1. Pull Request „Version 0.3: Intelligente Lernakademie“ auf GitHub öffnen.
-2. Auf die grünen Prüfungen warten; dann **Merge pull request → Confirm merge** wählen.
-3. Unter **Actions → Deploy to GitHub Pages** den neuen main-Lauf prüfen. Nach erfolgreichem Job „Website veröffentlichen“ ist die neue Version verfügbar. Falls nötig manuell **Run workflow → main → Run workflow**.
-4. Auf dem iPad in Safari `https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/` neu laden. Bestehende Browserdaten nicht löschen, damit die Migration den bisherigen Fortschritt übernehmen kann.
+1. Den Pull Request für Version 0.4 öffnen. Unter **Files changed** stehen Code und Dokumentation.
+2. Auf grüne GitHub-Checks warten. Neue WebKit-Tests müssen erfolgreich laufen; bei rot zuerst die Fehler beheben.
+3. **Merge pull request** und anschließend **Confirm merge** wählen.
+4. Unter **Actions → Deploy to GitHub Pages** den main-Lauf öffnen. Er startet automatisch nach dem Merge.
+5. Falls nötig: **Run workflow → main → Run workflow**. **Settings → Pages → Source: GitHub Actions** beibehalten.
+6. Erst nach erfolgreichem Job **Website veröffentlichen** ist 0.4 öffentlich verfügbar. PRs allein veröffentlichen nichts.
 
-Vor dem Merge bleibt die veröffentlichte Seite auf dem bisherigen Stand. Der PR selbst wird nicht automatisch zusammengeführt oder veröffentlicht.
+## Auf dem iPad
 
-## Konkreter Testablauf
+Safari öffnen: **https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/**. Neu laden und auf „Version 0.4“ achten. Kein Konto und kein kostenpflichtiger Dienst nötig.
 
-1. **Dashboard:** Fachgebiets-Fortschritt, heutige Fälligkeiten und Empfehlungen ansehen. Bei noch unbekannten Themen erklärt die App ausdrücklich, dass noch keine bewerteten Antworten vorliegen.
-2. **Rechenaufgaben üben:** Wärmeleistungsaufgabe öffnen. `10,45` mit `kW` oder `10450` mit `W` eingeben. Nach **Ergebnis prüfen** müssen Musterlösung und Fehlerhinweise erscheinen.
-3. Bewusst `1 kW` eingeben. Nach der Auswertung zum Dashboard zurückkehren. Das betroffene Thema erhält eine begründete Empfehlung; die falsche Antwort bleibt im Lernverlauf berücksichtigt.
-4. **Akademie → Rechenaufgaben:** Massenstromaufgabe wählen. `1800 kg/h` ist hier genauso richtig wie `0,5 kg/s`. Optional den Lösungshinweis öffnen.
-5. **Übungsprüfung:** Fachgebiet **Elektrotechnik**, Grundlagen und **5 Minuten** wählen. Es erscheinen zwei Auswahlfragen und eine Zahlenaufgabe. Richtige Zahlenantwort: `48 W` bzw. `0,048 kW`. Lösungen dürfen erst nach Abgabe erscheinen.
-6. Vor Abgabe Safari neu laden und die Prüfung wieder öffnen. Antworten und Endzeit müssen erhalten sein; die Zeit läuft weiter. Nach Abgabe werden Ergebnis, Fehleranalyse und Empfehlungen gespeichert.
-7. Eine neue Prüfung bei Zeitablauf automatisch abgeben lassen. Nicht beantwortete Aufgaben erhalten 0 Punkte, werden aber nicht als nachgewiesene Wissenslücke gezählt.
-8. Den alten Lernbereich, das alte Quiz, die drei Niveaus und Karteikarten weiterhin ausprobieren. Der vorhandene Rechner muss mit 0,5 kg/s, 4,18 kJ/(kg·K) und 5 K weiterhin **10,45 kW** liefern.
+**Zuerst sichern:** Am Seitenende **Sicherung erstellen → Sicherungsdatei herunterladen**. Die JSON-Datei in **Dateien** aufbewahren. Zum Wiederherstellen Datei auswählen, Vorschau lesen, ausdrücklich das Ersetzen bestätigen. Vorher aktuelle Daten sichern und andere App-Tabs schließen. Eine defekte Datei darf nichts verändern.
 
-Nur einen Tab für eine laufende Prüfung verwenden. Die App ist eine lokale Übungssimulation, keine offizielle oder beaufsichtigte Prüfung. Das Ändern der Geräteuhr kann die Zeitmessung beeinflussen. Noch keine automatische Geräte-/Tab-Synchronisation.
+**Elektro lernen:** Akademie → Fachgebiet **Elektrotechnik** → mit **Elektrische Grundgrößen** beginnen. Die fünf Module bauen aufeinander auf. Im Modul finden sich Niveauwahl, Voraussetzungen, Fragen, Karten und Rechenaufgaben.
 
-## Wenn Speichern nicht funktioniert
+**Schnellprüfung:**
 
-Die App meldet Lesefehler, unbekannte Versionen und Schreibfehler. Nicht vorschnell Browserdaten löschen: v2 bleibt als unveränderter Migrationsbestand erhalten. Ein gültiges v3 wird bevorzugt; Änderungen in alten Schlüsseln werden nicht laufend zusammengeführt. Bei einem Lesefehler neu laden, bei unbekannter neuerer Version die passende App-Version verwenden. Ohne zuverlässige Speicherung bleiben Änderungen nur in der Sitzung.
+- Spannung/Strom/Widerstand: erste Aufgabe **0,2 A**.
+- Ohmsches Gesetz: Spannungsvarianten **24 V** und **11 V**.
+- Leistung/Arbeit: **12 W**, **0,6 W**, **24 Wh**, **0,075 kWh**.
+- Reihen-/Parallelschaltung: **360 Ω**, **3,2 kΩ**, **80 Ω**, **50 Ω**.
+- Vorhandener Wärmeleistungsrechner: 0,5 kg/s × 4,18 kJ/(kg·K) × 5 K = **10,45 kW**.
 
-## Für die Entwicklung
+Markiere ein Modul als gelesen, beantworte eine Frage und lade neu. Die Daten müssen bleiben. Eine Übungsprüfung kann auch während Hintergrundwechsel/Neuladen ablaufen; ihre ursprüngliche Endzeit bleibt maßgeblich. Die Aufgaben sind selbst erstellt und nicht offiziell.
 
-```sh
-npm ci
-npm run typecheck
-npm test
-npm run build
-npx playwright install chromium
-npm run test:e2e
-```
+Bitte führe den kurzen [Apple-Testplan](APPLE_TEST_PLAN.md) durch. Er enthält erwartete Ergebnisse und eine Fehlervorlage. Ein echtes Apple-Gerät war hier nicht verfügbar; der lokale WebKit-Download war blockiert. Erfolgreiche Chromium-Prüfungen sind keine Garantie für deine Safari-/iPadOS-Version.
 
-In dieser Cloud-Maschine kann alternativ der vorhandene Chromium genutzt werden:
+## Fachliche Abnahme
 
-```sh
-PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
-```
+Das [Prüfregister](REVIEW_REGISTER.md) kann eine qualifizierte Kälte-/Elektro-Fachperson bearbeiten. Rechenprüfungen und Quellenabgleich sind dokumentiert, eine unabhängige menschliche Fachfreigabe bleibt offen. Keine praktischen elektrischen Arbeiten anhand der Lernbeispiele durchführen.
 
-Der Browserprüfbefehl baut selbst frisch und startet eine eigene Vorschau; Port 4175 muss frei sein. Screenshots/Traces liegen bei Fehlern in `test-results/`, der Bericht in `playwright-report/`. Die vorhandenen GitHub-Workflows führen diese Tests ebenfalls aus. Ein echter iPad-Safari-Test bleibt zusätzlich nötig.
+## Wenn etwas nicht funktioniert
 
-Die Empfehlung für 0.4 steht in [ROADMAP.md](ROADMAP.md), der genaue Lernalgorithmus in [LEARNING_SYSTEM.md](LEARNING_SYSTEM.md).
+Bei rotem Workflow den betroffenen Schritt und die Fehlermeldung notieren. Keine geheimen Schlüssel ergänzen. Bei Speicherfehlern nicht die Browserdaten löschen: zuerst vorhandene Sicherung aufbewahren, Speicherplatz prüfen und neu laden. Bei Wiederherstellungsfehlern bewahrt das Journal den vorherigen Stand, soweit der Browser seine Daten behält. Persönliche Sicherungen nicht öffentlich in Issues hochladen.
