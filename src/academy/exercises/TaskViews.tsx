@@ -68,7 +68,7 @@ export function TaskAnswer({
         Dein Ergebnis: {item.sought}
         <input
           id={`result-${item.id}`}
-          inputMode="decimal"
+          inputMode={item.quantity === "number" ? "text" : "decimal"}
           value={answer.value}
           disabled={disabled}
           onChange={(event) =>

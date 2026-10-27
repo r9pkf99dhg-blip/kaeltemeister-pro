@@ -297,10 +297,10 @@ function Application({
               />
               <section className="academy-entry">
                 <div>
-                  <span className="pill">NEU · VERSION 0.4</span>
+                  <span className="pill">NEU · VERSION 0.5</span>
                   <h2>Deine intelligente Lernakademie.</h2>
                   <p>
-                    Zehn Module, drei Wissensstufen und Karteikarten mit
+                    Grundlagen- und Fachmodule, drei Wissensstufen und Karteikarten mit
                     Wiederholungsplan.
                   </p>
                 </div>
@@ -311,6 +311,7 @@ function Application({
                   Akademie öffnen <ArrowRight size={17} />
                 </button>
               </section>
+              <section className="academy-entry"><div><span className="pill">NEU · GRUNDLAGEN</span><h2>Von Anfang an verstehen.</h2><p>Rechenregeln, Brüche, Gleichungen und Einheiten – mit Herleitungen und interaktivem Formelumstellungstrainer.</p></div><button className="button primary" onClick={()=>{setAcademyModuleId('math-arithmetic');setAcademyView('overview');navigate('akademie');}}>Mit Mathematik beginnen</button></section>
               <section className="hero">
                 <div className="hero-copy">
                   <span className="hero-badge">

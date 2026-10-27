@@ -1,3 +1,4 @@
+import { schoolKinds } from "../../technical/foundations";
 import { units } from "../../technical/calculations";
 import { levels } from "../model";
 import type {
@@ -43,6 +44,7 @@ export function validItem(value: unknown): value is LearningItem {
   return (
     value.kind === "numeric" &&
     [
+      ...schoolKinds,
       "charge-current",
       "ohm-current",
       "ohm-voltage",
@@ -92,7 +94,7 @@ export function validSnapshot(value: unknown): value is ExamSnapshot {
     record(value) &&
     validItem(value.item) &&
     (value.item.kind === "choice" ||
-      (finite(value.expectedSI) && value.expectedSI >= 0))
+      (finite(value.expectedSI) && (value.expectedSI >= 0 || value.item.quantity === "number")))
   );
 }
 export function validAnswer(value: unknown) {

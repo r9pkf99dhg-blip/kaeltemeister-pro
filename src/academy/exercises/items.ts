@@ -1,3 +1,4 @@
+import { trainerQuestions } from "../foundations/trainer-data";
 import { academyQuestions, modules } from "../catalog";
 import type { ChoiceTask, LearningItem } from "./model";
 import { numericTasks } from "./data";
@@ -60,6 +61,7 @@ export const choiceTasks: ChoiceTask[] = [
     explanation: question.explanation,
   })),
   ...electricalQuestions,
+  ...trainerQuestions,
 ];
 export const learningItems: LearningItem[] = [...choiceTasks, ...numericTasks];
 export const learningTopics = [

@@ -1,3 +1,4 @@
+import { trainerQuestions } from "../academy/foundations/trainer-data";
 import { articles, questions } from "../content";
 import {
   modules,
@@ -161,6 +162,7 @@ export const reviewRegister: ReviewEntry[] = [
       reference: n.text,
     }),
   ),
+  ...trainerQuestions.map(q=>entry(q.id,q.title,'trainer-question','mathematik',{status:'automatic',formulaIds:q.formulaId?[q.formulaId]:[],sourceIds:['openstax-prealgebra-v05'],reference:q.explanation,scope:'Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.'})),
   ...electricalQuestions.map((q) =>
     entry(q.id, q.prompt, "standalone-question", "elektro", {
       status: "automatic",

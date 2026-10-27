@@ -36,6 +36,7 @@ export interface Objective {
 }
 export interface LearningContent {
   introduction: string;
+  derivation?: string[];
   explanation: string;
   connections: string;
   example: string;

@@ -1,5 +1,7 @@
+import { calculateSchool, schoolKinds, type SchoolKind } from "./foundations";
 /** Gemeinsame SI-Rechenfunktionen für Aufgaben und technische Rechner. */
 export type CalculationKind =
+  | SchoolKind
   | "heat"
   | "mass-flow"
   | "temperature-difference"
@@ -27,7 +29,8 @@ export type Quantity =
   | "resistance"
   | "energy"
   | "time"
-  | "charge";
+  | "charge"
+  | "number" | "percent";
 export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
@@ -41,11 +44,14 @@ export const units: Record<Quantity, string[]> = {
   time: ["s", "min", "h"],
   charge: ["C"],
   ratio: ["1"],
+  number: ["1"],
+  percent: ["%"],
 };
 export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (!Number.isFinite(value) || !units[quantity].includes(unit))
     throw new Error("Ungültiger Zahlenwert oder unpassende Einheit.");
   let result = value;
+  if (unit === "%") result /= 100;
   if (unit === "kW" || unit === "kJ/(kg·K)") result *= 1000;
   if (unit === "kg/h") result /= 3600;
   if (unit === "mA" || unit === "mV") result /= 1000;
@@ -54,7 +60,7 @@ export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (unit === "kWh") result *= 3600000;
   if (unit === "min") result *= 60;
   if (quantity === "temperature" && unit === "°C") result += 273.15;
-  if (!Number.isFinite(result) || result < 0)
+  if (!Number.isFinite(result) || (result < 0 && quantity !== "number"))
     throw new Error(
       "Die Größe liegt außerhalb des zulässigen physikalischen Bereichs.",
     );
@@ -67,6 +73,7 @@ export function fromSI(
 ): number {
   if (!units[quantity].includes(unit) || !Number.isFinite(value))
     throw new Error("Unpassende Einheit.");
+  if (unit === "%") return value * 100;
   if (unit === "kW" || unit === "kJ/(kg·K)") return value / 1000;
   if (unit === "kg/h") return value * 3600;
   if (unit === "mA" || unit === "mV") return value * 1000;
@@ -81,6 +88,7 @@ export function calculateTechnical(
   kind: CalculationKind,
   values: Record<string, number>,
 ): number {
+  if (schoolKinds.includes(kind as SchoolKind)) return calculateSchool(kind as SchoolKind, values);
   const get = (id: string, strictlyPositive = false) => {
     const value = values[id];
     if (

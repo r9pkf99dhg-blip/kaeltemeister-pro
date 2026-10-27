@@ -1,3 +1,4 @@
+import { mathematicsLessons } from "../foundations/mathematics";
 import { electricalModules, electricalPlanned } from "./electrical";
 import type { Domain } from "../model";
 
@@ -323,3 +324,10 @@ electricDomain.chapters[1].subchapters[0].plannedTopics =
   electricalPlanned.slice(3, 5);
 electricDomain.chapters[1].subchapters[1].plannedTopics =
   electricalPlanned.slice(5);
+
+const mathDomain=domains.find(d=>d.id==='mathematik')!;
+mathDomain.description='Acht vollständige Grundlagenlektionen; weiterführende Themen ausdrücklich geplant.';
+mathDomain.chapters[0].subchapters[0].moduleIds=mathematicsLessons.filter(l=>['math-arithmetic','math-fractions','math-percent','math-powers','math-units'].includes(l.id)).map(l=>l.id);
+mathDomain.chapters[0].subchapters[0].plannedTopics=[];
+mathDomain.chapters[0].subchapters[1].moduleIds=['math-algebra','math-equations','math-rearrange'];
+mathDomain.chapters[0].subchapters[1].plannedTopics=['Quadratische Gleichungen und lineare Gleichungssysteme'];

@@ -35,6 +35,12 @@ const references: Record<string, number> = {
   "el-series-b": 3200,
   "el-parallel-a": 80,
   "el-parallel-b": 50,
+  "math-order-a":4,"math-order-b":2,
+  "math-fraction-add-a":.75,"math-fraction-sub-a":-.5,"math-fraction-mul-a":.5,"math-fraction-div-a":5/6,
+  "math-percent-a":30,"math-percent-b":.15,"math-proportion-a":20,
+  "math-term-a":18,"math-term-b":-4,"math-linear-a":6,"math-linear-b":-4,
+  "math-rearrange-a":120,"math-rearrange-b":1200,"math-unit-a":1800,"math-unit-b":86400,
+  "math-power-a":8,"math-power-b":.001,"math-root-a":12,"math-root-b":.9,
 };
 describe("Alle Rechenaufgaben", () => {
   it.each(numericTasks.map((task) => [task.id, task] as const))(

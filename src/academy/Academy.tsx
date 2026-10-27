@@ -1,4 +1,5 @@
-import { BlockMath, MathText, VariableDefinitions } from "../math/Math";
+import RearrangementTrainer from "./foundations/RearrangementTrainer";
+import { BlockMath, MathText, VariableDefinitions, SolutionSteps } from "../math/Math";
 import { numericTasks } from "./exercises/data";
 import Exercises from "./exercises/Exercises";
 import ExamMode from "./exams/ExamMode";
@@ -134,10 +135,10 @@ export default function Academy({
         <>
           <div className="page-heading">
             <div>
-              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.4</p>
+              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.5</p>
               <h1>Lernakademie</h1>
               <p>
-                Kälte- und Elektro-Grundlagen. Drei Wissensstufen. Dein eigenes
+                Mathematische Grundlagen und technische Fachmodule. Drei Wissensstufen. Dein eigenes
                 Lerntempo.
               </p>
             </div>
@@ -272,9 +273,7 @@ export default function Academy({
                     onClick={() => open(module.id)}
                   >
                     <span className="eyebrow">
-                      {module.domainId === "kaelte"
-                        ? "KÄLTETECHNIK"
-                        : "ELEKTROTECHNIK"}{" "}
+                      {module.domainId === "kaelte" ? "KÄLTETECHNIK" : module.domainId === "elektro" ? "ELEKTROTECHNIK" : "MATHEMATIK"}{" "}
                       · {String(index + 1).padStart(2, "0")}
                     </span>
                     <h2>{module.title}</h2>
@@ -350,8 +349,7 @@ export default function Academy({
               <section className="domain-outline">
                 <h2>Deine Fachgebiete</h2>
                 <p>
-                  Kapitel → Unterkapitel → Lernmodule. Fünf Kälte- und fünf
-                  Elektro-Module sind nutzbar. Weitere Inhalte sind ausdrücklich
+                  Kapitel → Unterkapitel → Lernmodule. Die verfügbaren Module sind vollständig bearbeitbar; mathematische Grundlagen ergänzen die Kälte- und Elektro-Lernpfade. Weitere Inhalte sind ausdrücklich
                   in Vorbereitung. Rechtsinhalte benötigen vor Veröffentlichung
                   eine datierte Prüfung.
                 </p>
@@ -363,9 +361,7 @@ export default function Academy({
                         <BookOpen size={18} />
                         <span>{item.title}</span>
                         <span className="pill">
-                          {["kaelte", "elektro"].includes(item.id)
-                            ? "5 Module verfügbar"
-                            : "Inhalte in Vorbereitung"}
+                          {modules.some(m=>m.domainId===item.id) ? `${modules.filter(m=>m.domainId===item.id).length} Module verfügbar` : "Inhalte in Vorbereitung"}
                         </span>
                       </summary>
                       <p>{item.description}</p>
@@ -525,6 +521,7 @@ function ModuleView({
           );
         })}
       </section>
+      {content.derivation && <section><h2>Warum funktioniert das? Schrittweise Herleitung</h2><SolutionSteps steps={content.derivation} /></section>}
       <section>
         <h2>Durchgerechnetes Praxisbeispiel</h2>
         <p><MathText text={content.example} /></p>
@@ -576,6 +573,7 @@ function ModuleView({
           setProgress={setProgress}
         />
       </section>
+      {module.id === "math-rearrange" && <RearrangementTrainer setProgress={setProgress} />}
       {numericTasks.some((t) => t.topicId === module.id) && (
         <Exercises
           key={`exercises-${module.id}`}

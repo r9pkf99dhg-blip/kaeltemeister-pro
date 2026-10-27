@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { academyQuestions, modules } from "../src/academy/catalog";
+import { academyQuestions, modules, flashcards } from "../src/academy/catalog";
 const key = "kaeltemeister-pro:progress:v3";
 const errors = new WeakMap<Page, string[]>();
 test.beforeEach(async ({ page }) => {
@@ -175,7 +175,7 @@ test("Karteikarten verlangen eine Rückseite und planen zuverlässig eine Wieder
   await page.getByRole("button", { name: "Akademie", exact: true }).click();
   await expect(
     page.getByRole("button", {
-      name: "Karteikarten wiederholen (19)",
+      name: `Karteikarten wiederholen (${flashcards.length - 1})`,
       exact: true,
     }),
   ).toBeVisible();
@@ -185,7 +185,7 @@ test("Karteikarten verlangen eine Rückseite und planen zuverlässig eine Wieder
   await page.getByRole("button", { name: "Akademie", exact: true }).click();
   await expect(
     page.getByRole("button", {
-      name: "Karteikarten wiederholen (20)",
+      name: `Karteikarten wiederholen (${flashcards.length})`,
       exact: true,
     }),
   ).toBeVisible();
