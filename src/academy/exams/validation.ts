@@ -45,7 +45,7 @@ export function validItem(value: unknown): value is LearningItem {
     value.kind === "numeric" &&
     [
       ...schoolKinds,
-      "speed", "force", "mechanical-work", "power-from-energy", "pressure", "density", "sensible-energy",
+      "amount", "speed", "force", "mechanical-work", "power-from-energy", "pressure", "density", "sensible-energy",
       "charge-current",
       "ohm-current",
       "ohm-voltage",

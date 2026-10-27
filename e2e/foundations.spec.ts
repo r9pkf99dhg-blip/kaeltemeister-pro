@@ -27,3 +27,10 @@ test('Physik-Kernmodule sind verknüpft und prüfen Druck mit SI-Umrechnung',asy
  await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
  await expect(page.locator('.math-error')).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
+test('Chemie-Kernpfad zeigt echten Formelsatz und rechnet mol mit kompatiblen Einheiten',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Akademie',exact:true}).click();await page.getByLabel('Fachgebiet',{exact:true}).selectOption('chemie');
+ await expect(page.getByRole('status')).toContainText('3 verfügbare Lernmodule');await page.getByRole('button',{name:/CHEMIE-GRUNDLAGEN.*Stoffmenge, molare Masse und Reaktionsbilanz/}).click();
+ await page.getByLabel('Dein Ergebnis: Stoffmenge mit gerundeter molarer Masse',{exact:true}).fill('500');await page.getByLabel('Einheit für Stoffmenge mit gerundeter molarer Masse',{exact:true}).selectOption('mmol');
+ await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
+ await expect(page.locator('.math-error')).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

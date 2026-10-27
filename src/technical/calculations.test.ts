@@ -40,6 +40,8 @@ const references: Record<string, number> = {
   "math-percent-a":30,"math-percent-b":.15,"math-proportion-a":20,
   "math-term-a":18,"math-term-b":-4,"math-linear-a":6,"math-linear-b":-4,
   "math-rearrange-a":120,"math-rearrange-b":1200,"math-unit-a":1800,"math-unit-b":86400,
+  "chemistry-fraction-a":.25,"chemistry-fraction-b":.2,"chemistry-atoms-a":10,"chemistry-atoms-b":6,
+  "chemistry-amount-a":.5,"chemistry-amount-b":1,
   "physics-speed-a":3,"physics-speed-b":1,"physics-force-a":10,"physics-force-b":20,
   "physics-work-a":150,"physics-work-b":10,"physics-power-a":20,
   "physics-pressure-a":200000,"physics-pressure-b":50000,"physics-density-a":800,

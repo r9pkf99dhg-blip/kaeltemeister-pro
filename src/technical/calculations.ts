@@ -17,7 +17,7 @@ export type CalculationKind =
   | "electric-energy"
   | "series-resistance"
   | "parallel-resistance"
-  | "speed" | "force" | "mechanical-work" | "power-from-energy" | "pressure" | "density" | "sensible-energy";
+  | "speed" | "force" | "mechanical-work" | "power-from-energy" | "pressure" | "density" | "sensible-energy" | "amount";
 export type Quantity =
   | "power"
   | "mass-flow"
@@ -32,7 +32,7 @@ export type Quantity =
   | "time"
   | "charge"
   | "number" | "percent"
-  | "mass" | "length" | "area" | "volume" | "pressure" | "density" | "force" | "acceleration" | "speed";
+  | "mass" | "length" | "area" | "volume" | "pressure" | "density" | "force" | "acceleration" | "speed" | "amount" | "molar-mass";
 export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
@@ -48,6 +48,7 @@ export const units: Record<Quantity, string[]> = {
   ratio: ["1"],
   number: ["1"],
   percent: ["%"],
+  amount: ["mol", "mmol"], "molar-mass": ["kg/mol", "g/mol"],
   mass: ["kg", "g"], length: ["m", "cm", "mm", "km"], area: ["m²", "cm²"], volume: ["m³", "L"],
   pressure: ["Pa", "kPa", "bar"], density: ["kg/m³"], force: ["N", "kN"], acceleration: ["m/s²"], speed: ["m/s", "km/h"],
 };
@@ -56,7 +57,7 @@ export function toSI(value: number, unit: string, quantity: Quantity): number {
     throw new Error("Ungültiger Zahlenwert oder unpassende Einheit.");
   let result = value;
   if (unit === "%") result /= 100;
-  if (["g", "mm", "L"].includes(unit)) result /= 1000;
+  if (["g", "mm", "L", "mmol", "g/mol"].includes(unit)) result /= 1000;
   if (unit === "cm") result /= 100;
   if (unit === "cm²") result /= 10000;
   if (["km", "kPa", "kN"].includes(unit)) result *= 1000;
@@ -84,7 +85,7 @@ export function fromSI(
   if (!units[quantity].includes(unit) || !Number.isFinite(value))
     throw new Error("Unpassende Einheit.");
   if (unit === "%") return value * 100;
-  if (["g", "mm", "L"].includes(unit)) return value * 1000;
+  if (["g", "mm", "L", "mmol", "g/mol"].includes(unit)) return value * 1000;
   if (unit === "cm") return value * 100;
   if (unit === "cm²") return value * 10000;
   if (["km", "kPa", "kN"].includes(unit)) return value / 1000;
@@ -119,6 +120,7 @@ export function calculateTechnical(
   };
   let result: number;
   switch (kind) {
+    case "amount": result = get("mass") / get("molarMass", true); break;
     case "speed": result = get("distance") / get("time", true); break;
     case "force": result = get("mass", true) * get("acceleration"); break;
     case "mechanical-work": result = get("force") * get("distance"); break;

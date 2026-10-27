@@ -12,7 +12,7 @@ Basis: main `163b9b7`, Version 0.4. Entwicklungsbranch `feat/foundations-academy
 
 1. Etappe B abgeschlossen: KaTeX/mhchem-Komponenten, 19 Registerformeln, 24 Musterlösungen, Syntax-/Sicherheits-/Regressionstests. Siehe FORMULA_RENDERING.md.
 2. Etappe C abgeschlossen: acht vollständige Mathematiklektionen, 21 Zahlenaufgaben, elf Umstellungsziele mit begründeten Schritten, Quellen und vorhandener Fortschrittsspeicherung. 222 Tests sowie fünf neue Kernkurs-Browserprüfungen erfolgreich. Siehe MATHEMATICS_CURRICULUM.md.
-3. Etappe D: vier Physik-Kernmodule mit zwölf Zahlenaufgaben; vor Commit 242 Tests, Typprüfung, Build und Mathematik/Physik-Browserabläufe prüfen. Etappe E Chemie als Nächstes.
+3. Etappe D abgeschlossen: vier Physik-Kernmodule, zwölf Zahlenaufgaben, 242 Funktionstests und zehn Kernkurs-Browserprüfungen erfolgreich. Etappe E: drei Chemie-Kernmodule mit sechs Aufgaben; vor Commit Gesamttests/Build und Browserabläufe prüfen.
 4. Etappen F/G: Lehrpläne, Kompetenzverknüpfungen und Vorbereitung der intelligenten Lernbrücke.
 5. Etappe H: Backup-Kompatibilität, Browserprüfungen einschließlich WebKit soweit möglich, Dokumentation und PR.
 
