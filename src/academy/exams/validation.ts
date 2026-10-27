@@ -43,6 +43,13 @@ export function validItem(value: unknown): value is LearningItem {
   return (
     value.kind === "numeric" &&
     [
+      "charge-current",
+      "ohm-current",
+      "ohm-voltage",
+      "ohm-resistance",
+      "electric-energy",
+      "series-resistance",
+      "parallel-resistance",
       "heat",
       "mass-flow",
       "temperature-difference",

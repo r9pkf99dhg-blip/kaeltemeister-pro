@@ -162,11 +162,7 @@ export default function LearningDashboard({
               .filter((domain) => !activeDomains.includes(domain))
               .map((domain) => (
                 <p key={domain.id}>
-                  {domain.title}: noch keine ausgearbeiteten Lernmodule
-                  {domain.id === "elektro"
-                    ? "; Gleichstrom-Aufgaben verfügbar"
-                    : ""}
-                  .
+                  {domain.title}: noch keine ausgearbeiteten Lernmodule .
                 </p>
               ))}
           </details>
@@ -190,7 +186,7 @@ export default function LearningDashboard({
               </p>
             ))
           ) : (
-            <p>Noch kein Modul in Version 0.3 geöffnet.</p>
+            <p>Noch kein Modul geöffnet.</p>
           )}
         </div>
       </div>

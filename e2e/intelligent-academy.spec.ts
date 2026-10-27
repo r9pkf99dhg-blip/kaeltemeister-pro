@@ -111,14 +111,40 @@ test("gemischte Übungsprüfung wertet korrekt aus und erhält den Verlauf", asy
       exact: true,
     }),
   ).toHaveCount(0);
-  await page.getByRole("radio", { name: "P = U × I", exact: true }).check();
-  await page.getByRole("radio", { name: "Leistung", exact: true }).check();
-  await page
-    .getByLabel("Dein Ergebnis: Elektrische Leistung", { exact: true })
-    .fill("0,048");
-  await page
-    .getByLabel("Einheit für Elektrische Leistung", { exact: true })
-    .selectOption("kW");
+  // Die Prüfung verwendet den erweiterten Pool; Auswahlaufgaben und Zahlen werden je Snapshot beantwortet.
+  const snapshots = await page.evaluate(
+    (k) => JSON.parse(localStorage.getItem(k)!).activeExam.snapshots,
+    key,
+  );
+  for (const { item, expectedSI } of snapshots) {
+    if (item.kind === "choice")
+      await page
+        .locator(`input[name="task-${item.id}"]`)
+        .nth(
+          item.options.findIndex(
+            (o: { id: string }) => o.id === item.correctOptionId,
+          ),
+        )
+        .check();
+    else {
+      await page
+        .locator(`#unit-${item.id}`)
+        .selectOption(
+          item.quantity === "power"
+            ? "W"
+            : item.quantity === "current"
+              ? "A"
+              : item.quantity === "energy"
+                ? "J"
+                : item.quantity === "voltage"
+                  ? "V"
+                  : "Ω",
+        );
+      await page
+        .locator(`#result-${item.id}`)
+        .fill(String(expectedSI).replace(".", ","));
+    }
+  }
   await noOverflow(page);
   await page
     .getByRole("button", {
@@ -180,7 +206,7 @@ test("Zeitlimit bleibt nach Neuladen erhalten und automatische Abgabe erfolgt ge
   ).toHaveValue("48");
   await page.clock.fastForward(6000);
   await expect(
-    page.getByRole("heading", { name: "Ergebnis: 33 %", exact: true }),
+    page.getByRole("heading", { name: "Ergebnis: 17 %", exact: true }),
   ).toBeVisible();
   await expect(page.getByText(/Zeitlimit erreicht/).first()).toBeVisible();
   await page.clock.fastForward(60_000);

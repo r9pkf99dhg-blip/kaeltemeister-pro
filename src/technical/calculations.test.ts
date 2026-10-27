@@ -19,8 +19,24 @@ const references: Record<string, number> = {
   "calc-electric-dc": 48,
   "calc-cooling-cop": 3,
   "calc-heating-cop": 4,
+  "el-current-charge-a": 0.2,
+  "el-current-charge-b": 0.3,
+  "el-ohm-current-a": 0.2,
+  "el-ohm-current-b": 0.01,
+  "el-ohm-voltage-a": 24,
+  "el-ohm-voltage-b": 11,
+  "el-ohm-resistance-a": 120,
+  "el-ohm-resistance-b": 1200,
+  "el-power-a": 12,
+  "el-power-b": 0.6,
+  "el-energy-a": 86400,
+  "el-energy-b": 270000,
+  "el-series-a": 360,
+  "el-series-b": 3200,
+  "el-parallel-a": 80,
+  "el-parallel-b": 50,
 };
-describe("Alle acht Rechenaufgaben", () => {
+describe("Alle Rechenaufgaben", () => {
   it.each(numericTasks.map((task) => [task.id, task] as const))(
     "%s stimmt mit unabhängigem SI-Referenzwert überein",
     (id, task) => {

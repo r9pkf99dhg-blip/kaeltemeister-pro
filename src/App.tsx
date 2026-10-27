@@ -1,3 +1,6 @@
+import QualityPanel from "./quality/QualityPanel";
+import BackupPanel from "./storage/BackupPanel";
+import { recoverRestore, JOURNAL_KEY, dataKeys } from "./storage/backup";
 import LearningDashboard from "./academy/adaptive/LearningDashboard";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -43,8 +46,92 @@ const navigation = [
 ];
 
 export default function App() {
+  const [startup] = useState(() => {
+    try {
+      return { message: recoverRestore(localStorage), blocked: false };
+    } catch {
+      return {
+        message:
+          "Eine Speicher-Wiederherstellung konnte nicht sicher abgeschlossen werden. Schreiben bleibt gesperrt. Bitte Speicherplatz prüfen und neu laden; vorhandene Daten und das Rücknahmejournal bleiben erhalten.",
+        blocked: true,
+      };
+    }
+  });
+  const [generation, setGeneration] = useState(0);
+  const [externalChange, setExternalChange] = useState(false);
+  const [restored, setRestored] = useState(false);
+  useEffect(() => {
+    const changed = (event: StorageEvent) => {
+      if (
+        event.key === null ||
+        [...dataKeys, JOURNAL_KEY].includes(
+          event.key as (typeof dataKeys)[number],
+        )
+      )
+        setExternalChange(true);
+    };
+    window.addEventListener("storage", changed);
+    return () => window.removeEventListener("storage", changed);
+  }, []);
+  return (
+    <>
+      {(startup.message || restored || externalChange) && (
+        <div className="notice" role="status">
+          {externalChange
+            ? "Lerndaten wurden in einem anderen Tab geändert. Schreiben ist gesperrt. Bitte diese Seite neu laden, bevor du weiterlernst."
+            : restored
+              ? "Datensicherung erfolgreich wiederhergestellt. Der importierte Lernstand ist jetzt aktiv."
+              : startup.message}
+          {(startup.blocked || externalChange) && (
+            <button
+              className="button secondary"
+              onClick={() => window.location.reload()}
+            >
+              Seite neu laden
+            </button>
+          )}
+        </div>
+      )}
+      <Application
+        key={generation}
+        storageBlocked={startup.blocked || externalChange}
+        onRestored={() => {
+          setRestored(true);
+          setGeneration((n) => n + 1);
+        }}
+      />
+    </>
+  );
+}
+function Application({
+  storageBlocked,
+  onRestored,
+}: {
+  storageBlocked: boolean;
+  onRestored: () => void;
+}) {
   const [page, setPage] = useState<Page>("dashboard");
-  const academy = useAcademyProgress();
+  const [navigationEpoch, setNavigationEpoch] = useState(0);
+  useEffect(() => {
+    window.history.replaceState(
+      { kaeltePage: "dashboard", moduleId: null },
+      "",
+      window.location.href,
+    );
+    const back = (event: PopStateEvent) => {
+      const next = event.state?.kaeltePage;
+      setPage(navigation.some((n) => n.id === next) ? next : "dashboard");
+      setAcademyModuleId(
+        typeof event.state?.moduleId === "string" ? event.state.moduleId : null,
+      );
+      setAcademyView("overview");
+      setArticleId(null);
+      setNavigationEpoch((n) => n + 1);
+    };
+    window.addEventListener("popstate", back);
+    return () => window.removeEventListener("popstate", back);
+  }, []);
+  const academy = useAcademyProgress(storageBlocked);
   const [academyExerciseId, setAcademyExerciseId] = useState<string | null>(
     null,
   );
@@ -61,15 +148,29 @@ export default function App() {
   useEffect(() => {
     // Nach einem fehlgeschlagenen Lesen darf ein leerer Startwert keine
     // möglicherweise noch vorhandenen Lerndaten überschreiben.
-    if (initialProgress.readFailed) return;
+    if (initialProgress.readFailed || storageBlocked) return;
+    try {
+      if (localStorage.getItem(JOURNAL_KEY) !== null) {
+        setStorageError(true);
+        return;
+      }
+    } catch {
+      setStorageError(true);
+      return;
+    }
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
       setStorageError(false);
     } catch {
       setStorageError(true);
     }
-  }, [progress, initialProgress.readFailed]);
+  }, [progress, initialProgress.readFailed, storageBlocked]);
   function navigate(next: Page) {
+    window.history.pushState(
+      { kaeltePage: next, moduleId: null },
+      "",
+      window.location.href,
+    );
     setPage(next);
     if (next !== "akademie") {
       setAcademyModuleId(null);
@@ -196,10 +297,10 @@ export default function App() {
               />
               <section className="academy-entry">
                 <div>
-                  <span className="pill">NEU · VERSION 0.3</span>
+                  <span className="pill">NEU · VERSION 0.4</span>
                   <h2>Deine intelligente Lernakademie.</h2>
                   <p>
-                    Fünf Module, drei Wissensstufen und Karteikarten mit
+                    Zehn Module, drei Wissensstufen und Karteikarten mit
                     Wiederholungsplan.
                   </p>
                 </div>
@@ -483,6 +584,7 @@ export default function App() {
           {page === "rechner" && <HeatCalculator />}
           {page === "akademie" && (
             <Academy
+              key={navigationEpoch}
               initialModuleId={academyModuleId}
               initialView={academyView}
               initialExerciseId={academyExerciseId}
@@ -492,6 +594,16 @@ export default function App() {
               openCalculator={() => navigate("rechner")}
             />
           )}
+          <QualityPanel />
+          <BackupPanel
+            academy={academy.progress}
+            legacy={progress}
+            importBlocked={storageBlocked}
+            blocked={
+              storageBlocked || academy.blocked || initialProgress.readFailed
+            }
+            onRestored={onRestored}
+          />
           <footer>
             <span>
               <Snowflake size={15} /> KälteMeister Pro

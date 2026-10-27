@@ -19,7 +19,7 @@ jobs:
   build:
     name: App prüfen und bauen
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     permissions:
       contents: read
       pages: read
@@ -46,7 +46,7 @@ jobs:
         run: npm run build
 
       - name: Browser für Oberflächentests installieren
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium webkit
 
       - name: Browserprüfungen ausführen
         run: npm run test:e2e

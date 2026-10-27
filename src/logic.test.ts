@@ -171,3 +171,11 @@ it("stellt eindeutige, vollständige Artikel und eindeutige Antwortmöglichkeite
     expect(new Set(question.options).size).toBe(question.options.length);
   }
 });
+it("sperrt automatische Speicherung beschädigter Altbestände, ohne Originale zu ändern", async () => {
+  const { readProgress } = await import("./logic");
+  for (const raw of ["{", '{"read":[],"attempts":"1","best":0,"last":null}']) {
+    localStorage.setItem(STORAGE_KEY, raw);
+    expect(readProgress().readFailed).toBe(true);
+    expect(localStorage.getItem(STORAGE_KEY)).toBe(raw);
+  }
+});

@@ -1,14 +1,14 @@
-# Quellen und fachliche Qualität · Version 0.3
+# Quellen und fachliche Qualität · Version 0.4
 
 ## Was tatsächlich geprüft wurde
 
-Alle acht Rechenaufgaben haben unabhängig vorgegebene Referenzergebnisse und automatisierte Prüfungen für Zahlen, Einheiten, Umrechnungen, Toleranzgrenzen und ungültige Werte. Grundbeziehungen zur spezifischen Wärme, Gleichstromleistung und Heiz-/Kälteleistungszahl wurden im offiziellen OpenStax-Quellarchiv tatsächlich nachgelesen.
+Alle 24 Rechenaufgaben haben unabhängig vorgegebene Referenzergebnisse und automatisierte Prüfungen für Zahlen, Einheiten, Umrechnungen, Toleranzgrenzen und ungültige Werte. Grundbeziehungen zur spezifischen Wärme, Gleichstromleistung und Heiz-/Kälteleistungszahl wurden im offiziellen OpenStax-Quellarchiv tatsächlich nachgelesen.
 
 Das ist **keine unabhängige Freigabe durch eine Fachperson**. Insbesondere die kältetechnischen Messvoraussetzungen zu Dew/Bubble, Zustandsbestimmung und Anlagenbeurteilung werden nicht durch einen allgemeinen Wärmelehreabschnitt vollständig belegt. Aufgaben und bestehende Module bleiben entsprechend gekennzeichnet. Es werden keine Normen, Herstellergrenzen oder realen Kältemittelwerte erfunden.
 
 ## Tatsächlich eingesehene Referenzen
 
-Offizielles Repository: `openstax/osbooks-college-physics-bundle`, Werk **College Physics 2e**. Gelesener Stand: `66fcef29596e3a32818162b837dd0c85b754cbad`, Zugriff am **27.10.2026** über die GitHub-API. Sammlungstitel, Modulüberschriften, relevante Gleichungen und der Lizenztext wurden eingesehen.
+Offizielles Repository: `openstax/osbooks-college-physics-bundle`, Werk **College Physics 2e**. Gelesener Stand: `66fcef29596e3a32818162b837dd0c85b754cbad`, Zugriff am **27.10.2026** für 0.3 über die GitHub-API und für die zusätzlichen Elektroquellen in 0.4 über einen Git-Checkout desselben gepinnten Commits. Sammlungstitel, Modulüberschriften, relevante Gleichungen und der Lizenztext wurden eingesehen.
 
 | Register-ID                     | Fundstelle                                                                                                                                                                                                                                              | Unterstützte Beziehung und Grenzen                                                                                                                                                                                                                                      |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -22,7 +22,7 @@ Die direkten OpenStax-Webseiten für die Abschnitte 15.5 und 20.4 lieferten aus 
 
 ## Zentrales Register und Prüfstatus
 
-`src/academy/data/registers.ts` enthält alle Quellen und Formeln. `access` unterscheidet `consulted`, `unavailable` und `internal`. Eingesehene Quellen tragen Fundstelle, Prüfumfang, Datum, Lizenzhinweis und Commit. Referenzzuordnung ist nicht gleich Fachfreigabe. Neue Aufgaben nennen die für sie relevanten Register-IDs; Überhitzung/Unterkühlung geben keine unpassende allgemeine Quelle als bestätigten Spezialbeleg aus.
+`src/academy/catalog.ts` kombiniert die Quellen und Formeln aus `data/registers.ts` und `data/electrical.ts`. `access` unterscheidet `consulted`, `unavailable` und `internal`. Eingesehene Quellen tragen Fundstelle, Prüfumfang, Datum, Lizenzhinweis und Commit. Referenzzuordnung ist nicht gleich Fachfreigabe. Neue Aufgaben nennen die für sie relevanten Register-IDs; Überhitzung/Unterkühlung geben keine unpassende allgemeine Quelle als bestätigten Spezialbeleg aus.
 
 `didactic-exercises` kennzeichnet die eigenen Aufgaben und Tests. `didactic-cycle` bleibt der fiktive v0.2-Enthalpiefall, keine reale Stoffdatentabelle. Kein automatisch erzeugtes Literaturverzeichnis mit erfundenen Titeln oder Ausgaben.
 
@@ -45,4 +45,32 @@ Die Toleranz für Antworten ist eine Lern-/Rundungstoleranz, keine Messunsicherh
 
 ## Noch offene fachliche Arbeit
 
-Qualifizierte Fachprüfung der Formulierungen, kältetechnischen Spezialvoraussetzungen und Modellgrenzen organisieren. Konkrete Hersteller-/Fachunterlagen dafür tatsächlich sichten und Fundstellen hinterlegen. Bei Rechts-/Normeninhalten Ausgabe, Geltungsbereich, Rechte, Datum und Wiedervorlage prüfen. Erst nach dieser Arbeit einen erweiterten Freigabestatus einführen.
+Qualifizierte Fachprüfung der Formulierungen, kältetechnischen Spezialvoraussetzungen und Modellgrenzen organisieren. Konkrete Hersteller-/Fachunterlagen dafür tatsächlich sichten und Fundstellen hinterlegen. Bei Rechts-/Normeninhalten Ausgabe, Geltungsbereich, Rechte, Datum und Wiedervorlage prüfen. Erst nach dokumentierter Fachabnahme den dafür vorbereiteten unabhängigen Freigabestatus vergeben.
+
+
+## Zusätzlicher tatsächlicher Quellenabgleich 0.4
+
+Am 27.10.2026 wurde das offizielle Repository per Git eingesehen; HEAD entspricht weiterhin dem oben angegebenen Commit. Die folgenden CNXML-Module wurden vollständig zugänglich gemacht und die relevanten Gleichungen gelesen. Kein erfundener Zugriff auf die blockierten Webseiten.
+
+| Register-ID | Tatsächlich gelesene Fundstelle | Begrenzter Prüfumfang |
+| --- | --- | --- |
+| openstax-current-github | [Current, m42341](https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42341/index.cnxml), eip-926, eip-108 | Mittlerer Ladungsstrom I = ΔQ/Δt und A = C/s |
+| openstax-ohm-github | [Ohm’s Law: Resistance and Simple Circuits, m42344](https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml), eip-218, eip-702, eip-486 | Ohmsches Gesetz und Umstellungen, Ω = V/A; Gültigkeit des ohmschen Modells beachten |
+| openstax-circuits-github | [Resistors in Series and Parallel, m42356](https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42356/index.cnxml), eip-288, eip-801, eip-531 | Reihen-/Kehrwertsumme, Strombilanz; eigene Aufgabenwerte unabhängig nachgerechnet |
+
+Zusätzlich m42714 erneut gelesen: eip-489 (P = IV), eip-9 (E = Pt). Diese Quellen belegen physikalische Grundbeziehungen; sie geben weder reale Verdichter-/Sensorwerte noch Arbeitssicherheitsfreigaben. Die deutschsprachigen Module und fiktiven Zahlenvarianten sind selbst erstellt. Keine vollständigen Fachbuch-/Normtexte oder Abbildungen übernommen.
+
+### Neue unabhängige Referenzwerte (SI)
+
+| Aufgabenpaar | Variante A | Variante B |
+| --- | --- | --- |
+| Ladungsstrom | 0,2 A | 0,3 A |
+| Ohm: Strom | 0,2 A | 0,01 A |
+| Ohm: Spannung | 24 V | 11 V |
+| Ohm: Widerstand | 120 Ω | 1200 Ω |
+| Gleichstromleistung | 12 W | 0,6 W |
+| Elektrische Arbeit | 86400 J | 270000 J |
+| Reihenwiderstand | 360 Ω | 3200 Ω |
+| Parallelwiderstand | 80 Ω | 50 Ω |
+
+Die Tests vergleichen Produkt-Ergebnisse gegen diese separat vorgegebenen Werte, sichern SI-Umrechnung/Anzeige und fehlerhafte Eingaben ab. Alle Aufgaben/Annahmen stehen im [Prüfregister](REVIEW_REGISTER.md). Vollständige menschliche Fachabnahme ist weiterhin offen; kein Eintrag trägt den Status „Unabhängig fachlich geprüft“. Das einheitliche Statussystem wird in [QUALITY_ASSURANCE.md](QUALITY_ASSURANCE.md) erklärt.

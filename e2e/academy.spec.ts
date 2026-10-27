@@ -101,7 +101,7 @@ test("Akademie migriert Altfortschritt und zeigt alle drei Niveaus", async ({
   ).toBeVisible();
   await page.getByText("Elektrotechnik", { exact: true }).last().click();
   await expect(
-    page.getByText("Lernmodul: Gleichstromkreise · Noch nicht ausgearbeitet"),
+    page.getByText("Gleichstrom und Wechselstrom · Noch nicht ausgearbeitet"),
   ).toBeVisible();
   await noOverflow(page);
 });
@@ -175,7 +175,7 @@ test("Karteikarten verlangen eine Rückseite und planen zuverlässig eine Wieder
   await page.getByRole("button", { name: "Akademie", exact: true }).click();
   await expect(
     page.getByRole("button", {
-      name: "Karteikarten wiederholen (9)",
+      name: "Karteikarten wiederholen (19)",
       exact: true,
     }),
   ).toBeVisible();
@@ -185,7 +185,7 @@ test("Karteikarten verlangen eine Rückseite und planen zuverlässig eine Wieder
   await page.getByRole("button", { name: "Akademie", exact: true }).click();
   await expect(
     page.getByRole("button", {
-      name: "Karteikarten wiederholen (10)",
+      name: "Karteikarten wiederholen (20)",
       exact: true,
     }),
   ).toBeVisible();

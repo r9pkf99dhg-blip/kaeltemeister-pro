@@ -1,62 +1,57 @@
-# Architektur · Version 0.3
+# Architektur · Version 0.4
 
-## Ausgangslage
+## Ausgangslage und erhaltene Struktur
 
-0.2 wurde vor Beginn in `main` bestätigt (PR #4, `f74d6f6`, erfolgreicher Pages-Lauf). React/TypeScript/Vite/Tailwind, bestehende Features und GitHub Pages bleiben erhalten. Keine neuen Abhängigkeiten, Server, API-Schlüssel oder verpflichtenden Abonnements.
-
-## Gemeinsame Schichten
+Grundlage ist `main` mit Merge PR #5 (`2c846d1`, Version 0.3). React/TypeScript/Vite/Tailwind und der Pages-Pfad bleiben erhalten. Keine neue Laufzeitabhängigkeit, kein Backend, keine Accounts oder kostenpflichtigen APIs. Die technischen Änderungen erfolgen auf einem eigenen Branch.
 
 ```text
-src/technical/calculations.ts
-  SI-Einheiten und reine Rechenfunktionen
-  ↑ vorhandener Wärmeleistungsrechner und Aufgaben-Engine
-src/academy/exercises/
-  model.ts       Aufgaben-/Antwort-/Ergebnisverträge
-  data.ts        8 Zahlenaufgaben + 2 begrenzte Fachnotizen
-  items.ts       normalisierte Sicht auf vorhandene Modulfragen + 2 Elektrofragen
-  engine.ts      Snapshot und zentrale Bewertung mit Toleranz
-  TaskViews.tsx  gemeinsame Eingabe, Aufgabe, Lösung und Fachbezug
-  Exercises.tsx  Training
-src/academy/adaptive/
-  algorithm.ts   transparente Zähler, Termine, Themenempfehlungen und Aktivitäten
-  LearningDashboard.tsx
-src/academy/exams/
-  engine.ts      Auswahl, Deadline, Antwortannahme, idempotente Abgabe
-  validation.ts  persistierte Prüfungen und Ergebnisse prüfen
-  ExamMode.tsx   Konfiguration, Countdown, Durchführung und Analyse
-src/academy/progress.ts
-  v1/v2/v3-Leser, Migration, bestehende Lernaktionen
-src/academy/useAcademyProgress.ts
-  Speicherung, Fehlerhinweise und Deadline-Prüfung auch außerhalb der Prüfungsansicht
+src/technical/calculations.ts    reine SI-Rechenfunktionen und Einheitentypen
+src/academy/data/               Fachgebiete, bestehende Kälte-Inhalte, neue Elektro-Inhalte
+src/academy/catalog.ts          gemeinsame Sicht, stabile IDs ohne doppelte Wissensbestände
+src/academy/exercises/          normalisierte Aufgaben, Snapshot, Bewertung, Training
+src/academy/adaptive/           Zähler, Wiederholungen, erklärbare Empfehlungen, Dashboard
+src/academy/exams/              zeitbegrenzte Übungsprüfungen, Validierung, Analyse
+src/academy/progress.ts         geschützter v1/v2/v3-Leser und Lernaktionen
+src/academy/useAcademyProgress.ts Speicherung und Deadline auch außerhalb der Prüfung
+src/storage/backup.ts           versioniertes Backup, Validierung, Journal, Rücknahme
+src/storage/BackupPanel.tsx     Dateiauswahl, Vorschau, Bestätigung, Download
+src/quality/register.ts        einheitliche Prüfstatus und vollständiges Inhaltsregister
+scripts/generate-review.mjs    bearbeitbarer Fachprüfbericht aus demselben Register
 ```
 
-Die vorhandenen 20 Modulfragen werden für Prüfungen adaptiert, nicht unabhängig kopiert. Formeln und Quellen bleiben im gemeinsamen Register. Die technische Engine berechnet in SI; Anzeige-/Antwort-Einheiten sind Adapter. Der alte Wärmeleistungsrechner erhält seine bisherigen Eingaben/Ausgaben und ruft denselben Wärmekern auf.
+Der vorhandene Wärmeleistungsrechner und alle Zahlenaufgaben verwenden denselben SI-Kern. Neue Funktionen sind Ladungsstrom, drei Ohm-Umstellungen, elektrische Arbeit sowie Reihen-/Parallelwiderstand. Das Formelregister beschreibt die Gleichung; Formeltexte werden nicht als Code ausgeführt. SI-Werte und Anzeigeeinheiten sind getrennt. Große Parallelwiderstände werden ohne unnötigen Produktüberlauf verarbeitet.
 
-Der Prüfungsmodus nutzt dieselben Eingabe-/Lösungsbausteine und denselben Grader wie das Training. Lösungen bleiben vor Abgabe verborgen. Ein Snapshot trennt eine laufende Prüfung von späterem Katalogwechsel. `finishExam` leert die aktive Sitzung und fügt deren ID genau einmal hinzu; wiederholte Deadline-Prüfungen zählen keine weiteren Versuche.
+Modulfragen werden für Prüfungen adaptiert, nicht als zweiter Fragenkatalog kopiert. Die bisherigen acht Aufgaben/IDs bleiben erhalten; 16 Elektro-Varianten ergänzen sie. Das Inhaltsmodell ergänzt nur optionale Voraussetzungen und Sicherheitshinweise. Es gibt keinen generischen Formelparser und keine neue Pluginplattform.
 
-## Beziehungen und Zukunft
+## Speichergrenze und Wiederherstellung
 
-```mermaid
-flowchart LR
-  K[Gemeinsamer Fachkatalog] --> T[Aufgaben und Modulfragen]
-  F[Formelregister] --> T
-  S[Quellenregister] --> F
-  C[SI-Rechenkern] --> R[Technische Rechner]
-  C --> G[Aufgaben-Grader]
-  T --> G
-  G --> A[Adaptive Zähler und Termine]
-  G --> E[Prüfungs-Snapshot und Analyse]
-  A --> D[Lern-Dashboard]
-  E --> D
-  D --> P[Versionierter lokaler Fortschritt]
-```
+Browserfortschritt bleibt `schemaVersion: 3` unter dem bisherigen v3-Schlüssel. Das neue Dateiformat hat eine separate `schemaVersion: 1`. Bestehende v2-Zeichenfolgen bleiben erhalten; alte Ergebnisse/Snapshots bleiben lesbar. Keine erfundenen historischen Versuche.
 
-Ein zukünftiger Rechner kann denselben Berechnungstyp verwenden. log(p)-h-Diagramme benötigen zusätzlich verifizierte Zustands-/Stoffdaten und passende Kältemittelmodelle; sie werden nicht mit der sensiblen Wärmeformel simuliert. Bauteile, Diagnosefälle, Anlagenplanung und Projektdokumentation sollen stabile Fach-, Formel- und Quellen-IDs referenzieren. Keine unabhängigen zweiten Wissens- oder Formelbestände aufbauen.
+Der kleine `StoragePort` kapselt die benötigten Speicheroperationen für Backup/Restore und Fehlerprüfungen. Er ist die spätere Grenze zu IndexedDB. Eine lokale Wiederherstellung benötigt wegen mehrerer Schlüssel ein pending/committed-Journal. Vor App-Mount wird es sicher wiederaufgenommen. Nach Erfolg wird der React-Baum mit neu gelesenen Daten neu gestartet, damit alte Hooks keinen alten Stand zurückschreiben. Bei nicht abgeschlossener Rücknahme verhindert die Journalprüfung weitere Speicherwirkungen. Siehe [BACKUP_RESTORE.md](BACKUP_RESTORE.md).
 
-## Grenzen
+Andere Tabs werden über native storage-Ereignisse als veraltet erkannt und müssen neu laden. Das ist bewusst keine Mehrgeräte-/Mehrtab-Zusammenführung. Gleichzeitige Bearbeitung hat weiterhin Grenzen; vor Import andere Tabs schließen. Eine spätere Synchronisation erfordert Ereignisidentität, Reset-Generation und Konfliktregeln. Es gibt keine externe Datenübertragung.
 
-Kein CMS, Backend, allgemeiner Formelparser oder dynamisches Ausführen von Formeltexten. Keine realen Kältemittel-Stoffdaten. V3 speichert aggregierte Lernzähler, letzte Antworten, Aktivitäten und bis zu 20 Prüfungs-Snapshots; noch keine vollständige Ereignishistorie jedes Trainingsversuchs. Optionale Synchronisation braucht später Ereignis-/Reset-IDs, Konfliktregeln und Datenschutzentscheidungen.
+## Navigation und Bedienung
 
-## Veröffentlichung
+Die vorhandene Buttonnavigation bleibt. App-Seiten und Modulwechsel erzeugen Browser-History-Einträge; Zurück/Vor stellt die App-Ansicht wieder her. Temporäre Filter und Niveaus werden dabei nicht als vollständiger Navigationszustand archiviert. Nach Neuladen beginnt die App weiterhin auf dem Dashboard; gespeicherter Lernstand und Prüfungsdeadline bleiben erhalten. Die letzte Lerneinheit ist über das Dashboard erreichbar. Dateidownload erfolgt über einen echten, vom Nutzer ausgelösten Download-Link; Dateiauswahl über ein natives input-Feld.
 
-Basispfad bleibt `/kaeltemeister-pro/`. Bestehende CI-/Pages-Workflows laufen auf PRs bzw. Push auf `main` und `workflow_dispatch`, mit bisherigen Berechtigungen und offiziellen Actions. Neue Tests werden über die bestehenden Befehle mit ausgeführt. Ein PR-Merge wird nicht automatisch vorgenommen. Erst danach ist der neue Produktions-Deploy überprüfbar.
+## Gesamtplattform und spätere Anschlüsse
+
+| Modul | Gemeinsamer Anschluss / fehlende Voraussetzung |
+| --- | --- |
+| Lernakademie | Modul-, Aufgaben-, Formel- und Quellen-IDs; adaptive Leistung |
+| Fachbibliothek | gleiche Begriffe und Quellen, kein zweiter Fachbestand |
+| Professionelle Rechner | derselbe SI-Kern, zusätzliche validierte Randbedingungen |
+| log-p-h-Diagramme | verifizierte Stoff-/Zustandsmodelle und Rechte erforderlich |
+| Kältemittel-/Stoffwerte | Referenzzustände, Unsicherheit und Aktualisierung separat klären |
+| Komponenten-/Bauteile | reale Herstellerdaten und Freigaben statt fiktiver Lernwerte |
+| Diagnose | Fälle referenzieren Formeln, Messgrößen und mehrere Hypothesen |
+| Planung/Auslegung | geprüfte Systemgrenzen, keine direkte Übernahme einfacher Lernmodelle |
+| Wartung/Inbetriebnahme | qualifizierte Fachabnahme und aktuelle Sicherheitsgrundlagen |
+| Technische Dokumentation | Projekte referenzieren dieselben Entitäten/Quellen/Revisionen |
+
+Keine dieser zukünftigen Funktionen wird als fertiger leerer Menüpunkt vorgetäuscht.
+
+## Veröffentlichung und Qualität
+
+Pages nutzt weiterhin offizielle configure/upload/deploy-Actions, main-Push und workflow_dispatch. PRs bauen/testen ohne Veröffentlichung. Beide Workflows installieren jetzt Chromium und WebKit. Konfiguration ist kein Nachweis eines ausgeführten Apple-Tests; lokale Downloadbeschränkung und echte Gerätegrenzen stehen im Testplan. Der externe Fachprüfstatus bleibt unabhängig von jeder CI-Ampel.

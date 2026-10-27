@@ -1,3 +1,5 @@
+> Historischer Bericht für 0.3. Aktuell: [Version 0.4](VERSION_0_4.md).
+
 # Version 0.3 · Intelligente Lernakademie
 
 ## Geprüfte Ausgangslage
