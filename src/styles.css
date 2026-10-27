@@ -1388,6 +1388,19 @@ progress::-moz-progress-bar {
   }
 }
 @media (max-width: 700px) {
+  /* Die feste Navigation darf beim Scrollen/Fokussieren keine Bedienelemente
+     verdecken. Der zusätzliche Abstand gilt auch für scrollIntoView. */
+  html {
+    scroll-padding-bottom: calc(86px + env(safe-area-inset-bottom));
+  }
+  button,
+  input,
+  select {
+    scroll-margin-block: 86px;
+  }
+  .button:hover:not(:disabled) {
+    transform: none;
+  }
   .sidebar {
     width: 100%;
     height: 66px;
