@@ -1,5 +1,6 @@
 import RearrangementTrainer from "./foundations/RearrangementTrainer";
-import { BlockMath, MathText, VariableDefinitions, SolutionSteps } from "../math/Math";
+import { MathText } from "../math/Math";
+import LessonReading from "./components/LessonReading";
 import { numericTasks } from "./exercises/data";
 import Exercises from "./exercises/Exercises";
 import ExamMode from "./exams/ExamMode";
@@ -485,59 +486,7 @@ function ModuleView({
           ))}
         </ul>
       </section>
-      <section>
-        <h2>Einfacher Einstieg</h2>
-        <p><MathText text={content.introduction} /></p>
-      </section>
-      <section>
-        <h2>Fachliche Erklärung</h2>
-        <p><MathText text={content.explanation} /></p>
-      </section>
-      <section>
-        <h2>Technische Zusammenhänge</h2>
-        <p><MathText text={content.connections} /></p>
-      </section>
-      <section>
-        <h2>Formeln und Einheiten</h2>
-        {module.formulaIds.map((id) => {
-          const formula = formulas.find((item) => item.id === id)!;
-          return (
-            <div className="learning-formula" key={id}>
-              <h3>{formula.title}</h3>
-              <BlockMath tex={formula.tex ?? formula.expression} label={formula.expression} />
-              {formula.variables && <VariableDefinitions variables={formula.variables} />}
-              <p>
-                <strong>Einheiten:</strong> {formula.units}
-              </p>
-              <p>
-                <strong>Gültigkeit:</strong> {formula.assumptions}
-              </p>
-              {formula.calculatorId && (
-                <button className="text-button" onClick={openCalculator}>
-                  Passenden Rechner öffnen <ArrowRight size={16} />
-                </button>
-              )}
-            </div>
-          );
-        })}
-      </section>
-      {content.derivation && <section><h2>Warum funktioniert das? Schrittweise Herleitung</h2><SolutionSteps steps={content.derivation} /></section>}
-      <section>
-        <h2>Durchgerechnetes Praxisbeispiel</h2>
-        <p><MathText text={content.example} /></p>
-      </section>
-      <section>
-        <h2>Typische Fehler</h2>
-        <ul>
-          {content.mistakes.map((mistake) => (
-            <li key={mistake}><MathText text={mistake} /></li>
-          ))}
-        </ul>
-      </section>
-      <section className="takeaway">
-        <h2>Zusammenfassung</h2>
-        <p><MathText text={content.summary} /></p>
-      </section>
+      <LessonReading module={module} level={level} openCalculator={openCalculator} />
       <button
         className="button primary"
         disabled={moduleRead(progress, module.id, level)}

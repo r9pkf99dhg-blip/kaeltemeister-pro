@@ -21,6 +21,13 @@ Veraltete Aufgabenrevisionen werden nicht als aktuelle Fehlerbelege verwendet. L
 
 Kompetenzfortschritt wird aus dem bestehenden v3-Lernstand abgeleitet, kein zweiter widersprüchlicher Cache. Die Verknüpfungen gehören zum Fachkatalog und optional zu Prüfungssnapshots; alte Snapshots ohne diese Felder bleiben lesbar. Backupformat 1 und Lerndatenschema 3 bleiben erhalten.
 
-Die Rückkehr zur Originalaufgabe darf deren Eingabe und Einheit nicht verlieren. Dafür ist eine eingeblendete Lektion innerhalb des laufenden Trainings vorgesehen; keine neue Hauptnavigation, die das Training verwirft. Eine über Neuladen hinweg fortsetzbare unbewertete Eingabe würde später einen eigenen versionierten Entwurfsvertrag benötigen.
+Die Rückkehr zur Originalaufgabe darf deren Eingabe und Einheit nicht verlieren. Dafür ist eine eingeblendete vorhandene Lektion innerhalb des laufenden Trainings implementiert; keine neue Hauptnavigation, die das Training verwirft. Eine über Neuladen hinweg fortsetzbare unbewertete Eingabe würde später einen eigenen versionierten Entwurfsvertrag benötigen.
 
 Spätere professionelle Rechner/Diagnosefälle sollen dieselben Kompetenz-, Formel- und Grundlagen-IDs verwenden. Vor einer tieferen Fehlerursachenerkennung werden fehlertypbezogene Aufgabenbelege und getrennte Unsicherheiten benötigt.
+
+
+## Tatsächlich implementierte Lernbrücke
+
+Nach einer objektiv falschen Zahlenantwort erscheint eine begründete Empfehlung. Die vorhandene Grundlagenlektion wird mit derselben Lesekomponente eingeblendet, einschließlich Formeln, Herleitung, Beispiel, Fehlerhinweisen und Selbsttest. Lesen und Antworten verwenden die vorhandenen Speicheraktionen. Die ursprüngliche Aufgabe bleibt mit Eingabe/Einheit im React-Baum; der Rückkehrbutton schließt die Lektion und fokussiert wieder das Ergebnisfeld. Richtige Antworten oder bloß ungültige Eingaben lösen keine behauptete Wissensdiagnose aus.
+
+Gilt für das Zahlentraining, nicht während einer laufenden Übungsprüfung. Keine dauerhafte Speicherung eines offenen Brückenpanels oder einer unbewerteten Eingabe über Neuladen hinweg. Kein tieferes kausales Fehlermodell. Weitergehende automatische Diagnose bleibt ein zukünftiges Modul.

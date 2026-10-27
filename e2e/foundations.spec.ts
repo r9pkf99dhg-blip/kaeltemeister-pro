@@ -34,3 +34,13 @@ test('Chemie-Kernpfad zeigt echten Formelsatz und rechnet mol mit kompatiblen Ei
  await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
  await expect(page.locator('.math-error')).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
+test('Lernbrücke erklärt den Grund und erhält die ursprüngliche Rechnung beim Zurückkehren',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Rechenaufgaben üben →',exact:true}).click();
+ await page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true}).fill('1');await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();
+ await page.getByRole('button',{name:'Empfohlene Grundlage öffnen',exact:true}).click();await expect(page.getByRole('region',{name:'Eingeblendete Grundlagenlektion'})).toBeVisible();
+ await page.getByRole('button',{name:'Grundlage als gelesen markieren',exact:true}).click();await page.getByRole('button',{name:'Zur ursprünglichen Aufgabe zurück',exact:true}).click();
+ await expect(page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true})).toHaveValue('1');await expect(page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true})).toHaveValue('kW');
+ await expect(page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true})).toBeFocused();
+ await page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true}).fill('10,45');await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

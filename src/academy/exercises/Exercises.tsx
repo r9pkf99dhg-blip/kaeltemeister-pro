@@ -1,3 +1,4 @@
+import LearningBridge from "../foundations/LearningBridge";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import { numericTasks } from "./data";
 import { gradeSnapshot, snapshotItem } from "./engine";
@@ -35,6 +36,7 @@ export default function Exercises({
   const [answer, setAnswer] = useState<ItemAnswer>(emptyAnswer(task));
   const [grade, setGrade] = useState<Grade | null>(null);
   const [hint, setHint] = useState(false);
+  const [bridgeLesson, setBridgeLesson] = useState<string | null>(null);
   function check() {
     const result = gradeSnapshot(snapshotItem(task), answer);
     setGrade(result);
@@ -82,6 +84,7 @@ export default function Exercises({
             setAnswer(emptyAnswer(next));
             setGrade(null);
             setHint(false);
+            setBridgeLesson(null);
           }}
         >
           {tasks.map((item) => (
@@ -148,6 +151,7 @@ export default function Exercises({
                 : "erneut üben"}
             </p>
           )}
+        {grade?.status === 'incorrect' && <LearningBridge task={task} progress={progress} setProgress={setProgress} lessonId={bridgeLesson} openLesson={setBridgeLesson} closeLesson={()=>{setBridgeLesson(null);document.getElementById(`result-${task.id}`)?.focus();}} />}
         <TaskReference item={task} openModule={openModule} />
       </div>
     </section>
