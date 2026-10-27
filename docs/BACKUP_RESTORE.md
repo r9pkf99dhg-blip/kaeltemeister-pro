@@ -1,4 +1,4 @@
-# Datensicherung und Wiederherstellung · Version 0.4
+# Datensicherung und Wiederherstellung · Version 0.5
 
 ## Am iPad, iPhone oder Computer
 
@@ -18,7 +18,7 @@ Ein Import ersetzt vollständig; es gibt keine Zusammenführung. Eine laufende P
 {
   "format": "kaeltemeister-pro-backup",
   "schemaVersion": 1,
-  "appVersion": "0.4.0",
+  "appVersion": "0.5.0",
   "exportedAt": "2026-10-27T18:00:00.000Z",
   "data": {
     "academy": { "schemaVersion": 3 },
@@ -60,3 +60,12 @@ Das Journal benötigt zusätzlich freien Speicher. Bei Speicherfehler: keine Bro
 Änderungen an Lerndatenschlüsseln, Generation oder Journal aus einem anderen Tab sperren dessen weitere automatische Speicherung und fordern Neuladen. Vor einem Import alle anderen Tabs schließen. Dies ist Konflikterkennung, keine verteilte Transaktion oder Zusammenführung gleichzeitiger Bearbeitung. Bei offenen Schreibvorgängen wird vor dem Speichern zusätzlich auf das Journal geprüft.
 
 Keine Accounts, Telemetrie oder Cloud-API. Ein zukünftiger IndexedDB-Adapter braucht echte Transaktionen und Migrationsprüfungen. Gerätesynchronisierung benötigt separat Ereignis-IDs, Löschgenerationen, Konfliktregeln und ausdrückliche Entscheidung über Datenübertragung; Zeitstempel allein reichen nicht.
+
+
+## Kompatibilität 0.4 → 0.5
+
+Dateiformat 1 und Fortschrittsschema 3 bleiben unverändert. Neue Module, Fragen, Karten und Kompetenzen nutzen stabile zusätzliche IDs und vorhandene Speicherfelder. TeX-/Kompetenzangaben in neuen Aufgaben-Snapshots sind optional; alte Snapshots brauchen sie nicht.
+
+Die Testdatei `src/storage/fixtures/v04-backup.json` wurde mit den echten Funktionen aus main `163b9b7` erzeugt, nicht mit dem neuen Code rekonstruiert. Sie enthält ausschließlich fiktive Lernantworten und prüft das Beibehalten von altem Quizaggregat, v2-Rückfallkopie, Karten und vollständiger Prüfungshistorie. Neue negative Mathematik-Snapshots werden ebenfalls exportiert, importiert und bewertet.
+
+Neue Sicherungen können neue Aufgabentypen enthalten, die eine alte App 0.4 nicht kennt. Deshalb für solche Sicherungen 0.5 oder später verwenden. Eine vollständige Rückwärtskompatibilität neuer Daten zu älteren Apps wird nicht versprochen. Unbekannte Versionen/Datentypen werden geschützt statt still überschrieben. Die offene Brückenlektion, temporäre Filter und die aktuelle Trainerschrittauswahl werden nicht als dauerhafte Benutzereinstellungen gespeichert.

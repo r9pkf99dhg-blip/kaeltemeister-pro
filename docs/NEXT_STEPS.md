@@ -1,27 +1,50 @@
-# Wiederaufnahme · Version 0.5
+# Version 0.5 · Wiederaufnahme, Übernahme und iPad-Test
 
-Basis: main `163b9b7`, Version 0.4. Entwicklungsbranch `feat/foundations-academy-v05`. Kein automatischer Merge.
+Feature-Branch: `feat/foundations-academy-v05`. Grundlage: main `163b9b7`, Version 0.4. Kein automatischer Merge.
 
-## Erledigt
+## Abgeschlossene Etappen
 
-- Etappe A: Architektur, Roadmap, Lern-/Aufgabenmodelle und Speichersystem analysiert.
-- 184 vorhandene Tests, TypeScript-Prüfung und Produktionsbuild erfolgreich.
-- Zwischenzeitlicher Ausfall der Cloud-Umgebung vor dem ersten Commit; danach unveränderten Branch überprüft.
+| Etappe | Commit | Stand |
+| --- | --- | --- |
+| A | 1d521d5 | Repository/Architektur/Roadmap analysiert, Basistests bestätigt, Unterbrechungsplan gesichert |
+| B | d5c2c35 | Professioneller lokaler Formelsatz, Migration und Fehlertests |
+| C | f9a3691 | Acht vollständige Mathematik-Kernlektionen und Umstellungstrainer |
+| D | 6cf7268 | Vier Physik-Kernlektionen mit zwölf Zahlenaufgaben |
+| E | 0ba0930 | Drei Chemie-Kernlektionen mit sechs Zahlenaufgaben |
+| F | 3784efc | Kompetenzverknüpfungen, Voraussetzungen und Fachgebiets-Audit |
+| G | 485e2b0 | Lernbrücke im Training mit erhaltener Originalantwort |
+| H | b1a2a34 | Echte 0.4-Backup-Kompatibilität, 262 Tests, Typprüfung und Build; 120 abschließende Chromium-Tests erfolgreich |
 
-## Als Nächstes
+Alle technischen Etappen wurden normal auf GitHub gepusht. Die abschließende Dokumentation liegt im letzten Dokumentationscommit. Ein anfänglicher Ausfall der Cloud-Umgebung wurde vor dem ersten Commit erkannt; anschließend wurde der unveränderte Stand geprüft und sofort gesichert.
 
-1. Etappe B abgeschlossen: KaTeX/mhchem-Komponenten, 19 Registerformeln, 24 Musterlösungen, Syntax-/Sicherheits-/Regressionstests. Siehe FORMULA_RENDERING.md.
-2. Etappe C abgeschlossen: acht vollständige Mathematiklektionen, 21 Zahlenaufgaben, elf Umstellungsziele mit begründeten Schritten, Quellen und vorhandener Fortschrittsspeicherung. 222 Tests sowie fünf neue Kernkurs-Browserprüfungen erfolgreich. Siehe MATHEMATICS_CURRICULUM.md.
-3. Etappe D abgeschlossen: vier Physik-Kernmodule, zwölf Zahlenaufgaben, 242 Funktionstests und zehn Kernkurs-Browserprüfungen erfolgreich. Etappe E abgeschlossen: drei Chemie-Kernmodule und sechs Aufgaben, 250 Tests und 15 Kernkurs-Browserprüfungen erfolgreich.
-4. Etappen F/G vorbereitet: stabile Kompetenzen für alle 63 Zahlenaufgaben, gültige azyklische Modulvoraussetzungen, Fachgebiets-Audit und weitere Lehrpläne. 252 Tests sowie vollständige Chromium-Regression mit 115 bestandenen Prüfungen. Etappe G abgeschlossen: Lernbrücke im Zahlentraining mit gemeinsamer Lesekomponente und Rückkehr zu erhaltener Eingabe/Einheit; 253 Funktionstests und 20 Kernkurs-/Brücken-Browserprüfungen erfolgreich.
-5. Etappe H Zwischenstand: 262 Tests, Typprüfung und Build erfolgreich. Echte 0.4-Sicherung und neue Mathematik-Snapshots kompatibel; explizite Bruchantwortdarstellung, aufklappbare Lösungen, feste Zahlenvarianten und Quellenstatus abgesichert. Als Nächstes vollständige abschließende Browser-Regression, CI/WebKit, Dokumentation und PR.
+## Noch zu erledigen / bewusst offen
 
-Details: IMPLEMENTATION_0_5.md. Jede abgeschlossene Etappe mit Typprüfung, Tests und Build absichern, dokumentieren, committen und auf GitHub pushen. Verbleibende Oberstufen- und Fachthemen als Planung kennzeichnen. Keine unfertigen Attrappen veröffentlichen.
+1. Automatischen PR anlegen, falls GitHub-API verfügbar. Bei HTTP 403 den direkten Vergleich öffnen und PULL_REQUEST_0_5.md verwenden.
+2. Den neuesten GitHub-Lauf einschließlich WebKit prüfen; vor dem Merge müssen die PR-Checks grün sein. CI-Konfiguration allein ist kein Testnachweis.
+3. Merge nur nach ausdrücklicher Nutzerfreigabe. main und gespeicherte Lerndaten nicht überschreiben; kein Force-Push.
+4. Echte iPad-/iPhone-Safari-Prüfung nach APPLE_TEST_PLAN; keine Hardwareprüfung wurde hier durchgeführt.
+5. Unabhängige Fachabnahme anhand REVIEW_REGISTER. Weiterführende Lehrplaninhalte sind ausdrücklich geplant (Curriculumsdateien/ROADMAP), keine halbfertigen angeblich fertigen Module.
+6. Eine dauerhaft gespeicherte unbewertete Eingabe/Trainerposition, tiefere Fehlerursachendiagnose, Cloud-Synchronisation und professionelle Rechner bleiben spätere Aufgaben.
 
 ## Wiederaufnahme nach Unterbrechung
 
-`git status` und letzte Commits prüfen; Änderungen erhalten. Den vorhandenen Branch weiterverwenden. Abhängigkeiten bei Bedarf mit `npm ci --cache /tmp/kaeltemeister-npm-cache` installieren. Typprüfung/Tests/Build ausführen und die nächste offene Etappe beginnen. Keine Browserdaten löschen, alte IDs nicht umdeuten. Bei erneutem Umgebungsfehler keine erfolgreichen Commits/Pushes behaupten.
+1. `git status`, `git log` und diese Tabelle lesen. Fremde Änderungen erhalten.
+2. Vorhandenen Branch weiterverwenden, Remote-Stand holen und vergleichen. Keine neue Implementierung vom alten main beginnen.
+3. `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`.
+4. Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`, wenn der Systembrowser vorhanden ist. Ansonsten Playwright-Browser installieren; vollständiger CI-Pool enthält Chromium und WebKit.
+5. Bei Fehlern erst Ursache beheben, erneut prüfen, dann committen/pushen. Erfolgreiche Commits/Pushes immer tatsächlich kontrollieren.
+6. `npm run docs:review` und `npm run docs:audit` erzeugen Berichte aus dem Katalog. Die echte historische Datei unter storage/fixtures nicht mit neuen Produktfunktionen überschreiben.
 
-## Daten und iPad
+## Auf dem iPad nach freigegebenem Merge
 
-Vor eigenen Tests JSON-Sicherung erstellen und in Dateien aufbewahren. Import nur nach Vorschau/Bestätigung; andere Tabs schließen. Bestehende v1/v2/v3-Lernstände und alte Sicherungen müssen lesbar bleiben. Veröffentlichung erst nach freigegebenem PR-Merge und erfolgreichem main-Pages-Lauf. Echte Geräteprüfung nach APPLE_TEST_PLAN; WebKit ersetzt kein echtes iPad.
+Nach grünem main-Pages-Deploy Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/. Auf Version 0.5 achten und neu laden. Zuerst eigene Sicherung erstellen und in Dateien speichern.
+
+- **Mit Mathematik beginnen:** Rechenregeln → Brüche/Prozent → Algebra/Gleichungen → Potenzen/Einheiten → Formeln umstellen. Voraussetzungen sind verlinkt.
+- **Brüche:** Subtraktionsaufgabe 1/4 − 3/4 mit `-1/2` oder `-0,5` über die normale Minustaste lösen.
+- **Trainer:** p=F/A nach A wählen; beide Seiten mit A, anschließend durch p. Erklärung, Vereinfachung und Probe kontrollieren.
+- **Physik:** Druck mit 100 N und 20 cm² ergibt 50000 Pa = 0,5 bar.
+- **Chemie:** 9 g bei vorgegebenen 18 g/mol ergibt 0,5 mol = 500 mmol.
+- **Lernbrücke:** Wärmeleistung zuerst mit 1 kW falsch beantworten, empfohlene Grundlage öffnen, lesen/üben und zurückkehren. Antwort/Einheit bleiben erhalten; anschließend 10,45 kW prüfen.
+- **Backup:** Eigene alte 0.4-Sicherung nur nach zusätzlicher Sicherung des aktuellen Stands importieren. Vorschau lesen, Ersetzen ausdrücklich bestätigen, weitere Tabs schließen. Alte Daten bleiben kompatibel; neue Aufgabentypen benötigen 0.5 oder später.
+
+Mehr Details und Fehlervorlage: APPLE_TEST_PLAN. Browseruhr und lokaler Lernstand sind manipulierbar; die Übungsprüfung ist selbst erstellt und nicht offiziell.

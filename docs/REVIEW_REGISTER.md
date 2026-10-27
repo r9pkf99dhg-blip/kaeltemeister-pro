@@ -1,4 +1,4 @@
-# Fachliches Prüfregister · Version 0.4
+# Fachliches Prüfregister · Version 0.5
 
 Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.
 
@@ -677,6 +677,681 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## module:math-arithmetic/grundlagen: Zahlen und Rechenregeln · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Rechne \(-8+3\cdot4\): Zuerst \(3\cdot4=12\), dann \(-8+12=4\). Mit Klammern dagegen \((-8+3)\cdot4=-5\cdot4=-20\). Gegenbeispiel mit Dezimalzahlen: \(1{,}5+2\cdot0{,}25=2\). Der Überschlag macht die Größenordnung sichtbar.
+- Annahmen: Bei Temperaturdifferenzen müssen Vorzeichen und Betrag unterschieden werden. Von −10 °C auf −4 °C beträgt die Änderung +6 K. Beim Abkühlen kann eine gerichtete Änderung negativ sein; ein technischer Betragsrechner muss das ausdrücklich sagen. Überschlag und Einheitenprüfung ergänzen die reine Zahl.
+- Mögliche Fehler: Ohne Klammern einfach von links nach rechts alles rechnen. Das Minus vor einer negativen Zahl übersehen; Dezimalkomma mit Tausendertrennung verwechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-arithmetic/fachkraft: Zahlen und Rechenregeln · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Rechne \(-8+3\cdot4\): Zuerst \(3\cdot4=12\), dann \(-8+12=4\). Mit Klammern dagegen \((-8+3)\cdot4=-5\cdot4=-20\). Gegenbeispiel mit Dezimalzahlen: \(1{,}5+2\cdot0{,}25=2\). Der Überschlag macht die Größenordnung sichtbar.
+- Annahmen: Bei Temperaturdifferenzen müssen Vorzeichen und Betrag unterschieden werden. Von −10 °C auf −4 °C beträgt die Änderung +6 K. Beim Abkühlen kann eine gerichtete Änderung negativ sein; ein technischer Betragsrechner muss das ausdrücklich sagen. Überschlag und Einheitenprüfung ergänzen die reine Zahl.
+- Mögliche Fehler: Ohne Klammern einfach von links nach rechts alles rechnen. Das Minus vor einer negativen Zahl übersehen; Dezimalkomma mit Tausendertrennung verwechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-arithmetic/meister: Zahlen und Rechenregeln · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Rechne \(-8+3\cdot4\): Zuerst \(3\cdot4=12\), dann \(-8+12=4\). Mit Klammern dagegen \((-8+3)\cdot4=-5\cdot4=-20\). Gegenbeispiel mit Dezimalzahlen: \(1{,}5+2\cdot0{,}25=2\). Der Überschlag macht die Größenordnung sichtbar.
+- Annahmen: Bei Temperaturdifferenzen müssen Vorzeichen und Betrag unterschieden werden. Von −10 °C auf −4 °C beträgt die Änderung +6 K. Beim Abkühlen kann eine gerichtete Änderung negativ sein; ein technischer Betragsrechner muss das ausdrücklich sagen. Überschlag und Einheitenprüfung ergänzen die reine Zahl.
+- Mögliche Fehler: Ohne Klammern einfach von links nach rechts alles rechnen. Das Minus vor einer negativen Zahl übersehen; Dezimalkomma mit Tausendertrennung verwechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-fractions/grundlagen: Brüche verstehen und berechnen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Addition: \(\frac12+\frac14=\frac34=0{,}75\). Subtraktion: \(\frac34-\frac12=\frac14\). Produkt: \(\frac23\cdot\frac34=\frac6{12}=\frac12\). Division: \(\frac23:\frac45=\frac23\cdot\frac54=\frac56\). Beim Kürzen von \(\frac{6}{12}\) werden beide Zahlen durch 6 geteilt.
+- Annahmen: Ein Doppelbruch ist ein Quotient zweier Quotienten. \(\frac{1}{\frac1{120}+\frac1{240}}=80\) erklärt einen parallelen Ersatzwiderstand. Der Kehrwert ist ein eigener letzter Schritt. Mathematisch zulässige Brüche sind noch kein Beleg, dass ein elektrisches Ersatzmodell physikalisch passt.
+- Mögliche Fehler: Zähler und Nenner beim Addieren unabhängig addieren. Aus Summen einzelne Zahlen kürzen oder bei Division den Kehrwert vergessen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-fractions/fachkraft: Brüche verstehen und berechnen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Addition: \(\frac12+\frac14=\frac34=0{,}75\). Subtraktion: \(\frac34-\frac12=\frac14\). Produkt: \(\frac23\cdot\frac34=\frac6{12}=\frac12\). Division: \(\frac23:\frac45=\frac23\cdot\frac54=\frac56\). Beim Kürzen von \(\frac{6}{12}\) werden beide Zahlen durch 6 geteilt.
+- Annahmen: Ein Doppelbruch ist ein Quotient zweier Quotienten. \(\frac{1}{\frac1{120}+\frac1{240}}=80\) erklärt einen parallelen Ersatzwiderstand. Der Kehrwert ist ein eigener letzter Schritt. Mathematisch zulässige Brüche sind noch kein Beleg, dass ein elektrisches Ersatzmodell physikalisch passt.
+- Mögliche Fehler: Zähler und Nenner beim Addieren unabhängig addieren. Aus Summen einzelne Zahlen kürzen oder bei Division den Kehrwert vergessen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-fractions/meister: Brüche verstehen und berechnen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Addition: \(\frac12+\frac14=\frac34=0{,}75\). Subtraktion: \(\frac34-\frac12=\frac14\). Produkt: \(\frac23\cdot\frac34=\frac6{12}=\frac12\). Division: \(\frac23:\frac45=\frac23\cdot\frac54=\frac56\). Beim Kürzen von \(\frac{6}{12}\) werden beide Zahlen durch 6 geteilt.
+- Annahmen: Ein Doppelbruch ist ein Quotient zweier Quotienten. \(\frac{1}{\frac1{120}+\frac1{240}}=80\) erklärt einen parallelen Ersatzwiderstand. Der Kehrwert ist ein eigener letzter Schritt. Mathematisch zulässige Brüche sind noch kein Beleg, dass ein elektrisches Ersatzmodell physikalisch passt.
+- Mögliche Fehler: Zähler und Nenner beim Addieren unabhängig addieren. Aus Summen einzelne Zahlen kürzen oder bei Division den Kehrwert vergessen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-percent/grundlagen: Prozentrechnung und Dreisatz · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-percent-rule, math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 15 % von 200 sind \(200\cdot0{,}15=30\). Ein Anteil von 30 an 200 ergibt \(\frac{30}{200}=0{,}15=15\%\). Ein fiktiver konstanter Preis: 3 Stück kosten 12 Einheiten; 1 Stück kostet 4, 5 Stück kosten 20. Die Proportionalität wird vorausgesetzt.
+- Annahmen: Ein prozentualer Anstieg und eine anschließende Absenkung um denselben Prozentsatz heben sich nicht auf, weil der zweite Grundwert anders ist. 100 → plus 10 % ergibt 110; davon minus 10 % ergibt 99. Bei Messabweichungen muss der verwendete Referenzwert ausdrücklich genannt werden.
+- Mögliche Fehler: 15 statt 0,15 als Multiplikator einsetzen. Einen Dreisatz ohne proportionale Beziehung benutzen oder den Referenzwert wechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-percent/fachkraft: Prozentrechnung und Dreisatz · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-percent-rule, math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 15 % von 200 sind \(200\cdot0{,}15=30\). Ein Anteil von 30 an 200 ergibt \(\frac{30}{200}=0{,}15=15\%\). Ein fiktiver konstanter Preis: 3 Stück kosten 12 Einheiten; 1 Stück kostet 4, 5 Stück kosten 20. Die Proportionalität wird vorausgesetzt.
+- Annahmen: Ein prozentualer Anstieg und eine anschließende Absenkung um denselben Prozentsatz heben sich nicht auf, weil der zweite Grundwert anders ist. 100 → plus 10 % ergibt 110; davon minus 10 % ergibt 99. Bei Messabweichungen muss der verwendete Referenzwert ausdrücklich genannt werden.
+- Mögliche Fehler: 15 statt 0,15 als Multiplikator einsetzen. Einen Dreisatz ohne proportionale Beziehung benutzen oder den Referenzwert wechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-percent/meister: Prozentrechnung und Dreisatz · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-percent-rule, math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 15 % von 200 sind \(200\cdot0{,}15=30\). Ein Anteil von 30 an 200 ergibt \(\frac{30}{200}=0{,}15=15\%\). Ein fiktiver konstanter Preis: 3 Stück kosten 12 Einheiten; 1 Stück kostet 4, 5 Stück kosten 20. Die Proportionalität wird vorausgesetzt.
+- Annahmen: Ein prozentualer Anstieg und eine anschließende Absenkung um denselben Prozentsatz heben sich nicht auf, weil der zweite Grundwert anders ist. 100 → plus 10 % ergibt 110; davon minus 10 % ergibt 99. Bei Messabweichungen muss der verwendete Referenzwert ausdrücklich genannt werden.
+- Mögliche Fehler: 15 statt 0,15 als Multiplikator einsetzen. Einen Dreisatz ohne proportionale Beziehung benutzen oder den Referenzwert wechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-algebra/grundlagen: Variablen und Terme · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Für \(x=4\) gilt \(3(x+2)=3\cdot6=18\). Ausmultipliziert: \(3x+6=12+6=18\). Bei \(x=-2\) ergibt derselbe Term null. Die beiden Wege vergleichen die algebraische Struktur und nicht nur eine zufällige Schreibweise.
+- Annahmen: In technischen Gleichungen stehen gleiche Buchstaben nicht automatisch für dieselbe Größe in jedem Fachgebiet. Q kann Ladung oder Wärme bedeuten, deshalb braucht jede Formel Variablendefinitionen und Einheiten. Gemeinsame Formel-IDs verhindern Verwechslungen zwischen gleich aussehenden Symbolen.
+- Mögliche Fehler: Nur den ersten Summanden in einer Klammer multiplizieren. Ungleichartige Terme wie 3x und 2 zu 5x zusammenfassen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-algebra/fachkraft: Variablen und Terme · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Für \(x=4\) gilt \(3(x+2)=3\cdot6=18\). Ausmultipliziert: \(3x+6=12+6=18\). Bei \(x=-2\) ergibt derselbe Term null. Die beiden Wege vergleichen die algebraische Struktur und nicht nur eine zufällige Schreibweise.
+- Annahmen: In technischen Gleichungen stehen gleiche Buchstaben nicht automatisch für dieselbe Größe in jedem Fachgebiet. Q kann Ladung oder Wärme bedeuten, deshalb braucht jede Formel Variablendefinitionen und Einheiten. Gemeinsame Formel-IDs verhindern Verwechslungen zwischen gleich aussehenden Symbolen.
+- Mögliche Fehler: Nur den ersten Summanden in einer Klammer multiplizieren. Ungleichartige Terme wie 3x und 2 zu 5x zusammenfassen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-algebra/meister: Variablen und Terme · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Für \(x=4\) gilt \(3(x+2)=3\cdot6=18\). Ausmultipliziert: \(3x+6=12+6=18\). Bei \(x=-2\) ergibt derselbe Term null. Die beiden Wege vergleichen die algebraische Struktur und nicht nur eine zufällige Schreibweise.
+- Annahmen: In technischen Gleichungen stehen gleiche Buchstaben nicht automatisch für dieselbe Größe in jedem Fachgebiet. Q kann Ladung oder Wärme bedeuten, deshalb braucht jede Formel Variablendefinitionen und Einheiten. Gemeinsame Formel-IDs verhindern Verwechslungen zwischen gleich aussehenden Symbolen.
+- Mögliche Fehler: Nur den ersten Summanden in einer Klammer multiplizieren. Ungleichartige Terme wie 3x und 2 zu 5x zusammenfassen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-equations/grundlagen: Gleichungen Schritt für Schritt lösen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(3x+6=24\). Beidseitig 6 subtrahieren: \(3x=18\). Durch 3 teilen: \(x=6\). Probe: \(3\cdot6+6=24\). Bei \(2x+5=-3\) folgt nach Subtraktion von 5 \(2x=-8\), danach \(x=-4\).
+- Annahmen: Der Fall a = 0 muss getrennt betrachtet werden: Aus 0x + b = c folgt bei b = c jede Zahl als Lösung, andernfalls keine Lösung. Der einfache Zahlenaufgabenkern dieser App akzeptiert nur den eindeutig lösbaren Fall a ≠ 0 und weist die anderen Fälle verständlich zurück.
+- Mögliche Fehler: Eine Operation nur auf einer Seite ausführen. Durch eine möglicherweise null werdende Größe teilen oder die Probe auslassen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-equations/fachkraft: Gleichungen Schritt für Schritt lösen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(3x+6=24\). Beidseitig 6 subtrahieren: \(3x=18\). Durch 3 teilen: \(x=6\). Probe: \(3\cdot6+6=24\). Bei \(2x+5=-3\) folgt nach Subtraktion von 5 \(2x=-8\), danach \(x=-4\).
+- Annahmen: Der Fall a = 0 muss getrennt betrachtet werden: Aus 0x + b = c folgt bei b = c jede Zahl als Lösung, andernfalls keine Lösung. Der einfache Zahlenaufgabenkern dieser App akzeptiert nur den eindeutig lösbaren Fall a ≠ 0 und weist die anderen Fälle verständlich zurück.
+- Mögliche Fehler: Eine Operation nur auf einer Seite ausführen. Durch eine möglicherweise null werdende Größe teilen oder die Probe auslassen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-equations/meister: Gleichungen Schritt für Schritt lösen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(3x+6=24\). Beidseitig 6 subtrahieren: \(3x=18\). Durch 3 teilen: \(x=6\). Probe: \(3\cdot6+6=24\). Bei \(2x+5=-3\) folgt nach Subtraktion von 5 \(2x=-8\), danach \(x=-4\).
+- Annahmen: Der Fall a = 0 muss getrennt betrachtet werden: Aus 0x + b = c folgt bei b = c jede Zahl als Lösung, andernfalls keine Lösung. Der einfache Zahlenaufgabenkern dieser App akzeptiert nur den eindeutig lösbaren Fall a ≠ 0 und weist die anderen Fälle verständlich zurück.
+- Mögliche Fehler: Eine Operation nur auf einer Seite ausführen. Durch eine möglicherweise null werdende Größe teilen oder die Probe auslassen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-powers/grundlagen: Potenzen, Wurzeln und Zehnerpotenzen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(2^3=2\cdot2\cdot2=8\), \(10^{-3}=0{,}001\). \(\sqrt{144}=12\), denn \(12^2=144\). Für \(x=-3\) ist \(\sqrt{x^2}=\sqrt9=3=|x|\). Ein Minus vor einer Potenz ist ohne Klammer kein Teil der Basis: \(-2^2=-4\), aber \((-2)^2=4\).
+- Annahmen: Wissenschaftliche Schreibweise nutzt einen Faktor zwischen 1 einschließlich und 10 ausschließlich, multipliziert mit einer Zehnerpotenz. 0,0025 m = 2,5 × 10⁻³ m. Beim Runden muss angegeben werden, welche Genauigkeit sinnvoll ist; eine lange Anzeige macht eine Messung nicht automatisch genauer.
+- Mögliche Fehler: Exponenten beim Addieren von Potenzen automatisch addieren. √(x²) ohne Betrag schreiben oder Minus und Klammern vor Potenzen verwechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-powers/fachkraft: Potenzen, Wurzeln und Zehnerpotenzen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(2^3=2\cdot2\cdot2=8\), \(10^{-3}=0{,}001\). \(\sqrt{144}=12\), denn \(12^2=144\). Für \(x=-3\) ist \(\sqrt{x^2}=\sqrt9=3=|x|\). Ein Minus vor einer Potenz ist ohne Klammer kein Teil der Basis: \(-2^2=-4\), aber \((-2)^2=4\).
+- Annahmen: Wissenschaftliche Schreibweise nutzt einen Faktor zwischen 1 einschließlich und 10 ausschließlich, multipliziert mit einer Zehnerpotenz. 0,0025 m = 2,5 × 10⁻³ m. Beim Runden muss angegeben werden, welche Genauigkeit sinnvoll ist; eine lange Anzeige macht eine Messung nicht automatisch genauer.
+- Mögliche Fehler: Exponenten beim Addieren von Potenzen automatisch addieren. √(x²) ohne Betrag schreiben oder Minus und Klammern vor Potenzen verwechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-powers/meister: Potenzen, Wurzeln und Zehnerpotenzen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(2^3=2\cdot2\cdot2=8\), \(10^{-3}=0{,}001\). \(\sqrt{144}=12\), denn \(12^2=144\). Für \(x=-3\) ist \(\sqrt{x^2}=\sqrt9=3=|x|\). Ein Minus vor einer Potenz ist ohne Klammer kein Teil der Basis: \(-2^2=-4\), aber \((-2)^2=4\).
+- Annahmen: Wissenschaftliche Schreibweise nutzt einen Faktor zwischen 1 einschließlich und 10 ausschließlich, multipliziert mit einer Zehnerpotenz. 0,0025 m = 2,5 × 10⁻³ m. Beim Runden muss angegeben werden, welche Genauigkeit sinnvoll ist; eine lange Anzeige macht eine Messung nicht automatisch genauer.
+- Mögliche Fehler: Exponenten beim Addieren von Potenzen automatisch addieren. √(x²) ohne Betrag schreiben oder Minus und Klammern vor Potenzen verwechseln.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-units/grundlagen: SI-Einheiten und Umrechnungen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(30\,\mathrm{min}\cdot60=1800\,\mathrm s\). \(24\,\mathrm{Wh}\cdot3600=86400\,\mathrm J\). \(1800\,\mathrm{kg/h}\cdot\frac{1\,\mathrm h}{3600\,\mathrm s}=0{,}5\,\mathrm{kg/s}\). Vor jedem Zahlenprodukt wird geprüft, welche Einheit die Zielgröße besitzen muss.
+- Annahmen: Absolute Temperaturen und Temperaturdifferenzen brauchen verschiedene Behandlung: T in K = Temperatur in °C + 273,15, eine Differenz von 1 °C entspricht dagegen 1 K ohne Offset. Diese App unterscheidet beide Mengenarten im gemeinsamen Rechenkern, statt beliebige Einheitenstrings zu multiplizieren.
+- Mögliche Fehler: Umrechnungsfaktor in die falsche Richtung anwenden. Auf Temperaturdifferenzen den Celsius-Kelvin-Offset addieren; bei Flächen das Quadrat vergessen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-units/fachkraft: SI-Einheiten und Umrechnungen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(30\,\mathrm{min}\cdot60=1800\,\mathrm s\). \(24\,\mathrm{Wh}\cdot3600=86400\,\mathrm J\). \(1800\,\mathrm{kg/h}\cdot\frac{1\,\mathrm h}{3600\,\mathrm s}=0{,}5\,\mathrm{kg/s}\). Vor jedem Zahlenprodukt wird geprüft, welche Einheit die Zielgröße besitzen muss.
+- Annahmen: Absolute Temperaturen und Temperaturdifferenzen brauchen verschiedene Behandlung: T in K = Temperatur in °C + 273,15, eine Differenz von 1 °C entspricht dagegen 1 K ohne Offset. Diese App unterscheidet beide Mengenarten im gemeinsamen Rechenkern, statt beliebige Einheitenstrings zu multiplizieren.
+- Mögliche Fehler: Umrechnungsfaktor in die falsche Richtung anwenden. Auf Temperaturdifferenzen den Celsius-Kelvin-Offset addieren; bei Flächen das Quadrat vergessen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-units/meister: SI-Einheiten und Umrechnungen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(30\,\mathrm{min}\cdot60=1800\,\mathrm s\). \(24\,\mathrm{Wh}\cdot3600=86400\,\mathrm J\). \(1800\,\mathrm{kg/h}\cdot\frac{1\,\mathrm h}{3600\,\mathrm s}=0{,}5\,\mathrm{kg/s}\). Vor jedem Zahlenprodukt wird geprüft, welche Einheit die Zielgröße besitzen muss.
+- Annahmen: Absolute Temperaturen und Temperaturdifferenzen brauchen verschiedene Behandlung: T in K = Temperatur in °C + 273,15, eine Differenz von 1 °C entspricht dagegen 1 K ohne Offset. Diese App unterscheidet beide Mengenarten im gemeinsamen Rechenkern, statt beliebige Einheitenstrings zu multiplizieren.
+- Mögliche Fehler: Umrechnungsfaktor in die falsche Richtung anwenden. Auf Temperaturdifferenzen den Celsius-Kelvin-Offset addieren; bei Flächen das Quadrat vergessen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-rearrange/grundlagen: Technische Formeln umstellen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ohm-resistance, ohm-voltage, math-heat-energy, physics-pressure, physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gesucht R bei U = 24 V und I = 0,2 A: \(R=\frac U I=\frac{24}{0{,}2}=120\,\Omega\). Probe: \(120\cdot0{,}2=24\). Gesucht A bei F = 600 N und p = 200000 Pa: \(A=\frac F p=0{,}003\,\mathrm{m^2}\). Die Einheiten begründen die Richtung des Quotienten.
+- Annahmen: Eine algebraisch gültige Umstellung darf Modellgrenzen nicht verstecken. Bei ΔT = 0 kann aus Q = mcΔT keine eindeutige Masse über die Quotientenform gewonnen werden. Bei gleichen Symbolen in verschiedenen Fachgebieten müssen Einheit und Bedeutung weiterhin ausdrücklich genannt werden.
+- Mögliche Fehler: Beim Teilen durch mehrere Faktoren nur einen Faktor in den Nenner schreiben. Vor der Division nicht prüfen, ob der Nenner null sein kann.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-rearrange/fachkraft: Technische Formeln umstellen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ohm-resistance, ohm-voltage, math-heat-energy, physics-pressure, physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gesucht R bei U = 24 V und I = 0,2 A: \(R=\frac U I=\frac{24}{0{,}2}=120\,\Omega\). Probe: \(120\cdot0{,}2=24\). Gesucht A bei F = 600 N und p = 200000 Pa: \(A=\frac F p=0{,}003\,\mathrm{m^2}\). Die Einheiten begründen die Richtung des Quotienten.
+- Annahmen: Eine algebraisch gültige Umstellung darf Modellgrenzen nicht verstecken. Bei ΔT = 0 kann aus Q = mcΔT keine eindeutige Masse über die Quotientenform gewonnen werden. Bei gleichen Symbolen in verschiedenen Fachgebieten müssen Einheit und Bedeutung weiterhin ausdrücklich genannt werden.
+- Mögliche Fehler: Beim Teilen durch mehrere Faktoren nur einen Faktor in den Nenner schreiben. Vor der Division nicht prüfen, ob der Nenner null sein kann.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-rearrange/meister: Technische Formeln umstellen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ohm-resistance, ohm-voltage, math-heat-energy, physics-pressure, physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gesucht R bei U = 24 V und I = 0,2 A: \(R=\frac U I=\frac{24}{0{,}2}=120\,\Omega\). Probe: \(120\cdot0{,}2=24\). Gesucht A bei F = 600 N und p = 200000 Pa: \(A=\frac F p=0{,}003\,\mathrm{m^2}\). Die Einheiten begründen die Richtung des Quotienten.
+- Annahmen: Eine algebraisch gültige Umstellung darf Modellgrenzen nicht verstecken. Bei ΔT = 0 kann aus Q = mcΔT keine eindeutige Masse über die Quotientenform gewonnen werden. Bei gleichen Symbolen in verschiedenen Fachgebieten müssen Einheit und Bedeutung weiterhin ausdrücklich genannt werden.
+- Mögliche Fehler: Beim Teilen durch mehrere Faktoren nur einen Faktor in den Nenner schreiben. Vor der Division nicht prüfen, ob der Nenner null sein kann.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-motion/grundlagen: Bewegung, Masse und Kraft · grundlagen
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-speed, physics-force
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Ein fiktiver Wagen legt gleichförmig 12 m in 4 s zurück: \(v=\frac{12}{4}=3\,\mathrm{m/s}\). Ein Körper mit m = 20 kg erfährt die Beschleunigung a = 0,5 m/s²: \(F_{\mathrm{res}}=20\cdot0{,}5=10\,\mathrm N\). Die beiden Fälle dürfen nicht zu einer unbegründeten Maschinenprognose vermischt werden.
+- Annahmen: Gewichtskraft ist eine Kraft aus dem Gravitationsfeld, Masse bleibt eine andere Größe. Für F_G = mg müsste die örtliche oder ausdrücklich angenommene Fallbeschleunigung angegeben werden. Bei einer realen Maschine sind Reibung, Lastwechsel und Richtungen zusätzlich zu modellieren; unsere Aufgaben behandeln nur positive Beträge.
+- Mögliche Fehler: Masse in kg und Gewichtskraft in N gleichsetzen. Eine Einzelkraft mit der Resultierenden verwechseln oder aus konstanter Geschwindigkeit eine Beschleunigung ableiten.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-motion/fachkraft: Bewegung, Masse und Kraft · fachkraft
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-speed, physics-force
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Ein fiktiver Wagen legt gleichförmig 12 m in 4 s zurück: \(v=\frac{12}{4}=3\,\mathrm{m/s}\). Ein Körper mit m = 20 kg erfährt die Beschleunigung a = 0,5 m/s²: \(F_{\mathrm{res}}=20\cdot0{,}5=10\,\mathrm N\). Die beiden Fälle dürfen nicht zu einer unbegründeten Maschinenprognose vermischt werden.
+- Annahmen: Gewichtskraft ist eine Kraft aus dem Gravitationsfeld, Masse bleibt eine andere Größe. Für F_G = mg müsste die örtliche oder ausdrücklich angenommene Fallbeschleunigung angegeben werden. Bei einer realen Maschine sind Reibung, Lastwechsel und Richtungen zusätzlich zu modellieren; unsere Aufgaben behandeln nur positive Beträge.
+- Mögliche Fehler: Masse in kg und Gewichtskraft in N gleichsetzen. Eine Einzelkraft mit der Resultierenden verwechseln oder aus konstanter Geschwindigkeit eine Beschleunigung ableiten.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-motion/meister: Bewegung, Masse und Kraft · meister
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-speed, physics-force
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Ein fiktiver Wagen legt gleichförmig 12 m in 4 s zurück: \(v=\frac{12}{4}=3\,\mathrm{m/s}\). Ein Körper mit m = 20 kg erfährt die Beschleunigung a = 0,5 m/s²: \(F_{\mathrm{res}}=20\cdot0{,}5=10\,\mathrm N\). Die beiden Fälle dürfen nicht zu einer unbegründeten Maschinenprognose vermischt werden.
+- Annahmen: Gewichtskraft ist eine Kraft aus dem Gravitationsfeld, Masse bleibt eine andere Größe. Für F_G = mg müsste die örtliche oder ausdrücklich angenommene Fallbeschleunigung angegeben werden. Bei einer realen Maschine sind Reibung, Lastwechsel und Richtungen zusätzlich zu modellieren; unsere Aufgaben behandeln nur positive Beträge.
+- Mögliche Fehler: Masse in kg und Gewichtskraft in N gleichsetzen. Eine Einzelkraft mit der Resultierenden verwechseln oder aus konstanter Geschwindigkeit eine Beschleunigung ableiten.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-energy/grundlagen: Arbeit, Energie und Leistung · grundlagen
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-work, physics-power, physics-efficiency
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Eine fiktive konstante Kraft von 50 N wirkt parallel über 3 m: \(W=50\cdot3=150\,\mathrm J\). Werden 600 J in 30 s übertragen, beträgt die mittlere Leistung \(P=\frac{600}{30}=20\,\mathrm W\). Bei 80 J Nutzen und 100 J Zufuhr wäre \(\eta=0{,}8=80\%\); die Systemgrenze ist jeweils vorgegeben.
+- Annahmen: Ein Wirkungsgrad mit derselben Art von Energiegrenze ist nicht dasselbe wie ein Wärmepumpen-COP. Ein COP kann über eins liegen, weil zusätzlich Umweltwärme übertragen wird. Für reale Antriebe müssen Fluidleistung, mechanische Leistung und elektrische Aufnahme getrennt bilanziert werden.
+- Mögliche Fehler: kW als Energiemenge lesen oder Zeit beim Leistungsvergleich weglassen. COP und Wirkungsgrad gleichsetzen oder Fluidleistung als elektrische Anschlussleistung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-energy/fachkraft: Arbeit, Energie und Leistung · fachkraft
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-work, physics-power, physics-efficiency
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Eine fiktive konstante Kraft von 50 N wirkt parallel über 3 m: \(W=50\cdot3=150\,\mathrm J\). Werden 600 J in 30 s übertragen, beträgt die mittlere Leistung \(P=\frac{600}{30}=20\,\mathrm W\). Bei 80 J Nutzen und 100 J Zufuhr wäre \(\eta=0{,}8=80\%\); die Systemgrenze ist jeweils vorgegeben.
+- Annahmen: Ein Wirkungsgrad mit derselben Art von Energiegrenze ist nicht dasselbe wie ein Wärmepumpen-COP. Ein COP kann über eins liegen, weil zusätzlich Umweltwärme übertragen wird. Für reale Antriebe müssen Fluidleistung, mechanische Leistung und elektrische Aufnahme getrennt bilanziert werden.
+- Mögliche Fehler: kW als Energiemenge lesen oder Zeit beim Leistungsvergleich weglassen. COP und Wirkungsgrad gleichsetzen oder Fluidleistung als elektrische Anschlussleistung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-energy/meister: Arbeit, Energie und Leistung · meister
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-work, physics-power, physics-efficiency
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Eine fiktive konstante Kraft von 50 N wirkt parallel über 3 m: \(W=50\cdot3=150\,\mathrm J\). Werden 600 J in 30 s übertragen, beträgt die mittlere Leistung \(P=\frac{600}{30}=20\,\mathrm W\). Bei 80 J Nutzen und 100 J Zufuhr wäre \(\eta=0{,}8=80\%\); die Systemgrenze ist jeweils vorgegeben.
+- Annahmen: Ein Wirkungsgrad mit derselben Art von Energiegrenze ist nicht dasselbe wie ein Wärmepumpen-COP. Ein COP kann über eins liegen, weil zusätzlich Umweltwärme übertragen wird. Für reale Antriebe müssen Fluidleistung, mechanische Leistung und elektrische Aufnahme getrennt bilanziert werden.
+- Mögliche Fehler: kW als Energiemenge lesen oder Zeit beim Leistungsvergleich weglassen. COP und Wirkungsgrad gleichsetzen oder Fluidleistung als elektrische Anschlussleistung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-pressure-density/grundlagen: Druck und Dichte verstehen · grundlagen
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-pressure, physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: F = 600 N, A = 0,003 m²: \(p=\frac{600}{0{,}003}=200000\,\mathrm{Pa}=2\,\mathrm{bar}\). Bei einer fiktiven Masse von 8 kg in 0,01 m³ gilt \(\rho=800\,\mathrm{kg/m^3}\). Die Dichte ist hier vorgegeben bzw. aus Lernwerten berechnet, keinem realen Kältemittel zugeordnet.
+- Annahmen: Ein relativer Druck bezieht sich auf den Umgebungsdruck, ein absoluter Druck auf Vakuum. Thermodynamische Druckverhältnisse benötigen absolute Werte. Flüssigkeiten sind im einfachen Modell wenig kompressibel, Gase deutlich kompressibler; daraus folgt jedoch kein allgemeiner Stoffwert oder sicherer Betriebsbereich.
+- Mögliche Fehler: Relativdruck direkt in ein Verhältnis absoluter Drücke einsetzen. Liter und Kubikmeter verwechseln oder einer fiktiven Dichte einen realen Stoffnamen zuweisen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-pressure-density/fachkraft: Druck und Dichte verstehen · fachkraft
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-pressure, physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: F = 600 N, A = 0,003 m²: \(p=\frac{600}{0{,}003}=200000\,\mathrm{Pa}=2\,\mathrm{bar}\). Bei einer fiktiven Masse von 8 kg in 0,01 m³ gilt \(\rho=800\,\mathrm{kg/m^3}\). Die Dichte ist hier vorgegeben bzw. aus Lernwerten berechnet, keinem realen Kältemittel zugeordnet.
+- Annahmen: Ein relativer Druck bezieht sich auf den Umgebungsdruck, ein absoluter Druck auf Vakuum. Thermodynamische Druckverhältnisse benötigen absolute Werte. Flüssigkeiten sind im einfachen Modell wenig kompressibel, Gase deutlich kompressibler; daraus folgt jedoch kein allgemeiner Stoffwert oder sicherer Betriebsbereich.
+- Mögliche Fehler: Relativdruck direkt in ein Verhältnis absoluter Drücke einsetzen. Liter und Kubikmeter verwechseln oder einer fiktiven Dichte einen realen Stoffnamen zuweisen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-pressure-density/meister: Druck und Dichte verstehen · meister
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: physics-pressure, physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: F = 600 N, A = 0,003 m²: \(p=\frac{600}{0{,}003}=200000\,\mathrm{Pa}=2\,\mathrm{bar}\). Bei einer fiktiven Masse von 8 kg in 0,01 m³ gilt \(\rho=800\,\mathrm{kg/m^3}\). Die Dichte ist hier vorgegeben bzw. aus Lernwerten berechnet, keinem realen Kältemittel zugeordnet.
+- Annahmen: Ein relativer Druck bezieht sich auf den Umgebungsdruck, ein absoluter Druck auf Vakuum. Thermodynamische Druckverhältnisse benötigen absolute Werte. Flüssigkeiten sind im einfachen Modell wenig kompressibel, Gase deutlich kompressibler; daraus folgt jedoch kein allgemeiner Stoffwert oder sicherer Betriebsbereich.
+- Mögliche Fehler: Relativdruck direkt in ein Verhältnis absoluter Drücke einsetzen. Liter und Kubikmeter verwechseln oder einer fiktiven Dichte einen realen Stoffnamen zuweisen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-heat/grundlagen: Temperatur, Wärme und Phasenwechsel · grundlagen
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-heat-energy, physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv: m = 2 kg, c = 4180 J/(kg·K), ΔT = 5 K. \(Q=2\cdot4180\cdot5=41800\,\mathrm J\). Der vorgegebene c-Wert ist ein Näherungswert, keine universelle Konstante. Wenn diese Energie in 100 s übertragen wird, folgt \(P=418\,\mathrm W\). Ein Phasenwechsel ist ausdrücklich ausgeschlossen.
+- Annahmen: Wärme kann durch Leitung, Konvektion und Strahlung übertragen werden. Eine Temperaturdifferenz ist eine treibende Bedingung, bestimmt aber allein noch keinen Wärmestrom durch eine Dämmung. Dafür fehlen Materialdaten, Geometrie und Randbedingungen. Die erste Energiebilanz unterscheidet Wärme und Arbeit; die Nutzbarkeit erfordert zusätzlich den zweiten Hauptsatz.
+- Mögliche Fehler: Temperatur mit einer vorhandenen Wärmemenge gleichsetzen. mcΔT trotz Phasenwechsel als vollständige Energiebilanz verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-heat/fachkraft: Temperatur, Wärme und Phasenwechsel · fachkraft
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-heat-energy, physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv: m = 2 kg, c = 4180 J/(kg·K), ΔT = 5 K. \(Q=2\cdot4180\cdot5=41800\,\mathrm J\). Der vorgegebene c-Wert ist ein Näherungswert, keine universelle Konstante. Wenn diese Energie in 100 s übertragen wird, folgt \(P=418\,\mathrm W\). Ein Phasenwechsel ist ausdrücklich ausgeschlossen.
+- Annahmen: Wärme kann durch Leitung, Konvektion und Strahlung übertragen werden. Eine Temperaturdifferenz ist eine treibende Bedingung, bestimmt aber allein noch keinen Wärmestrom durch eine Dämmung. Dafür fehlen Materialdaten, Geometrie und Randbedingungen. Die erste Energiebilanz unterscheidet Wärme und Arbeit; die Nutzbarkeit erfordert zusätzlich den zweiten Hauptsatz.
+- Mögliche Fehler: Temperatur mit einer vorhandenen Wärmemenge gleichsetzen. mcΔT trotz Phasenwechsel als vollständige Energiebilanz verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:physics-heat/meister: Temperatur, Wärme und Phasenwechsel · meister
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: math-heat-energy, physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv: m = 2 kg, c = 4180 J/(kg·K), ΔT = 5 K. \(Q=2\cdot4180\cdot5=41800\,\mathrm J\). Der vorgegebene c-Wert ist ein Näherungswert, keine universelle Konstante. Wenn diese Energie in 100 s übertragen wird, folgt \(P=418\,\mathrm W\). Ein Phasenwechsel ist ausdrücklich ausgeschlossen.
+- Annahmen: Wärme kann durch Leitung, Konvektion und Strahlung übertragen werden. Eine Temperaturdifferenz ist eine treibende Bedingung, bestimmt aber allein noch keinen Wärmestrom durch eine Dämmung. Dafür fehlen Materialdaten, Geometrie und Randbedingungen. Die erste Energiebilanz unterscheidet Wärme und Arbeit; die Nutzbarkeit erfordert zusätzlich den zweiten Hauptsatz.
+- Mögliche Fehler: Temperatur mit einer vorhandenen Wärmemenge gleichsetzen. mcΔT trotz Phasenwechsel als vollständige Energiebilanz verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-matter/grundlagen: Stoffe, Eigenschaften und Gemische · grundlagen
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-mass-fraction
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Ein fiktives Gemisch enthält 3 kg Komponente A und insgesamt 12 kg. Der Massenanteil ist \(w_A=\frac{3}{12}=0{,}25=25\%\). Der Nenner ist die Gesamtmasse, nicht nur die Masse der anderen Komponente. Das Beispiel ist eine abstrakte Bilanz ohne Mischanweisung.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: Homogen mit rein gleichsetzen oder Zustand und chemische Zusammensetzung verwechseln. Beim Massenanteil durch die Restmasse statt durch die Gesamtmasse teilen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-matter/fachkraft: Stoffe, Eigenschaften und Gemische · fachkraft
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-mass-fraction
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Ein fiktives Gemisch enthält 3 kg Komponente A und insgesamt 12 kg. Der Massenanteil ist \(w_A=\frac{3}{12}=0{,}25=25\%\). Der Nenner ist die Gesamtmasse, nicht nur die Masse der anderen Komponente. Das Beispiel ist eine abstrakte Bilanz ohne Mischanweisung.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: Homogen mit rein gleichsetzen oder Zustand und chemische Zusammensetzung verwechseln. Beim Massenanteil durch die Restmasse statt durch die Gesamtmasse teilen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-matter/meister: Stoffe, Eigenschaften und Gemische · meister
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-mass-fraction
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Ein fiktives Gemisch enthält 3 kg Komponente A und insgesamt 12 kg. Der Massenanteil ist \(w_A=\frac{3}{12}=0{,}25=25\%\). Der Nenner ist die Gesamtmasse, nicht nur die Masse der anderen Komponente. Das Beispiel ist eine abstrakte Bilanz ohne Mischanweisung.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: Homogen mit rein gleichsetzen oder Zustand und chemische Zusammensetzung verwechseln. Beim Massenanteil durch die Restmasse statt durch die Gesamtmasse teilen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-atoms/grundlagen: Atome, Moleküle und chemische Formeln · grundlagen
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-atom-count
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Fünf Moleküle \(\ce{CO2}\) enthalten fünf C-Atome und \(5\cdot2=10\) O-Atome. Drei Moleküle \(\ce{H2O}\) enthalten \(3\cdot2=6\) H-Atome und drei O-Atome. Diese Zählung beschreibt Zusammensetzung, nicht das Volumen oder die sichere Handhabung eines Stoffes.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: Den Koeffizienten nur auf das erste Element anwenden. Eine Summenformel als vollständige Aussage über Struktur, Sicherheits- oder Stoffeigenschaften lesen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-atoms/fachkraft: Atome, Moleküle und chemische Formeln · fachkraft
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-atom-count
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Fünf Moleküle \(\ce{CO2}\) enthalten fünf C-Atome und \(5\cdot2=10\) O-Atome. Drei Moleküle \(\ce{H2O}\) enthalten \(3\cdot2=6\) H-Atome und drei O-Atome. Diese Zählung beschreibt Zusammensetzung, nicht das Volumen oder die sichere Handhabung eines Stoffes.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: Den Koeffizienten nur auf das erste Element anwenden. Eine Summenformel als vollständige Aussage über Struktur, Sicherheits- oder Stoffeigenschaften lesen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-atoms/meister: Atome, Moleküle und chemische Formeln · meister
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-atom-count
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Fünf Moleküle \(\ce{CO2}\) enthalten fünf C-Atome und \(5\cdot2=10\) O-Atome. Drei Moleküle \(\ce{H2O}\) enthalten \(3\cdot2=6\) H-Atome und drei O-Atome. Diese Zählung beschreibt Zusammensetzung, nicht das Volumen oder die sichere Handhabung eines Stoffes.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: Den Koeffizienten nur auf das erste Element anwenden. Eine Summenformel als vollständige Aussage über Struktur, Sicherheits- oder Stoffeigenschaften lesen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-amount/grundlagen: Stoffmenge, molare Masse und Reaktionsbilanz · grundlagen
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-amount-rule, chemistry-reaction-example
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Lernannahme für Wasser: M = 18 g/mol, ausdrücklich gerundet. Für m = 9 g gilt \(n=\frac{9\,\mathrm g}{18\,\mathrm{g/mol}}=0{,}5\,\mathrm{mol}\). In SI: \(0{,}009/0{,}018=0{,}5\). Für 44 g eines Stoffes mit vorgegebenem M = 44 g/mol folgt 1 mol. Die Werte sind keine hochgenauen Stoffdaten.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: g mit kg/mol kombinieren, ohne den Faktor 1000 umzurechnen. Zum Ausgleichen die Indizes einer Stoffformel verändern und damit einen anderen Stoff hinschreiben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-amount/fachkraft: Stoffmenge, molare Masse und Reaktionsbilanz · fachkraft
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-amount-rule, chemistry-reaction-example
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Lernannahme für Wasser: M = 18 g/mol, ausdrücklich gerundet. Für m = 9 g gilt \(n=\frac{9\,\mathrm g}{18\,\mathrm{g/mol}}=0{,}5\,\mathrm{mol}\). In SI: \(0{,}009/0{,}018=0{,}5\). Für 44 g eines Stoffes mit vorgegebenem M = 44 g/mol folgt 1 mol. Die Werte sind keine hochgenauen Stoffdaten.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: g mit kg/mol kombinieren, ohne den Faktor 1000 umzurechnen. Zum Ausgleichen die Indizes einer Stoffformel verändern und damit einen anderen Stoff hinschreiben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:chemistry-amount/meister: Stoffmenge, molare Masse und Reaktionsbilanz · meister
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: chemistry-amount-rule, chemistry-reaction-example
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Lernannahme für Wasser: M = 18 g/mol, ausdrücklich gerundet. Für m = 9 g gilt \(n=\frac{9\,\mathrm g}{18\,\mathrm{g/mol}}=0{,}5\,\mathrm{mol}\). In SI: \(0{,}009/0{,}018=0{,}5\). Für 44 g eines Stoffes mit vorgegebenem M = 44 g/mol folgt 1 mol. Die Werte sind keine hochgenauen Stoffdaten.
+- Annahmen: Theoretischer Lerninhalt. Keine Anleitung zum Mischen, Erhitzen oder Freisetzen von Stoffen. Reale Stoffe und Kältemittel benötigen Sicherheitsdaten, geeignete Ausrüstung und die erforderliche Qualifikation; aus einer Summenformel folgt keine sichere Handhabung.
+- Mögliche Fehler: g mit kg/mol kombinieren, ohne den Faktor 1000 umzurechnen. Zum Ausgleichen die Indizes einer Stoffformel verändern und damit einen anderen Stoff hinschreiben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## formula:evaporator-power: Wärmeaufnahme im Verdampfer
 
 - Fachgebiet: fachuebergreifend
@@ -956,6 +1631,351 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Quellen: openstax-circuits-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42356/index.cnxml; eip-288, eip-801, eip-531: Reihensumme, Knotenbilanz und Kehrwertsumme
 - Referenz / Rechnung: 1/Rges = 1/R₁ + 1/R₂; 1/Ω + 1/Ω = 1/Ω
 - Annahmen: Beide Widerstände positiv, ideale parallele Zweige an derselben Spannung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-order-rule: Rechenreihenfolge
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a + b × c; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: Erst das Produkt, dann die Summe; Klammern gehen vor.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-fraction-rule: Brüche addieren
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a/b + c/d = (ad+bc)/(bd); Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: b und d ungleich null; Kürzen nur über gemeinsame Faktoren.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-percent-rule: Prozentanteil
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: math-percent-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: W = G × r; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: r als Dezimalanteil, G ≠ 0 für die Quotientenform.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-proportion-rule: Direkte Proportionalität
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: y₂ = y₁ × x₂ / x₁; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: Direkte proportionale Zuordnung, x₁ ≠ 0; keine beliebige Anlagenkennlinie.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-distributive: Distributivgesetz
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a(x+b) = ax+ab; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: Reelle Zahlen; Faktor auf beide Summanden verteilen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-linear-rule: Lineare Gleichung
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: ax+b=c → x=(c-b)/a; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: a ≠ 0; andernfalls keine eindeutige Quotientenlösung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-unit-rule: Zeit umrechnen
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: t in s = t in h × 3600; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: Umrechnungsfaktor entspricht eins; physikalische Größe bleibt gleich.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-power-rule: Potenz und Hauptwurzel
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a^m a^n=a^(m+n); √(x²)=|x|; Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.
+- Annahmen: Ganzzahlige Exponenten im Aufgabenmodell; bei negativen Exponenten a ≠ 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-heat-energy: Sensible Wärmemenge
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: math-heat-energy
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Q = m × c × ΔT; kg × J/(kg·K) × K = J
+- Annahmen: Konstante spezifische Wärmekapazität, kein Phasenwechsel; hier positive Beträge. Wärmemenge, nicht Wärmeleistung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-pressure: Druck aus senkrechter Kraft
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: physics-pressure
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: p = F / A; N/m² = Pa
+- Annahmen: Gleichmäßig verteilte senkrechte Kraft auf A > 0; keine Druckbehälterdimensionierung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-density: Massendichte
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: ρ = m / V; kg/m³
+- Annahmen: V > 0; Masse und Volumen desselben betrachteten Systems und Zustands.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-fraction-subtract: Brüche subtrahieren
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: math-fraction-subtract
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a/b − c/d = (ad−bc)/(bd); Reelle Zahlen
+- Annahmen: b und d ungleich null.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-fraction-multiply: Brüche multiplizieren
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: math-fraction-multiply
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a/b × c/d = ac/(bd); Reelle Zahlen
+- Annahmen: b und d ungleich null.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:math-fraction-divide: Brüche dividieren
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: math-fraction-divide
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: a/b : c/d = ad/(bc); Reelle Zahlen
+- Annahmen: b, c und d ungleich null.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-speed: Mittlere Weggeschwindigkeit
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: physics-speed
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: v = s / t; m/s
+- Annahmen: t > 0; zurückgelegte Weglänge und passendes Zeitintervall.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-force: Newtons zweites Gesetz
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: physics-force
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fres = m × a; kg × m/s² = N
+- Annahmen: Inertialsystem, konstante Masse, hier nicht negative Beträge.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-work: Arbeit im parallelen Fall
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: physics-work
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: W = F × s; N × m = J
+- Annahmen: Konstante Kraft parallel zum Weg; keine allgemeine Kraftfeldintegration.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-power: Mittlere Leistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: P = E / t; J/s = W
+- Annahmen: t > 0; Energie und Zeit derselben Bilanz.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:physics-efficiency: Wirkungsgrad
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: physics-efficiency
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: η = ENutz / Ezu; Dimensionslos
+- Annahmen: Passende Energiearten und Systemgrenzen, Zufuhr > 0; nicht gleich Wärmepumpen-COP.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:chemistry-mass-fraction: Massenanteil
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: chemistry-mass-fraction
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: wA = mA / mges; kg/kg = 1; als Prozent ×100 %
+- Annahmen: Gesamtmasse > 0, Komponentenmasse gehört zum selben betrachteten Gemisch.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:chemistry-atom-count: Atome aus Teilchenzahl zählen
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: chemistry-atom-count
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: NAtom = a × NTeilchen; Teilchenanzahl, dimensionslos
+- Annahmen: Formel und betrachtete Atomsorte ausdrücklich angegeben; a ist deren Anzahl pro Teilchen; keine Stoffmengen-/Volumenrechnung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:chemistry-amount-rule: Stoffmenge
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: chemistry-amount-rule
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: n = m / M; kg / (kg/mol) = mol
+- Annahmen: M > 0 und zu derselben Teilchenart gehörig; Lernwerte ggf. ausdrücklich gerundet.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:chemistry-reaction-example: Theoretische Reaktionsbilanz
+
+- Fachgebiet: fachuebergreifend
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe.
+- Formel-IDs: chemistry-reaction-example
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: CH₄ + 2 O₂ → CO₂ + 2 H₂O; Koeffizienten sind Anzahlverhältnisse
+- Annahmen: Nur theoretische Atombilanz, keine praktische Durchführung oder Freisetzung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
 - Fachprüfer/in: ____________________
@@ -1487,6 +2507,681 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## question:math-arithmetic-q1: Was ist 3 + 2 × 4?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die zwei Vierergruppen ergeben zuerst 8. Dann wird 3 addiert: 11. 20 gehört zur anders geklammerten Aufgabe (3 + 2) × 4.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-arithmetic-q2: Was ist −4 − (−10)?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine negative Zahl abzuziehen heißt ihre Gegenzahl zu addieren. Deshalb folgt −4 + 10 = 6; die Klammer erhält die Bedeutung des zweiten Minuszeichens.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-arithmetic-q3: Ist 1,5 + 2 × 0,25 gleich 2?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 2 × 0,25 = 0,5 und 1,5 + 0,5 = 2. Die Rechenreihenfolge ist eine mathematische Regel und hängt nicht von einer Temperaturinterpretation ab.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-fractions-q1: Wie viel ist 1/2 + 1/4?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ein Halb entspricht zwei Vierteln. Zwei Viertel plus ein Viertel ergeben drei Viertel. Die Nenner geben die gemeinsame Teilgröße an und werden nicht addiert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-fractions-q2: Was ist 2/3 geteilt durch 4/5?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Multipliziere den ersten Bruch mit dem Kehrwert des zweiten: (2 × 5)/(3 × 4) = 10/12 = 5/6. Beide Nenner und der Divisor müssen ungleich null sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-fractions-q3: Darf man in (a + b)/a das a aus der Summe wegkürzen?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Kürzen entfernt gleiche Faktoren aus einem Produkt. Ein Summand ist kein gemeinsamer Faktor. a = 0 wäre zudem als Nenner unzulässig.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-percent-q1: Wie viel sind 15 % von 200?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 15 Prozent entsprechen 0,15. 200 × 0,15 = 30. Wer 15 direkt multipliziert, lässt die Division durch 100 aus und erhält einen hundertfach zu großen Wert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-percent-q2: 3 gleiche Teile kosten 12; was kosten 5 bei konstantem Stückpreis?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Zuerst 12/3 = 4 pro Teil, dann 4 × 5 = 20. Die Aufgabe setzt denselben Stückpreis und keine zusätzlichen Grundkosten voraus.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-percent-q3: 100 plus 10 %, danach minus 10 %: Endwert?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Der zweite Prozentwert bezieht sich auf 110: 10 % davon sind 11. Daher bleibt 110 − 11 = 99. Die Grundwerte sind bei beiden Schritten verschieden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-algebra-q1: Was ist 3x + 2x?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beide Summanden enthalten denselben Faktor x. Es werden die Anzahlen 3 und 2 addiert; es entsteht kein zusätzliches x und deshalb keine Potenz x².
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-algebra-q2: Welche Form ist gleich 3(x + 2)?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Der Faktor 3 multipliziert beide Summanden: 3 × x und 3 × 2. Die zweite Multiplikation darf beim Auflösen der Klammer nicht verloren gehen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-algebra-q3: Warum braucht Q in einer technischen Formel eine Definition?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Q wird beispielsweise für Ladung und Wärme verwendet. Ohne Definition und Einheit wäre die Bedeutung mehrdeutig; ein bloßer Buchstabe macht verschiedene Größen nicht austauschbar.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-equations-q1: Was ist die Lösung von 3x + 6 = 24?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beide Seiten minus 6 ergibt 3x = 18. Danach beide Seiten durch 3 teilen: x = 6. Einsetzen in 3x + 6 ergibt wieder 24.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-equations-q2: Warum darf man nicht durch null teilen?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Es gibt keinen eindeutigen Quotienten a/0. Eine solche Operation ist keine zulässige Äquivalenzumformung und darf nicht als normaler Rechenschritt verwendet werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-equations-q3: Was bedeutet 0x + 2 = 3?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Für jede Zahl x bleibt links 2. Das kann niemals 3 sein. Der Fall eines Koeffizienten null muss vor der üblichen Division getrennt beurteilt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-powers-q1: Welche Zahl ist 10 hoch −3?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ein negativer Exponent macht aus der Potenz ihren Kehrwert: 10⁻³ = 1/1000 = 0,001. Er bedeutet nicht, dass das Ergebnis negativ ist.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-powers-q2: Was ist die reelle Hauptwurzel aus 144?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 12 × 12 = 144. Die Quadratwurzel bezeichnet den nicht negativen Hauptwert. Die Gleichung x² = 144 hätte dagegen zwei Lösungen, ±12.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-powers-q3: Für x = −3 ist √(x²) gleich …
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Zuerst wird (−3)² = 9 berechnet, dann die nicht negative Hauptwurzel: 3. Allgemein gilt √(x²) = |x|.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-units-q1: Wie viele Sekunden sind 30 Minuten?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Jede Minute enthält 60 Sekunden. 30 × 60 = 1800. Durch 60 zu teilen würde nicht von Minuten zu Sekunden, sondern in die entgegengesetzte Richtung führen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-units-q2: Wie viel sind 24 Wh in Joule?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 1 W = 1 J/s und 1 h = 3600 s. Daher ist 1 Wh = 3600 J und 24 Wh = 86400 J. Watt und Wattstunde sind verschiedene Größen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-units-q3: Braucht eine Differenz von 5 °C den Offset 273,15?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beim Subtrahieren zweier absoluter Temperaturen hebt sich derselbe Offset auf. Deshalb bleibt die Zahl einer Temperaturdifferenz in °C und K gleich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-rearrange-q1: U = R × I: Welche Umstellung liefert R?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beide Seiten werden durch I ungleich null geteilt. Rechts kürzt sich der Faktor I. Die Einheit V/A = Ω bestätigt die gesuchte Widerstandsgröße.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-rearrange-q2: Q = m × c × ΔT: Wie erhält man m?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beide Faktoren c und ΔT müssen zusammen wegdividiert werden. Das erfordert den gesamten Nenner c × ΔT und setzt voraus, dass dieses Produkt nicht null ist.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-rearrange-q3: p = F / A: Wie erhält man A bei p ≠ 0?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Zuerst beide Seiten mit A multiplizieren: pA = F. Danach durch p ungleich null teilen: A = F/p. So bleiben beide Umformungen nachvollziehbar.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-motion-q1: 12 m in 4 s ergeben welche mittlere Geschwindigkeit?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Weglänge durch Zeit: 12/4 = 3 m/s. Die Rechnung liefert einen Mittelwert; gleichförmige Bewegung ist für einen konstanten Momentanwert eine zusätzliche Annahme.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-motion-q2: Welche Einheit gehört zur Masse?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Kilogramm ist die SI-Einheit der Masse. Newton gehört zur Kraft, Pascal zum Druck. Die Gewichtskraft ist deshalb nicht einfach eine andere Bezeichnung für die Masse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-motion-q3: Welche Kraft steht in F = ma?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die Summe aller betrachteten Kräfte bestimmt die Beschleunigung. Einzelkräfte können sich aufheben oder ergänzen. Die Systemgrenze und Richtung müssen zur Bilanz passen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-energy-q1: 600 J in 30 s entsprechen welcher mittleren Leistung?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: P = E/t = 600/30 = 20 J/s = 20 W. Das Ergebnis ist eine Leistung; die bereits vorgegebene Energie von 600 J wird dadurch nicht verändert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-energy-q2: Was passiert mit als Verlustwärme abgegebener Energie?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Energieerhaltung bedeutet nicht, dass jede Energieform gleich gut nutzbar ist. Verlustwärme bleibt Teil der Bilanz, kann aber für den vorgesehenen Zweck weniger geeignet sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-energy-q3: Ist ein COP größer als eins ein Verstoß gegen Energieerhaltung?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Der COP vergleicht thermischen Nutzen mit Antriebsenergie. Der thermische Nutzen enthält zusätzlich übertragene Umweltwärme. Die Systemgrenze unterscheidet sich von einem einfachen Umwandlungswirkungsgrad.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-pressure-density-q1: Wie viele Pascal sind 2 bar?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Ein bar entspricht 100000 Pa. Deshalb ergeben zwei bar 200000 Pa. Die Einheit bar ist keine zusätzliche Kraft- oder Dichteangabe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-pressure-density-q2: 8 kg in 0,01 m³ ergeben welche Dichte?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Masse durch Volumen: 8/0,01 = 800 kg/m³. Multiplizieren statt Dividieren oder die Druckeinheit zu verwenden würde eine andere Größe liefern.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-pressure-density-q3: Welche Drücke gehören in ein thermodynamisches Druckverhältnis?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Absolute Drücke beziehen sich auf Vakuum. Überdrücke haben einen verschobenen Nullpunkt und liefern daher im Allgemeinen ein falsches Verhältnis, wenn sie ohne Umrechnung eingesetzt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-heat-q1: Welche Einheit gehört zur Wärmemenge?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Joule beschreibt eine Energiemenge. Watt ist Energie pro Zeit, Kelvin gehört zur Temperatur beziehungsweise Temperaturdifferenz. Die drei Größen sind nicht austauschbar.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-heat-q2: Kann bei Phasenwechsel Energie übertragen werden, obwohl die Temperatur ungefähr konstant bleibt?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die Energie kann den Aggregatzustand verändern statt die Temperatur zu erhöhen. Die Aussage setzt passende Randbedingungen voraus und gilt nicht pauschal für jeden Gemischprozess.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:physics-heat-q3: Bestimmt eine Temperaturdifferenz allein den Wärmestrom durch eine Dämmung?
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Ein Temperaturabstand ist keine Leistung. Für die Wärmeübertragung werden zusätzlich Material-/Geometriedaten und geeignete Bedingungen benötigt; diese dürfen nicht erfunden werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-matter-q1: Ist ein homogenes Gemisch immer ein Reinstoff?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Homogen beschreibt die gleichmäßige Verteilung. Die chemische Zusammensetzung kann trotzdem mehrere Stoffe enthalten. Gleichmäßiges Aussehen ist kein Nachweis eines Reinstoffs.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-matter-q2: 3 kg von insgesamt 12 kg entsprechen welchem Massenanteil?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Komponentenmasse durch Gesamtmasse: 3/12 = 0,25 = 25 %. Die Restmasse von 9 kg wäre der falsche Nenner für den Massenanteil.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-matter-q3: Was verändert ein reiner Phasenwechsel?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Schmelzen oder Verdampfen ist eine Zustandsänderung. Eine Änderung der chemischen Zusammensetzung erfordert eine andere Betrachtung; Protonenzahlen werden dabei nicht durch einen normalen Phasenwechsel geändert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-atoms-q1: Wie viele O-Atome enthält ein CO₂-Molekül?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Der tiefgestellte Index 2 gehört zum Sauerstoffsymbol O. Kohlenstoff C ohne Index bedeutet ein C-Atom. Die Summe aller Atome wäre drei, aber gefragt sind nur O-Atome.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-atoms-q2: Wie viele H-Atome stecken in drei H₂O-Molekülen?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Jedes H₂O-Molekül enthält zwei H-Atome. Drei ganze Moleküle ergeben 3 × 2 = 6 H-Atome. Der Koeffizient multipliziert die gesamte Formel.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-atoms-q3: Beschreibt eine Summenformel jede Struktur- und Sicherheitseigenschaft?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Eine Zusammensetzungsangabe allein beschreibt weder alle Strukturvarianten noch reale Betriebs- oder Gefahrenbedingungen. Dafür sind weitere zuverlässige Stoffinformationen erforderlich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-amount-q1: 9 g bei vorgegebenen 18 g/mol ergeben …
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Stoffmenge ist Masse geteilt durch molare Masse: 9/18 = 0,5 mol. Die Einheiten g/(g/mol) ergeben mol; eine Multiplikation wäre hier unpassend.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-amount-q2: Was darf beim Ausgleichen einer chemischen Gleichung verändert werden?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Koeffizienten verändern die Anzahl ganzer Teilcheneinheiten. Formelindizes würden dagegen eine andere Zusammensetzung und damit andere Stoffe beschreiben; sie bleiben erhalten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:chemistry-amount-q3: Welcher O₂-Koeffizient passt zur Bilanz CH₄ + … O₂ → CO₂ + 2 H₂O?
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Rechts stehen zwei O-Atome im CO₂ und zwei weitere in zwei H₂O, insgesamt vier. Links liefern zwei O₂-Moleküle genau diese vier O-Atome; C und H sind ebenfalls ausgeglichen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## card:cycle-card1: Wie lautet die Bauteilreihenfolge ab dem Verdampfer?
 
 - Fachgebiet: kaelte
@@ -1780,6 +3475,456 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: —
 - Quellen: openstax-circuits-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42356/index.cnxml; eip-288, eip-801, eip-531: Reihensumme, Knotenbilanz und Kehrwertsumme | openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
 - Referenz / Rechnung: Symmetrie und Grenzfälle unterstützen die Ergebnisprüfung. Der Ersatzwiderstand bildet das äußere Strom-Spannungs-Verhalten des Modells ab, enthält aber keine Freigabe von Schutzmaßnahmen oder Bauteilbelastbarkeit.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-arithmetic-card1: Was ist die Grundidee: Zahlen und Rechenregeln?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Schreibweise bestimmt die Reihenfolge: Klammern, Potenzen, Punkt, Strich. Gleichrangige Operationen werden von links nach rechts ausgeführt. Vorzeichen gehören zur Zahl und dürfen nicht weggelassen werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-arithmetic-card2: Welchen Fehler vermeidest du bei Zahlen und Rechenregeln?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ohne Klammern einfach von links nach rechts alles rechnen. Das Minus vor einer negativen Zahl übersehen; Dezimalkomma mit Tausendertrennung verwechseln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-fractions-card1: Was ist die Grundidee: Brüche verstehen und berechnen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gleiche Teilgrößen sind für Addition und Subtraktion nötig. Multiplizieren verbindet Faktoren, Dividieren verwendet den Kehrwert des Divisors. Nenner und der ganze Divisor dürfen niemals null sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-fractions-card2: Welchen Fehler vermeidest du bei Brüche verstehen und berechnen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Zähler und Nenner beim Addieren unabhängig addieren. Aus Summen einzelne Zahlen kürzen oder bei Division den Kehrwert vergessen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-percent-card1: Was ist die Grundidee: Prozentrechnung und Dreisatz?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Prozentrechnung beschreibt Anteile am klar benannten Grundwert. Der direkte Dreisatz nutzt einen konstanten Wert pro Einheit. Prozentpunkte, Prozentänderungen und absolute Werte sind unterschiedliche Aussagen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-percent-card2: Welchen Fehler vermeidest du bei Prozentrechnung und Dreisatz?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: 15 statt 0,15 als Multiplikator einsetzen. Einen Dreisatz ohne proportionale Beziehung benutzen oder den Referenzwert wechseln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-algebra-card1: Was ist die Grundidee: Variablen und Terme?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Variablen erlauben allgemeine Rechenvorschriften. Gleichartige Terme werden über ihre Koeffizienten zusammengefasst; das Distributivgesetz verteilt einen Faktor auf alle Summanden der Klammer.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-algebra-card2: Welchen Fehler vermeidest du bei Variablen und Terme?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Nur den ersten Summanden in einer Klammer multiplizieren. Ungleichartige Terme wie 3x und 2 zu 5x zusammenfassen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-equations-card1: Was ist die Grundidee: Gleichungen Schritt für Schritt lösen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Äquivalenzumformungen behandeln beide Seiten gleich und sind umkehrbar. Für ax + b = c mit a ≠ 0 ist die Lösung eindeutig. Die Probe erfolgt in der ursprünglichen Gleichung, nicht nur im Endergebnis.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-equations-card2: Welchen Fehler vermeidest du bei Gleichungen Schritt für Schritt lösen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Operation nur auf einer Seite ausführen. Durch eine möglicherweise null werdende Größe teilen oder die Probe auslassen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-powers-card1: Was ist die Grundidee: Potenzen, Wurzeln und Zehnerpotenzen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Potenzen bündeln gleiche Faktoren, negative Exponenten bilden Kehrwerte und Quadratwurzeln liefern nicht negative Hauptwerte. Klammern bestimmen die Basis. Wissenschaftliche Schreibweise zeigt die Größenordnung einer Zahl.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-powers-card2: Welchen Fehler vermeidest du bei Potenzen, Wurzeln und Zehnerpotenzen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Exponenten beim Addieren von Potenzen automatisch addieren. √(x²) ohne Betrag schreiben oder Minus und Klammern vor Potenzen verwechseln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-units-card1: Was ist die Grundidee: SI-Einheiten und Umrechnungen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größe und Zahlenwert sind nicht dasselbe. Einheitenwechsel nutzt Faktoren mit Wert eins. Die Richtung ergibt sich aus dem Kürzen der alten Einheit; Temperaturdifferenzen erhalten keinen absoluten Temperaturoffset.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-units-card2: Welchen Fehler vermeidest du bei SI-Einheiten und Umrechnungen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Umrechnungsfaktor in die falsche Richtung anwenden. Auf Temperaturdifferenzen den Celsius-Kelvin-Offset addieren; bei Flächen das Quadrat vergessen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-rearrange-card1: Was ist die Grundidee: Technische Formeln umstellen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Formeln werden durch dieselben umkehrbaren Operationen auf beiden Seiten umgestellt. Die Zielvariable, zulässige Nenner, Einheiten und eine Probe gehören zu jeder vollständigen technischen Lösung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-rearrange-card2: Welchen Fehler vermeidest du bei Technische Formeln umstellen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beim Teilen durch mehrere Faktoren nur einen Faktor in den Nenner schreiben. Vor der Division nicht prüfen, ob der Nenner null sein kann.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-motion-card1: Was ist die Grundidee: Bewegung, Masse und Kraft?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Geschwindigkeit beschreibt Bewegung, Beschleunigung deren Änderung. Die resultierende Kraft ist im einfachen Newton-Modell Masse mal Beschleunigung. Masse und Gewichtskraft haben verschiedene Einheiten und Bedeutungen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-motion-card2: Welchen Fehler vermeidest du bei Bewegung, Masse und Kraft?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Masse in kg und Gewichtskraft in N gleichsetzen. Eine Einzelkraft mit der Resultierenden verwechseln oder aus konstanter Geschwindigkeit eine Beschleunigung ableiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-energy-card1: Was ist die Grundidee: Arbeit, Energie und Leistung?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Arbeit überträgt Energie, Leistung beschreibt die Energieübertragung pro Zeit. Einheiten und Systemgrenzen entscheiden, welcher Quotient sinnvoll ist. Ein COP ist kein pauschaler Wirkungsgrad derselben Energieumwandlung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-energy-card2: Welchen Fehler vermeidest du bei Arbeit, Energie und Leistung?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: kW als Energiemenge lesen oder Zeit beim Leistungsvergleich weglassen. COP und Wirkungsgrad gleichsetzen oder Fluidleistung als elektrische Anschlussleistung ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-pressure-density-card1: Was ist die Grundidee: Druck und Dichte verstehen?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Druck ist senkrechte Kraft pro Fläche, Dichte Masse pro Volumen. Ihre Nenner müssen zum gleichen Modell/System gehören. Druckbezug und Stoffzustand sind Teil einer vollständigen technischen Angabe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-pressure-density-card2: Welchen Fehler vermeidest du bei Druck und Dichte verstehen?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Relativdruck direkt in ein Verhältnis absoluter Drücke einsetzen. Liter und Kubikmeter verwechseln oder einer fiktiven Dichte einen realen Stoffnamen zuweisen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-heat-card1: Was ist die Grundidee: Temperatur, Wärme und Phasenwechsel?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Temperatur ist keine Energiemenge. Q = mcΔT gilt hier nur für sensible Änderungen mit konstantem c. Beim Phasenwechsel und bei technischen Wärmeströmen sind zusätzliche Zustands- beziehungsweise Übertragungsmodelle nötig.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:physics-heat-card2: Welchen Fehler vermeidest du bei Temperatur, Wärme und Phasenwechsel?
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Temperatur mit einer vorhandenen Wärmemenge gleichsetzen. mcΔT trotz Phasenwechsel als vollständige Energiebilanz verwenden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:chemistry-matter-card1: Was ist die Grundidee: Stoffe, Eigenschaften und Gemische?
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Reinstoffe und Gemische unterscheiden sich durch ihre Zusammensetzung. Homogen bedeutet gleichmäßig, nicht chemisch rein. Der Massenanteil ist die Komponentenmasse geteilt durch die Gesamtmasse; alle Angaben brauchen einen klaren Bezug.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:chemistry-matter-card2: Welchen Fehler vermeidest du bei Stoffe, Eigenschaften und Gemische?
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Homogen mit rein gleichsetzen oder Zustand und chemische Zusammensetzung verwechseln. Beim Massenanteil durch die Restmasse statt durch die Gesamtmasse teilen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:chemistry-atoms-card1: Was ist die Grundidee: Atome, Moleküle und chemische Formeln?
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Elementzeichen benennen Atomsorten, Indizes die Zusammensetzung einer Teilcheneinheit und Koeffizienten deren Anzahl. Atome, Moleküle, Ionen und Gitter sind verschiedene Beschreibungen und dürfen nicht beliebig gleichgesetzt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:chemistry-atoms-card2: Welchen Fehler vermeidest du bei Atome, Moleküle und chemische Formeln?
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Den Koeffizienten nur auf das erste Element anwenden. Eine Summenformel als vollständige Aussage über Struktur, Sicherheits- oder Stoffeigenschaften lesen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:chemistry-amount-card1: Was ist die Grundidee: Stoffmenge, molare Masse und Reaktionsbilanz?
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Stoffmenge n, Masse m und molare Masse M sind über n = m/M verbunden. Reaktionskoeffizienten erhalten die Atombilanz, während Formelindizes zum jeweiligen Stoff gehören. Gerundete Lernwerte sind keine präzisen Stoffdaten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:chemistry-amount-card2: Welchen Fehler vermeidest du bei Stoffmenge, molare Masse und Reaktionsbilanz?
+
+- Fachgebiet: chemie
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: g mit kg/mol kombinieren, ohne den Faktor 1000 umzurechnen. Zum Ausgleichen die Indizes einer Stoffformel verändern und damit einen anderen Stoff hinschreiben.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -2147,6 +4292,591 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## numeric:math-order-a: Vorzeichen und Punkt-vor-Strich
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(3\cdot4=12\). Multiplikation zuerst. / \(-8+12=4\). Die negative Zahl bleibt erhalten.
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-order-b: Dezimalzahlen sinnvoll ordnen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(2\cdot0{,}25=0{,}5\). / \(1{,}5+0{,}5=2\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-fraction-add-a: Brüche addieren
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(\frac12=\frac24\). Gleiche Teilgrößen herstellen. / \(\frac24+\frac14=\frac34=0{,}75\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-fraction-sub-a: Brüche subtrahieren
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-fraction-subtract
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Nenner sind gleich: \(\frac{1-3}{4}\). / \(\frac{-2}{4}=-\frac12=-0{,}5\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-fraction-mul-a: Brüche multiplizieren
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-fraction-multiply
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(\frac23\cdot\frac34=\frac6{12}\). / Zähler und Nenner durch 6: \(\frac12=0{,}5\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-fraction-div-a: Durch einen Bruch teilen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-fraction-divide
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Kehrwert des Divisors: \(\frac54\). / \(\frac23\cdot\frac54=\frac{10}{12}=\frac56\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-percent-a: Prozentanteil berechnen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-percent-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(15\%=0{,}15\). / \(W=200\cdot0{,}15=30\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-percent-b: Prozentsatz berechnen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-percent-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(r=\frac{30}{200}=0{,}15\). / Als Prozentsatz: \(0{,}15\cdot100\%=15\%\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-proportion-a: Direkter Dreisatz
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ein Teil kostet \(\frac{12}{3}=4\). / Fünf Teile kosten \(4\cdot5=20\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-term-a: Einen Term einsetzen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Einsetzen: \(3(4+2)\). / Klammer zuerst: \(3\cdot6=18\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-term-b: Negativen Wert einsetzen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(2((-3)+1)=2(-2)\). / \(2\cdot(-2)=-4\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-linear-a: Lineare Gleichung lösen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beidseitig minus 6: \(3x=18\). / Beidseitig durch 3: \(x=6\). Probe: \(3\cdot6+6=24\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-linear-b: Gleichung mit negativer Lösung
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beidseitig minus 5: \(2x=-8\). / Beidseitig durch 2: \(x=-4\). Probe: \(2(-4)+5=-3\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-rearrange-a: Umgestellten Widerstand prüfen
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ohm-resistance
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(U=RI\quad|:I\), wobei \(I\ne0\). / \(R=\frac{24}{0{,}2}=120\,\Omega\). Probe \(120\cdot0{,}2=24\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-rearrange-b: Zweite Umstellungsprobe
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ohm-resistance
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(R=\frac U I\). / \(R=\frac{12}{0{,}01}=1200\,\Omega\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-unit-a: Minuten in Sekunden
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(1\,\mathrm{min}=60\,\mathrm s\). / \(30\cdot60=1800\,\mathrm s\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-unit-b: Wattstunden in Joule
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(1\,\mathrm{Wh}=3600\,\mathrm J\). / \(24\cdot3600=86400\,\mathrm J\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-power-a: Potenz als Produkt
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(2^3=2\cdot2\cdot2\). / \(2\cdot2\cdot2=8\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-power-b: Negative Zehnerpotenz
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(10^{-3}=\frac1{10^3}\). / \(\frac1{1000}=0{,}001\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-root-a: Quadratwurzel bilden
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gesucht \(x\ge0\) mit \(x^2=144\). / \(12^2=144\), also \(\sqrt{144}=12\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:math-root-b: Quadratwurzel mit Dezimalzahl
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: \(0{,}9\cdot0{,}9=0{,}81\). / Somit \(\sqrt{0{,}81}=0{,}9\).
+- Annahmen: Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.
+- Mögliche Fehler: Die Reihenfolge oder die Bedeutung des Nenners übersehen. Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-speed-a: Mittlere Geschwindigkeit
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-speed
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(v=\frac s t\). / \(v=\frac{12}{4}=3\,\mathrm{m/s}\).
+- Annahmen: Mittlere Weggeschwindigkeit, kein Rückschluss auf Beschleunigung.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-speed-b: Geschwindigkeit mit Minuten
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-speed
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(2\,\mathrm{min}=120\,\mathrm s\). / \(v=\frac{120}{120}=1\,\mathrm{m/s}\).
+- Annahmen: Mittlere Weggeschwindigkeit.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-force-a: Resultierende Kraft
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-force
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(F_{\mathrm{res}}=ma\). / \(F_{\mathrm{res}}=20\cdot0{,}5=10\,\mathrm N\).
+- Annahmen: Inertialsystem, konstante Masse, Beträge in einer Richtung.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-force-b: Zweite Kraftvariante
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-force
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(F_{\mathrm{res}}=ma\). / \(F_{\mathrm{res}}=10\cdot2=20\,\mathrm N\).
+- Annahmen: Konstante Masse; keine Maschinenauslegung.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-work-a: Mechanische Arbeit
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-work
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(W=Fs\). / \(W=50\cdot3=150\,\mathrm J\).
+- Annahmen: Konstante Kraft parallel zum Weg; positiver Arbeitsbetrag.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-work-b: Arbeit auf kurzem Weg
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-work
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(50\,\mathrm{cm}=0{,}5\,\mathrm m\). / \(W=20\cdot0{,}5=10\,\mathrm J\).
+- Annahmen: Konstante parallele Kraft, keine Reibungs-/Verlustbilanz.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-power-a: Leistung aus Energie und Zeit
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(P=\frac E t\). / \(P=\frac{600}{30}=20\,\mathrm W\).
+- Annahmen: Mittlere Leistung über das angegebene Intervall.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-pressure-a: Druck aus Kraft und Fläche
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-pressure
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(p=\frac F A\). / \(p=\frac{600}{0{,}003}=200000\,\mathrm{Pa}=2\,\mathrm{bar}\).
+- Annahmen: Gleichmäßig verteilte senkrechte Kraft; keine Druckbehälterauslegung.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-pressure-b: Druck mit Quadratzentimetern
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-pressure
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(20\,\mathrm{cm^2}=0{,}002\,\mathrm{m^2}\). / \(p=\frac{100}{0{,}002}=50000\,\mathrm{Pa}\).
+- Annahmen: Idealisierte gleichmäßige Flächenbelastung.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-density-a: Dichte eines fiktiven Stoffes
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(10\,\mathrm L=0{,}01\,\mathrm{m^3}\). / \(\rho=\frac8{0{,}01}=800\,\mathrm{kg/m^3}\).
+- Annahmen: Eigene Lernwerte, keine Stoffeigenschaft eines benannten Kältemittels.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-heat-a: Sensible Wärmemenge
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-heat-energy
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(Q=mc\Delta T\). / \(Q=2\cdot4180\cdot5=41800\,\mathrm J\).
+- Annahmen: c vorgegeben und konstant; Näherungswert für Wasser um 20 °C, kein Phasenwechsel.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:physics-heat-b: Wärmemenge mit Gramm
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: math-heat-energy
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: \(500\,\mathrm g=0{,}5\,\mathrm{kg},\quad c=4180\,\mathrm{J/(kg\,K)}\). / \(Q=0{,}5\cdot4180\cdot10=20900\,\mathrm J\).
+- Annahmen: Konstantes vorgegebenes c, kein Phasenwechsel.
+- Mögliche Fehler: Eine Energie als Leistung oder eine Masse als Kraft lesen. Flächen-, Zeit- oder Vorsilbenfaktoren in die falsche Richtung umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:chemistry-fraction-a: Massenanteil einer Komponente
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: chemistry-mass-fraction
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: \(w_A=\frac{m_A}{m_{\mathrm{ges}}}\). / \(w_A=\frac3{12}=0{,}25=25\%\).
+- Annahmen: Abstrakter Rechenfall, Gesamtmasse enthält die Komponente. Keine Stoffe mischen.
+- Mögliche Fehler: Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln. Gramm und kg/mol ohne Umrechnung kombinieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:chemistry-fraction-b: Zweite Massenanteilsvariante
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: chemistry-mass-fraction
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: \(w=\frac15=0{,}2\). / \(0{,}2\cdot100\%=20\%\).
+- Annahmen: Nur eine Massenbilanz mit fiktiven Werten, keine Versuchsanleitung.
+- Mögliche Fehler: Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln. Gramm und kg/mol ohne Umrechnung kombinieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:chemistry-atoms-a: Sauerstoffatome in CO₂ zählen
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: chemistry-atom-count
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Jedes \(\ce{CO2}\)-Molekül enthält zwei O-Atome. / \(N_{\mathrm O}=2\cdot5=10\).
+- Annahmen: Abstrakte Teilchenzählung, keine Stoffmengen- oder Volumenmessung.
+- Mögliche Fehler: Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln. Gramm und kg/mol ohne Umrechnung kombinieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:chemistry-atoms-b: Wasserstoffatome in H₂O zählen
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: chemistry-atom-count
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: Jedes \(\ce{H2O}\)-Molekül enthält zwei H-Atome. / \(N_{\mathrm H}=2\cdot3=6\).
+- Annahmen: Abstrakte Teilchenzählung.
+- Mögliche Fehler: Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln. Gramm und kg/mol ohne Umrechnung kombinieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:chemistry-amount-a: Stoffmenge mit gerundeter molarer Masse
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: chemistry-amount-rule
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: \(m=0{,}009\,\mathrm{kg},\quad M=0{,}018\,\mathrm{kg/mol}\). / \(n=\frac{0{,}009}{0{,}018}=0{,}5\,\mathrm{mol}\).
+- Annahmen: Gerundeter Lernwert, keine hochgenaue Stofftabelle und kein praktischer Versuch.
+- Mögliche Fehler: Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln. Gramm und kg/mol ohne Umrechnung kombinieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:chemistry-amount-b: Zweite Stoffmengenvariante
+
+- Fachgebiet: chemie
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: chemistry-amount-rule
+- Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
+- Referenz / Rechnung: \(n=\frac m M\). / \(n=\frac{44\,\mathrm g}{44\,\mathrm{g/mol}}=1\,\mathrm{mol}\).
+- Annahmen: Ausdrücklich vorgegebener gerundeter Modellwert; keine Hersteller-/Kältemittelzuordnung.
+- Mögliche Fehler: Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln. Gramm und kg/mol ohne Umrechnung kombinieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## term:enthalpie: Enthalpie
 
 - Fachgebiet: fachuebergreifend
@@ -2305,6 +5035,231 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: —
 - Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
 - Referenz / Rechnung: Umgesetzte Energie; bei konstanter Leistung E = P × t. 1 Wh = 3600 J.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-variable: Variable
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Platzhalter für einen veränderlichen oder unbekannten Wert. In technischen Formeln zusätzlich Größe und Einheit definieren.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-denominator: Nenner
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unterer Ausdruck eines Bruchs. Er beschreibt die Teilgröße bzw. den Divisor und darf nicht null sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-equivalence: Äquivalenzumformung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Umkehrbare Umformung einer Gleichung, die deren Lösungsmenge erhält. Beide Seiten müssen gleich behandelt und Nullbedingungen beachtet werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-proportion: Direkte Proportionalität
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Zuordnung mit konstantem Quotienten y/x im betrachteten Bereich, bei x ≠ 0. Sie muss fachlich begründet sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-power: Potenz
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Bei natürlichem Exponenten ein Produkt gleicher Faktoren. Negative ganzzahlige Exponenten beschreiben Kehrwerte einer von null verschiedenen Basis.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-mass: Masse und Gewichtskraft
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Masse in kg beschreibt unter anderem Trägheit. Gewichtskraft ist eine Kraft in N; für ihre Berechnung muss die Fallbeschleunigung angegeben werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-pressure: Druck
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Im einfachen Modell senkrechte Kraft pro Fläche. SI-Einheit Pa = N/m²; absolute und relative Druckbezüge unterscheiden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-density: Dichte
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Masse pro Volumen desselben Stoffzustands, SI-Einheit kg/m³. Kein allgemeiner konstanter Wert für beliebige Drücke oder Temperaturen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-heat-energy: Wärmemenge
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Als Wärme übertragene Energie in J. Sie ist weder Temperatur in K noch Wärmeleistung in W.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-mixture: Gemisch
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Zusammensetzung aus mehreren Stoffen. Homogen bedeutet gleichmäßig verteilt und nicht automatisch chemisch rein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-atom: Atom
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Teilchen mit einem Kern und einer Elektronenhülle. Die Protonenzahl definiert das Element; Isotope unterscheiden sich in der Neutronenzahl.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-electron: Elektronen
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Negativ geladene Bestandteile der Atomhülle. Eine geänderte Elektronenbilanz kann ein Ion ergeben; sie ändert nicht die Protonenzahl des Elements.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-molecule: Molekül
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Gebundene Atomgruppe; Formelindizes geben die Zusammensetzung einer Teilcheneinheit an. Nicht alle Stoffe sind aus einzelnen Molekülen aufgebaut.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-mole: Mol und Stoffmenge
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Die Stoffmenge n in mol beschreibt eine festgelegte Teilchenanzahl. Mol ist keine Masseeinheit und benötigt die Angabe der betrachteten Teilchenart.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:foundation-molar-mass: Molare Masse
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Masse pro Stoffmenge derselben Teilchenart, in SI kg/mol. Sie verbindet Masse und Stoffmenge über n = m/M für M > 0.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -2537,6 +5492,231 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## objective:math-arithmetic-objective: Sicher mit Vorzeichen, Dezimalzahlen, Punkt-vor-Strich und Klammern rechnen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-fractions-objective: Brüche kürzen, erweitern und mit allen vier Grundrechenarten sicher bearbeiten.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-percent-objective: Grundwert, Anteil und Prozentsatz unterscheiden und proportionale Zuordnungen berechnen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-algebra-objective: Variablen als Platzhalter verstehen und Terme sinnvoll zusammenfassen und ausmultiplizieren.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-equations-objective: Lineare Gleichungen mit Äquivalenzumformungen lösen und die Lösung durch Einsetzen prüfen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-powers-objective: Potenzen als Produkte verstehen, Quadratwurzeln erklären und Größenordnungen sicher schreiben.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-units-objective: Größen, Zahlenwerte und Einheiten unterscheiden und mit Umrechnungsfaktoren sicher rechnen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-rearrange-objective: Produkte und Quotienten gezielt nach einer gesuchten Größe umstellen und jeden Schritt begründen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:physics-motion-objective: Geschwindigkeit, Beschleunigung, Masse und resultierende Kraft unterscheiden und berechnen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:physics-energy-objective: Mechanische Arbeit, Energie, Leistung und Wirkungsgrad mit passenden Systemgrenzen erklären.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:physics-pressure-density-objective: Druck als Kraft pro Fläche und Dichte als Masse pro Volumen unterscheiden und umrechnen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:physics-heat-objective: Temperatur und Wärmemenge unterscheiden und sensible Erwärmung von Phasenwechsel abgrenzen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:chemistry-matter-objective: Reinstoffe, Verbindungen und Gemische unterscheiden und einfache Massenanteile erklären.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:chemistry-atoms-objective: Elementzeichen, Atombau, Moleküle und tiefgestellte Indizes von Reaktionskoeffizienten unterscheiden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:chemistry-amount-objective: Stoffmenge aus Masse und molarer Masse berechnen und einfache Reaktionsgleichungen als Atombilanzen lesen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## note:electric-power-note: Elektrische Wirkleistung im Gleichstromkreis
 
 - Fachgebiet: elektro
@@ -2560,6 +5740,201 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: cooling-cop, heating-cop
 - Quellen: didactic-exercises: Zahlen, Einheiten und Rechenwege durch unabhängige Referenztests abgesichert. Fiktive Lernfälle; keine Herstellerwerte. Unabhängige fachliche Freigabe ausstehend. Die direkten OpenStax-Webseiten waren per HTTP 403 gesperrt. Passende Grundbeziehungen wurden stattdessen im offiziellen GitHub-Quellarchiv tatsächlich nachgelesen; die konkreten Fundstellen sind separat registriert.; keine externe Fundstelle
 - Referenz / Rechnung: Eine Leistungszahl ist der dimensionslose Quotient aus thermischem Nutzen und zugehöriger elektrischer Leistung am gleichen Betriebspunkt. Kälteleistungszahl ε = Q̇₀ / Pel; Heiz-COP = Q̇Heiz / Pel. Beide Leistungen benötigen dieselbe Einheit und passende Systemgrenzen. Eine momentane Leistungszahl ist keine Jahresarbeitszahl. Messunsicherheit, Hilfsenergien und Betriebszustand müssen dokumentiert werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-ohm-r-step1: U = R × I → R: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: ohm-resistance
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe I geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-ohm-i-step1: U = R × I → I: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: ohm-current
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe R geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-power-u-step1: P = U × I → U: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: dc-electric-power
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe I geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-power-i-step1: P = U × I → I: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: dc-electric-power
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe U geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-heat-m-step1: Q = m × c × ΔT → m: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: math-heat-energy
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe c × ΔT geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-heat-c-step1: Q = m × c × ΔT → c: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: math-heat-energy
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe m × ΔT geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-heat-dt-step1: Q = m × c × ΔT → ΔT: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: math-heat-energy
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe m × c geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-pressure-f-step1: p = F / A → F: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: physics-pressure
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Multiplikation mit A auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird A ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-pressure-a-step1: p = F / A → A: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: physics-pressure
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Multiplikation mit A auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird A ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-pressure-a-step2: p = F / A → A: Schritt 2
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: physics-pressure
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe p geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-density-m-step1: ρ = m / V → m: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Multiplikation mit V auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird V ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-density-v-step1: ρ = m / V → V: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Multiplikation mit V auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird V ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-density-v-step2: ρ = m / V → V: Schritt 2
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe ρ geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?

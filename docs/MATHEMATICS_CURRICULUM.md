@@ -9,9 +9,9 @@
 | 3 | math-percent | Grundwert/Anteil/Prozentsatz, direkter Dreisatz, Proportionalität und wechselnde Grundwerte; drei Zahlenaufgaben |
 | 4 | math-algebra | Variablen, Terme, gleichartige Summanden, Einsetzen, Ausmultiplizieren und Ausklammern; zwei Zahlenvarianten |
 | 5 | math-equations | Lineare Gleichungen, beidseitige Äquivalenzoperationen, Nullfall und Probe; zwei Zahlenvarianten |
-| 6 | math-rearrange | Produkte/Quotienten umstellen, Zielvariable und Nullbedingungen; elf interaktive Zielfälle plus zwei Zahlenproben |
-| 7 | math-powers | Potenzregeln, negative Exponenten, Hauptwurzel/Betrag, wissenschaftliche Schreibweise; vier Zahlenaufgaben |
-| 8 | math-units | Größen/Zahlenwerte/Einheiten, SI, Vorsilben, Zeit/Energie/Massenstrom, Flächenfaktoren und Temperaturdifferenzen; zwei Zahlenaufgaben |
+| 6 | math-powers | Potenzregeln, negative Exponenten, Hauptwurzel/Betrag, wissenschaftliche Schreibweise; vier Zahlenaufgaben |
+| 7 | math-units | Größen/Zahlenwerte/Einheiten, SI, Vorsilben, Zeit/Energie/Massenstrom, Flächenfaktoren und Temperaturdifferenzen; zwei Zahlenaufgaben |
+| 8 | math-rearrange | Produkte/Quotienten umstellen, Zielvariable und Nullbedingungen; elf interaktive Zielfälle plus zwei Zahlenproben |
 
 Die Voraussetzungen bilden einen gerichteten Graphen, keine technische Sperre. Einheiten folgt Potenzen, weil Quadrat-/Kubikfaktoren sonst unverständlich bleiben. Die mathematischen Kernlektionen sind eigenständig nutzbar und in der bestehenden Akademie integriert.
 

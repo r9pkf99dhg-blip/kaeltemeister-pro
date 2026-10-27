@@ -1,33 +1,37 @@
-# Fach- und Datenmodell · Version 0.4
+# Fach- und Datenmodell · Version 0.5
 
-## Inhalte und stabile Identitäten
+## Gemeinsamer Katalog
 
-Zwölf Fachgebiete, fünf bestehende Kälte- und fünf neue Elektro-Module, jeweils drei Niveaus. Alte IDs, Quellen, Optionen und Formeln werden nicht umgedeutet. Das gemeinsame Katalogmodul kombiniert die Bestände. Kapitel-/Unterkapitel-IDs des Elektrobereichs bleiben erhalten; ihre Zuordnungen werden ergänzt. Die elf weiteren Elektro-Themen bleiben als geplante Themen ausgewiesen.
+14 Fachgebiete, 25 Module, drei Niveaus, 80 Modulfragen, 50 Karten, 63 Zahlenaufgaben und elf Umstellungsziele. Neue Fachgebiete Physik/Chemie ergänzen die bestehenden zwölf; die acht Mathematiklektionen gehören zum vorhandenen Mathematik-Fachgebiet. Alte IDs werden weder gelöscht noch umgedeutet. Ein Katalogadapter erzeugt aus strukturierten FoundationLesson-Inhalten die vorhandenen Module/Fragen/Karten.
 
-`Module` erhält optionale `prerequisites: string[]` und `safety: string`. Neue Module nutzen vorhandene Lernziele, Inhalte, Formel-/Quellen-Referenzen, Verständnisfragen, Karten und Fortschrittsregeln. Voraussetzungen sind Lernempfehlungen, keine technischen Zugangssperren.
+FoundationLesson beschreibt Ziel, Nutzen/Praxisbezug, einfachen Inhalt, Begründung, Transfer, Beispiel, Herleitung, Fehler, Zusammenfassung, Voraussetzungen, Formeln, Quellen und Selbsttest. Die drei bestehenden Niveaus werden als Einstieg, Begründung und technischer Transfer genutzt; kein vollständiger Oberstufen-/Meisterprüfungsumfang wird dadurch behauptet.
 
-## Aufgaben und SI
+Neue Fachbegriffe liegen im gemeinsamen Register und verweisen auf Module. Voraussetzungen sind gerichtete Empfehlungen, keine Zugangssperren. Das automatisch erzeugte DOMAIN_AUDIT trennt verfügbare Module von geplanten Themen.
 
-`LearningItem = ChoiceTask | NumericTask`. Zahlenaufgaben enthalten ID/Revision/Thema/Fachgebiet/Niveau, Fachbezug, Formel-ID, gegebene Werte mit Einheit/Mengenart, gesuchte Größe, Berechnungstyp, Ergebniseinheit, SI-/relative Toleranz, Schritte, Fehlerhinweise, Annahmen und Quellen.
+## Formel- und Aufgabenvertrag
 
-24 Aufgaben: die bisherigen acht plus 16 Elektrovarianten. Mengenarten ergänzen Widerstand, Energie, Zeit und Ladung. Neue Einheiten sind mV, mA, Ω, kΩ, J, Wh, kWh, s, min, h und C. Absolute Temperatur erhält bei °C/K einen Offset, Differenzen nicht. Es werden nicht negative Beträge und positive Nenner betrachtet. Kein universeller Herstellerbereich wird erfunden.
+Formula ergänzt optional `tex` und Variablendefinitionen. Der Textausdruck und stabile IDs bleiben erhalten. NumericTask ergänzt optionale `texSteps`, ItemBase optionale `requiredCompetencyIds`. Alte Prüfungssnapshots benötigen diese Felder nicht. Optionale Felder werden beim Import geprüft; beliebige Objekte statt Textlisten werden abgewiesen.
 
-Rechentypen zusätzlich: `charge-current`, `ohm-current`, `ohm-voltage`, `ohm-resistance`, `electric-energy`, `series-resistance`, `parallel-resistance`. Der alte `dc-power`-Typ wird wiederverwendet. Eigene Referenzzahlen stehen getrennt in Tests, nicht als zweite produktive Berechnungslogik.
+Neue numerische Typen beschreiben begrenzte Schuloperationen (Rechenreihenfolge, vier Bruchoperationen, Prozent/Dreisatz, Term, lineare Gleichung, Potenz/Hauptwurzel, Einheitenidentität) sowie Geschwindigkeit, Kraft, mechanische Arbeit, Leistung aus Energie, Druck, Dichte, sensible Wärmemenge und Stoffmenge. Rechenfunktionen werden geteilt; Formeltext wird nie ausgeführt.
 
-## Fortschritt und Datei
+Neue Mengenarten: reine mathematische Zahl, Prozent, Masse, Länge, Fläche, Volumen, Druck, Dichte, Kraft, Beschleunigung, Geschwindigkeit, Stoffmenge, molare Masse. SI-Umrechnungen sind explizit; Temperaturdifferenzen bleiben vom absoluten Offset getrennt. Nur mathematische Zahlen dürfen negativ sein. Einfache Bruchantworten werden nur im ausdrücklich numerischen Mathematikfeld erkannt, nicht in normalen Texten oder als beliebige Formelprogramme.
 
-Die v3-Felder bleiben unverändert: `read`, `answers`, `reviews`, `legacySummary`, `updatedAt`, `performance`, `exerciseAnswers`, `recentModules`, `activeExam`, `examHistory`. Die letzte numerische Antwort und aggregierte Zähler sind keine lückenlose Ereignishistorie. Es bleiben maximal fünf letzte Module und 20 Prüfungsergebnisse erhalten. Prüfungs-Snapshots enthalten die damaligen Aufgaben und Lösungen; historische IDs/Revisionen bleiben lesbar.
+## Kompetenzbeziehungen
 
-Das Sicherungsformat `kaeltemeister-pro-backup`, Version 1, verpackt den vollständigen v3-Stand, den verfügbaren alten v1-Fortschritt und die rohe v2-Rückfallkopie. Dateiversion ist nicht Speicherversion. `settings: {}` ist ausdrücklich leer, weil keine dauerhaft gespeicherten UI-Einstellungen existieren. Dateigröße und Strukturen sind begrenzt. Duplikate sind Fehler, keine stillschweigende Zusammenführung. Siehe [BACKUP_RESTORE.md](BACKUP_RESTORE.md).
+Competency hat stabile ID, Titel und lessonId. Aufgaben tragen benötigte Kompetenz-IDs; eine Aufgabe kann mehrere Anforderungen besitzen. Lernleistung wird aus aktuellen Aufgabenrevisionen und bestehenden Antworten/Leseständen abgeleitet. Kein zusätzlicher persistierter Kompetenzcache, keine doppelte Lernhistorie. Ein falsches Gesamtergebnis belegt keine einzelne Ursache; die Empfehlung nennt Belege und Unsicherheit.
 
-Journal und Speichergeneration sind Infrastruktur, keine Lernleistungen und kein Bestandteil der importierten fachlichen Historie. Ihre Identität wird lokal für den Restore erzeugt; das Backup kopiert keine fremde laufende Schreibtransaktion.
+Der Trainer normalisiert seine Operationen als ChoiceTask-IDs. Auch diese werden in Prüfung/Statistik/Qualitätsregister wiederverwendet. Der aktuelle UI-Schritt ist nicht dauerhaft gespeichert.
 
-## Fachprüfung
+## Fortschritt und Sicherung
 
-`ReviewEntry` erfasst Inhalt-ID, Art, Fachgebiet, Status, Prüfumfang, Formel-/Quellen-IDs, Referenzrechnung, Annahmen, Fehler, offene Fragen und unabhängigen Prüfer. Fünf einheitliche Status sind definiert. Derzeit ist `independentReviewer` überall null. Die vorhandenen älteren Reviewfelder bleiben zur Abwärtskompatibilität erhalten; sie werden nicht als menschliche Freigabe interpretiert. Das ausführliche aktuelle Register ist für UI und Bericht maßgeblich.
+**Unverändert:** Fortschrittsschema 3 unter v3, Backup-Dateiformat 1, v1/v2-Migrationspfade und unberührte Rückfallbestände. `read`, `answers`, `reviews`, `legacySummary`, `performance`, `exerciseAnswers`, `recentModules`, `activeExam`, `examHistory`, `updatedAt` bleiben der Vertrag. Keine erfundenen historischen Versuche.
 
-`Source` unterscheidet weiterhin `consulted`, `unavailable`, `internal` samt Fundstelle, Zugriff, Lizenz und Commit. Quelleneinsicht belegt nur den angegebenen Umfang. Rechenprüfung ist nicht Modellfreigabe.
+Tests verwenden eine echte mit main 0.4 erzeugte Sicherung samt historischen Snapshots ohne TeX-/Kompetenzfelder. Neue negative Mathematik-Snapshots und molare Einheiten sind durch denselben Export-/Importpfad gedeckt. Ältere Apps kennen neue Aufgabentypen nicht; aktuelle Sicherungen deshalb nicht mit 0.4 wiederherstellen. Unbekannte Formate bleiben geschützt statt still ersetzt.
 
-## Zukunft
+Prüfungssnapshots bewahren die damaligen Aufgaben und Antworten. Maximal 20 Ergebnisse, fünf letzte Module und letzte numerische Trainingsantwort je Aufgabe bleiben die vorhandenen Grenzen. Keine vollständige Ereignishistorie, kein Konto und keine Gerätesynchronisation.
 
-Diagramme, Rechner, Stoffwerte, Komponenten, Diagnose und Projekte sollen stabile Fach- und Formel-IDs verwenden. Reale Stoff-/Bauteildaten brauchen eigene Herkunft, Referenzzustände und Aktualisierungsregeln. Optionale Synchronisation braucht einen gesonderten Ereignis-/Konfliktvertrag und bleibt außerhalb von 0.4.
+## Qualität und spätere Module
+
+42 Formeldefinitionen besitzen expliziten Formelsatz. Prüfevidenz ist von Darstellung getrennt: automatisch getestet, konkret quellenbasiert abgeglichen oder noch Entwurf; überall unabhängige menschliche Freigabe offen. Nicht jede verlinkte Quelle bedeutet einen vollständigen Aussagenabgleich.
+
+Professionelle Rechner, Diagramme, reale Stoff-/Bauteildaten, Diagnose, Planung und Dokumentation sollen dieselben Definitionen/IDs referenzieren. Reale Daten benötigen zusätzliche Herkunfts-, Zustands-, Rechte- und Aktualisierungsverträge.

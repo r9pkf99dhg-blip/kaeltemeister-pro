@@ -1,4 +1,4 @@
-# Fachqualität und technische Prüfung · Version 0.4
+# Fachqualität und technische Prüfung · Version 0.5
 
 ## Ehrlicher Prüfstatus
 
@@ -16,7 +16,7 @@ Der vollständig ausgefüllte Ausgangsbericht mit Bearbeitungsfeldern für Fachp
 
 ## Durchgeführte fachliche Arbeit
 
-- Alle 24 Zahlenaufgaben besitzen separat vorgegebene SI-Referenzergebnisse; diese Werte werden nicht aus der zu prüfenden Produktfunktion erzeugt.
+- Alle 63 Zahlenaufgaben besitzen separat vorgegebene SI-Referenzergebnisse; diese Werte werden nicht aus der zu prüfenden Produktfunktion erzeugt.
 - Wärme-, Massenstrom-, Temperatur-, COP- und Elektrobeispiele bleiben klar begrenzte fiktive Lernfälle.
 - SI-Umrechnungen einschließlich kg/h, °C/K, mA, mV, kΩ, Minuten/Stunden und J/Wh/kWh; Toleranzgrenzen und falsche Einheiten sind getestet.
 - Fehlende/negative/nicht endliche Werte, Nullnenner, Überlauf und falsches Temperaturvorzeichen werden geprüft. Der Parallelrechner verwendet eine skalierte Form, damit große Einzelwiderstände nicht unnötig einen Produktüberlauf erzeugen.
@@ -39,3 +39,12 @@ Elektrische Beispiele sind keine Arbeitsanweisungen an spannungsführenden Anlag
 5. Erst dokumentierte Freigabe mit Person, Datum und Umfang erlaubt den Status „Unabhängig fachlich geprüft“.
 
 Automatische Prüfungen und echte Geräteprüfung bleiben ergänzende, getrennte Nachweise. Siehe [APPLE_TEST_PLAN.md](APPLE_TEST_PLAN.md) und Versionsbericht.
+
+
+## Ergänzungen 0.5
+
+25 Module, 42 Formeldefinitionen, 63 Zahlenaufgaben und 13 normalisierte Trainer-Schrittfragen werden gemeinsam inventarisiert. Neue Begriffe, Herleitungen und alte Sicherungssnapshots sind Teil der Prüfungen. Das Register ist für UI und Bericht dieselbe Quelle.
+
+Ein Quellenlink allein reicht nicht für den Status „Quellenbasiert geprüft“. Die Implementierung führt eine ausdrückliche Liste konkret abgeglichener Beziehungen; übrige Formeln bleiben automatisch geprüft und verlangen weiteren Aussagenabgleich. Vollständige Grundlagentexte bleiben zur unabhängigen menschlichen Prüfung offen. Die Darstellbarkeit in KaTeX ist eine andere Prüfung als mathematische oder fachliche Richtigkeit.
+
+Separat getestete neue Aspekte: Bruchantworten, negative mathematische Ergebnisse, Prozentwerte, Potenz-/Wurzelgrenzen, alle Modultexte/Formeln, 11 Umstellungsziele mit Zahlenproben, Kraft/Druck/Dichte/Wärmemenge/mol, Kompetenzreferenzen und azyklische Voraussetzungen. Eine echte mit dem main-Stand 0.4 erzeugte Sicherung dient als unveränderte Rückwärtsreferenz für den Import nach 0.5.
