@@ -20,6 +20,9 @@ jobs:
     name: App prüfen und bauen
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: read
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
