@@ -1,3 +1,4 @@
+import { physicsTasks } from "../foundations/physics-tasks";
 import { mathematicsTasks } from "../foundations/tasks";
 import { solutionNotation } from "../../math/legacy-solutions";
 import { electricalTasks } from "./electrical";
@@ -412,3 +413,5 @@ numericTasks.push(...electricalTasks);
 for (const task of numericTasks) task.texSteps = solutionNotation[task.id];
 
 numericTasks.push(...mathematicsTasks);
+
+numericTasks.push(...physicsTasks);

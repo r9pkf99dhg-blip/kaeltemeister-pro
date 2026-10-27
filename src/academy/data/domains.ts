@@ -331,3 +331,8 @@ mathDomain.chapters[0].subchapters[0].moduleIds=mathematicsLessons.filter(l=>['m
 mathDomain.chapters[0].subchapters[0].plannedTopics=[];
 mathDomain.chapters[0].subchapters[1].moduleIds=['math-algebra','math-equations','math-rearrange'];
 mathDomain.chapters[0].subchapters[1].plannedTopics=['Quadratische Gleichungen und lineare Gleichungssysteme'];
+
+domains.push({id:'physik',title:'Physik-Grundlagen',description:'Vier ausgearbeitete Kernmodule mit Bezug zu Kälte- und Energietechnik.',chapters:[
+ {id:'physik-mechanik',title:'Mechanik und Energie',subchapters:[{id:'physik-bewegung',title:'Bewegung und Kräfte',moduleIds:['physics-motion'],plannedTopics:['Vertiefte Kinematik, Vektoren und Drehbewegung']},{id:'physik-energie',title:'Arbeit und Energie',moduleIds:['physics-energy'],plannedTopics:[]}]},
+ {id:'physik-stoff-waerme',title:'Stoffe und Wärme',subchapters:[{id:'physik-druck-dichte',title:'Druck und Dichte',moduleIds:['physics-pressure-density'],plannedTopics:['Strömung und Gasgesetze']},{id:'physik-waerme',title:'Temperatur und Wärme',moduleIds:['physics-heat'],plannedTopics:['Vertiefte Wärmeübertragung und Hauptsätze']}]},
+ {id:'physik-felder',title:'Felder, Messung und Wellen',subchapters:[{id:'physik-messung',title:'Messunsicherheit',moduleIds:[],plannedTopics:['Messketten und Unsicherheitsfortpflanzung']},{id:'physik-wellen',title:'Magnetismus und Wellen',moduleIds:[],plannedTopics:['Magnetismus, Schwingungen und Wellen; Elektro-Grundgrößen im vorhandenen Elektro-Lernpfad']}]}]});

@@ -17,3 +17,13 @@ test('Mathematik-Kernpfad speichert negative Bruchantworten und einen mehrstufig
  await page.reload();const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('kaeltemeister-pro:progress:v3')!));
  expect(state.read['math-arithmetic'].levels).toContain('grundlagen');expect(state.exerciseAnswers['math-fraction-sub-a'].correct).toBe(true);expect(state.performance['trainer-pressure-a-step2'].lastCorrect).toBe(true);
 });
+test('Physik-Kernmodule sind verknüpft und prüfen Druck mit SI-Umrechnung',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Akademie',exact:true}).click();
+ await page.getByLabel('Fachgebiet',{exact:true}).selectOption('physik');await expect(page.getByRole('status')).toContainText('4 verfügbare Lernmodule');
+ await page.getByRole('button',{name:/PHYSIK-GRUNDLAGEN.*Druck und Dichte verstehen/}).click();
+ await page.getByLabel('Aufgabe wählen',{exact:true}).selectOption('physics-pressure-b');
+ await page.getByLabel('Dein Ergebnis: Druck mit Quadratzentimetern',{exact:true}).fill('0,5');
+ await page.getByLabel('Einheit für Druck mit Quadratzentimetern',{exact:true}).selectOption('bar');
+ await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
+ await expect(page.locator('.math-error')).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

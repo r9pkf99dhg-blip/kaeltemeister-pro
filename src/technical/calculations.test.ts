@@ -40,6 +40,10 @@ const references: Record<string, number> = {
   "math-percent-a":30,"math-percent-b":.15,"math-proportion-a":20,
   "math-term-a":18,"math-term-b":-4,"math-linear-a":6,"math-linear-b":-4,
   "math-rearrange-a":120,"math-rearrange-b":1200,"math-unit-a":1800,"math-unit-b":86400,
+  "physics-speed-a":3,"physics-speed-b":1,"physics-force-a":10,"physics-force-b":20,
+  "physics-work-a":150,"physics-work-b":10,"physics-power-a":20,
+  "physics-pressure-a":200000,"physics-pressure-b":50000,"physics-density-a":800,
+  "physics-heat-a":41800,"physics-heat-b":20900,
   "math-power-a":8,"math-power-b":.001,"math-root-a":12,"math-root-b":.9,
 };
 describe("Alle Rechenaufgaben", () => {

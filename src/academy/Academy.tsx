@@ -273,7 +273,7 @@ export default function Academy({
                     onClick={() => open(module.id)}
                   >
                     <span className="eyebrow">
-                      {module.domainId === "kaelte" ? "KÄLTETECHNIK" : module.domainId === "elektro" ? "ELEKTROTECHNIK" : "MATHEMATIK"}{" "}
+                      {module.domainId === "kaelte" ? "KÄLTETECHNIK" : module.domainId === "elektro" ? "ELEKTROTECHNIK" : domains.find(d=>d.id===module.domainId)?.title.toLocaleUpperCase("de")}{" "}
                       · {String(index + 1).padStart(2, "0")}
                     </span>
                     <h2>{module.title}</h2>
