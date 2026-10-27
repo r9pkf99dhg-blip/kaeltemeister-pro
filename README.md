@@ -45,11 +45,30 @@ npm run preview
 
 `npm test` führt die vorhandenen Fachlogik- und Oberflächentests aus: Einheiten, Fehlerfälle, Datenspeicherung, Artikelabschluss, komplettes Quiz und Ergebnisanzeige. `npm run build` erstellt die veröffentlichbare App im Ordner `dist/`. `npm run preview` dient dazu, diesen Build lokal zu prüfen, und ersetzt keinen dauerhaften Webserver. Änderungen unter `src/` werden beim Entwicklungsserver automatisch sichtbar.
 
+### Automatische Browserprüfungen
+
+Einmalig den Testbrowser installieren, danach die Prüfungen starten:
+
+```sh
+npx playwright install chromium
+npm run test:e2e
+```
+
+Playwright baut die App selbst, startet eine eigene Produktionsvorschau und prüft Navigation, Artikel, Quiz, Rechner, Speicherung sowie Tastaturbedienung auf fünf Smartphone-/Tablet-/Desktopgrößen. Es testet Chromium mit passenden Bildschirmgrößen; ein echter iPad-Safari-Test bleibt zusätzlich sinnvoll. Bei Fehlern liegen Screenshots und Ablaufaufzeichnungen in `test-results/`; `npx playwright show-report` öffnet den Bericht. Ein interaktiver Modus ist mit `npm run test:e2e:ui` verfügbar. Die Prüfungen laufen auch in GitHub Actions vor dem Pages-Deployment.
+
+In der Cloud kann ein vorhandener Browser genutzt werden: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e`. Auf deinem eigenen Computer genügt normalerweise der oben genannte Installationsbefehl. Port 4175 muss für den Testserver frei sein.
+
+### Planung und Prüfnachweise
+
+- [ROADMAP](ROADMAP.md): Ausbau zu Kälte-, Klima-, Lüftungs-, Elektro- und Dämmtechnik mit Prioritäten und Abnahmekriterien.
+- [Inhalts- und Fortschrittsmodell](docs/CONTENT_MODEL.md): geplanter gemeinsamer Vertrag für Artikel, Formeln, Quellen, Quizfragen und zukünftige Datenmigration.
+- [Qualitätsbericht](docs/QUALITY_REVIEW.md): analysierte Struktur, konkrete Fehlerkorrekturen, Tests und Nachweis der automatischen Veröffentlichung.
+
 ## Kostenlos über GitHub Pages veröffentlichen
 
 Für ein öffentliches Repository ist GitHub Pages mit GitHub Free nutzbar. Bei einem privaten Repository kann ein kostenpflichtiger GitHub-Tarif erforderlich sein. Veröffentliche keine vertraulichen Inhalte; eine Pages-Seite ist in der Regel öffentlich.
 
-1. Öffne den Pull Request für `fix/github-pages-deployment`. Warte auf die grünen Prüfungen. Klicke auf **Merge pull request → Confirm merge**. Dadurch wird die Änderung nach `main` übernommen und das Deployment automatisch gestartet.
+1. Öffne den Pull Request für die gewünschte Änderung. Warte auf die grünen Prüfungen. Klicke auf **Merge pull request → Confirm merge**. Dadurch wird die Änderung nach `main` übernommen und das Deployment automatisch gestartet.
 2. Unter **Settings → Pages → Build and deployment → Source** muss **GitHub Actions** ausgewählt sein (in deinem Repository bereits erledigt).
 3. Öffne **Actions → Deploy to GitHub Pages**. Der Workflow liegt in `.github/workflows/deploy.yml`. Der frühere Workflow `pages.yml` wurde durch diese Datei ersetzt, damit es keine doppelten Veröffentlichungen gibt.
 4. Zum manuellen Start: **Run workflow → Branch: main → Run workflow**. Die Schaltfläche erscheint, sobald die Workflow-Datei auf `main` liegt. Ein Aufruf auf einem anderen Branch prüft nur die App und veröffentlicht nichts.
@@ -67,11 +86,11 @@ Der Workflow installiert die festgeschriebenen Abhängigkeiten mit `npm ci`, pr�
 - **Deployment wartet:** Prüfe, ob unter **Settings → Environments → github-pages** eine Freigabe verlangt wird oder `main` als Deployment-Branch zugelassen werden muss.
 - **Kein „Visit site“:** Die Auswahl der Quelle allein veröffentlicht noch nichts. Zuerst muss der Job **Website veröffentlichen** erfolgreich sein. Erst danach die Website-Adresse öffnen und bei Bedarf Safari neu laden.
 
-Die erfolgreiche Ausführung auf GitHub und die Live-Adresse müssen nach dem Merge überprüft werden. Lokale Tests bestätigen den Build, aber keinen abgeschlossenen GitHub-Pages-Deploy.
+Das automatische Deployment nach dem letzten Merge auf `main` ist bestätigt (Nachweis im Qualitätsbericht). Nach jedem weiteren Merge den neuen Lauf prüfen. Lokale Tests bestätigen den Build, aber keinen neuen abgeschlossenen GitHub-Pages-Deploy.
 
 ### Falls der Pull Request noch fehlt
 
-Die Deployment-Korrektur befindet sich im Branch `fix/github-pages-deployment`. Öffne auf GitHub **Pull requests → New pull request**, wähle als Ziel **main** und als Vergleich **fix/github-pages-deployment** und klicke auf **Create pull request**. Danach wie oben beschrieben zusammenführen.
+Diese Qualitätsverbesserungen befinden sich im Branch `quality/tests-and-roadmap`. Öffne auf GitHub **Pull requests → New pull request**, wähle als Ziel **main** und als Vergleich **quality/tests-and-roadmap** und klicke auf **Create pull request**. Danach wie oben beschrieben zusammenführen.
 
 ## Wie der Rechner rechnet
 
@@ -84,17 +103,20 @@ Die Deployment-Korrektur befindet sich im Branch `fix/github-pages-deployment`. 
 
 ## Deine Daten
 
-Gelesene Artikel und Quiz-Ergebnisse bleiben nur im aktuellen Browserprofil und unter derselben Webadresse. Sie werden nicht zwischen Geräten synchronisiert. Das Löschen der Browserdaten entfernt den Fortschritt. In privaten Browserfenstern kann er nach dem Schließen verschwinden. Wenn die Speicherung blockiert ist, erscheint ein Hinweis; die App funktioniert dann weiter mit vorübergehendem Fortschritt. Es gibt noch keinen Offline-Modus oder eine installierbare PWA.
+Gelesene Artikel und Quiz-Ergebnisse bleiben nur im aktuellen Browserprofil und unter derselben Webadresse. Sie werden nicht zwischen Geräten synchronisiert. Das Löschen der Browserdaten entfernt den Fortschritt. In privaten Browserfenstern kann er nach dem Schließen verschwinden. Wenn die Speicherung blockiert ist, erscheint ein Hinweis; die App funktioniert dann weiter mit vorübergehendem Fortschritt. Bei einem Lesefehler werden vorhandene Daten nicht überschrieben; lade die Seite erneut, um das Lesen wieder zu versuchen. Mehrere gleichzeitig geöffnete Tabs führen ihren Fortschritt noch nicht automatisch zusammen. Es gibt noch keinen Offline-Modus oder eine installierbare PWA.
 
 Die Fachartikel unterstützen dein Lernen. Herstellerangaben und Sicherheitsvorschriften haben Vorrang. Messwerte allein ersetzen keine vollständige Diagnose einer realen Anlage.
 
 ## Orientierung im Quellcode
 
-- `src/App.tsx`: Navigation, Dashboard, Lernbereich, Quiz und Rechneroberfläche.
-- `src/content.ts`: Fachartikel und Quizfragen mit Lösungen.
+- `src/App.tsx`: Navigation, Dashboard, Lernbereich und gemeinsamer Fortschritt.
+- `src/features/`: eigenständige Quiz- und Rechneroberflächen.
+- `src/components/`: gemeinsam genutzte Darstellungskomponenten.
+- `src/content.ts`: Fachartikel und Quizfragen mit Lösungen; Datenverträge in `src/content-types.ts`.
 - `src/logic.ts`: Rechenlogik und robustes Laden des Lernfortschritts.
 - `src/styles.css`: Tailwind-Einbindung und responsive Gestaltung.
-- `src/*.test.*`: automatisierte Tests.
+- `src/*.test.*`: automatisierte Fachlogik-/Oberflächentests.
+- `e2e/` und `playwright.config.ts`: Browserprüfungen und Zielgrößen.
 - `.github/workflows/`: Prüfungen und Pages-Veröffentlichung.
 
 Es sind keine API-Schlüssel oder Umgebungsvariablen nötig. Für reproduzierbare Installationen liegt `package-lock.json` bei; bitte `npm ci` verwenden.

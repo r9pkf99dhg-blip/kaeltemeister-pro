@@ -1,3 +1,7 @@
+import { articles } from "./content";
+
+const articleIds = new Set(articles.map((article) => article.id));
+
 export type Progress = {
   read: string[];
   attempts: number;
@@ -11,11 +15,9 @@ export const emptyProgress: Progress = {
   last: null,
 };
 export const STORAGE_KEY = "kaeltemeister-pro:progress:v1";
-export function loadProgress(): Progress {
+function decodeProgress(raw: string | null): Progress {
   try {
-    const value: unknown = JSON.parse(
-      localStorage.getItem(STORAGE_KEY) ?? "null",
-    );
+    const value: unknown = JSON.parse(raw ?? "null");
     if (!value || typeof value !== "object")
       return { ...emptyProgress, read: [] };
     const p = value as Partial<Progress>;
@@ -25,8 +27,7 @@ export function loadProgress(): Progress {
             ...new Set(
               p.read.filter(
                 (id): id is string =>
-                  typeof id === "string" &&
-                  ["kreislauf", "ueberhitzung", "unterkuehlung"].includes(id),
+                  typeof id === "string" && articleIds.has(id),
               ),
             ),
           ]
@@ -50,6 +51,22 @@ export function loadProgress(): Progress {
     return { ...emptyProgress, read: [] };
   }
 }
+/** Ein Lesefehler ist etwas anderes als ein leerer/ungültiger Datensatz. */
+export function readProgress(): { progress: Progress; readFailed: boolean } {
+  try {
+    return {
+      progress: decodeProgress(localStorage.getItem(STORAGE_KEY)),
+      readFailed: false,
+    };
+  } catch {
+    return { progress: { ...emptyProgress, read: [] }, readFailed: true };
+  }
+}
+
+export function loadProgress(): Progress {
+  return readProgress().progress;
+}
+
 export function parseDecimal(value: string): number {
   const normalized = value.trim().replace(",", ".");
   return /^[-+]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(normalized)
@@ -72,6 +89,14 @@ export function calculateHeat(
     throw new Error(
       "Bitte gib gültige Werte ein: Massenstrom und Temperaturdifferenz mindestens 0, Wärmekapazität größer als 0.",
     );
+  if (
+    !["kg/s", "kg/h"].includes(massUnit) ||
+    !["kJ/(kg·K)", "J/(kg·K)"].includes(cpUnit)
+  ) {
+    throw new Error(
+      "Bitte wähle unterstützte Einheiten für Massenstrom und Wärmekapazität.",
+    );
+  }
   const massKgS = massUnit === "kg/h" ? mass / 3600 : mass;
   const cpKj = cpUnit === "J/(kg·K)" ? cp / 1000 : cp;
   const kw = massKgS * cpKj * delta;

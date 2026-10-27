@@ -1,3 +1,5 @@
+import type { Article, QuizQuestion } from "./content-types";
+
 export const articles = [
   {
     id: "kreislauf",
@@ -87,7 +89,7 @@ export const articles = [
     takeaway:
       "Unterkühlung = Sättigungstemperatur − Flüssigkeitstemperatur. Bei Gemischen: Siedepunkt verwenden.",
   },
-];
+] satisfies Article[];
 
 export const questions = [
   {
@@ -213,4 +215,4 @@ export const questions = [
     explanation:
       "Messwerte hängen von Anlage, Last und Messort ab. Allgemeingültige Sollwerte ersetzen keine Herstellerangaben.",
   },
-];
+] satisfies QuizQuestion[];
