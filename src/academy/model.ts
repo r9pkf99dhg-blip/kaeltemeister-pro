@@ -1,3 +1,5 @@
+import type { Performance } from "./adaptive/model";
+import type { ExamSession, ExamResult, ItemAnswer } from "./exercises/model";
 export const levels = ["grundlagen", "fachkraft", "meister"] as const;
 export type Level = (typeof levels)[number];
 export const levelNames: Record<Level, string> = {
@@ -9,7 +11,12 @@ export interface Source {
   id: string;
   title: string;
   url?: string;
-  access: "unavailable" | "internal";
+  access: "unavailable" | "internal" | "consulted";
+  accessedAt?: string;
+  locator?: string;
+  supports?: string;
+  license?: string;
+  reviewedCommit?: string;
   note: string;
 }
 export interface Formula {
@@ -96,7 +103,7 @@ export interface Domain {
     }[];
   }[];
 }
-export interface AcademyProgress {
+export interface AcademyProgressV2 {
   schemaVersion: 2;
   read: Record<string, { levels: Level[]; revision: number }>;
   answers: Record<
@@ -120,4 +127,24 @@ export interface AcademyProgress {
   >;
   legacySummary: { attempts: number; best: number; last: number | null } | null;
   updatedAt: string | null;
+}
+
+export interface AcademyProgress extends Omit<
+  AcademyProgressV2,
+  "schemaVersion"
+> {
+  schemaVersion: 3;
+  performance: Record<string, Performance>;
+  exerciseAnswers: Record<
+    string,
+    {
+      answer: ItemAnswer;
+      correct: boolean;
+      revision: number;
+      answeredAt: string;
+    }
+  >;
+  recentModules: { moduleId: string; openedAt: string }[];
+  activeExam: ExamSession | null;
+  examHistory: ExamResult[];
 }

@@ -1,6 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 import { academyQuestions, modules } from "../src/academy/catalog";
-const key = "kaeltemeister-pro:progress:v2";
+const key = "kaeltemeister-pro:progress:v3";
 const errors = new WeakMap<Page, string[]>();
 test.beforeEach(async ({ page }) => {
   const messages: string[] = [];
@@ -36,7 +36,7 @@ test("Akademie migriert Altfortschritt und zeigt alle drei Niveaus", async ({
   page,
 }, info) => {
   await page.addInitScript(() => {
-    if (!localStorage.getItem("kaeltemeister-pro:progress:v2"))
+    if (!localStorage.getItem("kaeltemeister-pro:progress:v3"))
       localStorage.setItem(
         "kaeltemeister-pro:progress:v1",
         JSON.stringify({
@@ -106,7 +106,7 @@ test("Akademie migriert Altfortschritt und zeigt alle drei Niveaus", async ({
   await noOverflow(page);
 });
 
-test("Modulquiz speichert Antworten und Übungsbedarf bis zur Korrektur", async ({
+test("Modulquiz speichert Antworten und erhält Empfehlungen bei niedriger Trefferquote", async ({
   page,
 }) => {
   await academy(page);
@@ -152,7 +152,7 @@ test("Modulquiz speichert Antworten und Übungsbedarf bis zur Korrektur", async 
   await noOverflow(page);
   await page.getByRole("button", { name: "Zur Modulübersicht" }).click();
   await expect(page.getByRole("status")).toContainText(
-    "0 verfügbare Lernmodule",
+    "1 verfügbare Lernmodule",
   );
 });
 
@@ -196,7 +196,7 @@ test("unbekannte Akademie-Datenversion bleibt trotz Lernaktion erhalten", async 
 }) => {
   await page.addInitScript(() =>
     localStorage.setItem(
-      "kaeltemeister-pro:progress:v2",
+      "kaeltemeister-pro:progress:v3",
       '{"schemaVersion":99}',
     ),
   );

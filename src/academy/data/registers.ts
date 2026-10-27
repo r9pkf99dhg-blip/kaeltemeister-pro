@@ -15,7 +15,7 @@ export const sources: Source[] = [
       "OpenStax: College Physics 2e, Abschnitt 15.5 – Heat Pumps and Refrigerators",
     url: "https://openstax.org/books/college-physics-2e/pages/15-5-applications-of-thermodynamics-heat-pumps-and-refrigerators",
     access: "unavailable",
-    note: "Weiterführende Referenz, in dieser Entwicklungsumgebung am 27.10.2026 durch HTTP 403 nicht abrufbar. Nicht als eingesehener Beleg oder fachliche Freigabe verwendet.",
+    note: "Direkte Webseite am 27.10.2026 durch HTTP 403 nicht abrufbar. In Version 0.3 konnten COP-Grundbeziehungen im offiziellen GitHub-Quellarchiv gelesen werden (separater Registereintrag). Keine pauschale fachliche Freigabe der Module.",
   },
   {
     id: "didactic-cycle",
@@ -90,6 +90,58 @@ export const formulas: Formula[] = [
     calculatorId: "sensible-heat-calculator",
   },
 ];
+formulas.push(
+  {
+    id: "sensible-mass-flow",
+    title: "Massenstrom aus sensibler Wärmeleistung",
+    expression: "ṁ = Q̇ / (cp × ΔT)",
+    units: "W / (J/(kg·K) × K) = kg/s",
+    assumptions: "Stationär, cp und ΔT größer als 0, kein Phasenwechsel.",
+    sourceIds: ["didactic-exercises"],
+  },
+  {
+    id: "sensible-temperature-difference",
+    title: "Temperaturdifferenz aus Wärmeleistung",
+    expression: "ΔT = Q̇ / (ṁ × cp)",
+    units: "W / (kg/s × J/(kg·K)) = K",
+    assumptions: "Stationär, ṁ und cp größer als 0, kein Phasenwechsel.",
+    sourceIds: ["didactic-exercises"],
+  },
+  {
+    id: "dc-electric-power",
+    title: "Elektrische Gleichstromleistung",
+    expression: "P = U × I",
+    units: "V × A = W",
+    assumptions:
+      "Stationärer Gleichstromfall; nicht pauschal für Wechsel-/Drehstrom-Wirkleistung.",
+    sourceIds: ["didactic-exercises"],
+  },
+  {
+    id: "cooling-cop",
+    title: "Kälteleistungszahl",
+    expression: "ε = Q̇₀ / Pel",
+    units: "W/W = 1",
+    assumptions:
+      "Gleicher Betriebspunkt und passende Systemgrenze; Pel größer als 0.",
+    sourceIds: ["didactic-exercises"],
+  },
+  {
+    id: "heating-cop",
+    title: "Heiz-COP",
+    expression: "COPHeiz = Q̇Heiz / Pel",
+    units: "W/W = 1",
+    assumptions:
+      "Gleicher Betriebspunkt und passende Systemgrenze; kein saisonaler Kennwert.",
+    sourceIds: ["didactic-exercises"],
+  },
+);
+sources.push({
+  id: "didactic-exercises",
+  title: "Eigenständig erstellte Rechenaufgaben 0.3",
+  access: "internal",
+  note: "Zahlen, Einheiten und Rechenwege durch unabhängige Referenztests abgesichert. Fiktive Lernfälle; keine Herstellerwerte. Unabhängige fachliche Freigabe ausstehend. Die direkten OpenStax-Webseiten waren per HTTP 403 gesperrt. Passende Grundbeziehungen wurden stattdessen im offiziellen GitHub-Quellarchiv tatsächlich nachgelesen; die konkreten Fundstellen sind separat registriert.",
+});
+
 export const objectives: Objective[] = [
   {
     id: "cycle-order",
@@ -188,3 +240,65 @@ export const terms: Term[] = [
     moduleIds: ["cycle-basics"],
   },
 ];
+
+// Tatsächlich eingesehene, fest referenzierte Abschnitte des offiziellen Quellarchivs.
+sources.push(
+  {
+    id: "openstax-heat-capacity-github",
+    title: "OpenStax College Physics 2e: Temperature Change and Heat Capacity",
+    url: "https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42224/index.cnxml",
+    access: "consulted",
+    accessedAt: "2026-10-27",
+    locator: "Modul m42224, Gleichungen eip-644 und eip-527",
+    supports:
+      "Q = m c ΔT, Umstellung nach ΔT und SI-Einheit der spezifischen Wärme. Stationäre Leistungs-/Massenstromform hier durch Zeitbezug abgeleitet.",
+    license:
+      "CC BY-NC-SA 4.0 laut Repository; keine Textpassagen oder Abbildungen übernommen.",
+    reviewedCommit: "66fcef29596e3a32818162b837dd0c85b754cbad",
+    note: "Über die GitHub-API tatsächlich eingesehen. Eigene Lernbeispiele; cp = 4180 ist ein vorgegebener Näherungswert, keine aus dieser Quelle übernommene exakte Stofftabelle.",
+  },
+  {
+    id: "openstax-electric-github",
+    title: "OpenStax College Physics 2e: Electric Power and Energy",
+    url: "https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml",
+    access: "consulted",
+    accessedAt: "2026-10-27",
+    locator: "Modul m42714, Gleichungen eip-489 und eip-9",
+    supports:
+      "Elektrische Leistung P = I V im hier verwendeten Gleichstromfall; Leistung und Energie unterscheiden.",
+    license:
+      "CC BY-NC-SA 4.0 laut Repository; keine Textpassagen oder Abbildungen übernommen.",
+    reviewedCommit: "66fcef29596e3a32818162b837dd0c85b754cbad",
+    note: "Über die GitHub-API tatsächlich eingesehen. Die Beschränkung der eigenen Aufgabe auf stationären Gleichstrom wird ausdrücklich genannt.",
+  },
+  {
+    id: "openstax-cop-github",
+    title:
+      "OpenStax College Physics 2e: Applications of Thermodynamics – Heat Pumps and Refrigerators",
+    url: "https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42236/index.cnxml",
+    access: "consulted",
+    accessedAt: "2026-10-27",
+    locator:
+      "Modul m42236, Gleichungen eip-462, fs-id1169736588910 und eip-304",
+    supports:
+      "Heiz-COP = Qh/W, Kälte-COP = Qc/W und Beziehung der idealisierten Systemgrenzen. Leistungsquotienten folgen für denselben Zeitraum.",
+    license:
+      "CC BY-NC-SA 4.0 laut Repository; keine Textpassagen oder Abbildungen übernommen.",
+    reviewedCommit: "66fcef29596e3a32818162b837dd0c85b754cbad",
+    note: "Über die GitHub-API tatsächlich eingesehen. Keine dort genannten typischen Gerätebereiche oder Preise in die App übernommen.",
+  },
+);
+for (const formula of formulas) {
+  const source = [
+    "sensible-heat",
+    "sensible-mass-flow",
+    "sensible-temperature-difference",
+  ].includes(formula.id)
+    ? "openstax-heat-capacity-github"
+    : formula.id === "dc-electric-power"
+      ? "openstax-electric-github"
+      : ["cooling-cop", "heating-cop"].includes(formula.id)
+        ? "openstax-cop-github"
+        : null;
+  if (source) formula.sourceIds = [...formula.sourceIds, source];
+}

@@ -1,3 +1,4 @@
+import LearningDashboard from "./academy/adaptive/LearningDashboard";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowDown,
@@ -44,6 +45,12 @@ const navigation = [
 export default function App() {
   const [page, setPage] = useState<Page>("dashboard");
   const academy = useAcademyProgress();
+  const [academyExerciseId, setAcademyExerciseId] = useState<string | null>(
+    null,
+  );
+  const [academyView, setAcademyView] = useState<
+    "overview" | "review" | "exercises" | "exam"
+  >("overview");
   const [academyModuleId, setAcademyModuleId] = useState<string | null>(null);
   const [initialProgress] = useState(readProgress);
   const [progress, setProgress] = useState<Progress>(initialProgress.progress);
@@ -64,7 +71,11 @@ export default function App() {
   }, [progress, initialProgress.readFailed]);
   function navigate(next: Page) {
     setPage(next);
-    if (next !== "akademie") setAcademyModuleId(null);
+    if (next !== "akademie") {
+      setAcademyModuleId(null);
+      setAcademyExerciseId(null);
+      setAcademyView("overview");
+    }
     setArticleId(null);
     setResetConfirm(false);
   }
@@ -168,10 +179,25 @@ export default function App() {
                   MEISTERSCHULE EDITION <Snowflake size={15} />
                 </span>
               </div>
+              <LearningDashboard
+                progress={academy.progress}
+                error={storageError ? null : academy.error}
+                openModule={(id) => {
+                  setAcademyModuleId(id);
+                  setAcademyView("overview");
+                  navigate("akademie");
+                }}
+                openView={(view, taskId) => {
+                  setAcademyExerciseId(taskId ?? null);
+                  setAcademyModuleId(null);
+                  setAcademyView(view);
+                  navigate("akademie");
+                }}
+              />
               <section className="academy-entry">
                 <div>
-                  <span className="pill">NEU · VERSION 0.2</span>
-                  <h2>Deine Lernakademie ist da.</h2>
+                  <span className="pill">NEU · VERSION 0.3</span>
+                  <h2>Deine intelligente Lernakademie.</h2>
                   <p>
                     Fünf Module, drei Wissensstufen und Karteikarten mit
                     Wiederholungsplan.
@@ -458,6 +484,8 @@ export default function App() {
           {page === "akademie" && (
             <Academy
               initialModuleId={academyModuleId}
+              initialView={academyView}
+              initialExerciseId={academyExerciseId}
               progress={academy.progress}
               setProgress={academy.setProgress}
               error={academy.error}

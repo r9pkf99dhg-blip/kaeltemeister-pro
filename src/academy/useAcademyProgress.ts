@@ -1,3 +1,4 @@
+import { finishExam } from "./exams/engine";
 import { useEffect, useState } from "react";
 import { ACADEMY_KEY, emptyAcademy, readAcademy } from "./progress";
 
@@ -16,6 +17,27 @@ export function useAcademyProgress() {
       );
     }
   }, [progress, initial.blocked]);
+  useEffect(() => {
+    if (!progress.activeExam) return;
+    const checkDeadline = () => {
+      const now = new Date();
+      setProgress((current) =>
+        current.activeExam &&
+        now.getTime() >= Date.parse(current.activeExam.deadline)
+          ? finishExam(current, now)
+          : current,
+      );
+    };
+    checkDeadline();
+    const timer = window.setInterval(checkDeadline, 1000);
+    window.addEventListener("focus", checkDeadline);
+    document.addEventListener("visibilitychange", checkDeadline);
+    return () => {
+      window.clearInterval(timer);
+      window.removeEventListener("focus", checkDeadline);
+      document.removeEventListener("visibilitychange", checkDeadline);
+    };
+  }, [progress.activeExam?.id]);
   // Bei unsicher gelesenen Daten keine destruktive Rücksetzung auslösen.
   function reset() {
     if (initial.blocked) return;

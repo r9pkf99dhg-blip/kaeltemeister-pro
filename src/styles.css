@@ -2200,3 +2200,339 @@ progress::-moz-progress-bar {
     font-size: 10px;
   }
 }
+
+/* Version 0.3: Lern-Dashboard, gemeinsame Aufgabenansicht und Übungsprüfung. */
+.learning-dashboard {
+  margin: 0 0 30px;
+  padding: 24px;
+  border: 1px solid #d8e6d5;
+  border-radius: 14px;
+  background: #eef5e9;
+}
+.learning-dashboard .section-title {
+  margin: 0 0 22px;
+}
+.learning-dashboard .section-title h2 {
+  font-size: 24px;
+}
+.learning-dashboard .section-title p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.learning-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 20px 0;
+}
+.learning-metric,
+.learning-recommendations {
+  background: #fff;
+  border: 1px solid #dce7d5;
+  border-radius: 10px;
+  padding: 22px;
+}
+.learning-metric h3,
+.learning-recommendations > h3 {
+  font-size: 18px;
+  font-weight: 650;
+  margin-bottom: 15px;
+}
+.learning-metric > strong {
+  display: block;
+  font-size: 40px;
+  color: #306535;
+  margin: 9px 0;
+}
+.learning-metric p,
+.learning-recommendations p,
+.learning-recommendations li {
+  color: #4f6847;
+  font-size: 14px;
+  line-height: 1.85;
+  margin: 10px 0;
+}
+.learning-metric .text-button {
+  display: flex;
+  font-size: 12px;
+  text-align: left;
+}
+.learning-metric summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: #466d3a;
+  margin-top: 18px;
+}
+.learning-metric small {
+  font-size: 11px;
+  color: #708167;
+}
+.learning-recommendations > div {
+  border-top: 1px solid #e1eada;
+  margin-top: 17px;
+  padding-top: 17px;
+}
+.learning-recommendations h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.learning-recommendations .text-button {
+  font-size: 12px;
+}
+.learning-dashboard > .small-muted {
+  color: #667c59;
+  font-size: 12px;
+  line-height: 1.85;
+  margin-top: 20px;
+}
+.task-picker,
+.exam-settings label,
+.exam-mode > label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 22px 0;
+  font-size: 14px;
+  color: #3d5e35;
+}
+.task-picker select,
+.task-answer select,
+.task-answer input,
+.exam-settings select,
+.exam-mode > label select {
+  min-width: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cbdcc1;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #2b4b2e;
+  padding: 13px;
+  min-height: 48px;
+}
+.exercises > p,
+.exam-mode > p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #4e6845;
+  margin: 16px 0;
+}
+.task-card {
+  border: 1px solid #d5e3cb;
+  background: #f8faf5;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 25px 0;
+  overflow-wrap: anywhere;
+}
+.task-card h3 {
+  font-size: 23px;
+  font-weight: 650;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.task-card h4 {
+  font-size: 18px;
+  font-weight: 650;
+  margin: 22px 0 12px;
+}
+.task-card p,
+.task-card li,
+.task-reference p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #425e3a;
+  margin: 12px 0;
+}
+.task-givens {
+  margin: 20px 0;
+}
+.task-givens > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e9d9;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.task-givens dt {
+  color: #677d5b;
+}
+.task-givens dd {
+  color: #284f2a;
+  font-weight: 600;
+  text-align: right;
+}
+.task-assumptions {
+  background: #edf3e4;
+  padding: 15px;
+  border-radius: 8px;
+}
+.task-answer {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(90px, 1fr);
+  gap: 14px;
+  margin: 25px 0;
+}
+.task-answer label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 14px;
+  color: #395d30;
+}
+.task-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.task-choices {
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  margin: 20px 0;
+}
+.task-choices legend {
+  font-size: 14px;
+  color: #627958;
+  padding-bottom: 10px;
+}
+.task-solution {
+  padding: 20px;
+  background: #eaf3df;
+  border: 1px solid #d0e0c1;
+  border-radius: 9px;
+  margin-top: 25px;
+}
+.task-solution ol {
+  list-style: decimal;
+  padding-left: 23px;
+}
+.task-solution ul {
+  list-style: disc;
+  padding-left: 23px;
+}
+.task-solution .small-muted,
+.task-reference .small-muted {
+  font-size: 12px;
+  color: #667a5a;
+}
+.task-reference {
+  margin-top: 25px;
+  border-top: 1px solid #d8e4cd;
+  padding-top: 12px;
+}
+.task-reference details {
+  padding: 17px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #dbe5d1;
+}
+.task-reference summary {
+  cursor: pointer;
+  font-size: 15px;
+  color: #315b2c;
+}
+.task-reference .text-button {
+  font-size: 14px;
+  text-align: left;
+}
+.exam-settings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.exam-settings label {
+  margin: 0;
+  justify-content: flex-end;
+}
+.exam-timer {
+  position: sticky;
+  top: 10px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #b8d0a6;
+  border-radius: 9px;
+  background: #e6f1dc;
+  padding: 18px;
+  margin: 22px 0;
+}
+.exam-timer strong {
+  font-size: 23px;
+  color: #2e5b26;
+  font-variant-numeric: tabular-nums;
+}
+.exam-timer span {
+  color: #58774a;
+  font-size: 12px;
+}
+.exam-results-heading {
+  font-size: 22px;
+  font-weight: 650;
+  margin: 35px 0 20px;
+}
+.exam-analysis > h3 {
+  font-size: 30px;
+  font-weight: 650;
+  color: #2f632b;
+  margin: 30px 0 18px;
+}
+.exam-analysis > p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #5a704d;
+}
+@media (max-width: 1100px) {
+  .exam-settings {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .learning-dashboard {
+    padding: 18px;
+  }
+  .learning-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .learning-dashboard .section-title {
+    flex-wrap: wrap;
+  }
+  .learning-dashboard .section-title h2 {
+    font-size: 22px;
+  }
+  .learning-metric,
+  .learning-recommendations,
+  .task-card {
+    padding: 18px;
+  }
+  .task-answer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .task-card h3 {
+    font-size: 21px;
+  }
+  .task-givens > div {
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .task-givens dd {
+    text-align: left;
+  }
+  .task-solution {
+    padding: 16px;
+  }
+  .exam-timer {
+    position: static;
+  }
+  .task-controls .button {
+    width: 100%;
+  }
+}

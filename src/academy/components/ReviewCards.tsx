@@ -41,9 +41,10 @@ export default function ReviewCards({
     <div className="review-cards">
       <p>
         Erst selbst antworten, dann umdrehen und ehrlich bewerten. „Gewusst“
-        plant nach 1, 3, 7, 14 und danach jeweils 30 Tagen. „Nochmal“ setzt die
-        Karte auf heute zurück. Einfache Lernhilfe, kein Nachweis fachlicher
-        Beherrschung.
+        plant normalerweise nach 1, 3, 7, 14 und danach jeweils 30 Tagen. Bei
+        erkannten Wissenslücken im Thema werden Abstände auf höchstens 3 Tage
+        begrenzt. „Nochmal“ setzt die Karte auf heute zurück. Einfache
+        Lernhilfe, kein Nachweis fachlicher Beherrschung.
       </p>
       <div className="academy-toolbar">
         <label htmlFor={`cards-${moduleId ?? "all"}`}>Karten anzeigen</label>

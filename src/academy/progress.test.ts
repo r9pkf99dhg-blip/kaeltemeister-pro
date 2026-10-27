@@ -54,7 +54,7 @@ describe("Migration ohne Verlust der v1-Daten", () => {
     );
     expect(readAcademy().progress.read).toEqual({});
   });
-  it("bevorzugt vorhandenes v2 und migriert nicht erneut aus v1", () => {
+  it("bevorzugt vorhandenes v3 und migriert nicht erneut aus v1", () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({ read: ["kreislauf"] }));
     localStorage.setItem(ACADEMY_KEY, JSON.stringify(emptyAcademy()));
     expect(readAcademy().progress.read).toEqual({});
@@ -63,9 +63,9 @@ describe("Migration ohne Verlust der v1-Daten", () => {
     "{",
     "null",
     "[]",
-    '{"schemaVersion":3}',
+    '{"schemaVersion":99}',
     JSON.stringify({ ...emptyAcademy(), answers: { bad: { correct: true } } }),
-  ])("erhält unlesbare/unbekannte v2-Daten: %s", (raw) => {
+  ])("erhält unlesbare/unbekannte aktuelle Daten: %s", (raw) => {
     localStorage.setItem(ACADEMY_KEY, raw);
     expect(readAcademy().blocked).toBe(true);
     expect(localStorage.getItem(ACADEMY_KEY)).toBe(raw);
@@ -110,7 +110,7 @@ describe("Lesefortschritt und Antwortspeicherung", () => {
       progress,
     );
   });
-  it("markiert falsche Antworten zur Wiederholung und hebt das nach Korrektur auf", () => {
+  it("erhält nach Korrektur die nachvollziehbare Empfehlung bei niedriger Trefferquote", () => {
     const question = academyQuestions[0];
     const wrong = question.options.find(
       (option) => option.id !== question.correctOptionId,
@@ -128,7 +128,12 @@ describe("Lesefortschritt und Antwortspeicherung", () => {
       question.correctOptionId,
       now,
     );
-    expect(needsPractice(progress, question.moduleId)).toBe(false);
+    expect(needsPractice(progress, question.moduleId)).toBe(true);
+    expect(progress.performance[question.id]).toMatchObject({
+      attempts: 2,
+      correctCount: 1,
+      lastCorrect: true,
+    });
     expect(Object.keys(progress.answers)).toHaveLength(1);
     expect(validateProgress(progress)).toBe(true);
   });

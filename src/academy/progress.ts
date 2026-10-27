@@ -1,15 +1,39 @@
 import {
+  recordOutcome,
+  topicStatistics,
+  reviewIntervals,
+} from "./adaptive/algorithm";
+import {
+  record,
+  date,
+  integer as validInteger,
+  validAnswer,
+  validSession,
+  validResult,
+} from "./exams/validation";
+import {
   academyQuestions,
   flashcards,
   modules,
   legacyBridges,
 } from "./catalog";
-import { levels, type AcademyProgress, type Level } from "./model";
+import {
+  levels,
+  type AcademyProgress,
+  type AcademyProgressV2,
+  type Level,
+} from "./model";
 import { readProgress } from "../logic";
 
-export const ACADEMY_KEY = "kaeltemeister-pro:progress:v2";
+export const LEGACY_ACADEMY_KEY = "kaeltemeister-pro:progress:v2";
+export const ACADEMY_KEY = "kaeltemeister-pro:progress:v3";
 export const emptyAcademy = (): AcademyProgress => ({
-  schemaVersion: 2,
+  schemaVersion: 3,
+  performance: {},
+  exerciseAnswers: {},
+  recentModules: [],
+  activeExam: null,
+  examHistory: [],
   read: {},
   answers: {},
   reviews: {},
@@ -24,7 +48,9 @@ const integer = (value: unknown): value is number =>
   typeof value === "number" && Number.isSafeInteger(value) && value >= 0;
 
 /** Fehlerhafte oder unbekannte v2-Daten bleiben unverändert: niemals automatisch löschen. */
-export function validateProgress(value: unknown): value is AcademyProgress {
+export function validateLegacyProgress(
+  value: unknown,
+): value is AcademyProgressV2 {
   if (
     !isRecord(value) ||
     value.schemaVersion !== 2 ||
@@ -99,6 +125,59 @@ export function validateProgress(value: unknown): value is AcademyProgress {
     return false;
   return true;
 }
+export function validateProgress(value: unknown): value is AcademyProgress {
+  if (
+    !record(value) ||
+    value.schemaVersion !== 3 ||
+    !validateLegacyProgress({ ...value, schemaVersion: 2 }) ||
+    !record(value.performance) ||
+    !record(value.exerciseAnswers) ||
+    !Array.isArray(value.recentModules) ||
+    value.recentModules.length > 5 ||
+    !value.recentModules.every(
+      (entry) =>
+        record(entry) &&
+        typeof entry.moduleId === "string" &&
+        date(entry.openedAt),
+    ) ||
+    !(value.activeExam === null || validSession(value.activeExam)) ||
+    !Array.isArray(value.examHistory) ||
+    value.examHistory.length > 20 ||
+    !value.examHistory.every(validResult)
+  )
+    return false;
+  for (const entry of Object.values(value.performance)) {
+    if (
+      !record(entry) ||
+      typeof entry.topicId !== "string" ||
+      !["choice", "numeric", "card"].includes(String(entry.kind)) ||
+      !validInteger(entry.itemRevision) ||
+      entry.itemRevision < 1 ||
+      !validInteger(entry.attempts) ||
+      !validInteger(entry.correctCount) ||
+      entry.correctCount > entry.attempts ||
+      !validInteger(entry.streak) ||
+      entry.streak > 5 ||
+      typeof entry.lastCorrect !== "boolean" ||
+      !date(entry.lastAttemptAt) ||
+      !date(entry.dueAt) ||
+      !validInteger(entry.intervalDays) ||
+      entry.intervalDays > 30
+    )
+      return false;
+  }
+  for (const entry of Object.values(value.exerciseAnswers))
+    if (
+      !record(entry) ||
+      !validAnswer(entry.answer) ||
+      typeof entry.correct !== "boolean" ||
+      !validInteger(entry.revision) ||
+      entry.revision < 1 ||
+      !date(entry.answeredAt)
+    )
+      return false;
+  return true;
+}
 export function readAcademy(): {
   progress: AcademyProgress;
   blocked: boolean;
@@ -110,6 +189,24 @@ export function readAcademy(): {
       const value: unknown = JSON.parse(raw);
       if (!validateProgress(value)) throw new Error("unsupported");
       return { progress: value, blocked: false, message: null };
+    }
+    const previousRaw = localStorage.getItem(LEGACY_ACADEMY_KEY);
+    if (previousRaw !== null) {
+      const previous: unknown = JSON.parse(previousRaw);
+      if (!validateLegacyProgress(previous)) throw new Error("unsupported-v2");
+      // Keine Versuchshistorie aus einer gespeicherten Einzelantwort erfinden.
+      return {
+        progress: {
+          ...emptyAcademy(),
+          read: previous.read,
+          answers: previous.answers,
+          reviews: previous.reviews,
+          legacySummary: previous.legacySummary,
+          updatedAt: previous.updatedAt,
+        },
+        blocked: false,
+        message: null,
+      };
     }
     const legacy = readProgress();
     if (legacy.readFailed) throw new Error("unreadable");
@@ -169,30 +266,35 @@ export function answerQuestion(
   const question = academyQuestions.find((item) => item.id === questionId);
   if (!question || !question.options.some((option) => option.id === optionId))
     return progress;
-  return {
-    ...progress,
-    updatedAt: now.toISOString(),
-    answers: {
-      ...progress.answers,
-      [questionId]: {
-        optionId,
-        correct: question.correctOptionId === optionId,
-        questionRevision: question.revision,
-        answeredAt: now.toISOString(),
+  return recordOutcome(
+    {
+      ...progress,
+      updatedAt: now.toISOString(),
+      answers: {
+        ...progress.answers,
+        [questionId]: {
+          optionId,
+          correct: question.correctOptionId === optionId,
+          questionRevision: question.revision,
+          answeredAt: now.toISOString(),
+        },
       },
     },
-  };
+    {
+      id: question.id,
+      topicId: question.moduleId,
+      revision: question.revision,
+      kind: "choice",
+    },
+    question.correctOptionId === optionId,
+    now,
+  );
 }
 export function needsPractice(
   progress: AcademyProgress,
   moduleId: string,
 ): boolean {
-  return academyQuestions.some(
-    (question) =>
-      question.moduleId === moduleId &&
-      progress.answers[question.id]?.questionRevision === question.revision &&
-      progress.answers[question.id].correct === false,
-  );
+  return topicStatistics(progress, moduleId).weak;
 }
 export function moduleRead(
   progress: AcademyProgress,
@@ -206,7 +308,7 @@ export function moduleRead(
     progress.read[moduleId].levels.includes(level)
   );
 }
-export const intervals = [1, 3, 7, 14, 30] as const;
+export const intervals = reviewIntervals;
 export function reviewCard(
   progress: AcademyProgress,
   cardId: string,
@@ -215,20 +317,26 @@ export function reviewCard(
 ): AcademyProgress {
   const card = flashcards.find((card) => card.id === cardId);
   if (!card) return progress;
-  const repetitions = remembered
-    ? Math.min(
-        (progress.reviews[cardId]?.cardRevision === card.revision
-          ? progress.reviews[cardId].repetitions
-          : 0) + 1,
-        intervals.length,
-      )
-    : 0;
-  const intervalDays = remembered ? intervals[repetitions - 1] : 0;
-  const dueAt = new Date(
-    now.getTime() + intervalDays * 86_400_000,
-  ).toISOString();
+  const adaptive = recordOutcome(
+    progress,
+    {
+      id: card.id,
+      topicId: card.moduleId,
+      revision: card.revision,
+      kind: "card",
+    },
+    remembered,
+    now,
+    progress.reviews[cardId]?.cardRevision === card.revision
+      ? progress.reviews[cardId].repetitions
+      : 0,
+  );
+  const result = adaptive.performance[card.id];
+  const repetitions = result.streak;
+  const intervalDays = result.intervalDays;
+  const dueAt = result.dueAt;
   return {
-    ...progress,
+    ...adaptive,
     updatedAt: now.toISOString(),
     reviews: {
       ...progress.reviews,

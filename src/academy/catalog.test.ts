@@ -105,7 +105,13 @@ it("kennzeichnet Quellenzugriff ehrlich und hält das Modell numerisch konsisten
   expect(
     sources
       .filter((source) => source.url)
-      .every((source) => source.access === "unavailable"),
+      .every(
+        (source) =>
+          source.access === "unavailable" ||
+          (source.access === "consulted" &&
+            !!source.locator &&
+            !!source.reviewedCommit),
+      ),
   ).toBe(true);
   const {
     massFlowKgS: mass,

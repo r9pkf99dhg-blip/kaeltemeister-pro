@@ -1,3 +1,6 @@
+import Exercises from "./exercises/Exercises";
+import ExamMode from "./exams/ExamMode";
+import { visitModule } from "./adaptive/algorithm";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
@@ -34,6 +37,8 @@ import type { Dispatch, SetStateAction } from "react";
 
 type Props = {
   initialModuleId?: string | null;
+  initialExerciseId?: string | null;
+  initialView?: "overview" | "review" | "exercises" | "exam";
   progress: AcademyProgress;
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   error: string | null;
@@ -45,6 +50,8 @@ export default function Academy({
   error,
   openCalculator,
   initialModuleId,
+  initialView = "overview",
+  initialExerciseId,
 }: Props) {
   const [moduleId, setModuleId] = useState<string | null>(
     initialModuleId ?? null,
@@ -53,12 +60,20 @@ export default function Academy({
   const [query, setQuery] = useState("");
   const [domain, setDomain] = useState("all");
   const [status, setStatus] = useState("all");
-  const [view, setView] = useState<"overview" | "review">("overview");
+  const [view, setView] = useState<
+    "overview" | "review" | "exercises" | "exam"
+  >(initialView);
   const mainRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     mainRef.current?.focus({ preventScroll: true });
     window.scrollTo?.({ top: 0, behavior: "instant" });
   }, [moduleId, level, view]);
+  useEffect(() => {
+    if (moduleId) {
+      const now = new Date();
+      setProgress((current) => visitModule(current, moduleId, now));
+    }
+  }, [moduleId, setProgress]);
   const selectedModule = modules.find((module) => module.id === moduleId);
   const search = normalizeSearch(query);
   const visible = modules.filter((module) => {
@@ -104,7 +119,7 @@ export default function Academy({
         <>
           <div className="page-heading">
             <div>
-              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.2</p>
+              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.3</p>
               <h1>Lernakademie</h1>
               <p>
                 Fünf Kältetechnik-Module. Drei Wissensstufen. Dein eigenes
@@ -127,8 +142,35 @@ export default function Academy({
             >
               Karteikarten wiederholen ({dueCards(progress).length})
             </button>
+            <button
+              className={`button ${view === "exercises" ? "primary" : "secondary"}`}
+              aria-pressed={view === "exercises"}
+              onClick={() => setView("exercises")}
+            >
+              Rechenaufgaben
+            </button>
+            <button
+              className={`button ${view === "exam" ? "primary" : "secondary"}`}
+              aria-pressed={view === "exam"}
+              onClick={() => setView("exam")}
+            >
+              Übungsprüfung
+            </button>
           </div>
-          {view === "review" ? (
+          {view === "exercises" ? (
+            <Exercises
+              initialTaskId={initialExerciseId}
+              progress={progress}
+              setProgress={setProgress}
+              openModule={open}
+            />
+          ) : view === "exam" ? (
+            <ExamMode
+              progress={progress}
+              setProgress={setProgress}
+              openModule={open}
+            />
+          ) : view === "review" ? (
             <section className="academy-panel">
               <h2>Deine Wiederholung</h2>
               <ReviewCards progress={progress} setProgress={setProgress} />
@@ -366,6 +408,14 @@ function ModuleView({
   openCalculator: () => void;
 }) {
   const content = module.levels[level];
+  const moduleSourceIds = [
+    ...new Set([
+      ...module.sourceIds,
+      ...formulas
+        .filter((formula) => module.formulaIds.includes(formula.id))
+        .flatMap((formula) => formula.sourceIds),
+    ]),
+  ];
   return (
     <article className="learning-module">
       <button className="text-button back" onClick={back}>
@@ -389,9 +439,9 @@ function ModuleView({
         ))}
       </div>
       <p className="review-notice">
-        Fachprüfung offen: rechnerisch auf Konsistenz geprüft, noch nicht
-        unabhängig fachlich freigegeben. Externe Referenzen konnten hier nicht
-        eingesehen werden. Keine Hersteller- oder Auslegungsfreigabe.
+        Fachprüfung offen: Rechenwege geprüft, einzelne Grundbeziehungen mit
+        Quellen abgeglichen. Noch keine unabhängige fachliche Freigabe.
+        Quellenstatus und Modellgrenzen stehen am Modulende.
       </p>
       <section>
         <h2>Lernziele</h2>
@@ -518,12 +568,22 @@ function ModuleView({
           Die Lerntexte sind eigenständig formuliert, keine übernommenen
           Fachbuchkapitel.
         </p>
-        {module.sourceIds.map((id) => {
+        {moduleSourceIds.map((id) => {
           const source = sources.find((item) => item.id === id)!;
           return (
             <div key={id}>
               <h3>{source.title}</h3>
               <p>{source.note}</p>
+              {source.locator && (
+                <p>
+                  <strong>Fundstelle:</strong> {source.locator}
+                </p>
+              )}
+              {source.supports && (
+                <p>
+                  <strong>Prüfumfang:</strong> {source.supports}
+                </p>
+              )}
               {source.url && (
                 <a href={source.url} target="_blank" rel="noopener noreferrer">
                   Referenz zur späteren Prüfung öffnen ↗
