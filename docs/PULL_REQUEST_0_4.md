@@ -15,7 +15,7 @@ Fünf Elektro-Grundlagenmodule mit drei Niveaus, 15 Fragen, zehn Karten und 16 Z
 
 ## Grenzen und Veröffentlichung
 
-WebKit-Projekte sind konfiguriert und beide Workflows installieren Chromium und WebKit. Lokaler WebKit-Download war mit HTTP 403 blockiert; **keine erfolgreiche lokale WebKit- oder echte iPad-/iPhone-Prüfung**. GitHub-Checks vor Merge abwarten. Die manuellen Geräteschritte stehen in docs/APPLE_TEST_PLAN.md.
+WebKit-Projekte sind konfiguriert und beide Workflows installieren Chromium und WebKit. Lokaler WebKit-Download war mit HTTP 403 blockiert; **keine erfolgreiche lokale WebKit- oder echte iPad-/iPhone-Prüfung**. Der Prüfworkflow startet zusätzlich bei jedem Branch-Push, damit die vollständigen Checks auch vor der PR-Erstellung laufen. GitHub-Checks vor Merge abwarten. Die manuellen Geräteschritte stehen in docs/APPLE_TEST_PLAN.md.
 
 Keine unabhängige menschliche Fachfreigabe, Konten, Cloud-Synchronisation oder Offline/PWA. Elektro-Themen 6–16 bleiben ausdrücklich geplant. Vor Import andere Tabs schließen; Konflikterkennung ist keine Mehrtab-Zusammenführung. Die Beispiele sind rechnerische Lernfälle, keine Anleitung für elektrische Arbeiten.
 

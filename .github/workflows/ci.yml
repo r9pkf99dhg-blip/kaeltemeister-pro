@@ -1,7 +1,7 @@
 name: App prüfen
 on:
+  # Auch vor der PR-Erstellung alle Qualitätsprüfungen auf Entwicklungsbranches ausführen.
   push:
-    branches: [main]
   pull_request:
 permissions:
   contents: read
