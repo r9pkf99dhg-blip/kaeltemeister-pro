@@ -12,8 +12,8 @@ Basis: main `163b9b7`, Version 0.4. Entwicklungsbranch `feat/foundations-academy
 
 1. Etappe B abgeschlossen: KaTeX/mhchem-Komponenten, 19 Registerformeln, 24 Musterlösungen, Syntax-/Sicherheits-/Regressionstests. Siehe FORMULA_RENDERING.md.
 2. Etappe C abgeschlossen: acht vollständige Mathematiklektionen, 21 Zahlenaufgaben, elf Umstellungsziele mit begründeten Schritten, Quellen und vorhandener Fortschrittsspeicherung. 222 Tests sowie fünf neue Kernkurs-Browserprüfungen erfolgreich. Siehe MATHEMATICS_CURRICULUM.md.
-3. Etappe D abgeschlossen: vier Physik-Kernmodule, zwölf Zahlenaufgaben, 242 Funktionstests und zehn Kernkurs-Browserprüfungen erfolgreich. Etappe E: drei Chemie-Kernmodule mit sechs Aufgaben; vor Commit Gesamttests/Build und Browserabläufe prüfen.
-4. Etappen F/G: Lehrpläne, Kompetenzverknüpfungen und Vorbereitung der intelligenten Lernbrücke.
+3. Etappe D abgeschlossen: vier Physik-Kernmodule, zwölf Zahlenaufgaben, 242 Funktionstests und zehn Kernkurs-Browserprüfungen erfolgreich. Etappe E abgeschlossen: drei Chemie-Kernmodule und sechs Aufgaben, 250 Tests und 15 Kernkurs-Browserprüfungen erfolgreich.
+4. Etappen F/G vorbereitet: stabile Kompetenzen für alle 63 Zahlenaufgaben, gültige azyklische Modulvoraussetzungen, Fachgebiets-Audit und weitere Lehrpläne. 252 Tests sowie vollständige Chromium-Regression mit 115 bestandenen Prüfungen. Als Nächstes: Lernbrücke als eingeblendete vorhandene Lektion mit verlustfreier Rückkehr zur Aufgabe implementieren und separat prüfen.
 5. Etappe H: Backup-Kompatibilität, Browserprüfungen einschließlich WebKit soweit möglich, Dokumentation und PR.
 
 Details: IMPLEMENTATION_0_5.md. Jede abgeschlossene Etappe mit Typprüfung, Tests und Build absichern, dokumentieren, committen und auf GitHub pushen. Verbleibende Oberstufen- und Fachthemen als Planung kennzeichnen. Keine unfertigen Attrappen veröffentlichen.

@@ -23,6 +23,7 @@ export function validItem(value: unknown): value is LearningItem {
     !["id", "topicId", "domainId", "title", "prompt"].every((key) =>
       text(value[key]),
     ) ||
+    !(value.requiredCompetencyIds === undefined || texts(value.requiredCompetencyIds)) ||
     !integer(value.revision) ||
     value.revision < 1 ||
     !levels.includes(value.level as (typeof levels)[number]) ||

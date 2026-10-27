@@ -14,6 +14,7 @@ export interface ItemBase {
   prompt: string;
   article: ArticleRef;
   formulaId?: string;
+  requiredCompetencyIds?: string[];
 }
 export interface NumericTask extends ItemBase {
   kind: "numeric";

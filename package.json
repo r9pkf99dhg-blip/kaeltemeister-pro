@@ -14,7 +14,8 @@
     "test:e2e:ui": "playwright test --ui",
     "docs:review": "node scripts/generate-review.mjs",
     "test:e2e:chromium": "playwright test --project='smartphone*' --project='tablet*' --project=desktop",
-    "test:e2e:webkit": "playwright test --project='webkit-*'"
+    "test:e2e:webkit": "playwright test --project='webkit-*'",
+    "docs:audit": "node scripts/audit-domains.mjs"
   },
   "dependencies": {
     "katex": "^0.19.1",

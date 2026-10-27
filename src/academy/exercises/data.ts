@@ -1,3 +1,4 @@
+import { taskCompetencies } from "../foundations/competencies";
 import { chemistryTasks } from "../foundations/chemistry-tasks";
 import { physicsTasks } from "../foundations/physics-tasks";
 import { mathematicsTasks } from "../foundations/tasks";
@@ -418,3 +419,5 @@ numericTasks.push(...mathematicsTasks);
 numericTasks.push(...physicsTasks);
 
 numericTasks.push(...chemistryTasks);
+
+for (const task of numericTasks) task.requiredCompetencyIds = taskCompetencies(task);

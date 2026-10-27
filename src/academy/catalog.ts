@@ -1,3 +1,4 @@
+import { moduleFoundationLinks } from "./foundations/competencies";
 import { chemistryLessons, chemistryFormulas } from "./foundations/chemistry";
 import { physicsLessons, physicsFormulas } from "./foundations/physics";
 import { mathematicsLessons, mathematicsFormulas } from "./foundations/mathematics";
@@ -26,7 +27,7 @@ import {
   electricalObjectives,
   electricalTerms,
 } from "./data/electrical";
-export const modules = [...refrigerationModules, ...electricalModules, ...foundationLessons.map(lessonModule)];
+export const modules = [...refrigerationModules, ...electricalModules, ...foundationLessons.map(lessonModule)].map(module=>({...module,prerequisites:[...new Set([...(module.prerequisites??[]),...(moduleFoundationLinks[module.id]??[])])]}));
 export const academyQuestions = [
   ...refrigerationQuestions,
   ...electricalModuleQuestions,
