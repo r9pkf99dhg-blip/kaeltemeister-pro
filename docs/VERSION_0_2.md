@@ -1,5 +1,7 @@
 # Auslieferungsstand · Version 0.2
 
+> Historischer Auslieferungsstand. Die aktuelle Weiterentwicklung steht in [VERSION_0_3.md](VERSION_0_3.md).
+
 ## Tatsächlich implementiert
 
 Lernakademie mit zwölf Fachgebietsstrukturen, fünf ausführlichen Kältemodulen und drei unterschiedlichen Wissensstufen pro Modul. Wiederverwendbare Ansicht mit Lernzielen, Einstieg, Erklärung, Zusammenhängen, Formeln/Einheiten, Beispiel, typischen Fehlern, Zusammenfassung, Verständnisfragen, Vertiefung sowie Quellen-/Prüfstatus. Zusätzlich zehn Karteikarten, 20 Fragen mit stabilen Antwort-IDs, Suche, Filter, offene/gelesene Niveaus, Übungsbedarf und Wiederholungstermine.
