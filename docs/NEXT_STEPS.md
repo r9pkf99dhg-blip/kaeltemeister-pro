@@ -10,7 +10,7 @@ Basis: main `163b9b7`, Version 0.4. Entwicklungsbranch `feat/foundations-academy
 
 ## Als Nächstes
 
-1. Etappe B: KaTeX-Komponenten, explizite Formelnotation, bestehende Formeln migrieren, Render-/Regressionstests.
+1. Etappe B abgeschlossen: KaTeX/mhchem-Komponenten, 19 Registerformeln, 24 Musterlösungen, Syntax-/Sicherheits-/Regressionstests. Siehe FORMULA_RENDERING.md.
 2. Etappe C: Mathematik-Kernpfad und interaktiver Formelumstellungstrainer.
 3. Etappen D/E: fachlich abgeschlossene Physik-/Chemie-Grundlagen.
 4. Etappen F/G: Lehrpläne, Kompetenzverknüpfungen und Vorbereitung der intelligenten Lernbrücke.

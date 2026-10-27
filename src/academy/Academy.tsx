@@ -1,3 +1,4 @@
+import { BlockMath, MathText, VariableDefinitions } from "../math/Math";
 import { numericTasks } from "./exercises/data";
 import Exercises from "./exercises/Exercises";
 import ExamMode from "./exams/ExamMode";
@@ -490,15 +491,15 @@ function ModuleView({
       </section>
       <section>
         <h2>Einfacher Einstieg</h2>
-        <p>{content.introduction}</p>
+        <p><MathText text={content.introduction} /></p>
       </section>
       <section>
         <h2>Fachliche Erklärung</h2>
-        <p>{content.explanation}</p>
+        <p><MathText text={content.explanation} /></p>
       </section>
       <section>
         <h2>Technische Zusammenhänge</h2>
-        <p>{content.connections}</p>
+        <p><MathText text={content.connections} /></p>
       </section>
       <section>
         <h2>Formeln und Einheiten</h2>
@@ -507,7 +508,8 @@ function ModuleView({
           return (
             <div className="learning-formula" key={id}>
               <h3>{formula.title}</h3>
-              <p className="formula-expression">{formula.expression}</p>
+              <BlockMath tex={formula.tex ?? formula.expression} label={formula.expression} />
+              {formula.variables && <VariableDefinitions variables={formula.variables} />}
               <p>
                 <strong>Einheiten:</strong> {formula.units}
               </p>
@@ -525,19 +527,19 @@ function ModuleView({
       </section>
       <section>
         <h2>Durchgerechnetes Praxisbeispiel</h2>
-        <p>{content.example}</p>
+        <p><MathText text={content.example} /></p>
       </section>
       <section>
         <h2>Typische Fehler</h2>
         <ul>
           {content.mistakes.map((mistake) => (
-            <li key={mistake}>{mistake}</li>
+            <li key={mistake}><MathText text={mistake} /></li>
           ))}
         </ul>
       </section>
       <section className="takeaway">
         <h2>Zusammenfassung</h2>
-        <p>{content.summary}</p>
+        <p><MathText text={content.summary} /></p>
       </section>
       <button
         className="button primary"
@@ -585,7 +587,7 @@ function ModuleView({
       )}
       <section>
         <h2>Vertiefung</h2>
-        <p>{content.deepening}</p>
+        <p><MathText text={content.deepening} /></p>
         <div className="related-links">
           {module.related.map((related) =>
             related.available && related.kind === "calculator" ? (

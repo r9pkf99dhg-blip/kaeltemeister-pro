@@ -23,6 +23,8 @@ export interface Formula {
   id: string;
   title: string;
   expression: string;
+  tex?: string;
+  variables?: { symbol: string; meaning: string; unit: string }[];
   units: string;
   assumptions: string;
   sourceIds: string[];

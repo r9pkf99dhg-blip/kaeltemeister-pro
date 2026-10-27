@@ -1,3 +1,4 @@
+import { solutionNotation } from "../../math/legacy-solutions";
 import { electricalTasks } from "./electrical";
 import type { NumericTask } from "./model";
 export const learningNotes = [
@@ -406,3 +407,5 @@ export const numericTasks: NumericTask[] = [
 ];
 
 numericTasks.push(...electricalTasks);
+
+for (const task of numericTasks) task.texSteps = solutionNotation[task.id];

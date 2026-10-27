@@ -1,0 +1,22 @@
+/** Explizite Zuordnung vorhandener stabiler Formel-IDs; kein Erraten aus Textschrägstrichen. */
+export const formulaNotation: Record<string, string> = {
+ 'evaporator-power': String.raw`\dot Q_0=\dot m\,(h_1-h_4)`,
+ 'compressor-power': String.raw`P_{\mathrm{Fluid}}=\dot m\,(h_2-h_1)`,
+ 'condenser-power': String.raw`\dot Q_c=\dot m\,(h_2-h_3)`,
+ 'cycle-balance': String.raw`\dot Q_c=\dot Q_0+P_{\mathrm{Fluid}}`,
+ 'superheat': String.raw`\Delta T_{\mathrm{\ddot U}}=T_{\mathrm{Dampf}}-T_{\mathrm{sat,Dew}}(p)`,
+ 'subcooling': String.raw`\Delta T_{\mathrm U}=T_{\mathrm{sat,Bubble}}(p)-T_{\mathrm{Fl\ddot ussigkeit}}`,
+ 'sensible-heat': String.raw`\dot Q=\dot m\,c_p\,\Delta T`,
+ 'sensible-mass-flow': String.raw`\dot m=\frac{\dot Q}{c_p\,\Delta T}`,
+ 'sensible-temperature-difference': String.raw`\Delta T=\frac{\dot Q}{\dot m\,c_p}`,
+ 'dc-electric-power': String.raw`P=U\,I`,
+ 'cooling-cop': String.raw`\varepsilon=\frac{\dot Q_0}{P_{\mathrm{el}}}`,
+ 'heating-cop': String.raw`\mathrm{COP}_{\mathrm{Heiz}}=\frac{\dot Q_{\mathrm{Heiz}}}{P_{\mathrm{el}}}`,
+ 'electric-current-charge': String.raw`I=\frac{\Delta Q}{\Delta t}`,
+ 'ohm-current': String.raw`I=\frac{U}{R}`,
+ 'ohm-voltage': String.raw`U=R\,I`,
+ 'ohm-resistance': String.raw`R=\frac{U}{I}`,
+ 'electric-energy': String.raw`E=P\,t`,
+ 'series-resistance': String.raw`R_{\mathrm{ges}}=R_1+R_2`,
+ 'parallel-resistance': String.raw`\frac{1}{R_{\mathrm{ges}}}=\frac{1}{R_1}+\frac{1}{R_2}`,
+};

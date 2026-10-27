@@ -2544,3 +2544,12 @@ progress::-moz-progress-bar {
 .backup-preview { border: 1px solid #c6d4d2; padding: 1rem; border-radius: .8rem; }
 .backup-confirm { display: flex; align-items: flex-start; gap: .7rem; margin-block: 1rem; }
 .backup-confirm input { flex: 0 0 auto; width: 1.25rem; height: 1.25rem; }
+
+/* Lokal gebündelter Formelsatz; lange Gleichungen scrollen im eigenen Bereich. */
+.math-display { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: .7rem .15rem; margin-block: .65rem; -webkit-overflow-scrolling: touch; }
+.math-display .katex-display { margin: .25em 0; text-align: left; width: max-content; min-width: 100%; }
+.math-inline { font-size: 1em; }
+.math-error { display: inline-block; max-width: 100%; overflow-wrap: anywhere; color: #96331a; }
+.math-variables > div { display: flex; flex-wrap: wrap; gap: 1rem; padding: .35rem 0; }
+.math-variables dd { margin: 0; }
+.math-display:focus-visible { outline: 3px solid #235e4c; outline-offset: 3px; }

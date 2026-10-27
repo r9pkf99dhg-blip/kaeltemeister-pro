@@ -33,6 +33,7 @@ export interface NumericTask extends ItemBase {
   sourceIds: string[];
   hint?: string;
   steps: string[];
+  texSteps?: string[];
   mistakes: string[];
   assumptions: string;
   review: "calculation-tested-expert-review-pending";

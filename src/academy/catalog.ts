@@ -1,3 +1,4 @@
+import { formulaNotation } from "../math/notation";
 export { domains } from "./data/domains";
 import { modules as refrigerationModules } from "./data/modules";
 import {
@@ -25,7 +26,7 @@ export const academyQuestions = [
   ...electricalModuleQuestions,
 ];
 export const flashcards = [...refrigerationCards, ...electricalCards];
-export const formulas = [...baseFormulas, ...electricalFormulas];
+export const formulas = [...baseFormulas, ...electricalFormulas].map(formula => ({ ...formula, tex: formula.tex ?? formulaNotation[formula.id] }));
 export const sources = [...baseSources, ...electricalSources];
 export const objectives = [...baseObjectives, ...electricalObjectives];
 export const terms = [...baseTerms, ...electricalTerms];

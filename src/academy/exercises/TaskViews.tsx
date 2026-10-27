@@ -1,3 +1,4 @@
+import { BlockMath, MathText, SolutionSteps } from "../../math/Math";
 import { formulas, modules, sources } from "../catalog";
 import { format } from "../../logic";
 import { units, fromSI } from "../../technical/calculations";
@@ -9,7 +10,7 @@ export function TaskPrompt({ item }: { item: LearningItem }) {
   return (
     <>
       <h3>{item.title}</h3>
-      <p>{item.prompt}</p>
+      <p><MathText text={item.prompt} /></p>
       {item.kind === "numeric" && (
         <>
           <dl className="task-givens">
@@ -111,7 +112,7 @@ export function TaskSolution({
               ?.text
           }
         </p>
-        <p>{item.explanation}</p>
+        <p><MathText text={item.explanation} /></p>
       </div>
     );
   const value = expected ?? expectedSI(item);
@@ -124,11 +125,7 @@ export function TaskSolution({
           {item.answerUnit}
         </strong>
       </p>
-      <ol>
-        {item.steps.map((step) => (
-          <li key={step}>{step}</li>
-        ))}
-      </ol>
+<SolutionSteps steps={item.texSteps ?? item.steps} />
       <h4>Typische Rechenfehler</h4>
       <ul>
         {item.mistakes.map((mistake) => (
@@ -162,8 +159,9 @@ export function TaskReference({
       {formula && (
         <>
           <p>
-            <strong>{formula.title}:</strong> {formula.expression}
+            <strong>{formula.title}:</strong>
           </p>
+          <BlockMath tex={formula.tex ?? formula.expression} label={formula.expression} />
           <p>{formula.units}</p>
         </>
       )}

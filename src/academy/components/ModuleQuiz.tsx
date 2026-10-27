@@ -1,3 +1,4 @@
+import { MathText } from "../../math/Math";
 import { useState } from "react";
 import { academyQuestions } from "../catalog";
 import { levels, type AcademyProgress, type Level } from "../model";
@@ -45,7 +46,7 @@ export default function ModuleQuiz({
           <div className="module-question" key={question.id}>
             <fieldset>
               <legend>
-                {index + 1}. {question.prompt}
+                {index + 1}. <MathText text={question.prompt} />
               </legend>
               {question.options.map((option) => (
                 <label
@@ -68,7 +69,7 @@ export default function ModuleQuiz({
                       }));
                     }}
                   />
-                  <span>{option.text}</span>
+                  <span><MathText text={option.text} /></span>
                 </label>
               ))}
             </fieldset>
@@ -94,7 +95,7 @@ export default function ModuleQuiz({
                     ? "Richtig."
                     : "Noch nicht richtig."}
                 </strong>
-                <p>{question.explanation}</p>
+                <p><MathText text={question.explanation} /></p>
                 <p>
                   Richtige Antwort:{" "}
                   {

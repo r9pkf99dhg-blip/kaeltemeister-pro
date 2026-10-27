@@ -71,6 +71,7 @@ export function validItem(value: unknown): value is LearningItem {
     text(value.assumptions) &&
     texts(value.sourceIds) &&
     texts(value.steps) &&
+    (value.texSteps === undefined || texts(value.texSteps)) &&
     texts(value.mistakes) &&
     Array.isArray(value.givens) &&
     value.givens.every(
