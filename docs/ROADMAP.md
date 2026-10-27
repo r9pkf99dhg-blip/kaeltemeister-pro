@@ -1,53 +1,50 @@
-# ROADMAP · Gesamtvision und Version 0.2
+# ROADMAP · Version 0.3 und Gesamtplattform
 
-## Gesamtvision
+## Gesamtvision bleibt erhalten
 
-KälteMeister Pro soll eine modular erweiterbare Plattform werden. Die Lernakademie bildet aktuell den Schwerpunkt. Fachwissen und Quellen werden zentral gepflegt und später in anderen Modulen wiederverwendet.
+| Hauptmodul                      | Aktueller Stand                                                                 | Späterer Anschluss                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Lernakademie                    | Fünf Module, drei Niveaus, adaptives Lernen, Aufgaben, Karten und Übungsprüfung | Weitere geprüfte Lernpfade und belastbare Inhaltsfreigabe             |
+| Fachbibliothek                  | Alte Artikel, Fachbegriffe und begrenzte neue Fachnotizen                       | Gemeinsame Suche und bessere Verknüpfung                              |
+| Technische Berechnungen         | Sensibler Rechner + gemeinsamer SI-Kern für acht Aufgabentypen                  | Weitere Rechner über denselben Kern, keine doppelte Logik             |
+| log(p)-h-Diagramme/Simulation   | Noch nicht implementiert                                                        | Verifizierte Stoff-/Zustandsmodelle erforderlich                      |
+| Kältemittel-/Bauteildatenbank   | Noch nicht implementiert                                                        | Rechte, Qualität, Aktualisierung und Referenzzustände klären          |
+| Fehlersuche/Diagnose            | Erweiterungsbeziehungen vorhanden                                               | Geführte Messung mit Unsicherheit, keine pauschale Füllmengendiagnose |
+| Anlagenplanung/Auslegung        | Noch nicht implementiert                                                        | Geprüfte Rechenmodelle und eindeutig dokumentierte Randbedingungen    |
+| Technische Projektdokumentation | Noch nicht implementiert                                                        | Projektfälle referenzieren dieselben Formeln, Aufgaben und Quellen    |
 
-| Hauptmodul                            | Stand 0.2                                                              | Nächste sinnvolle Erweiterung                                                                     |
-| ------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| 1. Lernakademie                       | Fünf Kältemodule, drei Niveaus, Fragen, Karten, Wiederholung und Suche | Fachliche Freigabe und ein vollständiger weiterer Lernpfad                                        |
-| 2. Fachbibliothek/Nachschlagewerk     | Bestehende Artikel und kleine Begriffssuche                            | Gemeinsamer Suchindex und redaktionelle Verknüpfung                                               |
-| 3. Technische Berechnungen            | Sensible Wärmeleistung mit zentralem Formelbezug                       | Ein zusätzlicher, gut geprüfter Rechner statt einer großen ungesicherten Sammlung                 |
-| 4. Diagramme/Simulationen             | Nur Erweiterungspunkt                                                  | Qualitative Kreislaufdarstellung mit erklärten Modellgrenzen; Stoffdaten erst nach Quellenprüfung |
-| 5. Bauteil-/Kältemitteldatenbank      | Nicht implementiert                                                    | Datenquellen, Lizenz und Aktualisierung klären, bevor Daten importiert werden                     |
-| 6. Fehlersuche/Wartung/Inbetriebnahme | Geplante Modulbeziehungen                                              | Geführtes Messprotokoll mit unsicherheitsbewusster Interpretation                                 |
-| 7. Planung/Projektdokumentation       | Nicht implementiert                                                    | Ein lokaler Übungsfall mit exportierbaren Annahmen und Ergebnissen                                |
-| 8. Quellen-/Normen-/Formelverwaltung  | Zentrale Register und offener Prüfstatus                               | Gesicherte Fundstellen, Rechte, Freigabe und Aktualisierungsregeln                                |
+Keine vorzeitigen Attrappen der späteren Module. Neue Daten sollen dieselben IDs, Einheiten und Quellenregister nutzen.
 
-## Lieferumfang 0.2
+## Version 0.3 · abgeschlossener technischer Umfang
 
-- Zwölf Fachgebiete mit Kapiteln und Unterkapiteln, offene Themen deutlich markiert.
-- Fünf umfangreiche Kältetechnik-Module: Kreislauf, Verdampfer, Verdichter, Verflüssiger, Überhitzung/Unterkühlung.
-- Gemeinsame Lernansicht mit elf Kernabschnitten und drei inhaltlich unterschiedlichen Wissensstufen.
-- 20 Fragen mit Erklärungen und stabilen Antwort-IDs, zehn Karteikarten, einfache Terminplanung.
-- Lokale Fortschrittsspeicherung v2, vorsichtige Übernahme alter Lesestände und unveränderte Altangebote.
-- Keine neuen externen Dienste, keine API-Schlüssel, unverändertes GitHub-Pages-Deployment.
+- V0.2-Integration in main und Pages-Erfolg vor Beginn nachgewiesen.
+- Transparente adaptive Zähler, Themenlücken, Empfehlungen mit Begründung und leistungsabhängige Abstände.
+- Acht ausführliche Zahlenaufgaben und ein wiederverwendbarer Aufgaben-/Bewertungskern.
+- Gemischte, selbst erstellte Übungsprüfungen mit Auswahl, Zeitlimit, Wiederherstellung und Analyse.
+- Persönliches Lern-Dashboard und begrenzter Prüfungsverlauf.
+- Verlustarme Migration v2→v3 mit erhaltenem Originalbestand; keine erfundene ältere Versuchshistorie.
+- Teilweiser echter Quellenabgleich plus unabhängige Zahlen-/Einheitentests, keine behauptete externe Fachfreigabe.
 
-Nicht geliefert: Fachfreigabe, vollständige weitere Fachgebiete, synchronisierte Konten, PWA, Offline-Modus, Normenvolltexte, reale Kältemittel-Stoffdaten, Diagnose- oder Planungswerkzeuge.
+## Version 0.4 · Empfehlung in Prioritätsreihenfolge
 
-## Version 0.3 · priorisierte Empfehlung
+### P0 · Vertrauen und Datensicherung
 
-### P0: Fachliche Verlässlichkeit und Datensicherheit
+1. Fachperson prüft die bestehenden Module und Aufgaben, insbesondere kältetechnische Messvoraussetzungen. Fundstellen und Umfang der Freigabe pro Inhalt festhalten.
+2. Export/Import mit Vorschau, strikter Validierung, unveränderter Rückfallkopie und Wiederherstellung testen. Ungültige Dateien dürfen nichts überschreiben.
+3. Safari auf echtem iPad/iPhone prüfen: Bildschirmtastatur, größere Schrift, Fokus, Timer, Hintergrundwechsel und lokale Speicherung. Chromium-Emulation genügt dafür nicht.
+4. Mehrtab-Konflikte und Reset-Generation lösen, bevor Gerätesynchronisation geplant wird.
 
-- Externe Unterlagen tatsächlich prüfen und die fünf Module fachlich freigeben; Quellen pro Aussage/Fundstelle ergänzen.
-- Lokalen Export/Import mit Vorschau, Validierung und Sicherung anbieten. Abnahme: gültiger Export wird verlustfrei wiederhergestellt; ungültiger Import verändert nichts.
-- Praktische Prüfung mit Safari auf einem echten iPad und einem iPhone; Tastaturvergrößerung, Schriftgröße und Kontrast bewerten.
+### P1 · Lernqualität statt Masse
 
-### P1: Eine vollständige Erweiterung
+- Einen vollständigen weiteren Lernpfad, etwa sensible/latente Wärme oder elektrische Grundgrößen, auf allen drei Niveaus ausarbeiten und fachlich prüfen.
+- Mehr unabhängige Aufgabenvarianten pro Fachgebiet/Niveau, damit höhere Prüfungsstufen nicht überwiegend Grundlagen wiederholen.
+- Lernempfehlungen mit einem kleinen gleitenden Fenster evaluieren: Alte Fehler sollen nicht unbegrenzt stark nachwirken. Verfahren und Gründe weiterhin sichtbar halten.
+- Individuelle Aufgabenaktivierung aus Empfehlungen weiter ausbauen, etwa eine gezielte Folge aus Fragen und Rechnungen.
 
-- Lernpfad „Sensible und latente Wärme“ im Fachgebiet Thermodynamik bzw. Klimatechnik ergänzen: klare Lernziele, alle drei Niveaus, durchgerechnetes Beispiel und fachlich geprüfte Fragen.
-- Eine geführte Messwertaufnahme für Überhitzung/Unterkühlung spezifizieren; keine automatischen Füllmengenempfehlungen. Erst nach geprüftem Stoffdaten-/Druckkonzept umsetzen.
-- Lernhistorie nur dann ergänzen, wenn die Darstellung und Auswertung fachlich sinnvoll definiert sind. Bisherige letzte Antworten nicht als historische Versuche umdeuten.
+### P2 · Erst danach größere Plattformmodule
 
-### P2: Nutzungskomfort
+Lokaler Übungs-Projektfall, geführtes Messprotokoll, dann gegebenenfalls geprüfte Diagramm-/Stoffdatenintegration. Offline-/PWA-Funktion erst mit konsistenter Update-/Cache-Strategie. Optionale Synchronisation darf kein Konto für die lokale Kernfunktion erzwingen.
 
-- Einfache modulübergreifende Suche ausbauen, bei Bedarf Inhaltsblöcke und Deep Links einführen.
-- Konflikte zwischen gleichzeitig geöffneten Tabs sauber lösen; Reset-Generation und Zusammenführung vor optionaler Gerätesynchronisation.
-- Offline-/PWA-Nutzen prüfen. Erst ein konsistentes Cache-/Update-Konzept erarbeiten, damit keine gemischten Inhaltsversionen entstehen.
+## Abnahme jedes Pakets
 
-## Spätere Fachausweitung
-
-Reihenfolge nach fachlicher Abhängigkeit: Thermodynamik → Messtechnik → Klima/Lüftung → Wärmepumpen → Elektro/Steuerung/Regelung → Wärmeübertragung/Dämmung → Komponenten/Anlagenbau → Sicherheit/Umwelt/Recht. Rechtliche Angaben brauchen eine datierte Prüfung und Pflege, nicht nur die einmalige Erfassung.
-
-Jedes neue Paket bleibt klein und vollständig: Inhalt, Quellenstatus, Fragen, Lernziele, Beispiele, Migration, responsive Prüfung und ein grüner Pull Request. Keine hunderten generierten Platzhalterartikel.
+Dokumentierte Modellgrenzen und Quellen; stabile IDs; unabhängige Referenzbeispiele; Migration/Datenschutz; Typprüfung, Funktions- und Browsertests; grüner PR; Kontrolle des tatsächlichen Deployments erst nach dem Merge. Keine offiziellen Prüfungsaufgaben oder garantierten Gerätespezifikationen ohne entsprechende Grundlage behaupten.

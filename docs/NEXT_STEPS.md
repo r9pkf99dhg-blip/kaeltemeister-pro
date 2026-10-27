@@ -1,29 +1,32 @@
-# Nächste Schritte und Übernahme · Version 0.2
+# Version 0.3 übernehmen und auf dem iPad testen
 
-## Änderungen übernehmen
+## Übernehmen
 
-1. Pull Request „Version 0.2: Lernakademie“ auf GitHub öffnen.
-2. Prüfen, dass beide GitHub-Prüfläufe grün sind.
-3. **Merge pull request → Confirm merge** wählen.
-4. Unter **Actions → Deploy to GitHub Pages** den neuen Lauf für `main` öffnen. Der automatische Start bei Push auf `main` bleibt erhalten. Falls nötig manuell **Run workflow → main → Run workflow** wählen.
-5. Nach erfolgreichem Job „Website veröffentlichen“ auf dem iPad in Safari `https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/` neu laden.
+1. Pull Request „Version 0.3: Intelligente Lernakademie“ auf GitHub öffnen.
+2. Auf die grünen Prüfungen warten; dann **Merge pull request → Confirm merge** wählen.
+3. Unter **Actions → Deploy to GitHub Pages** den neuen main-Lauf prüfen. Nach erfolgreichem Job „Website veröffentlichen“ ist die neue Version verfügbar. Falls nötig manuell **Run workflow → main → Run workflow**.
+4. Auf dem iPad in Safari `https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/` neu laden. Bestehende Browserdaten nicht löschen, damit die Migration den bisherigen Fortschritt übernehmen kann.
 
-Der PR selbst veröffentlicht keine neue Website und wird nicht automatisch zusammengeführt.
+Vor dem Merge bleibt die veröffentlichte Seite auf dem bisherigen Stand. Der PR selbst wird nicht automatisch zusammengeführt oder veröffentlicht.
 
-## Testen ohne Programmierkenntnisse
+## Konkreter Testablauf
 
-1. Auf **Akademie** tippen. Die Übersicht zeigt fünf Module; der bisherige Lernbereich, Quiz und Rechner bleiben separat erreichbar.
-2. „Grundlagen des Kältekreislaufs“ öffnen. Zwischen **Grundlagen**, **Fachkraft** und **Meisterniveau** wechseln. Die Texte und Beispiele ändern sich. Den offenen Prüfstatus und die Quellenhinweise lesen.
-3. Ein Niveau als gelesen markieren. Zur Übersicht zurückkehren und nach **Gelesen** filtern. Eine andere Wissensstufe bleibt separat offen.
-4. Eine Verständnisfrage bewusst falsch beantworten und **Antwort prüfen** wählen. Die Erklärung erscheint. In der Übersicht zeigt **Erneut üben** das betroffene Modul. Frage anschließend richtig beantworten.
-5. **Karteikarten wiederholen** öffnen, zuerst selbst antworten, dann **Antwort zeigen**. Bei **Gewusst** liegt der nächste Termin einen Tag später; **Nochmal** lässt die Karte heute fällig.
-6. Nach „Enthalpie“ oder „Ueberhitzung“ suchen. Module und passende Begriffserklärungen prüfen. Bei Elektrotechnik erscheinen die vorbereiteten Kapitel, noch keine angeblich fertigen Artikel.
-7. Safari neu laden. Gelesene Niveaus, gespeicherte Modulantworten und Kartentermine bleiben im selben Browser erhalten. Eine Seite ohne Fortschritt ist nicht automatisch ein Fehler: Andere Geräte/Browserprofile synchronisieren noch nicht.
-8. Den alten Rechner prüfen: 0,5 kg/s × 4,18 kJ/(kg·K) × 5 K = **10,45 kW**. Nicht für die gesamte Verdampfung verwenden.
+1. **Dashboard:** Fachgebiets-Fortschritt, heutige Fälligkeiten und Empfehlungen ansehen. Bei noch unbekannten Themen erklärt die App ausdrücklich, dass noch keine bewerteten Antworten vorliegen.
+2. **Rechenaufgaben üben:** Wärmeleistungsaufgabe öffnen. `10,45` mit `kW` oder `10450` mit `W` eingeben. Nach **Ergebnis prüfen** müssen Musterlösung und Fehlerhinweise erscheinen.
+3. Bewusst `1 kW` eingeben. Nach der Auswertung zum Dashboard zurückkehren. Das betroffene Thema erhält eine begründete Empfehlung; die falsche Antwort bleibt im Lernverlauf berücksichtigt.
+4. **Akademie → Rechenaufgaben:** Massenstromaufgabe wählen. `1800 kg/h` ist hier genauso richtig wie `0,5 kg/s`. Optional den Lösungshinweis öffnen.
+5. **Übungsprüfung:** Fachgebiet **Elektrotechnik**, Grundlagen und **5 Minuten** wählen. Es erscheinen zwei Auswahlfragen und eine Zahlenaufgabe. Richtige Zahlenantwort: `48 W` bzw. `0,048 kW`. Lösungen dürfen erst nach Abgabe erscheinen.
+6. Vor Abgabe Safari neu laden und die Prüfung wieder öffnen. Antworten und Endzeit müssen erhalten sein; die Zeit läuft weiter. Nach Abgabe werden Ergebnis, Fehleranalyse und Empfehlungen gespeichert.
+7. Eine neue Prüfung bei Zeitablauf automatisch abgeben lassen. Nicht beantwortete Aufgaben erhalten 0 Punkte, werden aber nicht als nachgewiesene Wissenslücke gezählt.
+8. Den alten Lernbereich, das alte Quiz, die drei Niveaus und Karteikarten weiterhin ausprobieren. Der vorhandene Rechner muss mit 0,5 kg/s, 4,18 kJ/(kg·K) und 5 K weiterhin **10,45 kW** liefern.
 
-Wenn eine unbekannte Datenversion oder ein Speicherfehler gemeldet wird, keine Browserdaten unüberlegt löschen. Die App bewahrt unsicher gelesene v2-Daten. Nach einem Lesefehler kann Neuladen helfen; bei unbekannter Version eine passende neuere App-Version verwenden.
+Nur einen Tab für eine laufende Prüfung verwenden. Die App ist eine lokale Übungssimulation, keine offizielle oder beaufsichtigte Prüfung. Das Ändern der Geräteuhr kann die Zeitmessung beeinflussen. Noch keine automatische Geräte-/Tab-Synchronisation.
 
-## Entwicklerprüfungen
+## Wenn Speichern nicht funktioniert
+
+Die App meldet Lesefehler, unbekannte Versionen und Schreibfehler. Nicht vorschnell Browserdaten löschen: v2 bleibt als unveränderter Migrationsbestand erhalten. Ein gültiges v3 wird bevorzugt; Änderungen in alten Schlüsseln werden nicht laufend zusammengeführt. Bei einem Lesefehler neu laden, bei unbekannter neuerer Version die passende App-Version verwenden. Ohne zuverlässige Speicherung bleiben Änderungen nur in der Sitzung.
+
+## Für die Entwicklung
 
 ```sh
 npm ci
@@ -34,14 +37,12 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-In dieser Cloud-Maschine alternativ den vorhandenen Browser verwenden:
+In dieser Cloud-Maschine kann alternativ der vorhandene Chromium genutzt werden:
 
 ```sh
 PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
 ```
 
-Playwright baut und startet die Produktionsvorschau selbst. Port 4175 muss frei sein. Fehlerberichte liegen in `playwright-report/` und `test-results/`. Ein testbarer Browser kann Bildschirmgrößen emulieren, ersetzt jedoch kein echtes iPad-Safari.
+Der Browserprüfbefehl baut selbst frisch und startet eine eigene Vorschau; Port 4175 muss frei sein. Screenshots/Traces liegen bei Fehlern in `test-results/`, der Bericht in `playwright-report/`. Die vorhandenen GitHub-Workflows führen diese Tests ebenfalls aus. Ein echter iPad-Safari-Test bleibt zusätzlich nötig.
 
-## Als Nächstes entwickeln
-
-Priorität für 0.3: tatsächliche Quellenprüfung und fachliche Freigabe, Export/Import des lokalen Fortschritts, echter Safari-Gerätetest und ein vollständiger weiterer Lernpfad. Die übrigen großen Plattformmodule bleiben in der [ROADMAP](ROADMAP.md) verankert; ihre Beziehungen stehen in [ARCHITECTURE.md](ARCHITECTURE.md) und [DOMAIN_MODEL.md](DOMAIN_MODEL.md).
+Die Empfehlung für 0.4 steht in [ROADMAP.md](ROADMAP.md), der genaue Lernalgorithmus in [LEARNING_SYSTEM.md](LEARNING_SYSTEM.md).

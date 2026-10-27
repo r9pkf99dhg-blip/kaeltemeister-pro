@@ -1,3 +1,4 @@
+import { calculateTechnical } from "./technical/calculations";
 import { articles } from "./content";
 
 const articleIds = new Set(articles.map((article) => article.id));
@@ -99,7 +100,19 @@ export function calculateHeat(
   }
   const massKgS = massUnit === "kg/h" ? mass / 3600 : mass;
   const cpKj = cpUnit === "J/(kg·K)" ? cp / 1000 : cp;
-  const kw = massKgS * cpKj * delta;
+  let kw: number;
+  try {
+    kw =
+      calculateTechnical("heat", {
+        massFlow: massKgS,
+        cp: cpKj * 1000,
+        deltaT: delta,
+      }) / 1000;
+  } catch {
+    throw new Error(
+      "Die Werte sind zu groß. Bitte prüfe deine Eingaben und Einheiten.",
+    );
+  }
   if (!Number.isFinite(kw) || !Number.isFinite(kw * 1000))
     throw new Error(
       "Die Werte sind zu groß. Bitte prüfe deine Eingaben und Einheiten.",

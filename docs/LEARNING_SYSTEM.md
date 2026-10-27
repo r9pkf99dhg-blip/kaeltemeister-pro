@@ -1,65 +1,56 @@
-# Lernsystem · Version 0.2
+# Lernsystem · Version 0.3
 
-## Nutzbare Funktionen
+## Lernangebote
 
-Die Akademie bietet fünf Kältetechnik-Module mit jeweils drei eigenständig formulierten Niveauvarianten. Der Niveauwechsel verändert Einstieg, Erklärung, Zusammenhänge, Beispiel, Fehlerhinweise, Zusammenfassung und Vertiefung. Die gemeinsamen Lernziele zeigen das Themenziel; mit höherem Niveau werden die Anforderungen vertieft.
+Die fünf Kältemodule, drei Wissensstufen und zwölf Fachgebietsstrukturen aus 0.2 bleiben bestehen. Modulfragen, Karteikarten, Rechenaufgaben und Übungsprüfungen sind verschiedene Lernformen desselben Katalogs. Das alte Zwölf-Fragen-Quiz bleibt separat; seine Bestwerte werden nicht als neue Themenstatistik ausgegeben.
 
-- **Grundlagen:** anschaulicher Einstieg, erklärte Fachbegriffe, einfache Zusammenhänge und zwei grundlegende Fragen pro Modul.
-- **Fachkraft:** Massenstrom, Enthalpie, Einheiten, praxisbezogene Berechnungen; die Grundlagenfragen plus eine fachliche Frage.
-- **Meisterniveau:** Systemgrenzen, Messunsicherheit, Analyse und Transfer; alle vier Fragen des Moduls.
+## Adaptiver Algorithmus
 
-Das ergibt fünf Module, 15 Textvarianten, 20 stabile Quizfragen und zehn Karteikarten. Die Frageauswahl ist kumulativ: Höhere Stufen wiederholen auch Grundlagen. Es wird keine zusätzliche Fragebank pro Niveau dupliziert.
+Die App speichert pro Frage/Aufgabe die Revision, Zahl der seit 0.3 bewerteten Versuche, Zahl richtiger Antworten, aktuelle richtige Serie, letzte Antwort, Zeitpunkt und nächsten Termin. Pro Thema werden nur **objektiv bewertete aktuelle Fragen/Rechnungen** für die Trefferquote zusammengefasst. Kartenbewertungen sind Selbsteinschätzung und werden nicht als fachlicher Kompetenznachweis gezählt.
 
-## Einheitliche Modulansicht
+Empfehlungsreihenfolge:
 
-1. Lernziele
-2. Einfacher Einstieg
-3. Fachliche Erklärung
-4. Technische Zusammenhänge
-5. Formeln und Einheiten einschließlich Gültigkeit
-6. Durchgerechnetes Praxisbeispiel
-7. Typische Fehler
-8. Zusammenfassung
-9. Verständnisfragen mit Erklärung und gespeicherter letzter Antwort
-10. Vertiefung
-11. Quellen und fachlicher Prüfstatus
+1. Eine letzte Antwort ist falsch: Erklärung und passende Aufgabe erneut bearbeiten.
+2. Eine bereits bearbeitete Frage/Aufgabe ist zeitlich fällig: Wiederholung empfohlen.
+3. Mindestens zwei bewertete Versuche und Trefferquote unter 75 %: weitere Übung empfohlen.
+4. Noch keine bewertete Antwort: Einstieg/Verständniskontrolle, ausdrücklich keine festgestellte Wissenslücke.
+5. Sonst keine zusätzliche Empfehlung bis zum nächsten Termin.
 
-Zusätzlich gibt es Karteikarten und passende vorhandene oder ausdrücklich geplante Werkzeugbeziehungen. Lerntexte sind mit größerer Schrift und großzügigem Zeilenabstand gestaltet. Niveauwechsel, Rückkehr zur Übersicht und Artikelwechsel setzen die Ansicht nach oben; die mobile Navigation reserviert Abstand zu Bedienelementen.
+Eine richtige Serie plant nach 1, 3, 7, 14 und anschließend 30 Tagen. Eine falsche Antwort setzt die Serie zurück und ist sofort wieder fällig. Bei bereits erkannten Wissenslücken im Thema beträgt der Abstand höchstens drei Tage. Die Begrenzung gilt auch für dessen Karteikarten. Ein Tag bedeutet 24 Stunden ab Bewertung in UTC. Das Dashboard zählt „heute“ bis zum lokalen Tagesende im Browser; die Wiederholungsansicht zeigt jetzt fällige Karten.
 
-## Quiz und Lernstatus
+Die Trefferquote verwendet die bisherige v3-Historie als aggregierte Zähler, kein statistisches KI-Modell. Eine einzelne Korrektur beseitigt deshalb eine vorherige geringe Trefferquote nicht sofort. Das ist ein bewusster Unterschied zu 0.2, das nur die letzte falsche Antwort betrachtete. Lernfortschritt ist keine Prüfungs- oder Berufsqualifikation. Ein künftiges gleitendes Zeitfenster könnte alte Fehler weniger stark gewichten; es ist noch nicht implementiert.
 
-Eine Modulfrage hat genau eine richtige Antwort. Nach „Antwort prüfen“ werden Antwort-ID, Frageversion, Ergebnis und UTC-Zeit gespeichert. Die Erklärung nennt die richtige Lösung und begründet sie. Die Antwort kann durch erneute Auswahl korrigiert werden. Die zuletzt gespeicherte Antwort bleibt nach Neuladen sichtbar; eine alte Antwort wird nicht ungefragt als aktuelle Auswahl vorausgewählt.
+## Rechenaufgaben
 
-„Erneut üben“ bedeutet: Mindestens eine zuletzt beantwortete Frage dieser Modulrevision ist falsch. Eine Korrektur hebt diesen Hinweis auf, wenn keine andere aktuelle Antwort falsch ist. Fragen einer alten Revision zählen nicht zur aktuellen Bewertung. Diese einfache Regel ist keine psychometrische Kompetenzmessung.
+Acht Aufgaben: sensible Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Jede hat stabile ID, Revision, Thema, Fachgebiet, Niveau, gegebene Größen samt Einheiten, gesuchte Größe, SI-Berechnung, Antwort-Einheiten, Toleranz, Hinweis, Schritte, typische Fehler und fachlichen Bezug.
 
-„Gelesen“ wird pro Niveau explizit markiert und ist kein Lernzielnachweis. Ein geändertes Modul mit neuer Revision gilt erneut als offen. Die Übersicht bietet Filter für offene, gelesene und erneut zu übende Module. Der bisherige Zwölf-Fragen-Test mit Bestwert und vollständiger Rundenauswertung bleibt separat erhalten; seine Werte werden nicht mit den neuen Modulfragen vermischt.
+Dezimalkomma und Punkt sind erlaubt, Tausendertrenner nicht. Ergebnisse werden in SI umgerechnet. Korrekt ist eine Antwort innerhalb `max(absolute SI-Toleranz, 0,5 % des erwarteten SI-Werts)` plus einer sehr kleinen Maschinenrundungsreserve. Das ist eine didaktische Rundungstoleranz, keine behauptete Messgenauigkeit. Ungültige oder leere Trainingseingaben erzeugen einen Hinweis und keinen bewerteten Versuch. Eine neue Bewertung setzt eine geänderte Antwort voraus; dadurch zählt ein wiederholter Klick nicht mehrfach.
 
-## Karteikarten und Spaced Repetition
+Nur der letzte Zahlenversuch wird zusätzlich mit Eingabe/Einheit gespeichert; die aggregierten Lernzähler bewahren die bisherige v3-Leistung. Hinweise sind erlaubt und werden nicht als eigener Schwierigkeitsfaktor ausgewertet. Aufgaben sind fiktive Lernfälle mit offengelegten Annahmen, keine Anlagenauslegung.
 
-Die Vorderseite stellt eine Frage. Erst nach dem Umdrehen kann der Nutzer bewerten:
+## Übungsprüfung
 
-- **Gewusst:** Wiederholung nach 1, dann 3, 7, 14 und anschließend jeweils 30 Tagen.
-- **Nochmal:** Lernserie zurück auf 0; die Karte bleibt heute fällig.
+Die Ansicht heißt ausdrücklich **„Selbst erstellte Übungsprüfung“**. Wählbar: Fachgebiet, Niveauobergrenze und 5/10/20 Minuten. Höhere Niveaus enthalten Grundlagen. Aus dem verfügbaren Pool werden bis zu drei Auswahl- und drei Zahlenaufgaben gemischt. Bekannte letzte Fehler werden priorisiert, sonst bleibt die Auswahl über stabile IDs nachvollziehbar. Kein Zufalls-/Geheimhaltungsversprechen. Unbestückte Fachgebiete melden vor dem Start, dass noch keine gemischte Prüfung verfügbar ist.
 
-Ein „Tag“ ist hier exakt 24 Stunden ab Bewertungszeitpunkt in UTC. Es gibt keine Benachrichtigungen und keinen Hintergrunddienst. Die Fälligkeit wird beim Rendern/Öffnen der Ansicht ermittelt. Eine freiwillige Ansicht aller Karten erlaubt Üben vor dem Termin; auch dort verändert eine Bewertung den Termin. Eine geänderte Kartenrevision wird wieder fällig.
+Beim Start wird eine vollständige Kopie der Aufgaben und erwarteten Zahlenwerte festgehalten. Damit ändern spätere Katalogänderungen nicht die Lösung einer laufenden Prüfung. Ergebnisse veralteter Aufgabenrevisionen bleiben im Prüfungsverlauf, überschreiben aber keine aktuelle Themenstatistik. Antworten und absolute UTC-Endzeit werden gespeichert. Neuladen, Hintergrundwechsel und Navigation halten den Countdown nicht an. Die App prüft die Deadline auch außerhalb der Prüfungsansicht sowie bei Fokus-/Sichtbarkeitswechsel. Eingaben nach der Endzeit werden nicht mehr angenommen. Abgabe ist zustandsbasiert genau einmal möglich.
 
-Neu angelegte Karten sind sofort fällig. Die globale Wiederholung umfasst alle zehn Karten; im Modul werden nur dessen Karten gezeigt. Reihenfolge und Bewertung sind bewusst einfach, kein SM-2 und keine Behauptung eines individuell optimalen Algorithmus.
+Vor Abgabe gibt es keine Lösungshinweise oder Musterlösungen. Danach: gleiche Punktzahl pro Aufgabe, keine Teilpunkte, Prozentzahl, richtige/falsche/ungültige/unbeantwortete Antworten, Lösungswege und Wiederholungsempfehlungen. Es gibt keine offizielle Bestehensgrenze. Unbeantwortet zählt 0 Punkte, wird aber nicht als fachlich falscher Versuch in der Themenstatistik gespeichert. Ungültige Prüfungsantworten zählen als formaler Fehler; die Analyse unterscheidet sie von einer falschen Rechnung.
 
-## Suche und Fachgebiete
+Maximal 20 abgeschlossene Prüfungen bleiben mit ihren Aufgaben-Snapshots erhalten. Eine laufende Prüfung bleibt bis Abgabe/Ablauf bestehen. „Fortschritt zurücksetzen“ ist eine bestätigte Löschaktion. Browseruhr und localStorage sind manipulierbar: Diese lokale Lernsimulation ist kein beaufsichtigtes Prüfungssystem.
 
-Die Suche findet Modultitel, Kurzbeschreibungen und zugeordnete Fachbegriffe mit ihren Definitionen. Groß-/Kleinschreibung und deutsche Umlaute in ae/oe/ue-Schreibweise werden berücksichtigt. Sie ist noch keine Volltextsuche in sämtlichen Absätzen oder Quellen. Begriffsergebnisse verlinken auf die zugehörigen vorhandenen Module.
+## Dashboard
 
-Alle zwölf Fachgebiete haben Kapitel und Unterkapitel. Geplante Themen sind als „Noch nicht ausgearbeitet“ sichtbar und keine scheinbar fertigen Artikel. Rechtliche Themen enthalten in 0.2 noch keine konkreten Rechtsauskünfte.
+Zeigt Grundlagen-Lesefortschritt je Fachgebiet, heutige Karten-/Aufgabenfälligkeiten, erkennbare Schwächen mit Zählern, drei begründete Empfehlungen, zuletzt geöffnete/bearbeitete Module und die letzten fünf Prüfungen. Der vollständige gespeicherte Prüfungsverlauf ist im Prüfungsmodus erreichbar. Fachgebiete ohne ausgearbeitete Module werden als solche benannt; eine kleine elektrische Fachnotiz wird nicht als fertiger Elektrotechnik-Lernpfad gezählt.
 
-## Speicher und Migration
+## Speicherung und Migration
 
-- Bestehende Funktionen verwenden weiterhin `kaeltemeister-pro:progress:v1`.
-- Akademie verwendet `kaeltemeister-pro:progress:v2` mit `schemaVersion: 2`.
-- Nur wenn v2 noch nicht existiert, werden v1-Daten einmalig als Ausgangsbasis gelesen. V1 bleibt erhalten.
-- Der alte Artikel `kreislauf` wird dem Grundlagen-Lesestatus von `cycle-basics` zugeordnet. Für `superheat-subcooling` müssen beide alten Artikel `ueberhitzung` und `unterkuehlung` gelesen sein. Andere Niveaus/Module bleiben offen.
-- Alte Quizaggregate werden als `legacySummary` erhalten, nicht als erfundene Antworten. Die bisherigen Funktionen nutzen weiterhin ihre originalen v1-Werte.
-- Ein vorhandener v2-Datensatz ist maßgeblich; spätere Leseaktionen in den alten Artikeln werden nicht laufend in Akademie-Abschlüsse umgewandelt.
-- Unbekannte/ungültige v2-Versionen und Lesefehler sperren das automatische Schreiben in dieser Sitzung. Der Nutzer sieht einen Hinweis und kann vorübergehend weiterlernen.
-- Schreibfehler zeigen ebenfalls einen Hinweis. V1 wird bei der Migration weder gelöscht noch geändert. Ein gescheitertes v2-Schreiben lässt den v1-Ausgangspunkt bestehen.
+Aktueller Schlüssel: `kaeltemeister-pro:progress:v3`, `schemaVersion: 3`.
 
-„Fortschritt zurücksetzen“ verlangt eine Bestätigung und setzt beide nutzbaren Speicherstände zurück. Nicht sicher gelesene Daten werden nicht automatisch gelöscht. Keine Gerätesynchronisation oder Tab-Konfliktlösung. Das Löschen von Browserdaten entfernt auch den Lernfortschritt. Der bisherige Schlüssel kann durch die alten Funktionen weiterhin normalisiert werden; der Akademie-Lader selbst schreibt niemals v1.
+- Vorhandenes, gültiges v3 ist maßgeblich.
+- Fehlt v3, wird v2 unter `kaeltemeister-pro:progress:v2` strukturell validiert und mit Leseständen, letzten Antworten, Kartenterminen und altem Quizaggregat übernommen. Die v2-Zeichenfolge bleibt unverändert.
+- Aus alten Einzelantworten werden keine früheren Versuchszahlen erfunden. V3-Zähler starten leer. Falsche aktuelle Altantworten bleiben trotzdem als Übungsbedarf sichtbar, mit unbekannter früherer Versuchszahl.
+- Fehlt auch v2, bleibt die vorsichtige v1-Übernahme aus 0.2 erhalten.
+- Unbekannte Versionen, beschädigte aktuelle Daten oder Lesefehler sperren das automatische Schreiben dieser Sitzung. Schreibfehler werden angezeigt. Ältere Schlüssel werden bei Migration nicht entfernt.
+- Bestätigtes Zurücksetzen schreibt einen leeren aktuellen Stand und setzt den nutzbaren alten v1-Stand zurück. Der v2-Migrationsbestand bleibt als Rückfallkopie erhalten, wird aber bei vorhandenem v3 nicht neu eingelesen. Nicht lesbare Daten werden nicht automatisch gelöscht.
+
+Keine Gerätesynchronisation, kein Export/Import und keine automatische Zusammenführung paralleler Tabs. Für eine laufende Prüfung nur einen Tab verwenden: Mehrere Tabs können denselben lokalen Stand überschreiben. Bei Verlust von Browserdaten geht auch der Fortschritt verloren. Bestehende Schutzmechanismen und sichtbare Hinweise bleiben erhalten.
