@@ -1,0 +1,123 @@
+export const levels = ["grundlagen", "fachkraft", "meister"] as const;
+export type Level = (typeof levels)[number];
+export const levelNames: Record<Level, string> = {
+  grundlagen: "Grundlagen",
+  fachkraft: "Fachkraft",
+  meister: "Meisterniveau",
+};
+export interface Source {
+  id: string;
+  title: string;
+  url?: string;
+  access: "unavailable" | "internal";
+  note: string;
+}
+export interface Formula {
+  id: string;
+  title: string;
+  expression: string;
+  units: string;
+  assumptions: string;
+  sourceIds: string[];
+  calculatorId?: string;
+}
+export interface Objective {
+  id: string;
+  text: string;
+}
+export interface LearningContent {
+  introduction: string;
+  explanation: string;
+  connections: string;
+  example: string;
+  mistakes: string[];
+  summary: string;
+  deepening: string;
+}
+export interface Module {
+  id: string;
+  revision: number;
+  domainId: string;
+  title: string;
+  description: string;
+  objectiveIds: string[];
+  formulaIds: string[];
+  sourceIds: string[];
+  termIds: string[];
+  questionIds: string[];
+  cardIds: string[];
+  review: "awaiting-expert-review";
+  levels: Record<Level, LearningContent>;
+  related: {
+    kind: "calculator" | "measurement" | "diagnosis" | "case";
+    id: string;
+    label: string;
+    available: boolean;
+  }[];
+}
+export interface AcademyQuestion {
+  id: string;
+  revision: number;
+  moduleId: string;
+  level: Level;
+  prompt: string;
+  options: { id: string; text: string }[];
+  correctOptionId: string;
+  explanation: string;
+  objectiveId: string;
+  sourceIds: string[];
+}
+export interface Flashcard {
+  id: string;
+  revision: number;
+  moduleId: string;
+  front: string;
+  back: string;
+  sourceIds: string[];
+}
+export interface Term {
+  id: string;
+  title: string;
+  definition: string;
+  moduleIds: string[];
+}
+export interface Domain {
+  id: string;
+  title: string;
+  description: string;
+  chapters: {
+    id: string;
+    title: string;
+    subchapters: {
+      id: string;
+      title: string;
+      moduleIds: string[];
+      plannedTopics: string[];
+    }[];
+  }[];
+}
+export interface AcademyProgress {
+  schemaVersion: 2;
+  read: Record<string, { levels: Level[]; revision: number }>;
+  answers: Record<
+    string,
+    {
+      optionId: string;
+      correct: boolean;
+      questionRevision: number;
+      answeredAt: string;
+    }
+  >;
+  reviews: Record<
+    string,
+    {
+      cardRevision: number;
+      dueAt: string;
+      intervalDays: number;
+      repetitions: number;
+      lastReviewedAt: string;
+    }
+  >;
+  legacySummary: { attempts: number; best: number; last: number | null } | null;
+  updatedAt: string | null;
+}
