@@ -28,10 +28,14 @@ import type { Progress } from "./logic";
 import PageHeading from "./components/PageHeading";
 import Quiz from "./features/quiz/Quiz";
 import HeatCalculator from "./features/calculator/HeatCalculator";
+import Academy from "./academy/Academy";
+import { legacyBridges } from "./academy/catalog";
+import { useAcademyProgress } from "./academy/useAcademyProgress";
 
-type Page = "dashboard" | "lernen" | "quiz" | "rechner";
+type Page = "dashboard" | "lernen" | "quiz" | "rechner" | "akademie";
 const navigation = [
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
+  { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
   { id: "lernen" as const, label: "Lernbereich", icon: BookOpen },
   { id: "quiz" as const, label: "Wissensquiz", icon: CircleHelp },
   { id: "rechner" as const, label: "Rechner", icon: Calculator },
@@ -39,6 +43,8 @@ const navigation = [
 
 export default function App() {
   const [page, setPage] = useState<Page>("dashboard");
+  const academy = useAcademyProgress();
+  const [academyModuleId, setAcademyModuleId] = useState<string | null>(null);
   const [initialProgress] = useState(readProgress);
   const [progress, setProgress] = useState<Progress>(initialProgress.progress);
   const [storageError, setStorageError] = useState(initialProgress.readFailed);
@@ -58,6 +64,7 @@ export default function App() {
   }, [progress, initialProgress.readFailed]);
   function navigate(next: Page) {
     setPage(next);
+    if (next !== "akademie") setAcademyModuleId(null);
     setArticleId(null);
     setResetConfirm(false);
   }
@@ -161,6 +168,22 @@ export default function App() {
                   MEISTERSCHULE EDITION <Snowflake size={15} />
                 </span>
               </div>
+              <section className="academy-entry">
+                <div>
+                  <span className="pill">NEU · VERSION 0.2</span>
+                  <h2>Deine Lernakademie ist da.</h2>
+                  <p>
+                    Fünf Module, drei Wissensstufen und Karteikarten mit
+                    Wiederholungsplan.
+                  </p>
+                </div>
+                <button
+                  className="button primary"
+                  onClick={() => navigate("akademie")}
+                >
+                  Akademie öffnen <ArrowRight size={17} />
+                </button>
+              </section>
               <section className="hero">
                 <div className="hero-copy">
                   <span className="hero-badge">
@@ -291,6 +314,31 @@ export default function App() {
                   </p>
                   <h1>{activeArticle.title}</h1>
                   <p className="article-intro">{activeArticle.intro}</p>
+                  <p className="review-notice">
+                    Bestehender Lernartikel · unabhängige Fachprüfung noch
+                    offen. Das zugehörige Akademiemodul bietet zusätzliche
+                    Niveaus und transparente Quellenhinweise.
+                  </p>
+                  {legacyBridges.find((bridge) =>
+                    bridge.articleIds.some((id) => id === activeArticle.id),
+                  ) && (
+                    <button
+                      className="button secondary"
+                      onClick={() => {
+                        setAcademyModuleId(
+                          legacyBridges.find((bridge) =>
+                            bridge.articleIds.some(
+                              (id) => id === activeArticle.id,
+                            ),
+                          )!.moduleId,
+                        );
+                        navigate("akademie");
+                      }}
+                    >
+                      Dieses Thema in der Akademie vertiefen{" "}
+                      <ArrowRight size={17} />
+                    </button>
+                  )}
                   {activeArticle.id === "kreislauf" && (
                     <div className="article-cycle">
                       <CycleIllustration />
@@ -407,6 +455,15 @@ export default function App() {
             />
           )}
           {page === "rechner" && <HeatCalculator />}
+          {page === "akademie" && (
+            <Academy
+              initialModuleId={academyModuleId}
+              progress={academy.progress}
+              setProgress={academy.setProgress}
+              error={academy.error}
+              openCalculator={() => navigate("rechner")}
+            />
+          )}
           <footer>
             <span>
               <Snowflake size={15} /> KälteMeister Pro
@@ -426,13 +483,20 @@ export default function App() {
               aria-label="Fortschritt zurücksetzen"
             >
               <p>
-                Alle gelesenen Artikel und Quiz-Ergebnisse in diesem Browser
-                löschen?
+                Alle gelesenen Artikel, Quiz-Ergebnisse und Akademie-Lerndaten
+                in diesem Browser löschen?
               </p>
+              {academy.blocked && (
+                <p>
+                  Nicht sicher lesbare Akademie-Daten bleiben geschützt und
+                  werden nicht automatisch gelöscht.
+                </p>
+              )}
               <button
                 className="button danger"
                 onClick={() => {
                   setProgress({ ...emptyProgress, read: [] });
+                  academy.reset();
                   setResetConfirm(false);
                 }}
               >

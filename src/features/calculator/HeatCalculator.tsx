@@ -1,3 +1,4 @@
+import { formulas } from "../../academy/catalog";
 import { useState } from "react";
 import { ArrowRight, Calculator, ShieldCheck, Zap } from "lucide-react";
 import { calculateHeat, format, parseDecimal } from "../../logic";
@@ -142,7 +143,10 @@ export default function HeatCalculator() {
           <section className="formula-card">
             <p className="eyebrow">DIE FORMEL</p>
             <div className="formula">
-              Q̇ = ṁ × c<sub>p</sub> × ΔT
+              {
+                formulas.find((formula) => formula.id === "sensible-heat")!
+                  .expression
+              }
             </div>
             <p>
               Die Leistung steigt mit dem Massenstrom, der Wärmekapazität und

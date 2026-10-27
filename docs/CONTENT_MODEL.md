@@ -1,5 +1,7 @@
 # Gemeinsames Inhalts- und Fortschrittsmodell
 
+> Historischer Zielentwurf aus der Qualitätsprüfung vor Version 0.2. Das inzwischen implementierte Modell ist in [DOMAIN_MODEL.md](DOMAIN_MODEL.md) beschrieben; Unterschiede und noch offene Historien-/Synchronisationsfunktionen sind dort ausdrücklich benannt.
+
 ## Status und Zweck
 
 Dies ist der **Entwurf für die nächste Ausbaustufe**. Heute verwendet die App `Article` und `QuizQuestion` aus `src/content-types.ts`, Inhalte aus `src/content.ts` und den unveränderten localStorage-Schlüssel `kaeltemeister-pro:progress:v1`. Es gibt noch keine Quellenverwaltung, Formelregistry, Einzel-Fragenhistorie oder Datenmigration. Die bestehenden Artikel-IDs bleiben dauerhaft gültig.

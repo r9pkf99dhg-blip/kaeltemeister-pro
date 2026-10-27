@@ -1,5 +1,7 @@
 # Technische Qualitätsprüfung
 
+> Historischer Bericht zum Qualitätsschritt vor Version 0.2. Der aktuelle Funktionsumfang und die Migration sind in [LEARNING_SYSTEM.md](LEARNING_SYSTEM.md) dokumentiert; Testergebnisse zu 0.2 stehen in [VERSION_0_2.md](VERSION_0_2.md).
+
 Stand: 27.10.2026. Ausgangspunkt ist `main` nach Merge #2, Commit `43d2b8fa61de8ef3375ae8399b713b6786cc84c8`. Dieser Bericht unterscheidet bestehende Funktionen, Korrekturen und noch geplante Erweiterungen.
 
 ## Analyse der gesamten Projektstruktur

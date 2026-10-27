@@ -1,8 +1,22 @@
-# KälteMeister Pro
+# KälteMeister Pro · Version 0.2
 
 Dein kostenloser Lernbegleiter für die Meisterschule in der Kältetechnik. Die App läuft im Browser auf Smartphone, iPad und Computer. Sie benötigt weder Benutzerkonto noch kostenpflichtigen Dienst oder eigenen Server.
 
-## Was die erste Version kann
+## Neu: Lernakademie
+
+Version 0.2 ergänzt fünf ausführliche Kältetechnik-Module auf den Stufen **Grundlagen**, **Fachkraft** und **Meisterniveau**. Über **Akademie** erreichst du Lernziele, Erklärungen, Formeln/Einheiten, Rechenbeispiele, Fehlerhinweise, Zusammenfassungen, Verständnisfragen, Karteikarten und Vertiefungen.
+
+- 20 Modulfragen mit ausführlichen Erklärungen und gespeicherter letzter Antwort.
+- Zehn Karteikarten mit Wiederholung nach 1, 3, 7, 14 und dann 30 Tagen; „Nochmal“ setzt auf heute zurück.
+- Suche nach Modulen und Fachbegriffen, Filter für Fachgebiet, Niveau und Lernstatus.
+- Zwölf Fachgebiete mit klaren Kapiteln/Unterkapiteln; außerhalb der fünf Kältemodule sind Inhalte ausdrücklich noch in Vorbereitung.
+- Versionierter lokaler Akademie-Fortschritt mit vorsichtiger Übernahme vorhandener Lesedaten. Alte Quizwerte bleiben erhalten; es werden keine Einzelantworten erfunden.
+
+**Fachprüfung offen:** Die Beispiele und Einheiten wurden rechnerisch geprüft. Keines der neuen Module ist unabhängig fachlich freigegeben. Die externe Fachreferenz war aus dieser Umgebung nicht abrufbar; das wird an den Inhalten offen genannt. Die Beispiele sind keine realen Stofftabellen oder Hersteller-Sollwerte. Siehe [Quellenstatus](docs/SOURCES.md).
+
+Eine verständliche Anleitung zum Übernehmen und Testen auf deinem iPad steht in **[docs/NEXT_STEPS.md](docs/NEXT_STEPS.md)**. Struktur und Ausbau: [Architektur](docs/ARCHITECTURE.md), [Lernsystem](docs/LEARNING_SYSTEM.md), [Datenmodell](docs/DOMAIN_MODEL.md) und [ROADMAP](docs/ROADMAP.md).
+
+## Weiterhin vorhandene Funktionen
 
 - **Dashboard:** gelesene Artikel, Quiz-Bestwert und direkter Einstieg.
 - **Lernbereich:** Kältekreislauf, Überhitzung und Unterkühlung mit Praxisbeispielen und Merksätzen. Artikel lassen sich als gelesen markieren.
@@ -90,7 +104,7 @@ Das automatische Deployment nach dem letzten Merge auf `main` ist bestätigt (Na
 
 ### Falls der Pull Request noch fehlt
 
-Diese Qualitätsverbesserungen befinden sich im Branch `quality/tests-and-roadmap`. Öffne auf GitHub **Pull requests → New pull request**, wähle als Ziel **main** und als Vergleich **quality/tests-and-roadmap** und klicke auf **Create pull request**. Danach wie oben beschrieben zusammenführen.
+Version 0.2 befindet sich im Branch `feat/learning-academy-v02`. Öffne auf GitHub **Pull requests → New pull request**, wähle als Ziel **main** und als Vergleich **feat/learning-academy-v02** und klicke auf **Create pull request**. Danach wie oben beschrieben zusammenführen.
 
 ## Wie der Rechner rechnet
 
@@ -103,14 +117,15 @@ Diese Qualitätsverbesserungen befinden sich im Branch `quality/tests-and-roadma
 
 ## Deine Daten
 
-Gelesene Artikel und Quiz-Ergebnisse bleiben nur im aktuellen Browserprofil und unter derselben Webadresse. Sie werden nicht zwischen Geräten synchronisiert. Das Löschen der Browserdaten entfernt den Fortschritt. In privaten Browserfenstern kann er nach dem Schließen verschwinden. Wenn die Speicherung blockiert ist, erscheint ein Hinweis; die App funktioniert dann weiter mit vorübergehendem Fortschritt. Bei einem Lesefehler werden vorhandene Daten nicht überschrieben; lade die Seite erneut, um das Lesen wieder zu versuchen. Mehrere gleichzeitig geöffnete Tabs führen ihren Fortschritt noch nicht automatisch zusammen. Es gibt noch keinen Offline-Modus oder eine installierbare PWA.
+Gelesene Artikel, Akademie-Fortschritt, Karten und Quiz-Ergebnisse bleiben nur im aktuellen Browserprofil und unter derselben Webadresse. Sie werden nicht zwischen Geräten synchronisiert. Das Löschen der Browserdaten entfernt den Fortschritt. In privaten Browserfenstern kann er nach dem Schließen verschwinden. Wenn die Speicherung blockiert ist, erscheint ein Hinweis; die App funktioniert dann weiter mit vorübergehendem Fortschritt. Bei einem Lesefehler werden vorhandene Daten nicht überschrieben; lade die Seite erneut, um das Lesen wieder zu versuchen. Mehrere gleichzeitig geöffnete Tabs führen ihren Fortschritt noch nicht automatisch zusammen. Es gibt noch keinen Offline-Modus oder eine installierbare PWA.
 
 Die Fachartikel unterstützen dein Lernen. Herstellerangaben und Sicherheitsvorschriften haben Vorrang. Messwerte allein ersetzen keine vollständige Diagnose einer realen Anlage.
 
 ## Orientierung im Quellcode
 
 - `src/App.tsx`: Navigation, Dashboard, Lernbereich und gemeinsamer Fortschritt.
-- `src/features/`: eigenständige Quiz- und Rechneroberflächen.
+- `src/features/`: eigenständige bestehende Quiz- und Rechneroberflächen.
+- `src/academy/`: Fachgebiete, Module, Register, neue Lernansicht, Modulfragen, Karten und versionierter Fortschritt.
 - `src/components/`: gemeinsam genutzte Darstellungskomponenten.
 - `src/content.ts`: Fachartikel und Quizfragen mit Lösungen; Datenverträge in `src/content-types.ts`.
 - `src/logic.ts`: Rechenlogik und robustes Laden des Lernfortschritts.
