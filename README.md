@@ -49,25 +49,29 @@ npm run preview
 
 Für ein öffentliches Repository ist GitHub Pages mit GitHub Free nutzbar. Bei einem privaten Repository kann ein kostenpflichtiger GitHub-Tarif erforderlich sein. Veröffentliche keine vertraulichen Inhalte; eine Pages-Seite ist in der Regel öffentlich.
 
-1. Übernimm den Pull Request nach **main** (auf GitHub: **Pull requests → PR öffnen → Merge pull request → Confirm merge**). Falls kein PR automatisch erstellt werden konnte, siehe unten.
-2. Öffne im Repository **Settings → Pages**.
-3. Wähle unter **Build and deployment → Source** die Option **GitHub Actions**.
-4. Öffne **Actions → Auf GitHub Pages veröffentlichen → Run workflow**, wähle **main** und starte den Workflow. Bei späteren Änderungen auf `main` startet er automatisch.
-5. Warte auf den grünen Haken. Unter **Settings → Pages** oder im Deployment erscheint die tatsächliche Adresse. Erwartet wird: `https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/`.
+1. Öffne den Pull Request für `fix/github-pages-deployment`. Warte auf die grünen Prüfungen. Klicke auf **Merge pull request → Confirm merge**. Dadurch wird die Änderung nach `main` übernommen und das Deployment automatisch gestartet.
+2. Unter **Settings → Pages → Build and deployment → Source** muss **GitHub Actions** ausgewählt sein (in deinem Repository bereits erledigt).
+3. Öffne **Actions → Deploy to GitHub Pages**. Der Workflow liegt in `.github/workflows/deploy.yml`. Der frühere Workflow `pages.yml` wurde durch diese Datei ersetzt, damit es keine doppelten Veröffentlichungen gibt.
+4. Zum manuellen Start: **Run workflow → Branch: main → Run workflow**. Die Schaltfläche erscheint, sobald die Workflow-Datei auf `main` liegt. Ein Aufruf auf einem anderen Branch prüft nur die App und veröffentlicht nichts.
+5. Öffne den neuesten Lauf. Erst **App prüfen und bauen**, dann **Website veröffentlichen** müssen grün werden. Der zweite Job zeigt nach erfolgreicher Veröffentlichung den Website-Link an; dann erscheint auch unter **Settings → Pages** die Website-Adresse bzw. **Visit site**. Das kann kurz dauern.
+6. Öffne auf deinem iPad in Safari diese Adresse: **https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/**. Optional: **Teilen → Zum Home-Bildschirm** für einen schnellen Zugriff. Das ist eine Verknüpfung; ein Offline-Modus ist noch nicht enthalten.
 
-Der Workflow prüft Typen, Tests und Build vor jeder Veröffentlichung. Für Pull Requests gibt es zusätzlich einen Prüfworkflow. GitHub Actions muss im Repository erlaubt sein. Falls ein Workflow mit „Pages site not found“ endet, kontrolliere Schritt 3 und starte ihn erneut. Diese erste Version bereitet das Deployment vor; die Aktivierung von Pages und das Zusammenführen nach `main` erfolgen bewusst durch dich.
+Der Workflow installiert die festgeschriebenen Abhängigkeiten mit `npm ci`, prüft TypeScript, führt alle Tests aus und baut die App. Offizielle Actions (`configure-pages`, `upload-pages-artifact`, `deploy-pages`) veröffentlichen ausschließlich den Ordner `dist`. Der Deployment-Job besitzt `pages: write` und `id-token: write`; ein persönlicher Token oder ein separater Hostingdienst ist nicht erforderlich. Pull Requests werden geprüft, veröffentlichen aber keine Website. Der Unterpfad ist in `vite.config.ts` korrekt als `base: '/kaeltemeister-pro/'` hinterlegt. Bei einem anderen Repositorynamen muss er angepasst werden.
 
-Der Unterpfad ist in `vite.config.ts` als `base: '/kaeltemeister-pro/'` hinterlegt. Bei einem anderen Repositorynamen muss er angepasst werden. Die interne Navigation benötigt keine Serverweiterleitungen.
+### Wenn der Workflow oder die Website noch nicht erscheint
+
+- **Workflow fehlt:** Öffne **Code**, wähle den Branch **main** und kontrolliere `.github/workflows/deploy.yml`. Eine Datei, die nur im PR-Branch liegt, bietet noch keinen manuellen Start auf `main`. GitHub Actions zeigt den neuen Namen **Deploy to GitHub Pages** an.
+- **Actions ist deaktiviert:** Unter **Settings → Actions → General → Actions permissions** müssen GitHub Actions und die verwendeten offiziellen Actions erlaubt sein. Ein deaktivierter Workflow kann unter **Actions** über **Enable workflow** wieder aktiviert werden. Organisationsregeln lassen sich nicht mit einer Workflow-Datei umgehen.
+- **Kein automatischer Lauf nach dem Merge:** Starte den Workflow manuell auf **main**. Das ist beispielsweise nötig, wenn ein automatisierter Push mit `GITHUB_TOKEN` keine weiteren Workflows ausgelöst hat.
+- **Roter Lauf:** Öffne den Lauf und dann den roten Schritt. Ein fehlgeschlagener Build wird absichtlich nicht veröffentlicht. Bei „Pages site not found“ die Quelle **GitHub Actions** unter **Settings → Pages** kontrollieren und den Lauf erneut starten.
+- **Deployment wartet:** Prüfe, ob unter **Settings → Environments → github-pages** eine Freigabe verlangt wird oder `main` als Deployment-Branch zugelassen werden muss.
+- **Kein „Visit site“:** Die Auswahl der Quelle allein veröffentlicht noch nichts. Zuerst muss der Job **Website veröffentlichen** erfolgreich sein. Erst danach die Website-Adresse öffnen und bei Bedarf Safari neu laden.
+
+Die erfolgreiche Ausführung auf GitHub und die Live-Adresse müssen nach dem Merge überprüft werden. Lokale Tests bestätigen den Build, aber keinen abgeschlossenen GitHub-Pages-Deploy.
 
 ### Falls der Pull Request noch fehlt
 
-Die Änderungen befinden sich im Branch `feat/erste-app-version`. Falls dieser noch nicht auf GitHub sichtbar ist, im Projektterminal ausführen:
-
-```sh
-git push -u origin feat/erste-app-version
-```
-
-Auf GitHub unter **Pull requests → New pull request** als Ziel `main` und als Vergleich `feat/erste-app-version` wählen. Auf **Create pull request** klicken. Als Beschreibung eignen sich die Funktionen und Prüfungen aus dieser README. Falls der Push abgewiesen wird, braucht die verwendete GitHub-Verbindung Schreibrechte auf dieses Repository. Niemals Zugangsschlüssel in den Quellcode eintragen.
+Die Deployment-Korrektur befindet sich im Branch `fix/github-pages-deployment`. Öffne auf GitHub **Pull requests → New pull request**, wähle als Ziel **main** und als Vergleich **fix/github-pages-deployment** und klicke auf **Create pull request**. Danach wie oben beschrieben zusammenführen.
 
 ## Wie der Rechner rechnet
 
