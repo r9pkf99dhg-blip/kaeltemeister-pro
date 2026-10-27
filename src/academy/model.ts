@@ -53,6 +53,8 @@ export interface Module {
   termIds: string[];
   questionIds: string[];
   cardIds: string[];
+  prerequisites?: string[];
+  safety?: string;
   review: "awaiting-expert-review";
   levels: Record<Level, LearningContent>;
   related: {
@@ -129,10 +131,8 @@ export interface AcademyProgressV2 {
   updatedAt: string | null;
 }
 
-export interface AcademyProgress extends Omit<
-  AcademyProgressV2,
-  "schemaVersion"
-> {
+export interface AcademyProgress
+  extends Omit<AcademyProgressV2, "schemaVersion"> {
   schemaVersion: 3;
   performance: Record<string, Performance>;
   exerciseAnswers: Record<

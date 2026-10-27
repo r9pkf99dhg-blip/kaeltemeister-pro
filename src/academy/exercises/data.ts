@@ -1,3 +1,4 @@
+import { electricalTasks } from "./electrical";
 import type { NumericTask } from "./model";
 export const learningNotes = [
   {
@@ -403,3 +404,5 @@ export const numericTasks: NumericTask[] = [
       "Fiktiver stationärer Betriebspunkt; elektrische Leistung passend abgegrenzt. Kein saisonaler oder Herstellerkennwert.",
   },
 ];
+
+numericTasks.push(...electricalTasks);

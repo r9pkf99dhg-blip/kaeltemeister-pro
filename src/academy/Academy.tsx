@@ -1,3 +1,4 @@
+import { numericTasks } from "./exercises/data";
 import Exercises from "./exercises/Exercises";
 import ExamMode from "./exams/ExamMode";
 import { visitModule } from "./adaptive/algorithm";
@@ -96,6 +97,11 @@ export default function Academy({
     moduleRead(progress, module.id, level),
   ).length;
   function open(id: string) {
+    window.history.pushState(
+      { kaeltePage: "akademie", moduleId: id },
+      "",
+      window.location.href,
+    );
     setModuleId(id);
   }
   return (
@@ -112,17 +118,25 @@ export default function Academy({
           setLevel={setLevel}
           progress={progress}
           setProgress={setProgress}
-          back={() => setModuleId(null)}
+          back={() => {
+            window.history.pushState(
+              { kaeltePage: "akademie", moduleId: null },
+              "",
+              window.location.href,
+            );
+            setModuleId(null);
+          }}
           openCalculator={openCalculator}
+          openModule={open}
         />
       ) : (
         <>
           <div className="page-heading">
             <div>
-              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.3</p>
+              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.4</p>
               <h1>Lernakademie</h1>
               <p>
-                Fünf Kältetechnik-Module. Drei Wissensstufen. Dein eigenes
+                Kälte- und Elektro-Grundlagen. Drei Wissensstufen. Dein eigenes
                 Lerntempo.
               </p>
             </div>
@@ -257,7 +271,10 @@ export default function Academy({
                     onClick={() => open(module.id)}
                   >
                     <span className="eyebrow">
-                      KÄLTETECHNIK · {String(index + 1).padStart(2, "0")}
+                      {module.domainId === "kaelte"
+                        ? "KÄLTETECHNIK"
+                        : "ELEKTROTECHNIK"}{" "}
+                      · {String(index + 1).padStart(2, "0")}
                     </span>
                     <h2>{module.title}</h2>
                     <p>{module.description}</p>
@@ -332,9 +349,9 @@ export default function Academy({
               <section className="domain-outline">
                 <h2>Deine Fachgebiete</h2>
                 <p>
-                  Kapitel → Unterkapitel → Lernmodule. Außerhalb der fünf
-                  Kältetechnik-Module ist die Struktur vorbereitet; Inhalte sind
-                  noch in Arbeit. Rechtsinhalte benötigen vor Veröffentlichung
+                  Kapitel → Unterkapitel → Lernmodule. Fünf Kälte- und fünf
+                  Elektro-Module sind nutzbar. Weitere Inhalte sind ausdrücklich
+                  in Vorbereitung. Rechtsinhalte benötigen vor Veröffentlichung
                   eine datierte Prüfung.
                 </p>
                 {domains
@@ -345,7 +362,7 @@ export default function Academy({
                         <BookOpen size={18} />
                         <span>{item.title}</span>
                         <span className="pill">
-                          {item.id === "kaelte"
+                          {["kaelte", "elektro"].includes(item.id)
                             ? "5 Module verfügbar"
                             : "Inhalte in Vorbereitung"}
                         </span>
@@ -398,6 +415,7 @@ function ModuleView({
   setProgress,
   back,
   openCalculator,
+  openModule,
 }: {
   module: Module;
   level: Level;
@@ -406,6 +424,7 @@ function ModuleView({
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   back: () => void;
   openCalculator: () => void;
+  openModule: (id: string) => void;
 }) {
   const content = module.levels[level];
   const moduleSourceIds = [
@@ -422,7 +441,8 @@ function ModuleView({
         <ArrowLeft size={17} /> Zur Modulübersicht
       </button>
       <p className="eyebrow">
-        KÄLTETECHNIK · {levelNames[level]} · REVISION {module.revision}
+        {domains.find((d) => d.id === module.domainId)?.title} ·{" "}
+        {levelNames[level]} · REVISION {module.revision}
       </p>
       <h1>{module.title}</h1>
       <p className="article-intro">{module.description}</p>
@@ -443,6 +463,21 @@ function ModuleView({
         Quellen abgeglichen. Noch keine unabhängige fachliche Freigabe.
         Quellenstatus und Modellgrenzen stehen am Modulende.
       </p>
+      {module.safety && <p className="notice">{module.safety}</p>}
+      {!!module.prerequisites?.length && (
+        <section>
+          <h2>Empfohlene Voraussetzungen</h2>
+          {module.prerequisites.map((id) => (
+            <button
+              key={id}
+              className="text-button"
+              onClick={() => openModule(id)}
+            >
+              {modules.find((m) => m.id === id)?.title}
+            </button>
+          ))}
+        </section>
+      )}
       <section>
         <h2>Lernziele</h2>
         <ul>
@@ -539,6 +574,15 @@ function ModuleView({
           setProgress={setProgress}
         />
       </section>
+      {numericTasks.some((t) => t.topicId === module.id) && (
+        <Exercises
+          key={`exercises-${module.id}`}
+          moduleId={module.id}
+          progress={progress}
+          setProgress={setProgress}
+          openModule={openModule}
+        />
+      )}
       <section>
         <h2>Vertiefung</h2>
         <p>{content.deepening}</p>

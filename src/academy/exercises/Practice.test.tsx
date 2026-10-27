@@ -93,7 +93,7 @@ it("kennzeichnet den Prüfungsmodus, weist fehlende Inhalte zurück und zeigt vo
   expect(
     screen.getByRole("heading", { name: "Ergebnis: 0 %" }),
   ).toBeInTheDocument();
-  expect(screen.getAllByText("Nicht beantwortet")).toHaveLength(3);
+  expect(screen.getAllByText("Nicht beantwortet")).toHaveLength(6);
   expect(
     JSON.parse(localStorage.getItem(ACADEMY_KEY)!).examHistory,
   ).toHaveLength(1);

@@ -216,14 +216,14 @@ it("rechnet Einheitenwechsel korrekt und verwirft dabei alte Ergebnisse", async 
   ).toBeInTheDocument();
 });
 
-it("bleibt bei beschädigtem Fortschritt bedienbar und speichert danach gültige Daten", async () => {
+it("bleibt bei beschädigtem Fortschritt bedienbar und schützt die Originaldaten", async () => {
   localStorage.setItem(STORAGE_KEY, "kein JSON");
   const user = userEvent.setup();
   render(<App />);
   expect(screen.getByText(`0 von ${articles.length}`)).toBeInTheDocument();
   await user.click(screen.getByRole("button", { name: "Lernbereich" }));
   expect(screen.getByRole("progressbar")).toHaveAttribute("value", "0");
-  expect(JSON.parse(localStorage.getItem(STORAGE_KEY)!).read).toEqual([]);
+  expect(localStorage.getItem(STORAGE_KEY)).toBe("kein JSON");
 });
 
 it("überschreibt bei einem Lesefehler keine vorhandenen Daten, auch nach weiteren Lernaktionen", async () => {

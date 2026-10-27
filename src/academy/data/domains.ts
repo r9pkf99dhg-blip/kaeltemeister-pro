@@ -1,3 +1,4 @@
+import { electricalModules, electricalPlanned } from "./electrical";
 import type { Domain } from "../model";
 
 // Explizite Slugs bleiben bei Umordnungen erhalten; Arraypositionen sind keine IDs.
@@ -279,29 +280,46 @@ export const domains: Domain[] = [
       },
     ],
   },
-  ...outlines.map(([id, title, description, first, second]): Domain => ({
-    id,
-    title,
-    description,
-    chapters: [first, second].map(
-      ([chapterId, chapterTitle, aId, aTitle, bId, bTitle]) => ({
-        id: `${id}-${chapterId}`,
-        title: chapterTitle,
-        subchapters: [
-          {
-            id: `${id}-${aId}`,
-            title: aTitle,
-            moduleIds: [],
-            plannedTopics: [`Lernmodul: ${aTitle}`],
-          },
-          {
-            id: `${id}-${bId}`,
-            title: bTitle,
-            moduleIds: [],
-            plannedTopics: [`Lernmodul: ${bTitle}`],
-          },
-        ],
-      }),
-    ),
-  })),
+  ...outlines.map(
+    ([id, title, description, first, second]): Domain => ({
+      id,
+      title,
+      description,
+      chapters: [first, second].map(
+        ([chapterId, chapterTitle, aId, aTitle, bId, bTitle]) => ({
+          id: `${id}-${chapterId}`,
+          title: chapterTitle,
+          subchapters: [
+            {
+              id: `${id}-${aId}`,
+              title: aTitle,
+              moduleIds: [],
+              plannedTopics: [`Lernmodul: ${aTitle}`],
+            },
+            {
+              id: `${id}-${bId}`,
+              title: bTitle,
+              moduleIds: [],
+              plannedTopics: [`Lernmodul: ${bTitle}`],
+            },
+          ],
+        }),
+      ),
+    }),
+  ),
 ];
+
+// Die bisherigen Elektro-Kapitel-IDs bleiben erhalten; nur deren Zuordnung wird ausgearbeitet.
+const electricDomain = domains.find((d) => d.id === "elektro")!;
+electricDomain.description =
+  "Fünf nutzbare Grundlagenmodule; elf weitere Themen ausdrücklich geplant.";
+electricDomain.chapters[0].subchapters[0].moduleIds = electricalModules.map(
+  (m) => m.id,
+);
+electricDomain.chapters[0].subchapters[0].plannedTopics = [];
+electricDomain.chapters[0].subchapters[1].plannedTopics =
+  electricalPlanned.slice(0, 3);
+electricDomain.chapters[1].subchapters[0].plannedTopics =
+  electricalPlanned.slice(3, 5);
+electricDomain.chapters[1].subchapters[1].plannedTopics =
+  electricalPlanned.slice(5);

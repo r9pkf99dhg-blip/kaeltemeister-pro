@@ -55,10 +55,31 @@ function decodeProgress(raw: string | null): Progress {
 /** Ein Lesefehler ist etwas anderes als ein leerer/ungültiger Datensatz. */
 export function readProgress(): { progress: Progress; readFailed: boolean } {
   try {
-    return {
-      progress: decodeProgress(localStorage.getItem(STORAGE_KEY)),
-      readFailed: false,
-    };
+    const raw = localStorage.getItem(STORAGE_KEY);
+    const progress = decodeProgress(raw);
+    if (raw === null) return { progress, readFailed: false };
+    // Bereinigte Werte dürfen beschädigte Originaldaten nicht automatisch ersetzen.
+    let value: unknown;
+    try {
+      value = JSON.parse(raw);
+    } catch {
+      return { progress, readFailed: true };
+    }
+    const p = value as Partial<Progress> | null;
+    const score = (n: unknown) =>
+      typeof n === "number" && Number.isFinite(n) && n >= 0 && n <= 100;
+    const valid =
+      !!p &&
+      typeof p === "object" &&
+      !Array.isArray(p) &&
+      Array.isArray(p.read) &&
+      p.read.every((id) => typeof id === "string" && articleIds.has(id)) &&
+      new Set(p.read).size === p.read.length &&
+      Number.isSafeInteger(p.attempts) &&
+      p.attempts! >= 0 &&
+      score(p.best) &&
+      (p.last === null || score(p.last));
+    return { progress, readFailed: !valid };
   } catch {
     return { progress: { ...emptyProgress, read: [] }, readFailed: true };
   }

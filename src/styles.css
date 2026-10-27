@@ -2536,3 +2536,11 @@ progress::-moz-progress-bar {
     width: 100%;
   }
 }
+
+/* Datensicherung: native Dateiauswahl und Downloads funktionieren auch mit Touch. */
+.backup-panel { margin-top: 2rem; overflow-wrap: anywhere; }
+.backup-file { display: grid; gap: .6rem; margin-block: 1.5rem; font-weight: 600; }
+.backup-file input { width: 100%; min-width: 0; padding: .7rem; border: 1px solid #c6d4d2; border-radius: .6rem; }
+.backup-preview { border: 1px solid #c6d4d2; padding: 1rem; border-radius: .8rem; }
+.backup-confirm { display: flex; align-items: flex-start; gap: .7rem; margin-block: 1rem; }
+.backup-confirm input { flex: 0 0 auto; width: 1.25rem; height: 1.25rem; }

@@ -17,15 +17,19 @@ export default function Exercises({
   setProgress,
   openModule,
   initialTaskId,
+  moduleId,
 }: {
   progress: AcademyProgress;
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   openModule: (id: string) => void;
   initialTaskId?: string | null;
+  moduleId?: string;
 }) {
+  const tasks = moduleId
+    ? numericTasks.filter((t) => t.topicId === moduleId)
+    : numericTasks;
   const [taskId, setTaskId] = useState(
-    numericTasks.find((item) => item.id === initialTaskId)?.id ??
-      numericTasks[0].id,
+    tasks.find((item) => item.id === initialTaskId)?.id ?? tasks[0].id,
   );
   const task = numericTasks.find((item) => item.id === taskId)!;
   const [answer, setAnswer] = useState<ItemAnswer>(emptyAnswer(task));
@@ -60,8 +64,9 @@ export default function Exercises({
     <section className="academy-panel exercises">
       <h2>Technische Rechenaufgaben</h2>
       <p>
-        Acht klar abgegrenzte Aufgaben. Erst selbst rechnen, dann Ergebnis und
-        Einheit prüfen. Dezimalkomma oder Punkt, keine Tausendertrenner.
+        {tasks.length} klar abgegrenzte Aufgaben. Erst selbst rechnen, dann
+        Ergebnis und Einheit prüfen. Dezimalkomma oder Punkt, keine
+        Tausendertrenner.
       </p>
       <label className="task-picker" htmlFor="exercise-select">
         Aufgabe wählen
@@ -79,7 +84,7 @@ export default function Exercises({
             setHint(false);
           }}
         >
-          {numericTasks.map((item) => (
+          {tasks.map((item) => (
             <option value={item.id} key={item.id}>
               {item.title}
             </option>
