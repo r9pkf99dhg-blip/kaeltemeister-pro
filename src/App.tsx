@@ -246,7 +246,7 @@ function Application({
       <div className="main-shell">
         <header className="topbar">
           <span>
-            Kältetechnik <ChevronRight size={14} />{" "}
+            Fachakademie <ChevronRight size={14} />{" "}
             <strong>{navigation.find((n) => n.id === page)?.label}</strong>
           </span>
           <span className="topbar-note">
@@ -300,8 +300,8 @@ function Application({
                   <span className="pill">NEU · VERSION 0.5</span>
                   <h2>Deine intelligente Lernakademie.</h2>
                   <p>
-                    Grundlagen- und Fachmodule, drei Wissensstufen und Karteikarten mit
-                    Wiederholungsplan.
+                    Grundlagen- und Fachmodule, drei Wissensstufen und
+                    Karteikarten mit Wiederholungsplan.
                   </p>
                 </div>
                 <button
@@ -311,7 +311,35 @@ function Application({
                   Akademie öffnen <ArrowRight size={17} />
                 </button>
               </section>
-              <section className="academy-entry"><div><span className="pill">NEU · GRUNDLAGEN</span><h2>Von Anfang an verstehen.</h2><p>Rechenregeln, Brüche, Gleichungen und Einheiten – mit Herleitungen und interaktivem Formelumstellungstrainer.</p></div><button className="button primary" onClick={()=>{setAcademyModuleId('math-arithmetic');setAcademyView('overview');navigate('akademie');}}>Mit Mathematik beginnen</button></section>
+              <section className="academy-entry foundation-entry">
+                <div>
+                  <span className="pill">NEU · GRUNDLAGEN</span>
+                  <h2>Von Anfang an verstehen.</h2>
+                  <p>
+                    Mathematik schrittweise lernen, dann Bewegung, Energie,
+                    Stoffe und chemische Formeln verstehen.
+                  </p>
+                </div>
+                <div className="foundation-actions">
+                  {[
+                    { id: "math-arithmetic", label: "Mit Mathematik beginnen" },
+                    { id: "physics-motion", label: "Mit Physik beginnen" },
+                    { id: "chemistry-matter", label: "Mit Chemie beginnen" },
+                  ].map((course) => (
+                    <button
+                      key={course.id}
+                      className="button primary"
+                      onClick={() => {
+                        setAcademyModuleId(course.id);
+                        setAcademyView("overview");
+                        navigate("akademie");
+                      }}
+                    >
+                      {course.label}
+                    </button>
+                  ))}
+                </div>
+              </section>
               <section className="hero">
                 <div className="hero-copy">
                   <span className="hero-badge">

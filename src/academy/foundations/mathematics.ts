@@ -1,90 +1,572 @@
-import type { FoundationLesson } from './model';
-import type { Formula } from '../model';
-const src = ['openstax-prealgebra-v05'];
+import type { FoundationLesson } from "./model";
+import type { Formula } from "../model";
+const src = ["openstax-prealgebra-v05"];
 export const mathematicsLessons: FoundationLesson[] = [
- {id:'math-arithmetic',domainId:'mathematik',title:'Zahlen und Rechenregeln',goal:'Sicher mit Vorzeichen, Dezimalzahlen, Punkt-vor-Strich und Klammern rechnen.',
- why:'Temperaturwerte können negativ sein, Leistungen und Energiemengen werden miteinander verrechnet. Die richtige Rechenreihenfolge verhindert große Fehler, bevor eine technische Formel überhaupt eingesetzt wird.',
- basic:String.raw`Natürliche Zahlen zählen, ganze Zahlen schließen negative Werte ein. Rationale Zahlen lassen sich als Bruch schreiben. Dezimalzahlen sind eine andere Schreibweise, etwa \(0{,}5=\frac12\). Zuerst Klammern, dann Potenzen, dann Multiplikation/Division, zuletzt Addition/Subtraktion; gleichrangig von links nach rechts.`,
- reasoning:'Multiplikation fasst gleich große Gruppen zusammen. Deshalb ist 3 + 2 × 4 die Summe aus 3 und zwei Vierergruppen, also 11. Klammern verändern die Gruppierung bewusst: (3 + 2) × 4 sind fünf Vierergruppen, also 20. Eine negative Zahl abzuziehen bedeutet, die Gegenbewegung rückgängig zu machen.',
- transfer:'Bei Temperaturdifferenzen müssen Vorzeichen und Betrag unterschieden werden. Von −10 °C auf −4 °C beträgt die Änderung +6 K. Beim Abkühlen kann eine gerichtete Änderung negativ sein; ein technischer Betragsrechner muss das ausdrücklich sagen. Überschlag und Einheitenprüfung ergänzen die reine Zahl.',
- example:String.raw`Rechne \(-8+3\cdot4\): Zuerst \(3\cdot4=12\), dann \(-8+12=4\). Mit Klammern dagegen \((-8+3)\cdot4=-5\cdot4=-20\). Gegenbeispiel mit Dezimalzahlen: \(1{,}5+2\cdot0{,}25=2\). Der Überschlag macht die Größenordnung sichtbar.`,
- derivation:[String.raw`\(3+2\cdot4=3+(4+4)\): Multiplikation bündelt gleiche Summanden.`,String.raw`\(3+8=11\). Die Klammer \((3+2)\cdot4\) beschreibt eine andere Gruppierung.`,String.raw`\(-4-(-10)=-4+10=6\): Subtraktion einer negativen Zahl wird Addition.`],mistakes:['Ohne Klammern einfach von links nach rechts alles rechnen.','Das Minus vor einer negativen Zahl übersehen; Dezimalkomma mit Tausendertrennung verwechseln.'],summary:'Die Schreibweise bestimmt die Reihenfolge: Klammern, Potenzen, Punkt, Strich. Gleichrangige Operationen werden von links nach rechts ausgeführt. Vorzeichen gehören zur Zahl und dürfen nicht weggelassen werden.',prerequisites:[],formulaIds:['math-order-rule'],sourceIds:src,
- questions:[{prompt:'Was ist 3 + 2 × 4?',correct:'11',wrong:['20','24'],explanation:'Die zwei Vierergruppen ergeben zuerst 8. Dann wird 3 addiert: 11. 20 gehört zur anders geklammerten Aufgabe (3 + 2) × 4.'},{prompt:'Was ist −4 − (−10)?',correct:'6',wrong:['−14','−6'],explanation:'Eine negative Zahl abzuziehen heißt ihre Gegenzahl zu addieren. Deshalb folgt −4 + 10 = 6; die Klammer erhält die Bedeutung des zweiten Minuszeichens.'},{prompt:'Ist 1,5 + 2 × 0,25 gleich 2?',correct:'Ja, zuerst das Produkt berechnen.',wrong:['Nein, immer zuerst addieren.','Nur mit positiven Temperaturen.'],explanation:'2 × 0,25 = 0,5 und 1,5 + 0,5 = 2. Die Rechenreihenfolge ist eine mathematische Regel und hängt nicht von einer Temperaturinterpretation ab.'}]},
- {id:'math-fractions',domainId:'mathematik',title:'Brüche verstehen und berechnen',goal:'Brüche kürzen, erweitern und mit allen vier Grundrechenarten sicher bearbeiten.',
- why:'Technische Formeln enthalten Quotienten. Wer versteht, weshalb ein Bruch denselben Wert behalten kann, erkennt auch, warum man beim Umstellen ganze Produkte im Nenner berücksichtigen muss.',
- basic:String.raw`Ein Bruch \(\frac a b\) bedeutet \(a\) geteilt durch \(b\), mit \(b\ne0\). Der Nenner nennt die Teilgröße, der Zähler die Anzahl dieser Teile. Erweitern oder Kürzen verändert Zähler und Nenner mit demselben Faktor ungleich null; der Wert bleibt gleich.`,
- reasoning:String.raw`Zum Addieren oder Subtrahieren braucht man gleich große Teile: \(\frac12+\frac14=\frac24+\frac14=\frac34\). Produkte werden über Zähler und Nenner gebildet. Division durch einen Bruch bedeutet Multiplikation mit seinem Kehrwert, sofern dieser Bruch nicht null ist. Kürzen ist nur über Faktoren erlaubt, nicht über einzelne Summanden.`,
- transfer:String.raw`Ein Doppelbruch ist ein Quotient zweier Quotienten. \(\frac{1}{\frac1{120}+\frac1{240}}=80\) erklärt einen parallelen Ersatzwiderstand. Der Kehrwert ist ein eigener letzter Schritt. Mathematisch zulässige Brüche sind noch kein Beleg, dass ein elektrisches Ersatzmodell physikalisch passt.`,
- example:String.raw`Addition: \(\frac12+\frac14=\frac34=0{,}75\). Subtraktion: \(\frac34-\frac12=\frac14\). Produkt: \(\frac23\cdot\frac34=\frac6{12}=\frac12\). Division: \(\frac23:\frac45=\frac23\cdot\frac54=\frac56\). Beim Kürzen von \(\frac{6}{12}\) werden beide Zahlen durch 6 geteilt.`,
- derivation:[String.raw`\(\frac a b=\frac{a\cdot k}{b\cdot k}\), weil \(\frac k k=1\) für \(k\ne0\).`,String.raw`\(\frac a b+\frac c d=\frac{ad+bc}{bd}\) bei \(b,d\ne0\).`,String.raw`\(\frac a b:\frac c d=\frac{ad}{bc}\); zusätzlich muss \(c\ne0\) sein.`],mistakes:['Zähler und Nenner beim Addieren unabhängig addieren.','Aus Summen einzelne Zahlen kürzen oder bei Division den Kehrwert vergessen.'],summary:'Gleiche Teilgrößen sind für Addition und Subtraktion nötig. Multiplizieren verbindet Faktoren, Dividieren verwendet den Kehrwert des Divisors. Nenner und der ganze Divisor dürfen niemals null sein.',prerequisites:['math-arithmetic'],formulaIds:['math-fraction-rule'],sourceIds:src,
- questions:[{prompt:'Wie viel ist 1/2 + 1/4?',correct:'3/4',wrong:['2/6','1/6'],explanation:'Ein Halb entspricht zwei Vierteln. Zwei Viertel plus ein Viertel ergeben drei Viertel. Die Nenner geben die gemeinsame Teilgröße an und werden nicht addiert.'},{prompt:'Was ist 2/3 geteilt durch 4/5?',correct:'5/6',wrong:['8/15','6/5'],explanation:'Multipliziere den ersten Bruch mit dem Kehrwert des zweiten: (2 × 5)/(3 × 4) = 10/12 = 5/6. Beide Nenner und der Divisor müssen ungleich null sein.'},{prompt:'Darf man in (a + b)/a das a aus der Summe wegkürzen?',correct:'Nein, Kürzen benötigt gemeinsame Faktoren.',wrong:['Ja, immer.','Nur bei a = 0.'],explanation:'Kürzen entfernt gleiche Faktoren aus einem Produkt. Ein Summand ist kein gemeinsamer Faktor. a = 0 wäre zudem als Nenner unzulässig.'}]},
- {id:'math-percent',domainId:'mathematik',title:'Prozentrechnung und Dreisatz',goal:'Grundwert, Anteil und Prozentsatz unterscheiden und proportionale Zuordnungen berechnen.',
- why:'Lernquoten, Wirkungsgrade und einfache Mengenabschätzungen verwenden Anteile. Ein Dreisatz hilft nur bei einer begründeten proportionalen Zuordnung; reale Anlagenleistungen sind nicht automatisch zu jeder Größe proportional.',
- basic:String.raw`Prozent bedeutet von hundert: \(15\%=\frac{15}{100}=0{,}15\). Der Anteil \(W\) ist Grundwert \(G\) mal Dezimalanteil \(r\). Beim direkten Dreisatz berechnet man zuerst den Wert für eine Einheit und multipliziert dann mit der gesuchten Menge.`,
- reasoning:String.raw`Aus \(W=Gr\) folgen \(r=\frac W G\) und \(G=\frac W r\), wenn die jeweiligen Nenner nicht null sind. Eine direkte Proportionalität hat einen konstanten Wert pro Einheit. Bei unverändertem Modell gilt daher \(y_2=y_1\frac{x_2}{x_1}\).`,
- transfer:'Ein prozentualer Anstieg und eine anschließende Absenkung um denselben Prozentsatz heben sich nicht auf, weil der zweite Grundwert anders ist. 100 → plus 10 % ergibt 110; davon minus 10 % ergibt 99. Bei Messabweichungen muss der verwendete Referenzwert ausdrücklich genannt werden.',
- example:String.raw`15 % von 200 sind \(200\cdot0{,}15=30\). Ein Anteil von 30 an 200 ergibt \(\frac{30}{200}=0{,}15=15\%\). Ein fiktiver konstanter Preis: 3 Stück kosten 12 Einheiten; 1 Stück kostet 4, 5 Stück kosten 20. Die Proportionalität wird vorausgesetzt.`,
- derivation:[String.raw`\(15\%=15\cdot\frac1{100}=0{,}15\).`,String.raw`\(W=G\cdot r\); durch \(G\ne0\) teilen liefert \(r=\frac W G\).`,String.raw`\(\frac{12}{3}=4\) pro Stück; \(4\cdot5=20\).`],mistakes:['15 statt 0,15 als Multiplikator einsetzen.','Einen Dreisatz ohne proportionale Beziehung benutzen oder den Referenzwert wechseln.'],summary:'Prozentrechnung beschreibt Anteile am klar benannten Grundwert. Der direkte Dreisatz nutzt einen konstanten Wert pro Einheit. Prozentpunkte, Prozentänderungen und absolute Werte sind unterschiedliche Aussagen.',prerequisites:['math-fractions'],formulaIds:['math-percent-rule','math-proportion-rule'],sourceIds:src,
- questions:[{prompt:'Wie viel sind 15 % von 200?',correct:'30',wrong:['3000','15'],explanation:'15 Prozent entsprechen 0,15. 200 × 0,15 = 30. Wer 15 direkt multipliziert, lässt die Division durch 100 aus und erhält einen hundertfach zu großen Wert.'},{prompt:'3 gleiche Teile kosten 12; was kosten 5 bei konstantem Stückpreis?',correct:'20',wrong:['7,2','60'],explanation:'Zuerst 12/3 = 4 pro Teil, dann 4 × 5 = 20. Die Aufgabe setzt denselben Stückpreis und keine zusätzlichen Grundkosten voraus.'},{prompt:'100 plus 10 %, danach minus 10 %: Endwert?',correct:'99',wrong:['100','90'],explanation:'Der zweite Prozentwert bezieht sich auf 110: 10 % davon sind 11. Daher bleibt 110 − 11 = 99. Die Grundwerte sind bei beiden Schritten verschieden.'}]},
- {id:'math-algebra',domainId:'mathematik',title:'Variablen und Terme',goal:'Variablen als Platzhalter verstehen und Terme sinnvoll zusammenfassen und ausmultiplizieren.',
- why:'In einer technischen Formel stehen Buchstaben für Größen statt für beliebige Abkürzungen. Dieselbe Struktur kann mit unterschiedlichen Zahlenwerten gerechnet werden; der Zahlenwert darf nicht mit der Einheit verwechselt werden.',
- basic:String.raw`Eine Variable steht für einen veränderlichen oder noch unbekannten Wert. Ein Term beschreibt eine Rechenvorschrift, ohne schon eine Gleichung zu sein. \(3x+2x=5x\) fasst gleichartige Summanden zusammen. \(3x+2\) lässt sich dagegen nicht zu \(5x\) vereinigen.`,
- reasoning:String.raw`Das Distributivgesetz begründet \(a(x+b)=ax+ab\): Jede der a Gruppen enthält x und b. Rückwärts ist Ausklammern möglich. Beim Einsetzen gehört ein negativer Wert in Klammern, damit zum Beispiel \(2\cdot(-3)\) eindeutig bleibt.`,
- transfer:'In technischen Gleichungen stehen gleiche Buchstaben nicht automatisch für dieselbe Größe in jedem Fachgebiet. Q kann Ladung oder Wärme bedeuten, deshalb braucht jede Formel Variablendefinitionen und Einheiten. Gemeinsame Formel-IDs verhindern Verwechslungen zwischen gleich aussehenden Symbolen.',
- example:String.raw`Für \(x=4\) gilt \(3(x+2)=3\cdot6=18\). Ausmultipliziert: \(3x+6=12+6=18\). Bei \(x=-2\) ergibt derselbe Term null. Die beiden Wege vergleichen die algebraische Struktur und nicht nur eine zufällige Schreibweise.`,
- derivation:[String.raw`\(3(x+2)=(x+2)+(x+2)+(x+2)\).`,String.raw`\(x+x+x+2+2+2=3x+6\).`,String.raw`Probe \(x=4\): Beide Schreibweisen ergeben \(18\).`],mistakes:['Nur den ersten Summanden in einer Klammer multiplizieren.','Ungleichartige Terme wie 3x und 2 zu 5x zusammenfassen.'],summary:'Variablen erlauben allgemeine Rechenvorschriften. Gleichartige Terme werden über ihre Koeffizienten zusammengefasst; das Distributivgesetz verteilt einen Faktor auf alle Summanden der Klammer.',prerequisites:['math-arithmetic'],formulaIds:['math-distributive'],sourceIds:src,
- questions:[{prompt:'Was ist 3x + 2x?',correct:'5x',wrong:['5x²','6x'],explanation:'Beide Summanden enthalten denselben Faktor x. Es werden die Anzahlen 3 und 2 addiert; es entsteht kein zusätzliches x und deshalb keine Potenz x².'},{prompt:'Welche Form ist gleich 3(x + 2)?',correct:'3x + 6',wrong:['3x + 2','5x'],explanation:'Der Faktor 3 multipliziert beide Summanden: 3 × x und 3 × 2. Die zweite Multiplikation darf beim Auflösen der Klammer nicht verloren gehen.'},{prompt:'Warum braucht Q in einer technischen Formel eine Definition?',correct:'Dasselbe Zeichen kann verschiedene physikalische Größen bezeichnen.',wrong:['Q hat immer dieselbe Einheit.','Buchstaben ersetzen jede Einheitenprüfung.'],explanation:'Q wird beispielsweise für Ladung und Wärme verwendet. Ohne Definition und Einheit wäre die Bedeutung mehrdeutig; ein bloßer Buchstabe macht verschiedene Größen nicht austauschbar.'}]},
- {id:'math-equations',domainId:'mathematik',title:'Gleichungen Schritt für Schritt lösen',goal:'Lineare Gleichungen mit Äquivalenzumformungen lösen und die Lösung durch Einsetzen prüfen.',
- why:'Unbekannte Werte werden nicht geraten: Eine Gleichung beschreibt eine Bedingung, die beide Seiten erfüllen müssen. Das ist die Grundlage jeder fachlichen Formelumstellung und jeder nachvollziehbaren Gegenprobe.',
- basic:String.raw`Eine Gleichung behauptet, dass beide Seiten gleich sind. Führst du auf beiden Seiten dieselbe umkehrbare Operation aus, bleibt die Lösungsmenge erhalten. Addition und Subtraktion sind umkehrbar; Multiplikation oder Division benötigen einen Faktor beziehungsweise Nenner ungleich null.`,
- reasoning:String.raw`Bei \(ax+b=c\) wird zuerst auf beiden Seiten b subtrahiert: \(ax=c-b\). Dann wird durch \(a\ne0\) geteilt. Deshalb ist \(x=\frac{c-b}{a}\). Das Minus ist keine magische Seitenwechselregel, sondern das Ergebnis derselben Subtraktion auf beiden Seiten.`,
- transfer:'Der Fall a = 0 muss getrennt betrachtet werden: Aus 0x + b = c folgt bei b = c jede Zahl als Lösung, andernfalls keine Lösung. Der einfache Zahlenaufgabenkern dieser App akzeptiert nur den eindeutig lösbaren Fall a ≠ 0 und weist die anderen Fälle verständlich zurück.',
- example:String.raw`\(3x+6=24\). Beidseitig 6 subtrahieren: \(3x=18\). Durch 3 teilen: \(x=6\). Probe: \(3\cdot6+6=24\). Bei \(2x+5=-3\) folgt nach Subtraktion von 5 \(2x=-8\), danach \(x=-4\).`,
- derivation:[String.raw`\(3x+6=24\quad|-6\).`,String.raw`\(3x=18\quad|:3\), weil \(3\ne0\).`,String.raw`\(x=6\); Einsetzen in die ursprüngliche Gleichung bestätigt \(24=24\).`],mistakes:['Eine Operation nur auf einer Seite ausführen.','Durch eine möglicherweise null werdende Größe teilen oder die Probe auslassen.'],summary:'Äquivalenzumformungen behandeln beide Seiten gleich und sind umkehrbar. Für ax + b = c mit a ≠ 0 ist die Lösung eindeutig. Die Probe erfolgt in der ursprünglichen Gleichung, nicht nur im Endergebnis.',prerequisites:['math-algebra','math-fractions'],formulaIds:['math-linear-rule'],sourceIds:src,
- questions:[{prompt:'Was ist die Lösung von 3x + 6 = 24?',correct:'x = 6',wrong:['x = 10','x = 18'],explanation:'Beide Seiten minus 6 ergibt 3x = 18. Danach beide Seiten durch 3 teilen: x = 6. Einsetzen in 3x + 6 ergibt wieder 24.'},{prompt:'Warum darf man nicht durch null teilen?',correct:'Die Umkehrung ist nicht definiert und kann keine eindeutige Lösung erhalten.',wrong:['Weil das Ergebnis immer null wäre.','Weil das nur bei positiven Zahlen gilt.'],explanation:'Es gibt keinen eindeutigen Quotienten a/0. Eine solche Operation ist keine zulässige Äquivalenzumformung und darf nicht als normaler Rechenschritt verwendet werden.'},{prompt:'Was bedeutet 0x + 2 = 3?',correct:'Es gibt keine Lösung.',wrong:['x = 1','Jede Zahl ist Lösung.'],explanation:'Für jede Zahl x bleibt links 2. Das kann niemals 3 sein. Der Fall eines Koeffizienten null muss vor der üblichen Division getrennt beurteilt werden.'}]},
- {id:'math-rearrange',domainId:'mathematik',title:'Technische Formeln umstellen',goal:'Produkte und Quotienten gezielt nach einer gesuchten Größe umstellen und jeden Schritt begründen.',
- why:'Strom, Druck, Dichte oder Wärmemenge können jeweils gegeben oder gesucht sein. Derselbe Zusammenhang wird deshalb nach unterschiedlichen Variablen benötigt. Die zugrunde liegende Physik ändert sich durch die algebraische Umstellung nicht.',
- basic:String.raw`Markiere die Zielvariable und löse die sie umgebenden Operationen in umgekehrter Reihenfolge auf. Aus \(U=RI\) wird durch beidseitige Division durch \(I\ne0\) die Gleichung \(\frac U I=R\), also \(R=\frac U I\).`,
- reasoning:String.raw`Bei \(Q=mc\Delta T\) wird zur gesuchten Masse durch das gesamte Produkt \(c\Delta T\ne0\) geteilt. Bei \(p=\frac F A\) hilft zunächst beidseitiges Multiplizieren mit \(A\ne0\): \(pA=F\). Der Nenner ist kein einzelner Summand, sondern ein zusammenhängender Ausdruck.`,
- transfer:'Eine algebraisch gültige Umstellung darf Modellgrenzen nicht verstecken. Bei ΔT = 0 kann aus Q = mcΔT keine eindeutige Masse über die Quotientenform gewonnen werden. Bei gleichen Symbolen in verschiedenen Fachgebieten müssen Einheit und Bedeutung weiterhin ausdrücklich genannt werden.',
- example:String.raw`Gesucht R bei U = 24 V und I = 0,2 A: \(R=\frac U I=\frac{24}{0{,}2}=120\,\Omega\). Probe: \(120\cdot0{,}2=24\). Gesucht A bei F = 600 N und p = 200000 Pa: \(A=\frac F p=0{,}003\,\mathrm{m^2}\). Die Einheiten begründen die Richtung des Quotienten.`,
- derivation:[String.raw`Ausgang: \(U=RI\), Ziel \(R\).`,String.raw`Beidseitig durch \(I\ne0\) teilen: \(\frac U I=\frac{RI}{I}\).`,String.raw`Gemeinsamen Faktor kürzen: \(R=\frac U I\).`,String.raw`Probe mit Zahlen und Einheiten in \(U=RI\), nicht nur im umgestellten Ausdruck.`],mistakes:['Beim Teilen durch mehrere Faktoren nur einen Faktor in den Nenner schreiben.','Vor der Division nicht prüfen, ob der Nenner null sein kann.'],summary:'Formeln werden durch dieselben umkehrbaren Operationen auf beiden Seiten umgestellt. Die Zielvariable, zulässige Nenner, Einheiten und eine Probe gehören zu jeder vollständigen technischen Lösung.',prerequisites:['math-equations'],formulaIds:['ohm-resistance','ohm-voltage','math-heat-energy','physics-pressure','physics-density'],sourceIds:src,
- questions:[{prompt:'U = R × I: Welche Umstellung liefert R?',correct:'R = U / I',wrong:['R = U × I','R = I / U'],explanation:'Beide Seiten werden durch I ungleich null geteilt. Rechts kürzt sich der Faktor I. Die Einheit V/A = Ω bestätigt die gesuchte Widerstandsgröße.'},{prompt:'Q = m × c × ΔT: Wie erhält man m?',correct:'m = Q / (c × ΔT)',wrong:['m = Q × c × ΔT','m = Q / c × ΔT'],explanation:'Beide Faktoren c und ΔT müssen zusammen wegdividiert werden. Das erfordert den gesamten Nenner c × ΔT und setzt voraus, dass dieses Produkt nicht null ist.'},{prompt:'p = F / A: Wie erhält man A bei p ≠ 0?',correct:'A = F / p',wrong:['A = p / F','A = F × p'],explanation:'Zuerst beide Seiten mit A multiplizieren: pA = F. Danach durch p ungleich null teilen: A = F/p. So bleiben beide Umformungen nachvollziehbar.'}]},
- {id:'math-units',domainId:'mathematik',title:'SI-Einheiten und Umrechnungen',goal:'Größen, Zahlenwerte und Einheiten unterscheiden und mit Umrechnungsfaktoren sicher rechnen.',
- why:'Eine Zahl ohne Einheit kann in einer technischen Rechnung die falsche Größe darstellen. Besonders kg/h statt kg/s oder kW statt W erzeugen große Faktoren. Vor dem Einsetzen in eine SI-Gleichung müssen die Einheiten zusammenpassen.',
- basic:String.raw`Eine Größe ist Zahlenwert mal Einheit. Dieselbe Zeit kann \(2\,\mathrm h=120\,\mathrm{min}=7200\,\mathrm s\) heißen. Beim Wechsel der Einheit ändert sich die Zahl, aber nicht die Zeitdauer. Vorsilben wie kilo und milli bedeuten Faktoren 1000 und 0,001.`,
- reasoning:String.raw`Ein Umrechnungsfaktor ist ein Verhältnis gleich großer Größen und hat deshalb den Wert eins: \(2\,\mathrm h\cdot\frac{3600\,\mathrm s}{1\,\mathrm h}=7200\,\mathrm s\). Die Einheit h kürzt sich. Für Flächen und Volumen muss auch der Umrechnungsfaktor potenziert werden.`,
- transfer:'Absolute Temperaturen und Temperaturdifferenzen brauchen verschiedene Behandlung: T in K = Temperatur in °C + 273,15, eine Differenz von 1 °C entspricht dagegen 1 K ohne Offset. Diese App unterscheidet beide Mengenarten im gemeinsamen Rechenkern, statt beliebige Einheitenstrings zu multiplizieren.',
- example:String.raw`\(30\,\mathrm{min}\cdot60=1800\,\mathrm s\). \(24\,\mathrm{Wh}\cdot3600=86400\,\mathrm J\). \(1800\,\mathrm{kg/h}\cdot\frac{1\,\mathrm h}{3600\,\mathrm s}=0{,}5\,\mathrm{kg/s}\). Vor jedem Zahlenprodukt wird geprüft, welche Einheit die Zielgröße besitzen muss.`,
- derivation:[String.raw`\(1\,\mathrm h=3600\,\mathrm s\), also ist \(\frac{3600\,\mathrm s}{1\,\mathrm h}=1\).`,String.raw`Mit diesem Faktor wird die Größe multipliziert, ohne ihren Wert zu verändern.`,String.raw`\(1\,\mathrm{cm^2}=(0{,}01\,\mathrm m)^2=10^{-4}\,\mathrm{m^2}\); Längenfaktoren nicht unverändert für Flächen nutzen.`],mistakes:['Umrechnungsfaktor in die falsche Richtung anwenden.','Auf Temperaturdifferenzen den Celsius-Kelvin-Offset addieren; bei Flächen das Quadrat vergessen.'],summary:'Größe und Zahlenwert sind nicht dasselbe. Einheitenwechsel nutzt Faktoren mit Wert eins. Die Richtung ergibt sich aus dem Kürzen der alten Einheit; Temperaturdifferenzen erhalten keinen absoluten Temperaturoffset.',prerequisites:['math-fractions','math-powers'],formulaIds:['math-unit-rule'],sourceIds:src,
- questions:[{prompt:'Wie viele Sekunden sind 30 Minuten?',correct:'1800 s',wrong:['0,5 s','30 s'],explanation:'Jede Minute enthält 60 Sekunden. 30 × 60 = 1800. Durch 60 zu teilen würde nicht von Minuten zu Sekunden, sondern in die entgegengesetzte Richtung führen.'},{prompt:'Wie viel sind 24 Wh in Joule?',correct:'86400 J',wrong:['24 J','0,00667 J'],explanation:'1 W = 1 J/s und 1 h = 3600 s. Daher ist 1 Wh = 3600 J und 24 Wh = 86400 J. Watt und Wattstunde sind verschiedene Größen.'},{prompt:'Braucht eine Differenz von 5 °C den Offset 273,15?',correct:'Nein, sie entspricht 5 K.',wrong:['Ja, sie ergibt 278,15 K.','Ja, sie ergibt −268,15 K.'],explanation:'Beim Subtrahieren zweier absoluter Temperaturen hebt sich derselbe Offset auf. Deshalb bleibt die Zahl einer Temperaturdifferenz in °C und K gleich.'}]},
- {id:'math-powers',domainId:'mathematik',title:'Potenzen, Wurzeln und Zehnerpotenzen',goal:'Potenzen als Produkte verstehen, Quadratwurzeln erklären und Größenordnungen sicher schreiben.',
- why:'Quadrate kommen bei Flächen, Wurzeln bei der Rückrechnung und Zehnerpotenzen bei sehr kleinen oder großen Messgrößen vor. Die wissenschaftliche Schreibweise hilft, Vorsilben und Größenordnungen kontrolliert zu verbinden.',
- basic:String.raw`\(a^n\) bedeutet für natürliche n ein Produkt aus n gleichen Faktoren. \(10^3=1000\), \(10^{-3}=\frac1{1000}\). Die Quadratwurzel \(\sqrt x\) ist die nicht negative Zahl, deren Quadrat x ergibt; im reellen Bereich benötigt sie \(x\ge0\).`,
- reasoning:String.raw`Gleiche Basen lassen sich über die Anzahl der Faktoren verbinden: \(a^m a^n=a^{m+n}\). Negative Exponenten beschreiben Kehrwerte und setzen eine Basis ungleich null voraus. Wichtig: \(\sqrt{x^2}=|x|\), nicht für jede reelle Zahl einfach x.`,
- transfer:'Wissenschaftliche Schreibweise nutzt einen Faktor zwischen 1 einschließlich und 10 ausschließlich, multipliziert mit einer Zehnerpotenz. 0,0025 m = 2,5 × 10⁻³ m. Beim Runden muss angegeben werden, welche Genauigkeit sinnvoll ist; eine lange Anzeige macht eine Messung nicht automatisch genauer.',
- example:String.raw`\(2^3=2\cdot2\cdot2=8\), \(10^{-3}=0{,}001\). \(\sqrt{144}=12\), denn \(12^2=144\). Für \(x=-3\) ist \(\sqrt{x^2}=\sqrt9=3=|x|\). Ein Minus vor einer Potenz ist ohne Klammer kein Teil der Basis: \(-2^2=-4\), aber \((-2)^2=4\).`,
- derivation:[String.raw`\(a^2a^3=(aa)(aaa)=a^5\).`,String.raw`Für \(a\ne0\) gilt \(a^{-n}=\frac1{a^n}\).`,String.raw`Die Definition der Hauptwurzel wählt das nicht negative Ergebnis. Deshalb \(\sqrt{x^2}=|x|\).`],mistakes:['Exponenten beim Addieren von Potenzen automatisch addieren.','√(x²) ohne Betrag schreiben oder Minus und Klammern vor Potenzen verwechseln.'],summary:'Potenzen bündeln gleiche Faktoren, negative Exponenten bilden Kehrwerte und Quadratwurzeln liefern nicht negative Hauptwerte. Klammern bestimmen die Basis. Wissenschaftliche Schreibweise zeigt die Größenordnung einer Zahl.',prerequisites:['math-arithmetic','math-fractions'],formulaIds:['math-power-rule'],sourceIds:src,
- questions:[{prompt:'Welche Zahl ist 10 hoch −3?',correct:'0,001',wrong:['−1000','1000'],explanation:'Ein negativer Exponent macht aus der Potenz ihren Kehrwert: 10⁻³ = 1/1000 = 0,001. Er bedeutet nicht, dass das Ergebnis negativ ist.'},{prompt:'Was ist die reelle Hauptwurzel aus 144?',correct:'12',wrong:['−12','72'],explanation:'12 × 12 = 144. Die Quadratwurzel bezeichnet den nicht negativen Hauptwert. Die Gleichung x² = 144 hätte dagegen zwei Lösungen, ±12.'},{prompt:'Für x = −3 ist √(x²) gleich …',correct:'3',wrong:['−3','−9'],explanation:'Zuerst wird (−3)² = 9 berechnet, dann die nicht negative Hauptwurzel: 3. Allgemein gilt √(x²) = |x|.'}]},
+  {
+    id: "math-arithmetic",
+    domainId: "mathematik",
+    title: "Zahlen und Rechenregeln",
+    goal: "Sicher mit Vorzeichen, Dezimalzahlen, Punkt-vor-Strich und Klammern rechnen.",
+    why: "Temperaturwerte können negativ sein, Leistungen und Energiemengen werden miteinander verrechnet. Die richtige Rechenreihenfolge verhindert große Fehler, bevor eine technische Formel überhaupt eingesetzt wird.",
+    basic: String.raw`Natürliche Zahlen zählen, ganze Zahlen schließen negative Werte ein. Rationale Zahlen lassen sich als Bruch schreiben. Dezimalzahlen sind eine andere Schreibweise, etwa \(0{,}5=\frac12\). Zuerst Klammern, dann Potenzen, dann Multiplikation/Division, zuletzt Addition/Subtraktion; gleichrangig von links nach rechts.`,
+    reasoning:
+      "Multiplikation fasst gleich große Gruppen zusammen. Deshalb ist 3 + 2 × 4 die Summe aus 3 und zwei Vierergruppen, also 11. Klammern verändern die Gruppierung bewusst: (3 + 2) × 4 sind fünf Vierergruppen, also 20. Eine negative Zahl abzuziehen bedeutet, die Gegenbewegung rückgängig zu machen.",
+    transfer:
+      "Bei Temperaturdifferenzen müssen Vorzeichen und Betrag unterschieden werden. Von −10 °C auf −4 °C beträgt die Änderung +6 K. Beim Abkühlen kann eine gerichtete Änderung negativ sein; ein technischer Betragsrechner muss das ausdrücklich sagen. Überschlag und Einheitenprüfung ergänzen die reine Zahl.",
+    example: String.raw`Rechne \(-8+3\cdot4\): Zuerst \(3\cdot4=12\), dann \(-8+12=4\). Mit Klammern dagegen \((-8+3)\cdot4=-5\cdot4=-20\). Gegenbeispiel mit Dezimalzahlen: \(1{,}5+2\cdot0{,}25=2\). Der Überschlag macht die Größenordnung sichtbar.`,
+    derivation: [
+      String.raw`\(3+2\cdot4=3+(4+4)\): Multiplikation bündelt gleiche Summanden.`,
+      String.raw`\(3+8=11\). Die Klammer \((3+2)\cdot4\) beschreibt eine andere Gruppierung.`,
+      String.raw`\(-4-(-10)=-4+10=6\): Subtraktion einer negativen Zahl wird Addition.`,
+    ],
+    mistakes: [
+      "Ohne Klammern einfach von links nach rechts alles rechnen.",
+      "Das Minus vor einer negativen Zahl übersehen; Dezimalkomma mit Tausendertrennung verwechseln.",
+    ],
+    summary:
+      "Die Schreibweise bestimmt die Reihenfolge: Klammern, Potenzen, Punkt, Strich. Gleichrangige Operationen werden von links nach rechts ausgeführt. Vorzeichen gehören zur Zahl und dürfen nicht weggelassen werden.",
+    prerequisites: [],
+    formulaIds: ["math-order-rule"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Was ist 3 + 2 × 4?",
+        correct: "11",
+        wrong: ["20", "24"],
+        explanation:
+          "Die zwei Vierergruppen ergeben zuerst 8. Dann wird 3 addiert: 11. 20 gehört zur anders geklammerten Aufgabe (3 + 2) × 4.",
+      },
+      {
+        prompt: "Was ist −4 − (−10)?",
+        correct: "6",
+        wrong: ["−14", "−6"],
+        explanation:
+          "Eine negative Zahl abzuziehen heißt ihre Gegenzahl zu addieren. Deshalb folgt −4 + 10 = 6; die Klammer erhält die Bedeutung des zweiten Minuszeichens.",
+      },
+      {
+        prompt: "Ist 1,5 + 2 × 0,25 gleich 2?",
+        correct: "Ja, zuerst das Produkt berechnen.",
+        wrong: [
+          "Nein, immer zuerst addieren.",
+          "Nur mit positiven Temperaturen.",
+        ],
+        explanation:
+          "2 × 0,25 = 0,5 und 1,5 + 0,5 = 2. Die Rechenreihenfolge ist eine mathematische Regel und hängt nicht von einer Temperaturinterpretation ab.",
+      },
+    ],
+  },
+  {
+    id: "math-fractions",
+    domainId: "mathematik",
+    title: "Brüche verstehen und berechnen",
+    goal: "Brüche kürzen, erweitern und mit allen vier Grundrechenarten sicher bearbeiten.",
+    why: "Technische Formeln enthalten Quotienten. Wer versteht, weshalb ein Bruch denselben Wert behalten kann, erkennt auch, warum man beim Umstellen ganze Produkte im Nenner berücksichtigen muss.",
+    basic: String.raw`Ein Bruch \(\frac a b\) bedeutet \(a\) geteilt durch \(b\), mit \(b\ne0\). Der Nenner nennt die Teilgröße, der Zähler die Anzahl dieser Teile. Erweitern oder Kürzen verändert Zähler und Nenner mit demselben Faktor ungleich null; der Wert bleibt gleich.`,
+    reasoning: String.raw`Zum Addieren oder Subtrahieren braucht man gleich große Teile: \(\frac12+\frac14=\frac24+\frac14=\frac34\). Produkte werden über Zähler und Nenner gebildet. Division durch einen Bruch bedeutet Multiplikation mit seinem Kehrwert, sofern dieser Bruch nicht null ist. Kürzen ist nur über Faktoren erlaubt, nicht über einzelne Summanden.`,
+    transfer: String.raw`Ein Doppelbruch ist ein Quotient zweier Quotienten. \(\frac{1}{\frac1{120}+\frac1{240}}=80\) erklärt einen parallelen Ersatzwiderstand. Der Kehrwert ist ein eigener letzter Schritt. Mathematisch zulässige Brüche sind noch kein Beleg, dass ein elektrisches Ersatzmodell physikalisch passt.`,
+    example: String.raw`Addition: \(\frac12+\frac14=\frac34=0{,}75\). Subtraktion: \(\frac34-\frac12=\frac14\). Produkt: \(\frac23\cdot\frac34=\frac6{12}=\frac12\). Division: \(\frac23:\frac45=\frac23\cdot\frac54=\frac56\). Beim Kürzen von \(\frac{6}{12}\) werden beide Zahlen durch 6 geteilt.`,
+    derivation: [
+      String.raw`\(\frac a b=\frac{a\cdot k}{b\cdot k}\), weil \(\frac k k=1\) für \(k\ne0\).`,
+      String.raw`\(\frac a b+\frac c d=\frac{ad+bc}{bd}\) bei \(b,d\ne0\).`,
+      String.raw`\(\frac a b:\frac c d=\frac{ad}{bc}\); zusätzlich muss \(c\ne0\) sein.`,
+    ],
+    mistakes: [
+      "Zähler und Nenner beim Addieren unabhängig addieren.",
+      "Aus Summen einzelne Zahlen kürzen oder bei Division den Kehrwert vergessen.",
+    ],
+    summary:
+      "Gleiche Teilgrößen sind für Addition und Subtraktion nötig. Multiplizieren verbindet Faktoren, Dividieren verwendet den Kehrwert des Divisors. Nenner und der ganze Divisor dürfen niemals null sein.",
+    prerequisites: ["math-arithmetic"],
+    formulaIds: ["math-fraction-rule"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Wie viel ist 1/2 + 1/4?",
+        correct: "3/4",
+        wrong: ["2/6", "1/6"],
+        explanation:
+          "Ein Halb entspricht zwei Vierteln. Zwei Viertel plus ein Viertel ergeben drei Viertel. Die Nenner geben die gemeinsame Teilgröße an und werden nicht addiert.",
+      },
+      {
+        prompt: "Was ist 2/3 geteilt durch 4/5?",
+        correct: "5/6",
+        wrong: ["8/15", "6/5"],
+        explanation:
+          "Multipliziere den ersten Bruch mit dem Kehrwert des zweiten: (2 × 5)/(3 × 4) = 10/12 = 5/6. Beide Nenner und der Divisor müssen ungleich null sein.",
+      },
+      {
+        prompt: "Darf man in (a + b)/a das a aus der Summe wegkürzen?",
+        correct: "Nein, Kürzen benötigt gemeinsame Faktoren.",
+        wrong: ["Ja, immer.", "Nur bei a = 0."],
+        explanation:
+          "Kürzen entfernt gleiche Faktoren aus einem Produkt. Ein Summand ist kein gemeinsamer Faktor. a = 0 wäre zudem als Nenner unzulässig.",
+      },
+    ],
+  },
+  {
+    id: "math-percent",
+    domainId: "mathematik",
+    title: "Prozentrechnung und Dreisatz",
+    goal: "Grundwert, Anteil und Prozentsatz unterscheiden und proportionale Zuordnungen berechnen.",
+    why: "Lernquoten, Wirkungsgrade und einfache Mengenabschätzungen verwenden Anteile. Ein Dreisatz hilft nur bei einer begründeten proportionalen Zuordnung; reale Anlagenleistungen sind nicht automatisch zu jeder Größe proportional.",
+    basic: String.raw`Prozent bedeutet von hundert: \(15\%=\frac{15}{100}=0{,}15\). Der Anteil \(W\) ist Grundwert \(G\) mal Dezimalanteil \(r\). Beim direkten Dreisatz berechnet man zuerst den Wert für eine Einheit und multipliziert dann mit der gesuchten Menge.`,
+    reasoning: String.raw`Aus \(W=Gr\) folgen \(r=\frac W G\) und \(G=\frac W r\), wenn die jeweiligen Nenner nicht null sind. Eine direkte Proportionalität hat einen konstanten Wert pro Einheit. Bei unverändertem Modell gilt daher \(y_2=y_1\frac{x_2}{x_1}\).`,
+    transfer:
+      "Ein prozentualer Anstieg und eine anschließende Absenkung um denselben Prozentsatz heben sich nicht auf, weil der zweite Grundwert anders ist. 100 → plus 10 % ergibt 110; davon minus 10 % ergibt 99. Bei Messabweichungen muss der verwendete Referenzwert ausdrücklich genannt werden.",
+    example: String.raw`15 % von 200 sind \(200\cdot0{,}15=30\). Ein Anteil von 30 an 200 ergibt \(\frac{30}{200}=0{,}15=15\%\). Ein fiktiver konstanter Preis: 3 Stück kosten 12 Einheiten; 1 Stück kostet 4, 5 Stück kosten 20. Die Proportionalität wird vorausgesetzt.`,
+    derivation: [
+      String.raw`\(15\%=15\cdot\frac1{100}=0{,}15\).`,
+      String.raw`\(W=G\cdot r\); durch \(G\ne0\) teilen liefert \(r=\frac W G\).`,
+      String.raw`\(\frac{12}{3}=4\) pro Stück; \(4\cdot5=20\).`,
+    ],
+    mistakes: [
+      "15 statt 0,15 als Multiplikator einsetzen.",
+      "Einen Dreisatz ohne proportionale Beziehung benutzen oder den Referenzwert wechseln.",
+    ],
+    summary:
+      "Prozentrechnung beschreibt Anteile am klar benannten Grundwert. Der direkte Dreisatz nutzt einen konstanten Wert pro Einheit. Prozentpunkte, Prozentänderungen und absolute Werte sind unterschiedliche Aussagen.",
+    prerequisites: ["math-fractions"],
+    formulaIds: ["math-percent-rule", "math-proportion-rule"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Wie viel sind 15 % von 200?",
+        correct: "30",
+        wrong: ["3000", "15"],
+        explanation:
+          "15 Prozent entsprechen 0,15. 200 × 0,15 = 30. Wer 15 direkt multipliziert, lässt die Division durch 100 aus und erhält einen hundertfach zu großen Wert.",
+      },
+      {
+        prompt:
+          "3 gleiche Teile kosten 12; was kosten 5 bei konstantem Stückpreis?",
+        correct: "20",
+        wrong: ["7,2", "60"],
+        explanation:
+          "Zuerst 12/3 = 4 pro Teil, dann 4 × 5 = 20. Die Aufgabe setzt denselben Stückpreis und keine zusätzlichen Grundkosten voraus.",
+      },
+      {
+        prompt: "100 plus 10 %, danach minus 10 %: Endwert?",
+        correct: "99",
+        wrong: ["100", "90"],
+        explanation:
+          "Der zweite Prozentwert bezieht sich auf 110: 10 % davon sind 11. Daher bleibt 110 − 11 = 99. Die Grundwerte sind bei beiden Schritten verschieden.",
+      },
+    ],
+  },
+  {
+    id: "math-algebra",
+    domainId: "mathematik",
+    title: "Variablen und Terme",
+    goal: "Variablen als Platzhalter verstehen und Terme sinnvoll zusammenfassen und ausmultiplizieren.",
+    why: "In einer technischen Formel stehen Buchstaben für Größen statt für beliebige Abkürzungen. Dieselbe Struktur kann mit unterschiedlichen Zahlenwerten gerechnet werden; der Zahlenwert darf nicht mit der Einheit verwechselt werden.",
+    basic: String.raw`Eine Variable steht für einen veränderlichen oder noch unbekannten Wert. Ein Term beschreibt eine Rechenvorschrift, ohne schon eine Gleichung zu sein. \(3x+2x=5x\) fasst gleichartige Summanden zusammen. \(3x+2\) lässt sich dagegen nicht zu \(5x\) vereinigen.`,
+    reasoning: String.raw`Das Distributivgesetz begründet \(a(x+b)=ax+ab\): Jede der a Gruppen enthält x und b. Rückwärts ist Ausklammern möglich. Beim Einsetzen gehört ein negativer Wert in Klammern, damit zum Beispiel \(2\cdot(-3)\) eindeutig bleibt.`,
+    transfer:
+      "In technischen Gleichungen stehen gleiche Buchstaben nicht automatisch für dieselbe Größe in jedem Fachgebiet. Q kann Ladung oder Wärme bedeuten, deshalb braucht jede Formel Variablendefinitionen und Einheiten. Gemeinsame Formel-IDs verhindern Verwechslungen zwischen gleich aussehenden Symbolen.",
+    example: String.raw`Für \(x=4\) gilt \(3(x+2)=3\cdot6=18\). Ausmultipliziert: \(3x+6=12+6=18\). Bei \(x=-2\) ergibt derselbe Term null. Die beiden Wege vergleichen die algebraische Struktur und nicht nur eine zufällige Schreibweise.`,
+    derivation: [
+      String.raw`\(3(x+2)=(x+2)+(x+2)+(x+2)\).`,
+      String.raw`\(x+x+x+2+2+2=3x+6\).`,
+      String.raw`Probe \(x=4\): Beide Schreibweisen ergeben \(18\).`,
+    ],
+    mistakes: [
+      "Nur den ersten Summanden in einer Klammer multiplizieren.",
+      "Ungleichartige Terme wie 3x und 2 zu 5x zusammenfassen.",
+    ],
+    summary:
+      "Variablen erlauben allgemeine Rechenvorschriften. Gleichartige Terme werden über ihre Koeffizienten zusammengefasst; das Distributivgesetz verteilt einen Faktor auf alle Summanden der Klammer.",
+    prerequisites: ["math-arithmetic"],
+    formulaIds: ["math-distributive"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Was ist 3x + 2x?",
+        correct: "5x",
+        wrong: ["5x²", "6x"],
+        explanation:
+          "Beide Summanden enthalten denselben Faktor x. Es werden die Anzahlen 3 und 2 addiert; es entsteht kein zusätzliches x und deshalb keine Potenz x².",
+      },
+      {
+        prompt: "Welche Form ist gleich 3(x + 2)?",
+        correct: "3x + 6",
+        wrong: ["3x + 2", "5x"],
+        explanation:
+          "Der Faktor 3 multipliziert beide Summanden: 3 × x und 3 × 2. Die zweite Multiplikation darf beim Auflösen der Klammer nicht verloren gehen.",
+      },
+      {
+        prompt: "Warum braucht Q in einer technischen Formel eine Definition?",
+        correct:
+          "Dasselbe Zeichen kann verschiedene physikalische Größen bezeichnen.",
+        wrong: [
+          "Q hat immer dieselbe Einheit.",
+          "Buchstaben ersetzen jede Einheitenprüfung.",
+        ],
+        explanation:
+          "Q wird beispielsweise für Ladung und Wärme verwendet. Ohne Definition und Einheit wäre die Bedeutung mehrdeutig; ein bloßer Buchstabe macht verschiedene Größen nicht austauschbar.",
+      },
+    ],
+  },
+  {
+    id: "math-equations",
+    domainId: "mathematik",
+    title: "Gleichungen Schritt für Schritt lösen",
+    goal: "Lineare Gleichungen mit Äquivalenzumformungen lösen und die Lösung durch Einsetzen prüfen.",
+    why: "Unbekannte Werte werden nicht geraten: Eine Gleichung beschreibt eine Bedingung, die beide Seiten erfüllen müssen. Das ist die Grundlage jeder fachlichen Formelumstellung und jeder nachvollziehbaren Gegenprobe.",
+    basic: String.raw`Eine Gleichung behauptet, dass beide Seiten gleich sind. Führst du auf beiden Seiten dieselbe umkehrbare Operation aus, bleibt die Lösungsmenge erhalten. Addition und Subtraktion sind umkehrbar; Multiplikation oder Division benötigen einen Faktor beziehungsweise Nenner ungleich null.`,
+    reasoning: String.raw`Bei \(ax+b=c\) wird zuerst auf beiden Seiten b subtrahiert: \(ax=c-b\). Dann wird durch \(a\ne0\) geteilt. Deshalb ist \(x=\frac{c-b}{a}\). Das Minus ist keine magische Seitenwechselregel, sondern das Ergebnis derselben Subtraktion auf beiden Seiten.`,
+    transfer:
+      "Der Fall a = 0 muss getrennt betrachtet werden: Aus 0x + b = c folgt bei b = c jede Zahl als Lösung, andernfalls keine Lösung. Der einfache Zahlenaufgabenkern dieser App akzeptiert nur den eindeutig lösbaren Fall a ≠ 0 und weist die anderen Fälle verständlich zurück.",
+    example: String.raw`\(3x+6=24\). Beidseitig 6 subtrahieren: \(3x=18\). Durch 3 teilen: \(x=6\). Probe: \(3\cdot6+6=24\). Bei \(2x+5=-3\) folgt nach Subtraktion von 5 \(2x=-8\), danach \(x=-4\).`,
+    derivation: [
+      String.raw`\(3x+6=24\quad|-6\).`,
+      String.raw`\(3x=18\quad|:3\), weil \(3\ne0\).`,
+      String.raw`\(x=6\); Einsetzen in die ursprüngliche Gleichung bestätigt \(24=24\).`,
+    ],
+    mistakes: [
+      "Eine Operation nur auf einer Seite ausführen.",
+      "Durch eine möglicherweise null werdende Größe teilen oder die Probe auslassen.",
+    ],
+    summary:
+      "Äquivalenzumformungen behandeln beide Seiten gleich und sind umkehrbar. Für ax + b = c mit a ≠ 0 ist die Lösung eindeutig. Die Probe erfolgt in der ursprünglichen Gleichung, nicht nur im Endergebnis.",
+    prerequisites: ["math-algebra", "math-fractions"],
+    formulaIds: ["math-linear-rule"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Was ist die Lösung von 3x + 6 = 24?",
+        correct: "x = 6",
+        wrong: ["x = 10", "x = 18"],
+        explanation:
+          "Beide Seiten minus 6 ergibt 3x = 18. Danach beide Seiten durch 3 teilen: x = 6. Einsetzen in 3x + 6 ergibt wieder 24.",
+      },
+      {
+        prompt: "Warum darf man nicht durch null teilen?",
+        correct:
+          "Die Umkehrung ist nicht definiert und kann keine eindeutige Lösung erhalten.",
+        wrong: [
+          "Weil das Ergebnis immer null wäre.",
+          "Weil das nur bei positiven Zahlen gilt.",
+        ],
+        explanation:
+          "Es gibt keinen eindeutigen Quotienten a/0. Eine solche Operation ist keine zulässige Äquivalenzumformung und darf nicht als normaler Rechenschritt verwendet werden.",
+      },
+      {
+        prompt: "Was bedeutet 0x + 2 = 3?",
+        correct: "Es gibt keine Lösung.",
+        wrong: ["x = 1", "Jede Zahl ist Lösung."],
+        explanation:
+          "Für jede Zahl x bleibt links 2. Das kann niemals 3 sein. Der Fall eines Koeffizienten null muss vor der üblichen Division getrennt beurteilt werden.",
+      },
+    ],
+  },
+  {
+    id: "math-rearrange",
+    domainId: "mathematik",
+    title: "Technische Formeln umstellen",
+    goal: "Produkte und Quotienten gezielt nach einer gesuchten Größe umstellen und jeden Schritt begründen.",
+    why: "Strom, Druck, Dichte oder Wärmemenge können jeweils gegeben oder gesucht sein. Derselbe Zusammenhang wird deshalb nach unterschiedlichen Variablen benötigt. Die zugrunde liegende Physik ändert sich durch die algebraische Umstellung nicht.",
+    basic: String.raw`Markiere die Zielvariable und löse die sie umgebenden Operationen in umgekehrter Reihenfolge auf. Aus \(U=RI\) wird durch beidseitige Division durch \(I\ne0\) die Gleichung \(\frac U I=R\), also \(R=\frac U I\).`,
+    reasoning: String.raw`Bei \(Q=mc\Delta T\) wird zur gesuchten Masse durch das gesamte Produkt \(c\Delta T\ne0\) geteilt. Bei \(p=\frac F A\) hilft zunächst beidseitiges Multiplizieren mit \(A\ne0\): \(pA=F\). Der Nenner ist kein einzelner Summand, sondern ein zusammenhängender Ausdruck.`,
+    transfer:
+      "Eine algebraisch gültige Umstellung darf Modellgrenzen nicht verstecken. Bei ΔT = 0 kann aus Q = mcΔT keine eindeutige Masse über die Quotientenform gewonnen werden. Bei gleichen Symbolen in verschiedenen Fachgebieten müssen Einheit und Bedeutung weiterhin ausdrücklich genannt werden.",
+    example: String.raw`Gesucht R bei U = 24 V und I = 0,2 A: \(R=\frac U I=\frac{24}{0{,}2}=120\,\Omega\). Probe: \(120\cdot0{,}2=24\). Gesucht A bei F = 600 N und p = 200000 Pa: \(A=\frac F p=0{,}003\,\mathrm{m^2}\). Die Einheiten begründen die Richtung des Quotienten.`,
+    derivation: [
+      String.raw`Ausgang: \(U=RI\), Ziel \(R\).`,
+      String.raw`Beidseitig durch \(I\ne0\) teilen: \(\frac U I=\frac{RI}{I}\).`,
+      String.raw`Gemeinsamen Faktor kürzen: \(R=\frac U I\).`,
+      String.raw`Probe mit Zahlen und Einheiten in \(U=RI\), nicht nur im umgestellten Ausdruck.`,
+    ],
+    mistakes: [
+      "Beim Teilen durch mehrere Faktoren nur einen Faktor in den Nenner schreiben.",
+      "Vor der Division nicht prüfen, ob der Nenner null sein kann.",
+    ],
+    summary:
+      "Formeln werden durch dieselben umkehrbaren Operationen auf beiden Seiten umgestellt. Die Zielvariable, zulässige Nenner, Einheiten und eine Probe gehören zu jeder vollständigen technischen Lösung.",
+    prerequisites: ["math-equations"],
+    formulaIds: [
+      "ohm-resistance",
+      "ohm-voltage",
+      "math-heat-energy",
+      "physics-pressure",
+      "physics-density",
+    ],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "U = R × I: Welche Umstellung liefert R?",
+        correct: "R = U / I",
+        wrong: ["R = U × I", "R = I / U"],
+        explanation:
+          "Beide Seiten werden durch I ungleich null geteilt. Rechts kürzt sich der Faktor I. Die Einheit V/A = Ω bestätigt die gesuchte Widerstandsgröße.",
+      },
+      {
+        prompt: "Q = m × c × ΔT: Wie erhält man m?",
+        correct: "m = Q / (c × ΔT)",
+        wrong: ["m = Q × c × ΔT", "m = Q / c × ΔT"],
+        explanation:
+          "Beide Faktoren c und ΔT müssen zusammen wegdividiert werden. Das erfordert den gesamten Nenner c × ΔT und setzt voraus, dass dieses Produkt nicht null ist.",
+      },
+      {
+        prompt: "p = F / A: Wie erhält man A bei p ≠ 0?",
+        correct: "A = F / p",
+        wrong: ["A = p / F", "A = F × p"],
+        explanation:
+          "Zuerst beide Seiten mit A multiplizieren: pA = F. Danach durch p ungleich null teilen: A = F/p. So bleiben beide Umformungen nachvollziehbar.",
+      },
+    ],
+  },
+  {
+    id: "math-units",
+    domainId: "mathematik",
+    title: "SI-Einheiten und Umrechnungen",
+    goal: "Größen, Zahlenwerte und Einheiten unterscheiden und mit Umrechnungsfaktoren sicher rechnen.",
+    why: "Eine Zahl ohne Einheit kann in einer technischen Rechnung die falsche Größe darstellen. Besonders kg/h statt kg/s oder kW statt W erzeugen große Faktoren. Vor dem Einsetzen in eine SI-Gleichung müssen die Einheiten zusammenpassen.",
+    basic: String.raw`Eine Größe ist Zahlenwert mal Einheit. Dieselbe Zeit kann \(2\,\mathrm h=120\,\mathrm{min}=7200\,\mathrm s\) heißen. Beim Wechsel der Einheit ändert sich die Zahl, aber nicht die Zeitdauer. Vorsilben wie kilo und milli bedeuten Faktoren 1000 und 0,001.`,
+    reasoning: String.raw`Ein Umrechnungsfaktor ist ein Verhältnis gleich großer Größen und hat deshalb den Wert eins: \(2\,\mathrm h\cdot\frac{3600\,\mathrm s}{1\,\mathrm h}=7200\,\mathrm s\). Die Einheit h kürzt sich. Für Flächen und Volumen muss auch der Umrechnungsfaktor potenziert werden.`,
+    transfer:
+      "Absolute Temperaturen und Temperaturdifferenzen brauchen verschiedene Behandlung: T in K = Temperatur in °C + 273,15, eine Differenz von 1 °C entspricht dagegen 1 K ohne Offset. Diese App unterscheidet beide Mengenarten im gemeinsamen Rechenkern, statt beliebige Einheitenstrings zu multiplizieren.",
+    example: String.raw`\(30\,\mathrm{min}\cdot60=1800\,\mathrm s\). \(24\,\mathrm{Wh}\cdot3600=86400\,\mathrm J\). \(1800\,\mathrm{kg/h}\cdot\frac{1\,\mathrm h}{3600\,\mathrm s}=0{,}5\,\mathrm{kg/s}\). Vor jedem Zahlenprodukt wird geprüft, welche Einheit die Zielgröße besitzen muss.`,
+    derivation: [
+      String.raw`\(1\,\mathrm h=3600\,\mathrm s\), also ist \(\frac{3600\,\mathrm s}{1\,\mathrm h}=1\).`,
+      String.raw`Mit diesem Faktor wird die Größe multipliziert, ohne ihren Wert zu verändern.`,
+      String.raw`\(1\,\mathrm{cm^2}=(0{,}01\,\mathrm m)^2=10^{-4}\,\mathrm{m^2}\); Längenfaktoren nicht unverändert für Flächen nutzen.`,
+    ],
+    mistakes: [
+      "Umrechnungsfaktor in die falsche Richtung anwenden.",
+      "Auf Temperaturdifferenzen den Celsius-Kelvin-Offset addieren; bei Flächen das Quadrat vergessen.",
+    ],
+    summary:
+      "Größe und Zahlenwert sind nicht dasselbe. Einheitenwechsel nutzt Faktoren mit Wert eins. Die Richtung ergibt sich aus dem Kürzen der alten Einheit; Temperaturdifferenzen erhalten keinen absoluten Temperaturoffset.",
+    prerequisites: ["math-fractions", "math-powers"],
+    formulaIds: ["math-unit-rule"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Wie viele Sekunden sind 30 Minuten?",
+        correct: "1800 s",
+        wrong: ["0,5 s", "30 s"],
+        explanation:
+          "Jede Minute enthält 60 Sekunden. 30 × 60 = 1800. Durch 60 zu teilen würde nicht von Minuten zu Sekunden, sondern in die entgegengesetzte Richtung führen.",
+      },
+      {
+        prompt: "Wie viel sind 24 Wh in Joule?",
+        correct: "86400 J",
+        wrong: ["24 J", "0,00667 J"],
+        explanation:
+          "1 W = 1 J/s und 1 h = 3600 s. Daher ist 1 Wh = 3600 J und 24 Wh = 86400 J. Watt und Wattstunde sind verschiedene Größen.",
+      },
+      {
+        prompt: "Braucht eine Differenz von 5 °C den Offset 273,15?",
+        correct: "Nein, sie entspricht 5 K.",
+        wrong: ["Ja, sie ergibt 278,15 K.", "Ja, sie ergibt −268,15 K."],
+        explanation:
+          "Beim Subtrahieren zweier absoluter Temperaturen hebt sich derselbe Offset auf. Deshalb bleibt die Zahl einer Temperaturdifferenz in °C und K gleich.",
+      },
+    ],
+  },
+  {
+    id: "math-powers",
+    domainId: "mathematik",
+    title: "Potenzen, Wurzeln und Zehnerpotenzen",
+    goal: "Potenzen als Produkte verstehen, Quadratwurzeln erklären und Größenordnungen sicher schreiben.",
+    why: "Quadrate kommen bei Flächen, Wurzeln bei der Rückrechnung und Zehnerpotenzen bei sehr kleinen oder großen Messgrößen vor. Die wissenschaftliche Schreibweise hilft, Vorsilben und Größenordnungen kontrolliert zu verbinden.",
+    basic: String.raw`\(a^n\) bedeutet für natürliche n ein Produkt aus n gleichen Faktoren. \(10^3=1000\), \(10^{-3}=\frac1{1000}\). Die Quadratwurzel \(\sqrt x\) ist die nicht negative Zahl, deren Quadrat x ergibt; im reellen Bereich benötigt sie \(x\ge0\).`,
+    reasoning: String.raw`Gleiche Basen lassen sich über die Anzahl der Faktoren verbinden: \(a^m a^n=a^{m+n}\). Negative Exponenten beschreiben Kehrwerte und setzen eine Basis ungleich null voraus. Wichtig: \(\sqrt{x^2}=|x|\), nicht für jede reelle Zahl einfach x.`,
+    transfer:
+      "Wissenschaftliche Schreibweise nutzt einen Faktor zwischen 1 einschließlich und 10 ausschließlich, multipliziert mit einer Zehnerpotenz. 0,0025 m = 2,5 × 10⁻³ m. Beim Runden muss angegeben werden, welche Genauigkeit sinnvoll ist; eine lange Anzeige macht eine Messung nicht automatisch genauer.",
+    example: String.raw`\(2^3=2\cdot2\cdot2=8\), \(10^{-3}=0{,}001\). \(\sqrt{144}=12\), denn \(12^2=144\). Für \(x=-3\) ist \(\sqrt{x^2}=\sqrt9=3=|x|\). Ein Minus vor einer Potenz ist ohne Klammer kein Teil der Basis: \(-2^2=-4\), aber \((-2)^2=4\).`,
+    derivation: [
+      String.raw`\(a^2a^3=(aa)(aaa)=a^5\).`,
+      String.raw`Für \(a\ne0\) gilt \(a^{-n}=\frac1{a^n}\).`,
+      String.raw`Die Definition der Hauptwurzel wählt das nicht negative Ergebnis. Deshalb \(\sqrt{x^2}=|x|\).`,
+    ],
+    mistakes: [
+      "Exponenten beim Addieren von Potenzen automatisch addieren.",
+      "√(x²) ohne Betrag schreiben oder Minus und Klammern vor Potenzen verwechseln.",
+    ],
+    summary:
+      "Potenzen bündeln gleiche Faktoren, negative Exponenten bilden Kehrwerte und Quadratwurzeln liefern nicht negative Hauptwerte. Klammern bestimmen die Basis. Wissenschaftliche Schreibweise zeigt die Größenordnung einer Zahl.",
+    prerequisites: ["math-arithmetic", "math-fractions"],
+    formulaIds: ["math-power-rule"],
+    sourceIds: src,
+    questions: [
+      {
+        prompt: "Welche Zahl ist 10 hoch −3?",
+        correct: "0,001",
+        wrong: ["−1000", "1000"],
+        explanation:
+          "Ein negativer Exponent macht aus der Potenz ihren Kehrwert: 10⁻³ = 1/1000 = 0,001. Er bedeutet nicht, dass das Ergebnis negativ ist.",
+      },
+      {
+        prompt: "Was ist die reelle Hauptwurzel aus 144?",
+        correct: "12",
+        wrong: ["−12", "72"],
+        explanation:
+          "12 × 12 = 144. Die Quadratwurzel bezeichnet den nicht negativen Hauptwert. Die Gleichung x² = 144 hätte dagegen zwei Lösungen, ±12.",
+      },
+      {
+        prompt: "Für x = −3 ist √(x²) gleich …",
+        correct: "3",
+        wrong: ["−3", "−9"],
+        explanation:
+          "Zuerst wird (−3)² = 9 berechnet, dann die nicht negative Hauptwurzel: 3. Allgemein gilt √(x²) = |x|.",
+      },
+    ],
+  },
 ];
 export const mathematicsFormulas: Formula[] = [
- ['math-order-rule','Rechenreihenfolge','a + b × c',String.raw`a+b\cdot c`,'Erst das Produkt, dann die Summe; Klammern gehen vor.'],
- ['math-fraction-rule','Brüche addieren','a/b + c/d = (ad+bc)/(bd)',String.raw`\frac a b+\frac c d=\frac{ad+bc}{bd}`,'b und d ungleich null; Kürzen nur über gemeinsame Faktoren.'],
- ['math-percent-rule','Prozentanteil','W = G × r',String.raw`W=G\,r,\qquad r=\frac W G`,'r als Dezimalanteil, G ≠ 0 für die Quotientenform.'],
- ['math-proportion-rule','Direkte Proportionalität','y₂ = y₁ × x₂ / x₁',String.raw`y_2=y_1\frac{x_2}{x_1}`,'Direkte proportionale Zuordnung, x₁ ≠ 0; keine beliebige Anlagenkennlinie.'],
- ['math-distributive','Distributivgesetz','a(x+b) = ax+ab',String.raw`a(x+b)=ax+ab`,'Reelle Zahlen; Faktor auf beide Summanden verteilen.'],
- ['math-linear-rule','Lineare Gleichung','ax+b=c → x=(c-b)/a',String.raw`ax+b=c\quad\Longrightarrow\quad x=\frac{c-b}{a}`,'a ≠ 0; andernfalls keine eindeutige Quotientenlösung.'],
- ['math-unit-rule','Zeit umrechnen','t in s = t in h × 3600',String.raw`t=2\,\mathrm h\cdot\frac{3600\,\mathrm s}{1\,\mathrm h}=7200\,\mathrm s`,'Umrechnungsfaktor entspricht eins; physikalische Größe bleibt gleich.'],
- ['math-power-rule','Potenz und Hauptwurzel','a^m a^n=a^(m+n); √(x²)=|x|',String.raw`a^m a^n=a^{m+n},\qquad \sqrt{x^2}=|x|`,'Ganzzahlige Exponenten im Aufgabenmodell; bei negativen Exponenten a ≠ 0.'],
-].map(([id,title,expression,tex,assumptions])=>({id,title,expression,tex,assumptions,units:'Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.',sourceIds:src}));
+  [
+    "math-order-rule",
+    "Rechenreihenfolge",
+    "a + b × c",
+    String.raw`a+b\cdot c`,
+    "Erst das Produkt, dann die Summe; Klammern gehen vor.",
+  ],
+  [
+    "math-fraction-rule",
+    "Brüche addieren",
+    "a/b + c/d = (ad+bc)/(bd)",
+    String.raw`\frac a b+\frac c d=\frac{ad+bc}{bd}`,
+    "b und d ungleich null; Kürzen nur über gemeinsame Faktoren.",
+  ],
+  [
+    "math-percent-rule",
+    "Prozentanteil",
+    "W = G × r",
+    String.raw`W=G\,r,\qquad r=\frac W G`,
+    "r als Dezimalanteil, G ≠ 0 für die Quotientenform.",
+  ],
+  [
+    "math-proportion-rule",
+    "Direkte Proportionalität",
+    "y₂ = y₁ × x₂ / x₁",
+    String.raw`y_2=y_1\frac{x_2}{x_1}`,
+    "Direkte proportionale Zuordnung, x₁ ≠ 0; keine beliebige Anlagenkennlinie.",
+  ],
+  [
+    "math-distributive",
+    "Distributivgesetz",
+    "a(x+b) = ax+ab",
+    String.raw`a(x+b)=ax+ab`,
+    "Reelle Zahlen; Faktor auf beide Summanden verteilen.",
+  ],
+  [
+    "math-linear-rule",
+    "Lineare Gleichung",
+    "ax+b=c → x=(c-b)/a",
+    String.raw`ax+b=c\quad\Longrightarrow\quad x=\frac{c-b}{a}`,
+    "a ≠ 0; andernfalls keine eindeutige Quotientenlösung.",
+  ],
+  [
+    "math-unit-rule",
+    "Zeit umrechnen",
+    "t in s = t in h × 3600",
+    String.raw`t=2\,\mathrm h\cdot\frac{3600\,\mathrm s}{1\,\mathrm h}=7200\,\mathrm s`,
+    "Umrechnungsfaktor entspricht eins; physikalische Größe bleibt gleich.",
+  ],
+  [
+    "math-power-rule",
+    "Potenz und Hauptwurzel",
+    "a^m a^n=a^(m+n); √(x²)=|x|",
+    String.raw`a^m a^n=a^{m+n},\qquad \sqrt{x^2}=|x|`,
+    "Ganzzahlige Exponenten im Aufgabenmodell; bei negativen Exponenten a ≠ 0.",
+  ],
+].map(([id, title, expression, tex, assumptions]) => ({
+  id,
+  title,
+  expression,
+  tex,
+  assumptions,
+  units: "Reelle Zahlen bzw. ausdrücklich angegebene SI-Einheiten.",
+  sourceIds: src,
+}));
 mathematicsFormulas.push(
- {id:'math-heat-energy',title:'Sensible Wärmemenge',expression:'Q = m × c × ΔT',tex:String.raw`Q=m\,c\,\Delta T`,units:'kg × J/(kg·K) × K = J',assumptions:'Konstante spezifische Wärmekapazität, kein Phasenwechsel; hier positive Beträge. Wärmemenge, nicht Wärmeleistung.',sourceIds:['openstax-physics-v05'],variables:[{symbol:'Q',meaning:'Wärmemenge',unit:'J'},{symbol:'m',meaning:'Masse',unit:'kg'},{symbol:'c',meaning:'Spezifische Wärmekapazität',unit:'J/(kg·K)'},{symbol:String.raw`\Delta T`,meaning:'Temperaturdifferenz',unit:'K'}]},
- {id:'physics-pressure',title:'Druck aus senkrechter Kraft',expression:'p = F / A',tex:String.raw`p=\frac F A`,units:'N/m² = Pa',assumptions:'Gleichmäßig verteilte senkrechte Kraft auf A > 0; keine Druckbehälterdimensionierung.',sourceIds:['openstax-physics-v05']},
- {id:'physics-density',title:'Massendichte',expression:'ρ = m / V',tex:String.raw`\rho=\frac m V`,units:'kg/m³',assumptions:'V > 0; Masse und Volumen desselben betrachteten Systems und Zustands.',sourceIds:['openstax-physics-v05']},
+  {
+    id: "math-heat-energy",
+    title: "Sensible Wärmemenge",
+    expression: "Q = m × c × ΔT",
+    tex: String.raw`Q=m\,c\,\Delta T`,
+    units: "kg × J/(kg·K) × K = J",
+    assumptions:
+      "Konstante spezifische Wärmekapazität, kein Phasenwechsel; hier positive Beträge. Wärmemenge, nicht Wärmeleistung.",
+    sourceIds: ["openstax-physics-v05"],
+    variables: [
+      { symbol: "Q", meaning: "Wärmemenge", unit: "J" },
+      { symbol: "m", meaning: "Masse", unit: "kg" },
+      { symbol: "c", meaning: "Spezifische Wärmekapazität", unit: "J/(kg·K)" },
+      {
+        symbol: String.raw`\Delta T`,
+        meaning: "Temperaturdifferenz",
+        unit: "K",
+      },
+    ],
+  },
+  {
+    id: "physics-pressure",
+    title: "Druck aus senkrechter Kraft",
+    expression: "p = F / A",
+    tex: String.raw`p=\frac F A`,
+    units: "N/m² = Pa",
+    assumptions:
+      "Gleichmäßig verteilte senkrechte Kraft auf A > 0; keine Druckbehälterdimensionierung.",
+    sourceIds: ["openstax-physics-v05"],
+  },
+  {
+    id: "physics-density",
+    title: "Massendichte",
+    expression: "ρ = m / V",
+    tex: String.raw`\rho=\frac m V`,
+    units: "kg/m³",
+    assumptions:
+      "V > 0; Masse und Volumen desselben betrachteten Systems und Zustands.",
+    sourceIds: ["openstax-physics-v05"],
+  },
 );
 
 mathematicsFormulas.push(
- {id:'math-fraction-subtract',title:'Brüche subtrahieren',expression:'a/b − c/d = (ad−bc)/(bd)',tex:String.raw`\frac a b-\frac c d=\frac{ad-bc}{bd}`,units:'Reelle Zahlen',assumptions:'b und d ungleich null.',sourceIds:src},
- {id:'math-fraction-multiply',title:'Brüche multiplizieren',expression:'a/b × c/d = ac/(bd)',tex:String.raw`\frac a b\cdot\frac c d=\frac{ac}{bd}`,units:'Reelle Zahlen',assumptions:'b und d ungleich null.',sourceIds:src},
- {id:'math-fraction-divide',title:'Brüche dividieren',expression:'a/b : c/d = ad/(bc)',tex:String.raw`\frac a b:\frac c d=\frac{ad}{bc}`,units:'Reelle Zahlen',assumptions:'b, c und d ungleich null.',sourceIds:src},
+  {
+    id: "math-fraction-subtract",
+    title: "Brüche subtrahieren",
+    expression: "a/b − c/d = (ad−bc)/(bd)",
+    tex: String.raw`\frac a b-\frac c d=\frac{ad-bc}{bd}`,
+    units: "Reelle Zahlen",
+    assumptions: "b und d ungleich null.",
+    sourceIds: src,
+  },
+  {
+    id: "math-fraction-multiply",
+    title: "Brüche multiplizieren",
+    expression: "a/b × c/d = ac/(bd)",
+    tex: String.raw`\frac a b\cdot\frac c d=\frac{ac}{bd}`,
+    units: "Reelle Zahlen",
+    assumptions: "b und d ungleich null.",
+    sourceIds: src,
+  },
+  {
+    id: "math-fraction-divide",
+    title: "Brüche dividieren",
+    expression: "a/b : c/d = ad/(bc)",
+    tex: String.raw`\frac a b:\frac c d=\frac{ad}{bc}`,
+    units: "Reelle Zahlen",
+    assumptions: "b, c und d ungleich null.",
+    sourceIds: src,
+  },
 );
+
+// Lernreihenfolge folgt den Voraussetzungen; Identitäten und gespeicherte Lesestände bleiben stabil.
+const learningOrder = [
+  "math-arithmetic",
+  "math-fractions",
+  "math-percent",
+  "math-algebra",
+  "math-equations",
+  "math-powers",
+  "math-units",
+  "math-rearrange",
+];
+mathematicsLessons.sort(
+  (a, b) => learningOrder.indexOf(a.id) - learningOrder.indexOf(b.id),
+);
+mathematicsLessons
+  .find((l) => l.id === "math-rearrange")!
+  .prerequisites.push("math-units");

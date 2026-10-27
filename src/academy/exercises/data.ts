@@ -420,4 +420,5 @@ numericTasks.push(...physicsTasks);
 
 numericTasks.push(...chemistryTasks);
 
-for (const task of numericTasks) task.requiredCompetencyIds = taskCompetencies(task);
+for (const task of numericTasks)
+  task.requiredCompetencyIds = taskCompetencies(task);

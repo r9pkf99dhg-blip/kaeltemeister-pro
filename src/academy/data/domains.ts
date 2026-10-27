@@ -325,20 +325,156 @@ electricDomain.chapters[1].subchapters[0].plannedTopics =
 electricDomain.chapters[1].subchapters[1].plannedTopics =
   electricalPlanned.slice(5);
 
-const mathDomain=domains.find(d=>d.id==='mathematik')!;
-mathDomain.description='Acht vollständige Grundlagenlektionen; weiterführende Themen ausdrücklich geplant.';
-mathDomain.chapters[0].subchapters[0].moduleIds=mathematicsLessons.filter(l=>['math-arithmetic','math-fractions','math-percent','math-powers','math-units'].includes(l.id)).map(l=>l.id);
-mathDomain.chapters[0].subchapters[0].plannedTopics=[];
-mathDomain.chapters[0].subchapters[1].moduleIds=['math-algebra','math-equations','math-rearrange'];
-mathDomain.chapters[0].subchapters[1].plannedTopics=['Quadratische Gleichungen und lineare Gleichungssysteme'];
+const mathDomain = domains.find((d) => d.id === "mathematik")!;
+mathDomain.description =
+  "Acht vollständige Grundlagenlektionen; weiterführende Themen ausdrücklich geplant.";
+mathDomain.chapters[0].subchapters[0].moduleIds = mathematicsLessons
+  .filter((l) =>
+    [
+      "math-arithmetic",
+      "math-fractions",
+      "math-percent",
+      "math-powers",
+      "math-units",
+    ].includes(l.id),
+  )
+  .map((l) => l.id);
+mathDomain.chapters[0].subchapters[0].plannedTopics = [];
+mathDomain.chapters[0].subchapters[1].moduleIds = [
+  "math-algebra",
+  "math-equations",
+  "math-rearrange",
+];
+mathDomain.chapters[0].subchapters[1].plannedTopics = [
+  "Quadratische Gleichungen und lineare Gleichungssysteme",
+];
 
-domains.push({id:'physik',title:'Physik-Grundlagen',description:'Vier ausgearbeitete Kernmodule mit Bezug zu Kälte- und Energietechnik.',chapters:[
- {id:'physik-mechanik',title:'Mechanik und Energie',subchapters:[{id:'physik-bewegung',title:'Bewegung und Kräfte',moduleIds:['physics-motion'],plannedTopics:['Vertiefte Kinematik, Vektoren und Drehbewegung']},{id:'physik-energie',title:'Arbeit und Energie',moduleIds:['physics-energy'],plannedTopics:[]}]},
- {id:'physik-stoff-waerme',title:'Stoffe und Wärme',subchapters:[{id:'physik-druck-dichte',title:'Druck und Dichte',moduleIds:['physics-pressure-density'],plannedTopics:['Strömung und Gasgesetze']},{id:'physik-waerme',title:'Temperatur und Wärme',moduleIds:['physics-heat'],plannedTopics:['Vertiefte Wärmeübertragung und Hauptsätze']}]},
- {id:'physik-felder',title:'Felder, Messung und Wellen',subchapters:[{id:'physik-messung',title:'Messunsicherheit',moduleIds:[],plannedTopics:['Messketten und Unsicherheitsfortpflanzung']},{id:'physik-wellen',title:'Magnetismus und Wellen',moduleIds:[],plannedTopics:['Magnetismus, Schwingungen und Wellen; Elektro-Grundgrößen im vorhandenen Elektro-Lernpfad']}]}]});
+domains.push({
+  id: "physik",
+  title: "Physik-Grundlagen",
+  description:
+    "Vier ausgearbeitete Kernmodule mit Bezug zu Kälte- und Energietechnik.",
+  chapters: [
+    {
+      id: "physik-mechanik",
+      title: "Mechanik und Energie",
+      subchapters: [
+        {
+          id: "physik-bewegung",
+          title: "Bewegung und Kräfte",
+          moduleIds: ["physics-motion"],
+          plannedTopics: ["Vertiefte Kinematik, Vektoren und Drehbewegung"],
+        },
+        {
+          id: "physik-energie",
+          title: "Arbeit und Energie",
+          moduleIds: ["physics-energy"],
+          plannedTopics: [],
+        },
+      ],
+    },
+    {
+      id: "physik-stoff-waerme",
+      title: "Stoffe und Wärme",
+      subchapters: [
+        {
+          id: "physik-druck-dichte",
+          title: "Druck und Dichte",
+          moduleIds: ["physics-pressure-density"],
+          plannedTopics: ["Strömung und Gasgesetze"],
+        },
+        {
+          id: "physik-waerme",
+          title: "Temperatur und Wärme",
+          moduleIds: ["physics-heat"],
+          plannedTopics: ["Vertiefte Wärmeübertragung und Hauptsätze"],
+        },
+      ],
+    },
+    {
+      id: "physik-felder",
+      title: "Felder, Messung und Wellen",
+      subchapters: [
+        {
+          id: "physik-messung",
+          title: "Messunsicherheit",
+          moduleIds: [],
+          plannedTopics: ["Messketten und Unsicherheitsfortpflanzung"],
+        },
+        {
+          id: "physik-wellen",
+          title: "Magnetismus und Wellen",
+          moduleIds: [],
+          plannedTopics: [
+            "Magnetismus, Schwingungen und Wellen; Elektro-Grundgrößen im vorhandenen Elektro-Lernpfad",
+          ],
+        },
+      ],
+    },
+  ],
+});
 
-domains.push({id:'chemie',title:'Chemie-Grundlagen',description:'Drei vollständige Grundlagenmodule; weiterführende Stoff- und Sicherheitsthemen geplant.',chapters:[
- {id:'chemie-stoffe',title:'Stoffe und Aufbau',subchapters:[{id:'chemie-klassifikation',title:'Stoffe und Gemische',moduleIds:['chemistry-matter'],plannedTopics:[]},{id:'chemie-atombau',title:'Atome und Formelsprache',moduleIds:['chemistry-atoms'],plannedTopics:['Periodensystem und Bindungsmodelle vertiefen']}]},
- {id:'chemie-bilanzen',title:'Stoffmengen und Reaktionen',subchapters:[{id:'chemie-stoffmenge',title:'Stoffmenge und Atombilanz',moduleIds:['chemistry-amount'],plannedTopics:['Weiterführende Stöchiometrie']},{id:'chemie-reaktionen',title:'Reaktionsklassen',moduleIds:[],plannedTopics:['Säuren/Basen, Oxidation und Reduktion']}]},
- {id:'chemie-technik',title:'Technische Stoffe',subchapters:[{id:'chemie-organik',title:'Organische Grundlagen',moduleIds:[],plannedTopics:['Kohlenwasserstoffe und halogenierte Verbindungen']},{id:'chemie-kaeltemittel',title:'Kältemittel und Umwelt',moduleIds:[],plannedTopics:['Geprüfte Stoffeigenschaften, Umweltwirkung und aktuelle Sicherheitsdaten']}]}
-]});
+domains.push({
+  id: "chemie",
+  title: "Chemie-Grundlagen",
+  description:
+    "Drei vollständige Grundlagenmodule; weiterführende Stoff- und Sicherheitsthemen geplant.",
+  chapters: [
+    {
+      id: "chemie-stoffe",
+      title: "Stoffe und Aufbau",
+      subchapters: [
+        {
+          id: "chemie-klassifikation",
+          title: "Stoffe und Gemische",
+          moduleIds: ["chemistry-matter"],
+          plannedTopics: [],
+        },
+        {
+          id: "chemie-atombau",
+          title: "Atome und Formelsprache",
+          moduleIds: ["chemistry-atoms"],
+          plannedTopics: ["Periodensystem und Bindungsmodelle vertiefen"],
+        },
+      ],
+    },
+    {
+      id: "chemie-bilanzen",
+      title: "Stoffmengen und Reaktionen",
+      subchapters: [
+        {
+          id: "chemie-stoffmenge",
+          title: "Stoffmenge und Atombilanz",
+          moduleIds: ["chemistry-amount"],
+          plannedTopics: ["Weiterführende Stöchiometrie"],
+        },
+        {
+          id: "chemie-reaktionen",
+          title: "Reaktionsklassen",
+          moduleIds: [],
+          plannedTopics: ["Säuren/Basen, Oxidation und Reduktion"],
+        },
+      ],
+    },
+    {
+      id: "chemie-technik",
+      title: "Technische Stoffe",
+      subchapters: [
+        {
+          id: "chemie-organik",
+          title: "Organische Grundlagen",
+          moduleIds: [],
+          plannedTopics: ["Kohlenwasserstoffe und halogenierte Verbindungen"],
+        },
+        {
+          id: "chemie-kaeltemittel",
+          title: "Kältemittel und Umwelt",
+          moduleIds: [],
+          plannedTopics: [
+            "Geprüfte Stoffeigenschaften, Umweltwirkung und aktuelle Sicherheitsdaten",
+          ],
+        },
+      ],
+    },
+  ],
+});

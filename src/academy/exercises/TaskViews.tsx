@@ -1,4 +1,9 @@
-import { BlockMath, MathText, SolutionSteps } from "../../math/Math";
+import {
+  BlockMath,
+  MathText,
+  SolutionSteps,
+  OptionMath,
+} from "../../math/Math";
 import { formulas, modules, sources } from "../catalog";
 import { format } from "../../logic";
 import { units, fromSI } from "../../technical/calculations";
@@ -10,7 +15,9 @@ export function TaskPrompt({ item }: { item: LearningItem }) {
   return (
     <>
       <h3>{item.title}</h3>
-      <p><MathText text={item.prompt} /></p>
+      <p>
+        <MathText text={item.prompt} />
+      </p>
       {item.kind === "numeric" && (
         <>
           <dl className="task-givens">
@@ -18,7 +25,7 @@ export function TaskPrompt({ item }: { item: LearningItem }) {
               <div key={given.id}>
                 <dt>{given.label}</dt>
                 <dd>
-                  {format(given.value)} {given.unit}
+                  {format(given.value)} {given.unit === "1" ? "" : given.unit}
                 </dd>
               </div>
             ))}
@@ -54,10 +61,13 @@ export function TaskAnswer({
             <input
               type="radio"
               name={`task-${item.id}`}
+              aria-label={option.text}
               checked={answer.value === option.id}
               onChange={() => onChange({ value: option.id, unit: "" })}
             />
-            <span>{option.text}</span>
+            <span>
+              <OptionMath text={option.text} />
+            </span>
           </label>
         ))}
       </fieldset>
@@ -68,6 +78,7 @@ export function TaskAnswer({
         Dein Ergebnis: {item.sought}
         <input
           id={`result-${item.id}`}
+          maxLength={200}
           inputMode={item.quantity === "number" ? "text" : "decimal"}
           value={answer.value}
           disabled={disabled}
@@ -88,7 +99,9 @@ export function TaskAnswer({
           }
         >
           {units[item.quantity].map((unit) => (
-            <option key={unit}>{unit}</option>
+            <option key={unit} value={unit}>
+              {unit === "1" ? "Zahl (ohne Einheit)" : unit}
+            </option>
           ))}
         </select>
       </label>
@@ -112,7 +125,9 @@ export function TaskSolution({
               ?.text
           }
         </p>
-        <p><MathText text={item.explanation} /></p>
+        <p>
+          <MathText text={item.explanation} />
+        </p>
       </div>
     );
   const value = expected ?? expectedSI(item);
@@ -125,7 +140,10 @@ export function TaskSolution({
           {item.answerUnit}
         </strong>
       </p>
-<SolutionSteps steps={item.texSteps ?? item.steps} />
+      <SolutionSteps
+        steps={item.texSteps ?? item.steps}
+        collapsible={(item.texSteps ?? item.steps).length >= 3}
+      />
       <h4>Typische Rechenfehler</h4>
       <ul>
         {item.mistakes.map((mistake) => (
@@ -161,7 +179,10 @@ export function TaskReference({
           <p>
             <strong>{formula.title}:</strong>
           </p>
-          <BlockMath tex={formula.tex ?? formula.expression} label={formula.expression} />
+          <BlockMath
+            tex={formula.tex ?? formula.expression}
+            label={formula.expression}
+          />
           <p>{formula.units}</p>
         </>
       )}

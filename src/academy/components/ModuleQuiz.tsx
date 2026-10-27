@@ -1,4 +1,4 @@
-import { MathText } from "../../math/Math";
+import { MathText, OptionMath } from "../../math/Math";
 import { useState } from "react";
 import { academyQuestions } from "../catalog";
 import { levels, type AcademyProgress, type Level } from "../model";
@@ -57,6 +57,7 @@ export default function ModuleQuiz({
                     type="radio"
                     name={question.id}
                     value={option.id}
+                    aria-label={option.text}
                     checked={selected[question.id] === option.id}
                     onChange={() => {
                       setSelected((current) => ({
@@ -69,7 +70,9 @@ export default function ModuleQuiz({
                       }));
                     }}
                   />
-                  <span><MathText text={option.text} /></span>
+                  <span>
+                    <OptionMath text={option.text} />
+                  </span>
                 </label>
               ))}
             </fieldset>
@@ -95,7 +98,9 @@ export default function ModuleQuiz({
                     ? "Richtig."
                     : "Noch nicht richtig."}
                 </strong>
-                <p><MathText text={question.explanation} /></p>
+                <p>
+                  <MathText text={question.explanation} />
+                </p>
                 <p>
                   Richtige Antwort:{" "}
                   {

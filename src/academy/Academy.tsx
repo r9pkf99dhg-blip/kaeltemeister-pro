@@ -139,8 +139,8 @@ export default function Academy({
               <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.5</p>
               <h1>Lernakademie</h1>
               <p>
-                Mathematische Grundlagen und technische Fachmodule. Drei Wissensstufen. Dein eigenes
-                Lerntempo.
+                Mathematische Grundlagen und technische Fachmodule. Drei
+                Wissensstufen. Dein eigenes Lerntempo.
               </p>
             </div>
           </div>
@@ -274,7 +274,13 @@ export default function Academy({
                     onClick={() => open(module.id)}
                   >
                     <span className="eyebrow">
-                      {module.domainId === "kaelte" ? "KÄLTETECHNIK" : module.domainId === "elektro" ? "ELEKTROTECHNIK" : domains.find(d=>d.id===module.domainId)?.title.toLocaleUpperCase("de")}{" "}
+                      {module.domainId === "kaelte"
+                        ? "KÄLTETECHNIK"
+                        : module.domainId === "elektro"
+                          ? "ELEKTROTECHNIK"
+                          : domains
+                              .find((d) => d.id === module.domainId)
+                              ?.title.toLocaleUpperCase("de")}{" "}
                       · {String(index + 1).padStart(2, "0")}
                     </span>
                     <h2>{module.title}</h2>
@@ -350,9 +356,11 @@ export default function Academy({
               <section className="domain-outline">
                 <h2>Deine Fachgebiete</h2>
                 <p>
-                  Kapitel → Unterkapitel → Lernmodule. Die verfügbaren Module sind vollständig bearbeitbar; mathematische Grundlagen ergänzen die Kälte- und Elektro-Lernpfade. Weitere Inhalte sind ausdrücklich
-                  in Vorbereitung. Rechtsinhalte benötigen vor Veröffentlichung
-                  eine datierte Prüfung.
+                  Kapitel → Unterkapitel → Lernmodule. Die verfügbaren Module
+                  sind vollständig bearbeitbar; mathematische Grundlagen
+                  ergänzen die Kälte- und Elektro-Lernpfade. Weitere Inhalte
+                  sind ausdrücklich in Vorbereitung. Rechtsinhalte benötigen vor
+                  Veröffentlichung eine datierte Prüfung.
                 </p>
                 {domains
                   .filter((item) => domain === "all" || item.id === domain)
@@ -362,7 +370,9 @@ export default function Academy({
                         <BookOpen size={18} />
                         <span>{item.title}</span>
                         <span className="pill">
-                          {modules.some(m=>m.domainId===item.id) ? `${modules.filter(m=>m.domainId===item.id).length} Module verfügbar` : "Inhalte in Vorbereitung"}
+                          {modules.some((m) => m.domainId === item.id)
+                            ? `${modules.filter((m) => m.domainId === item.id).length} Module verfügbar`
+                            : "Inhalte in Vorbereitung"}
                         </span>
                       </summary>
                       <p>{item.description}</p>
@@ -486,7 +496,11 @@ function ModuleView({
           ))}
         </ul>
       </section>
-      <LessonReading module={module} level={level} openCalculator={openCalculator} />
+      <LessonReading
+        module={module}
+        level={level}
+        openCalculator={openCalculator}
+      />
       <button
         className="button primary"
         disabled={moduleRead(progress, module.id, level)}
@@ -522,7 +536,9 @@ function ModuleView({
           setProgress={setProgress}
         />
       </section>
-      {module.id === "math-rearrange" && <RearrangementTrainer setProgress={setProgress} />}
+      {module.id === "math-rearrange" && (
+        <RearrangementTrainer setProgress={setProgress} />
+      )}
       {numericTasks.some((t) => t.topicId === module.id) && (
         <Exercises
           key={`exercises-${module.id}`}
@@ -534,7 +550,9 @@ function ModuleView({
       )}
       <section>
         <h2>Vertiefung</h2>
-        <p><MathText text={content.deepening} /></p>
+        <p>
+          <MathText text={content.deepening} />
+        </p>
         <div className="related-links">
           {module.related.map((related) =>
             related.available && related.kind === "calculator" ? (

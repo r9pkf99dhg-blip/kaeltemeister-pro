@@ -17,7 +17,14 @@ export type CalculationKind =
   | "electric-energy"
   | "series-resistance"
   | "parallel-resistance"
-  | "speed" | "force" | "mechanical-work" | "power-from-energy" | "pressure" | "density" | "sensible-energy" | "amount";
+  | "speed"
+  | "force"
+  | "mechanical-work"
+  | "power-from-energy"
+  | "pressure"
+  | "density"
+  | "sensible-energy"
+  | "amount";
 export type Quantity =
   | "power"
   | "mass-flow"
@@ -31,8 +38,19 @@ export type Quantity =
   | "energy"
   | "time"
   | "charge"
-  | "number" | "percent"
-  | "mass" | "length" | "area" | "volume" | "pressure" | "density" | "force" | "acceleration" | "speed" | "amount" | "molar-mass";
+  | "number"
+  | "percent"
+  | "mass"
+  | "length"
+  | "area"
+  | "volume"
+  | "pressure"
+  | "density"
+  | "force"
+  | "acceleration"
+  | "speed"
+  | "amount"
+  | "molar-mass";
 export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
@@ -48,9 +66,17 @@ export const units: Record<Quantity, string[]> = {
   ratio: ["1"],
   number: ["1"],
   percent: ["%"],
-  amount: ["mol", "mmol"], "molar-mass": ["kg/mol", "g/mol"],
-  mass: ["kg", "g"], length: ["m", "cm", "mm", "km"], area: ["m²", "cm²"], volume: ["m³", "L"],
-  pressure: ["Pa", "kPa", "bar"], density: ["kg/m³"], force: ["N", "kN"], acceleration: ["m/s²"], speed: ["m/s", "km/h"],
+  amount: ["mol", "mmol"],
+  "molar-mass": ["kg/mol", "g/mol"],
+  mass: ["kg", "g"],
+  length: ["m", "cm", "mm", "km"],
+  area: ["m²", "cm²"],
+  volume: ["m³", "L"],
+  pressure: ["Pa", "kPa", "bar"],
+  density: ["kg/m³"],
+  force: ["N", "kN"],
+  acceleration: ["m/s²"],
+  speed: ["m/s", "km/h"],
 };
 export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (!Number.isFinite(value) || !units[quantity].includes(unit))
@@ -105,7 +131,8 @@ export function calculateTechnical(
   kind: CalculationKind,
   values: Record<string, number>,
 ): number {
-  if (schoolKinds.includes(kind as SchoolKind)) return calculateSchool(kind as SchoolKind, values);
+  if (schoolKinds.includes(kind as SchoolKind))
+    return calculateSchool(kind as SchoolKind, values);
   const get = (id: string, strictlyPositive = false) => {
     const value = values[id];
     if (
@@ -120,14 +147,30 @@ export function calculateTechnical(
   };
   let result: number;
   switch (kind) {
-    case "amount": result = get("mass") / get("molarMass", true); break;
-    case "speed": result = get("distance") / get("time", true); break;
-    case "force": result = get("mass", true) * get("acceleration"); break;
-    case "mechanical-work": result = get("force") * get("distance"); break;
-    case "power-from-energy": result = get("energy") / get("time", true); break;
-    case "pressure": result = get("force") / get("area", true); break;
-    case "density": result = get("mass") / get("volume", true); break;
-    case "sensible-energy": result = get("mass") * get("cp", true) * get("deltaT"); break;
+    case "amount":
+      result = get("mass") / get("molarMass", true);
+      break;
+    case "speed":
+      result = get("distance") / get("time", true);
+      break;
+    case "force":
+      result = get("mass", true) * get("acceleration");
+      break;
+    case "mechanical-work":
+      result = get("force") * get("distance");
+      break;
+    case "power-from-energy":
+      result = get("energy") / get("time", true);
+      break;
+    case "pressure":
+      result = get("force") / get("area", true);
+      break;
+    case "density":
+      result = get("mass") / get("volume", true);
+      break;
+    case "sensible-energy":
+      result = get("mass") * get("cp", true) * get("deltaT");
+      break;
     case "heat":
       result = get("massFlow") * get("cp", true) * get("deltaT");
       break;

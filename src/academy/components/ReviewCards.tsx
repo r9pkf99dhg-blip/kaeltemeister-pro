@@ -77,8 +77,14 @@ export default function ReviewCards({
             {(index % cards.length) + 1} / {cards.length}
           </p>
           <span className="pill">{flipped ? "Rückseite" : "Vorderseite"}</span>
-          <h3><MathText text={card.front} /></h3>
-          {flipped && <p className="flashcard-back"><MathText text={card.back} /></p>}
+          <h3>
+            <MathText text={card.front} />
+          </h3>
+          {flipped && (
+            <p className="flashcard-back">
+              <MathText text={card.back} />
+            </p>
+          )}
           <button
             className="button primary"
             aria-expanded={flipped}

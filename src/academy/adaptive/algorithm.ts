@@ -117,10 +117,37 @@ export function recommendations(progress: AcademyProgress, now = new Date()) {
           "Aktuell keine besondere Wiederholung nötig. Freiwillige Vertiefung ist möglich.";
         priority = 0;
       }
-      return { ...topic, ...stats, due, reason, priority };
+      const prerequisites = topic.moduleId
+        ? (modules.find((m) => m.id === topic.moduleId)?.prerequisites ?? [])
+        : [];
+      const missingPrerequisites = prerequisites.filter((id) => {
+        const current = modules.find((m) => m.id === id);
+        return (
+          !current ||
+          progress.read[id]?.revision !== current.revision ||
+          !progress.read[id].levels.includes("grundlagen")
+        );
+      });
+      if (priority === 1 && missingPrerequisites.length)
+        reason += ` Empfohlene Grundlagen noch nicht gelesen: ${missingPrerequisites.map((id) => modules.find((m) => m.id === id)?.title ?? id).join(", ")}.`;
+      return {
+        ...topic,
+        ...stats,
+        due,
+        reason,
+        priority,
+        missingPrerequisites,
+      };
     })
     .sort(
-      (a, b) => b.priority - a.priority || a.title.localeCompare(b.title, "de"),
+      (a, b) =>
+        b.priority - a.priority ||
+        (a.priority === 1
+          ? a.missingPrerequisites.length +
+            (a.moduleId ? 0 : 1) -
+            (b.missingPrerequisites.length + (b.moduleId ? 0 : 1))
+          : 0) ||
+        a.title.localeCompare(b.title, "de"),
     );
 }
 export function visitModule(

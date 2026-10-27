@@ -1,39 +1,423 @@
-import type { NumericTask } from '../exercises/model';
-import type { CalculationKind, Quantity } from '../../technical/calculations';
-type Row = [string,string,string,CalculationKind,Quantity,string,number[],string,string[]];
-const specs: Record<string, { ids: string[]; units?: string[]; quantities?: Quantity[] }> = {
- 'math-order':{ids:['a','b','c']},
- 'math-fraction-add':{ids:['n1','d1','n2','d2']},'math-fraction-subtract':{ids:['n1','d1','n2','d2']},'math-fraction-multiply':{ids:['n1','d1','n2','d2']},'math-fraction-divide':{ids:['n1','d1','n2','d2']},
- 'math-percent-value':{ids:['base','rate'],units:['1','%'],quantities:['number','percent']},'math-percent-rate':{ids:['part','base']},
- 'math-proportion':{ids:['base','value','target']},'math-term':{ids:['a','x','b']},'math-linear':{ids:['a','b','c']},
- 'math-power':{ids:['base','exponent']},'math-root':{ids:['value']},
- 'identity':{ids:['value']},'ohm-resistance':{ids:['voltage','current'],units:['V','A'],quantities:['voltage','current']},
-};
-const rows:Row[] = [
- ['math-order-a','math-arithmetic','Vorzeichen und Punkt-vor-Strich','math-order','number','1',[-8,3,4],'Berechne −8 + 3 × 4.',[String.raw`\(3\cdot4=12\). Multiplikation zuerst.`,String.raw`\(-8+12=4\). Die negative Zahl bleibt erhalten.`]],
- ['math-order-b','math-arithmetic','Dezimalzahlen sinnvoll ordnen','math-order','number','1',[1.5,2,.25],'Berechne 1,5 + 2 × 0,25.',[String.raw`\(2\cdot0{,}25=0{,}5\).`,String.raw`\(1{,}5+0{,}5=2\).`]],
- ['math-fraction-add-a','math-fractions','Brüche addieren','math-fraction-add','number','1',[1,2,1,4],'Berechne 1/2 + 1/4. Ein einfacher Bruch oder eine Dezimalzahl ist möglich.',[String.raw`\(\frac12=\frac24\). Gleiche Teilgrößen herstellen.`,String.raw`\(\frac24+\frac14=\frac34=0{,}75\).`]],
- ['math-fraction-sub-a','math-fractions','Brüche subtrahieren','math-fraction-subtract','number','1',[1,4,3,4],'Berechne 1/4 − 3/4.',[String.raw`Die Nenner sind gleich: \(\frac{1-3}{4}\).`,String.raw`\(\frac{-2}{4}=-\frac12=-0{,}5\).`]],
- ['math-fraction-mul-a','math-fractions','Brüche multiplizieren','math-fraction-multiply','number','1',[2,3,3,4],'Berechne 2/3 × 3/4.',[String.raw`\(\frac23\cdot\frac34=\frac6{12}\).`,String.raw`Zähler und Nenner durch 6: \(\frac12=0{,}5\).`]],
- ['math-fraction-div-a','math-fractions','Durch einen Bruch teilen','math-fraction-divide','number','1',[2,3,4,5],'Berechne 2/3 geteilt durch 4/5.',[String.raw`Kehrwert des Divisors: \(\frac54\).`,String.raw`\(\frac23\cdot\frac54=\frac{10}{12}=\frac56\).`]],
- ['math-percent-a','math-percent','Prozentanteil berechnen','math-percent-value','number','1',[200,15],'Wie viel sind 15 % von 200? Gib den Anteil als Zahl an.',[String.raw`\(15\%=0{,}15\).`,String.raw`\(W=200\cdot0{,}15=30\).`]],
- ['math-percent-b','math-percent','Prozentsatz berechnen','math-percent-rate','percent','%',[30,200],'Welchen Prozentsatz bilden 30 von 200?',[String.raw`\(r=\frac{30}{200}=0{,}15\).`,String.raw`Als Prozentsatz: \(0{,}15\cdot100\%=15\%\).`]],
- ['math-proportion-a','math-percent','Direkter Dreisatz','math-proportion','number','1',[3,12,5],'3 gleiche Teile kosten 12 Geldeinheiten. Wie viel kosten 5 bei konstantem Stückpreis?',[String.raw`Ein Teil kostet \(\frac{12}{3}=4\).`,String.raw`Fünf Teile kosten \(4\cdot5=20\).`]],
- ['math-term-a','math-algebra','Einen Term einsetzen','math-term','number','1',[3,4,2],'Berechne 3(x+2) für x=4.',[String.raw`Einsetzen: \(3(4+2)\).`,String.raw`Klammer zuerst: \(3\cdot6=18\).`]],
- ['math-term-b','math-algebra','Negativen Wert einsetzen','math-term','number','1',[2,-3,1],'Berechne 2(x+1) für x=−3.',[String.raw`\(2((-3)+1)=2(-2)\).`,String.raw`\(2\cdot(-2)=-4\).`]],
- ['math-linear-a','math-equations','Lineare Gleichung lösen','math-linear','number','1',[3,6,24],'Löse 3x+6=24 nach x.',[String.raw`Beidseitig minus 6: \(3x=18\).`,String.raw`Beidseitig durch 3: \(x=6\). Probe: \(3\cdot6+6=24\).`]],
- ['math-linear-b','math-equations','Gleichung mit negativer Lösung','math-linear','number','1',[2,5,-3],'Löse 2x+5=−3 nach x.',[String.raw`Beidseitig minus 5: \(2x=-8\).`,String.raw`Beidseitig durch 2: \(x=-4\). Probe: \(2(-4)+5=-3\).`]],
- ['math-rearrange-a','math-rearrange','Umgestellten Widerstand prüfen','ohm-resistance','resistance','Ω',[24,.2],'U=24 V, I=0,2 A im ohmschen Gleichstrommodell. Berechne R und prüfe die Einheit.',[String.raw`\(U=RI\quad|:I\), wobei \(I\ne0\).`,String.raw`\(R=\frac{24}{0{,}2}=120\,\Omega\). Probe \(120\cdot0{,}2=24\).`]],
- ['math-rearrange-b','math-rearrange','Zweite Umstellungsprobe','ohm-resistance','resistance','Ω',[12,.01],'U=12 V, I=0,01 A. Berechne R im gleichen Modell.',[String.raw`\(R=\frac U I\).`,String.raw`\(R=\frac{12}{0{,}01}=1200\,\Omega\).`]],
- ['math-unit-a','math-units','Minuten in Sekunden','identity','time','s',[30],'Rechne 30 min in Sekunden um.',[String.raw`\(1\,\mathrm{min}=60\,\mathrm s\).`,String.raw`\(30\cdot60=1800\,\mathrm s\).`]],
- ['math-unit-b','math-units','Wattstunden in Joule','identity','energy','J',[24],'Rechne 24 Wh in Joule um.',[String.raw`\(1\,\mathrm{Wh}=3600\,\mathrm J\).`,String.raw`\(24\cdot3600=86400\,\mathrm J\).`]],
- ['math-power-a','math-powers','Potenz als Produkt','math-power','number','1',[2,3],'Berechne 2 hoch 3.',[String.raw`\(2^3=2\cdot2\cdot2\).`,String.raw`\(2\cdot2\cdot2=8\).`]],
- ['math-power-b','math-powers','Negative Zehnerpotenz','math-power','number','1',[10,-3],'Berechne 10 hoch −3.',[String.raw`\(10^{-3}=\frac1{10^3}\).`,String.raw`\(\frac1{1000}=0{,}001\).`]],
- ['math-root-a','math-powers','Quadratwurzel bilden','math-root','number','1',[144],'Berechne die nicht negative Quadratwurzel aus 144.',[String.raw`Gesucht \(x\ge0\) mit \(x^2=144\).`,String.raw`\(12^2=144\), also \(\sqrt{144}=12\).`]],
- ['math-root-b','math-powers','Quadratwurzel mit Dezimalzahl','math-root','number','1',[.81],'Berechne die nicht negative Quadratwurzel aus 0,81.',[String.raw`\(0{,}9\cdot0{,}9=0{,}81\).`,String.raw`Somit \(\sqrt{0{,}81}=0{,}9\).`]],
+import type { NumericTask } from "../exercises/model";
+import type { CalculationKind, Quantity } from "../../technical/calculations";
+type Row = [
+  string,
+  string,
+  string,
+  CalculationKind,
+  Quantity,
+  string,
+  number[],
+  string,
+  string[],
 ];
-const formulaByModule:Record<string,string>={'math-arithmetic':'math-order-rule','math-fractions':'math-fraction-rule','math-percent':'math-percent-rule','math-algebra':'math-distributive','math-equations':'math-linear-rule','math-rearrange':'ohm-resistance','math-units':'math-unit-rule','math-powers':'math-power-rule'};
-export const mathematicsTasks:NumericTask[]=rows.map(([id,topicId,title,calculation,quantity,answerUnit,values,prompt,steps])=>{
- const spec=specs[calculation];
- return {id,topicId,title,calculation,quantity,answerUnit,prompt,sought: title,kind:'numeric',revision:1,domainId:'mathematik',level:'grundlagen',article:{kind:'module',id:topicId},formulaId:['math-fraction-subtract','math-fraction-multiply','math-fraction-divide'].includes(calculation)?calculation:calculation==='math-proportion'?'math-proportion-rule':formulaByModule[topicId],givens:values.map((value,i)=>({id:spec.ids[i],label:({a:'Faktor a',b:'Wert b',c:'Wert c',n1:'Zähler 1',d1:'Nenner 1',n2:'Zähler 2',d2:'Nenner 2',base:'Grundwert/Basis',rate:'Prozentsatz',part:'Anteil',target:'Zielmenge',value:'Gegebener Wert',x:'Variable x',exponent:'Exponent',voltage:'Spannung',current:'Strom'} as Record<string,string>)[spec.ids[i]]??spec.ids[i],value,unit: id==='math-unit-a'?'min':id==='math-unit-b'?'Wh':spec.units?.[i]??'1',quantity:id==='math-unit-a'?'time':id==='math-unit-b'?'energy':spec.quantities?.[i]??'number'})),absoluteToleranceSI:1e-8,relativeTolerance:calculation==='math-fraction-divide'?.0001:.000001,sourceIds:['openstax-prealgebra-v05'],hint:'Schreibe die passende Regel auf und kontrolliere Vorzeichen, Nenner und Umrechnungsrichtung. Lies bei Bedarf die verknüpfte Grundlagenlektion.',steps,mistakes:['Die Reihenfolge oder die Bedeutung des Nenners übersehen.','Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.'],assumptions:'Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.',review:'calculation-tested-expert-review-pending'};
-});
+const specs: Record<
+  string,
+  { ids: string[]; units?: string[]; quantities?: Quantity[] }
+> = {
+  "math-order": { ids: ["a", "b", "c"] },
+  "math-fraction-add": { ids: ["n1", "d1", "n2", "d2"] },
+  "math-fraction-subtract": { ids: ["n1", "d1", "n2", "d2"] },
+  "math-fraction-multiply": { ids: ["n1", "d1", "n2", "d2"] },
+  "math-fraction-divide": { ids: ["n1", "d1", "n2", "d2"] },
+  "math-percent-value": {
+    ids: ["base", "rate"],
+    units: ["1", "%"],
+    quantities: ["number", "percent"],
+  },
+  "math-percent-rate": { ids: ["part", "base"] },
+  "math-proportion": { ids: ["base", "value", "target"] },
+  "math-term": { ids: ["a", "x", "b"] },
+  "math-linear": { ids: ["a", "b", "c"] },
+  "math-power": { ids: ["base", "exponent"] },
+  "math-root": { ids: ["value"] },
+  identity: { ids: ["value"] },
+  "ohm-resistance": {
+    ids: ["voltage", "current"],
+    units: ["V", "A"],
+    quantities: ["voltage", "current"],
+  },
+};
+const rows: Row[] = [
+  [
+    "math-order-a",
+    "math-arithmetic",
+    "Vorzeichen und Punkt-vor-Strich",
+    "math-order",
+    "number",
+    "1",
+    [-8, 3, 4],
+    "Berechne −8 + 3 × 4.",
+    [
+      String.raw`\(3\cdot4=12\). Multiplikation zuerst.`,
+      String.raw`\(-8+12=4\). Die negative Zahl bleibt erhalten.`,
+    ],
+  ],
+  [
+    "math-order-b",
+    "math-arithmetic",
+    "Dezimalzahlen sinnvoll ordnen",
+    "math-order",
+    "number",
+    "1",
+    [1.5, 2, 0.25],
+    "Berechne 1,5 + 2 × 0,25.",
+    [String.raw`\(2\cdot0{,}25=0{,}5\).`, String.raw`\(1{,}5+0{,}5=2\).`],
+  ],
+  [
+    "math-fraction-add-a",
+    "math-fractions",
+    "Brüche addieren",
+    "math-fraction-add",
+    "number",
+    "1",
+    [1, 2, 1, 4],
+    "Berechne 1/2 + 1/4. Ein einfacher Bruch oder eine Dezimalzahl ist möglich.",
+    [
+      String.raw`\(\frac12=\frac24\). Gleiche Teilgrößen herstellen.`,
+      String.raw`\(\frac24+\frac14=\frac34=0{,}75\).`,
+    ],
+  ],
+  [
+    "math-fraction-sub-a",
+    "math-fractions",
+    "Brüche subtrahieren",
+    "math-fraction-subtract",
+    "number",
+    "1",
+    [1, 4, 3, 4],
+    "Berechne 1/4 − 3/4.",
+    [
+      String.raw`Die Nenner sind gleich: \(\frac{1-3}{4}\).`,
+      String.raw`\(\frac{-2}{4}=-\frac12=-0{,}5\).`,
+    ],
+  ],
+  [
+    "math-fraction-mul-a",
+    "math-fractions",
+    "Brüche multiplizieren",
+    "math-fraction-multiply",
+    "number",
+    "1",
+    [2, 3, 3, 4],
+    "Berechne 2/3 × 3/4.",
+    [
+      String.raw`\(\frac23\cdot\frac34=\frac6{12}\).`,
+      String.raw`Zähler und Nenner durch 6: \(\frac12=0{,}5\).`,
+    ],
+  ],
+  [
+    "math-fraction-div-a",
+    "math-fractions",
+    "Durch einen Bruch teilen",
+    "math-fraction-divide",
+    "number",
+    "1",
+    [2, 3, 4, 5],
+    "Berechne 2/3 geteilt durch 4/5.",
+    [
+      String.raw`Kehrwert des Divisors: \(\frac54\).`,
+      String.raw`\(\frac23\cdot\frac54=\frac{10}{12}=\frac56\).`,
+    ],
+  ],
+  [
+    "math-percent-a",
+    "math-percent",
+    "Prozentanteil berechnen",
+    "math-percent-value",
+    "number",
+    "1",
+    [200, 15],
+    "Wie viel sind 15 % von 200? Gib den Anteil als Zahl an.",
+    [String.raw`\(15\%=0{,}15\).`, String.raw`\(W=200\cdot0{,}15=30\).`],
+  ],
+  [
+    "math-percent-b",
+    "math-percent",
+    "Prozentsatz berechnen",
+    "math-percent-rate",
+    "percent",
+    "%",
+    [30, 200],
+    "Welchen Prozentsatz bilden 30 von 200?",
+    [
+      String.raw`\(r=\frac{30}{200}=0{,}15\).`,
+      String.raw`Als Prozentsatz: \(0{,}15\cdot100\%=15\%\).`,
+    ],
+  ],
+  [
+    "math-proportion-a",
+    "math-percent",
+    "Direkter Dreisatz",
+    "math-proportion",
+    "number",
+    "1",
+    [3, 12, 5],
+    "3 gleiche Teile kosten 12 Geldeinheiten. Wie viel kosten 5 bei konstantem Stückpreis?",
+    [
+      String.raw`Ein Teil kostet \(\frac{12}{3}=4\).`,
+      String.raw`Fünf Teile kosten \(4\cdot5=20\).`,
+    ],
+  ],
+  [
+    "math-term-a",
+    "math-algebra",
+    "Einen Term einsetzen",
+    "math-term",
+    "number",
+    "1",
+    [3, 4, 2],
+    "Berechne 3(x+2) für x=4.",
+    [
+      String.raw`Einsetzen: \(3(4+2)\).`,
+      String.raw`Klammer zuerst: \(3\cdot6=18\).`,
+    ],
+  ],
+  [
+    "math-term-b",
+    "math-algebra",
+    "Negativen Wert einsetzen",
+    "math-term",
+    "number",
+    "1",
+    [2, -3, 1],
+    "Berechne 2(x+1) für x=−3.",
+    [String.raw`\(2((-3)+1)=2(-2)\).`, String.raw`\(2\cdot(-2)=-4\).`],
+  ],
+  [
+    "math-linear-a",
+    "math-equations",
+    "Lineare Gleichung lösen",
+    "math-linear",
+    "number",
+    "1",
+    [3, 6, 24],
+    "Löse 3x+6=24 nach x.",
+    [
+      String.raw`Beidseitig minus 6: \(3x=18\).`,
+      String.raw`Beidseitig durch 3: \(x=6\). Probe: \(3\cdot6+6=24\).`,
+    ],
+  ],
+  [
+    "math-linear-b",
+    "math-equations",
+    "Gleichung mit negativer Lösung",
+    "math-linear",
+    "number",
+    "1",
+    [2, 5, -3],
+    "Löse 2x+5=−3 nach x.",
+    [
+      String.raw`Beidseitig minus 5: \(2x=-8\).`,
+      String.raw`Beidseitig durch 2: \(x=-4\). Probe: \(2(-4)+5=-3\).`,
+    ],
+  ],
+  [
+    "math-rearrange-a",
+    "math-rearrange",
+    "Umgestellten Widerstand prüfen",
+    "ohm-resistance",
+    "resistance",
+    "Ω",
+    [24, 0.2],
+    "U=24 V, I=0,2 A im ohmschen Gleichstrommodell. Berechne R und prüfe die Einheit.",
+    [
+      String.raw`\(U=RI\quad|:I\), wobei \(I\ne0\).`,
+      String.raw`\(R=\frac{24}{0{,}2}=120\,\Omega\). Probe \(120\cdot0{,}2=24\).`,
+    ],
+  ],
+  [
+    "math-rearrange-b",
+    "math-rearrange",
+    "Zweite Umstellungsprobe",
+    "ohm-resistance",
+    "resistance",
+    "Ω",
+    [12, 0.01],
+    "U=12 V, I=0,01 A. Berechne R im gleichen Modell.",
+    [
+      String.raw`\(R=\frac U I\).`,
+      String.raw`\(R=\frac{12}{0{,}01}=1200\,\Omega\).`,
+    ],
+  ],
+  [
+    "math-unit-a",
+    "math-units",
+    "Minuten in Sekunden",
+    "identity",
+    "time",
+    "s",
+    [30],
+    "Rechne 30 min in Sekunden um.",
+    [
+      String.raw`\(1\,\mathrm{min}=60\,\mathrm s\).`,
+      String.raw`\(30\cdot60=1800\,\mathrm s\).`,
+    ],
+  ],
+  [
+    "math-unit-b",
+    "math-units",
+    "Wattstunden in Joule",
+    "identity",
+    "energy",
+    "J",
+    [24],
+    "Rechne 24 Wh in Joule um.",
+    [
+      String.raw`\(1\,\mathrm{Wh}=3600\,\mathrm J\).`,
+      String.raw`\(24\cdot3600=86400\,\mathrm J\).`,
+    ],
+  ],
+  [
+    "math-power-a",
+    "math-powers",
+    "Potenz als Produkt",
+    "math-power",
+    "number",
+    "1",
+    [2, 3],
+    "Berechne 2 hoch 3.",
+    [String.raw`\(2^3=2\cdot2\cdot2\).`, String.raw`\(2\cdot2\cdot2=8\).`],
+  ],
+  [
+    "math-power-b",
+    "math-powers",
+    "Negative Zehnerpotenz",
+    "math-power",
+    "number",
+    "1",
+    [10, -3],
+    "Berechne 10 hoch −3.",
+    [
+      String.raw`\(10^{-3}=\frac1{10^3}\).`,
+      String.raw`\(\frac1{1000}=0{,}001\).`,
+    ],
+  ],
+  [
+    "math-root-a",
+    "math-powers",
+    "Quadratwurzel bilden",
+    "math-root",
+    "number",
+    "1",
+    [144],
+    "Berechne die nicht negative Quadratwurzel aus 144.",
+    [
+      String.raw`Gesucht \(x\ge0\) mit \(x^2=144\).`,
+      String.raw`\(12^2=144\), also \(\sqrt{144}=12\).`,
+    ],
+  ],
+  [
+    "math-root-b",
+    "math-powers",
+    "Quadratwurzel mit Dezimalzahl",
+    "math-root",
+    "number",
+    "1",
+    [0.81],
+    "Berechne die nicht negative Quadratwurzel aus 0,81.",
+    [
+      String.raw`\(0{,}9\cdot0{,}9=0{,}81\).`,
+      String.raw`Somit \(\sqrt{0{,}81}=0{,}9\).`,
+    ],
+  ],
+];
+const formulaByModule: Record<string, string> = {
+  "math-arithmetic": "math-order-rule",
+  "math-fractions": "math-fraction-rule",
+  "math-percent": "math-percent-rule",
+  "math-algebra": "math-distributive",
+  "math-equations": "math-linear-rule",
+  "math-rearrange": "ohm-resistance",
+  "math-units": "math-unit-rule",
+  "math-powers": "math-power-rule",
+};
+export const mathematicsTasks: NumericTask[] = rows.map(
+  ([
+    id,
+    topicId,
+    title,
+    calculation,
+    quantity,
+    answerUnit,
+    values,
+    prompt,
+    steps,
+  ]) => {
+    const spec = specs[calculation];
+    return {
+      id,
+      topicId,
+      title,
+      calculation,
+      quantity,
+      answerUnit,
+      prompt,
+      sought: title,
+      kind: "numeric",
+      revision: 1,
+      domainId: "mathematik",
+      level: "grundlagen",
+      article: { kind: "module", id: topicId },
+      formulaId: [
+        "math-fraction-subtract",
+        "math-fraction-multiply",
+        "math-fraction-divide",
+      ].includes(calculation)
+        ? calculation
+        : calculation === "math-proportion"
+          ? "math-proportion-rule"
+          : formulaByModule[topicId],
+      givens: values.map((value, i) => ({
+        id: spec.ids[i],
+        label:
+          (
+            {
+              a: "Faktor a",
+              b: "Wert b",
+              c: "Wert c",
+              n1: "Zähler 1",
+              d1: "Nenner 1",
+              n2: "Zähler 2",
+              d2: "Nenner 2",
+              base: "Grundwert/Basis",
+              rate: "Prozentsatz",
+              part: "Anteil",
+              target: "Zielmenge",
+              value: "Gegebener Wert",
+              x: "Variable x",
+              exponent: "Exponent",
+              voltage: "Spannung",
+              current: "Strom",
+            } as Record<string, string>
+          )[spec.ids[i]] ?? spec.ids[i],
+        value,
+        unit:
+          id === "math-unit-a"
+            ? "min"
+            : id === "math-unit-b"
+              ? "Wh"
+              : (spec.units?.[i] ?? "1"),
+        quantity:
+          id === "math-unit-a"
+            ? "time"
+            : id === "math-unit-b"
+              ? "energy"
+              : (spec.quantities?.[i] ?? "number"),
+      })),
+      absoluteToleranceSI: 1e-8,
+      relativeTolerance:
+        calculation === "math-fraction-divide" ? 0.0001 : 0.000001,
+      sourceIds: ["openstax-prealgebra-v05"],
+      hint: "Schreibe die passende Regel auf und kontrolliere Vorzeichen, Nenner und Umrechnungsrichtung. Lies bei Bedarf die verknüpfte Grundlagenlektion.",
+      steps,
+      mistakes: [
+        "Die Reihenfolge oder die Bedeutung des Nenners übersehen.",
+        "Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren.",
+      ],
+      assumptions:
+        "Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.",
+      review: "calculation-tested-expert-review-pending",
+    };
+  },
+);

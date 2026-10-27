@@ -23,7 +23,10 @@ export function validItem(value: unknown): value is LearningItem {
     !["id", "topicId", "domainId", "title", "prompt"].every((key) =>
       text(value[key]),
     ) ||
-    !(value.requiredCompetencyIds === undefined || texts(value.requiredCompetencyIds)) ||
+    !(
+      value.requiredCompetencyIds === undefined ||
+      texts(value.requiredCompetencyIds)
+    ) ||
     !integer(value.revision) ||
     value.revision < 1 ||
     !levels.includes(value.level as (typeof levels)[number]) ||
@@ -46,7 +49,14 @@ export function validItem(value: unknown): value is LearningItem {
     value.kind === "numeric" &&
     [
       ...schoolKinds,
-      "amount", "speed", "force", "mechanical-work", "power-from-energy", "pressure", "density", "sensible-energy",
+      "amount",
+      "speed",
+      "force",
+      "mechanical-work",
+      "power-from-energy",
+      "pressure",
+      "density",
+      "sensible-energy",
       "charge-current",
       "ohm-current",
       "ohm-voltage",
@@ -96,7 +106,8 @@ export function validSnapshot(value: unknown): value is ExamSnapshot {
     record(value) &&
     validItem(value.item) &&
     (value.item.kind === "choice" ||
-      (finite(value.expectedSI) && (value.expectedSI >= 0 || value.item.quantity === "number")))
+      (finite(value.expectedSI) &&
+        (value.expectedSI >= 0 || value.item.quantity === "number")))
   );
 }
 export function validAnswer(value: unknown) {

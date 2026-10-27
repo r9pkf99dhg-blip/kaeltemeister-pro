@@ -72,6 +72,36 @@ const entry = (
 });
 const referencedSource = (ids: string[]) =>
   ids.some((id) => sources.find((s) => s.id === id)?.access === "consulted");
+// Nur konkret abgeglichene Beziehungen erhalten den Quellenstatus, nicht jedes Objekt mit Link.
+const sourceReviewedFormulaIds = new Set([
+  "sensible-heat",
+  "sensible-mass-flow",
+  "sensible-temperature-difference",
+  "dc-electric-power",
+  "cooling-cop",
+  "heating-cop",
+  "electric-current-charge",
+  "ohm-current",
+  "ohm-voltage",
+  "ohm-resistance",
+  "electric-energy",
+  "series-resistance",
+  "parallel-resistance",
+  "math-fraction-multiply",
+  "math-fraction-divide",
+  "math-linear-rule",
+  "math-percent-rule",
+  "math-heat-energy",
+  "physics-pressure",
+  "physics-density",
+  "physics-force",
+  "physics-work",
+  "chemistry-atom-count",
+  "chemistry-amount-rule",
+  "chemistry-reaction-example",
+]);
+const formulaSourceChecked = (id: string, ids: string[]) =>
+  sourceReviewedFormulaIds.has(id) && referencedSource(ids);
 /** Explizite Abdeckung; ein Quellenlink allein setzt niemals den Status auf fachlich freigegeben. */
 export const reviewRegister: ReviewEntry[] = [
   ...articles.map((a) =>
@@ -101,8 +131,8 @@ export const reviewRegister: ReviewEntry[] = [
   ),
   ...formulas.map((f) =>
     entry(f.id, f.title, "formula", "fachuebergreifend", {
-      status: referencedSource(f.sourceIds) ? "sourced" : "automatic",
-      scope: referencedSource(f.sourceIds)
+      status: formulaSourceChecked(f.id, f.sourceIds) ? "sourced" : "automatic",
+      scope: formulaSourceChecked(f.id, f.sourceIds)
         ? "Nur die Grundgleichung und ihre genannten Modellbedingungen wurden mit der angegebenen Fundstelle abgeglichen; keine unabhängige Fachfreigabe."
         : "Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.",
       formulaIds: [f.id],
@@ -162,7 +192,16 @@ export const reviewRegister: ReviewEntry[] = [
       reference: n.text,
     }),
   ),
-  ...trainerQuestions.map(q=>entry(q.id,q.title,'trainer-question','mathematik',{status:'automatic',formulaIds:q.formulaId?[q.formulaId]:[],sourceIds:['openstax-prealgebra-v05'],reference:q.explanation,scope:'Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.'})),
+  ...trainerQuestions.map((q) =>
+    entry(q.id, q.title, "trainer-question", "mathematik", {
+      status: "automatic",
+      formulaIds: q.formulaId ? [q.formulaId] : [],
+      sourceIds: ["openstax-prealgebra-v05"],
+      reference: q.explanation,
+      scope:
+        "Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.",
+    }),
+  ),
   ...electricalQuestions.map((q) =>
     entry(q.id, q.prompt, "standalone-question", "elektro", {
       status: "automatic",
@@ -173,7 +212,7 @@ export const reviewRegister: ReviewEntry[] = [
 ];
 export function reviewMarkdown() {
   return (
-    "# Fachliches Prüfregister · Version 0.4\n\nStand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.\n\n" +
+    "# Fachliches Prüfregister · Version 0.5\n\nStand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.\n\n" +
     reviewRegister
       .map(
         (e) =>

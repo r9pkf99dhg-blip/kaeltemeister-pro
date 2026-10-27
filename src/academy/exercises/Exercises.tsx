@@ -1,3 +1,4 @@
+import { domains } from "../catalog";
 import LearningBridge from "../foundations/LearningBridge";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import { numericTasks } from "./data";
@@ -37,6 +38,21 @@ export default function Exercises({
   const [grade, setGrade] = useState<Grade | null>(null);
   const [hint, setHint] = useState(false);
   const [bridgeLesson, setBridgeLesson] = useState<string | null>(null);
+  const variant = tasks.find(
+    (t) =>
+      t.id !== task.id &&
+      t.topicId === task.topicId &&
+      t.calculation === task.calculation,
+  );
+  function selectTask(id: string) {
+    const next = tasks.find((item) => item.id === id);
+    if (!next) return;
+    setTaskId(next.id);
+    setAnswer(emptyAnswer(next));
+    setGrade(null);
+    setHint(false);
+    setBridgeLesson(null);
+  }
   function check() {
     const result = gradeSnapshot(snapshotItem(task), answer);
     setGrade(result);
@@ -76,22 +92,21 @@ export default function Exercises({
           id="exercise-select"
           aria-label="Aufgabe wählen"
           value={taskId}
-          onChange={(event) => {
-            const next = numericTasks.find(
-              (item) => item.id === event.target.value,
-            )!;
-            setTaskId(next.id);
-            setAnswer(emptyAnswer(next));
-            setGrade(null);
-            setHint(false);
-            setBridgeLesson(null);
-          }}
+          onChange={(event) => selectTask(event.target.value)}
         >
-          {tasks.map((item) => (
-            <option value={item.id} key={item.id}>
-              {item.title}
-            </option>
-          ))}
+          {domains
+            .filter((d) => tasks.some((t) => t.domainId === d.id))
+            .map((domain) => (
+              <optgroup key={domain.id} label={domain.title}>
+                {tasks
+                  .filter((t) => t.domainId === domain.id)
+                  .map((item) => (
+                    <option value={item.id} key={item.id}>
+                      {item.title}
+                    </option>
+                  ))}
+              </optgroup>
+            ))}
         </select>
       </label>
       <div className="task-card">
@@ -151,7 +166,27 @@ export default function Exercises({
                 : "erneut üben"}
             </p>
           )}
-        {grade?.status === 'incorrect' && <LearningBridge task={task} progress={progress} setProgress={setProgress} lessonId={bridgeLesson} openLesson={setBridgeLesson} closeLesson={()=>{setBridgeLesson(null);document.getElementById(`result-${task.id}`)?.focus();}} />}
+        {grade?.status === "incorrect" && (
+          <LearningBridge
+            task={task}
+            progress={progress}
+            setProgress={setProgress}
+            lessonId={bridgeLesson}
+            openLesson={setBridgeLesson}
+            closeLesson={() => {
+              setBridgeLesson(null);
+              document.getElementById(`result-${task.id}`)?.focus();
+            }}
+          />
+        )}
+        {variant && (
+          <button
+            className="button secondary"
+            onClick={() => selectTask(variant.id)}
+          >
+            Mit anderen geprüften Zahlen üben
+          </button>
+        )}
         <TaskReference item={task} openModule={openModule} />
       </div>
     </section>
