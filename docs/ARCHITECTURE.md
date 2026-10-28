@@ -1,33 +1,30 @@
-# Architektur · Version 0.6
+# Architektur · Version 0.7
 
-Basis main `09a953b` enthält 0.5 vollständig. React/TypeScript/Vite/Tailwind, Navigation, lokaler Speicher und GitHub Pages bleiben erhalten. Keine Konten oder kostenpflichtigen Dienste.
+Ausgangspunkt main `8a1ba77` enthält Version 0.6 über PR #8. Branch `feat/interactive-technical-lab-v07` ergänzt die bestehende React-/TypeScript-/Vite-/Tailwind-App. Navigation, Artikel, Rundentest, Akademie, Prüfung, vorhandener Wärmeleistungsrechner und Speicherschutz bleiben erhalten. Kein Konto, Backend oder kostenpflichtiger Dienst.
 
-- `src/technical/calculations.ts`: zentraler Größen-/Einheitenvertrag mit SI-Umrechnung, Dispatch; alte Berechnungen erhalten.
-- `src/technical/foundations.ts`: begrenzte Schulmathematik und kontrollierte Bruchantworten.
-- `src/technical/deep.ts`: reine wiederverwendbare Geometrie-, Sinus-/Dreiphasen- und stationäre Wärmemodelle. Endliche Eingaben/Zwischenschritte, Nullbedingungen und Modellbereiche werden geprüft. Kein eval oder zweiter Rechenkern.
-- `src/academy/foundations/`: erhaltene Grundlagen, Adapter für drei Lesestufen/Fragen/Karten, Trainer und Lernbrücke. Die acht Mathematikmodule werden additiv vertieft; IDs und bestehende Lesemarkierungen bleiben erhalten.
-- `src/academy/deep/`: neue kuratierte Lektionen/Formeln/Zahlenaufgaben, endliche Trainerfälle, Diagramme, vier Fallsequenzen, Aussagenbelege und abgeleiteter Kompetenzgraph.
-- `catalog.ts`: gemeinsame Sicht für Akademie, Aufgaben, Suche, Prüfung und Fachregister.
-- `components/LessonReading.tsx`: gemeinsames Lesen für Modul und Lernbrücke; zeigt dieselben Herleitungen, Beispiele, Variablen, Quellenbelege und Modellgrenzen.
-- `exercises/`: bestehende Snapshots, gemeinsamer Grader und SI-Lösungsweg. Fallstudien referenzieren vorhandene Zahlen-/Auswahlaufgaben per ID. Keine kopierte Physiklogik.
-- `adaptive/`: vorhandene Lernzähler, Termine und Empfehlungen. Kein paralleles Kompetenz- oder Diagnosespeichersystem.
-- `storage/`: vorhandener Backup-Port, Importvalidierung, Vorschau und Wiederherstellungsjournal.
-- `quality/`: vollständiges Inhaltsregister, getrennte Nachweisarten, Quellenbewertungen und sichtbare Belege.
+## Ein Fachkern, mehrere Oberflächen
 
-## Gemeinsame Identitäten
+- `src/technical/calculations.ts`: bestehender Größen-/Einheitenvertrag, SI-Umrechnung und Dispatch. `foundations.ts` und `deep.ts` bleiben die reinen Fachfunktionen. Aufgaben und Labor verwenden denselben Dispatch, keine zweite Physikimplementierung.
+- `src/technical/expression.ts`: begrenzter reeller Arithmetikparser ohne eval, Namen, Funktionen oder symbolische Algebra. Token-, Tiefen-, Längen-, Potenz-, Nullnenner- und Endlichkeitsgrenzen; numerischer Unterlauf wird nicht als zuverlässige Null ausgegeben.
+- `src/lab/`: deklarative Rechnerdefinitionen mit stabiler ID, Modell-/Formel-ID, Zielgrößenart, Eingabefeldern/Einheiten, Erklärpaar, Grenzen und Lernverweisen. Ein Renderer bedient 26 Modell-/Zielvarianten; eigener Einheitenumrechner nutzt dieselben SI-Funktionen. Diagramme verwenden ebenfalls den Fachkern; Extreme ohne sichere Diagrammdomäne erhalten eine Textmeldung.
+- `src/workshop/`: Katalogadapter aus bestehenden LearningItems und wenigen neuen kuratierten Auswahl-/Umrechnungsaufgaben. Schrittfolgen referenzieren IDs. Rechenblatt und Hilfe sind Darstellungs-/Fortschrittsmetadaten; `snapshotItem`, `gradeSnapshot` und `recordOutcome` bleiben maßgeblich.
+- `src/language/`: getrennte sprachliche Ergänzungen zu gemeinsamen Fachobjekten. Context ist nur Darstellung, nie Bewertungsparameter. Globale Präferenz lebt im bestehenden Fortschritt; temporäre Lektionsausnahme verändert sie nicht. 23 Kernmodule haben drei einfache Erklärstufen, gemeinsame Beispiele/Herleitungen/Grenzen bleiben erhalten. Andere Module zeigen ihren ursprünglichen Text sichtbar gekennzeichnet.
+- `src/academy/`: vorhandener gemeinsamer Katalog, Leser, adaptives Lernen, Prüfungen, Trainer, Fälle und Kompetenzen. Lektionen öffnen passende Laborvarianten; Labor öffnet Fachlektion, eigene Übung und Transferfall. Werkstatt übernimmt keine Laborlösung als Nutzereingabe.
+- `src/quality/`: Gesamtprüfregister einschließlich neuer Sprachfassungen/Laborfälle; 76 Aussagenbelege trennen eigene Ableitung, Quellenabgleich, Zahlenreferenz und offene Fachfreigabe.
+- `src/storage/`: vorhandener Backup-Port, validierter Import, Vorschau und Wiederherstellungsjournal. Kein paralleler Speicher für die neuen Module.
 
-Alte Modul-, Formel-, Aufgaben- und Kompetenz-IDs bleiben gültig. Neue IDs benennen Fachinhalte, keine Arraypositionen. `competencyGraph()` leitet Voraussetzungen, Aufgaben, Formeln und Quellen aus dem Katalog ab. Neue Module sind in bestehende Fachgebiete eingeordnet; fremde Fachgebiete werden nicht mit duplizierten Kopien aufgefüllt.
+## Gemeinsame Identitäten und Grenzen
 
-Ein späterer Fachrechner kann dieselben SI-Funktionen aufrufen, benötigt aber zusätzliche Validierung seines professionellen Modells und seiner Daten. Eine plausible Übungszahl ersetzt keine Auslegungsfreigabe. Reale Stoffwerte und log-p-h bleiben eine gesonderte Schicht.
+Modul-, Formel-, Aufgaben-, Quellen- und Kompetenz-IDs bleiben stabil. `competencyGraph()` leitet Referenzen aus dem Katalog ab. Die fünf Laborgruppen sind keine zusätzlichen konkurrierenden Fachgebiete. Formeltexte und SI-Berechnungen werden nicht aus Benutzertext evaluiert. Formelsatz bleibt lokales KaTeX mit Fehlerfallback und MathML.
 
-## Datenvertrag
+Fortschrittsschema 3 und Backupformat 1 bleiben erhalten. Optionale Sprach-, Labor-, Werkstatt-/Trainermetadaten werden vor Import geprüft. Historische Prüfungen behalten ihre vollständigen damaligen Snapshots. Alte Sicherungen aus 0.4/0.5/0.6 sind anhand echter alter Exporter geprüft; neue Aufgaben/Metadaten werden nicht als in alten Apps rückwärtslesbar versprochen.
 
-Fortschritt bleibt Schema 3, Backup Format 1. Optionaler `exerciseDraft` speichert genau einen letzten Zahlenübungsentwurf: taskId, Revision, Antwort, Einheit, offene Grundlagenlektion, geprüft-Flag und Datum. Der Grader berechnet beim Fortsetzen den Status erneut aus dem aktuellen unveränderten Aufgabenstand. Abweichende Revisionen werden nicht als aktuelle Entwürfe aktiviert; beschädigte Daten blockieren unsichere Speicherung. Veraltete offene Prüfungssnapshots bleiben unabhängig vom neuen Katalog lesbar.
+Genau ein letzter Werkstatt-/Zahlenentwurf und ein letzter Laborzustand sind dauerhaft. Unbewertete Positionen der alten Fallstudien bleiben sitzungsbezogen; der Werkstatt-Umstellungstrainer hat nun einen optionalen dauerhaften Entwurf. Ein allgemeines Arbeitsheft oder Dateisystem ist nicht implementiert.
 
-Trainerposition und unbewertete Fall-Schrittposition sind sitzungsbezogen; bewertete Versuche werden regulär gespeichert. Keine erfundene dauerhafte Fallprüfungshistorie. Die neuen optionalen Felder benötigen keine destruktive Migration. Neue Aufgabenarten in Snapshots erfordern eine App ab 0.6; echte alte 0.4-/0.5-Backups sind vorwärtskompatibel getestet.
+## Vorbereitung der Plattform
 
-## Nachweise und Darstellung
+Reale Kältemittel-/Bauteildaten benötigen eigene Verträge für Herkunft, Lizenz, Revision, Bezug, Zustand, Gültigkeitsbereich und Fehler. log-p-h, Diagnose, Planung und Projektdokumentation dürfen den vorhandenen SI-/Formel-/Quellenkern verwenden, aber keine Lehrmodellwerte als geprüfte reale Daten ausgeben. Ein fachlicher Modellwechsel ist explizit, keine versteckte Änderung eines Rechners. Keine künstliche Kompetenzdiagnose.
 
-Aussagenbelege unterscheiden direkten Quellenabgleich, eigene mathematische Herleitung und unabhängige Zahlenreferenz. Der höchste Status setzt echte dokumentierte menschliche Fachprüfung voraus; er wird nirgends behauptet. Rechts-/Normquellen ohne Zugriff bleiben offen.
+## Auslieferung
 
-KaTeX und Schriftarten bleiben lokal. Formeln enthalten explizites TeX, lesbaren Alternativtext, Variablen, Einheiten und Gültigkeitsbereich. Normierter Diagrammverlauf und Textalternative sind gekoppelt; Farben allein tragen keine Information. Reine neue Inhaltsdaten werden als eigener Vite-Chunk ausgeliefert, um Inhalt und UI getrennt cachen zu können; alle bisherigen Pfade bleiben unverändert.
+Reine Sprachinhalte und bestehende Tiefeninhalte liegen in eigenen Build-Chunks, UI und Daten können getrennt gecacht werden. Vite-Basis `/kaeltemeister-pro/` bleibt bestehen. GitHub prüft Branch-Pushes und PRs; Pages veröffentlicht nur main nach Installation, Typprüfung, Tests, Build und Chromium/WebKit. Kein automatischer Merge.

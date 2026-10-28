@@ -117,3 +117,23 @@ Nicht jede verlinkte Formel wird dadurch als quellenbasiert geprüft markiert. D
 ### Rendering ist keine Fachprüfung
 
 KaTeX 0.19.1 und mhchem dienen nur der Darstellung. Bibliothekslizenz wird unter public/licenses/KaTeX.txt mitgeliefert. Fonts/CSS kommen aus demselben lokalen Paket, nicht von einem externen Dienst. Tests auf gültigen Formelsatz beweisen nicht, dass jede physikalische Aussage fachlich freigegeben ist.
+
+
+## Version 0.7 · tatsächlich verwendete Belege und Zugriffsgrenzen
+
+0.7 verwendet die oben dokumentierten tatsächlich eingesehenen offiziellen OpenStax-Archive/Fundstellen weiter: Prealgebra für Einheiten/Schulmathematik, College Physics (Wärmekapazität, P=UI, Ohmsches Gesetz, ebene Wärmeleitung), University Physics (reiner Sinus/Leistungsbeziehungen), Precalculus (Geometrie-/Algebragrundlage). Neue deutsche Erklärungen, Aufgaben, Diagramme und Zahlen sind eigene Inhalte; kein Buchvolltext oder fremde Abbildung wird kopiert.
+
+Neue Formelverknüpfungen sind ausdrücklich **eigene Ableitungen**: cp=Q̇/(ṁΔT), P=I²R bzw. U²/R aus P=UI und U=RI, geschlossener Vollzylinder aus Mantel plus zwei Kreisflächen, kapazitives Q mit ausdrücklich festgelegtem Vorzeichen. Der affine Umrechnungsrahmen nutzt dieselbe Größenart, Faktoren und ggf. Temperaturoffset; eine Druckbezugsänderung wird nicht behauptet. Diese Beziehungen besitzen eigene Aussagenbelege mit Rechentest und offener Fachabnahme, keinen erfundenen neuen direkten Buchabgleich.
+
+26 Laborvarianten und alle 105 Zahlenaufgaben haben getrennte feste SI-Referenzen. Die vier zentralen Fälle und Voraussetzungen stehen in CALCULATOR_VALIDATION. Zahlenprüfung belegt rechnerische Konsistenz, keine Messdaten, Stoffkennwerte, Normkonformität oder reale Auslegungsfreigabe.
+
+Am 28.10.2026 waren die gewünschten neuen Primär-/Forschungsseiten per HTTP 403 nicht zugänglich:
+
+- BIPM SI Brochure: https://www.bipm.org/en/publications/si-brochure
+- PTB Deutsche SI-Übersetzung: https://oar.ptb.de/resources/show/10.7795/310.20250299
+- Carpenter, Pan & Butler (2022), vom Auftrag benannte Ausgangsreferenz: https://doi.org/10.1038/s44159-022-00089-1
+- Yeo & Fazio (2019), vom Auftrag benannter ERIC-Eintrag: https://eric.ed.gov/?id=EJ1201272
+
+Kein Volltextzugriff, keine daraus behauptete konkrete Effektgröße oder Wirksamkeitsmessung. Aktives Abrufen, zeitliche Wiederholung, Beispiele, freiwillige gestufte Hilfe und Transfer sind nachvollziehbare Entwurfsprinzipien. Der Algorithmus ist einfach und offen dokumentiert, keine verifizierte individuelle Kompetenzdiagnose. Aktueller deutscher Berufsbildungs-/Meister-/Rechts-/Normabgleich bleibt nach den bereits dokumentierten Zugriffssperren offen. Keine erfundenen Norminhalte oder unabhängigen Prüfer.
+
+Das Gesamtregister enthält 876 Einträge, darunter 69 einfache Modul-/Niveaufassungen, drei einfache Artikel, zwölf einfache Begriffe und 27 Laborfälle. 76 Aussagenbelege trennen Nachweisarten. Alle menschlichen Freigaben sind weiterhin offen.

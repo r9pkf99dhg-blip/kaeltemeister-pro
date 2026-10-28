@@ -1,27 +1,36 @@
-# Fach- und Datenmodell · Version 0.6
+# Fach- und Datenmodell · Version 0.7
 
-## Ein gemeinsamer Katalog
+## Gemeinsamer Bestand
 
-14 Fachgebiete, 45 Module, 140 Modulfragen, 90 Karten, 77 Formeln und 97 Zahlenaufgaben. Module besitzen Grundlagen-, Fachkraft- und Transfertexte; die Bezeichnung Meisterniveau behauptet keine offizielle Prüfungsabdeckung. Alte IDs bleiben erhalten. `FoundationLesson` beschreibt Ziel, Nutzen, Inhalt/Begründung/Transfer, Beispiel, Herleitung, Fehler, Zusammenfassung, Voraussetzungen, Formeln, Quellen und Selbsttest. Vorhandene Adapter erzeugen daraus die regulären Module/Fragen/Karten.
+14 strukturierte Fachgebiete, 45 ausgearbeitete Module, 140 Modulfragen, 90 Karten, 83 Formeln, 105 Zahlenaufgaben, 38 Begriffe und 29 Kompetenzen. Fachgebiete ohne ausgearbeitete Lektionen bleiben geplant. Eine Bezeichnung „Meisterniveau“ behauptet keine offizielle Prüfungsabdeckung. Die Werkstatt bietet 255 Auswahl-/Aufgabeneinträge aus demselben Bestand, keine 255 neuen unabhängigen Zahlenmodelle.
 
-Voraussetzungen sind gerichtete Empfehlungen, keine Zugangssperren. Der Modulgraph wird auf gültige IDs und Zyklen geprüft. Ein Kompetenzziel verweist auf eine vorhandene Lektion; Aufgaben benötigen mehrere Teilkompetenzen. Der Kompetenzgraph leitet Formeln, Aufgaben und Quellen ab, statt einen widersprüchlichen zweiten Fortschrittscache zu speichern.
+`Formula` hält stabile ID, Ausdruck/TeX, Variablen, Einheit, Gültigkeit und Quellen. `NumericTask` referenziert Modell, gegebene Größen, Ziel, Toleranzen, Schritte/Fehler und Fachartikel. `ChoiceTask` hält Optionen und Erklärung. Vollständige Prüfungssnapshots sind von späteren Katalogänderungen getrennt.
 
-## Formeln, Aufgaben und Größen
+## Ergänzungen 0.7
 
-`Formula`: stabile ID, Titel, Textausdruck, explizites TeX, Variablenbedeutung/Einheit, Gültigkeit und Quellen. Darstellung führt keine Programme aus. `NumericTask`: Modell-ID, gegebene Größen/Einheiten, gesuchte Größe, Toleranz, Hinweis, Musterlösung, Fehler, Modellannahmen, Artikel/Formelbezug und Kompetenzen. `ChoiceTask`: Optionen und erklärter Lösungsschlüssel. Prüfungen speichern vollständige Snapshots mit damaligem SI-Sollwert; neue Kataloginhalte schreiben alte Prüfungen nicht um.
+- `CalculatorDefinition`: id, group, kind (SI-Funktion), formulaId, quantity, answerUnit, inputs, explanation/limits {simple, technical}, moduleId, exerciseId. 26 Definitionen plus allgemeiner Einheitenumrechner. Laborformeln sind reguläre Formeln, kein zweites Formelregister.
+- `WorkshopEntry`: Art, Fachgebiet, Thema, Niveau und referenzierte Aufgaben-IDs. Acht Arten; Mehrschritt-/Fehlerkorrekturfolgen verwenden vorhandene LearningItems und denselben Grader.
+- `SimpleCore`: sprachliche Ergänzung nach Modul-ID und Lesestufe. Nur Texte unterscheiden sich; gemeinsame Formel, Beispiel, Modellgrenze, Quelle und Bewertung bleiben maßgeblich. 23 Module × drei Erklärstufen, drei Artikel und zwölf Glossarbegriffe; übrige Darstellungen bleiben ausdrücklich ursprünglich.
+- `NumericTask.answerSyntax?: 'arithmetic'`: sichere begrenzte Arithmetik in Werkstattantworten. Nicht gesetzte historische Aufgaben behalten ihren bisherigen Zahlen-/Bruchvertrag.
+- `Performance.support?`: korrekte Versuche getrennt nach independent/hint/worked, zuletzt verwendete Unterstützung einschließlich unknown. Zähler müssen zusammen kleiner/gleich correctCount sein. Alte Versuche werden nicht nachträglich als selbstständig eingestuft.
 
-Der gemeinsame Größenvertrag ergänzt Winkel, Frequenz, Induktivität, Kapazität, Schein-/Blindleistung, Volumenstrom, spezifisches Volumen/spezifische Energie, Wärmeleitfähigkeit, Wärmewiderstand und Wärmedurchgang. W, VA und var sind verschiedene Ergebnisgrößen. Negative reelle Antworten sind auf quantity `number` beschränkt; gerichtete thermische/elektrische Modelle sind hier nicht allgemein gelöst. Aufgabenbereiche und numerische Grenzen werden explizit validiert.
+## Größen und Vorzeichen
 
-## Fachliche Nachweise
+SI-Umrechnung bleibt gemeinsam. W, VA, var und Energie sind verschiedene Größenarten. Celsius/Kelvin: absolut mit Offset, Differenz ohne Offset. Druckumrechnung behält den Bezug; ein Wechsel zwischen Über- und Absolutdruck braucht einen bekannten Umgebungsdruck und ist kein stiller Einheitenwechsel.
 
-`ClaimEvidence`: Aussage, Fachgebiet/Module/Formeln, Quellentyp/-ID/Fundstelle, Prüfdatum, Modellart, Annahmen, Grenzen und getrennte Nachweisarten. `humanReview` ist überall null; keine unabhängige Freigabe wird vergeben. `SourceEvaluation`: Autorität, Eignung, Aktualität, Grenzen und offener Widerspruchsabgleich. Ein gelesener Lehrbuchlink ist keine Norm und kein Volltextnachweis der ganzen Lektion.
+Reelle Zahlen, Winkel, Temperaturdifferenzen und Blindleistung dürfen im SI-Vertrag Vorzeichen besitzen. Der konkrete Rechner begrenzt zusätzlich sein Modell: Wärmeleistung/-leitung verwendet hier nicht negative Beträge, cp und Nenner positive Werte; kapazitives Q ist ausdrücklich negativ. Dies ist keine allgemeine gerichtete Anlagenbilanz. Negative absolute Kelvinwerte, ungültige Einheiten, Nullnenner und nicht endliche Resultate werden abgefangen.
 
-## Lernfortschritt und Sicherung
+## Bestehender Fortschrittsvertrag
 
-Fortschritt bleibt Schema 3 unter dem bisherigen v3-Schlüssel: `read`, `answers`, `reviews`, `legacySummary`, `performance`, `exerciseAnswers`, `recentModules`, `activeExam`, `examHistory`, `updatedAt`. Bisherige Grenzen (fünf letzte Module, 20 Prüfungsergebnisse) bleiben bestehen. Keine erfundene historische Versuchszahl aus einer alten Einzelantwort.
+Schema 3 unter demselben v3-Schlüssel bleibt gültig. `read`, `answers`, `reviews`, `performance`, `exerciseAnswers`, `recentModules` (fünf), `activeExam`, `examHistory` (20) und Legacydaten bleiben erhalten. Optional neu:
 
-Neu ist der optionale `exerciseDraft`: taskId, revision, answer {value, unit}, bridgeLessonId, checked, updatedAt. Genau ein letzter Entwurf, validierte Struktur und Textlängen. Aktueller Grader wertet den erhaltenen Entwurf nach Neuladen neu aus; geänderte Revisionen werden nicht als aktueller Entwurf aktiviert. Alte 0.4-/0.5-Dateien ohne dieses Feld bleiben gültig.
+- `preferences.explanation` = simple/technical.
+- `labDraft`: letzter Rechner, Eingabeausdrücke/Einheiten, Datum. Ergebniseinheit und eingeschalteter Sofortmodus sind sitzungsbezogen.
+- `exerciseDraft.workspace = 'workshop'` und `workshop`: entryId, kind, mode, sieben Rechenblattfelder, Hilfegrad, Schritt, Antworten und geprüfte IDs, Lösung geöffnet. Vorhandene taskId/revision/answer/bridgeLessonId/checked/updatedAt bleiben bestehen.
+- `exerciseDraft.trainer`: ausgewählter kuratierter Fall, Schritt, Antwort und Prüfstatus.
 
-Exportformat 1 und Wiederherstellungsjournal bleiben erhalten. Historische echte 0.4-/0.5-Exporterfixtures prüfen Karten, Lernstände, Termine, alte Snapshots und aktive/abgeschlossene Prüfungen. Neue Aufgabentypen benötigen 0.6 oder später; keine Zusage für den Import neuer Inhalte in alte Apps. Unbekannte/beschädigte Daten werden geschützt, nicht automatisch überschrieben. Keine Gerätesynchronisation.
+Die Struktur ist begrenzt (u. a. Zahlenausdruck 200 Zeichen, Notizfeld 2000), optionale Felder sind validiert. Browserimport ersetzt erst nach vorhandener Vorschau/Bestätigung und mit Journal. Fremder Tab oder nicht sicher lesbarer Speicher sperrt weiterhin Schreiben. Kein stilles Cloudbackup.
 
-Trainer-/Fall-Schrittpositionen und unbewertete Fallantworten sind sitzungsbezogen; bewertete Versuche landen im gleichen Lernvertrag. Quellen/Formeln/Kompetenzen sind für spätere Rechner, log-p-h, Diagnose und Planung vorbereitet, reale Daten benötigen eigene geprüfte Verträge.
+## Kompatibilität
+
+Echte Fixtures aus main 0.4 `163b9b7`, 0.5 `09a953b`, 0.6 `8a1ba77` wurden mit dem jeweiligen alten Exporter erzeugt. Vollständiger unveränderter Import und Wiederexport werden getestet, einschließlich Karten, Termine, historische und laufende Prüfungen und 0.6-Lernbrückenentwurf. Neue optionalen Metadaten benötigen keine destruktive Migration; neue Sicherungen gehören in eine aktuelle App. Daten sind ausschließlich im Browserprofil derselben Origin gespeichert.

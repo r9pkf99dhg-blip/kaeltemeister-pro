@@ -28,12 +28,24 @@ Jede abgeschlossene Etappe wurde normal auf GitHub gepusht. Dies sind historisch
 - GitHub fand zwei echte Darstellungsregressionen: 1 px WebKit-Überstand bei 200 % Schrift sowie sieben Navigationspunkte in bisher fünf mobilen Spalten. Umbruch-/Minimalbreiten begrenzt und Navigation auf sieben passende Spalten korrigiert; kein Ausblenden des gesamten Überlaufs, keine Tests deaktiviert. Vollständiger korrigierter Chromium-Lauf: 185/185 erfolgreich. Statistik-Karten zusätzlich gegen intrinsischen Überstand abgesichert. WebKit-Status für diesen neuen Stand noch bestätigen.
 - Neuer Browserablauf: falsche Einheit → einfache Lernbrücke → Rückkehr mit Eingabe, Einheit, Rechenblatt und unveränderter globaler Präferenz; große Schrift auch in neuen Ansichten.
 
-## Noch abzuschließen
+## Etappe 9 · Abschlussdokumentation und Veröffentlichung
 
-1. Vollständige Chromium-Regression bestanden; GitHub Chromium/WebKit für korrigierten Stand abwarten, jeden verbleibenden Fehler untersuchen; keine grünen Ergebnisse vorwegnehmen.
-2. Sprach-/Laborinhalte im Fachprüfregister erfasst: 876 Einträge, 76 Aussagenbelege. Sprachkern auf 23 Module ergänzt. Theorie→Labor-Verweise und numerische Unterlaufkontrollen separat getestet. Dokumentierte Nachweisgrenzen beibehalten. Quellenzugriff: BIPM/PTB sowie genannte Lernstudienseiten lieferten HTTP 403; kein behaupteter Volltextzugriff. Bestehende tatsächlich gelesene OpenStax-Fundstellen weiterverwenden, eigene Ableitungen kennzeichnen.
-3. Architektur, Lernsystem, Datenmodell, Quellen, Roadmap, Labor-, Werkstatt-, Sprach-/Validierungsanleitungen und Release/PR-Beschreibung auf tatsächlichen 0.7-Stand bringen. App-/Backupversion anpassen.
-4. Nach grünen Prüfungen Commit/normaler Push; aktuellen Remote-main-Vergleich und Merge-Konflikte prüfen. PR mit vorbereitetem Text versuchen. Git-HTTPS funktioniert, GitHub API bisher HTTP 403. Bei fehlender Berechtigung direkten Vergleichslink und genaue manuelle Schritte bereitstellen.
+- README, ARCHITECTURE, DOMAIN_MODEL, LEARNING_SYSTEM, SOURCES, QUALITY_ASSURANCE, ROADMAP, Apple-Testplan und Fachprüfumfang auf 0.7 aktualisiert. Neue TECHNICAL_LAB, EXERCISE_WORKSHOP, LANGUAGE_LEVELS, CALCULATOR_VALIDATION, RELEASE_V07 und vollständige PULL_REQUEST_0_7.md vorhanden. App/Export melden 0.7.0. Alle lokalen Markdown-Dateiverweise auf Existenz geprüft.
+- Funktionsstand **`f744aa2`** normal hochgeladen. Frische Installation/Typprüfung/409 Tests/Build und 185 lokale Chromium-Prüfungen erfolgreich; nach Korrektur des erklärenden Backup-Hinweises Typprüfung, dieselben 409 Tests und Build erneut erfolgreich.
+- **[GitHub-Lauf 40725723803](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40725723803): Success, 296/296 Browserprüfungen (185 Chromium + 111 WebKit)**. Bestehende Funktionsprüfungen nicht umgangen. Frühere rote Läufe bleiben sichtbar. Emulierte Laboransichten zusätzlich visuell geprüft, keine behauptete Apple-Hardwareprüfung.
+- main `8a1ba77` erneut abgeglichen: vor Abschlussdokumentation 0 fremde main-Commits / zehn eigene Commits; Feature-Remote und lokal identisch. `git merge-tree --write-tree origin/main HEAD` erfolgreich ohne Konflikte. Kein Merge ausgeführt.
+- PR-Versuch `gh pr create --repo r9pkf99dhg-blip/kaeltemeister-pro --base main --head feat/interactive-technical-lab-v07 --body-file docs/PULL_REQUEST_0_7.md`: GitHub API HTTP 403/Forbidden (auch CONNECT zu api.github.com bestätigt). Andere verfügbare Tools bieten keine autorisierte GitHub-PR-Erstellung. Öffentliche PR-Suche zeigte null Treffer für diesen Quellbranch. Kein PR-Link erfunden, keine unsichere Umgehung.
+
+## Verbleibende Veröffentlichungsschritte
+
+1. Aktuellen Dokumentationscommit normal pushen und seinen vollständigen CI-Status prüfen. Funktionscode ist bereits vollständig grün; neuester Check muss vor Merge ebenfalls grün sein.
+2. Vergleich öffnen: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/interactive-technical-lab-v07?expand=1
+3. Auf dem iPad **Create pull request**, Titel aus RELEASE_V07 und Beschreibung aus PULL_REQUEST_0_7.md übernehmen, erneut **Create pull request**. `main` als Ziel, bestehenden Branch als Quelle belassen.
+4. Nur nach deiner ausdrücklichen Freigabe/grünen Checks **Merge pull request → Confirm merge**. Dies wird hier nicht automatisch ausgeführt. Branch nicht löschen.
+5. Grünen automatischen main-Lauf **Deploy to GitHub Pages** abwarten; alternativ **Run workflow → main → Run workflow**. Offizielle Pages-Actions, erforderliche Berechtigungen und Basispfad `/kaeltemeister-pro/` unverändert geprüft. Der Branch-Push veröffentlicht nicht die Live-Seite.
+6. Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ · Version 0.7 kontrollieren. Vorher Lernstand sichern; vollständige Geräte-/Referenzschritte in RELEASE_V07.
+
+Keine weitere funktionale Implementierung ist für diesen abgeschlossenen 0.7-Umfang offen. Falls der neueste CI-Lauf einen Fehler findet: konkrete Ursache bearbeiten, zugehörige Prüfung erneut ausführen, Commit und normaler Push. Verbleibende fachliche/Gerätegrenzen unten und in ROADMAP sind keine vorgetäuscht erledigten Freigaben.
 
 ## Bewusst offen
 
