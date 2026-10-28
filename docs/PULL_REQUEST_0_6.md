@@ -18,7 +18,7 @@ Offizielle OpenStax-Gitarchive tatsächlich eingesehen, mit vollständigen Commi
 
 ## Validierung
 
-Aktuelle tatsächliche Ergebnisse und CI-Link: docs/NEXT_STEPS.md und docs/QUALITY_ASSURANCE.md. TypeScript, Unit-/Integrationstests, Produktionsbuild, Chromium-Browser und Workflow-Lint werden lokal geprüft. GitHub CI prüft zusätzlich drei WebKit-Konfigurationen. Echte iPad-/iPhone-Hardwareprüfung und unabhängige Fachabnahme bleiben offen. Anfangs veraltete Browsererwartungen wurden auf die tatsächlich neuen verfügbaren Module angepasst, keine Prüfung entfernt.
+Bestätigter vollständiger Code-Lauf: [40656718539](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40656718539) auf `05f53da`: 323 Unit-/Integrationstests, Installation, TypeScript, Build und 248 Browserprüfungen erfolgreich (155 Chromium + 93 WebKit). Details: docs/NEXT_STEPS.md und docs/QUALITY_ASSURANCE.md. TypeScript, Unit-/Integrationstests, Produktionsbuild, Chromium-Browser und Workflow-Lint werden lokal geprüft. GitHub CI prüft zusätzlich drei WebKit-Konfigurationen. Echte iPad-/iPhone-Hardwareprüfung und unabhängige Fachabnahme bleiben offen. Anfangs veraltete Browsererwartungen wurden auf die tatsächlich neuen verfügbaren Module angepasst, keine Prüfung entfernt.
 
 GitHub Pages bleibt auf `/kaeltemeister-pro/`, automatischer main-Push und manueller Start erhalten. PRs veröffentlichen nicht. Vor Merge müssen die neuesten Checks erfolgreich sein. Übernahme ausschließlich nach ausdrücklicher Freigabe.
 

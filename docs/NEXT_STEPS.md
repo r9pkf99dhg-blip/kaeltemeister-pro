@@ -17,12 +17,18 @@ Branch: `feat/deep-learning-academy-v06`. Grundlage main `09a953b` (Merge #7, vo
 | 8b Gemeinsame Begriffe | 22a7525 | Zwölf neue Glossarbegriffe mit Modulverweisen/Suche; 322 Tests und 155 Chromium-Prüfungen grün |
 | 8c Abschlusskorrekturen | 05f53da | Thermo-Grundlagenprüfung, Diagrammfrage und WebKit-Umbruch; 323 Tests/24 Dateien, Typprüfung, Build, vollständiger Chromium-Lauf 155 grün; nach CSS-Korrektur 24 gezielte Browserfälle grün. Neueste vollständige CI zusätzlich prüfen |
 
-Weitere abgeschlossene Prüf-/Dokumentationsetappen stehen in der folgenden Commit-Historie. Nach jeder Etappe wurde normal gepusht. Der letzte hochgeladene Commit ist die Wiederaufnahmebasis; dessen Identität vor Weiterarbeit tatsächlich mit `git ls-remote` vergleichen.
+Dokumentation und Veröffentlichungsvorbereitung: `508e287`. Die PR-Erstellung blieb trotz funktionierendem Push durch API-403 blockiert. Nach jeder Etappe wurde normal gepusht. Der letzte hochgeladene Commit ist die Wiederaufnahmebasis; dessen Identität vor Weiterarbeit tatsächlich mit `git ls-remote` vergleichen.
 
-## Noch abzuschließen
+## Bestätigter Abschluss
 
-- Neueste GitHub-Prüfung einschließlich WebKit auf dem Dokumentations-HEAD prüfen. 323 lokale Tests, reproduzierbare npm-Installation, Typprüfung, Build und actionlint sind erfolgreich. Komplettlauf: 155 Chromium-Szenarien; nach gezielter WebKit-CSS-Korrektur 24 fokussierte Fälle erneut erfolgreich. GitHub hatte zuvor genau einen iPhone-WebKit-Überlauf bei großer Schrift gemeldet, der ausdrücklich behoben und erneut zu prüfen ist.
-- Pull Request mit docs/PULL_REQUEST_0_6.md erstellen. API bisher HTTP 403; wenn erneut blockiert, Vergleichslink verwenden.
+Korrigierter Code `05f53da`: [GitHub-Lauf 40656718539](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40656718539) erfolgreich. 248 Browserprüfungen ohne verbleibenden Fehler: 155 Chromium und 93 WebKit, einschließlich iPhone bei 200 Prozent Schrift. npm-Installation, TypeScript, 323 Tests und Build ebenfalls erfolgreich. Der zuvor gefundene WebKit-Überlauf ist damit im vollständigen Lauf behoben. Nachfolgende Commits dokumentieren diesen unveränderten Funktionsstand und die blockierte PR-Erstellung.
+
+Remotevergleich am Abschluss: main bleibt `09a953b`, Entwicklungsbranch ist konfliktfrei; Merge-Simulation ohne Konflikt. Keine tatsächliche Zusammenführung. Kein Force-Push oder Löschen. Letzten Dokumentations-HEAD vor Merge wie jeden neuen PR-Stand nochmals in Actions prüfen.
+
+## Noch manuell / fachlich abzuschließen
+
+- Vor dem späteren Merge sicherstellen, dass die neuesten PR-Checks weiterhin erfolgreich sind. Bestätigter vollständiger Code-Lauf einschließlich WebKit: siehe oben.
+- PR-Erstellung am Abschluss erneut mit autorisiertem gh versucht: GraphQL POST Forbidden (HTTP 403). Keine weitere verfügbare GitHub-Connector-Methode. Git-Push funktioniert; eine PR wurde nicht erstellt. Direkten Vergleichslink und docs/PULL_REQUEST_0_6.md verwenden.
 - Merge nur nach ausdrücklicher Freigabe; dann main-Pages-Lauf und 0.6 auf der Website prüfen.
 - Echte iPad/iPhone-Hardwareprüfung gemäß APPLE_TEST_PLAN; kein solcher Test hier behauptet.
 - Unabhängige menschliche Fachprüfung und gezielter externer Abgleich eigener Ableitungen; aktuelle Meister-/Ausbildungs-/KMK-/BIPM-/DGUV-Primärquellen waren technisch blockiert.
