@@ -1,5 +1,6 @@
 /** Geprüfte SI-Lehrmodelle; verwendbar von Aufgaben und späteren Rechnern. Kein eval/CAS. */
 export const deepKinds = [
+ "heat-cp", "dc-power-i2r", "dc-power-u2r", "cylinder-total-surface", "ac-reactive-capacitive",
   "pressure-absolute",
   "specific-volume",
   "volume-to-mass",
@@ -57,6 +58,11 @@ export function calculateDeep(
   };
   let r: number;
   switch (kind) {
+    case "heat-cp":r=div(p('heat'),p('massFlow')*p('deltaT'));break;
+    case "dc-power-i2r":r=p('current',true)**2*p('resistance');break;
+    case "dc-power-u2r":r=div(p('voltage',true)**2,p('resistance'));break;
+    case "cylinder-total-surface":r=calculateDeep('cylinder-surface',values)+2*calculateDeep('circle-area',values);break;
+    case "ac-reactive-capacitive":r=-calculateDeep('ac-reactive',values);break;
     case "pressure-absolute":
       r = p("gauge", true) + p("ambient");
       break;
