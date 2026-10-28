@@ -46,7 +46,7 @@ export default function Workshop({progress,setProgress,openModule,openExam,initi
  {entry.kind==='rearrangement'?<RearrangementTrainer setProgress={setProgress} workshop progress={progress}/>:item&&<div className="workshop-body">
  <div className="academy-panel"><p className="pill">{workshopKindNames[entry.kind]} · Schritt {state.step+1} von {entry.itemIds.length}</p><TaskPrompt item={item}/>
  {state.mode==='guided'&&<div className="notice"><Explain simple="Lies zuerst Gegeben und Gesucht. Wähle dann den Zusammenhang. Notiere die Umstellung und rechne die Einheiten um. Erst am Ende runden." technical="Geführte Bearbeitung: Größen-/Modellzuordnung, Äquivalenzbedingungen, SI-Umrechnung, Einsetzen und Plausibilitätsprüfung. Dieser Modus gilt als unterstütztes Lernen."/></div>}
- <TaskAnswer item={item} answer={answer} onChange={a=>{setAnswer(a);setValidation('');setState(s=>({...s,checkedIds:s.checkedIds?.filter(id=>id!==item.id)}));setBridge(null);setSkipBridge(false);}}/>
+ <TaskAnswer item={snapshot?.item??item} answer={answer} onChange={a=>{setAnswer(a);setValidation('');setState(s=>({...s,checkedIds:s.checkedIds?.filter(id=>id!==item.id)}));setBridge(null);setSkipBridge(false);}}/>
  <p className="small-muted">Zahlenfeld: Dezimalkomma, Brüche, wissenschaftliche Schreibweise und einfache Arithmetik mit Klammern. Die Einheit separat wählen. Keine freie symbolische Algebra.</p>
  <button className="button primary" disabled={!!checked} onClick={check}>Werkstatt-Ergebnis prüfen</button>
  {validation&&<p role="alert" className="notice">{validation}</p>}

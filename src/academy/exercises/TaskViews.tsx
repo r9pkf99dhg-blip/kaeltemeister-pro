@@ -80,7 +80,7 @@ export function TaskAnswer({
         <input
           id={`result-${item.id}`}
           maxLength={200}
-          inputMode={item.quantity === "number" ? "text" : "decimal"}
+          inputMode={item.quantity === "number" || item.answerSyntax==="arithmetic" ? "text" : "decimal"}
           value={answer.value}
           disabled={disabled}
           onChange={(event) =>

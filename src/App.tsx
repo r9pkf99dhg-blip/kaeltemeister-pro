@@ -1,3 +1,4 @@
+import TechnicalLab from "./lab/TechnicalLab";
 import Workshop from "./workshop/Workshop";
 import { simpleArticles } from "./language/articles";
 import { Explain, ExplanationProvider, ExplanationPreference } from "./language/Explanation";
@@ -39,11 +40,12 @@ import Academy from "./academy/Academy";
 import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
-type Page = "dashboard" | "lernen" | "quiz" | "rechner" | "akademie" | "werkstatt";
+type Page = "dashboard" | "lernen" | "quiz" | "rechner" | "akademie" | "werkstatt" | "labor";
 const navigation = [
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
   { id: "werkstatt" as const, label: "Übungswerkstatt", icon: Calculator },
+  { id: "labor" as const, label: "Techniklabor", icon: Calculator },
   { id: "lernen" as const, label: "Lernbereich", icon: BookOpen },
   { id: "quiz" as const, label: "Wissensquiz", icon: CircleHelp },
   { id: "rechner" as const, label: "Rechner", icon: Calculator },
@@ -124,6 +126,7 @@ function Application({
       window.location.href,
     );
     const back = (event: PopStateEvent) => {
+      setWorkshopInitialId(null);
       const next = event.state?.kaeltePage;
       setPage(navigation.some((n) => n.id === next) ? next : "dashboard");
       setAcademyModuleId(
@@ -171,6 +174,7 @@ function Application({
     }
   }, [progress, initialProgress.readFailed, storageBlocked]);
   function navigate(next: Page) {
+    if(next!=="werkstatt")setWorkshopInitialId(null);
     window.history.pushState(
       { kaeltePage: next, moduleId: null },
       "",
@@ -399,8 +403,8 @@ function Application({
                 <Stat
                   icon={<Zap size={22} />}
                   label="Wissen für die Praxis"
-                  value="1 Rechner"
-                  detail="Wärmeleistung einfach berechnen"
+                  value="5 Laborbereiche"
+                  detail="Gemeinsame Modelle lernen und berechnen"
                   tint="blue"
                 />
               </div>
@@ -618,6 +622,7 @@ function Application({
               }
             />
           )}
+          {page === "labor" && <TechnicalLab progress={academy.progress} setProgress={academy.setProgress} openModule={id=>{setAcademyModuleId(id);setAcademyView('overview');navigate('akademie');}} practice={id=>{setWorkshopInitialId(id);navigate('werkstatt');}}/>}
           {page === "werkstatt" && <Workshop progress={academy.progress} setProgress={academy.setProgress} initialItemId={workshopInitialId} openModule={id=>{setAcademyModuleId(id);setAcademyView('overview');navigate('akademie');}} openExam={()=>{setAcademyModuleId(null);setAcademyView('exam');navigate('akademie');}}/>}
           {page === "rechner" && <HeatCalculator />}
           {page === "akademie" && (
