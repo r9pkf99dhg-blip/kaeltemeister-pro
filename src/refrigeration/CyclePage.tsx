@@ -1,3 +1,5 @@
+import ReferencePanel from "./ReferencePanel";
+import { referenceProof } from "./backend";
 import ReferenceNotice from "./ReferenceNotice";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import type { AcademyProgress } from "../academy/model";
@@ -53,8 +55,30 @@ export default function CyclePage({
           wird nicht automatisch überschrieben.
         </p>
       )}
+      <fieldset className="cycle-model">
+        <legend>Lernmodell wählen</legend>
+        <button
+          className="button secondary"
+          aria-pressed={d.mode === "qualitative"}
+          onClick={() => update({ mode: "qualitative" })}
+        >
+          A · Qualitativ
+        </button>
+        <button
+          className="button secondary"
+          aria-pressed={d.mode === "reference"}
+          disabled={!referenceProof().ok}
+          onClick={() => update({ mode: "reference" })}
+        >
+          B · R134a-Referenzfälle
+        </button>
+      </fieldset>
       <section className="academy-panel">
-        <h2>Modell A · Qualitativ verstehen</h2>
+        <h2>
+          {d.mode === "qualitative"
+            ? "Modell A · Qualitativ verstehen"
+            : "Kreislaufschema zum Referenzmodell"}
+        </h2>
         <p>
           Diese Ansicht erklärt Zusammenhänge ohne erfundene Druck-, Temperatur-
           oder Enthalpiewerte. Das Modell vernachlässigt Druckverluste und
@@ -116,6 +140,17 @@ export default function CyclePage({
           </button>
         </div>
       </section>
+      {d.mode === "reference" && (
+        <ReferencePanel
+          d={d}
+          update={update}
+          progress={progress}
+          setProgress={setProgress}
+          openModule={openModule}
+          practice={practice}
+          openMissions={openMissions}
+        />
+      )}
       <ReferenceNotice />
       <p>
         Modell C mit freien Stoffzuständen wird erst nach belastbarem

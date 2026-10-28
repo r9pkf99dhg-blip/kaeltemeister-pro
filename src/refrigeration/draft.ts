@@ -7,6 +7,7 @@ export interface CycleDraft {
   point: number;
   component: number;
   massFlow: string;
+  appliedMassFlow?: number;
   showIsotherms: boolean;
   showQuality: boolean;
   showProcess: boolean;
@@ -22,6 +23,7 @@ export const initialCycleDraft = (): CycleDraft => ({
   point: 1,
   component: 0,
   massFlow: "0,05",
+  appliedMassFlow: 0.05,
   showIsotherms: false,
   showQuality: false,
   showProcess: true,
@@ -32,6 +34,11 @@ export const initialCycleDraft = (): CycleDraft => ({
 export function validCycleDraft(d: unknown): d is CycleDraft {
   return (
     record(d) &&
+    (d.appliedMassFlow === undefined ||
+      (typeof d.appliedMassFlow === "number" &&
+        Number.isFinite(d.appliedMassFlow) &&
+        d.appliedMassFlow >= 0 &&
+        d.appliedMassFlow <= 1)) &&
     d.schemaVersion === 1 &&
     integer(d.datasetRevision) &&
     d.datasetRevision >= 1 &&
