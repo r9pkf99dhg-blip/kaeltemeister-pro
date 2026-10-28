@@ -1,3 +1,4 @@
+import Workshop from "./workshop/Workshop";
 import { simpleArticles } from "./language/articles";
 import { Explain, ExplanationProvider, ExplanationPreference } from "./language/Explanation";
 import QualityPanel from "./quality/QualityPanel";
@@ -38,10 +39,11 @@ import Academy from "./academy/Academy";
 import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
-type Page = "dashboard" | "lernen" | "quiz" | "rechner" | "akademie";
+type Page = "dashboard" | "lernen" | "quiz" | "rechner" | "akademie" | "werkstatt";
 const navigation = [
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
+  { id: "werkstatt" as const, label: "Übungswerkstatt", icon: Calculator },
   { id: "lernen" as const, label: "Lernbereich", icon: BookOpen },
   { id: "quiz" as const, label: "Wissensquiz", icon: CircleHelp },
   { id: "rechner" as const, label: "Rechner", icon: Calculator },
@@ -112,6 +114,7 @@ function Application({
   storageBlocked: boolean;
   onRestored: () => void;
 }) {
+  const [workshopInitialId,setWorkshopInitialId]=useState<string|null>(null);
   const [page, setPage] = useState<Page>("dashboard");
   const [navigationEpoch, setNavigationEpoch] = useState(0);
   useEffect(() => {
@@ -221,7 +224,7 @@ function Application({
               key={id}
               aria-current={page === id ? "page" : undefined}
               className={`nav-item ${page === id ? "active" : ""}`}
-              onClick={() => navigate(id)}
+              onClick={() => {if(id==="werkstatt")setWorkshopInitialId(null);navigate(id);}}
             >
               <Icon size={20} />
               <span>{label}</span>
@@ -284,6 +287,7 @@ function Application({
                   MEISTERSCHULE EDITION <Snowflake size={15} />
                 </span>
               </div>
+              {academy.progress.exerciseDraft?.workspace==='workshop'&&<section className="notice"><p>Ein Werkstattentwurf ist gespeichert.</p><button className="button secondary" onClick={()=>{setWorkshopInitialId(null);navigate('werkstatt');}}>Werkstattentwurf fortsetzen</button></section>}
               <LearningDashboard
                 progress={academy.progress}
                 error={storageError ? null : academy.error}
@@ -614,6 +618,7 @@ function Application({
               }
             />
           )}
+          {page === "werkstatt" && <Workshop progress={academy.progress} setProgress={academy.setProgress} initialItemId={workshopInitialId} openModule={id=>{setAcademyModuleId(id);setAcademyView('overview');navigate('akademie');}} openExam={()=>{setAcademyModuleId(null);setAcademyView('exam');navigate('akademie');}}/>}
           {page === "rechner" && <HeatCalculator />}
           {page === "akademie" && (
             <Academy

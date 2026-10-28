@@ -1,3 +1,4 @@
+import { workshopQuestions } from "../workshop/data";
 import { deepClaims } from "../academy/deep/claims";
 import { evidenceStatusNames } from "./evidence";
 import { trainerQuestions } from "../academy/foundations/trainer-data";
@@ -106,6 +107,7 @@ const formulaSourceChecked = (id: string, ids: string[]) =>
   sourceReviewedFormulaIds.has(id) && referencedSource(ids);
 /** Explizite Abdeckung; ein Quellenlink allein setzt niemals den Status auf fachlich freigegeben. */
 export const reviewRegister: ReviewEntry[] = [
+ ...workshopQuestions.map(q=>entry(q.id,q.title,"workshop-question",q.domainId,{status:"automatic",reference:q.explanation,scope:"Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen."})),
   ...deepClaims.map((c) =>
     entry(c.id, c.statement, "claim", c.domainId, {
       status: c.checks.includes("sourced")

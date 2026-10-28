@@ -1,3 +1,4 @@
+import { workshopFormula } from "../workshop/data";
 import { deepTerms } from "./deep/terms";
 import { case_lessons } from "./deep/case-lessons";
 import { thermal_lessons } from "./deep/thermal-lessons";
@@ -82,6 +83,7 @@ export const flashcards = [
   ...foundationLessons.flatMap(lessonCards),
 ];
 export const formulas = [
+  workshopFormula,
   ...baseFormulas,
   ...electricalFormulas,
   ...mathematicsFormulas,

@@ -2593,3 +2593,15 @@ progress::-moz-progress-bar {
 .language-preference p { flex-basis:100%; font-size:.85rem; margin:.3rem 0 0; }
 .lesson-language { display:grid; gap:.5rem; margin:1rem 0; }
 .lesson-language select { min-width:0; max-width:100%; width:100%; padding:.8rem; border:1px solid #c6d4d2; border-radius:.5rem; }
+
+.workshop-filters {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:1rem;margin:1.5rem 0;}
+.workshop-filters label,.workshop-picker {display:grid;gap:.5rem;min-width:0;}
+.workshop select,.workshop textarea {width:100%;min-width:0;max-width:100%;border:1px solid #b8c9c4;border-radius:.5rem;padding:.75rem;background:white;color:#213c35;}
+.workshop-body {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.25rem;margin-top:1.5rem;align-items:start;}
+.workshop-body>.academy-panel {min-width:0;overflow-wrap:anywhere;}
+.worksheet label {display:grid;gap:.35rem;margin:1rem 0;font-weight:600;}
+.worksheet textarea {resize:vertical;min-height:4rem;font-weight:400;}
+.workshop-help {display:flex;gap:.7rem;flex-wrap:wrap;margin:1rem 0;}
+@media(max-width:1000px){.workshop-body{grid-template-columns:1fr;}}
+@media(max-width:700px){.sidebar nav{gap:0;}.nav-item{min-width:0;flex:1;padding:9px 2px;font-size:9px;}.nav-item>span:not(.nav-dot){overflow-wrap:anywhere;line-height:1.15;}}
+@media(max-width:700px){.sidebar{height:84px;}.nav-item{min-height:76px;padding:7px 2px;}html{scroll-padding-bottom:calc(104px + env(safe-area-inset-bottom));}button,input,select,textarea{scroll-margin-block:104px;}#main-content{padding-bottom:calc(115px + env(safe-area-inset-bottom));}}

@@ -69,7 +69,7 @@ export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
   "specific-heat": ["J/(kg·K)", "kJ/(kg·K)"],
-  "temperature-difference": ["K"],
+  "temperature-difference": ["K", "°C"],
   temperature: ["°C", "K"],
   voltage: ["V", "mV"],
   current: ["A", "mA"],

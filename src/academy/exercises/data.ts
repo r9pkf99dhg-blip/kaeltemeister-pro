@@ -1,3 +1,4 @@
+import { conversionTasks } from "../../workshop/data";
 import { thermal_tasks } from "../deep/thermal-tasks";
 import { electrical_tasks } from "../deep/electrical-tasks";
 import { math_tasks } from "../deep/math-tasks";
@@ -425,6 +426,7 @@ numericTasks.push(...chemistryTasks);
 numericTasks.push(...math_tasks);
 numericTasks.push(...electrical_tasks);
 numericTasks.push(...thermal_tasks);
+numericTasks.push(...conversionTasks);
 
 for (const task of numericTasks)
   task.requiredCompetencyIds = taskCompetencies(task);

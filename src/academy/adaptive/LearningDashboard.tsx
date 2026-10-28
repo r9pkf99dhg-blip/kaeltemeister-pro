@@ -59,7 +59,7 @@ export default function LearningDashboard({
           {error}
         </div>
       )}
-      {progress.exerciseDraft &&
+      {progress.exerciseDraft && progress.exerciseDraft.workspace!=="workshop" &&
         numericTasks.some(
           (t) =>
             t.id === progress.exerciseDraft!.taskId &&
