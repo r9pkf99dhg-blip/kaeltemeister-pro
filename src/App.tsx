@@ -1,3 +1,4 @@
+import MasteryHub,{MasterySummary}from "./mastery/MasteryHub";
 import TechnicalLab from "./lab/TechnicalLab";
 import Workshop from "./workshop/Workshop";
 import { simpleArticles } from "./language/articles";
@@ -45,6 +46,7 @@ import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
 type Page =
+  | "mastery"
   | "dashboard"
   | "lernen"
   | "quiz"
@@ -53,6 +55,7 @@ type Page =
   | "werkstatt"
   | "labor";
 const navigation = [
+  {id:"mastery" as const,label:"Mastery",icon:Target},
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
   { id: "werkstatt" as const, label: "Übungswerkstatt", icon: Calculator },
@@ -218,7 +221,7 @@ function Application({
     <ExplanationProvider
       level={academy.progress.preferences?.explanation ?? "technical"}
     >
-      <div className="app-shell">
+      <div className={`app-shell ${academy.progress.mastery?.focus?"focus-mode":""}`}>
         <aside className="sidebar">
           <a
             className="brand"
@@ -283,6 +286,7 @@ function Application({
               <span className="status-dot" /> Bereit für deinen nächsten Schritt
             </span>
           </header>
+          {academy.progress.mastery?.focus&&<div className="notice focus-exit"><span>Fokusansicht aktiv</span><button className="button secondary" onClick={()=>academy.setProgress(p=>({...p,mastery:{...p.mastery!,focus:false}}))}>Fokusansicht beenden</button></div>}
           <main ref={mainRef} tabIndex={-1} id="main-content">
             <ExplanationPreference
               value={academy.progress.preferences?.explanation ?? "technical"}
@@ -333,6 +337,7 @@ function Application({
                     </button>
                   </section>
                 )}
+                <MasterySummary progress={academy.progress} open={()=>navigate("mastery")}/>
                 <LearningDashboard
                   progress={academy.progress}
                   error={storageError ? null : academy.error}
@@ -709,6 +714,7 @@ function Application({
                 }}
               />
             )}
+            {page === "mastery" && <MasteryHub progress={academy.progress} setProgress={academy.setProgress} practice={id=>{setWorkshopInitialId(id);navigate("werkstatt");}}/>}
             {page === "rechner" && <HeatCalculator />}
             {page === "akademie" && (
               <Academy

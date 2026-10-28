@@ -1,3 +1,4 @@
+import{validMastery}from "../mastery/validation";
 import { validWorkshop, validTrainer, validLab } from "../workshop/validation";
 import {
   recordOutcome,
@@ -132,6 +133,7 @@ export function validateProgress(value: unknown): value is AcademyProgress {
     value.schemaVersion !== 3 ||
     !validateLegacyProgress({ ...value, schemaVersion: 2 }) ||
     !record(value.performance) ||
+    !(value.mastery===undefined||validMastery(value.mastery)) ||
     !(value.labDraft === undefined || validLab(value.labDraft)) ||
     !(
       value.preferences === undefined ||

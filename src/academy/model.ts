@@ -1,3 +1,4 @@
+import type{MasteryState}from "../mastery/model";
 import type { WorkshopState, TrainerState, LabDraft } from "../workshop/model";
 import type { Performance } from "./adaptive/model";
 import type { ExamSession, ExamResult, ItemAnswer } from "./exercises/model";
@@ -141,6 +142,7 @@ export interface AcademyProgress extends Omit<
   "schemaVersion"
 > {
   schemaVersion: 3;
+  mastery?:MasteryState;
   labDraft?: LabDraft;
   preferences?: { explanation: "simple" | "technical" };
   exerciseDraft?: {
