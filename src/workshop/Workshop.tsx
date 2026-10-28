@@ -3,7 +3,7 @@ import type { AcademyProgress } from '../academy/model';
 import { domains,modules } from '../academy/catalog';
 import { learningItems } from '../academy/exercises/items';
 import type { NumericTask,ItemAnswer } from '../academy/exercises/model';
-import { snapshotItem,gradeSnapshot } from '../academy/exercises/engine';
+import { snapshotItem,gradeSnapshot,numericFeedback } from '../academy/exercises/engine';
 import { TaskPrompt,TaskAnswer,TaskSolution,TaskReference,emptyAnswer } from '../academy/exercises/TaskViews';
 import { recordOutcome } from '../academy/adaptive/algorithm';
 import RearrangementTrainer from '../academy/foundations/RearrangementTrainer';
@@ -14,7 +14,8 @@ import { emptyWorksheet,worksheetKeys,type WorkshopState,type PracticeMode } fro
 import { workshopEntries,workshopKindNames } from './entries';
 const labels={given:'Gegeben',sought:'Gesucht',formula:'Verwendete Formel',transformed:'Umgestellte Formel',conversion:'Einheitenumrechnung',substitution:'Eingesetzte Zahlenwerte',plausibility:'Plausibilitätskontrolle und Begründung'};
 export default function Workshop({progress,setProgress,openModule,openExam,initialItemId}:{progress:AcademyProgress;setProgress:Dispatch<SetStateAction<AcademyProgress>>;openModule:(id:string)=>void;openExam:()=>void;initialItemId?:string|null}){
- const saved=!initialItemId&&progress.exerciseDraft?.workspace==='workshop'?progress.exerciseDraft:undefined;
+ const candidate=!initialItemId&&progress.exerciseDraft?.workspace==='workshop'?progress.exerciseDraft:undefined;
+ const saved=candidate&&learningItems.some(i=>i.id===candidate.taskId&&i.revision===candidate.revision)&&workshopEntries.some(e=>e.id===candidate.workshop?.entryId)?candidate:undefined;
  const initial=workshopEntries.find(e=>e.id===(initialItemId??saved?.workshop?.entryId))??workshopEntries[0];
  const [entryId,setEntryId]=useState(initial.id),[domain,setDomain]=useState('all'),[topic,setTopic]=useState('all'),[level,setLevel]=useState('all'),[kind,setKind]=useState('all');
  const [state,setState]=useState<WorkshopState>(saved?.workshop??{entryId:initial.id,kind:initial.kind,mode:'independent',fields:emptyWorksheet(),help:0,step:0,choices:{},solutionOpen:false,responses:{},checkedIds:[]});
@@ -31,7 +32,8 @@ export default function Workshop({progress,setProgress,openModule,openExam,initi
  });},[entry.id,item?.id,answer,state,bridge,checked,setProgress]);
  function select(id:string){const e=workshopEntries.find(e=>e.id===id);if(!e)return;setEntryId(e.id);setState({entryId:e.id,kind:e.kind,mode:state.mode,fields:emptyWorksheet(),help:0,step:0,choices:{},solutionOpen:false,responses:{},checkedIds:[]});const i=learningItems.find(i=>i.id===e.itemIds[0]);setAnswer(i?emptyAnswer(i):{value:'',unit:''});setBridge(null);setSkipBridge(false);}
  function move(step:number){if(!item)return;const next=learningItems.find(i=>i.id===entry.itemIds[step]);if(!next)return;setState(s=>({...s,step,responses:{...s.responses,[item.id]:answer},solutionOpen:false}));setAnswer(state.responses?.[next.id]??emptyAnswer(next));setBridge(null);setSkipBridge(false);}
- function check(){if(!item||!snapshot)return;const g=gradeSnapshot(snapshot,answer);if(g.status==='unanswered'||g.status==='invalid'){setValidation(g.message);return;}setValidation('');setState(s=>({...s,checkedIds:[...new Set([...(s.checkedIds??[]),item.id])],responses:{...s.responses,[item.id]:answer}}));setProgress(p=>recordOutcome({...p,exerciseAnswers:{...p.exerciseAnswers,[item.id]:{answer,correct:g.correct,revision:item.revision,answeredAt:new Date().toISOString()}}},item,g.correct,new Date(),undefined,state.help===3?'worked':state.help>0||state.mode==='guided'?'hint':'independent'));}
+ function check(){if(!item||!snapshot)return;const g=gradeSnapshot(snapshot,answer);if(g.status==='unanswered'||g.status==='invalid'){setValidation(g.message);return;}setValidation('');setState(s=>({...s,checkedIds:[...new Set([...(s.checkedIds??[]),item.id])],responses:{...s.responses,[item.id]:answer},help:item.kind==='choice'?Math.max(s.help,entry.kind==='error'?3:2) as 2|3:s.help}));setProgress(p=>recordOutcome({...p,exerciseAnswers:{...p.exerciseAnswers,[item.id]:{answer,correct:g.correct,revision:item.revision,answeredAt:new Date().toISOString()}}},item,g.correct,new Date(),undefined,state.help===3?'worked':state.help>0||state.mode==='guided'?'hint':'independent'));}
+ const numericDetails=snapshot&&checked?numericFeedback(snapshot,answer):null;
  const [validation,setValidation]=useState('');
  return <section className="workshop"><h1>Übungswerkstatt</h1><p><Explain simple="Hier rechnest du selbst. Wähle eine Aufgabe, notiere deinen Weg und prüfe erst danach dein Ergebnis. Dein letzter Entwurf wird in diesem Browser gesichert." technical="Aufgaben, Grader und Wiederholungslogik sind mit der Akademie verbunden. Freie Notizen werden gespeichert, aber nicht als symbolisch oder fachlich geprüft ausgegeben."/></p>
  <div className="workshop-filters">
@@ -50,13 +52,13 @@ export default function Workshop({progress,setProgress,openModule,openExam,initi
  <p className="small-muted">Zahlenfeld: Dezimalkomma, Brüche, wissenschaftliche Schreibweise und einfache Arithmetik mit Klammern. Die Einheit separat wählen. Keine freie symbolische Algebra.</p>
  <button className="button primary" disabled={!!checked} onClick={check}>Werkstatt-Ergebnis prüfen</button>
  {validation&&<p role="alert" className="notice">{validation}</p>}
- {grade&&<div role="status" className={`feedback ${grade.correct?'success':'retry'}`}>{grade.message}<p>{state.help===3?'Mit angesehener Musterlösung bearbeitet.':state.help>0||state.mode==='guided'?'Mit Unterstützung bearbeitet.':'Ohne angebotene Hilfe bearbeitet.'}</p></div>}
+ {grade&&<div role="status" className={`feedback ${grade.correct?'success':'retry'}`}>{grade.message}{numericDetails&&<><p><strong>Zahlenwert:</strong> {numericDetails.number}</p><p><strong>Einheit:</strong> {numericDetails.unit}</p></>}{item.kind==='choice'&&<p><MathText text={item.explanation}/></p>}<p>{progress.performance[item.id]?.support?.last==='worked'?'Mit angesehener Musterlösung bearbeitet.':progress.performance[item.id]?.support?.last==='hint'?'Mit Unterstützung bearbeitet.':'Ohne angebotene Hilfe bearbeitet.'}</p></div>}
  <div className="workshop-help"><button className="button secondary" onClick={()=>setState(s=>({...s,help:Math.max(s.help,1) as 1|2|3}))}>Hinweis 1</button><button className="button secondary" onClick={()=>setState(s=>({...s,help:Math.max(s.help,2) as 2|3}))}>Formelhilfe / Hinweis 2</button></div>
  {state.help>0&&<p className="notice">{item.kind==='numeric'?item.hint??'Größen und Einheiten zuerst prüfen.':'Prüfe den physikalischen Zusammenhang und die ausdrücklich genannten Modellgrenzen.'}</p>}
  {state.help>=2&&<TaskReference item={item} openModule={openModule}/>}
  {checked&&<button className="text-button" onClick={()=>setState(s=>({...s,solutionOpen:true,help:3}))}>Musterlösung ansehen</button>}
  {state.solutionOpen&&checked&&<TaskSolution item={item}/>}
- {grade?.status==='incorrect'&&item.kind==='numeric'&&!skipBridge&&<LearningBridge task={item} answer={answer} progress={progress} setProgress={setProgress} lessonId={bridge} openLesson={id=>{setBridge(id);setState(s=>({...s,help:Math.max(s.help,2) as 2|3}));}} closeLesson={()=>{setBridge(null);document.getElementById(`result-${item.id}`)?.focus();}} skip={()=>{setSkipBridge(true);setBridge(null);document.getElementById(`result-${item.id}`)?.focus();}}/>}
+ {grade?.status==='incorrect'&&!skipBridge&&<LearningBridge task={snapshot?.item??item} answer={answer} progress={progress} setProgress={setProgress} lessonId={bridge} openLesson={id=>{setBridge(id);setState(s=>({...s,help:Math.max(s.help,2) as 2|3}));}} closeLesson={()=>{setBridge(null);document.getElementById(`result-${item.id}`)?.focus();}} skip={()=>{setSkipBridge(true);setBridge(null);document.getElementById(`result-${item.id}`)?.focus();}}/>}
  {checked&&<button className="button secondary" onClick={()=>setState(s=>({...s,checkedIds:s.checkedIds?.filter(id=>id!==item.id)}))}>Selbst noch einmal versuchen</button>}
  <div className="workshop-help">{state.step>0&&<button className="text-button" onClick={()=>move(state.step-1)}>Vorheriger Rechenschritt</button>}{checked&&state.step+1<entry.itemIds.length&&<button className="button primary" onClick={()=>move(state.step+1)}>Nächster Rechenschritt</button>}</div>
  {checked&&state.step+1===entry.itemIds.length&&<p className="notice">Aufgabe bearbeitet. Zur fachlichen Selbstkontrolle: Sind Modell, Nennerbedingungen, Einheiten, Größenordnung und Grenzen deiner Schlussfolgerung benannt?</p>}

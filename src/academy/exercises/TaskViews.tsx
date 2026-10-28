@@ -55,7 +55,7 @@ export function TaskAnswer({
 }) {
   if (item.kind === "choice")
     return (
-      <fieldset className="task-choices" disabled={disabled}>
+      <fieldset id={`result-${item.id}`} tabIndex={-1} className="task-choices" disabled={disabled}>
         <legend>Deine Antwort zu „{item.title}“</legend>
         {item.options.map((option) => (
           <label className="module-option" key={option.id}>

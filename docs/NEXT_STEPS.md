@@ -18,7 +18,7 @@ Branch `feat/interactive-technical-lab-v07`. Ausgangspunkt main `8a1ba77`, Merge
 5. Fünf Pflichtbereiche einzeln umsetzen: Einheiten, sensible Wärme (Zielgrößen), Elektro (DC/Sinus/symmetrisches Drehstrommodell), Rohrgeometrie, stationäre ebene Wärmeübertragung. Jede Funktion erhält unabhängige Sollwerte/Fehlerfälle und Lernverknüpfungen.
 6. Interaktive Laboransichten umgesetzt: Wärmeleistungsregler/-kurve, Rohrquerschnitt, dynamisches Leistungsdreieck und Schichtskizze; gemeinsame Berechnungsfunktionen und Textalternativen, gezielt geprüft.
 6. Geeignete interaktive Diagramme/Parameter mit Textalternativen; Labor und Üben trennen.
-7. Vorhandene Lernbrücke sprachabhängig mit neuen Fehlerhinweisen/Schrittprüfung erweitern; Eingaben/Einheiten/Rechenblattposition behalten.
+7. Lernbrücke für Auswahl-/Zahlenaufgaben und freiwillige Sprachebenen erweitert; getrennte Zahlen-/Einheitenrückmeldung, Celsius-/Flächenmuster, revisionssicherer Entwurf. 398 Tests, Typprüfung/Build, acht gezielte Browserprüfungen bestanden. Vorhandene Lernbrücke sprachabhängig mit neuen Fehlerhinweisen/Schrittprüfung erweitern; Eingaben/Einheiten/Rechenblattposition behalten.
 8. Echtes 0.6-Backup aus altem Exporter erzeugen, alle Altbackups/optional neuen Felder prüfen; vollständige Unit-/Integration-/Browserregression, WebKit in CI, keine erfundene Hardwareprüfung.
 9. Architektur, Sprachabdeckung, Rechner-/Werkstattmodelle, Quellen/Qualität, Roadmap 0.8/0.9/1.0 und PR-Text dokumentieren; Push und PR versuchen. Bisher API HTTP 403, Git-Push möglich; bei erneutem 403 Vergleichslink und vollständigen PR-Text bereitstellen.
 
@@ -27,3 +27,7 @@ Nach jeder abgeschlossenen Etappe: Typprüfung, Tests und Build, aussagekräftig
 ## Befehle bei Wiederaufnahme
 
 `git status`, `git log`, Remote main und Entwicklungsbranch tatsächlich vergleichen. Fremde Änderungen erhalten. `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`. Lokaler Systembrowser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`; WebKit-Zugriff/CI getrennt prüfen. `npm run docs:review`, `npm run docs:audit`, Workflows mit actionlint prüfen. Keinen geprüften alten Stand überschreiben, um eine neue Funktion schneller einzubauen.
+
+## Neu erkannter Regressionstest
+
+GitHub-WebKit zeigt seit der neuen globalen Sprachwahl bei 200 % Schrift auf iPhone einen horizontalen Überstand von 1 px in drei bestehenden Tests. Nicht umgangen: CSS-Ursache in der nächsten Stabilisierung beheben und gesamte Browsermatrix erneut prüfen. Chromium ist in den betroffenen Abläufen grün.
