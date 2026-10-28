@@ -1,3 +1,4 @@
+import { Explain } from "../../language/Explanation";
 import { BlockMath } from "../../math/Math";
 import { formulas } from "../../academy/catalog";
 import { useState } from "react";
@@ -26,6 +27,7 @@ export default function HeatCalculator() {
         title="Von der Formel zur Lösung."
         description="Berechne die sensible Wärmeleistung – mit klaren Einheiten und jedem Rechenschritt."
       />
+      <p><Explain simple="Du berechnest, wie viel Wärme pro Sekunde ein Stoffstrom bei einer Temperaturänderung überträgt. Du brauchst Massenstrom, Wärmekapazität und Temperaturunterschied. Das einfache Modell gilt ohne Phasenwechsel." technical="Stationärer sensibler Wärmestrom bei näherungsweise konstantem cp, ohne Phasenwechsel; Ergebnis als positiver Übertragungsbetrag."/></p>
       <div className="calculator-layout">
         <section className="calculator-card">
           <div className="card-heading">

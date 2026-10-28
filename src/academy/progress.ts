@@ -131,6 +131,7 @@ export function validateProgress(value: unknown): value is AcademyProgress {
     value.schemaVersion !== 3 ||
     !validateLegacyProgress({ ...value, schemaVersion: 2 }) ||
     !record(value.performance) ||
+    !(value.preferences===undefined || (record(value.preferences) && ["simple","technical"].includes(String(value.preferences.explanation)))) ||
     !(
       value.exerciseDraft === undefined ||
       (record(value.exerciseDraft) &&

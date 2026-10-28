@@ -1,3 +1,4 @@
+import { Explain, useExplanation } from "../../language/Explanation";
 import {
   BlockMath,
   MathText,
@@ -16,7 +17,7 @@ export function TaskPrompt({ item }: { item: LearningItem }) {
     <>
       <h3>{item.title}</h3>
       <p>
-        <MathText text={item.prompt} />
+        <Explain simple={`Du suchst: ${item.title}. Lies die Angaben und die Modellbedingungen. ${item.prompt}`} technical={item.prompt}/>
       </p>
       {item.kind === "numeric" && (
         <>
@@ -136,6 +137,7 @@ export function TaskSolution({
   return (
     <div className="task-solution">
       <h4>Schrittweise Musterlösung</h4>
+      <p><Explain simple="Prüfe zuerst die gesuchte Größe und ihre Einheit. Lies dann jeden Rechenschritt. Vergleiche dein Ergebnis mit dem Modell und seinen Grenzen." technical="Modell, SI-Umrechnung und eingesetzte Größen schrittweise abgleichen; rechnerische Konsistenz ist keine fachliche Gesamtfreigabe."/></p>
       <p>
         <strong>
           Ergebnis: {format(fromSI(value, item.answerUnit, item.quantity))}{" "}

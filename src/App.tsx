@@ -1,3 +1,5 @@
+import { simpleArticles } from "./language/articles";
+import { Explain, ExplanationProvider, ExplanationPreference } from "./language/Explanation";
 import QualityPanel from "./quality/QualityPanel";
 import BackupPanel from "./storage/BackupPanel";
 import { recoverRestore, JOURNAL_KEY, dataKeys } from "./storage/backup";
@@ -192,6 +194,7 @@ function Application({
     articles.find((a) => !progress.read.includes(a.id)) ?? articles[0];
 
   return (
+    <ExplanationProvider level={academy.progress.preferences?.explanation??"technical"}>
     <div className="app-shell">
       <aside className="sidebar">
         <a
@@ -254,6 +257,7 @@ function Application({
           </span>
         </header>
         <main ref={mainRef} tabIndex={-1} id="main-content">
+          <ExplanationPreference value={academy.progress.preferences?.explanation??"technical"} change={explanation=>academy.setProgress(p=>({...p,preferences:{...p.preferences,explanation}}))}/>
           {storageError && (
             <div role="alert" className="notice">
               Dein Lernfortschritt konnte nicht geladen oder gespeichert werden.
@@ -500,10 +504,10 @@ function Application({
                       <CycleIllustration />
                     </div>
                   )}
-                  {activeArticle.sections.map((section) => (
+                  {activeArticle.sections.map((section, sectionIndex) => (
                     <section key={section.title}>
                       <h2>{section.title}</h2>
-                      <p>{section.text}</p>
+                      <p><Explain simple={simpleArticles[activeArticle.id]?.[sectionIndex]??section.text} technical={section.text}/></p>
                     </section>
                   ))}
                   <aside className="takeaway">
@@ -682,6 +686,7 @@ function Application({
         </main>
       </div>
     </div>
+    </ExplanationProvider>
   );
 }
 

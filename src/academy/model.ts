@@ -139,6 +139,7 @@ export interface AcademyProgress extends Omit<
   "schemaVersion"
 > {
   schemaVersion: 3;
+  preferences?: { explanation: "simple" | "technical" };
   exerciseDraft?: {
     taskId: string;
     revision: number;

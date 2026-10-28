@@ -1,3 +1,5 @@
+import { simpleTerms } from "../language/terms";
+import { Explain, useExplanation, LessonExplanation } from "../language/Explanation";
 import CaseStudy from "./deep/CaseStudy";
 import RearrangementTrainer from "./foundations/RearrangementTrainer";
 import { MathText } from "../math/Math";
@@ -334,7 +336,7 @@ export default function Academy({
                     .map((term) => (
                       <div className="glossary-entry" key={term.id}>
                         <h3>{term.title}</h3>
-                        <p>{term.definition}</p>
+                        <p>{simpleTerms[term.title]?<Explain simple={simpleTerms[term.title]} technical={term.definition}/>:<>{term.definition} <span className="small-muted">Ursprüngliche Begriffsdefinition.</span></>}</p>
                         <div>
                           {term.moduleIds.map((id) => (
                             <button
@@ -446,6 +448,7 @@ function ModuleView({
   ];
   return (
     <article className="learning-module">
+      <LessonExplanation lessonId={module.id}>
       <button className="text-button back" onClick={back}>
         <ArrowLeft size={17} /> Zur Modulübersicht
       </button>
@@ -610,6 +613,7 @@ function ModuleView({
           );
         })}
       </section>
+    </LessonExplanation>
     </article>
   );
 }

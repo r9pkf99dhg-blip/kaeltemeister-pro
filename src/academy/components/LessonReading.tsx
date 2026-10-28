@@ -1,3 +1,6 @@
+import { useExplanation } from "../../language/Explanation";
+import { simpleCores } from "../../language/core";
+import { simpleContent } from "../../language/model";
 import ClaimEvidencePanel from "../../quality/ClaimEvidencePanel";
 import Diagrams from "../deep/Diagrams";
 import { ArrowRight } from "lucide-react";
@@ -21,11 +24,14 @@ export default function LessonReading({
   openCalculator?: () => void;
   embedded?: boolean;
 }) {
-  const content = module.levels[level];
+  const mode=useExplanation();
+  const core=simpleCores.find(c=>c.id===module.id);
+  const content=mode==="simple"&&core?simpleContent(module.levels[level],core,level):module.levels[level];
   const Heading = embedded ? "h3" : "h2";
   const FormulaHeading = embedded ? "h4" : "h3";
   return (
     <>
+      {mode==="simple"&&!core&&<p className="notice">Ursprüngliche Darstellung: Für dieses Modul ist die einfache Sprachfassung noch nicht ausgearbeitet. Alle Inhalte bleiben zugänglich.</p>}
       <section>
         <Heading>Einfacher Einstieg</Heading>
         <p>
