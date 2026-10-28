@@ -595,3 +595,16 @@ export const thermal_tasks: NumericTask[] = [
     review: "calculation-tested-expert-review-pending",
   },
 ];
+
+// Diese direkten Größen-/Einheitenaufgaben bilden den Grundlagen-Pool der Thermo-Übungsprüfung.
+for (const task of thermal_tasks)
+  if (
+    [
+      "th-pressure-a",
+      "th-volume-a",
+      "th-mass-flow-a",
+      "th-heat-a",
+      "th-latent-a",
+    ].includes(task.id)
+  )
+    task.level = "grundlagen";

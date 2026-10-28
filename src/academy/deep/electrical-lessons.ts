@@ -241,3 +241,13 @@ export const electrical_lessons: FoundationLesson[] = [
       "Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.",
   },
 ];
+
+// Feste Diagrammsituation statt einer vom gewählten Schiebewert abhängigen Frage.
+electrical_lessons.find((l) => l.id === "electric-ac-wave")!.questions[2] = {
+  prompt:
+    "Normiertes Sinusdiagramm mit φ = 90°: Bei t = T/4 ist u/Û = 1. Welchen Wert hat der nacheilende Strom i/Î?",
+  correct: "0",
+  wrong: ["1", "−1"],
+  explanation:
+    "Der Strom lautet sin(ωt−φ). Bei t=T/4 ist ωt=π/2 und φ=π/2, daher ist i/Î=sin(0)=0. Die Spannung erreicht gleichzeitig ihren positiven Scheitel; genau das zeigt die Viertelperiodenverschiebung.",
+};

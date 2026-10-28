@@ -250,11 +250,26 @@ test("Aussagenbelege sind datiert und bei großer Schrift per Tastatur zugängli
   await expect(
     page.getByRole("img", { name: /Normierte Spannung und/ }),
   ).toBeVisible();
-  expect(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= innerWidth,
-    ),
-  ).toBe(true);
+  const layout = await page.evaluate(() => ({
+    width: document.documentElement.scrollWidth,
+    viewport: innerWidth,
+    outside: Array.from(document.querySelectorAll(".learning-module *"))
+      .filter(
+        (el) =>
+          el.getBoundingClientRect().right > innerWidth + 1 &&
+          !el.closest(".math-display"),
+      )
+      .slice(0, 8)
+      .map((el) => ({
+        tag: el.tagName,
+        cls: el.className,
+        text: el.textContent?.slice(0, 100),
+        right: el.getBoundingClientRect().right,
+      })),
+  }));
+  expect(layout.width, JSON.stringify(layout)).toBeLessThanOrEqual(
+    layout.viewport,
+  );
   await expect(page.locator(".math-error")).toHaveCount(0);
 });
 test("Suche nach Leistungsfaktor führt über das gemeinsame Glossar zu den Fachmodulen", async ({

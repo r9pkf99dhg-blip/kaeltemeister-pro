@@ -6002,14 +6002,14 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
-## question:electric-ac-wave-q3: Der einfache Mittelwert eines Sinusstroms ist null. Kann ein Widerstand Leistung aufnehmen?
+## question:electric-ac-wave-q3: Normiertes Sinusdiagramm mit φ = 90°: Bei t = T/4 ist u/Û = 1. Welchen Wert hat der nacheilende Strom i/Î?
 
 - Fachgebiet: elektro
 - Status: Automatisch geprüft
 - Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
 - Formel-IDs: —
 - Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
-- Referenz / Rechnung: Im Widerstand gilt p(t) = i(t)²R. Positive und negative Halbwellen erzeugen beide positive Leistung; der einfache Strommittelwert ist dafür ungeeignet.
+- Referenz / Rechnung: Der Strom lautet sin(ωt−φ). Bei t=T/4 ist ωt=π/2 und φ=π/2, daher ist i/Î=sin(0)=0. Die Spannung erreicht gleichzeitig ihren positiven Scheitel; genau das zeigt die Viertelperiodenverschiebung.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?

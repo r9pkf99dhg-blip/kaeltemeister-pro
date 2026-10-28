@@ -2565,3 +2565,25 @@ progress::-moz-progress-bar {
 
 .technical-diagrams svg { display:block; width:100%; max-width:36rem; height:auto; margin:1rem auto; }
 .technical-diagrams select { margin:.5rem; }
+
+/* Auch WebKit muss lange Beleg-IDs und Flex-Inhalte bei vergrößerter Schrift umbrechen können. */
+.claim-evidence, .claim-evidence details, .claim-evidence summary {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.math-variables > div > dt, .math-variables > div > dd {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.math-variables .math-inline {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+.technical-diagrams label { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.technical-diagrams select { min-width: 0; max-width: 100%; margin: 0; }
