@@ -12,3 +12,6 @@ it('verhindert ungültige Eingaben, Nullnenner, widersprüchliche Geometrie und 
  for(const [id,key,value]of [['heat-flow','deltaT','0'],['heat-cp','massFlow','0'],['dc-u2r','resistance','0'],['ac-real','factor','1.1'],['ring','inner','25'],['conduction','thickness','0']]as const){const c=calculators.find(c=>c.id===id)!,v=initialLabValues(c);v[key].value=value;expect(()=>runCalculator(c,v)).toThrow();}
  expect(toSI(-160,'var','reactive-power')).toBe(-160);
 });
+it('prüft die Proportionalität der Heat-Kurve über denselben Kern mit unabhängiger Verhältnisreferenz',()=>{
+ const c=calculators.find(c=>c.id==='heat-power')!,a=initialLabValues(c),b=initialLabValues(c);a.massFlow.value='.5';b.massFlow.value='1';expect(runCalculator(c,b).resultSI).toBe(20900);expect(runCalculator(c,b).resultSI/runCalculator(c,a).resultSI).toBe(2);
+});

@@ -16,6 +16,7 @@ Branch `feat/interactive-technical-lab-v07`. Ausgangspunkt main `8a1ba77`, Merge
 4. Gemeinsamer Rechnervertrag und sichere arithmetische Eingabe ohne eval. Größen-/Einheitenkern erweitern, bestehende Aufgaben und Rechner nicht kopieren.
 5. Fünf Laborbereiche mit gemeinsamer Oberfläche implementiert: 392 Tests, Typprüfung, Build und sechs Smartphone-/Tablet-Abläufe erfolgreich; Unit-Konverter plus 26 fachliche Zielvarianten.
 5. Fünf Pflichtbereiche einzeln umsetzen: Einheiten, sensible Wärme (Zielgrößen), Elektro (DC/Sinus/symmetrisches Drehstrommodell), Rohrgeometrie, stationäre ebene Wärmeübertragung. Jede Funktion erhält unabhängige Sollwerte/Fehlerfälle und Lernverknüpfungen.
+6. Interaktive Laboransichten umgesetzt: Wärmeleistungsregler/-kurve, Rohrquerschnitt, dynamisches Leistungsdreieck und Schichtskizze; gemeinsame Berechnungsfunktionen und Textalternativen, gezielt geprüft.
 6. Geeignete interaktive Diagramme/Parameter mit Textalternativen; Labor und Üben trennen.
 7. Vorhandene Lernbrücke sprachabhängig mit neuen Fehlerhinweisen/Schrittprüfung erweitern; Eingaben/Einheiten/Rechenblattposition behalten.
 8. Echtes 0.6-Backup aus altem Exporter erzeugen, alle Altbackups/optional neuen Felder prüfen; vollständige Unit-/Integration-/Browserregression, WebKit in CI, keine erfundene Hardwareprüfung.
