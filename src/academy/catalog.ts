@@ -1,3 +1,4 @@
+import { deepSources } from "./deep/sources";
 import { foundationTerms } from "./foundations/terms";
 import { moduleFoundationLinks } from "./foundations/competencies";
 import { chemistryLessons, chemistryFormulas } from "./foundations/chemistry";
@@ -82,6 +83,7 @@ export const sources = [
   ...baseSources,
   ...electricalSources,
   ...foundationSources,
+  ...deepSources,
 ];
 export const objectives = [
   ...baseObjectives,
