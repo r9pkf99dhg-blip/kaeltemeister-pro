@@ -1,4 +1,4 @@
-import type{MasteryState}from "../mastery/model";
+import type { MasteryState } from "../mastery/model";
 import type { WorkshopState, TrainerState, LabDraft } from "../workshop/model";
 import type { Performance } from "./adaptive/model";
 import type { ExamSession, ExamResult, ItemAnswer } from "./exercises/model";
@@ -90,7 +90,14 @@ export interface Flashcard {
   sourceIds: string[];
 }
 export interface Term {
-  detail?:{simple:string;technical:string;unit:string;example:string;mistake:string;sourceIds:string[]};
+  detail?: {
+    simple: string;
+    technical: string;
+    unit: string;
+    example: string;
+    mistake: string;
+    sourceIds: string[];
+  };
   id: string;
   title: string;
   definition: string;
@@ -142,7 +149,7 @@ export interface AcademyProgress extends Omit<
   "schemaVersion"
 > {
   schemaVersion: 3;
-  mastery?:MasteryState;
+  mastery?: MasteryState;
   labDraft?: LabDraft;
   preferences?: { explanation: "simple" | "technical" };
   exerciseDraft?: {

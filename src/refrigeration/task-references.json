@@ -10,5 +10,8 @@
   "refrig-transfer-q0-v08": 157426.91862395007,
   "refrig-transfer-w-v08": 23035.0982892501,
   "refrig-transfer-cop-v08": 6.834219530872037,
-  "refrig-transfer-power-v08": 7871.345931197504
+  "refrig-transfer-power-v08": 7871.345931197504,
+  "refrig-basis-qk-v08": 184043.6858279307,
+  "refrig-kuehlraum-qk-v08": 181598.2638004196,
+  "refrig-transfer-qk-v08": 180462.01691320018
 }

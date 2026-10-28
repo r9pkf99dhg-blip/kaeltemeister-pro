@@ -1,4 +1,8 @@
-import {calculateRefrigeration,refrigerationKinds,type RefrigerationKind} from "./refrigeration";
+import {
+  calculateRefrigeration,
+  refrigerationKinds,
+  type RefrigerationKind,
+} from "./refrigeration";
 import { calculateDeep, deepKinds, type DeepKind } from "./deep";
 import { calculateSchool, schoolKinds, type SchoolKind } from "./foundations";
 /** Gemeinsame SI-Rechenfunktionen für Aufgaben und technische Rechner. */
@@ -179,7 +183,8 @@ export function calculateTechnical(
   kind: CalculationKind,
   values: Record<string, number>,
 ): number {
-  if(refrigerationKinds.includes(kind as RefrigerationKind)) return calculateRefrigeration(kind as RefrigerationKind,values);
+  if (refrigerationKinds.includes(kind as RefrigerationKind))
+    return calculateRefrigeration(kind as RefrigerationKind, values);
   if (deepKinds.includes(kind as DeepKind))
     return calculateDeep(kind as DeepKind, values);
   if (schoolKinds.includes(kind as SchoolKind))

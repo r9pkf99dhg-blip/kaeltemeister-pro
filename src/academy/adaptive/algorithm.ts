@@ -1,4 +1,4 @@
-import{captureIndependentEvidence}from "../../mastery/evidence";
+import { captureIndependentEvidence } from "../../mastery/evidence";
 import type { AcademyProgress } from "../model";
 import type { Performance } from "./model";
 import { learningItems, learningTopics } from "../exercises/items";
@@ -73,10 +73,16 @@ export function recordOutcome(
     intervalDays,
     dueAt: new Date(now.getTime() + intervalDays * 86_400_000).toISOString(),
   };
-  const mastery=captureIndependentEvidence(progress.mastery,item,correct,support,now);
+  const mastery = captureIndependentEvidence(
+    progress.mastery,
+    item,
+    correct,
+    support,
+    now,
+  );
   const updated = {
     ...progress,
-    ...(mastery?{mastery}:{}),
+    ...(mastery ? { mastery } : {}),
     updatedAt: now.toISOString(),
     performance: { ...progress.performance, [item.id]: entry },
   };

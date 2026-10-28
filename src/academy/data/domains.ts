@@ -560,3 +560,23 @@ for (const [domainId, moduleIds] of [
       ],
     });
 }
+
+thermoDomain.chapters.push({
+  id: "thermodynamik-kreis-v08",
+  title: "Kältekreisprozess und Referenzzustände",
+  subchapters: [
+    {
+      id: "thermodynamik-heos-v08",
+      title: "Zustände, Phasen und Fluidbilanz",
+      moduleIds: [
+        "refrig-state-v08",
+        "refrig-phase-v08",
+        "refrig-cycle-v08",
+        "refrig-compression-v08",
+      ],
+      plannedTopics: [
+        "Freie validierte Browser-Stoffwertberechnung und zusätzliche Stoffe",
+      ],
+    },
+  ],
+});

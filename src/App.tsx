@@ -1,4 +1,5 @@
-import MasteryHub,{MasterySummary}from "./mastery/MasteryHub";
+import { MasterySummary } from "./mastery/Summary";
+import AsyncView from "./components/AsyncView";
 import TechnicalLab from "./lab/TechnicalLab";
 import Workshop from "./workshop/Workshop";
 import { simpleArticles } from "./language/articles";
@@ -11,7 +12,7 @@ import QualityPanel from "./quality/QualityPanel";
 import BackupPanel from "./storage/BackupPanel";
 import { recoverRestore, JOURNAL_KEY, dataKeys } from "./storage/backup";
 import LearningDashboard from "./academy/adaptive/LearningDashboard";
-import { useEffect, useRef, useState } from "react";
+import { lazy, useEffect, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowRight,
@@ -45,6 +46,8 @@ import Academy from "./academy/Academy";
 import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
+const MasteryPage = lazy(() => import("./mastery/MasteryPage"));
+
 type Page =
   | "mastery"
   | "dashboard"
@@ -55,7 +58,7 @@ type Page =
   | "werkstatt"
   | "labor";
 const navigation = [
-  {id:"mastery" as const,label:"Mastery",icon:Target},
+  { id: "mastery" as const, label: "Mastery", icon: Target },
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
   { id: "werkstatt" as const, label: "Übungswerkstatt", icon: Calculator },
@@ -221,7 +224,9 @@ function Application({
     <ExplanationProvider
       level={academy.progress.preferences?.explanation ?? "technical"}
     >
-      <div className={`app-shell ${academy.progress.mastery?.focus?"focus-mode":""}`}>
+      <div
+        className={`app-shell ${academy.progress.mastery?.focus ? "focus-mode" : ""}`}
+      >
         <aside className="sidebar">
           <a
             className="brand"
@@ -286,7 +291,22 @@ function Application({
               <span className="status-dot" /> Bereit für deinen nächsten Schritt
             </span>
           </header>
-          {academy.progress.mastery?.focus&&<div className="notice focus-exit"><span>Fokusansicht aktiv</span><button className="button secondary" onClick={()=>academy.setProgress(p=>({...p,mastery:{...p.mastery!,focus:false}}))}>Fokusansicht beenden</button></div>}
+          {academy.progress.mastery?.focus && (
+            <div className="notice focus-exit">
+              <span>Fokusansicht aktiv</span>
+              <button
+                className="button secondary"
+                onClick={() =>
+                  academy.setProgress((p) => ({
+                    ...p,
+                    mastery: { ...p.mastery!, focus: false },
+                  }))
+                }
+              >
+                Fokusansicht beenden
+              </button>
+            </div>
+          )}
           <main ref={mainRef} tabIndex={-1} id="main-content">
             <ExplanationPreference
               value={academy.progress.preferences?.explanation ?? "technical"}
@@ -337,7 +357,10 @@ function Application({
                     </button>
                   </section>
                 )}
-                <MasterySummary progress={academy.progress} open={()=>navigate("mastery")}/>
+                <MasterySummary
+                  progress={academy.progress}
+                  open={() => navigate("mastery")}
+                />
                 <LearningDashboard
                   progress={academy.progress}
                   error={storageError ? null : academy.error}
@@ -714,7 +737,33 @@ function Application({
                 }}
               />
             )}
-            {page === "mastery" && <MasteryHub progress={academy.progress} setProgress={academy.setProgress} practice={id=>{setWorkshopInitialId(id);navigate("werkstatt");}}/>}
+            {page === "mastery" && (
+              <AsyncView>
+                <MasteryPage
+                  progress={academy.progress}
+                  setProgress={academy.setProgress}
+                  practice={(id) => {
+                    setWorkshopInitialId(id);
+                    navigate("werkstatt");
+                  }}
+                  openModule={(id) => {
+                    setAcademyModuleId(id);
+                    setAcademyView("overview");
+                    navigate("akademie");
+                  }}
+                  openExam={() => {
+                    setAcademyModuleId(null);
+                    setAcademyView("exam");
+                    navigate("akademie");
+                  }}
+                  openCycle={() => {
+                    setAcademyModuleId("refrig-cycle-v08");
+                    setAcademyView("overview");
+                    navigate("akademie");
+                  }}
+                />
+              </AsyncView>
+            )}
             {page === "rechner" && <HeatCalculator />}
             {page === "akademie" && (
               <Academy

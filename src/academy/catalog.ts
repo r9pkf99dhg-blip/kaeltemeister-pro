@@ -1,3 +1,12 @@
+import {
+  refrigerationLessons,
+  refrigerationFormulas,
+  refrigerationSources,
+} from "../refrigeration/catalog";
+import {
+  cycleConcepts,
+  enrichRefrigerationTerms,
+} from "../refrigeration/concepts";
 import { labFormulas } from "../lab/formulas";
 import { workshopFormula } from "../workshop/data";
 import { deepTerms } from "./deep/terms";
@@ -24,6 +33,7 @@ import {
   lessonCards,
 } from "./foundations/model";
 const foundationLessons = [
+  ...refrigerationLessons,
   ...mathematicsLessons,
   ...physicsLessons,
   ...chemistryLessons,
@@ -62,6 +72,9 @@ export const modules = [
   ...module,
   termIds: [
     ...module.termIds,
+    ...cycleConcepts
+      .filter((c) => c.moduleIds.includes(module.id))
+      .map((c) => c.id),
     ...[...foundationTerms, ...deepTerms]
       .filter((t) => t.moduleIds.includes(module.id))
       .map((t) => t.id),
@@ -84,6 +97,7 @@ export const flashcards = [
   ...foundationLessons.flatMap(lessonCards),
 ];
 export const formulas = [
+  ...refrigerationFormulas,
   workshopFormula,
   ...labFormulas,
   ...baseFormulas,
@@ -99,6 +113,7 @@ export const formulas = [
   tex: formula.tex ?? formulaNotation[formula.id],
 }));
 export const sources = [
+  ...refrigerationSources,
   ...baseSources,
   ...electricalSources,
   ...foundationSources,
@@ -109,12 +124,12 @@ export const objectives = [
   ...electricalObjectives,
   ...foundationLessons.map((l) => ({ id: `${l.id}-objective`, text: l.goal })),
 ];
-export const terms = [
+export const terms = enrichRefrigerationTerms([
   ...baseTerms,
   ...electricalTerms,
   ...foundationTerms,
   ...deepTerms,
-];
+]);
 export { workedCycle } from "./data/registers";
 
 export { legacyBridges } from "./data/legacy";

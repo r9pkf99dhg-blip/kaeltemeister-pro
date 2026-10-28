@@ -1,4 +1,4 @@
-import {refrigerationKinds} from "../../technical/refrigeration";
+import { refrigerationKinds } from "../../technical/refrigeration";
 import { deepKinds } from "../../technical/deep";
 import { schoolKinds } from "../../technical/foundations";
 import { units, allowsSignedSI } from "../../technical/calculations";

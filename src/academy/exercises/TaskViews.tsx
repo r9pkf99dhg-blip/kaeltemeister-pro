@@ -1,3 +1,4 @@
+import { processOrderNames } from "../../refrigeration/tasks";
 import { Explain, useExplanation } from "../../language/Explanation";
 import {
   BlockMath,
@@ -56,6 +57,52 @@ export function TaskAnswer({
   onChange: (answer: ItemAnswer) => void;
   disabled?: boolean;
 }) {
+  if (item.id === "refrig-order-v08" && item.kind === "choice")
+    return (
+      <fieldset
+        id={`result-${item.id}`}
+        tabIndex={-1}
+        className="task-choices"
+        disabled={disabled}
+      >
+        <legend>Ordne die vier Prozessplätze ab Zustand 1</legend>
+        <p>
+          Jedes Bauteil genau einmal. Du kannst eine Auswahl zunächst leeren, um
+          zwei Plätze zu tauschen.
+        </p>
+        {[0, 1, 2, 3].map((index) => {
+          const parts = answer.value.split("|");
+          return (
+            <label key={index}>
+              Prozessplatz {index + 1}
+              <select
+                aria-label={`Prozessplatz ${index + 1}`}
+                value={parts[index] ?? ""}
+                onChange={(e) => {
+                  const next = Array.from(
+                    { length: 4 },
+                    (_, i) => parts[i] ?? "",
+                  );
+                  next[index] = e.target.value;
+                  onChange({ value: next.join("|"), unit: "" });
+                }}
+              >
+                <option value="">Bauteil auswählen</option>
+                {Object.entries(processOrderNames).map(([id, name]) => (
+                  <option
+                    key={id}
+                    value={id}
+                    disabled={parts.some((p, i) => i !== index && p === id)}
+                  >
+                    {name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          );
+        })}
+      </fieldset>
+    );
   if (item.kind === "choice")
     return (
       <fieldset

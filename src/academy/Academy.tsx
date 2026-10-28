@@ -345,7 +345,12 @@ export default function Academy({
                       <div className="glossary-entry" key={term.id}>
                         <h3>{term.title}</h3>
                         <p>
-                          {simpleTerms[term.title] ? (
+                          {term.detail ? (
+                            <Explain
+                              simple={term.detail.simple}
+                              technical={term.detail.technical}
+                            />
+                          ) : simpleTerms[term.title] ? (
                             <Explain
                               simple={simpleTerms[term.title]}
                               technical={term.definition}
@@ -359,6 +364,19 @@ export default function Academy({
                             </>
                           )}
                         </p>
+                        {term.detail && (
+                          <details>
+                            <summary>Bedeutung, Einheit und Beispiel</summary>
+                            <p>{term.detail.unit}</p>
+                            <p>{term.detail.example}</p>
+                            <p>Typische Verwechslung: {term.detail.mistake}</p>
+                            <p>
+                              Quelle: CoolProp 7.2.0 API/Referenzkonvention und
+                              eigene Begriffsaufbereitung; menschliche
+                              Fachprüfung offen.
+                            </p>
+                          </details>
+                        )}
                         <div>
                           {term.moduleIds.map((id) => (
                             <button

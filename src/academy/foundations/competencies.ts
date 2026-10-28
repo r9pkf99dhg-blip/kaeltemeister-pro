@@ -6,6 +6,14 @@ export interface Competency {
 }
 /** Namen und IDs sind kuratiert; keine Positionsnummer als fachliche Identität. */
 export const competencies: Competency[] = [
+  ["refrig-state", "Zustände und Enthalpiereferenz", "refrig-state-v08"],
+  ["refrig-phase", "Phasen und Enthalpiedifferenz", "refrig-phase-v08"],
+  ["refrig-cycle", "Kreisprozess und log-p-h", "refrig-cycle-v08"],
+  [
+    "refrig-compression",
+    "Isentroper Fluidverdichtervergleich",
+    "refrig-compression-v08",
+  ],
   ["arithmetic", "Rechenregeln und Vorzeichen", "math-arithmetic"],
   ["fractions", "Brüche und Quotienten", "math-fractions"],
   ["percent", "Anteile und Proportionen", "math-percent"],

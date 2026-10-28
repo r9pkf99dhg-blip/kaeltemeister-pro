@@ -1,5 +1,7 @@
+import { refrigerationLanguage } from "../refrigeration/language";
 import type { SimpleCore } from "./model";
 export const simpleCores: SimpleCore[] = [
+  ...refrigerationLanguage,
   {
     id: "math-arithmetic",
     introduction:
