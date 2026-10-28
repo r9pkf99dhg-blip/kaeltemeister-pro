@@ -184,7 +184,7 @@ export function createBackup(
   const backup: Backup = {
     format: "kaeltemeister-pro-backup",
     schemaVersion: 1,
-    appVersion: "0.4.0",
+    appVersion: "0.5.0",
     exportedAt: now.toISOString(),
     data: {
       academy,

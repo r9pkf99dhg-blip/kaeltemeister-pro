@@ -1,0 +1,527 @@
+{
+  "format": "kaeltemeister-pro-backup",
+  "schemaVersion": 1,
+  "appVersion": "0.4.0",
+  "exportedAt": "2026-10-27T12:00:00.000Z",
+  "data": {
+    "academy": {
+      "schemaVersion": 3,
+      "performance": {
+        "cycle-q1": {
+          "topicId": "cycle-basics",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z"
+        },
+        "cycle-card1": {
+          "topicId": "cycle-basics",
+          "itemRevision": 1,
+          "kind": "card",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z"
+        },
+        "electric-circuits-q1": {
+          "topicId": "electric-circuits",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z"
+        },
+        "calc-electric-dc": {
+          "topicId": "electric-power-topic",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z"
+        },
+        "electric-ohm-q1": {
+          "topicId": "electric-ohm",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z"
+        },
+        "el-current-charge-a": {
+          "topicId": "electric-quantities",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-27T12:00:00.000Z"
+        },
+        "electric-q-dc": {
+          "topicId": "electric-power-topic",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z"
+        },
+        "el-energy-a": {
+          "topicId": "electric-work",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-27T12:00:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-27T12:00:00.000Z"
+        }
+      },
+      "exerciseAnswers": {},
+      "recentModules": [
+        {
+          "moduleId": "electric-work",
+          "openedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "moduleId": "electric-quantities",
+          "openedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "moduleId": "electric-ohm",
+          "openedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "moduleId": "electric-circuits",
+          "openedAt": "2026-10-27T12:00:00.000Z"
+        },
+        {
+          "moduleId": "cycle-basics",
+          "openedAt": "2026-10-27T12:00:00.000Z"
+        }
+      ],
+      "activeExam": null,
+      "examHistory": [
+        {
+          "id": "v04-fixture-exam",
+          "domainId": "elektro",
+          "level": "grundlagen",
+          "startedAt": "2026-10-27T12:00:00.000Z",
+          "finishedAt": "2026-10-27T12:00:00.000Z",
+          "timedOut": false,
+          "correctCount": 4,
+          "total": 6,
+          "scorePercent": 67,
+          "results": [
+            {
+              "snapshot": {
+                "item": {
+                  "id": "electric-circuits-q1",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "electric-circuits",
+                  "domainId": "elektro",
+                  "level": "grundlagen",
+                  "title": "Was addiert sich bei idealen Widerständen in Reihe?",
+                  "prompt": "Was addiert sich bei idealen Widerständen in Reihe?",
+                  "article": {
+                    "kind": "module",
+                    "id": "electric-circuits"
+                  },
+                  "options": [
+                    {
+                      "id": "electric-circuits-q1-1",
+                      "text": "Die Kehrwerte als Ersatzwiderstand"
+                    },
+                    {
+                      "id": "electric-circuits-q1-2",
+                      "text": "Die Stromstärken im selben Pfad"
+                    },
+                    {
+                      "id": "electric-circuits-q1-0",
+                      "text": "Die Widerstände"
+                    }
+                  ],
+                  "correctOptionId": "electric-circuits-q1-0",
+                  "explanation": "In Reihe durchfließt derselbe Strom beide Widerstände. Die Spannungsabfälle addieren sich, weshalb der Ersatzwiderstand gleich der Summe der Einzelwiderstände ist."
+                }
+              },
+              "answer": {
+                "value": "electric-circuits-q1-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "revision": 1,
+                  "kind": "numeric",
+                  "review": "calculation-tested-expert-review-pending",
+                  "relativeTolerance": 0.005,
+                  "sourceIds": [
+                    "didactic-exercises",
+                    "openstax-electric-github"
+                  ],
+                  "id": "calc-electric-dc",
+                  "topicId": "electric-power-topic",
+                  "domainId": "elektro",
+                  "level": "grundlagen",
+                  "title": "Elektrische Gleichstromleistung",
+                  "prompt": "Eine stationäre Gleichstromlast wird mit 24 V versorgt und nimmt 2 A auf. Welche Leistung wird umgesetzt?",
+                  "article": {
+                    "kind": "note",
+                    "id": "electric-power-note"
+                  },
+                  "formulaId": "dc-electric-power",
+                  "calculation": "dc-power",
+                  "givens": [
+                    {
+                      "id": "voltage",
+                      "label": "Gleichspannung",
+                      "value": 24,
+                      "unit": "V",
+                      "quantity": "voltage"
+                    },
+                    {
+                      "id": "current",
+                      "label": "Gleichstrom",
+                      "value": 2,
+                      "unit": "A",
+                      "quantity": "current"
+                    }
+                  ],
+                  "sought": "Elektrische Leistung",
+                  "quantity": "power",
+                  "answerUnit": "W",
+                  "absoluteToleranceSI": 0.1,
+                  "hint": "Für diesen Gleichstromfall gilt P = U × I.",
+                  "steps": [
+                    "P = 24 V × 2 A = 48 W.",
+                    "48 W = 0,048 kW."
+                  ],
+                  "mistakes": [
+                    "Spannung durch Strom teilen; das wäre Widerstand.",
+                    "Die Gleichstromformel pauschal als Wirkleistung für Wechsel-/Drehstrom einsetzen."
+                  ],
+                  "assumptions": "Ausschließlich stationärer Gleichstromfall mit konstanten Werten. Keine Anleitung zur Arbeit an elektrischen Anlagen."
+                },
+                "expectedSI": 48
+              },
+              "answer": {
+                "value": "48",
+                "unit": "W"
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "answerSI": 48,
+                "message": "Richtig innerhalb der Rechentoleranz."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "electric-ohm-q1",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "electric-ohm",
+                  "domainId": "elektro",
+                  "level": "grundlagen",
+                  "title": "Welche Umstellung liefert die Spannung?",
+                  "prompt": "Welche Umstellung liefert die Spannung?",
+                  "article": {
+                    "kind": "module",
+                    "id": "electric-ohm"
+                  },
+                  "options": [
+                    {
+                      "id": "electric-ohm-q1-1",
+                      "text": "U = R / I"
+                    },
+                    {
+                      "id": "electric-ohm-q1-2",
+                      "text": "U = I / R"
+                    },
+                    {
+                      "id": "electric-ohm-q1-0",
+                      "text": "U = R × I"
+                    }
+                  ],
+                  "correctOptionId": "electric-ohm-q1-0",
+                  "explanation": "Aus I = U/R folgt durch Multiplikation mit R die Beziehung U = R × I. Ohm mal Ampere ergibt Volt und sichert die Dimension der Umstellung ab."
+                }
+              },
+              "answer": {
+                "value": "electric-ohm-q1-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "el-current-charge-a",
+                  "revision": 1,
+                  "kind": "numeric",
+                  "topicId": "electric-quantities",
+                  "domainId": "elektro",
+                  "level": "grundlagen",
+                  "title": "Ladungstransport einer Steuerlast",
+                  "prompt": "Fiktiver Lernfall aus einer idealisierten Steuerungsumgebung: Berechne Stromstärke. Die vorgegebenen Werte sind keine Hersteller- oder Auslegungsdaten.",
+                  "article": {
+                    "kind": "module",
+                    "id": "electric-quantities"
+                  },
+                  "formulaId": "electric-current-charge",
+                  "calculation": "charge-current",
+                  "givens": [
+                    {
+                      "id": "charge",
+                      "label": "Ladungsmenge",
+                      "value": 2,
+                      "unit": "C",
+                      "quantity": "charge"
+                    },
+                    {
+                      "id": "time",
+                      "label": "Zeitspanne",
+                      "value": 10,
+                      "unit": "s",
+                      "quantity": "time"
+                    }
+                  ],
+                  "sought": "Stromstärke",
+                  "quantity": "current",
+                  "answerUnit": "A",
+                  "absoluteToleranceSI": 0.000001,
+                  "relativeTolerance": 0.005,
+                  "sourceIds": [
+                    "didactic-exercises",
+                    "openstax-current-github"
+                  ],
+                  "hint": "Wähle die gesuchte Größe, rechne in SI um und verwende die angegebene Grundbeziehung.",
+                  "steps": [
+                    "I = ΔQ / Δt.",
+                    "I = 2 C / 10 s = 0,2 A = 200 mA."
+                  ],
+                  "mistakes": [
+                    "Milli-, Kilo- oder Zeitfaktoren bei der Umrechnung vergessen.",
+                    "Die Formel falsch umstellen oder Ergebnis ohne passende Einheit angeben."
+                  ],
+                  "assumptions": "Positive Beträge; ideale, konstante ohmsche Widerstände bzw. konstante Gleichstrom-/Wirkleistung über das Intervall. Keine Verlust- oder Einschaltmodelle. Nur rechnerische Übung, keine praktischen Arbeiten oder Schutzdimensionierung.",
+                  "review": "calculation-tested-expert-review-pending"
+                },
+                "expectedSI": 0.2
+              },
+              "answer": {
+                "value": "48",
+                "unit": "W"
+              },
+              "grade": {
+                "status": "invalid",
+                "correct": false,
+                "message": "Bitte gib eine endliche, nicht negative Zahl mit passender Einheit ein. Dezimalkomma und Punkt sind erlaubt; keine Tausendertrenner."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "electric-q-dc",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "electric-power-topic",
+                  "domainId": "elektro",
+                  "level": "grundlagen",
+                  "title": "Gleichstromleistung",
+                  "prompt": "Welche Beziehung gilt im betrachteten stationären Gleichstromfall?",
+                  "article": {
+                    "kind": "note",
+                    "id": "electric-power-note"
+                  },
+                  "formulaId": "dc-electric-power",
+                  "options": [
+                    {
+                      "id": "electric-q-dc-ui",
+                      "text": "P = U × I"
+                    },
+                    {
+                      "id": "electric-q-dc-u-i",
+                      "text": "P = U / I"
+                    },
+                    {
+                      "id": "electric-q-dc-i-u",
+                      "text": "P = I / U"
+                    }
+                  ],
+                  "correctOptionId": "electric-q-dc-ui",
+                  "explanation": "Volt × Ampere ergibt Watt. Spannung geteilt durch Strom ergibt Widerstand, keine Leistung. Für Wechsel-/Drehstrom gelten zusätzliche Voraussetzungen."
+                }
+              },
+              "answer": {
+                "value": "electric-q-dc-ui",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "el-energy-a",
+                  "revision": 1,
+                  "kind": "numeric",
+                  "topicId": "electric-work",
+                  "domainId": "elektro",
+                  "level": "grundlagen",
+                  "title": "Arbeit der Modellsteuerung",
+                  "prompt": "Fiktiver Lernfall aus einer idealisierten Steuerungsumgebung: Berechne Elektrische Arbeit. Die vorgegebenen Werte sind keine Hersteller- oder Auslegungsdaten.",
+                  "article": {
+                    "kind": "module",
+                    "id": "electric-work"
+                  },
+                  "formulaId": "electric-energy",
+                  "calculation": "electric-energy",
+                  "givens": [
+                    {
+                      "id": "power",
+                      "label": "Konstante Wirkleistung",
+                      "value": 12,
+                      "unit": "W",
+                      "quantity": "power"
+                    },
+                    {
+                      "id": "time",
+                      "label": "Zeitspanne",
+                      "value": 2,
+                      "unit": "h",
+                      "quantity": "time"
+                    }
+                  ],
+                  "sought": "Elektrische Arbeit",
+                  "quantity": "energy",
+                  "answerUnit": "Wh",
+                  "absoluteToleranceSI": 1,
+                  "relativeTolerance": 0.005,
+                  "sourceIds": [
+                    "didactic-exercises",
+                    "openstax-electric-github"
+                  ],
+                  "hint": "Wähle die gesuchte Größe, rechne in SI um und verwende die angegebene Grundbeziehung.",
+                  "steps": [
+                    "2 h = 7200 s.",
+                    "E = 12 W × 7200 s = 86400 J.",
+                    "86400/3600 = 24 Wh = 0,024 kWh."
+                  ],
+                  "mistakes": [
+                    "Milli-, Kilo- oder Zeitfaktoren bei der Umrechnung vergessen.",
+                    "Die Formel falsch umstellen oder Ergebnis ohne passende Einheit angeben."
+                  ],
+                  "assumptions": "Positive Beträge; ideale, konstante ohmsche Widerstände bzw. konstante Gleichstrom-/Wirkleistung über das Intervall. Keine Verlust- oder Einschaltmodelle. Nur rechnerische Übung, keine praktischen Arbeiten oder Schutzdimensionierung.",
+                  "review": "calculation-tested-expert-review-pending"
+                },
+                "expectedSI": 86400
+              },
+              "answer": {
+                "value": "48",
+                "unit": "W"
+              },
+              "grade": {
+                "status": "invalid",
+                "correct": false,
+                "message": "Bitte gib eine endliche, nicht negative Zahl mit passender Einheit ein. Dezimalkomma und Punkt sind erlaubt; keine Tausendertrenner."
+              }
+            }
+          ]
+        }
+      ],
+      "read": {
+        "cycle-basics": {
+          "revision": 1,
+          "levels": [
+            "grundlagen"
+          ]
+        }
+      },
+      "answers": {
+        "cycle-q1": {
+          "optionId": "cycle-q1-b",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-27T12:00:00.000Z"
+        },
+        "electric-circuits-q1": {
+          "optionId": "electric-circuits-q1-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-27T12:00:00.000Z"
+        },
+        "electric-ohm-q1": {
+          "optionId": "electric-ohm-q1-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-27T12:00:00.000Z"
+        }
+      },
+      "reviews": {
+        "cycle-card1": {
+          "cardRevision": 1,
+          "repetitions": 1,
+          "intervalDays": 1,
+          "dueAt": "2026-10-28T12:00:00.000Z",
+          "lastReviewedAt": "2026-10-27T12:00:00.000Z"
+        }
+      },
+      "legacySummary": null,
+      "updatedAt": "2026-10-27T12:00:00.000Z"
+    },
+    "legacy": {
+      "read": [
+        "kreislauf"
+      ],
+      "attempts": 2,
+      "best": 75,
+      "last": 50
+    },
+    "legacyV2": "{\"schemaVersion\":2,\"read\":{\"cycle-basics\":{\"levels\":[\"grundlagen\"],\"revision\":1}},\"answers\":{},\"reviews\":{},\"legacySummary\":{\"attempts\":2,\"best\":75,\"last\":50},\"updatedAt\":null}",
+    "settings": {}
+  }
+}

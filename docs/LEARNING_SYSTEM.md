@@ -1,8 +1,8 @@
-# Lernsystem · Version 0.4
+# Lernsystem · Version 0.5
 
 ## Angebot und Fortsetzen
 
-Fünf bestehende Kältemodule und fünf Elektro-Grundlagenmodule mit drei unterschiedlichen Niveaus. Elektro-Reihenfolge: Grundgrößen → Spannung/Strom/Widerstand → Ohmsches Gesetz → Leistung/Arbeit → Reihen-/Parallelschaltungen. Voraussetzungen sind im Modul verlinkt. Je Modul sind Fragen, Karten und zugehörige Zahlenaufgaben über dieselbe Oberfläche nutzbar. Die weiteren Fachgebiete und elf folgenden Elektro-Themen bleiben ehrlich als Planung erkennbar.
+25 verfügbare Module: fünf Kälte-, fünf Elektro-, acht Mathematik-, vier Physik- und drei Chemie-Module mit den vorhandenen drei Wissensstufen. Elektro-Reihenfolge: Grundgrößen → Spannung/Strom/Widerstand → Ohmsches Gesetz → Leistung/Arbeit → Reihen-/Parallelschaltungen. Voraussetzungen sind im Modul verlinkt. Je Modul sind Fragen, Karten und zugehörige Zahlenaufgaben über dieselbe Oberfläche nutzbar. Die weiteren Fachgebiete und elf folgenden Elektro-Themen bleiben ehrlich als Planung erkennbar.
 
 Das Dashboard zeigt Fortschritt je verfügbarem Fachgebiet, heute fällige Wiederholungen, Schwächen, Empfehlungen, letzte Module und Prüfungen. Über „Zuletzt bearbeitete Module“ lässt sich die letzte Lerneinheit fortsetzen. Gelesen ist ein Lesestand je Niveau/Revision und kein Kompetenznachweis.
 
@@ -16,7 +16,7 @@ Die Trefferquote basiert auf aggregierten bisherigen v3-Versuchen, nicht auf ein
 
 ## Zahlenaufgaben und Prüfungen
 
-24 vollständig ausgearbeitete Zahlenaufgaben mit Einheiten, Hinweis, Schritten, Fehlern und Fachbezug. SI-Kern und Bewertungslogik sind gemeinsam für Training und Prüfung. Dezimalkomma und Punkt sind erlaubt, Tausendertrenner nicht. Toleranz: Maximum aus absoluter SI-Toleranz und 0,5 % des Sollwerts plus kleiner Maschinenrundungsreserve. Das ist eine didaktische Rundungshilfe, keine Messgenauigkeit. Ungültige/leere Trainingseingaben zählen nicht als bewerteter Versuch; wiederholter Klick ohne Antwortänderung zählt nicht erneut.
+63 vollständig ausgearbeitete Zahlenaufgaben mit Einheiten, Hinweis, Schritten, Fehlern und Fachbezug. SI-Kern und Bewertungslogik sind gemeinsam für Training und Prüfung. Dezimalkomma und Punkt sind erlaubt, Tausendertrenner nicht. Für reine mathematische Zahlen sind negative Ergebnisse und einfache Bruchantworten wie −1/2 möglich; technische Größen behalten ihre physikalischen Bereichsgrenzen. Toleranz: Maximum aus absoluter SI-Toleranz und aufgabenspezifischer relativer Toleranz des Sollwerts plus kleiner Maschinenrundungsreserve. Das ist eine didaktische Rundungshilfe, keine Messgenauigkeit. Ungültige/leere Trainingseingaben zählen nicht als bewerteter Versuch; wiederholter Klick ohne Antwortänderung zählt nicht erneut.
 
 Die **selbst erstellte Übungsprüfung** bleibt ausdrücklich keine offizielle Meisterprüfung. Fachgebiet, Niveauobergrenze und 5/10/20 Minuten; bis zu drei Auswahl- und drei Zahlenaufgaben, bekannte Fehler priorisiert. Höhere Niveaus können Grundlagen enthalten. Der vergrößerte Elektro-Pool ersetzt keine vollständige Abschlussprüfung.
 
@@ -33,3 +33,20 @@ Beschädigte/unklare v3- und nun auch beschädigte v1-Daten werden nicht automat
 ## Fachqualität und Sicherheit
 
 Prüfregister und Quellenumfang sind in der App sichtbar. Automatische Zahlenprüfung bedeutet keine unabhängige fachliche Freigabe. Elektro-Aufgaben sind rein rechnerisch, nicht praktische Arbeitsanleitungen. Reale Bauteilwerte, Schutzmaßnahmen, Normkonformität und Anlagenfreigaben werden nicht aus fiktiven Beispielen abgeleitet.
+
+
+## Neue Lernpfade und Brücke
+
+Mathematik beginnt bei Rechenregeln und führt über Brüche, Prozent/Dreisatz, Variablen und Gleichungen zu Potenzen, Einheiten und Formelumstellungen. Physik behandelt Bewegung/Kraft, Energie/Leistung, Druck/Dichte und Wärme/Phasenwechsel. Chemie behandelt Stoffklassifikation, Formelsprache und Stoffmenge/Atombilanz. Die Curriculumsdateien trennen verfügbare Lektionen von weiterführenden Plänen.
+
+Neue Lernende erhalten unter ansonsten gleich priorisierten Einstiegen zuerst Inhalte ohne noch ungelesene Voraussetzungen. Eine echte falsche Antwort oder fällige Wiederholung behält Vorrang. Gelesene Voraussetzungen sind kein Kompetenznachweis.
+
+Nach falschen Zahlenantworten bietet die intelligente Lernbrücke eine möglicherweise hilfreiche vorhandene Grundlagenlektion an. Der Grund wird erklärt; keine sichere Fehlerdiagnose behauptet. Lesen und Selbsttest sind dieselben Lernaktionen. Die ursprüngliche Rechnung bleibt mit Antwort/Einheit erhalten; der Rückkehrbutton fokussiert ihr Eingabefeld. Gilt im Training, nicht als Lösungshilfe in einer laufenden Prüfung. Offene Brücken-/Trainerschritte und unbewertete Eingaben werden nicht über einen Reload hinweg persistiert.
+
+## Formelsatz und weitere Zahlenvarianten
+
+KaTeX/mhchem rendert explizite Formeln, Brüche und chemische Gleichungen. Komplexere Musterlösungen lassen sich schrittweise aufklappen. Wo eine zweite unabhängig geprüfte Zahlenvariante derselben Aufgabenart vorhanden ist, öffnet „Mit anderen geprüften Zahlen üben“ diese feste Variante. Kein ungeprüfter Zufallsgenerator. 19 vorhandene Registerformeln und 24 alte Musterlösungen sind explizit migriert; alte Freitexte/Snapshots bleiben lesbar.
+
+## Fortbestehende Sicherungskompatibilität
+
+Eine echte aus main 0.4 erzeugte vollständige Sicherung wird in 0.5 unverändert gelesen, wiederhergestellt und erneut exportiert. Neue optionale Snapshot-Felder sind kein neues Pflichtschema. Neue Sicherungen mit neuen Aufgabentypen benötigen 0.5 oder später; Rückwärtsimport in eine ältere App wird nicht behauptet. Siehe BACKUP_RESTORE und DOMAIN_MODEL.

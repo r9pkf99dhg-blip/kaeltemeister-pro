@@ -1,3 +1,4 @@
+import { MathText } from "../../math/Math";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import { flashcards, modules } from "../catalog";
 import type { AcademyProgress } from "../model";
@@ -76,8 +77,14 @@ export default function ReviewCards({
             {(index % cards.length) + 1} / {cards.length}
           </p>
           <span className="pill">{flipped ? "Rückseite" : "Vorderseite"}</span>
-          <h3>{card.front}</h3>
-          {flipped && <p className="flashcard-back">{card.back}</p>}
+          <h3>
+            <MathText text={card.front} />
+          </h3>
+          {flipped && (
+            <p className="flashcard-back">
+              <MathText text={card.back} />
+            </p>
+          )}
           <button
             className="button primary"
             aria-expanded={flipped}

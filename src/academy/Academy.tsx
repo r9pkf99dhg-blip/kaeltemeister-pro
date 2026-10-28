@@ -1,3 +1,6 @@
+import RearrangementTrainer from "./foundations/RearrangementTrainer";
+import { MathText } from "../math/Math";
+import LessonReading from "./components/LessonReading";
 import { numericTasks } from "./exercises/data";
 import Exercises from "./exercises/Exercises";
 import ExamMode from "./exams/ExamMode";
@@ -133,11 +136,11 @@ export default function Academy({
         <>
           <div className="page-heading">
             <div>
-              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.4</p>
+              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.5</p>
               <h1>Lernakademie</h1>
               <p>
-                Kälte- und Elektro-Grundlagen. Drei Wissensstufen. Dein eigenes
-                Lerntempo.
+                Mathematische Grundlagen und technische Fachmodule. Drei
+                Wissensstufen. Dein eigenes Lerntempo.
               </p>
             </div>
           </div>
@@ -273,7 +276,11 @@ export default function Academy({
                     <span className="eyebrow">
                       {module.domainId === "kaelte"
                         ? "KÄLTETECHNIK"
-                        : "ELEKTROTECHNIK"}{" "}
+                        : module.domainId === "elektro"
+                          ? "ELEKTROTECHNIK"
+                          : domains
+                              .find((d) => d.id === module.domainId)
+                              ?.title.toLocaleUpperCase("de")}{" "}
                       · {String(index + 1).padStart(2, "0")}
                     </span>
                     <h2>{module.title}</h2>
@@ -349,10 +356,11 @@ export default function Academy({
               <section className="domain-outline">
                 <h2>Deine Fachgebiete</h2>
                 <p>
-                  Kapitel → Unterkapitel → Lernmodule. Fünf Kälte- und fünf
-                  Elektro-Module sind nutzbar. Weitere Inhalte sind ausdrücklich
-                  in Vorbereitung. Rechtsinhalte benötigen vor Veröffentlichung
-                  eine datierte Prüfung.
+                  Kapitel → Unterkapitel → Lernmodule. Die verfügbaren Module
+                  sind vollständig bearbeitbar; mathematische Grundlagen
+                  ergänzen die Kälte- und Elektro-Lernpfade. Weitere Inhalte
+                  sind ausdrücklich in Vorbereitung. Rechtsinhalte benötigen vor
+                  Veröffentlichung eine datierte Prüfung.
                 </p>
                 {domains
                   .filter((item) => domain === "all" || item.id === domain)
@@ -362,8 +370,8 @@ export default function Academy({
                         <BookOpen size={18} />
                         <span>{item.title}</span>
                         <span className="pill">
-                          {["kaelte", "elektro"].includes(item.id)
-                            ? "5 Module verfügbar"
+                          {modules.some((m) => m.domainId === item.id)
+                            ? `${modules.filter((m) => m.domainId === item.id).length} Module verfügbar`
                             : "Inhalte in Vorbereitung"}
                         </span>
                       </summary>
@@ -488,57 +496,11 @@ function ModuleView({
           ))}
         </ul>
       </section>
-      <section>
-        <h2>Einfacher Einstieg</h2>
-        <p>{content.introduction}</p>
-      </section>
-      <section>
-        <h2>Fachliche Erklärung</h2>
-        <p>{content.explanation}</p>
-      </section>
-      <section>
-        <h2>Technische Zusammenhänge</h2>
-        <p>{content.connections}</p>
-      </section>
-      <section>
-        <h2>Formeln und Einheiten</h2>
-        {module.formulaIds.map((id) => {
-          const formula = formulas.find((item) => item.id === id)!;
-          return (
-            <div className="learning-formula" key={id}>
-              <h3>{formula.title}</h3>
-              <p className="formula-expression">{formula.expression}</p>
-              <p>
-                <strong>Einheiten:</strong> {formula.units}
-              </p>
-              <p>
-                <strong>Gültigkeit:</strong> {formula.assumptions}
-              </p>
-              {formula.calculatorId && (
-                <button className="text-button" onClick={openCalculator}>
-                  Passenden Rechner öffnen <ArrowRight size={16} />
-                </button>
-              )}
-            </div>
-          );
-        })}
-      </section>
-      <section>
-        <h2>Durchgerechnetes Praxisbeispiel</h2>
-        <p>{content.example}</p>
-      </section>
-      <section>
-        <h2>Typische Fehler</h2>
-        <ul>
-          {content.mistakes.map((mistake) => (
-            <li key={mistake}>{mistake}</li>
-          ))}
-        </ul>
-      </section>
-      <section className="takeaway">
-        <h2>Zusammenfassung</h2>
-        <p>{content.summary}</p>
-      </section>
+      <LessonReading
+        module={module}
+        level={level}
+        openCalculator={openCalculator}
+      />
       <button
         className="button primary"
         disabled={moduleRead(progress, module.id, level)}
@@ -574,6 +536,9 @@ function ModuleView({
           setProgress={setProgress}
         />
       </section>
+      {module.id === "math-rearrange" && (
+        <RearrangementTrainer setProgress={setProgress} />
+      )}
       {numericTasks.some((t) => t.topicId === module.id) && (
         <Exercises
           key={`exercises-${module.id}`}
@@ -585,7 +550,9 @@ function ModuleView({
       )}
       <section>
         <h2>Vertiefung</h2>
-        <p>{content.deepening}</p>
+        <p>
+          <MathText text={content.deepening} />
+        </p>
         <div className="related-links">
           {module.related.map((related) =>
             related.available && related.kind === "calculator" ? (

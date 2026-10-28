@@ -1,57 +1,60 @@
-# Architektur · Version 0.4
+# Architektur · Version 0.5
 
-## Ausgangslage und erhaltene Struktur
+Basis: main `163b9b7` (Version 0.4). Vorhandenes React/TypeScript/Vite/Tailwind und GitHub Pages bleiben erhalten. Neue fachliche Inhalte sind Teil derselben Akademie, keine zweite Lern-App. Keine Konten, Backend- oder kostenpflichtigen APIs.
 
-Grundlage ist `main` mit Merge PR #5 (`2c846d1`, Version 0.3). React/TypeScript/Vite/Tailwind und der Pages-Pfad bleiben erhalten. Keine neue Laufzeitabhängigkeit, kein Backend, keine Accounts oder kostenpflichtigen APIs. Die technischen Änderungen erfolgen auf einem eigenen Branch.
+## Gemeinsame Schichten
 
 ```text
-src/technical/calculations.ts    reine SI-Rechenfunktionen und Einheitentypen
-src/academy/data/               Fachgebiete, bestehende Kälte-Inhalte, neue Elektro-Inhalte
-src/academy/catalog.ts          gemeinsame Sicht, stabile IDs ohne doppelte Wissensbestände
-src/academy/exercises/          normalisierte Aufgaben, Snapshot, Bewertung, Training
-src/academy/adaptive/           Zähler, Wiederholungen, erklärbare Empfehlungen, Dashboard
-src/academy/exams/              zeitbegrenzte Übungsprüfungen, Validierung, Analyse
-src/academy/progress.ts         geschützter v1/v2/v3-Leser und Lernaktionen
-src/academy/useAcademyProgress.ts Speicherung und Deadline auch außerhalb der Prüfung
-src/storage/backup.ts           versioniertes Backup, Validierung, Journal, Rücknahme
-src/storage/BackupPanel.tsx     Dateiauswahl, Vorschau, Bestätigung, Download
-src/quality/register.ts        einheitliche Prüfstatus und vollständiges Inhaltsregister
-scripts/generate-review.mjs    bearbeitbarer Fachprüfbericht aus demselben Register
+src/math/                        KaTeX/mhchem, explizite Notation und sichere Komponenten
+src/technical/calculations.ts    SI-Einheiten, technische Berechnungen
+src/technical/foundations.ts     begrenzte reine Schulmathematik, kein eval
+src/academy/foundations/         Mathematik/Physik/Chemie, Trainer, Kompetenzen und Lernbrücke
+src/academy/catalog.ts           gemeinsame Sicht auf alle Fachinhalte
+src/academy/components/          gemeinsamer Lesebaustein, Modulquiz und Karteikarten
+src/academy/exercises/           Aufgaben/Snapshots, Grader, Zahlen-Training
+src/academy/adaptive/            Lernzähler, Termine und begründete Empfehlungen
+src/academy/exams/               selbst erstellte Übungsprüfungen und Analyse
+src/storage/                    geschützter Backup-/Restore-Vertrag und Journal
+src/quality/                    vollständiges Prüfregister mit getrennten Belegen
 ```
 
-Der vorhandene Wärmeleistungsrechner und alle Zahlenaufgaben verwenden denselben SI-Kern. Neue Funktionen sind Ladungsstrom, drei Ohm-Umstellungen, elektrische Arbeit sowie Reihen-/Parallelwiderstand. Das Formelregister beschreibt die Gleichung; Formeltexte werden nicht als Code ausgeführt. SI-Werte und Anzeigeeinheiten sind getrennt. Große Parallelwiderstände werden ohne unnötigen Produktüberlauf verarbeitet.
+25 Module (10 erhalten + 15 Grundlagen), 63 Zahlenaufgaben und elf Umstellungsziele nutzen dieselben IDs, Quellen, Formeln und Lernaktionen. Die neuen Inhalte werden in denselben Katalog aufgenommen. Alle Kapitel/Unterkapitel sind weiterhin klar verfügbar oder geplant. DOMAIN_AUDIT wird aus dem Katalog erzeugt.
 
-Modulfragen werden für Prüfungen adaptiert, nicht als zweiter Fragenkatalog kopiert. Die bisherigen acht Aufgaben/IDs bleiben erhalten; 16 Elektro-Varianten ergänzen sie. Das Inhaltsmodell ergänzt nur optionale Voraussetzungen und Sicherheitshinweise. Es gibt keinen generischen Formelparser und keine neue Pluginplattform.
+## Formeln sind Darstellung, keine Programme
 
-## Speichergrenze und Wiederherstellung
+KaTeX 0.19.1 mit mhchem wird samt CSS/Fonts lokal gebündelt. `trust=false`, begrenzte Expansion und sicherer Fallback. Nur ausdrücklich markierte Mathematik wird gerendert. 19 alte Registerformeln und 24 alte Musterlösungen haben kuratierte TeX-Zuordnungen. Ausgewählte ganze Antworttexte besitzen explizite Notation. Gewöhnliche Textschrägstriche werden nicht heuristisch ersetzt.
 
-Browserfortschritt bleibt `schemaVersion: 3` unter dem bisherigen v3-Schlüssel. Das neue Dateiformat hat eine separate `schemaVersion: 1`. Bestehende v2-Zeichenfolgen bleiben erhalten; alte Ergebnisse/Snapshots bleiben lesbar. Keine erfundenen historischen Versuche.
+`InlineMath`, `BlockMath`, `FormulaBox`, `VariableDefinitions`, `SolutionSteps` sind wiederverwendbar. Komplexe Musterlösungen lassen sich schrittweise aufklappen. Alte Snapshots ohne optionale TeX-Felder bleiben darstellbar. KaTeX und React werden in eigene Vite/Rolldown-Chunks aufgeteilt, statt eine sehr große einzige JS-Datei zu erzeugen.
 
-Der kleine `StoragePort` kapselt die benötigten Speicheroperationen für Backup/Restore und Fehlerprüfungen. Er ist die spätere Grenze zu IndexedDB. Eine lokale Wiederherstellung benötigt wegen mehrerer Schlüssel ein pending/committed-Journal. Vor App-Mount wird es sicher wiederaufgenommen. Nach Erfolg wird der React-Baum mit neu gelesenen Daten neu gestartet, damit alte Hooks keinen alten Stand zurückschreiben. Bei nicht abgeschlossener Rücknahme verhindert die Journalprüfung weitere Speicherwirkungen. Siehe [BACKUP_RESTORE.md](BACKUP_RESTORE.md).
+Die numerische Auswertung bleibt im gemeinsamen reinen Kern. Neue Schuloperationen sind explizite Typen, keine frei eingegebenen Ausdrücke. Nur mathematische Zahlen erlauben negative Ergebnisse bzw. einfache Bruchantworten. Physikalische Größen behalten passende Bereichs-/Nenner-/Einheitenprüfungen. Molare Masse und Stoffmenge erhalten eigene Mengenarten.
 
-Andere Tabs werden über native storage-Ereignisse als veraltet erkannt und müssen neu laden. Das ist bewusst keine Mehrgeräte-/Mehrtab-Zusammenführung. Gleichzeitige Bearbeitung hat weiterhin Grenzen; vor Import andere Tabs schließen. Eine spätere Synchronisation erfordert Ereignisidentität, Reset-Generation und Konfliktregeln. Es gibt keine externe Datenübertragung.
+## Lernbrücke und Voraussetzungen
 
-## Navigation und Bedienung
+Stabile Kompetenz-IDs verbinden Aufgabe → benötigte Kompetenz → vorhandene Grundlagenlektion. Gerichtete Modulvoraussetzungen sind auf Existenz/Zyklen getestet. Neue Lernende erhalten zuerst Grundlagen ohne offene Voraussetzungen; reale Fehler-/Fälligkeitsempfehlungen behalten Vorrang.
 
-Die vorhandene Buttonnavigation bleibt. App-Seiten und Modulwechsel erzeugen Browser-History-Einträge; Zurück/Vor stellt die App-Ansicht wieder her. Temporäre Filter und Niveaus werden dabei nicht als vollständiger Navigationszustand archiviert. Nach Neuladen beginnt die App weiterhin auf dem Dashboard; gespeicherter Lernstand und Prüfungsdeadline bleiben erhalten. Die letzte Lerneinheit ist über das Dashboard erreichbar. Dateidownload erfolgt über einen echten, vom Nutzer ausgelösten Download-Link; Dateiauswahl über ein natives input-Feld.
+Eine falsche Gesamtantwort beweist keine einzelne Ursache. Die Brücke erklärt deshalb eine **mögliche** Grundlage anhand bisheriger Antworten oder eines noch unbekannten Standes. `LessonReading` rendert dieselbe Lektion sowohl im Modul als auch im eingeblendeten Brückenpanel. Lesen/Selbsttest verwenden vorhandene Aktionen. Die ursprüngliche Aufgabe bleibt montiert, sodass Antwort und Einheit nach Rückkehr erhalten sind. Kein rekursiv eingebautes zweites Training und keine neue Hauptnavigation für die Brücke.
 
-## Gesamtplattform und spätere Anschlüsse
+Der Umstellungstrainer bietet elf vorab geprüfte Ziele. Lernversuche werden über normale ChoiceTask-IDs gespeichert. Die aktuelle Schritt-/Brückenauswahl bleibt sitzungsbezogen; ein dauerhafter Entwurfsvertrag für unbewertete Eingaben ist bewusst offen.
+
+## Daten und Unterbrechungen
+
+Lerndatenschema 3, Speicherschlüssel v1/v2/v3 und Backupformat 1 bleiben erhalten. Neue Inhalte ergänzen IDs und optionale Snapshot-Felder, nicht neue Pflichtfelder im Lernstand. Ein echtes aus main 0.4 erzeugtes Backup wird unverändert importiert und erneut exportiert; neue negative Mathematik-Snapshots sind ebenfalls abgesichert. Eine ältere App 0.4 kennt neue Aufgabentypen nicht: neue Sicherungen daher mit 0.5 oder später verwenden, ohne einen rückwärts kompatiblen Import in alte Apps zu versprechen.
+
+Backup-Journal, Rollback, Wiederanlauf und Mehrtab-Schreibschutz bleiben erhalten. Keine Synchronisation und kein Offline-/PWA-Versprechen. StoragePort bildet weiterhin die kleine spätere Grenze zu IndexedDB. Regelmäßige stabile Commits/Pushes und NEXT_STEPS sichern die Entwicklung gegen Laufzeitunterbrechungen.
+
+## Langfristige Gesamtplattform
 
 | Modul | Gemeinsamer Anschluss / fehlende Voraussetzung |
 | --- | --- |
-| Lernakademie | Modul-, Aufgaben-, Formel- und Quellen-IDs; adaptive Leistung |
-| Fachbibliothek | gleiche Begriffe und Quellen, kein zweiter Fachbestand |
-| Professionelle Rechner | derselbe SI-Kern, zusätzliche validierte Randbedingungen |
-| log-p-h-Diagramme | verifizierte Stoff-/Zustandsmodelle und Rechte erforderlich |
-| Kältemittel-/Stoffwerte | Referenzzustände, Unsicherheit und Aktualisierung separat klären |
-| Komponenten-/Bauteile | reale Herstellerdaten und Freigaben statt fiktiver Lernwerte |
-| Diagnose | Fälle referenzieren Formeln, Messgrößen und mehrere Hypothesen |
-| Planung/Auslegung | geprüfte Systemgrenzen, keine direkte Übernahme einfacher Lernmodelle |
-| Wartung/Inbetriebnahme | qualifizierte Fachabnahme und aktuelle Sicherheitsgrundlagen |
-| Technische Dokumentation | Projekte referenzieren dieselben Entitäten/Quellen/Revisionen |
+| Lernakademie | Lernziele, Kompetenz-/Aufgaben-/Formel-/Quellen-IDs und adaptive Leistung |
+| Fachbibliothek | gemeinsame Begriffe und Quellen; keine kopierten Wissensbestände |
+| Professionelle Rechner | derselbe SI-Kern mit zusätzlichen geprüften Randbedingungen |
+| log-p-h-Diagramme | verifizierte Stoff-/Zustandsmodelle und Nutzungsrechte |
+| Kältemittel-/Stoffdaten | Herkunft, Referenzzustände, Unsicherheit und Aktualisierung |
+| Bauteildaten | reale Herstellerdaten statt fiktiver Lernwerte |
+| Diagnose | gleiche Kompetenzen und Messgrößen, mehrere Hypothesen statt Einzelwertdiagnose |
+| Planung/Auslegung | validierte Systemgrenzen; Lernmodelle nicht ungeprüft übernehmen |
+| Wartung/Inbetriebnahme | aktuelle Fach-/Sicherheitsgrundlagen und qualifizierte Abnahme |
+| Technische Dokumentation | Projekte referenzieren dieselben stabilen Entitäten und Revisionen |
 
-Keine dieser zukünftigen Funktionen wird als fertiger leerer Menüpunkt vorgetäuscht.
-
-## Veröffentlichung und Qualität
-
-Pages nutzt weiterhin offizielle configure/upload/deploy-Actions, main-Push und workflow_dispatch. PRs bauen/testen ohne Veröffentlichung. Beide Workflows installieren jetzt Chromium und WebKit. Konfiguration ist kein Nachweis eines ausgeführten Apple-Tests; lokale Downloadbeschränkung und echte Gerätegrenzen stehen im Testplan. Der externe Fachprüfstatus bleibt unabhängig von jeder CI-Ampel.
+Keine vorzeitigen Attrappen dieser Module. Automatische CI läuft bei Branch-Push/PR; Pages veröffentlicht ausschließlich main nach erfolgreichen Checks. Der Merge bleibt eine ausdrücklich freizugebende Aktion.

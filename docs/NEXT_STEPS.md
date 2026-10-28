@@ -1,38 +1,50 @@
-# Version 0.4 übernehmen und auf dem iPad testen
+# Version 0.5 · Wiederaufnahme, Übernahme und iPad-Test
 
-## Änderungen übernehmen
+Feature-Branch: `feat/foundations-academy-v05`. Grundlage: main `163b9b7`, Version 0.4. Kein automatischer Merge.
 
-1. Den Pull Request für Version 0.4 öffnen. Unter **Files changed** stehen Code und Dokumentation.
-2. Auf grüne GitHub-Checks warten. Neue WebKit-Tests müssen erfolgreich laufen; bei rot zuerst die Fehler beheben.
-3. **Merge pull request** und anschließend **Confirm merge** wählen.
-4. Unter **Actions → Deploy to GitHub Pages** den main-Lauf öffnen. Er startet automatisch nach dem Merge.
-5. Falls nötig: **Run workflow → main → Run workflow**. **Settings → Pages → Source: GitHub Actions** beibehalten.
-6. Erst nach erfolgreichem Job **Website veröffentlichen** ist 0.4 öffentlich verfügbar. PRs allein veröffentlichen nichts.
+## Abgeschlossene Etappen
 
-## Auf dem iPad
+| Etappe | Commit | Stand |
+| --- | --- | --- |
+| A | 1d521d5 | Repository/Architektur/Roadmap analysiert, Basistests bestätigt, Unterbrechungsplan gesichert |
+| B | d5c2c35 | Professioneller lokaler Formelsatz, Migration und Fehlertests |
+| C | f9a3691 | Acht vollständige Mathematik-Kernlektionen und Umstellungstrainer |
+| D | 6cf7268 | Vier Physik-Kernlektionen mit zwölf Zahlenaufgaben |
+| E | 0ba0930 | Drei Chemie-Kernlektionen mit sechs Zahlenaufgaben |
+| F | 3784efc | Kompetenzverknüpfungen, Voraussetzungen und Fachgebiets-Audit |
+| G | 485e2b0 | Lernbrücke im Training mit erhaltener Originalantwort |
+| H | b1a2a34 | Echte 0.4-Backup-Kompatibilität, 262 Tests, Typprüfung und Build; 120 abschließende Chromium-Tests erfolgreich |
 
-Safari öffnen: **https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/**. Neu laden und auf „Version 0.4“ achten. Kein Konto und kein kostenpflichtiger Dienst nötig.
+Alle technischen Etappen wurden normal auf GitHub gepusht. Die abschließende Dokumentation liegt im letzten Dokumentationscommit. Ein anfänglicher Ausfall der Cloud-Umgebung wurde vor dem ersten Commit erkannt; anschließend wurde der unveränderte Stand geprüft und sofort gesichert.
 
-**Zuerst sichern:** Am Seitenende **Sicherung erstellen → Sicherungsdatei herunterladen**. Die JSON-Datei in **Dateien** aufbewahren. Zum Wiederherstellen Datei auswählen, Vorschau lesen, ausdrücklich das Ersetzen bestätigen. Vorher aktuelle Daten sichern und andere App-Tabs schließen. Eine defekte Datei darf nichts verändern.
+## Noch zu erledigen / bewusst offen
 
-**Elektro lernen:** Akademie → Fachgebiet **Elektrotechnik** → mit **Elektrische Grundgrößen** beginnen. Die fünf Module bauen aufeinander auf. Im Modul finden sich Niveauwahl, Voraussetzungen, Fragen, Karten und Rechenaufgaben.
+1. Automatischen PR anlegen, falls GitHub-API verfügbar. Bei HTTP 403 den direkten Vergleich öffnen und PULL_REQUEST_0_5.md verwenden.
+2. Den neuesten GitHub-Lauf einschließlich WebKit prüfen; vor dem Merge müssen die PR-Checks grün sein. CI-Konfiguration allein ist kein Testnachweis.
+3. Merge nur nach ausdrücklicher Nutzerfreigabe. main und gespeicherte Lerndaten nicht überschreiben; kein Force-Push.
+4. Echte iPad-/iPhone-Safari-Prüfung nach APPLE_TEST_PLAN; keine Hardwareprüfung wurde hier durchgeführt.
+5. Unabhängige Fachabnahme anhand REVIEW_REGISTER. Weiterführende Lehrplaninhalte sind ausdrücklich geplant (Curriculumsdateien/ROADMAP), keine halbfertigen angeblich fertigen Module.
+6. Eine dauerhaft gespeicherte unbewertete Eingabe/Trainerposition, tiefere Fehlerursachendiagnose, Cloud-Synchronisation und professionelle Rechner bleiben spätere Aufgaben.
 
-**Schnellprüfung:**
+## Wiederaufnahme nach Unterbrechung
 
-- Spannung/Strom/Widerstand: erste Aufgabe **0,2 A**.
-- Ohmsches Gesetz: Spannungsvarianten **24 V** und **11 V**.
-- Leistung/Arbeit: **12 W**, **0,6 W**, **24 Wh**, **0,075 kWh**.
-- Reihen-/Parallelschaltung: **360 Ω**, **3,2 kΩ**, **80 Ω**, **50 Ω**.
-- Vorhandener Wärmeleistungsrechner: 0,5 kg/s × 4,18 kJ/(kg·K) × 5 K = **10,45 kW**.
+1. `git status`, `git log` und diese Tabelle lesen. Fremde Änderungen erhalten.
+2. Vorhandenen Branch weiterverwenden, Remote-Stand holen und vergleichen. Keine neue Implementierung vom alten main beginnen.
+3. `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`.
+4. Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`, wenn der Systembrowser vorhanden ist. Ansonsten Playwright-Browser installieren; vollständiger CI-Pool enthält Chromium und WebKit.
+5. Bei Fehlern erst Ursache beheben, erneut prüfen, dann committen/pushen. Erfolgreiche Commits/Pushes immer tatsächlich kontrollieren.
+6. `npm run docs:review` und `npm run docs:audit` erzeugen Berichte aus dem Katalog. Die echte historische Datei unter storage/fixtures nicht mit neuen Produktfunktionen überschreiben.
 
-Markiere ein Modul als gelesen, beantworte eine Frage und lade neu. Die Daten müssen bleiben. Eine Übungsprüfung kann auch während Hintergrundwechsel/Neuladen ablaufen; ihre ursprüngliche Endzeit bleibt maßgeblich. Die Aufgaben sind selbst erstellt und nicht offiziell.
+## Auf dem iPad nach freigegebenem Merge
 
-Bitte führe den kurzen [Apple-Testplan](APPLE_TEST_PLAN.md) durch. Er enthält erwartete Ergebnisse und eine Fehlervorlage. Ein echtes Apple-Gerät war hier nicht verfügbar; der lokale WebKit-Download war blockiert. Erfolgreiche Chromium-Prüfungen sind keine Garantie für deine Safari-/iPadOS-Version.
+Nach grünem main-Pages-Deploy Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/. Auf Version 0.5 achten und neu laden. Zuerst eigene Sicherung erstellen und in Dateien speichern.
 
-## Fachliche Abnahme
+- **Mit Mathematik beginnen:** Rechenregeln → Brüche/Prozent → Algebra/Gleichungen → Potenzen/Einheiten → Formeln umstellen. Voraussetzungen sind verlinkt.
+- **Brüche:** Subtraktionsaufgabe 1/4 − 3/4 mit `-1/2` oder `-0,5` über die normale Minustaste lösen.
+- **Trainer:** p=F/A nach A wählen; beide Seiten mit A, anschließend durch p. Erklärung, Vereinfachung und Probe kontrollieren.
+- **Physik:** Druck mit 100 N und 20 cm² ergibt 50000 Pa = 0,5 bar.
+- **Chemie:** 9 g bei vorgegebenen 18 g/mol ergibt 0,5 mol = 500 mmol.
+- **Lernbrücke:** Wärmeleistung zuerst mit 1 kW falsch beantworten, empfohlene Grundlage öffnen, lesen/üben und zurückkehren. Antwort/Einheit bleiben erhalten; anschließend 10,45 kW prüfen.
+- **Backup:** Eigene alte 0.4-Sicherung nur nach zusätzlicher Sicherung des aktuellen Stands importieren. Vorschau lesen, Ersetzen ausdrücklich bestätigen, weitere Tabs schließen. Alte Daten bleiben kompatibel; neue Aufgabentypen benötigen 0.5 oder später.
 
-Das [Prüfregister](REVIEW_REGISTER.md) kann eine qualifizierte Kälte-/Elektro-Fachperson bearbeiten. Rechenprüfungen und Quellenabgleich sind dokumentiert, eine unabhängige menschliche Fachfreigabe bleibt offen. Keine praktischen elektrischen Arbeiten anhand der Lernbeispiele durchführen.
-
-## Wenn etwas nicht funktioniert
-
-Bei rotem Workflow den betroffenen Schritt und die Fehlermeldung notieren. Keine geheimen Schlüssel ergänzen. Bei Speicherfehlern nicht die Browserdaten löschen: zuerst vorhandene Sicherung aufbewahren, Speicherplatz prüfen und neu laden. Bei Wiederherstellungsfehlern bewahrt das Journal den vorherigen Stand, soweit der Browser seine Daten behält. Persönliche Sicherungen nicht öffentlich in Issues hochladen.
+Mehr Details und Fehlervorlage: APPLE_TEST_PLAN. Browseruhr und lokaler Lernstand sind manipulierbar; die Übungsprüfung ist selbst erstellt und nicht offiziell.

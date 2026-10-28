@@ -1,8 +1,8 @@
-# Quellen und fachliche Qualität · Version 0.4
+# Quellen und fachliche Qualität · Version 0.5
 
 ## Was tatsächlich geprüft wurde
 
-Alle 24 Rechenaufgaben haben unabhängig vorgegebene Referenzergebnisse und automatisierte Prüfungen für Zahlen, Einheiten, Umrechnungen, Toleranzgrenzen und ungültige Werte. Grundbeziehungen zur spezifischen Wärme, Gleichstromleistung und Heiz-/Kälteleistungszahl wurden im offiziellen OpenStax-Quellarchiv tatsächlich nachgelesen.
+Alle 63 Rechenaufgaben haben unabhängig vorgegebene Referenzergebnisse und automatisierte Prüfungen für Zahlen, Einheiten, Umrechnungen, Toleranzgrenzen und ungültige Werte. Grundbeziehungen zur spezifischen Wärme, Gleichstromleistung und Heiz-/Kälteleistungszahl wurden im offiziellen OpenStax-Quellarchiv tatsächlich nachgelesen.
 
 Das ist **keine unabhängige Freigabe durch eine Fachperson**. Insbesondere die kältetechnischen Messvoraussetzungen zu Dew/Bubble, Zustandsbestimmung und Anlagenbeurteilung werden nicht durch einen allgemeinen Wärmelehreabschnitt vollständig belegt. Aufgaben und bestehende Module bleiben entsprechend gekennzeichnet. Es werden keine Normen, Herstellergrenzen oder realen Kältemittelwerte erfunden.
 
@@ -74,3 +74,24 @@ Zusätzlich m42714 erneut gelesen: eip-489 (P = IV), eip-9 (E = Pt). Diese Quell
 | Parallelwiderstand | 80 Ω | 50 Ω |
 
 Die Tests vergleichen Produkt-Ergebnisse gegen diese separat vorgegebenen Werte, sichern SI-Umrechnung/Anzeige und fehlerhafte Eingaben ab. Alle Aufgaben/Annahmen stehen im [Prüfregister](REVIEW_REGISTER.md). Vollständige menschliche Fachabnahme ist weiterhin offen; kein Eintrag trägt den Status „Unabhängig fachlich geprüft“. Das einheitliche Statussystem wird in [QUALITY_ASSURANCE.md](QUALITY_ASSURANCE.md) erklärt.
+
+
+## Tatsächlich eingesehene Quellen für 0.5
+
+Zugriff am 27.10.2026 über die offiziellen Git-Archive; Collection, relevante CNXML-Module und LICENSE gelesen. Eigene deutsche Erklärungen und Zahlenfälle; keine Buchkapitel/Abbildungen kopiert. Alle drei Archive nennen CC BY-NC-SA 4.0. Formeln sind Faktenreferenzen, keine pauschale menschliche Fachfreigabe.
+
+| Register-ID / offizielles Archiv | Gelesener Commit | Konkrete Fundstellen / begrenzter Umfang |
+| --- | --- | --- |
+| openstax-prealgebra-v05 · [Prealgebra 2e](https://github.com/openstax/osbooks-prealgebra-bundle) | ad40c7e3c9a909cde81a24c526f52fe26a51fb14 | m81270 Ausdrücke; m81285/86/87/88 Brüche; m81306/07 Prozent; m81320/21 Gleichheit; m81335 Exponenten; m81315 rationale/irrationale Zahlen |
+| openstax-physics-v05 · [College Physics 2e](https://github.com/openstax/osbooks-college-physics-bundle) | 66fcef29596e3a32818162b837dd0c85b754cbad | m42073 Newton, m42146 Arbeit, m42151 Energieerhaltung, m42187 Dichte eip-385, m42189 Druck eip-943, m42224 Wärme eip-644 |
+| openstax-chemistry-v05 · [Chemistry 2e](https://github.com/openstax/osbooks-chemistry-bundle) | db0a8e6027100ce082e67fc8879faab86f9a58a7 | m68667 Stoffklassifikation, m68692 Atombau, m68693 Formelsprache, m68700 Stoffmenge/molare Masse, m68709 Reaktionsbilanz |
+
+Nicht jede verlinkte Formel wird dadurch als quellenbasiert geprüft markiert. Das Qualitätsregister verwendet eine ausdrückliche Liste konkret abgeglichener Beziehungen; weitere Formeln bleiben automatisch geprüft mit offenem externen Aussagenabgleich. Vollständige Texte, Didaktik/Praxisübertragung und Spezialbedingungen benötigen weiterhin unabhängige Fachabnahme.
+
+### Neue Referenzprüfungen
+
+21 Mathematik-, zwölf Physik- und sechs Chemie-Zahlenaufgaben ergänzen die alten 24. Separat vorgegebene Sollwerte liegen in technical/calculations.test.ts. Weitere unabhängige Unit-Tests prüfen Umstellungstrainer-Proben, Nullnenner, Wurzeln/Potenzen, SI-Umrechnungen, Wärme-/Leistungsbeziehungen und die theoretische Reaktionsbilanz. Gerundete molare Massen und Wasser-cp sind ausdrücklich vorgegeben; keine erfundenen Kältemittel-Stoffdaten. Die ungefähre Avogadro-Zahl ist als Näherung gekennzeichnet, nicht als ungesichteter exakter SI-Wert.
+
+### Rendering ist keine Fachprüfung
+
+KaTeX 0.19.1 und mhchem dienen nur der Darstellung. Bibliothekslizenz wird unter public/licenses/KaTeX.txt mitgeliefert. Fonts/CSS kommen aus demselben lokalen Paket, nicht von einem externen Dienst. Tests auf gültigen Formelsatz beweisen nicht, dass jede physikalische Aussage fachlich freigegeben ist.

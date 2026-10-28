@@ -1,3 +1,4 @@
+import { schoolKinds } from "../../technical/foundations";
 import { units } from "../../technical/calculations";
 import { levels } from "../model";
 import type {
@@ -22,6 +23,10 @@ export function validItem(value: unknown): value is LearningItem {
     !["id", "topicId", "domainId", "title", "prompt"].every((key) =>
       text(value[key]),
     ) ||
+    !(
+      value.requiredCompetencyIds === undefined ||
+      texts(value.requiredCompetencyIds)
+    ) ||
     !integer(value.revision) ||
     value.revision < 1 ||
     !levels.includes(value.level as (typeof levels)[number]) ||
@@ -43,6 +48,15 @@ export function validItem(value: unknown): value is LearningItem {
   return (
     value.kind === "numeric" &&
     [
+      ...schoolKinds,
+      "amount",
+      "speed",
+      "force",
+      "mechanical-work",
+      "power-from-energy",
+      "pressure",
+      "density",
+      "sensible-energy",
       "charge-current",
       "ohm-current",
       "ohm-voltage",
@@ -71,6 +85,7 @@ export function validItem(value: unknown): value is LearningItem {
     text(value.assumptions) &&
     texts(value.sourceIds) &&
     texts(value.steps) &&
+    (value.texSteps === undefined || texts(value.texSteps)) &&
     texts(value.mistakes) &&
     Array.isArray(value.givens) &&
     value.givens.every(
@@ -91,7 +106,8 @@ export function validSnapshot(value: unknown): value is ExamSnapshot {
     record(value) &&
     validItem(value.item) &&
     (value.item.kind === "choice" ||
-      (finite(value.expectedSI) && value.expectedSI >= 0))
+      (finite(value.expectedSI) &&
+        (value.expectedSI >= 0 || value.item.quantity === "number")))
   );
 }
 export function validAnswer(value: unknown) {

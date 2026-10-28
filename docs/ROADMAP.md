@@ -1,59 +1,52 @@
-# ROADMAP · Version 0.4 und Gesamtplattform
+# ROADMAP · Version 0.5 und Gesamtplattform
 
-## Gesamtvision
+## Tatsächlich verfügbar
 
-| Hauptmodul | Stand 0.4 | Nächster sinnvoller Anschluss |
-| --- | --- | --- |
-| Lernakademie | 10 Module, 3 Niveaus, 24 Zahlenaufgaben, adaptive Wiederholung, Karten, Übungsprüfung | Externe Fachabnahme, größerer niveaugestufter Aufgabenpool |
-| Fachbibliothek | Artikel, Glossar, gemeinsame Quellen/Formeln, Prüfregister | Konsistente fachübergreifende Suche |
-| Professionelle Berechnungen | Wärmeleistungsrechner + gemeinsamer SI-Kern für Lernaufgaben | Elektrorechner mit geprüften zusätzlichen Randbedingungen |
-| log-p-h-Diagramme | Nicht implementiert | Belastbare Zustandsmodelle, Stoffwerte und Nutzungsrechte |
-| Kältemittel-/Stoffwerte | Nicht implementiert | Herkunft, Referenzzustände, Unsicherheit und Aktualisierung |
-| Komponenten-/Bauteile | Nicht implementiert | Geprüfte Herstellerdaten und Versionsbezug |
-| Fehlersuche/Diagnose | Anschluss über Fach-/Formel-IDs vorbereitet | Geprüfter Fall mit mehreren Hypothesen und Messunsicherheit |
-| Planung/Auslegung | Nicht implementiert | Validierte Systemgrenzen, keine direkte Übernahme fiktiver Lernmodelle |
-| Wartung/Inbetriebnahme | Geplant | Qualifizierte Sicherheits-/Fachprüfung vor Arbeitsinhalten |
-| Technische Dokumentation | Geplant | Lokale Projekte mit denselben Fach-, Formel- und Quellen-IDs |
+25 Module auf dem vorhandenen Niveausystem: fünf Kälte-, fünf Elektro-, acht Mathematik-, vier Physik- und drei Chemie-Module. 80 Modulfragen, 50 Karten, 63 Zahlenaufgaben und elf Umstellungsziele. Adaptive Wiederholung, Übungsprüfung, Lern-Dashboard, Backup/Restore, fachliches Prüfregister, professioneller Formelsatz und eine einfache intelligente Lernbrücke. Kein Inhalt behauptet eine unabhängige menschliche Fachfreigabe.
 
-Keine vorzeitigen Attrappen dieser zukünftigen Module. Keine kostenpflichtigen Dienste für die lokale Kernfunktion.
+Version 0.4 ist in main integriert. 0.5 entsteht in abgeschlossenen überprüften Etappen mit Commits/Pushes; NEXT_STEPS dokumentiert erledigte/offene Arbeiten. Keine automatische Veröffentlichung vor freigegebenem PR-Merge.
 
-## Versionshistorie
+## Prioritäten nach 0.5
 
-0.2 brachte Fachgebietsstruktur und erste Lernmodule. 0.3 brachte adaptive Lernleistung, Aufgaben-Engine, zeitbegrenzte Übungsprüfung, persönliches Dashboard und konservative v3-Migration. Die Dokumente VERSION_0_2 und VERSION_0_3 bleiben historische Nachweise.
+### P0 · Verlässlichkeit und Fachabnahme
 
-## Version 0.4 · umgesetzter technischer Umfang
+- Vollständiges Prüfregister durch qualifizierte Mathematik-/Physik-/Chemie-/Kälte-/Elektro-Fachpersonen prüfen lassen. Fundstelle, Person, Datum und Freigabeumfang je Revision dokumentieren.
+- Echte iPad-/iPhone-Safari-Tests für Formelsatz, Schriftvergrößerung, Tastatur, Download/Import und Hintergrundwechsel. WebKit ersetzt keine Hardwareprüfung.
+- Sicherungsverfahren unter echten Safari-Quoten prüfen; IndexedDB nur mit gesicherten Migrationen/Transaktionen ergänzen.
+- Sinnvoller gespeicherter Entwurfsvertrag für offene Übungen/Trainerschritte; heutige Brücke erhält Eingaben nur innerhalb des laufenden Trainings.
 
-- Versioniertes Backup, Dateidownload, validierter Import, Vorschau, ausdrückliche Bestätigung und Rücknahmejournal.
-- Unveränderte v1/v2/v3-Speicherschlüssel; zusätzliche Sicherung beschädigter v1-Originale vor automatischem Überschreiben.
-- Erkennung veralteter Tabs, Neuladen statt stiller weiterer Speicherung. Keine vollständige Mehrtab-Konfliktauflösung.
-- Einheitliches fachliches Prüfregister samt bearbeitbarem Bericht; keine behauptete menschliche Freigabe.
-- Neue Quellenabgleiche für physikalische Elektro-Grundbeziehungen.
-- Fünf nutzbare Elektro-Grundlagenmodule, 15 Fragen, 10 Karten, 16 neue Zahlenvarianten; alte Funktionen bleiben erhalten.
-- SI-Kern erweitert, Zahlenfälle unabhängig getestet, WebKit-Konfiguration/CI ergänzt, manueller Apple-Testplan vorhanden. Tatsächliche Browserergebnisse und lokale Downloadgrenzen stehen im Versionsbericht.
+### P1 · Zusammenhängende nächste Lernpfade
 
-## Version 0.5 · priorisiert
+- Mathematik: Bruchgleichungen, lineare Gleichungssysteme, quadratische Gleichungen, binomische Formeln; danach technische Geometrie/Pythagoras/Trigonometrie.
+- Funktionen/Diagramme und technische Messunsicherheit; anschließend ausgewählte Ableitungs-/Integral-/Statistikgrundlagen. Vollständige Struktur in MATHEMATICS_CURRICULUM.
+- Physik: beschleunigte Bewegungen, quantitative Wärmeübertragung, Gasgesetze und Hauptsätze; vorhandene Elektro-Grundlagen um Wechselstrom/Leistungsfaktor/Drehstrom erweitern.
+- Chemie: Periodensystem/Bindungsmodelle, weiterführende Stöchiometrie, Säuren/Basen/Redox, dann organische und halogenierte Verbindungen sowie geprüfte Kältemitteleigenschaften.
+- Weitere Niveaus und Varianten fachlich vertiefen, statt viele oberflächliche leere Kategorien zu erzeugen.
 
-### P0 · Abnahme und Gerätevertrauen
+### P2 · Lernbrücke und Lernleistung
 
-1. Qualifizierte unabhängige Fachprüfung des vollständigen Registers: insbesondere Messvoraussetzungen, Elektro-Praxisinterpretation und Sicherheitsformulierungen. Freigabe pro Inhalt/Revision mit Belegen festhalten.
-2. Echte iPad-/iPhone-Safari-Prüfung nach Testplan; gefundene Fokus-/Dateien-/Hintergrundprobleme zuerst beheben.
-3. Backup-Verfahren unter echten Safari-Speicherquoten prüfen. Optional eine geschützte lokale Rettungsfunktion für beschädigte Rohbestände und sichere IndexedDB-Transaktionen planen.
+- Die einfache Brücke ist im Zahlentraining verfügbar: Aufgabe → Kompetenzen → begründete Grundlagenlektion → Rückkehr mit erhaltener Eingabe/Einheit.
+- Danach fehlertypbezogene Belege, Transferaufgaben, versionierte Übungsentwürfe und stärker differenzierte Kompetenzstatistik. Falsche Gesamtantworten niemals als sichere Einzelursache ausgeben.
+- Historische Fehler mit einem transparenten begrenzten Lernfenster evaluieren; bisherige aggregierte Historie nicht heimlich löschen.
+- Optionale Mehrgeräte-Synchronisierung erst mit Ereignisidentität, Reset-Generation, Konfliktregeln und freiwilliger Datenübertragung. Kein Konto für lokale Kernfunktionen.
 
-### P1 · Lernqualität
+## Langfristige zehn Hauptmodule
 
-- Wechselstrom als nächster vollständig ausgearbeiteter Abschnitt, danach Leistungsfaktor/Drehstrom mit geprüften Beispielen. Alle elf Folgethemen sind in ELECTRICAL_LEARNING_PATH dokumentiert.
-- Mehr Varianten je Niveau, echte Meistertransferfragen und transparentere Prüfungsabdeckung.
-- Gleitendes Leistungsfenster evaluieren, damit alte Fehler die Lernempfehlung nicht unbegrenzt prägen; Verlauf dafür versioniert erweitern.
-- Fortsetzen mit letztem Niveau/Abschnitt als optionale gespeicherte Einstellung.
+| Hauptmodul | Stand / nächster Anschluss |
+| --- | --- |
+| Lernakademie | Grundlagen/Fachmodule, Formeln, Aufgaben, Kompetenzen; weiter fachlich vertiefen |
+| Fachbibliothek | Gemeinsame Begriffe, Quellen und IDs, breitere fachübergreifende Suche |
+| Professionelle Rechner | Wärmeleistungsrechner vorhanden; Elektro/COP/Kühl-/Wärmelast-, Rohrleitungs-, Druckverlust- und Wärmeübertragungsrechner benötigen geprüfte Randbedingungen über denselben Kern |
+| log-p-h-Diagramme | Verifizierte Stoff-/Zustandsmodelle, Rechte und Referenzzustände vor Implementierung |
+| Kältemittel-/Stoffdaten | Herkunft, Zustandsbezug, Unsicherheit, Rechte und Aktualisierung separat klären |
+| Bauteildaten | Geprüfte Herstellerinformationen statt fiktiver Lernwerte |
+| Diagnose/Fehlersuche | Lernbrücken-IDs wiederverwenden; mehrere Hypothesen und Messunsicherheit |
+| Planung/Auslegung | Validierte Systemgrenzen; Lernaufgaben nicht als Auslegungsnachweis missverstehen |
+| Wartung/Inbetriebnahme | Aktuelle Sicherheits-/Fachgrundlagen und qualifizierte Abnahme |
+| Technische Dokumentation | Lokale Projektfälle referenzieren dieselben Formeln, Quellen, Kompetenzen und Revisionen |
 
-### P2 · Größere Plattform
+Leere Fachgebiete behalten eine ehrliche Struktur. DOMAIN_AUDIT nennt verfügbare Module und offene Themen. Kein vorzeitiges Implementieren dieser Gesamtplattform als Attrappen.
 
-- Professioneller Elektrorechner über bestehenden Kern, einschließlich Modellgrenzen und Eingabeführung.
-- Ein lokaler technischer Projekt-/Diagnosefall mit geprüften Messbedingungen.
-- Erst danach Stoffdaten/log-p-h mit geklärten Rechten und Validierung.
-- Offline/PWA erst mit getesteter Update-/Cache-Strategie.
-- Gerätesynchronisation optional und freiwillig; Ereignis-/Reset-/Konfliktvertrag vor Cloudanbindung, kein Konto für lokale Funktionen erzwingen.
+## Abnahme jeder Etappe
 
-## Abnahme jedes Pakets
-
-Stabile IDs, belegte Quellen/Modellgrenzen, unabhängige Referenzrechnungen, Datenmigration und Rücknahme, Typprüfung, Funktions-/Browsertests, transparenter fachlicher Prüfstatus. Tatsächliche Veröffentlichung erst nach PR-Merge und erfolgreichem main-Pages-Lauf.
+Stabile IDs; tatsächliche Quellenbelege; getrennte unabhängige Referenzrechnungen; nachvollziehbare Modellgrenzen; Daten-/Backup-Kompatibilität; Typprüfung, Tests und Build; passende Browserchecks; dokumentierter Commit/Push. Freigabe des Merges und tatsächlicher main-Pages-Lauf bleiben getrennte abschließende Schritte.

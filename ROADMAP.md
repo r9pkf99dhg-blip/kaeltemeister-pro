@@ -1,5 +1,5 @@
 # KälteMeister Pro · Roadmap
 
-Die aktuelle Gesamtplanung für Version 0.4 und die zehn langfristigen Plattformmodule steht in [docs/ROADMAP.md](docs/ROADMAP.md).
+Die aktuelle Version-0.5- und Gesamtplanung steht in [docs/ROADMAP.md](docs/ROADMAP.md). [docs/NEXT_STEPS.md](docs/NEXT_STEPS.md) dokumentiert abgeschlossene Etappen und die Wiederaufnahme nach Unterbrechungen.
 
-Nächste Prioritäten: unabhängige Fachabnahme, echte Apple-Geräteprüfung, danach Wechselstrom-Lernpfad und geprüfter Elektrorechner. Bereits nutzbar: Datensicherung, Elektro-Grundlagen und bestehende Kälte-Lernakademie.
+Jetzt verfügbar: Grundlagenakademie, echter mathematischer Formelsatz, Formelumstellungstrainer und einfache intelligente Lernbrücke. Nächste Prioritäten: unabhängige Fachabnahme, echte Apple-Geräteprüfung und weitere vollständige Lernpfade; anschließend professionelle Rechner über denselben fachlichen Kern.

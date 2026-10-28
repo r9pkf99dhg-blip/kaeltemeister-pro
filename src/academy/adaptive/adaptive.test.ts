@@ -190,3 +190,20 @@ it("übernimmt unbekannte Zusatzfelder aus einem v2-Datensatz nicht als neue v3-
   expect(result.progress.activeExam).toBeNull();
   expect(localStorage.getItem(LEGACY_ACADEMY_KEY)).toBe(raw);
 });
+
+it("empfiehlt neuen Lernenden zuerst Grundlagen, ohne nachgewiesene Fehler zu verdrängen", () => {
+  const fresh = emptyAcademy();
+  expect(recommendations(fresh, now)[0].id).toBe("math-arithmetic");
+  const wrong = recordOutcome(
+    fresh,
+    {
+      id: "calc-heat-water",
+      topicId: "cycle-basics",
+      revision: 1,
+      kind: "numeric",
+    },
+    false,
+    now,
+  );
+  expect(recommendations(wrong, now)[0].id).toBe("cycle-basics");
+});

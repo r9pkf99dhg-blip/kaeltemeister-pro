@@ -1,3 +1,4 @@
+import { BlockMath } from "../../math/Math";
 import { formulas } from "../../academy/catalog";
 import { useState } from "react";
 import { ArrowRight, Calculator, ShieldCheck, Zap } from "lucide-react";
@@ -142,12 +143,7 @@ export default function HeatCalculator() {
         <div>
           <section className="formula-card">
             <p className="eyebrow">DIE FORMEL</p>
-            <div className="formula">
-              {
-                formulas.find((formula) => formula.id === "sensible-heat")!
-                  .expression
-              }
-            </div>
+            <BlockMath tex={formulas.find(f => f.id === 'sensible-heat')!.tex!} label="Q Punkt gleich m Punkt mal cp mal Delta T" />
             <p>
               Die Leistung steigt mit dem Massenstrom, der Wärmekapazität und
               der Temperaturdifferenz.

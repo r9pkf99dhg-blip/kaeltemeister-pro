@@ -1,3 +1,5 @@
+> Historischer Bericht für 0.4. Aktuell: [Version 0.5](VERSION_0_5.md).
+
 # Version 0.4 · Datensicherheit und Elektro-Grundlagen
 
 ## Ausgangslage

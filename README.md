@@ -1,20 +1,23 @@
-# KälteMeister Pro · Version 0.4
+# KälteMeister Pro · Version 0.5
 
 Kostenloser Lernbegleiter für die Kältemeisterschule auf iPad, Smartphone und Computer. React, TypeScript, Vite und Tailwind; kein Benutzerkonto, kein eigener Server, keine kostenpflichtige API.
 
 ## Was funktioniert
 
-- **Lernakademie:** fünf ausführliche Kälte- und fünf Elektro-Grundlagenmodule mit Grundlagen-, Fachkraft- und Meisterniveau; zwölf strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
+- **Lernakademie:** 25 Module: fünf Kälte-, fünf Elektro-, acht Mathematik-, vier Physik- und drei Chemie-Module mit Grundlagen-, Fachkraft- und Meisterniveau; 14 strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
 - **Adaptives Lernen:** richtige/falsche Versuche, Themenlücken, transparente Empfehlungen und Wiederholungsabstände nach Leistung und Zeit. Keine KI-Diagnose oder offizieller Kompetenznachweis.
-- **Rechenaufgaben:** 24 Varianten, darunter Ohmsches Gesetz, elektrische Arbeit, Reihen-/Parallelschaltungen sowie Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
+- **Rechenaufgaben:** 63 Varianten, darunter Ohmsches Gesetz, elektrische Arbeit, Reihen-/Parallelschaltungen sowie Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
 - **Übungsprüfung:** selbst erstellte gemischte Auswahl-/Zahlenaufgaben, Fachgebiet, Niveaugrenze, Zeitlimit, Neuladen mit gleicher Endzeit, automatische Abgabe und Ergebnisanalyse. Keine offiziellen Meisterprüfungsaufgaben.
 - **Persönliches Dashboard:** Fortschritt je Fachgebiet, heutige Fälligkeiten, Schwächen, zuletzt bearbeitete Module, Empfehlungen und Prüfungsverlauf.
-- **Weiterhin vorhanden:** alte Artikel, Zwölf-Fragen-Rundentest, Wärmeleistungsrechner und zwanzig Karteikarten.
+- **Weiterhin vorhanden:** alte Artikel, Zwölf-Fragen-Rundentest, Wärmeleistungsrechner und insgesamt 50 Karteikarten.
+- **Mathematischer Formelsatz:** echte Brüche, Wurzeln, Indizes und chemische Formeln mit lokalem KaTeX/mhchem; verständliche Herleitungen und aufklappbare Musterlösungen.
+- **Formelumstellungstrainer:** elf Ziele mit begründeten Operationen und Zahlenproben.
+- **Intelligente Lernbrücke:** nach einer falschen Rechnung eine möglicherweise hilfreiche vorhandene Grundlagenlektion öffnen und zur erhaltenen Eingabe zurückkehren. Keine sichere Fehlerdiagnose.
 - **Datensicherung:** vollständiger verfügbarer Lernstand als versionierte JSON-Datei; Import mit Prüfung, Vorschau, Bestätigung und Rücknahmejournal. Anleitung: [BACKUP_RESTORE.md](docs/BACKUP_RESTORE.md).
 - **Fachqualität:** durchsuchbares Prüfregister und bearbeitbarer Prüfbericht; keine behauptete menschliche Fachabnahme.
 - **Lokaler Fortschritt:** v3 übernimmt v2-Lesestände, Antworten und Termine, ohne das Original zu löschen oder eine frühere Versuchshistorie zu erfinden.
 
-Die Grundbeziehungen zu Wärme, Gleichstromleistung und COP wurden im offiziellen OpenStax-Quellarchiv nachgelesen; alle 24 Zahlenbeispiele haben unabhängige Referenztests. Eine unabhängige fachliche Gesamtfreigabe ist weiterhin offen. Quellenumfang und Modellannahmen werden sichtbar angegeben. Keine Normen, realen Stofftabellen oder Herstellerwerte erfunden.
+Die Grundbeziehungen zu Wärme, Gleichstromleistung und COP wurden im offiziellen OpenStax-Quellarchiv nachgelesen; alle 63 Zahlenbeispiele haben unabhängige Referenztests. Eine unabhängige fachliche Gesamtfreigabe ist weiterhin offen. Quellenumfang und Modellannahmen werden sichtbar angegeben. Keine Normen, realen Stofftabellen oder Herstellerwerte erfunden.
 
 ## Auf dem Computer starten
 
@@ -72,4 +75,13 @@ Fortschritt liegt nur im jeweiligen Browserprofil unter derselben Webadresse. Da
 
 Die App erweitert die langfristige Plattform schrittweise. Diagramme, Stoff-/Bauteildaten, Diagnose, Auslegung und Projektdokumentation bleiben geplant und verwenden später dieselben Fach-, Formel- und Quellen-IDs.
 
-Version 0.4: [Änderungen und Prüfergebnisse](docs/VERSION_0_4.md), [iPad-Testplan](docs/APPLE_TEST_PLAN.md), [Elektro-Lernpfad](docs/ELECTRICAL_LEARNING_PATH.md), [fachlicher Prüfbericht](docs/REVIEW_REGISTER.md).
+Version 0.5: [Änderungen und Prüfergebnisse](docs/VERSION_0_5.md), [iPad-Testplan](docs/APPLE_TEST_PLAN.md), [Elektro-Lernpfad](docs/ELECTRICAL_LEARNING_PATH.md), [fachlicher Prüfbericht](docs/REVIEW_REGISTER.md).
+
+
+## Neue Grundlagen und Wiederaufnahme
+
+Auf dem Dashboard **Mit Mathematik beginnen**, **Mit Physik beginnen** oder **Mit Chemie beginnen** wählen. Mathematik beginnt bei Rechenregeln und führt zu Brüchen, Prozent, Algebra, Gleichungen, Potenzen, Einheiten und Formelumstellung. Weitere Oberstufen- und Fachthemen sind ausdrücklich geplant, nicht als fertige Kurse ausgegeben.
+
+Lehrpläne: [Mathematik](docs/MATHEMATICS_CURRICULUM.md), [Physik](docs/PHYSICS_CURRICULUM.md), [Chemie](docs/CHEMISTRY_CURRICULUM.md). [Fachgebiets-Audit](docs/DOMAIN_AUDIT.md) zeigt Lücken und tatsächlich verfügbare Inhalte. [Formelsatz](docs/FORMULA_RENDERING.md), [Lernbrücke](docs/LEARNING_PREREQUISITES.md) und [Versionsbericht](docs/VERSION_0_5.md) erklären die Umsetzung.
+
+Für die Entwicklung: [NEXT_STEPS](docs/NEXT_STEPS.md) ist der Wiederaufnahmepunkt. Abgeschlossene Etappen liegen in einzelnen Commits auf `feat/foundations-academy-v05`. Kein automatischer Merge. `npm run docs:review` und `npm run docs:audit` erzeugen Berichte aus demselben Katalog. Die historische Sicherungsreferenz aus 0.4 bleibt unverändert in den Tests.

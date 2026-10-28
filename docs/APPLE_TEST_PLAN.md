@@ -1,4 +1,4 @@
-# iPad-/iPhone-Testplan · Version 0.4
+# iPad-/iPhone-Testplan · Version 0.5
 
 ## Was automatisch geprüft wird
 
@@ -20,7 +20,7 @@ Zuerst eigene Lerndaten als Datei sichern. Möglichst mit Test-Lernstand arbeite
 
 | Schritt | Erwartetes Ergebnis |
 | --- | --- |
-| Nach PR-Merge und erfolgreichem Pages-Lauf Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ | Version 0.4 wird angezeigt, keine leere Seite |
+| Nach PR-Merge und erfolgreichem Pages-Lauf Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ | Version 0.5 wird angezeigt, keine leere Seite |
 | iPad hoch/quer drehen; iPhone und Split View, soweit vorhanden | Navigation, Text und Formeln bleiben lesbar, keine abgeschnittenen Bedienelemente |
 | In Safari Schrift vergrößern | Texte umbrechen; Felder und Buttons bleiben erreichbar |
 | Akademie → Elektrotechnik → Elektrische Grundgrößen | Ziele, drei Niveaus, Fragen, Karten und Zahlenaufgaben vorhanden |
@@ -57,3 +57,22 @@ Sicherung erstellt?:
 ```
 
 Fehler mit diesen Angaben als GitHub-Issue melden. Persönliche Sicherungsdateien nicht öffentlich anhängen. Falls eine Wiederherstellung fehlschlägt: Journal/Browserdaten nicht löschen, Speicherplatz prüfen und neu laden.
+
+
+## Zusätzlicher Gerätetest für 0.5
+
+| Schritt | Erwartung |
+| --- | --- |
+| Dashboard → Mit Mathematik beginnen | Rechenregeln und Voraussetzungen verständlich; weitere Kurse Physik/Chemie erreichbar |
+| Brüche-Lektion öffnen | Echte vertikale Brüche statt bloßer Textschrägstriche; kein überbreiter Seiteninhalt |
+| Subtraktionsaufgabe: −1/2 eingeben | Als −0,5 richtig bewertet; physikalische Aufgaben behalten andere Bereichsgrenzen |
+| Formeltrainer → p=F/A nach A | Erst beide Seiten mit A, dann durch p; jeder Schritt erklärt und abschließende Zahlenprobe |
+| Langes Beispiel / große Safari-Schrift | Formelbereich selbst scrollbar, Seite bleibt bedienbar; externe Tastatur kann Formel fokussieren |
+| Komplexe Musterlösung | Einzelne Schritte lassen sich aufklappen |
+| Falsche Wärmeleistungsantwort 1 kW | Mögliche Grundlagenlektion mit nachvollziehbarer Begründung, keine sichere Fehlerdiagnose |
+| Grundlage öffnen, lesen, Selbsttest, zur Aufgabe zurück | Ursprüngliche Antwort 1 und Einheit kW erhalten; Fokus zurück am Ergebnisfeld |
+| Physik: Druckaufgabe mit 20 cm² | 0,5 bar bzw. 50000 Pa wird akzeptiert |
+| Chemie: Stoffmenge 9 g bei 18 g/mol | 0,5 mol bzw. 500 mmol; chemische Formeln mit korrekten Indizes |
+| Eigene 0.4-Sicherung erst nach zusätzlicher Sicherung importieren | Alte Lesestände/Antworten/Karten/Prüfungen unverändert vorhanden |
+
+Ein echter Apple-Gerätetest ist weiterhin durch den Nutzer erforderlich. Die tatsächlichen automatischen Resultate für diese Version stehen in VERSION_0_5 bzw. im verlinkten CI-Lauf; Konfiguration allein ist kein Nachweis.

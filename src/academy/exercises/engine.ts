@@ -1,3 +1,4 @@
+import { parseSchoolAnswer } from "../../technical/foundations";
 import { calculateTechnical, toSI } from "../../technical/calculations";
 import { parseDecimal } from "../../logic";
 import type {
@@ -51,7 +52,7 @@ export function gradeSnapshot(
   }
   try {
     const answerSI = toSI(
-      parseDecimal(answer.value),
+      item.quantity === "number" ? parseSchoolAnswer(answer.value) : parseDecimal(answer.value),
       answer.unit,
       item.quantity,
     );
@@ -82,7 +83,7 @@ export function gradeSnapshot(
       status: "invalid",
       correct: false,
       message:
-        "Bitte gib eine endliche, nicht negative Zahl mit passender Einheit ein. Dezimalkomma und Punkt sind erlaubt; keine Tausendertrenner.",
+        item.quantity === "number" ? "Bitte gib eine endliche Zahl ein. Dezimalkomma und Punkt sind erlaubt; keine Tausendertrenner." : "Bitte gib eine endliche, nicht negative Zahl mit passender Einheit ein. Dezimalkomma und Punkt sind erlaubt; keine Tausendertrenner.",
     };
   }
 }
