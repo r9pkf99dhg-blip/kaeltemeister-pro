@@ -1,3 +1,5 @@
+import type { ItemAnswer } from "../exercises/model";
+import { errorPatterns } from "../deep/error-patterns";
 import { modules } from "../catalog";
 import type { AcademyProgress } from "../model";
 import type { NumericTask } from "../exercises/model";
@@ -8,6 +10,8 @@ import ModuleQuiz from "../components/ModuleQuiz";
 import { markRead, moduleRead } from "../progress";
 export default function LearningBridge({
   task,
+  answer,
+  skip,
   progress,
   setProgress,
   lessonId,
@@ -15,18 +19,22 @@ export default function LearningBridge({
   closeLesson,
 }: {
   task: NumericTask;
+  answer: ItemAnswer;
+  skip: () => void;
   progress: AcademyProgress;
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   lessonId: string | null;
   openLesson: (id: string) => void;
   closeLesson: () => void;
 }) {
-  const suggestions = bridgeRecommendations(progress, task);
+  const suggestions = bridgeRecommendations(progress, task, answer);
   const lesson = modules.find((m) => m.id === lessonId);
   if (!suggestions.length) return null;
   return (
     <aside className="learning-bridge" aria-label="Intelligente Lernbrücke">
       <h3>Eine mögliche Grundlage auffrischen</h3>
+      <button className="text-button" onClick={skip}>Lernbrücke überspringen</button>
+      {errorPatterns(task,answer).map(p=><p className="notice" key={p.id}>{p.observation}</p>)}
       <p>
         Eine falsche Antwort zeigt noch nicht, welche Grundlage fehlt. Diese
         Empfehlungen nutzen die Anforderungen der Aufgabe und deinen bisherigen

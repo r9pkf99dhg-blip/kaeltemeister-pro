@@ -89,3 +89,11 @@ it("weist ungültige neue optionale Snapshot-Felder vor jeder Wiederherstellung 
   expect(() => parseBackup(JSON.stringify(b))).toThrow();
   expect(localStorage.length).toBe(0);
 });
+it('erhält einen neuen Aufgabenentwurf über Backup und weist beschädigte Entwürfe zurück',()=>{
+ const p=emptyAcademy();p.exerciseDraft={taskId:'calc-heat-water',revision:1,answer:{value:'1',unit:'kW'},bridgeLessonId:'math-units',checked:true,updatedAt:new Date().toISOString()};
+ const b=createBackup(p,{read:[],attempts:0,best:0,last:null},localStorage);
+ expect(parseBackup(JSON.stringify(b)).data.academy.exerciseDraft).toEqual(p.exerciseDraft);
+ const broken=structuredClone(b);(broken.data.academy.exerciseDraft as unknown as {checked:unknown}).checked='yes';
+ expect(()=>parseBackup(JSON.stringify(broken))).toThrow();
+ expect(validateProgress({...p,exerciseDraft:{...p.exerciseDraft,answer:{value:'x'.repeat(201),unit:'kW'}}})).toBe(false);
+});

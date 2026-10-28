@@ -36,3 +36,21 @@ test('Thermodynamikpfad rechnet Schichtwärme mit offengelegten Grenzen',async({
  await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
  await expect(page.locator('.math-error')).toHaveCount(0);
 });
+test('Lernbrücke übersteht Neuladen und erhält Antwort und Einheit',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Rechenaufgaben üben →',exact:true}).click();
+ await page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true}).fill('10,45');
+ await page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true}).selectOption('W');
+ await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();
+ await expect(page.getByRole('complementary',{name:'Intelligente Lernbrücke'})).toContainText('mögliche Einheitenverwechslung');
+ await page.getByRole('button',{name:'Empfohlene Grundlage öffnen',exact:true}).click();
+ await page.reload();
+ await page.getByRole('button',{name:'Rechenaufgaben üben →',exact:true}).click();
+ await expect(page.getByRole('region',{name:'Eingeblendete Grundlagenlektion'})).toBeVisible();
+ await page.getByRole('button',{name:'Zur ursprünglichen Aufgabe zurück',exact:true}).click();
+ await expect(page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true})).toHaveValue('10,45');
+ await expect(page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true})).toHaveValue('W');
+ await expect(page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true})).toBeFocused();
+ await page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true}).selectOption('kW');
+ await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();
+ await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
+});

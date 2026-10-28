@@ -131,6 +131,7 @@ export function validateProgress(value: unknown): value is AcademyProgress {
     value.schemaVersion !== 3 ||
     !validateLegacyProgress({ ...value, schemaVersion: 2 }) ||
     !record(value.performance) ||
+    !(value.exerciseDraft===undefined || (record(value.exerciseDraft) && typeof value.exerciseDraft.taskId==='string' && value.exerciseDraft.taskId.length<=120 && validInteger(value.exerciseDraft.revision) && value.exerciseDraft.revision>0 && validAnswer(value.exerciseDraft.answer) && (value.exerciseDraft.bridgeLessonId===null || (typeof value.exerciseDraft.bridgeLessonId==='string' && value.exerciseDraft.bridgeLessonId.length<=120)) && typeof value.exerciseDraft.checked==='boolean' && date(value.exerciseDraft.updatedAt))) ||
     !record(value.exerciseAnswers) ||
     !Array.isArray(value.recentModules) ||
     value.recentModules.length > 5 ||
