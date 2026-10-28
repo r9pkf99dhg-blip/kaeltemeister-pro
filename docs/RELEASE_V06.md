@@ -1,3 +1,5 @@
+> Historischer Bericht zu Version 0.6. Der aktuelle Entwicklungsstand 0.7 steht in [RELEASE_V07.md](RELEASE_V07.md).
+
 # Version 0.6 · Fachliche Tiefenakademie
 
 Ausgangspunkt: main `09a953b` (Merge #7, vollständige 0.5 `febd428`). Entwicklungsbranch `feat/deep-learning-academy-v06`. Kein automatischer Merge. Die vorhandene Architektur und alle alten IDs bleiben erhalten.

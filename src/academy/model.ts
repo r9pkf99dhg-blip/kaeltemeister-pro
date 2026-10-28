@@ -1,3 +1,4 @@
+import type { WorkshopState, TrainerState, LabDraft } from "../workshop/model";
 import type { Performance } from "./adaptive/model";
 import type { ExamSession, ExamResult, ItemAnswer } from "./exercises/model";
 export const levels = ["grundlagen", "fachkraft", "meister"] as const;
@@ -139,7 +140,12 @@ export interface AcademyProgress extends Omit<
   "schemaVersion"
 > {
   schemaVersion: 3;
+  labDraft?: LabDraft;
+  preferences?: { explanation: "simple" | "technical" };
   exerciseDraft?: {
+    workspace?: "workshop";
+    workshop?: WorkshopState;
+    trainer?: TrainerState;
     taskId: string;
     revision: number;
     answer: ItemAnswer;

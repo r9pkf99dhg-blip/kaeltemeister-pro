@@ -1,0 +1,224 @@
+import { workshopFormula } from "../workshop/data";
+import {
+  useEffect,
+  useMemo,
+  useState,
+  type Dispatch,
+  type SetStateAction,
+} from "react";
+import { units, type Quantity } from "../technical/calculations";
+import { parseArithmetic } from "../technical/expression";
+import { convertUnit, quantityNames, siUnit } from "./units";
+import { displayNumber } from "./format";
+import { Explain } from "../language/Explanation";
+import type { AcademyProgress } from "../academy/model";
+import { BlockMath } from "../math/Math";
+export default function UnitConverter({
+  progress,
+  setProgress,
+  openModule,
+  practice,
+}: {
+  progress: AcademyProgress;
+  setProgress: Dispatch<SetStateAction<AcademyProgress>>;
+  openModule: (id: string) => void;
+  practice: (id: string) => void;
+}) {
+  const saved =
+    progress.labDraft?.calculatorId === "units"
+      ? progress.labDraft.values
+      : undefined;
+  const initial =
+    saved && Object.hasOwn(units, saved.quantity?.value ?? "")
+      ? (saved.quantity.value as Quantity)
+      : "power";
+  const [q, setQ] = useState<Quantity>(initial),
+    [value, setValue] = useState(saved?.source?.value ?? "1,5"),
+    [from, setFrom] = useState(
+      saved?.source && units[initial].includes(saved.source.unit)
+        ? saved.source.unit
+        : initial === "power"
+          ? "kW"
+          : units[initial][0],
+    ),
+    [to, setTo] = useState(
+      saved?.target && units[initial].includes(saved.target.unit)
+        ? saved.target.unit
+        : units[initial][0],
+    ),
+    [attempted, setAttempted] = useState(false);
+  useEffect(() => {
+    const values = {
+      quantity: { value: q, unit: "" },
+      source: { value, unit: from },
+      target: { value: "", unit: to },
+    };
+    setProgress((p) =>
+      p.labDraft?.calculatorId === "units" &&
+      JSON.stringify(p.labDraft.values) === JSON.stringify(values)
+        ? p
+        : {
+            ...p,
+            labDraft: {
+              calculatorId: "units",
+              values,
+              updatedAt: new Date().toISOString(),
+            },
+          },
+    );
+  }, [q, value, from, to, setProgress]);
+  const result = useMemo(() => {
+    try {
+      return {
+        ok: convertUnit(parseArithmetic(value), from, to, q),
+        error: "",
+      };
+    } catch (e) {
+      return { ok: null, error: (e as Error).message };
+    }
+  }, [q, value, from, to]);
+  return (
+    <section className="academy-panel lab-converter">
+      <h2>Einheitenumrechner</h2>
+      <p>
+        <Explain
+          simple="Eine Größe bleibt gleich, aber ihre Zahl und Einheit ändern sich. Gehe über die SI-Einheit. Bei absoluter Temperatur brauchst du einen Offset, bei Temperaturunterschieden nicht."
+          technical="Affine Größenumrechnung über den gemeinsamen SI-Vertrag. Druckbezug bleibt unverändert; W, VA und var sind verschiedene Größenarten."
+        />
+      </p>
+      <BlockMath tex={workshopFormula.tex!} />
+      <label>
+        Größe
+        <select
+          aria-label="Umrechner-Größe"
+          value={q}
+          onChange={(e) => {
+            const n = e.target.value as Quantity;
+            setQ(n);
+            setFrom(units[n][0]);
+            setTo(units[n][1] ?? units[n][0]);
+            setAttempted(false);
+          }}
+        >
+          {Object.keys(units).map((id) => (
+            <option key={id} value={id}>
+              {quantityNames[id as Quantity]}
+            </option>
+          ))}
+        </select>
+      </label>
+      <div className="lab-fields">
+        <label>
+          Zahlenwert
+          <input
+            aria-label="Umrechner-Zahlenwert"
+            inputMode="text"
+            maxLength={200}
+            value={value}
+            onChange={(e) => {
+              setValue(e.target.value);
+              setAttempted(false);
+            }}
+          />
+        </label>
+        <label>
+          Von
+          <select
+            aria-label="Umrechner-Ausgangseinheit"
+            value={from}
+            onChange={(e) => {
+              setFrom(e.target.value);
+              setAttempted(false);
+            }}
+          >
+            {units[q].map((u) => (
+              <option key={u}>{u}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Nach
+          <select
+            aria-label="Umrechner-Zieleinheit"
+            value={to}
+            onChange={(e) => {
+              setTo(e.target.value);
+              setAttempted(false);
+            }}
+          >
+            {units[q].map((u) => (
+              <option key={u}>{u}</option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <button className="button primary" onClick={() => setAttempted(true)}>
+        Einheit umrechnen
+      </button>
+      {attempted && result.error && (
+        <p role="alert" className="notice">
+          {result.error}
+        </p>
+      )}
+      {attempted && result.ok && (
+        <div className="lab-result" role="status">
+          <h3>Umrechnungsergebnis</h3>
+          <strong>
+            {displayNumber(result.ok.result)} {to}
+          </strong>
+          <h3>Rechenweg</h3>
+          <ol>
+            <li>
+              Ausgangswert: {value} {from}.
+            </li>
+            <li>
+              In SI: {displayNumber(parseArithmetic(value))} ×{" "}
+              {displayNumber(result.ok.sourceFactor)} + (
+              {displayNumber(result.ok.sourceOffset)}) ={" "}
+              {displayNumber(result.ok.si)} {siUnit(q) ?? units[q][0]}.
+            </li>
+            <li>
+              In die Zieleinheit: {displayNumber(result.ok.si)} ×{" "}
+              {displayNumber(result.ok.targetFactor)} + (
+              {displayNumber(result.ok.targetOffset)}) ={" "}
+              {displayNumber(result.ok.result)} {to}.
+            </li>
+          </ol>
+          <p>
+            <Explain
+              simple="Eine Stunde enthält 3600 Sekunden: Bei einer Größe pro Stunde teilst du deshalb für pro Sekunde durch 3600. Bei Flächen und Volumen musst du Längenfaktoren quadrieren bzw. hoch drei nehmen."
+              technical="Vorsilben-, Zeit- und geometrische Potenzfaktoren gelten größenabhängig. SI-Zwischenwert und Bezugsgröße bleiben identisch; nur absolute Temperaturskalen enthalten Offsets."
+            />
+          </p>
+        </div>
+      )}
+      <p className="notice">
+        Absolute Temperatur und Temperaturdifferenz getrennt wählen. Negative
+        absolute Kelvinwerte sind ungültig. Druckumrechnung ändert keinen
+        Über-/Absolutdruckbezug; dafür wäre ein Umgebungsdruck nötig. Negative
+        Druckwerte werden hier nicht unterstützt. Schein-, Blind- und
+        Wirkleistung sind nicht untereinander umrechenbar.
+      </p>
+      <p>
+        Die Registerumrechnung ist rechnerisch geprüft. Aktueller
+        BIPM-/PTB-Primärquellenabruf war blockiert; unabhängige menschliche
+        Fachfreigabe offen. Formale Anzeigegenauigkeit ist keine
+        Messgenauigkeit.
+      </p>
+      <div className="lab-links">
+        <button
+          className="button secondary"
+          onClick={() => openModule("math-units")}
+        >
+          Grundlagen verstehen
+        </button>
+        <button
+          className="button secondary"
+          onClick={() => practice("workshop-conversion-power")}
+        >
+          Rechnung selbst üben
+        </button>
+      </div>
+    </section>
+  );
+}

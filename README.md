@@ -1,12 +1,16 @@
-# KälteMeister Pro · Version 0.6
+# KälteMeister Pro · Version 0.7
 
 Kostenloser Lernbegleiter für die Kältemeisterschule auf iPad, Smartphone und Computer. React, TypeScript, Vite und Tailwind; kein Benutzerkonto, kein eigener Server, keine kostenpflichtige API.
 
 ## Was funktioniert
 
+- **Neu: Techniklabor:** fünf Bereiche (Einheiten, sensible Wärmeleistung, Elektro, Rohrgeometrie, ebene Wärmeübertragung), 26 Fachvarianten plus allgemeiner Einheitenumrechner. Mit SI-Rechenweg, Annahmen, Quellen/Lernverknüpfungen und interaktiver Wärmekurve.
+- **Neu: Übungswerkstatt:** acht Übungsarten, eigenes strukturiertes Rechenblatt, sichere Ausdruckseingabe, freiwillige gestufte Hilfe und fortsetzbarer letzter Entwurf.
+- **Neu: Erklärungsebene:** „Einfach erklärt“ oder „Fachsprache“, global gesichert und vorübergehend je Lektion änderbar. 23 Kernmodule mit drei einfachen Lesestufen; gemeinsame Beispiele/Formeln/Grenzen. Übrige Module deutlich als ursprüngliche Darstellung.
+
 - **Lernakademie:** 45 Module: fünf Kälte-, zehn Elektro-, sechzehn Mathematik-, vier Physik-, drei Chemie- und sieben Thermodynamik-Module mit Grundlagen-, Fachkraft- und Meisterniveau; 14 strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
 - **Adaptives Lernen:** richtige/falsche Versuche, Themenlücken, transparente Empfehlungen und Wiederholungsabstände nach Leistung und Zeit. Keine KI-Diagnose oder offizieller Kompetenznachweis.
-- **Rechenaufgaben:** 97 Varianten, darunter Ohmsches Gesetz, elektrische Arbeit, Reihen-/Parallelschaltungen sowie Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
+- **Rechenaufgaben:** 105 Varianten, darunter Ohmsches Gesetz, elektrische Arbeit, Reihen-/Parallelschaltungen sowie Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
 - **Übungsprüfung:** selbst erstellte gemischte Auswahl-/Zahlenaufgaben, Fachgebiet, Niveaugrenze, Zeitlimit, Neuladen mit gleicher Endzeit, automatische Abgabe und Ergebnisanalyse. Keine offiziellen Meisterprüfungsaufgaben.
 - **Persönliches Dashboard:** Fortschritt je Fachgebiet, heutige Fälligkeiten, Schwächen, zuletzt bearbeitete Module, Empfehlungen und Prüfungsverlauf.
 - **Weiterhin vorhanden:** alte Artikel, Zwölf-Fragen-Rundentest, Wärmeleistungsrechner und insgesamt 90 Karteikarten.
@@ -14,14 +18,14 @@ Kostenloser Lernbegleiter für die Kältemeisterschule auf iPad, Smartphone und 
 - **Formelumstellungstrainer:** 15 kuratierte Fälle mit 20 Schritten mit begründeten Operationen und Zahlenproben.
 - **Intelligente Lernbrücke:** konkrete Antwortmuster erklären, eine passende Grundlage anbieten und zur erhaltenen Eingabe zurückkehren. Ein letzter Entwurf bleibt auch nach Neuladen erhalten. Keine sichere Fehlerdiagnose.
 - **Fachliche Tiefe:** Geometrie/Trigonometrie, Definitionsbereiche/Algebra, Wechsel-/Drehstrom und Thermodynamik; vier aktive Fallstudien mit fachlicher Entscheidung.
-- **Aussagenbelege:** 70 begrenzte Belege mit Fundstelle, Quellentyp, Annahmen, Grenzen und getrennten Quellen-/Rechentests; keine vorgetäuschte Fachfreigabe.
+- **Aussagenbelege:** 76 begrenzte Belege mit Fundstelle, Quellentyp, Annahmen, Grenzen und getrennten Quellen-/Rechentests; keine vorgetäuschte Fachfreigabe.
 - **Datensicherung:** vollständiger verfügbarer Lernstand als versionierte JSON-Datei; Import mit Prüfung, Vorschau, Bestätigung und Rücknahmejournal. Anleitung: [BACKUP_RESTORE.md](docs/BACKUP_RESTORE.md).
 - **Fachqualität:** durchsuchbares Prüfregister und bearbeitbarer Prüfbericht; keine behauptete menschliche Fachabnahme.
 - **Lokaler Fortschritt:** v3 übernimmt v2-Lesestände, Antworten und Termine, ohne das Original zu löschen oder eine frühere Versuchshistorie zu erfinden.
 
-Die Grundbeziehungen zu Wärme, Gleichstromleistung und COP wurden im offiziellen OpenStax-Quellarchiv nachgelesen; alle 97 Zahlenbeispiele haben unabhängige Referenztests. Eine unabhängige fachliche Gesamtfreigabe ist weiterhin offen. Quellenumfang und Modellannahmen werden sichtbar angegeben. Keine Normen, realen Stofftabellen oder Herstellerwerte erfunden.
+Die Grundbeziehungen zu Wärme, Gleichstromleistung und COP wurden im offiziellen OpenStax-Quellarchiv nachgelesen; alle 105 Zahlenbeispiele haben unabhängige Referenztests. Eine unabhängige fachliche Gesamtfreigabe ist weiterhin offen. Quellenumfang und Modellannahmen werden sichtbar angegeben. Keine Normen, realen Stofftabellen oder Herstellerwerte erfunden.
 
-Umfang, offene Quellenabgleiche, Grenzen und iPad-Test: [RELEASE_V06.md](docs/RELEASE_V06.md). Ein vollständiger Meisterlehrplan und die unabhängige Fachfreigabe sind weiterhin offen.
+Umfang, offene Quellenabgleiche, Grenzen und iPad-Test: [RELEASE_V07.md](docs/RELEASE_V07.md). Ein vollständiger Meisterlehrplan und die unabhängige Fachfreigabe sind weiterhin offen.
 
 ## Auf dem Computer starten
 
@@ -34,7 +38,7 @@ npm run dev
 
 Die im Terminal angezeigte Adresse mit dem Projektpfad `/kaeltemeister-pro/` öffnen. Mit `Strg+C` beenden. Alternativer Port: `npm run dev -- --port 5174`.
 
-Für das iPad nach Veröffentlichung einfach in Safari öffnen: **https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/**. Eine ausführliche Anleitung mit Testwerten steht in **[docs/NEXT_STEPS.md](docs/NEXT_STEPS.md)**.
+Für das iPad nach Veröffentlichung einfach in Safari öffnen: **https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/**. Eine ausführliche Anleitung mit Testwerten steht in **[docs/RELEASE_V07.md](docs/RELEASE_V07.md)**. Entwicklungsstand und Wiederaufnahme: [NEXT_STEPS.md](docs/NEXT_STEPS.md).
 
 ## Prüfen
 
@@ -70,6 +74,7 @@ Fortschritt liegt nur im jeweiligen Browserprofil unter derselben Webadresse. Da
 
 ## Orientierung und Dokumentation
 
+- `src/lab/`, `src/workshop/`, `src/language/`: Labor, aktive Aufgabenbearbeitung und gemeinsame sprachliche Darstellung.
 - `src/technical/`: gemeinsame SI-Rechenlogik für Rechner und Aufgaben.
 - `src/academy/`: Inhalte, Register, adaptives Lernen, Aufgaben und Prüfungen.
 - `src/features/`, `src/content.ts`, `src/logic.ts`: weiterhin unterstützte Altangebote und Kompatibilitätsadapter.
@@ -79,13 +84,15 @@ Fortschritt liegt nur im jeweiligen Browserprofil unter derselben Webadresse. Da
 
 Die App erweitert die langfristige Plattform schrittweise. Diagramme, Stoff-/Bauteildaten, Diagnose, Auslegung und Projektdokumentation bleiben geplant und verwenden später dieselben Fach-, Formel- und Quellen-IDs.
 
-Version 0.6: [Änderungen und Prüfergebnisse](docs/RELEASE_V06.md), [iPad-Testplan](docs/APPLE_TEST_PLAN.md), [Elektro-Lernpfad](docs/ELECTRICAL_CURRICULUM.md), [fachlicher Prüfbericht](docs/REVIEW_REGISTER.md).
+Version 0.7: [Änderungen und Prüfergebnisse](docs/RELEASE_V07.md), [iPad-Testplan](docs/APPLE_TEST_PLAN.md), [Elektro-Lernpfad](docs/ELECTRICAL_CURRICULUM.md), [fachlicher Prüfbericht](docs/REVIEW_REGISTER.md).
 
 
 ## Neue Grundlagen und Wiederaufnahme
 
 Auf dem Dashboard **Mit Mathematik beginnen**, **Mit Physik beginnen** oder **Mit Chemie beginnen** wählen. Mathematik beginnt bei Rechenregeln und führt zu Brüchen, Prozent, Algebra, Gleichungen, Potenzen, Einheiten und Formelumstellung. Weitere Oberstufen- und Fachthemen sind ausdrücklich geplant, nicht als fertige Kurse ausgegeben.
 
-Lehrpläne: [Mathematik](docs/MATHEMATICS_CURRICULUM.md), [Physik](docs/PHYSICS_CURRICULUM.md), [Chemie](docs/CHEMISTRY_CURRICULUM.md), [Elektrotechnik](docs/ELECTRICAL_CURRICULUM.md) und [Thermodynamik](docs/THERMODYNAMICS_CURRICULUM.md). [Fachgebiets-Audit](docs/DOMAIN_AUDIT.md) zeigt Lücken und tatsächlich verfügbare Inhalte. [Formelsatz](docs/FORMULA_RENDERING.md), [Lernbrücke](docs/LEARNING_PREREQUISITES.md) und [Versionsbericht](docs/RELEASE_V06.md) erklären die Umsetzung.
+Lehrpläne: [Mathematik](docs/MATHEMATICS_CURRICULUM.md), [Physik](docs/PHYSICS_CURRICULUM.md), [Chemie](docs/CHEMISTRY_CURRICULUM.md), [Elektrotechnik](docs/ELECTRICAL_CURRICULUM.md) und [Thermodynamik](docs/THERMODYNAMICS_CURRICULUM.md). [Fachgebiets-Audit](docs/DOMAIN_AUDIT.md) zeigt Lücken und tatsächlich verfügbare Inhalte. [Formelsatz](docs/FORMULA_RENDERING.md), [Lernbrücke](docs/LEARNING_PREREQUISITES.md) und [Versionsbericht](docs/RELEASE_V07.md) erklären die Umsetzung.
 
 Für die Entwicklung: [NEXT_STEPS](docs/NEXT_STEPS.md) ist der Wiederaufnahmepunkt. Abgeschlossene Etappen liegen in einzelnen Commits auf `feat/foundations-academy-v05`. Kein automatischer Merge. `npm run docs:review` und `npm run docs:audit` erzeugen Berichte aus demselben Katalog. Die historische Sicherungsreferenz aus 0.4 bleibt unverändert in den Tests.
+
+Neue Anleitungen: [Techniklabor](docs/TECHNICAL_LAB.md), [Übungswerkstatt](docs/EXERCISE_WORKSHOP.md), [Sprachabdeckung](docs/LANGUAGE_LEVELS.md), [Rechnerreferenzen](docs/CALCULATOR_VALIDATION.md).

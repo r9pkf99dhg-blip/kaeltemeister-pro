@@ -2,8 +2,13 @@ import type { ItemAnswer } from "../exercises/model";
 import { errorPatterns } from "../deep/error-patterns";
 import { modules } from "../catalog";
 import type { AcademyProgress } from "../model";
-import type { NumericTask } from "../exercises/model";
-import type { Dispatch, SetStateAction } from "react";
+import type { LearningItem } from "../exercises/model";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import {
+  ExplanationProvider,
+  useExplanation,
+  type ExplanationLevel,
+} from "../../language/Explanation";
 import { bridgeRecommendations } from "./learning-bridge";
 import LessonReading from "../components/LessonReading";
 import ModuleQuiz from "../components/ModuleQuiz";
@@ -18,7 +23,7 @@ export default function LearningBridge({
   openLesson,
   closeLesson,
 }: {
-  task: NumericTask;
+  task: LearningItem;
   answer: ItemAnswer;
   skip: () => void;
   progress: AcademyProgress;
@@ -27,6 +32,8 @@ export default function LearningBridge({
   openLesson: (id: string) => void;
   closeLesson: () => void;
 }) {
+  const preferred = useExplanation();
+  const [explanation, setExplanation] = useState<ExplanationLevel>(preferred);
   const suggestions = bridgeRecommendations(progress, task, answer);
   const lesson = modules.find((m) => m.id === lessonId);
   if (!suggestions.length) return null;
@@ -36,7 +43,7 @@ export default function LearningBridge({
       <button className="text-button" onClick={skip}>
         Lernbrücke überspringen
       </button>
-      {errorPatterns(task, answer).map((p) => (
+      {(task.kind === "numeric" ? errorPatterns(task, answer) : []).map((p) => (
         <p className="notice" key={p.id}>
           {p.observation}
         </p>
@@ -51,6 +58,24 @@ export default function LearningBridge({
           <p>
             <strong>{suggestions[0].title}</strong>: {suggestions[0].reason}
           </p>
+          <button
+            className="button secondary"
+            onClick={() => {
+              setExplanation("simple");
+              openLesson(suggestions[0].lessonId);
+            }}
+          >
+            Soll ich dir das einfach erklären?
+          </button>
+          <button
+            className="button secondary"
+            onClick={() => {
+              setExplanation("technical");
+              openLesson(suggestions[0].lessonId);
+            }}
+          >
+            Fachliche Erklärung ansehen
+          </button>
           <button
             className="button secondary"
             onClick={() => openLesson(suggestions[0].lessonId)}
@@ -92,7 +117,9 @@ export default function LearningBridge({
           <button className="button primary" onClick={closeLesson}>
             Zur ursprünglichen Aufgabe zurück
           </button>
-          <LessonReading module={lesson} level="grundlagen" embedded />
+          <ExplanationProvider level={explanation}>
+            <LessonReading module={lesson} level="grundlagen" embedded />
+          </ExplanationProvider>
           <button
             className="button secondary"
             disabled={moduleRead(progress, lesson.id, "grundlagen")}

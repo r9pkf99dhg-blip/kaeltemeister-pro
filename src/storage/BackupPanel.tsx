@@ -193,8 +193,8 @@ export default function BackupPanel({
       <p className="field-hint">
         Lesestände, Antworten, Kartentermine, Statistiken, Prüfungs-Snapshots
         und Altbestände sind enthalten. Empfehlungen werden daraus neu
-        berechnet. Es gibt derzeit keine dauerhaft gespeicherten
-        Anzeige-Einstellungen. Kein Konto und keine automatische
+        berechnet. Sprachpräferenz sowie vorhandene Werkstatt- und Laborentwürfe
+        sind ebenfalls enthalten. Kein Konto und keine automatische
         Gerätesynchronisation.
       </p>
     </section>

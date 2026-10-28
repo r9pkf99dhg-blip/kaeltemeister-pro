@@ -1,20 +1,33 @@
 import { errorPatterns } from "../deep/error-patterns";
 import type { ItemAnswer } from "../exercises/model";
 import type { AcademyProgress } from "../model";
-import type { NumericTask } from "../exercises/model";
+import type { LearningItem } from "../exercises/model";
 import { academyQuestions, modules } from "../catalog";
 import { learningItems } from "../exercises/items";
 import { competencies, taskCompetencies } from "./competencies";
 /** Empfehlung, keine Diagnose: Eine falsche Gesamtantwort beweist keine einzelne fehlende Kompetenz. */
 export function bridgeRecommendations(
   progress: AcademyProgress,
-  task: NumericTask,
+  task: LearningItem,
   answer?: ItemAnswer,
 ) {
-  const patterns = answer ? errorPatterns(task, answer) : [];
+  const patterns =
+    answer && task.kind === "numeric" ? errorPatterns(task, answer) : [];
+  const needed =
+    task.kind === "numeric"
+      ? taskCompetencies(task)
+      : competencies
+          .filter(
+            (c) =>
+              c.lessonId === task.topicId ||
+              (
+                modules.find((m) => m.id === task.topicId)?.prerequisites ?? []
+              ).includes(c.lessonId),
+          )
+          .map((c) => c.id);
   const ids = [
     ...new Set([
-      ...(task.requiredCompetencyIds ?? taskCompetencies(task)),
+      ...(task.requiredCompetencyIds ?? needed),
       ...patterns.flatMap((p) =>
         competencies.filter((c) => c.lessonId === p.lessonId).map((c) => c.id),
       ),

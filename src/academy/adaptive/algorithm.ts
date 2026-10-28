@@ -14,6 +14,7 @@ export function recordOutcome(
   correct: boolean,
   now = new Date(),
   knownStreak?: number,
+  support?: "independent" | "hint" | "worked",
 ): AcademyProgress {
   const old =
     progress.performance[item.id]?.itemRevision === item.revision
@@ -24,14 +25,42 @@ export function recordOutcome(
     (old?.correctCount ?? 0) + Number(correct),
     attempts,
   );
-  const streak = correct
-    ? Math.min((knownStreak ?? old?.streak ?? 0) + 1, 5)
-    : 0;
+  const streak =
+    support && support !== "independent"
+      ? 0
+      : correct
+        ? Math.min((knownStreak ?? old?.streak ?? 0) + 1, 5)
+        : 0;
   const weakTopic = topicStatistics(progress, item.topicId).weak;
-  const intervalDays = correct
-    ? Math.min(reviewIntervals[streak - 1], weakTopic ? 3 : 30)
-    : 0;
+  const intervalDays =
+    support === "worked"
+      ? 0
+      : support === "hint"
+        ? correct
+          ? 1
+          : 0
+        : correct
+          ? Math.min(reviewIntervals[streak - 1], weakTopic ? 3 : 30)
+          : 0;
+  const oldSupport = old?.support;
+  const evidence =
+    support || oldSupport
+      ? {
+          independent: oldSupport?.independent ?? 0,
+          hint: oldSupport?.hint ?? 0,
+          worked: oldSupport?.worked ?? 0,
+          last: support ?? ("unknown" as const),
+        }
+      : undefined;
+  if (
+    evidence &&
+    support &&
+    correct &&
+    evidence.independent + evidence.hint + evidence.worked < correctCount
+  )
+    evidence[support]++;
   const entry: Performance = {
+    ...(evidence ? { support: evidence } : {}),
     topicId: item.topicId,
     itemRevision: item.revision,
     kind: item.kind,

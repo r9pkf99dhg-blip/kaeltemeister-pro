@@ -11,6 +11,10 @@ export default defineConfig({
         codeSplitting: {
           groups: [
             {
+              name: "language-content-v07",
+              test: /src[\\/]language[\\/](?:core|articles|terms)\.ts$/,
+            },
+            {
               name: "academy-content-v06",
               test: /src[\\/]academy[\\/]deep[\\/](?:math|electrical|thermal|case)-(?:lessons|formulas|tasks)\.ts$/,
             },

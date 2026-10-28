@@ -69,7 +69,7 @@ export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
   "specific-heat": ["J/(kg·K)", "kJ/(kg·K)"],
-  "temperature-difference": ["K"],
+  "temperature-difference": ["K", "°C"],
   temperature: ["°C", "K"],
   voltage: ["V", "mV"],
   current: ["A", "mA"],
@@ -104,6 +104,8 @@ export const units: Record<Quantity, string[]> = {
   acceleration: ["m/s²"],
   speed: ["m/s", "km/h"],
 };
+export const allowsSignedSI = (q: Quantity) =>
+  ["number", "reactive-power", "temperature-difference", "angle"].includes(q);
 export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (!Number.isFinite(value) || !units[quantity].includes(unit))
     throw new Error("Ungültiger Zahlenwert oder unpassende Einheit.");
@@ -131,10 +133,12 @@ export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (unit === "kWh") result *= 3600000;
   if (unit === "min") result *= 60;
   if (quantity === "temperature" && unit === "°C") result += 273.15;
-  if (!Number.isFinite(result) || (result < 0 && quantity !== "number"))
+  if (!Number.isFinite(result) || (result < 0 && !allowsSignedSI(quantity)))
     throw new Error(
       "Die Größe liegt außerhalb des zulässigen physikalischen Bereichs.",
     );
+  if (result === 0 && value !== 0 && quantity !== "temperature")
+    throw new Error("Numerischer Unterlauf bei der SI-Umrechnung.");
   return result;
 }
 export function fromSI(

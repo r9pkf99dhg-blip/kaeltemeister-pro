@@ -1,29 +1,33 @@
-# Lernsystem · Version 0.6
+# Lernsystem · Version 0.7
 
-## Ein Fortschritt für alle Lernwege
+## Eine Akademie
 
-Lesen, Modulquiz, Karteikarten, Zahlenaufgaben, kuratierter Umstellungstrainer, Fallstudien und Übungsprüfungen verwenden die bestehende Akademie. Es gibt keine zweite Lern-App oder konkurrierende Kompetenzdatenbank. Gezieltes Abrufen vor der Lösung, Herleitung/Musterbeispiel, optionale Hilfe, Originalprobe, Einheitenprüfung und Transfer unterstützen die Selbstkontrolle. Keine behauptete experimentelle Wirksamkeitsmessung.
+Lesen, Fragen, Karten, Zahlenaufgaben, Umstellungstrainer, Fälle, Werkstatt und Übungsprüfungen verwenden die vorhandenen Aufgaben-/Kompetenz-IDs und den einen Fortschritt. Laborberechnungen sind Experimente und zählen nicht als richtig gelöste Lernaufgabe.
 
-## Adaptive Wiederholung
+## Adaptive Wiederholung und tatsächliche Hilfe
 
-`recordOutcome` führt Versuche, richtige Antworten, Streak, letzte Antwort und Fälligkeit pro aktueller Aufgabenrevision. Richtige Antworten verlängern die bestehenden begrenzten Intervalle, falsche setzen die Wiederholung enger. Lesestatus und Karteikartenselbsteinschätzung sind keine objektiven Kompetenznachweise. Unbeantwortete Fragen sind unbekannter Stand und kein Nachweis einer Wissenslücke.
+`recordOutcome` erhält Versuche, richtige Antworten, letzte Richtigkeit, Streak und Termin pro Aufgabenrevision. Ohne Hilfe richtige Antworten nutzen die bisherigen begrenzten Intervalle 1/3/7/14/30 Tage, bei schwachem Thema begrenzt. Ein Hinweisversuch setzt die unabhängige Serie zurück und plant bei richtiger Antwort für einen Tag; nach betrachteter Musterlösung wird die Wiederholung sofort fällig. Falsche Antworten sind sofort wiederholbar, ungültige/unbeantwortete Eingaben kein bewerteter Versuch.
 
-Dashboard-Empfehlungen priorisieren tatsächliche Fehler, fällige Wiederholungen, schwache Themen und dann unbekannte Themen. Voraussetzungen dienen bei unbekannten Themen als nachvollziehbare Reihenfolge, sperren aber keine Module. Veraltete Revisionen werden nicht als aktuelle Fehler interpretiert. Zeit stammt aus der Browseruhr; es ist eine Übungsanwendung, keine manipulationssichere Prüfung.
+Die Werkstatt übergibt die tatsächlich verwendete Unterstützung. Geführter Modus gilt als unterstützt, ein Wechsel zu selbstständig löscht bereits geöffnete Hilfe nicht. Nach Fehlerkorrektur mit bereits genannter Zahlenlösung darf die Folgerechnung nicht als unabhängiges Lösen zählen. Zähler erfassen unabhängige, Hinweis- und Musterlösungs-Erfolge; historische Versuche ohne Nachweis bleiben unbekannt. Keine künstlichen Kompetenzprozentwerte oder psychologische Diagnose.
 
-## Lernbrücke 2.0
+Empfehlungen priorisieren tatsächliche letzte Fehler, Fälligkeiten, schwache Themen und unbekannte Themen. Gelesen ist kein objektiver Beherrschungsnachweis. Karten bleiben Selbsteinschätzung. Veraltete Revisionen werden nicht als heutige Fehler ausgegeben; Browserzeit ist keine gesicherte Prüfungsuhr.
 
-Ein falsches Zahlenergebnis kann zu mehreren Ursachen passen. `error-patterns.ts` unterstützt klar begrenzte Übereinstimmungen: Einheitenauswahl, Zehnerpotenz, Radius/Durchmesser, Scheitel/Effektiv, Schein/Wirk, Leiter/Strang, Volumen/Masse, Bruchaddition, Vorzeichen und unplausibler Leistungsfaktor. Diese Hinweise benennen beobachtete Zahlenmuster, nie eine sicher diagnostizierte Denkweise. Ungültige, richtige oder unbeantwortete Eingaben werden nicht diagnostiziert.
+## Lernbrücke 3.0
 
-Ein passendes Muster empfiehlt zunächst die kleinste zugeordnete Grundlage. Ohne Muster entscheidet der aktuelle Lernstand: letzte falsche Grundlagenantwort, ungelesen, gelesen/unbewertet, freiwillige Auffrischung. Weitere Optionen sind aufklappbar, die Brücke jederzeit überspringbar. Die Lektion verwendet denselben Leser mit Herleitung, Beispiel und Kontrollfrage. Rückkehr fokussiert das erhaltene Ergebnisfeld. Während einer zeitbegrenzten Prüfung gibt es keine Lernbrücke.
+Zahlen- und kuratierte Auswahl-/Formel-/Entscheidungsaufgaben können dieselben Kompetenzlektionen empfehlen. Erklärung: beobachtetes Antwortmuster oder aktueller Grundlagenstand (letzter Fehler, ungelesen, unbewertet, freiwillige Auffrischung). Eine falsche Gesamtantwort beweist keine einzelne Ursache.
 
-Der letzte Zahlenübungsentwurf einschließlich Eingabe, Einheit und geöffneter Lektion bleibt über Neuladen und Backup erhalten. Ein Dashboard-Button setzt ihn fort. Fortschrittsschema 3 / Backupformat 1 bleiben bestehen, beschädigte optionale Felder werden vor Import abgewiesen.
+Zahlenmuster umfassen Einheitenzuordnung, Zehnerpotenz, Radius/Durchmesser, Effektiv-/Scheitelwert, Schein-/Wirkleistung, Leiter-/Stranggrößen, Masse-/Volumenstrom, Bruchaddition, Vorzeichen und unplausiblen Leistungsfaktor. Hinzu kommen fehlender Celsius-/Kelvinoffset, unpassender Offset bei Differenzen und einfacher statt quadriertem Flächenfaktor. Nur konkrete numerische Übereinstimmungen liefern solche Hinweise; mehrere Ursachen bleiben möglich. Masse/Massenstrom und Energie/Leistung werden in kuratierten Formelwahl-/Zuordnungsfragen eindeutig unterschieden. Der endliche Trainer erklärt unvollständige Umformung, verbotene Division und verlorene Lösungen. Beliebige freie Rechenwege werden nicht diagnostiziert.
 
-## Aufgaben und Transfer
+„Soll ich dir das einfach erklären?“ und „Fachliche Erklärung ansehen“ öffnen freiwillig dieselbe passende Grundlage in der gewählten Darstellung, ohne globale Präferenz zu ändern. Eingabe, Einheit, Rechenblatt und Schritt bleiben erhalten. Zurück fokussiert das Ergebnisfeld bzw. die Auswahlgruppe; überspringen und erneut selbst versuchen sind möglich. Während der Übungsprüfung bleibt die Lernbrücke aus.
 
-97 Zahlenaufgaben und 20 Trainer-Schrittfragen teilen sich SI-Kern, Snapshots, Bewertung und Fortschritt. Der Trainer ist ein endlicher kuratierter Katalog von 15 Fällen und keine freie symbolische Algebra. Konkretes Fehlerschrittfeedback trennt unvollständige Umformung, verbotene Division, verlorene Lösungen und eingeschränkten Definitionsbereich.
+## Aktives Bearbeiten
 
-Vier Fallstudien referenzieren bestehende Zahlenaufgaben und enden jeweils mit einer fachlichen Entscheidung. Folgeaufgaben geben benötigte Werte erneut an, um frühere Fehler nicht still fortzupflanzen. Die Auswertung verlangt zusätzlich, Annahmen und Grenzen selbst zu begründen. Bewertete Fallantworten landen im vorhandenen Lernfortschritt; Fall-Schrittposition und unbewertete Fallantworten bleiben sitzungsbezogen.
+Acht Werkstattarten: Auswahl, Zahlenrechnung, Formelwahl, kontrolliertes Umstellen, Umrechnung, Fehler finden/korrigieren, mehrschrittiger Weg, fachliche Entscheidung. Rechenblatt erfasst eigene Schritte; Text/TeX wird sicher dargestellt, aber keine freie symbolische oder fachliche Prüfung behauptet. Numerische Rückmeldung trennt Zahlenwert und Einheitenzuordnung. Gleichwertige Einheiten und definierte Rundungstoleranzen werden akzeptiert.
 
-## Selbst erstellte Übungsprüfungen
+Musterlösungen bleiben im selbstständigen Modus bis zum eigenen Versuch verborgen. Hilfen sind gestuft: methodischer Hinweis, Formel/Grundlage, danach Musterlösung. Lehrbeispiele, aktiver Abruf, zeitliche Wiederholung und Transfer sind didaktische Entwurfsprinzipien, kein gemessener Wirksamkeitsnachweis. Die gewünschten Forschungsseiten waren hier nicht zugänglich; siehe SOURCES.
 
-Auswahl nach Fachgebiet, maximalem Niveau und Zeitlimit; Mischung aus Auswahl- und Zahlenaufgaben. Feste Endzeit und vollständige Snapshots überstehen Neuladen. Ablauf und automatische Abgabe werden geprüft. Ergebnisanalyse erklärt Fehler und Wiederholung; maximal 20 Ergebnisse bleiben gespeichert. Alle Prüfungen sind selbst erstellt, keine offiziellen Meisterprüfungsaufgaben und kein Qualifikationsnachweis.
+## Prüfungen und Sicherung
+
+Bestehende selbst erstellte Übungsprüfungen nutzen Fachgebiet, Niveau und Zeitlimit, mischen Auswahl/Zahlen und behalten ihre Endzeit/Snapshots nach Neuladen. Keine offiziellen Meisterprüfungsaufgaben. Neue Werkstattarten sind zusätzliche Lernansichten; eine komplette freie Mehrschritt- oder Freitext-Prüfungsbewertung wird nicht behauptet.
+
+Ein letzter Werkstatt-/Zahlenentwurf und der Werkstatttrainer sind optional gesichert; alte unbewertete Fallpositionen bleiben sitzungsbezogen. Backup umfasst Sprache, Hilfe, Rechenblatt, Labor und alle bestehenden Lerndaten. Schema 3 und Backupformat 1 bleiben unverändert.

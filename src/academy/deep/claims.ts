@@ -1,3 +1,5 @@
+import { labFormulas } from "../../lab/formulas";
+import { workshopFormula } from "../../workshop/data";
 import type { ClaimEvidence } from "../../quality/evidence";
 import { math_formulas } from "./math-formulas";
 import { electrical_formulas } from "./electrical-formulas";
@@ -153,6 +155,41 @@ const sections: Record<string, [string, boolean]> = {
   ],
 };
 export const deepClaims: ClaimEvidence[] = [
+  ...[...labFormulas, workshopFormula].map((f) => ({
+    id: `claim-${f.id}`,
+    domainId:
+      f.id === "unit-conversion-affine"
+        ? "mathematik"
+        : f.id === "lab-heat-cp"
+          ? "thermodynamik"
+          : f.id === "lab-cylinder-total"
+            ? "mathematik"
+            : "elektro",
+    moduleIds: [
+      f.id === "unit-conversion-affine"
+        ? "math-units"
+        : f.id === "lab-heat-cp"
+          ? "thermo-calorimetry"
+          : f.id === "lab-cylinder-total"
+            ? "math-pipe-volume"
+            : f.id === "lab-capacitive-q"
+              ? "electric-ac-power"
+              : "electric-work",
+    ],
+    formulaIds: [f.id],
+    statement: `${f.title}: ${f.expression}`,
+    kind: "model" as const,
+    sourceId: f.sourceIds[0],
+    section:
+      "Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts.",
+    checkedAt: "2026-10-28",
+    assumptions: f.assumptions,
+    limitations:
+      "Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.",
+    checks: ["calculated", "humanRequired"] as ClaimEvidence["checks"],
+    humanReview: null,
+  })),
+
   ...[...math_formulas, ...electrical_formulas, ...thermal_formulas].map(
     (f) => {
       const owners = lessons.filter((l) => l.formulaIds.includes(f.id));

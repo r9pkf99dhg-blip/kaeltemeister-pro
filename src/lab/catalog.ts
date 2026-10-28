@@ -1,0 +1,484 @@
+import type { CalculatorDefinition, LabField, LabGroup } from "./model";
+import type { CalculationKind, Quantity } from "../technical/calculations";
+export const labGroupNames = {
+  units: "Einheiten",
+  heat: "Wärmeleistung",
+  electrical: "Elektrotechnik",
+  geometry: "Rohrgeometrie",
+  transfer: "Wärmeübertragung",
+};
+const groupInfo = {
+  heat: {
+    simple:
+      "Du bestimmst einen sensiblen Wärmestrom oder eine der dafür nötigen Größen. Masse pro Zeit, Wärmekapazität und Temperaturunterschied müssen zusammenpassen.",
+    technical:
+      "Stationäres sensibles Betragsmodell mit konstantem cp und vernachlässigten zusätzlichen Energietermen.",
+    limitsSimple:
+      "Hier rechnest du mit nicht negativen übertragenen Beträgen. cp ist positiv und näherungsweise konstant. Kein Phasenwechsel. Für inverse Ziele dürfen die Nenner nicht null sein.",
+    limitsTechnical:
+      "Stationär, cp konstant, keine latente Wärme und keine zusätzlichen relevanten Arbeits-/kinetischen/potenziellen Energieterme. Inverse Berechnung nur auf dem gültigen Definitionsbereich.",
+  },
+  electrical: {
+    simple:
+      "Du berechnest elektrische Größen im ausdrücklich angegebenen Lehrmodell. Prüfe bei Wechselstrom Effektivwerte und bei Drehstrom Leiter- oder Stranggrößen.",
+    technical:
+      "Stationäres DC- bzw. ausdrücklich sinusförmiges passives AC-Modell; symmetrische Dreiphasenbeziehungen nur mit passenden Effektiv- und Leitergrößen.",
+    limitsSimple:
+      "Das ist Theorie, keine Arbeitsfreigabe. DC-, Sinus- und Drehstromformeln sind nicht austauschbar. Reale Schutzorgane, Kabel und Motoren werden nicht ausgelegt.",
+    limitsTechnical:
+      "Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.",
+  },
+  geometry: {
+    simple:
+      "Du berechnest reine Maße eines idealen Kreises, Rohres oder Zylinders. Innenraum, Wand und Außenfläche sind verschiedene Größen.",
+    technical:
+      "Ideale euklidische Geometrie mit kreisförmigen konstanten Querschnitten und geraden Abschnitten.",
+    limitsSimple:
+      "Das Ergebnis wählt kein zulässiges Kältemittelrohr aus. Druckverlust, Öltransport, Werkstoff, Formstücke und reale Füllmenge brauchen weitere Modelle.",
+    limitsTechnical:
+      "Keine hydraulische oder kältetechnische Dimensionierung. Geometrische Volumina und Oberflächen sind keine Stoffmengen-, Festigkeits- oder Betriebsfreigabe.",
+  },
+  transfer: {
+    simple:
+      "Du berechnest einen einfachen Wärmepfad durch ebene Schichten. Die Temperaturen ändern sich dabei im Modell nicht mit der Zeit.",
+    technical:
+      "Stationäre eindimensionale ebene Wärmeleitung mit konstanten positiven Materialkennwerten, ggf. idealen Serienschichten und vorgegebenen Übergangskoeffizienten.",
+    limitsSimple:
+      "Wärmebrücken, Feuchte, veränderliche Stoffwerte, zeitliche Speicherung und Rohrgeometrie fehlen. Für den U-Wert müssen die Wärmeübergänge vorgegeben sein.",
+    limitsTechnical:
+      "Keine Feuchte-/Tauwasser-/Wärmebrückenberechnung und keine vollständige bauphysikalische oder anlagentechnische Auslegung. Alle Koeffizienten sind Eingaben, keine behaupteten Materialtabellen.",
+  },
+};
+const f = (
+  id: string,
+  label: string,
+  quantity: Quantity,
+  value: number,
+  unit: string,
+): LabField => ({ id, label, quantity, value, unit });
+const mf = f("massFlow", "Massenstrom", "mass-flow", 0.5, "kg/s"),
+  cp = f(
+    "cp",
+    "Vorgegebenes konstantes cp",
+    "specific-heat",
+    4.18,
+    "kJ/(kg·K)",
+  ),
+  dt = f(
+    "deltaT",
+    "Temperaturdifferenz als Betrag",
+    "temperature-difference",
+    5,
+    "K",
+  ),
+  heat = f("heat", "Sensible Wärmeleistung als Betrag", "power", 10.45, "kW");
+const u = f(
+    "voltage",
+    "Spannung / Effektivspannung im AC-Modell",
+    "voltage",
+    24,
+    "V",
+  ),
+  i = f("current", "Strom / Effektivstrom im AC-Modell", "current", 0.2, "A"),
+  r = f("resistance", "Ohmscher Widerstand", "resistance", 120, "Ω");
+const au = f("voltage", "Einphasen-Effektivspannung", "voltage", 100, "V"),
+  ai = f("current", "Einphasen-Effektivstrom", "current", 2, "A"),
+  pf = f("factor", "Verschiebungsfaktor cos φ (0 bis 1)", "ratio", 0.6, "1");
+const diameter = f(
+    "diameter",
+    "Innendurchmesser für Innenraum, sonst angegebener Zylinderdurchmesser",
+    "length",
+    22,
+    "mm",
+  ),
+  length = f("length", "Gerade Länge", "length", 10, "m");
+const conductivity = f(
+    "conductivity",
+    "Vorgegebene Wärmeleitfähigkeit λ",
+    "conductivity",
+    0.04,
+    "W/(m·K)",
+  ),
+  area = f("area", "Ebene Fläche", "area", 2, "m²"),
+  thickness = f("thickness", "Schichtdicke", "length", 0.1, "m"),
+  delta = f(
+    "deltaT",
+    "Temperaturdifferenz als Betrag",
+    "temperature-difference",
+    20,
+    "K",
+  );
+const layers = [
+  f("d1", "Dicke Schicht 1", "length", 0.1, "m"),
+  f("lambda1", "Leitfähigkeit Schicht 1", "conductivity", 0.04, "W/(m·K)"),
+  f("d2", "Dicke Schicht 2", "length", 0.1, "m"),
+  f("lambda2", "Leitfähigkeit Schicht 2", "conductivity", 0.04, "W/(m·K)"),
+];
+const list: CalculatorDefinition[] = [];
+function tool(
+  id: string,
+  group: LabGroup,
+  title: string,
+  kind: CalculationKind,
+  formulaId: string,
+  quantity: Quantity,
+  answerUnit: string,
+  inputs: LabField[],
+  moduleId: string,
+  exerciseId: string,
+) {
+  const g = groupInfo[group];
+  list.push({
+    id,
+    group,
+    title,
+    kind,
+    formulaId,
+    quantity,
+    answerUnit,
+    inputs,
+    moduleId,
+    exerciseId,
+    explanation: {
+      simple: `Gesucht: ${title}. ${g.simple}`,
+      technical: `Zielgröße: ${title}. ${g.technical}`,
+    },
+    limits: { simple: g.limitsSimple, technical: g.limitsTechnical },
+  });
+}
+tool(
+  "heat-power",
+  "heat",
+  "Sensible Wärmeleistung",
+  "heat",
+  "sensible-heat",
+  "power",
+  "kW",
+  [mf, cp, dt],
+  "thermo-calorimetry",
+  "th-heat-a",
+);
+tool(
+  "heat-flow",
+  "heat",
+  "Massenstrom aus Wärmeleistung",
+  "mass-flow",
+  "sensible-mass-flow",
+  "mass-flow",
+  "kg/s",
+  [heat, cp, dt],
+  "thermo-calorimetry",
+  "calc-mass-flow",
+);
+tool(
+  "heat-difference",
+  "heat",
+  "Temperaturdifferenz aus Wärmeleistung",
+  "temperature-difference",
+  "sensible-temperature-difference",
+  "temperature-difference",
+  "K",
+  [heat, mf, cp],
+  "thermo-calorimetry",
+  "calc-temperature-difference",
+);
+tool(
+  "heat-cp",
+  "heat",
+  "Spezifische Wärmekapazität",
+  "heat-cp",
+  "lab-heat-cp",
+  "specific-heat",
+  "J/(kg·K)",
+  [heat, mf, dt],
+  "thermo-calorimetry",
+  "physics-heat-a",
+);
+tool(
+  "ohm-voltage",
+  "electrical",
+  "Gleichspannung aus R und I",
+  "ohm-voltage",
+  "ohm-voltage",
+  "voltage",
+  "V",
+  [r, i],
+  "electric-ohm",
+  "el-ohm-voltage-a",
+);
+tool(
+  "ohm-current",
+  "electrical",
+  "Gleichstrom aus U und R",
+  "ohm-current",
+  "ohm-current",
+  "current",
+  "A",
+  [u, r],
+  "electric-ohm",
+  "el-ohm-current-a",
+);
+tool(
+  "ohm-resistance",
+  "electrical",
+  "Widerstand aus U und I",
+  "ohm-resistance",
+  "ohm-resistance",
+  "resistance",
+  "Ω",
+  [u, i],
+  "electric-ohm",
+  "el-ohm-resistance-a",
+);
+tool(
+  "dc-power",
+  "electrical",
+  "Gleichstromleistung U mal I",
+  "dc-power",
+  "dc-electric-power",
+  "power",
+  "W",
+  [u, i],
+  "electric-work",
+  "el-power-a",
+);
+tool(
+  "dc-i2r",
+  "electrical",
+  "Ohmsche Leistung I²R",
+  "dc-power-i2r",
+  "lab-dc-i2r",
+  "power",
+  "W",
+  [i, r],
+  "electric-work",
+  "el-power-b",
+);
+tool(
+  "dc-u2r",
+  "electrical",
+  "Ohmsche Leistung U²/R",
+  "dc-power-u2r",
+  "lab-dc-u2r",
+  "power",
+  "W",
+  [u, r],
+  "electric-work",
+  "el-power-a",
+);
+tool(
+  "ac-apparent",
+  "electrical",
+  "Scheinleistung im Sinusmodell",
+  "ac-apparent",
+  "ac-apparent",
+  "apparent-power",
+  "VA",
+  [au, ai],
+  "electric-ac-power",
+  "ac-s-a",
+);
+tool(
+  "ac-real",
+  "electrical",
+  "Wirkleistung im Sinusmodell",
+  "ac-real",
+  "ac-real",
+  "power",
+  "W",
+  [au, ai, pf],
+  "electric-ac-power",
+  "ac-p-a",
+);
+tool(
+  "ac-inductive",
+  "electrical",
+  "Induktive Blindleistung (positiv)",
+  "ac-reactive",
+  "ac-reactive",
+  "reactive-power",
+  "var",
+  [au, ai, pf],
+  "electric-ac-power",
+  "ac-q-a",
+);
+tool(
+  "ac-capacitive",
+  "electrical",
+  "Kapazitive Blindleistung (negativ)",
+  "ac-reactive-capacitive",
+  "lab-capacitive-q",
+  "reactive-power",
+  "var",
+  [au, ai, pf],
+  "electric-ac-power",
+  "ac-q-a",
+);
+tool(
+  "three-power",
+  "electrical",
+  "Symmetrische Drehstrom-Wirkleistung",
+  "ac-three-power",
+  "ac-three-power",
+  "power",
+  "kW",
+  [
+    f("voltage", "Leiterspannung UL effektiv", "voltage", 400, "V"),
+    f("current", "Leiterstrom IL effektiv", "current", 10, "A"),
+    f("factor", "Gemeinsamer Verschiebungsfaktor cos φ", "ratio", 0.8, "1"),
+  ],
+  "electric-three-phase",
+  "ac-three-a",
+);
+tool(
+  "star-voltage",
+  "electrical",
+  "Stern: Leiterspannung aus Strangspannung",
+  "ac-star-voltage",
+  "ac-star",
+  "voltage",
+  "V",
+  [f("phaseVoltage", "Strangspannung effektiv", "voltage", 100, "V")],
+  "electric-three-phase",
+  "ac-star-a",
+);
+tool(
+  "delta-current",
+  "electrical",
+  "Dreieck: Leiterstrom aus Strangstrom",
+  "ac-delta-current",
+  "ac-delta",
+  "current",
+  "A",
+  [f("phaseCurrent", "Strangstrom effektiv", "current", 2, "A")],
+  "electric-three-phase",
+  "ac-delta-a",
+);
+tool(
+  "circle",
+  "geometry",
+  "Innerer Kreisquerschnitt",
+  "circle-area",
+  "geo-circle",
+  "area",
+  "mm²",
+  [diameter],
+  "math-geometry",
+  "geo-area-a",
+);
+tool(
+  "ring",
+  "geometry",
+  "Material-Ringfläche",
+  "annulus-area",
+  "geo-annulus",
+  "area",
+  "mm²",
+  [
+    f("outer", "Außendurchmesser", "length", 24, "mm"),
+    f("inner", "Innendurchmesser", "length", 22, "mm"),
+  ],
+  "math-geometry",
+  "geo-ring-a",
+);
+tool(
+  "volume",
+  "geometry",
+  "Geometrisches Rohrinnenvolumen",
+  "cylinder-volume",
+  "geo-volume",
+  "volume",
+  "L",
+  [diameter, length],
+  "math-pipe-volume",
+  "geo-volume-a",
+);
+tool(
+  "mantle",
+  "geometry",
+  "Zylindermantel ohne Stirnflächen",
+  "cylinder-surface",
+  "geo-surface",
+  "area",
+  "m²",
+  [diameter, length],
+  "math-pipe-volume",
+  "geo-surface-a",
+);
+tool(
+  "total-surface",
+  "geometry",
+  "Geschlossener Vollzylinder: gesamte Oberfläche",
+  "cylinder-total-surface",
+  "lab-cylinder-total",
+  "area",
+  "m²",
+  [diameter, length],
+  "math-pipe-volume",
+  "geo-surface-a",
+);
+tool(
+  "conduction",
+  "transfer",
+  "Wärmestrom durch eine ebene Schicht",
+  "conduction",
+  "thermo-conduction",
+  "power",
+  "W",
+  [conductivity, area, thickness, delta],
+  "thermo-transfer",
+  "th-conduction-a",
+);
+tool(
+  "resistance",
+  "transfer",
+  "Wärmewiderstand einer Schicht",
+  "thermal-resistance",
+  "thermo-resistance",
+  "thermal-resistance",
+  "K/W",
+  [conductivity, area, thickness],
+  "thermo-transfer",
+  "th-resistance-a",
+);
+tool(
+  "layers",
+  "transfer",
+  "Wärmestrom durch zwei Serienschichten",
+  "layered-conduction",
+  "thermo-layers",
+  "power",
+  "W",
+  [area, delta, ...layers],
+  "thermo-transfer",
+  "th-layer-a",
+);
+tool(
+  "u-value",
+  "transfer",
+  "U-Wert aus Schichten und Wärmeübergängen",
+  "overall-u",
+  "thermo-u",
+  "transmittance",
+  "W/(m²·K)",
+  [
+    f(
+      "inside",
+      "Vorgegebener innerer Wärmeübergang αi",
+      "transmittance",
+      10,
+      "W/(m²·K)",
+    ),
+    f(
+      "outside",
+      "Vorgegebener äußerer Wärmeübergang αa",
+      "transmittance",
+      10,
+      "W/(m²·K)",
+    ),
+    ...layers,
+  ],
+  "thermo-transfer",
+  "th-u-a",
+);
+export const calculators = list;

@@ -12,7 +12,7 @@ Aus demselben Fachkatalog erzeugt: npm run docs:audit. Ein Modul ist verfügbar,
 | Lüftungstechnik | 0 | 0 | 0 | Lernmodul: Volumenstrom; Lernmodul: Kanalnetze; Lernmodul: Ventilatoren; Lernmodul: Hygiene und Betrieb |
 | Wärmepumpentechnik | 0 | 0 | 0 | Lernmodul: Luft als Quelle; Lernmodul: Erdreich und Wasser; Lernmodul: COP und Jahresarbeitszahl; Lernmodul: Hydraulische Einbindung |
 | Wärmeübertragung und Dämmung | 0 | 0 | 0 | Lehrmodell im Fachgebiet Thermodynamik: Wärmeleitung, Wärmewiderstand und U-Wert; Fachauslegung später.; Lernmodul: Konvektion und Strahlung; Lernmodul: Rohrdämmung; Lernmodul: Tauwasser und Wärmebrücken |
-| Technische Mathematik | 16 | 48 | 33 | Lernmodul: Diagramme lesen; Lernmodul: Fehler und Genauigkeit; Weitere nichtlineare Systeme und vertiefte Analysis |
+| Technische Mathematik | 16 | 48 | 41 | Lernmodul: Diagramme lesen; Lernmodul: Fehler und Genauigkeit; Weitere nichtlineare Systeme und vertiefte Analysis |
 | Messtechnik | 0 | 0 | 0 | Lernmodul: Temperaturmessung; Lernmodul: Druckmessung; Lernmodul: Fühler und Messstellen; Lernmodul: Messunsicherheit |
 | Komponenten und Anlagenbau | 0 | 0 | 0 | Lernmodul: Ventile und Armaturen; Lernmodul: Wärmeübertrager; Lernmodul: Rohrleitungen; Lernmodul: Anlagendokumentation |
 | Sicherheit, Umwelt und rechtliche Grundlagen | 0 | 0 | 0 | Lernmodul: Gefährdungen; Lernmodul: Schutzmaßnahmen; Lernmodul: Kältemittelbezogene Anforderungen; Lernmodul: Nachweise und Aktualisierung |
@@ -23,6 +23,6 @@ Aus demselben Fachkatalog erzeugt: npm run docs:audit. Ein Modul ist verfügbar,
 
 - Alle Modul- und Kompetenzverweise werden auf Existenz und Zyklen geprüft.
 - Fachgebiete ohne Module besitzen Kapitelstruktur, aber noch keinen vollständigen Lernpfad.
-- Nicht direkt mit Modul/Zahlenaufgabe verbundene Formeln: keine. Standalone-Fragen/Fachnotizen können weitere legitime Referenzen enthalten.
+- Nicht direkt mit Modul/Zahlenaufgabe verbundene Formeln: lab-heat-cp, lab-dc-i2r, lab-dc-u2r, lab-cylinder-total, lab-capacitive-q. Standalone-Fragen/Fachnotizen können weitere legitime Referenzen enthalten.
 - Formelsatz und Rechenkern bleiben gemeinsame Bausteine für spätere professionelle Rechner.
 - Externe Fachabnahme, echte Apple-Geräte und reale Stoff-/Bauteildaten bleiben getrennte Aufgaben.

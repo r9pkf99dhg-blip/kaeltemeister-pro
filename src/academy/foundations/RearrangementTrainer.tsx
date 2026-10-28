@@ -1,18 +1,71 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import type { AcademyProgress } from "../model";
 import { recordOutcome } from "../adaptive/algorithm";
 import { BlockMath } from "../../math/Math";
 import { rearrangementCases, trainerQuestions } from "./trainer-data";
 export default function RearrangementTrainer({
   setProgress,
+  workshop = false,
+  progress,
 }: {
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
+  workshop?: boolean;
+  progress?: AcademyProgress;
 }) {
-  const [id, setId] = useState(rearrangementCases[0].id),
-    [index, setIndex] = useState(0),
-    [answer, setAnswer] = useState(""),
-    [checked, setChecked] = useState(false),
-    [correct, setCorrect] = useState(false);
+  const saved = workshop ? progress?.exerciseDraft?.trainer : undefined;
+  const valid = saved && rearrangementCases.find((c) => c.id === saved.caseId);
+  const [helpUsed, setHelpUsed] = useState(
+    workshop && (progress?.exerciseDraft?.workshop?.help ?? 0) > 0,
+  );
+  const [id, setId] = useState(valid?.id ?? rearrangementCases[0].id),
+    [index, setIndex] = useState(
+      valid ? Math.min(saved!.index, valid.steps.length - 1) : 0,
+    ),
+    [answer, setAnswer] = useState(valid ? saved!.answer : ""),
+    [checked, setChecked] = useState(valid ? saved!.checked : false),
+    [correct, setCorrect] = useState(valid ? saved!.correct : false);
+  useEffect(() => {
+    if (!workshop) return;
+    setProgress((p) => {
+      const trainer = { caseId: id, index, answer, checked, correct };
+      if (
+        JSON.stringify(p.exerciseDraft?.trainer) === JSON.stringify(trainer) &&
+        p.exerciseDraft?.workspace === "workshop"
+      )
+        return p;
+      return {
+        ...p,
+        exerciseDraft: {
+          taskId: "workshop-trainer",
+          revision: 1,
+          answer: { value: answer, unit: "" },
+          bridgeLessonId: null,
+          checked,
+          updatedAt: new Date().toISOString(),
+          workspace: "workshop",
+          workshop: {
+            entryId: "workshop-trainer",
+            kind: "rearrangement",
+            mode: "independent",
+            fields: {
+              given: "",
+              sought: "",
+              formula: "",
+              transformed: "",
+              conversion: "",
+              substitution: "",
+              plausibility: "",
+            },
+            help: helpUsed ? 1 : 0,
+            step: index,
+            choices: {},
+            solutionOpen: false,
+          },
+          trainer,
+        },
+      };
+    });
+  }, [id, index, answer, checked, correct, workshop, helpUsed, setProgress]);
   const current = rearrangementCases.find((c) => c.id === id)!;
   const step = current.steps[index];
   const task = trainerQuestions.find(
@@ -33,8 +86,10 @@ export default function RearrangementTrainer({
       <h2>Interaktiver Formelumstellungstrainer</h2>
       <p>
         Wähle die Zielgröße und begründe die Operation. Jede Umformung behandelt
-        beide Seiten gleich. Schritte zählen als Lernversuche; die aktuelle
-        Schrittauswahl bleibt nur in dieser Sitzung.
+        beide Seiten gleich. Schritte zählen als Lernversuche.{" "}
+        {workshop
+          ? "Die aktuelle Schrittauswahl wird mit deinem Werkstattentwurf lokal gesichert."
+          : "Die aktuelle Schrittauswahl bleibt nur in dieser Sitzung."}
       </p>
       <label>
         Formel und Zielvariable
@@ -56,7 +111,12 @@ export default function RearrangementTrainer({
       </p>
       <BlockMath tex={step.before} />
       <p>{current.assumption}</p>
-      <details key={`${id}-${index}`}>
+      <details
+        key={`${id}-${index}`}
+        onToggle={(e) => {
+          if (e.currentTarget.open) setHelpUsed(true);
+        }}
+      >
         <summary>Hilfestufe: Was muss erhalten bleiben?</summary>
         <p>{step.reason}</p>
         <p>
@@ -91,7 +151,16 @@ export default function RearrangementTrainer({
           const ok = answer === task.correctOptionId;
           setCorrect(ok);
           setChecked(true);
-          setProgress((p) => recordOutcome(p, task, ok));
+          setProgress((p) =>
+            recordOutcome(
+              p,
+              task,
+              ok,
+              new Date(),
+              undefined,
+              workshop ? (helpUsed ? "hint" : "independent") : undefined,
+            ),
+          );
         }}
       >
         Umformung prüfen

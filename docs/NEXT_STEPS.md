@@ -1,55 +1,73 @@
-# Version 0.6 · Sicherer Wiederaufnahmestand
+# Version 0.7 · Wiederaufnahme und Etappen
 
-Branch: `feat/deep-learning-academy-v06`. Grundlage main `09a953b` (Merge #7, vollständige 0.5 `febd428`). Keine direkten main-Änderungen, kein automatischer Merge, kein Force-Push, keine Branchlöschung.
+## Branch und Schutzregeln
+
+Arbeitsbranch: `feat/interactive-technical-lab-v07`, angelegt auf main `8a1ba77` (Merge #8, vollständige Version 0.6). Am 28.10.2026 erneut geprüft: Remote main unverändert; letzter zuvor gesicherter lokaler/Remote-Commit identisch `0f9282e`. Kein neuer Branch nötig. main nicht direkt ändern, kein automatischer Merge, kein Force-Push, keine Branchlöschung. Neue ungesicherte Änderungen sorgfältig lesen und erhalten.
 
 ## Abgeschlossene Etappen
 
-| Etappe | Commit | Ergebnis |
+| Etappe | Commit | Implementiert und tatsächlich geprüft |
 | --- | --- | --- |
-| 1 Bestandsaufnahme | 4254dfe | Vollständige 0.5 in main geprüft; Ausgangslage: 262 Tests, Typprüfung, Build |
-| 2 Quellen/Nachweismodell | 8f32b63 | Reale Zugriffsergebnisse, Nachweisarten und Quellenbewertung; offene Rechts-/SI-/Sicherheitsquellen |
-| 3 Mathematik | 1f24fb8 | Sieben neue Module, zwölf Aufgaben, vier neue Trainerfälle; 278 Tests, Build/Typprüfung und Tabletfall grün |
-| 4 Elektro | 665aaea | Vier Module, zwölf Aufgaben, Diagramme; 292 Tests und zwei Tablet-Browserfälle grün |
-| 5 Thermodynamik | 52c286a | Fünf Module, zehn Aufgaben; 303 Tests und drei Tablet-Browserfälle grün |
-| 6 Lernbrücke | 552d050 | Konkrete Zahlenmuster, fortsetzbarer Entwurf, Neuladen/Backup; 315 Tests und vier Tablet-Browserfälle grün |
-| 7 Fallstudien | a7be9a3 | Vier aktive Lernfälle mit Entscheidung; 317 Tests und fünf Tablet-Browserfälle grün |
-| 8a Fach-/Regressionsprüfung | 550122d | Aussagenbelege, echte alte Backups, Variablen/Alternativtexte; 321 Tests, Typprüfung, Build, Workflow-Lint und 150 vollständige Chromium-Prüfungen grün |
-| 8b Gemeinsame Begriffe | 22a7525 | Zwölf neue Glossarbegriffe mit Modulverweisen/Suche; 322 Tests und 155 Chromium-Prüfungen grün |
-| 8c Abschlusskorrekturen | 05f53da | Thermo-Grundlagenprüfung, Diagrammfrage und WebKit-Umbruch; 323 Tests/24 Dateien, Typprüfung, Build, vollständiger Chromium-Lauf 155 grün; nach CSS-Korrektur 24 gezielte Browserfälle grün. Neueste vollständige CI zusätzlich prüfen |
+| 1 · Ausgangslage/Plan | `bac679b` | Version 0.6 ist über PR #8 in main; vorhandene Architektur, IDs und Speicherschutz erhalten. |
+| 2 · Erklärungsebenen | `3ee1afa` | Globale gesicherte Präferenz, temporäre Lektionssprache, 20 Kernmodule mit drei einfachen Erklärstufen, drei Artikel. Gemeinsame Formeln/Beispiele/Grenzen; sichtbar ursprüngliche Fassung bei anderen Modulen. |
+| 3a · Verträge/Arithmetik | `3839f2f` | Optionale geschützte Entwürfe und Hilfenachweise, begrenzter Parser ohne Codeausführung. |
+| 3b · Werkstatt | `66537e3` | Acht Übungsarten, Filter, eigenes Rechenblatt, Hilfen und fortsetzbarer letzter Entwurf; vorhandener Grader und Prüfungsmodus. |
+| 4 · Labormodelle | `93473cf` | SI-Vertrag plus 26 Ziel-/Modellvarianten mit festen unabhängigen Referenzen. |
+| 5 · Techniklabor | `c08e7eb` | Einheiten, Wärme, Elektro, Rohrgeometrie, stationäre Wärmeübertragung; ein gemeinsamer Rechnerleser mit Formel/Rechenweg/Lernverknüpfungen. |
+| 6 · Visualisierungen | `df114fa` | Veränderbare Wärmeleistungskurve, Rohrquerschnitt, Leistungsdreieck, Schichtskizze, Textalternativen. |
+| 7 · Lernbrücke 3.0 | `0f9282e` | Zahlen-/Auswahlaufgaben, freiwillige einfache/fachliche Hilfe, getrennte Zahlen-/Einheitenrückmeldung, begrenzte Celsius-/Flächenmuster. 398 Tests, Typprüfung/Build und acht gezielte Chromium-Abläufe grün. |
 
-Dokumentation und Veröffentlichungsvorbereitung: `508e287`. Die PR-Erstellung blieb trotz funktionierendem Push durch API-403 blockiert. Nach jeder Etappe wurde normal gepusht. Der letzte hochgeladene Commit ist die Wiederaufnahmebasis; dessen Identität vor Weiterarbeit tatsächlich mit `git ls-remote` vergleichen.
+Jede abgeschlossene Etappe wurde normal auf GitHub gepusht. Dies sind historische Prüfstände; den finalen 0.7-Status unten aktualisieren.
 
-## Bestätigter Abschluss
+## Aktuelle Etappe 8 · Stabilisierung
 
-Korrigierter Code `05f53da`: [GitHub-Lauf 40656718539](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40656718539) erfolgreich. 248 Browserprüfungen ohne verbleibenden Fehler: 155 Chromium und 93 WebKit, einschließlich iPhone bei 200 Prozent Schrift. npm-Installation, TypeScript, 323 Tests und Build ebenfalls erfolgreich. Der zuvor gefundene WebKit-Überlauf ist damit im vollständigen Lauf behoben. Nachfolgende Commits dokumentieren diesen unveränderten Funktionsstand und die blockierte PR-Erstellung.
+- Echte zusätzliche Referenzsicherung aus unverändertem 0.6-Exporter `8a1ba77` erzeugt: `src/storage/fixtures/v06-backup.json`. Unveränderter Import/Reexport mit Karten, Prüfungshistorie, laufender Prüfung und offenem Lernbrückenentwurf geprüft. 0.4-/0.5-Referenzen bleiben unverändert.
+- Neue Backupprüfung für Labor, Sprachpräferenz, Rechenblatt, Hilfe, Antworten und Trainerposition; beschädigte optionale Felder werden vor Import abgewiesen.
+- Trainer-Wiederaufnahme korrigiert: dessen Container-ID ist bewusst kein normaler Zahlenaufgaben-Identifier. Revisionen vor Wiederaufnahme kontrollieren.
+- 410 Unit-/Integrationstests in 31 Dateien, frische Installation, TypeScript und Build bestanden (lokale Logs `/tmp/km-stable-*`).
+- GitHub fand zwei echte Darstellungsregressionen: 1 px WebKit-Überstand bei 200 % Schrift sowie sieben Navigationspunkte in bisher fünf mobilen Spalten. Umbruch-/Minimalbreiten begrenzt und Navigation auf sieben passende Spalten korrigiert; kein Ausblenden des gesamten Überlaufs, keine Tests deaktiviert. Vollständiger korrigierter Chromium-Lauf: 185/185 erfolgreich. Statistik-Karten zusätzlich gegen intrinsischen Überstand abgesichert. WebKit-Status für diesen neuen Stand noch bestätigen.
+- Neuer Browserablauf: falsche Einheit → einfache Lernbrücke → Rückkehr mit Eingabe, Einheit, Rechenblatt und unveränderter globaler Präferenz; große Schrift auch in neuen Ansichten.
 
-Remotevergleich am Abschluss: main bleibt `09a953b`, Entwicklungsbranch ist konfliktfrei; Merge-Simulation ohne Konflikt. Keine tatsächliche Zusammenführung. Kein Force-Push oder Löschen. Letzten Dokumentations-HEAD vor Merge wie jeden neuen PR-Stand nochmals in Actions prüfen.
+## Etappe 9 · Abschlussdokumentation und Veröffentlichung
 
-## Noch manuell / fachlich abzuschließen
+- README, ARCHITECTURE, DOMAIN_MODEL, LEARNING_SYSTEM, SOURCES, QUALITY_ASSURANCE, ROADMAP, Apple-Testplan und Fachprüfumfang auf 0.7 aktualisiert. Neue TECHNICAL_LAB, EXERCISE_WORKSHOP, LANGUAGE_LEVELS, CALCULATOR_VALIDATION, RELEASE_V07 und vollständige PULL_REQUEST_0_7.md vorhanden. App/Export melden 0.7.0. Alle lokalen Markdown-Dateiverweise auf Existenz geprüft.
+- Funktionsstand **`f744aa2`** normal hochgeladen. Frische Installation/Typprüfung/409 Tests/Build und 185 lokale Chromium-Prüfungen erfolgreich; nach Korrektur des erklärenden Backup-Hinweises Typprüfung, dieselben 409 Tests und Build erneut erfolgreich.
+- **[GitHub-Lauf 40725723803](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40725723803): Success, 296/296 Browserprüfungen (185 Chromium + 111 WebKit)**. Bestehende Funktionsprüfungen nicht umgangen. Frühere rote Läufe bleiben sichtbar. Emulierte Laboransichten zusätzlich visuell geprüft, keine behauptete Apple-Hardwareprüfung.
+- main `8a1ba77` erneut abgeglichen: vor Abschlussdokumentation 0 fremde main-Commits / zehn eigene Commits; Feature-Remote und lokal identisch. `git merge-tree --write-tree origin/main HEAD` erfolgreich ohne Konflikte. Kein Merge ausgeführt.
+- PR-Versuch `gh pr create --repo r9pkf99dhg-blip/kaeltemeister-pro --base main --head feat/interactive-technical-lab-v07 --body-file docs/PULL_REQUEST_0_7.md`: GitHub API HTTP 403/Forbidden (auch CONNECT zu api.github.com bestätigt). Andere verfügbare Tools bieten keine autorisierte GitHub-PR-Erstellung. Öffentliche PR-Suche zeigte null Treffer für diesen Quellbranch. Kein PR-Link erfunden, keine unsichere Umgehung.
 
-- Vor dem späteren Merge sicherstellen, dass die neuesten PR-Checks weiterhin erfolgreich sind. Bestätigter vollständiger Code-Lauf einschließlich WebKit: siehe oben.
-- PR-Erstellung am Abschluss erneut mit autorisiertem gh versucht: GraphQL POST Forbidden (HTTP 403). Keine weitere verfügbare GitHub-Connector-Methode. Git-Push funktioniert; eine PR wurde nicht erstellt. Direkten Vergleichslink und docs/PULL_REQUEST_0_6.md verwenden.
-- Merge nur nach ausdrücklicher Freigabe; dann main-Pages-Lauf und 0.6 auf der Website prüfen.
-- Echte iPad/iPhone-Hardwareprüfung gemäß APPLE_TEST_PLAN; kein solcher Test hier behauptet.
-- Unabhängige menschliche Fachprüfung und gezielter externer Abgleich eigener Ableitungen; aktuelle Meister-/Ausbildungs-/KMK-/BIPM-/DGUV-Primärquellen waren technisch blockiert.
+## Abschlussstatus und verbleibende Veröffentlichungsschritte
 
-## Wiederaufnahme nach Unterbrechung
+1. Der Dokumentationscommit `070b93e` ist normal hochgeladen und im GitHub-Lauf 40726984245 vollständig grün (296 Browserfälle). Anschließend wurde ein zusätzlicher Extremwertfehler in SVG-Zwischenprodukten durch zuerst normierte Koordinaten behoben: neuer Test scheiterte vorher mit `LInfinity`, danach 410 Tests/Typprüfung/Build und zwölf gezielte Browserfälle erfolgreich. **Erledigt:** Korrektur als `772cb82` normal hochgeladen; [GitHub-Lauf 40728217824](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40728217824) bestätigt Installation, Typprüfung, **410 Tests**, Build und **296/296 Browserfälle (185 Chromium + 111 WebKit)**. Arbeitsstand und Remote identisch, keine offenen lokalen Änderungen und keine Konflikte mit main. Dieser abschließende Dokumentationsvermerk ändert keinen Funktionscode; auch sein aktueller Branchcheck muss vor einem späteren Merge grün sein.
+2. Vergleich öffnen: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/interactive-technical-lab-v07?expand=1
+3. Auf dem iPad **Create pull request**, Titel aus RELEASE_V07 und Beschreibung aus PULL_REQUEST_0_7.md übernehmen, erneut **Create pull request**. `main` als Ziel, bestehenden Branch als Quelle belassen.
+4. Nur nach deiner ausdrücklichen Freigabe/grünen Checks **Merge pull request → Confirm merge**. Dies wird hier nicht automatisch ausgeführt. Branch nicht löschen.
+5. Grünen automatischen main-Lauf **Deploy to GitHub Pages** abwarten; alternativ **Run workflow → main → Run workflow**. Offizielle Pages-Actions, erforderliche Berechtigungen und Basispfad `/kaeltemeister-pro/` unverändert geprüft. Der Branch-Push veröffentlicht nicht die Live-Seite.
+6. Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ · Version 0.7 kontrollieren. Vorher Lernstand sichern; vollständige Geräte-/Referenzschritte in RELEASE_V07.
 
-1. `git status`, `git log -12 --oneline`, diese Datei und RELEASE_V06 lesen. Fremde Änderungen erhalten.
-2. Remote main und Entwicklungsbranch holen und vergleichen; nicht von altem main neu implementieren, keinen Force-Push verwenden.
-3. `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`.
-4. Lokal vorhandener Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`. Ohne Systembrowser offizielle Playwright-Browser installieren. WebKit in GitHub CI prüfen, falls lokaler Download gesperrt bleibt.
-5. `npm run docs:review`, `npm run docs:audit`, beide Workflows mit actionlint prüfen. Erst Fehler beheben und erneut prüfen, dann committen/pushen.
-6. Historische Fixtures niemals mit neuen Exportern überschreiben. Schema 3 / Backupformat 1 erhalten. Neue Felder optional und geschützt validieren.
+Keine weitere funktionale Implementierung ist für diesen abgeschlossenen 0.7-Umfang offen. Falls der neueste CI-Lauf einen Fehler findet: konkrete Ursache bearbeiten, zugehörige Prüfung erneut ausführen, Commit und normaler Push. Verbleibende fachliche/Gerätegrenzen unten und in ROADMAP sind keine vorgetäuscht erledigten Freigaben.
 
-## iPad, PR und Veröffentlichung
+## Bewusst offen
 
-Vergleich: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/deep-learning-academy-v06?expand=1
+Unabhängige menschliche Fachfreigabe aller Inhalte; echte iPad-/iPhone-Safari-Hardwaretests inkl. VoiceOver und Hintergrundverhalten; vollständige Übersetzung aller 45 Module; freie symbolische Algebra und automatische Fachbewertung eigener Langtexte; Motor-/Schutzdimensionierung; reale Stoffdaten/log-p-h; professionelle Auslegung, Gerätesynchronisation und PWA. Die Werkstatt speichert genau einen letzten Entwurf, kein unbegrenztes Arbeitsheft.
 
-Auf dem iPad öffnen → **Create pull request** → base `main`, compare `feat/deep-learning-academy-v06` → Titel „Version 0.6: Fachliche Tiefenakademie, Elektrotechnik und intelligentes Problemlösen“ → vorbereiteten Beschreibungstext aus PULL_REQUEST_0_6.md einsetzen → **Create pull request**. Erst nach eigener Freigabe und grünen neuesten Checks **Merge pull request**, danach **Confirm merge**. Keinen Branch löschen müssen.
+## Befehle bei Wiederaufnahme
 
-Nach grünem Pages-Lauf: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ in Safari neu laden, Version 0.6 prüfen und zunächst Sicherung in Dateien speichern. Manuelle Testwerte stehen in RELEASE_V06. main und veröffentlichte Website bleiben bis zum freigegebenen Merge auf ihrem bisherigen Stand.
+```sh
+git status --short --branch
+git log -10 --oneline
+git ls-remote --heads origin main feat/interactive-technical-lab-v07
+npm ci --cache /tmp/kaeltemeister-npm-cache
+npm run typecheck
+npm test
+npm run build
+PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium
+npm run docs:review
+npm run docs:audit
+```
 
-## Bewusst später
+WebKit lokal: `npm run test:e2e:webkit`, sofern Browserpaket verfügbar; gegenwärtig Download blockiert, GitHub CI separat bestätigen. Port 4175 muss frei sein. Logs sind Hilfsmittel, die versionierte Dokumentation und Commits sind der dauerhafte Wiederaufnahmepunkt. Veröffentlichungsanleitung folgt in RELEASE_V07.
 
-Vollständige unabhängige Fachfreigabe, umfassender Meisterlehrplan, allgemeines CAS, Motor-/Schutzpfad, unsymmetrische/verzerrte Netze, reale Stoffdaten/log-p-h und professionelle Anlagenrechner. Trainer-/Fall-Schrittpositionen und unbewertete Fallantworten sind sitzungsbezogen; ein letzter Zahlenübungs-/Lernbrückenentwurf ist dagegen jetzt gesichert.
+## Entwicklungsabschluss
+
+Phasen 1–9 des realistisch abgeschlossenen 0.7-Umfangs sind implementiert und dokumentiert. Keine weitere Programmierphase fortsetzen oder einen neuen Branch anlegen. Nächste Schritte betreffen ausschließlich manuelle PR-Erstellung wegen API-403, ausdrückliche Merge-Freigabe, automatisches Pages-Deployment und echte iPad-/Fachprüfung. Bei späterer Fortsetzung zuerst Remote-/Git-Status und aktuellen CI-Lauf prüfen; nicht bereits erledigte Funktionen neu implementieren.

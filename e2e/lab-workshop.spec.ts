@@ -1,0 +1,32 @@
+import {test,expect}from'@playwright/test';
+test('Werkstatt erhält Rechenblatt, Einheit und Hilfe nach Neuladen und Sprachwechsel',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Übungswerkstatt',exact:true}).click();await page.getByLabel('Werkstatt-Aufgabe',{exact:true}).selectOption('calc-heat-water');
+ await page.getByLabel('Rechenblatt: Verwendete Formel',{exact:true}).fill('Qdot = mdot cp deltaT');await page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true}).fill('0,5*4,18*5');await page.getByRole('button',{name:'Hinweis 1',exact:true}).click();
+ await page.getByRole('button',{name:'Einfach erklärt',exact:true}).click();await expect(page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true})).toHaveValue('0,5*4,18*5');await page.reload();await page.getByRole('button',{name:'Werkstattentwurf fortsetzen',exact:true}).click();await expect(page.getByLabel('Rechenblatt: Verwendete Formel',{exact:true})).toHaveValue('Qdot = mdot cp deltaT');
+ await page.getByRole('button',{name:'Werkstatt-Ergebnis prüfen',exact:true}).click();await expect(page.getByRole('status')).toContainText('Mit Unterstützung');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('Temporäre Sprache erhält Lektionsposition, Formeln und globale Präferenz',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Akademie',exact:true}).click();await page.getByRole('searchbox',{name:'Module oder Fachbegriffe suchen',exact:true}).fill('Brüche verstehen');await page.getByRole('button',{name:/MATHEMATIK.*Brüche verstehen und berechnen/}).click();
+ const formulas=await page.locator('.learning-formula .katex').count();await page.getByLabel('Darstellung dieser Lektion',{exact:true}).selectOption('simple');await expect(page.getByText(/Stell dir einen ganzen Kuchen vor/).first()).toBeVisible();expect(await page.locator('.learning-formula .katex').count()).toBe(formulas);await page.getByLabel('Darstellung dieser Lektion',{exact:true}).selectOption('technical');await expect(page.getByRole('heading',{name:'Brüche verstehen und berechnen',exact:true})).toBeVisible();
+});
+test('Techniklabor prüft alle fünf Bereiche und hält Übungslösungen verborgen',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Techniklabor',exact:true}).click();await page.getByRole('button',{name:'Einheit umrechnen',exact:true}).click();await expect(page.getByRole('status')).toContainText('1.500 W');
+ for(const[id,expected]of [['heat-power','10,45 kW'],['three-power','5,5425626 kW'],['volume','3,8013271 L'],['conduction','16 W']]as const){await page.getByLabel('Labor-Rechner',{exact:true}).selectOption(id);await page.getByRole('button',{name:'Laborwert berechnen',exact:true}).click();await expect(page.getByRole('status')).toContainText(expected);await expect(page.locator('.math-error')).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
+ await page.getByRole('button',{name:'Rechnung selbst üben',exact:true}).click();await expect(page.getByLabel('Dein Ergebnis: Wärmestrom durch eine ebene Schicht',{exact:true})).toHaveValue('');await expect(page.getByRole('heading',{name:'Schrittweise Musterlösung',exact:true})).toHaveCount(0);
+});
+test('Experimentierregler aktualisiert Wärmeleistung und bietet eine lesbare Kurve',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Techniklabor',exact:true}).click();await page.getByLabel('Labor-Rechner',{exact:true}).selectOption('heat-power');await page.getByRole('button',{name:'Laborwert berechnen',exact:true}).click();await page.getByRole('slider',{name:'Experimentierregler Massenstrom',exact:true}).fill('1');await expect(page.getByRole('status')).toContainText('20,9 kW');await expect(page.getByRole('img',{name:'Proportionaler Wärmeleistungsverlauf bei konstantem cp und konstanter Temperaturdifferenz'})).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('Lernbrücke kehrt mit Rechenblatt und Einheit zurück, ohne globale Sprache zu überschreiben',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Übungswerkstatt',exact:true}).click();await page.getByLabel('Werkstatt-Aufgabe',{exact:true}).selectOption('calc-heat-water');
+ await page.getByLabel('Rechenblatt: Einheitenumrechnung',{exact:true}).fill('kg/h durch 3600');await page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true}).fill('10,45');await page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true}).selectOption('W');
+ await page.getByRole('button',{name:'Werkstatt-Ergebnis prüfen',exact:true}).click();await expect(page.getByRole('status')).toContainText('Dein Zahlenwert passt zum Sollwert in kW');
+ await page.getByRole('button',{name:'Soll ich dir das einfach erklären?',exact:true}).click();await expect(page.getByRole('region',{name:'Eingeblendete Grundlagenlektion'})).toBeVisible();
+ await page.getByRole('button',{name:'Zur ursprünglichen Aufgabe zurück',exact:true}).click();await expect(page.getByLabel('Dein Ergebnis: Sensible Wärmeleistung',{exact:true})).toBeFocused();await expect(page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true})).toHaveValue('W');await expect(page.getByLabel('Rechenblatt: Einheitenumrechnung',{exact:true})).toHaveValue('kg/h durch 3600');
+ await expect(page.getByRole('button',{name:'Fachsprache',exact:true})).toHaveAttribute('aria-pressed','true');await page.reload();await page.getByRole('button',{name:'Werkstattentwurf fortsetzen',exact:true}).click();await expect(page.getByLabel('Einheit für Sensible Wärmeleistung',{exact:true})).toHaveValue('W');
+});
+test('Neue Werkstatt- und Laboransichten bleiben mit großer Schrift im Ansichtsbereich',async({page})=>{
+ await page.goto('./');await page.addStyleTag({content:'html { font-size: 200%; }'});
+ for(const route of ['Übungswerkstatt','Techniklabor']){await page.getByRole('button',{name:route,exact:true}).click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}
+ await page.getByLabel('Labor-Rechner',{exact:true}).selectOption('three-power');await page.getByRole('button',{name:'Laborwert berechnen',exact:true}).click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await expect(page.locator('.math-error')).toHaveCount(0);
+});
