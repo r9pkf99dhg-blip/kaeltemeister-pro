@@ -9,7 +9,8 @@ Branch `feat/interactive-technical-lab-v07`. Ausgangspunkt main `8a1ba77`, Merge
 ## Konkreter Plan
 
 1. Architektur und Baseline prüfen, Quellenzugriff dokumentieren, diesen Wiederaufnahmeplan sichern.
-2. Globale bevorzugte Sprache und temporäre Lektionssprache: optionaler validierter Fortschrittsvertrag, gemeinsamer Leser; kuratierte einfache Kerntexte, ursprüngliche Darstellung bei fehlender Fassung klar benennen. Formeln/Beispiele/Modellgrenzen und Bewertung bleiben gemeinsam.
+2. Sprache technisch umgesetzt: Commit `3ee1afa`, 20 Kernmodule/3 Artikel, 326 Tests erfolgreich. Globale bevorzugte Sprache und temporäre Lektionssprache: optionaler validierter Fortschrittsvertrag, gemeinsamer Leser; kuratierte einfache Kerntexte, ursprüngliche Darstellung bei fehlender Fassung klar benennen. Formeln/Beispiele/Modellgrenzen und Bewertung bleiben gemeinsam.
+3a. Geschützte optionale Entwurfs-/Hilfemetadaten und begrenzter Arithmetikparser: separat geprüft.
 3. Übungswerkstatt aus bestehenden LearningItems/Grader/Prüfungen: Filter, acht Übungsarten, eigenes strukturiertes Rechenblatt, gestufte Hilfen, tatsächliche Unterstützungsstufe, letzter fortsetzbarer Entwurf. Keine behauptete Bewertung freien Langtexts.
 4. Gemeinsamer Rechnervertrag und sichere arithmetische Eingabe ohne eval. Größen-/Einheitenkern erweitern, bestehende Aufgaben und Rechner nicht kopieren.
 5. Fünf Pflichtbereiche einzeln umsetzen: Einheiten, sensible Wärme (Zielgrößen), Elektro (DC/Sinus/symmetrisches Drehstrommodell), Rohrgeometrie, stationäre ebene Wärmeübertragung. Jede Funktion erhält unabhängige Sollwerte/Fehlerfälle und Lernverknüpfungen.

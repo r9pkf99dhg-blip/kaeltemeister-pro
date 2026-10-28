@@ -1,3 +1,4 @@
+import { parseArithmetic } from "../../technical/expression";
 import { parseSchoolAnswer } from "../../technical/foundations";
 import { calculateTechnical, toSI } from "../../technical/calculations";
 import { parseDecimal } from "../../logic";
@@ -52,7 +53,7 @@ export function gradeSnapshot(
   }
   try {
     const answerSI = toSI(
-      item.quantity === "number" ? parseSchoolAnswer(answer.value) : parseDecimal(answer.value),
+      item.answerSyntax==="arithmetic"?parseArithmetic(answer.value):item.quantity === "number" ? parseSchoolAnswer(answer.value) : parseDecimal(answer.value),
       answer.unit,
       item.quantity,
     );

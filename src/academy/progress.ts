@@ -1,3 +1,4 @@
+import { validWorkshop, validTrainer, validLab } from "../workshop/validation";
 import {
   recordOutcome,
   topicStatistics,
@@ -131,10 +132,14 @@ export function validateProgress(value: unknown): value is AcademyProgress {
     value.schemaVersion !== 3 ||
     !validateLegacyProgress({ ...value, schemaVersion: 2 }) ||
     !record(value.performance) ||
+    !(value.labDraft===undefined||validLab(value.labDraft)) ||
     !(value.preferences===undefined || (record(value.preferences) && ["simple","technical"].includes(String(value.preferences.explanation)))) ||
     !(
       value.exerciseDraft === undefined ||
       (record(value.exerciseDraft) &&
+        (value.exerciseDraft.workspace===undefined||value.exerciseDraft.workspace==="workshop") &&
+        (value.exerciseDraft.workshop===undefined||validWorkshop(value.exerciseDraft.workshop)) &&
+        (value.exerciseDraft.trainer===undefined||validTrainer(value.exerciseDraft.trainer)) &&
         typeof value.exerciseDraft.taskId === "string" &&
         value.exerciseDraft.taskId.length <= 120 &&
         validInteger(value.exerciseDraft.revision) &&
@@ -174,6 +179,7 @@ export function validateProgress(value: unknown): value is AcademyProgress {
       !validInteger(entry.streak) ||
       entry.streak > 5 ||
       typeof entry.lastCorrect !== "boolean" ||
+      !(entry.support===undefined || (record(entry.support) && ["independent","hint","worked","unknown"].includes(String(entry.support.last)) && ["independent","hint","worked"].every(k=>validInteger((entry.support as Record<string,unknown>)[k])) && Number(entry.support.independent)+Number(entry.support.hint)+Number(entry.support.worked)<=entry.correctCount)) ||
       !date(entry.lastAttemptAt) ||
       !date(entry.dueAt) ||
       !validInteger(entry.intervalDays) ||

@@ -18,6 +18,7 @@ export interface ItemBase {
 }
 export interface NumericTask extends ItemBase {
   kind: "numeric";
+  answerSyntax?: "arithmetic";
   calculation: CalculationKind;
   givens: {
     id: string;
