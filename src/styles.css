@@ -3053,3 +3053,68 @@ textarea:focus-visible {
 .task-choices {
   min-width: 0;
 }
+/* v0.8: Kreislauf und Diagramm bleiben auch bei großer Schrift im Inhaltsbereich. */
+.refrigeration-page {
+  min-width: 0;
+}
+.refrigeration-page .academy-panel {
+  margin-block: 1.25rem;
+  min-width: 0;
+}
+.refrigeration-schematic {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 520px;
+  margin-block: 1rem;
+  color: #263f36;
+}
+.refrigeration-schematic text {
+  font:
+    16px system-ui,
+    sans-serif;
+}
+.cycle-pipe {
+  fill: none;
+  stroke-width: 6;
+}
+.cycle-pipe.high {
+  stroke: #aa583b;
+}
+.cycle-pipe.low {
+  stroke: #246f9a;
+  stroke-dasharray: 12 7;
+}
+.flow-running .cycle-pipe {
+  stroke-dasharray: 14 7;
+  animation: cycle-flow 2s linear infinite;
+}
+.flow-running .cycle-pipe.low {
+  animation-direction: normal;
+}
+@keyframes cycle-flow {
+  to {
+    stroke-dashoffset: -42;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-running .cycle-pipe {
+    animation: none;
+  }
+}
+.refrigeration-page .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 1rem;
+}
+.refrigeration-page .button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.refrigeration-page select,
+.refrigeration-page input {
+  max-width: 100%;
+  min-width: 0;
+}

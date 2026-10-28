@@ -46,9 +46,11 @@ import Academy from "./academy/Academy";
 import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
+const CyclePage = lazy(() => import("./refrigeration/CyclePage"));
 const MasteryPage = lazy(() => import("./mastery/MasteryPage"));
 
 type Page =
+  | "kreislauf"
   | "mastery"
   | "dashboard"
   | "lernen"
@@ -58,6 +60,7 @@ type Page =
   | "werkstatt"
   | "labor";
 const navigation = [
+  { id: "kreislauf" as const, label: "Kältekreislauf", icon: Snowflake },
   { id: "mastery" as const, label: "Mastery", icon: Target },
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
@@ -756,11 +759,25 @@ function Application({
                     setAcademyView("exam");
                     navigate("akademie");
                   }}
-                  openCycle={() => {
-                    setAcademyModuleId("refrig-cycle-v08");
+                  openCycle={() => navigate("kreislauf")}
+                />
+              </AsyncView>
+            )}
+            {page === "kreislauf" && (
+              <AsyncView>
+                <CyclePage
+                  progress={academy.progress}
+                  setProgress={academy.setProgress}
+                  openModule={(id) => {
+                    setAcademyModuleId(id);
                     setAcademyView("overview");
                     navigate("akademie");
                   }}
+                  practice={(id) => {
+                    setWorkshopInitialId(id);
+                    navigate("werkstatt");
+                  }}
+                  openMissions={() => navigate("mastery")}
                 />
               </AsyncView>
             )}

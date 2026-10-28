@@ -1,3 +1,4 @@
+import { validCycleDraft } from "../refrigeration/draft";
 import { validMastery } from "../mastery/validation";
 import { validWorkshop, validTrainer, validLab } from "../workshop/validation";
 import {
@@ -134,6 +135,7 @@ export function validateProgress(value: unknown): value is AcademyProgress {
     !validateLegacyProgress({ ...value, schemaVersion: 2 }) ||
     !record(value.performance) ||
     !(value.mastery === undefined || validMastery(value.mastery)) ||
+    !(value.cycleDraft === undefined || validCycleDraft(value.cycleDraft)) ||
     !(value.labDraft === undefined || validLab(value.labDraft)) ||
     !(
       value.preferences === undefined ||
