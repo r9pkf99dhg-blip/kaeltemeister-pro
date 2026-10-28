@@ -1,11 +1,6 @@
 export type MotivationMode = "enabled" | "reduced" | "disabled";
 export type LearningGoal =
-  | "understand"
-  | "independent"
-  | "mission"
-  | "due"
-  | "case"
-  | "resume";
+  "understand" | "independent" | "mission" | "due" | "case" | "resume";
 export interface IndependentEvidence {
   revision: number;
   firstAt: string;
@@ -13,6 +8,7 @@ export interface IndependentEvidence {
   spacedAt?: string;
 }
 export interface SessionBaseline {
+  wasDue?: boolean;
   revision: number;
   attempts: number;
   correct: number;
@@ -31,6 +27,8 @@ export interface LearningSession {
   pauseMs: number;
 }
 export interface SessionResult {
+  dueIds?: string[];
+  missionIds?: string[];
   id: string;
   startedAt: string;
   finishedAt: string;

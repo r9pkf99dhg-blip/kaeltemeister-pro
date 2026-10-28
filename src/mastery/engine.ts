@@ -3,64 +3,14 @@ import { modules } from "../academy/catalog";
 import { learningItems } from "../academy/exercises/items";
 import { competencyGraph } from "../academy/deep/graph";
 import { emptyMastery, type LearningGoal, type SessionResult } from "./model";
-export function independentItem(p: AcademyProgress, id: string) {
-  const i = learningItems.find((i) => i.id === id),
-    e = p.performance[id];
-  return !!(
-    i &&
-    e?.itemRevision === i.revision &&
-    (e.support?.independent ?? 0) > 0
-  );
-}
-export function spacedItem(p: AcademyProgress, id: string) {
-  const i = learningItems.find((i) => i.id === id),
-    e = p.mastery?.evidence[id];
-  return !!(
-    i &&
-    e?.revision === i.revision &&
-    e.spacedAt &&
-    independentItem(p, id)
-  );
-}
-export const isTransferId = (id: string) =>
-  id.startsWith("refrig-transfer-") || id.endsWith("-decision");
-export function progressStage(
-  p: AcademyProgress,
-  itemIds: string[],
-  moduleIds: string[],
-) {
-  const items = learningItems.filter((i) => itemIds.includes(i.id));
-  const assessed = items.filter(
-    (i) =>
-      p.performance[i.id]?.itemRevision === i.revision &&
-      p.performance[i.id].attempts > 0,
-  );
-  const independent = items.filter((i) => independentItem(p, i.id));
-  const transfer = independent.filter((i) => isTransferId(i.id));
-  const spaced = independent.filter((i) => spacedItem(p, i.id));
-  const read = moduleIds.some((id) => {
-    const m = modules.find((m) => m.id === id);
-    return m && p.read[id]?.revision === m.revision && p.read[id].levels.length;
-  });
-  return {
-    stage:
-      transfer.length && independent.length >= 3
-        ? "In Transfer angewendet"
-        : independent.length >= 2
-          ? "Selbstständig angewendet"
-          : assessed.length
-            ? "Geübt"
-            : read
-              ? "Grundlagen kennengelernt"
-              : "Noch nicht bearbeitet",
-    assessed: assessed.length,
-    independent: independent.length,
-    transfer: transfer.length,
-    spaced: spaced.length,
-    explanation:
-      "Stufen beruhen auf aktuellen Aufgabenrevisionen und dokumentierten Versuchen; keine umfassende Fachqualifikation. Freie Erklärungen sind nicht objektiv fachlich geprüft.",
-  };
-}
+import {
+  independentItem,
+  spacedItem,
+  progressStage,
+  isTransferId,
+} from "./assessment";
+export { independentItem, spacedItem, progressStage } from "./assessment";
+import { newlyCompletedMissions } from "./missions";
 export function competencyStages(p: AcademyProgress) {
   return competencyGraph().map((c) => ({
     ...c,
@@ -117,6 +67,7 @@ export function beginSession(
       .map(([id, e]) => [
         id,
         {
+          wasDue: Date.parse(e.dueAt) <= now.getTime(),
           revision: e.itemRevision,
           attempts: e.attempts,
           correct: e.correctCount,
@@ -156,7 +107,8 @@ export function sessionSummary(
   const independentIds: string[] = [],
     hintIds: string[] = [],
     workedIds: string[] = [],
-    improvedIds: string[] = [];
+    improvedIds: string[] = [],
+    dueIds: string[] = [];
   let attempts = 0;
   for (const i of learningItems) {
     const e = p.performance[i.id];
@@ -166,6 +118,7 @@ export function sessionSummary(
     const delta = e.attempts - (before?.attempts ?? 0);
     if (delta <= 0) continue;
     attempts += delta;
+    if (before?.wasDue) dueIds.push(i.id);
     if ((e.support?.independent ?? 0) > (before?.independent ?? 0))
       independentIds.push(i.id);
     if ((e.support?.hint ?? 0) > (before?.hint ?? 0)) hintIds.push(i.id);
@@ -179,6 +132,8 @@ export function sessionSummary(
       Math.max(now.getTime(), Date.parse(s.startedAt)),
     ).toISOString(),
     goal: s.goal,
+    dueIds,
+    missionIds: newlyCompletedMissions(p),
     independentIds,
     hintIds,
     workedIds,

@@ -119,3 +119,46 @@ it("sichert optionale Motivations-, Nachweis- und Sitzungsdaten im bestehenden B
     }),
   ).toBe(false);
 });
+it("bilanziert nur neue Missionserfolge und wirklich zu Sitzungsbeginn fällige Aufgaben", () => {
+  let p = emptyAcademy();
+  const ids = [
+    "workshop-conversion-power",
+    "workshop-conversion-flow",
+    "workshop-conversion-area",
+  ];
+  for (const id of ids.slice(0, 2))
+    p = recordOutcome(
+      p,
+      learningItems.find((i) => i.id === id)!,
+      true,
+      start,
+      undefined,
+      "independent",
+    );
+  const later = new Date(start.getTime() + 2 * 86400000);
+  p = beginSession(p, "mission", 10, later);
+  p = recordOutcome(
+    p,
+    learningItems.find((i) => i.id === ids[0])!,
+    true,
+    later,
+    undefined,
+    "independent",
+  );
+  p = recordOutcome(
+    p,
+    learningItems.find((i) => i.id === ids[2])!,
+    true,
+    later,
+    undefined,
+    "independent",
+  );
+  const summary = sessionSummary(p, later)!;
+  expect(summary.missionIds).toContain("mission-units-v08");
+  expect(summary.dueIds).toEqual([ids[0]]);
+  p = finishSession(p, later);
+  p = beginSession(p, "mission", 10, later);
+  expect(sessionSummary(p, later)!.missionIds).not.toContain(
+    "mission-units-v08",
+  );
+});

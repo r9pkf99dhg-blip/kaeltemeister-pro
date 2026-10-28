@@ -1,3 +1,4 @@
+import { missions } from "./missions";
 import { goalNames } from "./model";
 import {
   useEffect,
@@ -31,6 +32,8 @@ export default function MasteryHub({
   children?: ReactNode;
 }) {
   const m = progress.mastery ?? emptyMastery();
+  const [minutesDraft, setMinutesDraft] = useState(String(m.minutes));
+  const [minutesError, setMinutesError] = useState("");
   const [clock, setClock] = useState(Date.now());
   useEffect(() => {
     const t = window.setInterval(() => setClock(Date.now()), 60000);
@@ -123,14 +126,25 @@ export default function MasteryHub({
             min="5"
             max="90"
             step="5"
-            value={m.minutes}
+            value={minutesDraft}
             onChange={(e) => {
-              const minutes = Number(e.target.value);
-              if (Number.isInteger(minutes) && minutes >= 5 && minutes <= 90)
+              setMinutesDraft(e.target.value);
+              setMinutesError("");
+            }}
+            onBlur={() => {
+              const minutes = Number(minutesDraft);
+              if (Number.isInteger(minutes) && minutes >= 5 && minutes <= 90) {
                 change({ minutes });
+              } else {
+                setMinutesError(
+                  "Bitte eine ganze Zeitorientierung von 5 bis 90 Minuten wählen. Das ist kein Mindestpensum.",
+                );
+                setMinutesDraft(String(m.minutes));
+              }
             }}
           />
         </label>
+        {minutesError && <p role="alert">{minutesError}</p>}
         <p>
           5–10 Minuten kurz, 20–30 Minuten fokussiert oder 40–60 Minuten
           vertieft sind unverbindliche Beispiele. Kein Mindestpensum, keine
@@ -282,6 +296,25 @@ export default function MasteryHub({
                 verbessert; {h.transferIds.length} Transferaufgaben ohne
                 angebotene Hilfe.
               </p>
+              {(h.missionIds?.length ?? 0) > 0 && (
+                <p>
+                  Neu erfüllte Fachmissionen:{" "}
+                  {h
+                    .missionIds!.map(
+                      (id) => missions.find((m) => m.id === id)?.title ?? id,
+                    )
+                    .join(", ")}
+                  .
+                </p>
+              )}
+              {h.dueIds && (
+                <p>
+                  {h.dueIds.length} zu Sitzungsbeginn fällige
+                  Fragen/Rechenaufgaben bearbeitet. Karteikarten bleiben
+                  Selbsteinschätzung und werden hier nicht als unabhängige
+                  Leistung gezählt.
+                </p>
+              )}
               <h3>Das hast du angewendet</h3>
               <ul>
                 {h.independentIds.map((id) => (

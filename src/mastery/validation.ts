@@ -80,6 +80,7 @@ export function validMastery(v: unknown): boolean {
       if (
         !id(k) ||
         !record(b) ||
+        !(b.wasDue === undefined || typeof b.wasDue === "boolean") ||
         ![
           "revision",
           "attempts",
@@ -106,6 +107,8 @@ export function validMastery(v: unknown): boolean {
       !date(h.finishedAt) ||
       Date.parse(h.finishedAt) < Date.parse(h.startedAt) ||
       !goal(h.goal) ||
+      !(h.dueIds === undefined || ids(h.dueIds)) ||
+      !(h.missionIds === undefined || ids(h.missionIds)) ||
       ![
         "independentIds",
         "hintIds",

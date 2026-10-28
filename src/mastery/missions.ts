@@ -1,7 +1,7 @@
 import type { AcademyProgress, Level } from "../academy/model";
 import { modules } from "../academy/catalog";
 import { learningItems } from "../academy/exercises/items";
-import { independentItem } from "./engine";
+import { independentItem } from "./assessment";
 export interface MissionStep {
   id: string;
   kind: "read" | "example" | "practice" | "selfcheck";
@@ -490,4 +490,27 @@ export function interleavedTasks(p: AcademyProgress, m: Fachmission) {
           ]
         : ["calc-heat-water", "workshop-conversion-flow", "refrig-basis-q0-v08"]
   ).filter((id) => learningItems.some((i) => i.id === id));
+}
+
+export function newlyCompletedMissions(p: AcademyProgress) {
+  const baseline = p.mastery?.session?.baseline;
+  if (!baseline) return [];
+  return missions
+    .filter(
+      (m) =>
+        missionStatus(p, m).complete &&
+        !m.steps
+          .filter((s) => s.kind === "practice")
+          .every((s) => {
+            const i = learningItems.find((i) => i.id === s.itemId);
+            const e = i && baseline[i.id];
+            return !!(
+              i &&
+              e?.revision === i.revision &&
+              e.correct > 0 &&
+              (!s.independent || e.independent > 0)
+            );
+          }),
+    )
+    .map((m) => m.id);
 }

@@ -1,4 +1,6 @@
 import type { AcademyProgress } from "../academy/model";
+import { learningItems } from "../academy/exercises/items";
+import { recommendedMission, missions, missionStatus } from "./missions";
 import { goalNames } from "./model";
 export function MasterySummary({
   progress,
@@ -9,6 +11,12 @@ export function MasterySummary({
 }) {
   const m = progress.mastery,
     last = m?.history[0];
+  const current = missions.find(
+    (x) => x.id === m?.mission?.id && x.revision === m.mission.revision,
+  );
+  const resume = current && !missionStatus(progress, current).complete;
+  const next = recommendedMission(progress);
+  const improved = last?.improvedIds[0];
   return (
     <section
       className="academy-panel mastery-summary"
@@ -16,15 +24,19 @@ export function MasterySummary({
     >
       <div>
         <h2>
-          {m?.mission
+          {resume
             ? "Deine Fachmission fortsetzen"
-            : "Dein persönliches Lernziel"}
+            : "Dein nächster sinnvoller Lernschritt"}
         </h2>
         <p>
-          {m?.session
-            ? goalNames[m.session.goal]
-            : "Wähle eine überschaubare Mission oder eine freiwillige Lerneinheit."}
+          <strong>{resume ? current.title : next.mission.title}</strong>:{" "}
+          {resume
+            ? "Deine zuletzt gespeicherte Schrittposition bleibt erhalten."
+            : next.reason}
         </p>
+        {m?.session && (
+          <p>Aktuelles freiwilliges Ziel: {goalNames[m.session.goal]}.</p>
+        )}
         {last && (
           <p>
             Zuletzt: {last.independentIds.length} verschiedene Aufgaben ohne
@@ -32,11 +44,15 @@ export function MasterySummary({
             verbessert.
           </p>
         )}
+        {improved && (
+          <p>
+            Letzter dokumentiert verbesserter Fehler:{" "}
+            {learningItems.find((i) => i.id === improved)?.title ?? improved}.
+          </p>
+        )}
       </div>
       <button className="button primary" onClick={open}>
-        {m?.mission
-          ? "Fachmission fortsetzen"
-          : "Mastery und Fachmissionen öffnen"}
+        {resume ? "Fachmission fortsetzen" : "Mastery und Fachmissionen öffnen"}
       </button>
     </section>
   );
