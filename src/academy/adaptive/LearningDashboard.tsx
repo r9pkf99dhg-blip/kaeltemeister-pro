@@ -59,6 +59,32 @@ export default function LearningDashboard({
           {error}
         </div>
       )}
+      {progress.exerciseDraft &&
+        numericTasks.some(
+          (t) =>
+            t.id === progress.exerciseDraft!.taskId &&
+            t.revision === progress.exerciseDraft!.revision,
+        ) && (
+          <div className="notice">
+            <p>
+              Gespeicherter Aufgabenentwurf:{" "}
+              {
+                numericTasks.find(
+                  (t) => t.id === progress.exerciseDraft!.taskId,
+                )?.title
+              }
+              . Eingabe und geöffnete Lernbrücke bleiben erhalten.
+            </p>
+            <button
+              className="button secondary"
+              onClick={() =>
+                openView("exercises", progress.exerciseDraft!.taskId)
+              }
+            >
+              Unterbrochene Aufgabe fortsetzen
+            </button>
+          </div>
+        )}
       <div className="learning-dashboard-grid">
         <div className="learning-metric">
           <h3>Heute fällig</h3>

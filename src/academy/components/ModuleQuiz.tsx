@@ -103,11 +103,13 @@ export default function ModuleQuiz({
                 </p>
                 <p>
                   Richtige Antwort:{" "}
-                  {
-                    question.options.find(
-                      (option) => option.id === question.correctOptionId,
-                    )?.text
-                  }
+                  <OptionMath
+                    text={
+                      question.options.find(
+                        (option) => option.id === question.correctOptionId,
+                      )?.text ?? ""
+                    }
+                  />
                 </p>
               </div>
             )}
@@ -115,9 +117,13 @@ export default function ModuleQuiz({
               saved?.questionRevision === question.revision && (
                 <p className="saved-answer">
                   Zuletzt gespeichert:{" "}
-                  {question.options.find(
-                    (option) => option.id === saved.optionId,
-                  )?.text ?? "Antwort nicht mehr verfügbar"}{" "}
+                  <OptionMath
+                    text={
+                      question.options.find(
+                        (option) => option.id === saved.optionId,
+                      )?.text ?? "Antwort nicht mehr verfügbar"
+                    }
+                  />{" "}
                   · {saved.correct ? "richtig" : "erneut üben"}
                 </p>
               )}

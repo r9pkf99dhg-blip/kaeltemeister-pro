@@ -1,6 +1,1056 @@
-# Fachliches Prüfregister · Version 0.5
+# Fachliches Prüfregister · Version 0.6
 
-Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.
+Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.
+
+## claim:claim-geo-circle: Kreis- und Rohrquerschnitt: A = π d² / 4
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Sektor-/Flächenableitung in math-geometry; Flächen- und Maßstabsregeln. Direkter externer Einzelabgleich noch offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-circle
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Kreis- und Rohrquerschnitt: A = π d² / 4
+- Annahmen: Kreisförmiger Querschnitt, d ≥ 0; keine Dimensionierung.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-annulus: Ringfläche: AR = π (da² − di²) / 4
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Differenz zweier Kreisflächen; externer Einzelabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ringfläche: AR = π (da² − di²) / 4
+- Annahmen: 0 ≤ d_i < d_a; gleichmäßig kreisrunde Wand.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-volume: Gerades Rohrvolumen: V = π di² L / 4
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Extrusion konstanter Kreisfläche; externer Einzelabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-volume
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Gerades Rohrvolumen: V = π di² L / 4
+- Annahmen: Konstanter kreisförmiger Innenquerschnitt.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-surface: Zylindermantel: AM = π d L
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Abwicklung des Zylindermantels; externer Einzelabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zylindermantel: AM = π d L
+- Annahmen: Nur Mantel, keine Stirnflächen.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-pythagoras: Satz des Pythagoras: c = √(a² + b²)
+
+- Fachgebiet: mathematik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m51284 Right Triangle Trigonometry: rechtwinklige Seitenbeziehungen; eigener Flächenbeweis. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Satz des Pythagoras: c = √(a² + b²)
+- Annahmen: Rechter Winkel zwischen a und b; nicht negative Längen.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-trig: Seitenverhältnisse: sin α = G/H, cos α = A/H, tan α = G/A
+
+- Fachgebiet: mathematik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m51284 Right Triangle Trigonometry: Sinus/Kosinus/Tangens als Seitenverhältnisse. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-trig
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Seitenverhältnisse: sin α = G/H, cos α = A/H, tan α = G/A
+- Annahmen: Rechtwinkliges Dreieck; spitzer Winkel, A > 0.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-slope: Steigung und Winkel: s = Δh / Lh = tan α
+
+- Fachgebiet: mathematik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m51284: Tangens als Höhen-/Grundseitenverhältnis; eigene Übertragung auf Prozentsteigung. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Steigung und Winkel: s = Δh / Lh = tan α
+- Annahmen: Horizontale Länge > 0, keine normative Gefällevorgabe.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-algebra-domain: Äquivalenz und Definitionsbereich: 6/(x−1) = 3 genau dann, wenn x = 3 (x ≠ 1)
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene geprüfte Bruchgleichung und Originalprobe; Grundlagen in math-equations. Externer Einzelabgleich des Beispiels offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Äquivalenz und Definitionsbereich: 6/(x−1) = 3 genau dann, wenn x = 3 (x ≠ 1)
+- Annahmen: Reelle Werte; ursprünglicher Nenner bleibt ausgeschlossen.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-algebra-system: Lineares Zweiersystem: x = (ce − bf)/(ae − bd)
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Elimination aus zwei linearen Gleichungen; m49326 allgemeine Modellbildung. Kein behaupteter direkter Beleg für genau diesen Fall. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-system
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Lineares Zweiersystem: x = (ce − bf)/(ae − bd)
+- Annahmen: ax+by=c, dx+ey=f; ae−bd ≠ 0.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-algebra-quadratic: Quadratische Gleichung: x₁,₂ = (−b ± √(b²−4ac))/(2a)
+
+- Fachgebiet: mathematik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m51256 Quadratic Equations: Faktorisieren, quadratische Ergänzung, Lösungsformel. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Quadratische Gleichung: x₁,₂ = (−b ± √(b²−4ac))/(2a)
+- Annahmen: a ≠ 0, reelle Wurzeln nur bei Diskriminante ≥ 0.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-algebra-interpolation: Lineare Interpolation: y = y₀ + (y₁−y₀)(x−x₀)/(x₁−x₀)
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Geradenableitung aus relativer Lage zwischen zwei Punkten; m49326 lineare Modelle. Näherung für echte Kennlinien. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-interpolation
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Lineare Interpolation: y = y₀ + (y₁−y₀)(x−x₀)/(x₁−x₀)
+- Annahmen: Verschiedene x-Stützstellen, x innerhalb des Intervalls; lineares Näherungsmodell.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-algebra-log: Logarithmus: b hoch y = x entspricht y = log zur Basis b von x
+
+- Fachgebiet: mathematik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m49363 Logarithmic Functions: Umkehrung der Exponentialfunktion und Definitionsbereich. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Logarithmus: b hoch y = x entspricht y = log zur Basis b von x
+- Annahmen: b > 0, b ≠ 1, x > 0.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-period: Frequenz und Periodendauer: T = 1/f, ω = 2πf
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58485 Simple AC Circuits: sinusförmige Zeitfunktionen und Kreisfrequenz. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-period
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Frequenz und Periodendauer: T = 1/f, ω = 2πf
+- Annahmen: Periodischer reiner Sinus, f > 0.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-rms: Sinus-Effektivwert: Ueff = Û / √2 (reiner Sinus)
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58490 Power in an AC Circuit: Effektivwerte aus quadratischem Zeitmittel. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Sinus-Effektivwert: Ueff = Û / √2 (reiner Sinus)
+- Annahmen: Reiner Sinus über ganze Perioden, keine Verallgemeinerung auf andere Signalformen.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-reactance-l: Induktiver Blindwiderstand: XL = 2πfL
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58485: idealer induktiver Wechselstromzweig; m58748 Selbstinduktivität. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-reactance-l
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Induktiver Blindwiderstand: XL = 2πfL
+- Annahmen: Ideale lineare Spule, eingeschwungener Sinus.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-reactance-c: Kapazitiver Blindwiderstand: XC = 1/(2πfC)
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58485: idealer kapazitiver Wechselstromzweig; m58448 Kapazität. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-reactance-c
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Kapazitiver Blindwiderstand: XC = 1/(2πfC)
+- Annahmen: Idealer Kondensator, f und C > 0, eingeschwungener Sinus.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-impedance: Betrag der Serienimpedanz: Z = √(R² + (XL−XC)²)
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58658 RLC Series Circuits with AC: Zeigersumme und Impedanzbetrag. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Betrag der Serienimpedanz: Z = √(R² + (XL−XC)²)
+- Annahmen: Serien-RLC-Kreis, lineare ideale Bauteile und sinusförmiger stationärer Zustand.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-apparent: Scheinleistung: S = Ueff Ieff
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Bezeichnung S=Ueff Ieff auf Grundlage der Effektivwerte in m58490. Terminologischer Fachabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-apparent
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Scheinleistung: S = Ueff Ieff
+- Annahmen: Effektivwerte, Einphase. Die Aufgaben verwenden reine Sinusgrößen.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-real: Wirkleistung im Sinusmodell: P = Ueff Ieff cos φ
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58490 Power in an AC Circuit: Zeitmittel P=Ueff Ieff cos φ. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-real
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Wirkleistung im Sinusmodell: P = Ueff Ieff cos φ
+- Annahmen: Gleichfrequente reine Sinusspannung und Sinusstrom. Keine allgemeine Oberwellenformel.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-reactive: Blindleistung im Sinusmodell: Q = Ueff Ieff sin φ
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Definition Q=S sin φ und Leistungsdreieck im Sinusmodell; Vorzeichen induktiv positiv. Vollständiger terminologischer Quellenabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Blindleistung im Sinusmodell: Q = Ueff Ieff sin φ
+- Annahmen: Sinusmodell, φ positiv induktiv. Numerische Aufgaben verwenden positive induktive Beträge.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-factor: Leistungsfaktor und Verschiebung: λ = P/S, im reinen Sinusmodell auch cos φ
+
+- Fachgebiet: elektro
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m58490: cos φ als Faktor zwischen Scheinprodukt und Wirkleistung für Sinusgrößen. Erweiterung λ-Begriff mit Modellgrenze gekennzeichnet. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Leistungsfaktor und Verschiebung: λ = P/S, im reinen Sinusmodell auch cos φ
+- Annahmen: S > 0; letzte Gleichheit nur für passende Sinusgrößen, nicht allgemeiner Wirkungsgrad.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-star: Stern: Leiter und Strang: Stern: UL = √3 Ustr; IL = Istr
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene 120°-Zeigerdifferenz auf Grundlage m58485 und Trigonometrie m51284. Keine behauptete Drehstromfundstelle im Buch. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-star
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Stern: Leiter und Strang: Stern: UL = √3 Ustr; IL = Istr
+- Annahmen: Symmetrische sinusförmige Dreiphasen-Sternschaltung. Eigene Zeigerableitung.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-delta: Dreieck: Leiter und Strang: Dreieck: UL = Ustr; IL = √3 Istr
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Stromzeigerdifferenz bei 120°, gleiche Modellgrundlagen. Direkter externer Dreiphasenabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-delta
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Dreieck: Leiter und Strang: Dreieck: UL = Ustr; IL = √3 Istr
+- Annahmen: Symmetrische sinusförmige Dreieckschaltung. Eigene Zeigerableitung.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-three-power: Dreiphasige Wirkleistung: P = 3 Ustr Istr cos φ = √3 UL IL cos φ
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Summe dreier gleicher Strangleistungen mit Stern-/Dreiecksubstitution; m58490 belegt einphasige Grundlage. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Dreiphasige Wirkleistung: P = 3 Ustr Istr cos φ = √3 UL IL cos φ
+- Annahmen: Symmetrische sinusförmige Last, Leitereffektivwerte UL und IL; eigene Ableitung aus Strangleistung.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-pressure-abs: Absolut- und Überdruck: pabs = pü + pamb
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Definition des Druckbezugs und eigene Additionsrechnung. Direkter aktueller Quellenabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-pressure-abs
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Absolut- und Überdruck: pabs = pü + pamb
+- Annahmen: Gleicher Messort, Umgebungsdruck vorgegeben; numerische Aufgabe positiver Überdruck.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-specific-volume: Spezifisches Volumen: v = V/m = 1/ρ
+
+- Fachgebiet: thermodynamik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Eigener Kehrwert der Dichtedefinition; m42187 Dichte (bereits 0.5 eingesehen). Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-specific-volume
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Spezifisches Volumen: v = V/m = 1/ρ
+- Annahmen: Homogene Dichte, Masse und Volumen positiv.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-mass-volume: Volumenstrom zu Massenstrom: ṁ = ρ V̇
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene stationäre Mengenbilanz aus lokaler Dichte; kein direkter Quellenbeleg für die konkrete Messanordnung. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Volumenstrom zu Massenstrom: ṁ = ρ V̇
+- Annahmen: Dichte und Volumenstrom am selben Zustand und Ort, stationär.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-latent: Latente Energie: Q = m L
+
+- Fachgebiet: thermodynamik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m42225 Phase Change and Latent Heat: Q=mL unter definierten Übergangsbedingungen. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Latente Energie: Q = m L
+- Annahmen: Vorgegebener Übergangswert L für einen definierten Phasenwechsel; kein realer Stoffwert behauptet.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-conduction: Ebene Wärmeleitung: Q̇ = λ A ΔT / d
+
+- Fachgebiet: thermodynamik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m42228 Conduction: Q/t=kA(T2−T1)/d für die ebene stationäre Schicht. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-conduction
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Ebene Wärmeleitung: Q̇ = λ A ΔT / d
+- Annahmen: Stationär, eindimensional, homogen, ebene Schicht, λ konstant, keine inneren Quellen.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-resistance: Wärmewiderstand: Rth = d/(λ A)
+
+- Fachgebiet: thermodynamik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: Eigene Umstellung der in m42228 belegten ebenen Wärmeleitung. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-resistance
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Wärmewiderstand: Rth = d/(λ A)
+- Annahmen: Ebene homogene Schicht, d, λ und A positiv.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-layers: Zwei leitende Schichten: Q̇ = A ΔT / (d₁/λ₁ + d₂/λ₂)
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Summe gleicher stationärer Wärmeströme / Temperaturabfälle, aus m42228. Direkter Schichtmodellabgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zwei leitende Schichten: Q̇ = A ΔT / (d₁/λ₁ + d₂/λ₂)
+- Annahmen: Gleiche Fläche, stationär, ideale Kontakte, keine Wärmeübergangswiderstände oder Wärmebrücken.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-u: Wärmedurchgangskoeffizient: U = 1/(1/αi + d₁/λ₁ + d₂/λ₂ + 1/αa)
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Reihenschaltung mit vorgegebenen Übergangskoeffizienten; kein eingesehener normativer U-Wert-Nachweis. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Wärmedurchgangskoeffizient: U = 1/(1/αi + d₁/λ₁ + d₂/λ₂ + 1/αa)
+- Annahmen: Ebene stationäre Schichten, vorgegebene positive α- und λ-Werte, keine Feuchte oder Wärmebrücken.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-first-law: Erster Hauptsatz, geschlossen: ΔU = Q − W
+
+- Fachgebiet: thermodynamik
+- Status: Quellenbasiert geprüft
+- Prüfumfang: m42232 The First Law of Thermodynamics: ΔEint=Q−W mit Q hinein und W vom System. Nachweise: Quellenrecherche abgeschlossen, Quellenbasiert geprüft, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-first-law
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Erster Hauptsatz, geschlossen: ΔU = Q − W
+- Annahmen: Geschlossenes System, Q positiv hinein, W positiv vom System an Umgebung.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-enthalpy: Spezifische Enthalpie: h = u + p v; Q̇₀ = ṁ (h₁ − h₄)
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Definition h=u+pv und eigene stationäre Bilanz; externer gezielter Enthalpie-/offenes-System-Abgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-enthalpy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Spezifische Enthalpie: h = u + p v; Q̇₀ = ṁ (h₁ − h₄)
+- Annahmen: Stationärer Verdampfer ohne Wellenarbeit; vernachlässigte kinetische/potenzielle Änderungen, geeignete Zustandsdaten.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-thermo-cycle: Ideale Kreislaufbilanz: Q̇k = Q̇₀ + PFluid
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene Bilanz des idealisierten Fluidkreislaufs; geschlossene Energieerhaltungsgrundlage in m42232. Vollständiger kältetechnischer Abgleich offen. Nachweise: Quellenrecherche abgeschlossen, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Ideale Kreislaufbilanz: Q̇k = Q̇₀ + PFluid
+- Annahmen: Stationär, passende Fluid-Systemgrenze, keine weiteren Wärme-/Arbeitsflüsse; nicht automatisch elektrische Eingangsleistung.
+- Mögliche Fehler: Belegt ist nur der ausdrücklich genannte Umfang. Eigene Herleitungen und technische Übertragung sind keine unabhängige Fachfreigabe. Keine realen Stoff-/Herstellerdaten oder Normanforderung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-area-a: Zahlenbeispiel: Innerer Rohrquerschnitt. \(d_i=0{,}020\,\mathrm m\). \(A=\frac\pi4\cdot0{,}020^2=0{,}000314159\,\mathrm{m^2}\approx314{,}159\,\mathrm{mm^2}\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-circle
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Innerer Rohrquerschnitt. \(d_i=0{,}020\,\mathrm m\). \(A=\frac\pi4\cdot0{,}020^2=0{,}000314159\,\mathrm{m^2}\approx314{,}159\,\mathrm{mm^2}\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-ring-a: Zahlenbeispiel: Materialquerschnitt eines Rohres. \(d_a=0{,}024\,\mathrm m,\ d_i=0{,}020\,\mathrm m\). \(A_R=\frac\pi4(0{,}024^2-0{,}020^2)=0{,}000138230\,\mathrm{m^2}\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Materialquerschnitt eines Rohres. \(d_a=0{,}024\,\mathrm m,\ d_i=0{,}020\,\mathrm m\). \(A_R=\frac\pi4(0{,}024^2-0{,}020^2)=0{,}000138230\,\mathrm{m^2}\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-volume-a: Zahlenbeispiel: Geometrischer Rohrinhalt. \(A_i=\frac\pi4\cdot0{,}020^2\,\mathrm{m^2}\). \(V=A_i\cdot10\,\mathrm m=0{,}00314159\,\mathrm{m^3}=3{,}14159\,\mathrm L\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-volume
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Geometrischer Rohrinhalt. \(A_i=\frac\pi4\cdot0{,}020^2\,\mathrm{m^2}\). \(V=A_i\cdot10\,\mathrm m=0{,}00314159\,\mathrm{m^3}=3{,}14159\,\mathrm L\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-surface-a: Zahlenbeispiel: Äußere Mantelfläche. \(d_a=0{,}024\,\mathrm m\). \(A_M=\pi\cdot0{,}024\cdot10\approx0{,}753982\,\mathrm{m^2}\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Äußere Mantelfläche. \(d_a=0{,}024\,\mathrm m\). \(A_M=\pi\cdot0{,}024\cdot10\approx0{,}753982\,\mathrm{m^2}\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung. Nur äußerer Mantel.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-diagonal-a: Zahlenbeispiel: Montagediagonale im rechten Winkel. \(c^2=3^2+4^2=25\,\mathrm{m^2}\). \(c=5\,\mathrm m\), statt 7 m Weg entlang der Schenkel.
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Montagediagonale im rechten Winkel. \(c^2=3^2+4^2=25\,\mathrm{m^2}\). \(c=5\,\mathrm m\), statt 7 m Weg entlang der Schenkel.
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-height-a: Zahlenbeispiel: Höhe aus Winkel und horizontaler Strecke. \(30^\circ=\frac\pi6\,\mathrm{rad}\). \(h=4\tan(\frac\pi6)\approx2{,}30940\,\mathrm m\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-trig
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Höhe aus Winkel und horizontaler Strecke. \(30^\circ=\frac\pi6\,\mathrm{rad}\). \(h=4\tan(\frac\pi6)\approx2{,}30940\,\mathrm m\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-geo-angle-a: Zahlenbeispiel: Winkel aus einer Steigung. \(s=\frac34=0{,}75\). \(\alpha=\arctan(0{,}75)=0{,}643501\,\mathrm{rad}\approx36{,}8699^\circ\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Winkel aus einer Steigung. \(s=\frac34=0{,}75\). \(\alpha=\arctan(0{,}75)=0{,}643501\,\mathrm{rad}\approx36{,}8699^\circ\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-alg-domain-a: Zahlenbeispiel: Bruchgleichung 6 geteilt durch x minus 1. Original: \(\frac6{x-1}=3\), Bereich \(x\ne1\). Daraus \(6=3x-3\). \(x=3\); Probe \(6/(3-1)=3\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Bruchgleichung 6 geteilt durch x minus 1. Original: \(\frac6{x-1}=3\), Bereich \(x\ne1\). Daraus \(6=3x-3\). \(x=3\); Probe \(6/(3-1)=3\).
+- Annahmen: Die gegebenen Koeffizienten beschreiben die umgeformte lineare Gleichung; Originalbedingung x ≠ 1 bleibt bestehen.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-alg-system-a: Zahlenbeispiel: Lineares System: x aus x+y=5 und 2x−y=1. Addition: \(3x=6\Rightarrow x=2\). \(y=3\); Probe \(2+3=5,\ 2\cdot2-3=1\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-system
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Lineares System: x aus x+y=5 und 2x−y=1. Addition: \(3x=6\Rightarrow x=2\). \(y=3\); Probe \(2+3=5,\ 2\cdot2-3=1\).
+- Annahmen: Eindeutiges reelles lineares System; gesucht ist nur x.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-alg-quadratic-a: Zahlenbeispiel: Größere Nullstelle von x²−5x+6. \(x^2-5x+6=(x-2)(x-3)=0\). Beide Nullstellen: 2 und 3. Gefragt ist ausdrücklich die größere: \(3\).
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Größere Nullstelle von x²−5x+6. \(x^2-5x+6=(x-2)(x-3)=0\). Beide Nullstellen: 2 und 3. Gefragt ist ausdrücklich die größere: \(3\).
+- Annahmen: Gesucht ist die größere reelle Nullstelle, nicht die vollständige Lösungsmenge.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-alg-interpolation-a: Zahlenbeispiel: Lineare Zwischenwertschätzung. \(y=10+(30-10)\frac{5-0}{10-0}\). \(y=20\). Nur lineare Interpolation zwischen fiktiven Stützpunkten.
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-interpolation
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Lineare Zwischenwertschätzung. \(y=10+(30-10)\frac{5-0}{10-0}\). \(y=20\). Nur lineare Interpolation zwischen fiktiven Stützpunkten.
+- Annahmen: Fiktive dimensionslose Punkte; angenommener linearer Zusammenhang, keine Herstellerkennlinie.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-alg-log-a: Zahlenbeispiel: Dekadischer Logarithmus. Gesucht \(y=\log_{10}(1000)\). \(10^3=1000\Rightarrow y=3\); positives dimensionsloses Argument.
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zahlenbeispiel: Dekadischer Logarithmus. Gesucht \(y=\log_{10}(1000)\). \(10^3=1000\Rightarrow y=3\); positives dimensionsloses Argument.
+- Annahmen: Reelles positives Argument, Basis positiv und ungleich eins.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-period-a: Zahlenbeispiel: Periodendauer eines 50-Hz-Sinus. \(T=\frac1f\). \(T=\frac1{50}=0{,}020\,\mathrm s\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-period
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Periodendauer eines 50-Hz-Sinus. \(T=\frac1f\). \(T=\frac1{50}=0{,}020\,\mathrm s\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Periodischer Sinus.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-rms-a: Zahlenbeispiel: Effektivwert aus 100 V Scheitelwert. \(U_\mathrm{eff}=\frac{\hat U}{\sqrt2}\). \(U_\mathrm{eff}=100/\sqrt2\approx70{,}7107\,\mathrm V\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Effektivwert aus 100 V Scheitelwert. \(U_\mathrm{eff}=\frac{\hat U}{\sqrt2}\). \(U_\mathrm{eff}=100/\sqrt2\approx70{,}7107\,\mathrm V\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reiner Sinus, kein beliebiger Signalverlauf.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-xl-a: Zahlenbeispiel: Induktiver Blindwiderstand. \(L=0{,}1\,\mathrm H\). \(X_L=2\pi\cdot50\cdot0{,}1=31{,}4159\,\Omega\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-reactance-l
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Induktiver Blindwiderstand. \(L=0{,}1\,\mathrm H\). \(X_L=2\pi\cdot50\cdot0{,}1=31{,}4159\,\Omega\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Ideale lineare Spule.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-xc-a: Zahlenbeispiel: Kapazitiver Blindwiderstand. \(C=0{,}0001\,\mathrm F\). \(X_C=\frac1{2\pi\cdot50\cdot0{,}0001}=31{,}8310\,\Omega\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-reactance-c
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Kapazitiver Blindwiderstand. \(C=0{,}0001\,\mathrm F\). \(X_C=\frac1{2\pi\cdot50\cdot0{,}0001}=31{,}8310\,\Omega\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Idealer Kondensator.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-z-a: Zahlenbeispiel: Betrag einer Serienimpedanz. \(Z=\sqrt{R^2+(X_L-X_C)^2}\). \(Z=\sqrt{30^2+40^2}=50\,\Omega\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Betrag einer Serienimpedanz. \(Z=\sqrt{R^2+(X_L-X_C)^2}\). \(Z=\sqrt{30^2+40^2}=50\,\Omega\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Eingeschwungener Sinus, idealer Serienkreis.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-s-a: Zahlenbeispiel: Scheinleistung eines Sinusverbrauchers. \(S=UI\). \(S=100\cdot2=200\,\mathrm{VA}\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-apparent
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Scheinleistung eines Sinusverbrauchers. \(S=UI\). \(S=100\cdot2=200\,\mathrm{VA}\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reine Sinusgrößen, induktives Nacheilen, 0 ≤ cos φ ≤ 1.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-p-a: Zahlenbeispiel: Wirkleistung eines Sinusverbrauchers. \(P=UI\cos\varphi\). \(P=100\cdot2\cdot0{,}6=120\,\mathrm W\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-real
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Wirkleistung eines Sinusverbrauchers. \(P=UI\cos\varphi\). \(P=100\cdot2\cdot0{,}6=120\,\mathrm W\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reine Sinusgrößen, induktives Nacheilen, 0 ≤ cos φ ≤ 1.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-q-a: Zahlenbeispiel: Induktive Blindleistung eines Sinusverbrauchers. \(\sin\varphi=\sqrt{1-0{,}6^2}=0{,}8\). \(Q=100\cdot2\cdot0{,}8=160\,\mathrm{var}\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Induktive Blindleistung eines Sinusverbrauchers. \(\sin\varphi=\sqrt{1-0{,}6^2}=0{,}8\). \(Q=100\cdot2\cdot0{,}8=160\,\mathrm{var}\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reine Sinusgrößen, induktives Nacheilen, 0 ≤ cos φ ≤ 1.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-factor-a: Zahlenbeispiel: Leistungsfaktor im Sinusmodell. \(\lambda=\frac PS\). \(\lambda=\frac{120}{200}=0{,}6\); nur im Sinusmodell auch cos φ.
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Leistungsfaktor im Sinusmodell. \(\lambda=\frac PS\). \(\lambda=\frac{120}{200}=0{,}6\); nur im Sinusmodell auch cos φ.
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Aufnehmender Verbraucher; S > 0.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-star-a: Zahlenbeispiel: Leiterspannung aus Stern-Strangspannung. \(U_L=\sqrt3U_\mathrm{Str}\). \(U_L=\sqrt3\cdot100=173{,}205\,\mathrm V\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-star
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Leiterspannung aus Stern-Strangspannung. \(U_L=\sqrt3U_\mathrm{Str}\). \(U_L=\sqrt3\cdot100=173{,}205\,\mathrm V\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Symmetrischer Stern, fiktive Spannungswerte.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-delta-a: Zahlenbeispiel: Leiterstrom aus Dreieck-Strangstrom. \(I_L=\sqrt3I_\mathrm{Str}\). \(I_L=2\sqrt3=3{,}46410\,\mathrm A\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-delta
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Leiterstrom aus Dreieck-Strangstrom. \(I_L=\sqrt3I_\mathrm{Str}\). \(I_L=2\sqrt3=3{,}46410\,\mathrm A\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Symmetrisches Dreieck, Sinus.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-ac-three-a: Zahlenbeispiel: Symmetrische Dreiphasen-Wirkleistung. \(P=\sqrt3U_LI_L\cos\varphi\). \(P=\sqrt3\cdot400\cdot10\cdot0{,}8=5542{,}56\,\mathrm W\).
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zahlenbeispiel: Symmetrische Dreiphasen-Wirkleistung. \(P=\sqrt3U_LI_L\cos\varphi\). \(P=\sqrt3\cdot400\cdot10\cdot0{,}8=5542{,}56\,\mathrm W\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Symmetrische sinusförmige Last, ausdrücklich Leitergrößen.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-pressure-a: Zahlenbeispiel: Absolutdruck aus positivem Überdruck. \(p_\mathrm{abs}=p_\mathrm{ü}+p_\mathrm{amb}\). \(p_\mathrm{abs}=2+1=3\,\mathrm{bar}=300000\,\mathrm{Pa}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-pressure-abs
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Absolutdruck aus positivem Überdruck. \(p_\mathrm{abs}=p_\mathrm{ü}+p_\mathrm{amb}\). \(p_\mathrm{abs}=2+1=3\,\mathrm{bar}=300000\,\mathrm{Pa}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Keine Berechnung für Unterdruckwerte.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-volume-a: Zahlenbeispiel: Spezifisches Volumen aus Dichte. \(v=\frac1\rho\). \(v=\frac1{800}=0{,}00125\,\mathrm{m^3/kg}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-specific-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Spezifisches Volumen aus Dichte. \(v=\frac1\rho\). \(v=\frac1{800}=0{,}00125\,\mathrm{m^3/kg}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Homogener Stoff, vorgegebene Dichte.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-mass-flow-a: Zahlenbeispiel: Massenstrom aus Betriebsvolumenstrom. \(\dot V=\frac{1{,}8}{3600}=0{,}0005\,\mathrm{m^3/s}\). \(\dot m=1000\cdot0{,}0005=0{,}5\,\mathrm{kg/s}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Massenstrom aus Betriebsvolumenstrom. \(\dot V=\frac{1{,}8}{3600}=0{,}0005\,\mathrm{m^3/s}\). \(\dot m=1000\cdot0{,}0005=0{,}5\,\mathrm{kg/s}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Dichte vorgegeben, gleicher Ort und Zustand.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-heat-a: Zahlenbeispiel: Wärmeträgerleistung mit vorgegebenem cp. \(\dot Q=\dot m c_p\Delta T\). \(\dot Q=0{,}5\cdot4000\cdot5=10000\,\mathrm W=10\,\mathrm{kW}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: sensible-heat
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Wärmeträgerleistung mit vorgegebenem cp. \(\dot Q=\dot m c_p\Delta T\). \(\dot Q=0{,}5\cdot4000\cdot5=10000\,\mathrm W=10\,\mathrm{kW}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Sensible Abkühlung, kein Phasenwechsel, positiver Betrag.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-latent-a: Zahlenbeispiel: Latente Energie eines fiktiven Übergangs. \(L=200000\,\mathrm{J/kg}\). \(Q=2\cdot200000=400000\,\mathrm J\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Latente Energie eines fiktiven Übergangs. \(L=200000\,\mathrm{J/kg}\). \(Q=2\cdot200000=400000\,\mathrm J\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Nur der definierte Phasenwechsel, kein benannter realer Stoff.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-conduction-a: Zahlenbeispiel: Wärmestrom durch eine ebene Schicht. \(\dot Q=\lambda A\Delta T/d\). \(\dot Q=0{,}04\cdot2\cdot20/0{,}1=16\,\mathrm W\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-conduction
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Wärmestrom durch eine ebene Schicht. \(\dot Q=\lambda A\Delta T/d\). \(\dot Q=0{,}04\cdot2\cdot20/0{,}1=16\,\mathrm W\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-resistance-a: Zahlenbeispiel: Wärmewiderstand einer Schicht. \(R_\mathrm{th}=d/(\lambda A)\). \(R_\mathrm{th}=0{,}1/(0{,}04\cdot2)=1{,}25\,\mathrm{K/W}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-resistance
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Wärmewiderstand einer Schicht. \(R_\mathrm{th}=d/(\lambda A)\). \(R_\mathrm{th}=0{,}1/(0{,}04\cdot2)=1{,}25\,\mathrm{K/W}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-layer-a: Zahlenbeispiel: Wärmestrom durch zwei Schichten. \(d_1/\lambda_1+d_2/\lambda_2=2{,}5+2{,}5=5\,\mathrm{m^2K/W}\). \(\dot Q=2\cdot20/5=8\,\mathrm W\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Wärmestrom durch zwei Schichten. \(d_1/\lambda_1+d_2/\lambda_2=2{,}5+2{,}5=5\,\mathrm{m^2K/W}\). \(\dot Q=2\cdot20/5=8\,\mathrm W\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene Serienschichten mit idealem Kontakt, ohne Film- und Wärmebrückenanteil.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-u-a: Zahlenbeispiel: U-Wert aus vorgegebenen Schicht- und Übergangswerten. \(R^{\prime\prime}=0{,}1+1+1+0{,}1=2{,}2\,\mathrm{m^2K/W}\). \(U=1/2{,}2\approx0{,}454545\,\mathrm{W/(m^2K)}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: U-Wert aus vorgegebenen Schicht- und Übergangswerten. \(R^{\prime\prime}=0{,}1+1+1+0{,}1=2{,}2\,\mathrm{m^2K/W}\). \(U=1/2{,}2\approx0{,}454545\,\mathrm{W/(m^2K)}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Schichten, sämtliche Koeffizienten fiktiv vorgegeben.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-th-cycle-a: Zahlenbeispiel: Ideale Wärmeabgabe am Verflüssiger. \(\dot Q_k=\dot Q_0+P_\mathrm{Fluid}\). \(\dot Q_k=15+5=20\,\mathrm{kW}\).
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener Zahlenfall; unabhängiger fester SI-Sollwert in src/technical/calculations.test.ts, zusätzliche Modellkontrollen in deep.test.ts. Quelle unterstützt die Grundbeziehung im verknüpften Formelbeleg, nicht die Realität der Beispielwerte. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zahlenbeispiel: Ideale Wärmeabgabe am Verflüssiger. \(\dot Q_k=\dot Q_0+P_\mathrm{Fluid}\). \(\dot Q_k=15+5=20\,\mathrm{kW}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Fluid-Systemgrenze ohne zusätzliche Verluste; keine Gleichsetzung mit elektrischer Eingangsleistung.
+- Mögliche Fehler: Rechentest belegt arithmetische Konsistenz und Bewertungslogik, keine unabhängige menschliche Prüfung oder reale Messung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-temperature-reference-v06: Absolute Celsius-/Kelvintemperatur erfordert einen Offset; derselbe Offset fällt bei Temperaturdifferenzen weg.
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: SI Brochure zur gezielten aktuellen Primärquellenprüfung vorgesehen; Zugriff gesperrt. Nachweise: Entwurf, Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: bipm-si-v06: https://www.bipm.org/en/publications/si-brochure; keine externe Fundstelle
+- Referenz / Rechnung: Absolute Celsius-/Kelvintemperatur erfordert einen Offset; derselbe Offset fällt bei Temperaturdifferenzen weg.
+- Annahmen: Temperaturskalen und positive absolute Temperatur, keine Offsetkorrektur für Differenzen.
+- Mögliche Fehler: Primärquellenabgleich offen, nur Umrechnungstests im vorhandenen Rechenkern. Keine normative Freigabe.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
 
 ## article:kreislauf: Den Kältekreislauf verstehen
 
@@ -1352,6 +2402,906 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## module:math-geometry/grundlagen: Maßstab, Flächen und Rohrquerschnitte · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-circle, geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein fiktives Rohr mit Außendurchmesser 24 mm und Wanddicke 2 mm hat innen 20 mm. Nach Umrechnung \(d_i=0{,}020\,\mathrm m\) ergibt \(A_i=\pi\cdot0{,}020^2/4\approx0{,}000314159\,\mathrm{m^2}=314{,}159\,\mathrm{mm^2}\).
+- Annahmen: Bei einem gleichmäßig runden Rohr ist die innere freie Querschnittsfläche für das geometrische Innenvolumen relevant, die Ringfläche dagegen für den Materialquerschnitt. Nominale Produktbezeichnungen ersetzen keine tatsächlich angegebenen Innenmaße. Prüfe den Durchmesserbezug vor jeder Rechnung.
+- Mögliche Fehler: Den Durchmesser statt des Radius in πr² einsetzen: Ergebnis vierfach zu groß. 20 mm als 0,02 m umrechnen, aber den Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-geometry/fachkraft: Maßstab, Flächen und Rohrquerschnitte · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-circle, geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein fiktives Rohr mit Außendurchmesser 24 mm und Wanddicke 2 mm hat innen 20 mm. Nach Umrechnung \(d_i=0{,}020\,\mathrm m\) ergibt \(A_i=\pi\cdot0{,}020^2/4\approx0{,}000314159\,\mathrm{m^2}=314{,}159\,\mathrm{mm^2}\).
+- Annahmen: Bei einem gleichmäßig runden Rohr ist die innere freie Querschnittsfläche für das geometrische Innenvolumen relevant, die Ringfläche dagegen für den Materialquerschnitt. Nominale Produktbezeichnungen ersetzen keine tatsächlich angegebenen Innenmaße. Prüfe den Durchmesserbezug vor jeder Rechnung.
+- Mögliche Fehler: Den Durchmesser statt des Radius in πr² einsetzen: Ergebnis vierfach zu groß. 20 mm als 0,02 m umrechnen, aber den Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-geometry/meister: Maßstab, Flächen und Rohrquerschnitte · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-circle, geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein fiktives Rohr mit Außendurchmesser 24 mm und Wanddicke 2 mm hat innen 20 mm. Nach Umrechnung \(d_i=0{,}020\,\mathrm m\) ergibt \(A_i=\pi\cdot0{,}020^2/4\approx0{,}000314159\,\mathrm{m^2}=314{,}159\,\mathrm{mm^2}\).
+- Annahmen: Bei einem gleichmäßig runden Rohr ist die innere freie Querschnittsfläche für das geometrische Innenvolumen relevant, die Ringfläche dagegen für den Materialquerschnitt. Nominale Produktbezeichnungen ersetzen keine tatsächlich angegebenen Innenmaße. Prüfe den Durchmesserbezug vor jeder Rechnung.
+- Mögliche Fehler: Den Durchmesser statt des Radius in πr² einsetzen: Ergebnis vierfach zu groß. 20 mm als 0,02 m umrechnen, aber den Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-pipe-volume/grundlagen: Rohrvolumen und Oberflächen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Innen 20 mm, Länge 10 m: \(V=\frac\pi4\cdot0{,}020^2\cdot10=0{,}00314159\,\mathrm{m^3}=3{,}14159\,\mathrm L\). Außen 24 mm: \(A_M=\pi\cdot0{,}024\cdot10=0{,}753982\,\mathrm{m^2}\). Beide Zahlen beantworten unterschiedliche Fragen.
+- Annahmen: Wähle die passende Systemgrenze: Für den geometrischen Inhalt gilt der Innendurchmesser. Für eine äußere Dämmfläche gilt der Außendurchmesser. Das Ergebnis sagt noch nichts über eine zulässige Füllmenge, reale Kältemittelverteilung oder eine Dämmstoffauslegung aus.
+- Mögliche Fehler: Außendurchmesser für das Innenvolumen verwenden. Die beiden Stirnflächen unbemerkt zur Mantelfläche addieren oder Liter mit Kubikmetern gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-pipe-volume/fachkraft: Rohrvolumen und Oberflächen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Innen 20 mm, Länge 10 m: \(V=\frac\pi4\cdot0{,}020^2\cdot10=0{,}00314159\,\mathrm{m^3}=3{,}14159\,\mathrm L\). Außen 24 mm: \(A_M=\pi\cdot0{,}024\cdot10=0{,}753982\,\mathrm{m^2}\). Beide Zahlen beantworten unterschiedliche Fragen.
+- Annahmen: Wähle die passende Systemgrenze: Für den geometrischen Inhalt gilt der Innendurchmesser. Für eine äußere Dämmfläche gilt der Außendurchmesser. Das Ergebnis sagt noch nichts über eine zulässige Füllmenge, reale Kältemittelverteilung oder eine Dämmstoffauslegung aus.
+- Mögliche Fehler: Außendurchmesser für das Innenvolumen verwenden. Die beiden Stirnflächen unbemerkt zur Mantelfläche addieren oder Liter mit Kubikmetern gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-pipe-volume/meister: Rohrvolumen und Oberflächen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Innen 20 mm, Länge 10 m: \(V=\frac\pi4\cdot0{,}020^2\cdot10=0{,}00314159\,\mathrm{m^3}=3{,}14159\,\mathrm L\). Außen 24 mm: \(A_M=\pi\cdot0{,}024\cdot10=0{,}753982\,\mathrm{m^2}\). Beide Zahlen beantworten unterschiedliche Fragen.
+- Annahmen: Wähle die passende Systemgrenze: Für den geometrischen Inhalt gilt der Innendurchmesser. Für eine äußere Dämmfläche gilt der Außendurchmesser. Das Ergebnis sagt noch nichts über eine zulässige Füllmenge, reale Kältemittelverteilung oder eine Dämmstoffauslegung aus.
+- Mögliche Fehler: Außendurchmesser für das Innenvolumen verwenden. Die beiden Stirnflächen unbemerkt zur Mantelfläche addieren oder Liter mit Kubikmetern gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-triangles/grundlagen: Pythagoras und geometrische Leitungswege · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Für \(a=3\,\mathrm m,b=4\,\mathrm m\) folgt \(c=\sqrt{9+16}\,\mathrm m=5\,\mathrm m\). Rückprobe: \(5^2-4^2=9\), also \(a=3\,\mathrm m\). Der Vergleich mit 7 m ist eine geometrische Wegbetrachtung ohne Montagezuschlag.
+- Annahmen: Eine Leitungsführung über 3 m waagrecht und 4 m senkrecht ist entlang der Kanten 7 m lang; eine ideal mögliche direkte Diagonale ist 5 m. Ob sie montierbar ist, entscheidet nicht Pythagoras. Ein Grundriss mit unbekanntem Winkel erlaubt den Satz nicht ohne Weiteres.
+- Mögliche Fehler: Die Hypotenuse mit einer Kathete verwechseln. Pythagoras bei beliebigem Winkel anwenden oder a + b als Diagonale ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-triangles/fachkraft: Pythagoras und geometrische Leitungswege · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Für \(a=3\,\mathrm m,b=4\,\mathrm m\) folgt \(c=\sqrt{9+16}\,\mathrm m=5\,\mathrm m\). Rückprobe: \(5^2-4^2=9\), also \(a=3\,\mathrm m\). Der Vergleich mit 7 m ist eine geometrische Wegbetrachtung ohne Montagezuschlag.
+- Annahmen: Eine Leitungsführung über 3 m waagrecht und 4 m senkrecht ist entlang der Kanten 7 m lang; eine ideal mögliche direkte Diagonale ist 5 m. Ob sie montierbar ist, entscheidet nicht Pythagoras. Ein Grundriss mit unbekanntem Winkel erlaubt den Satz nicht ohne Weiteres.
+- Mögliche Fehler: Die Hypotenuse mit einer Kathete verwechseln. Pythagoras bei beliebigem Winkel anwenden oder a + b als Diagonale ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-triangles/meister: Pythagoras und geometrische Leitungswege · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Für \(a=3\,\mathrm m,b=4\,\mathrm m\) folgt \(c=\sqrt{9+16}\,\mathrm m=5\,\mathrm m\). Rückprobe: \(5^2-4^2=9\), also \(a=3\,\mathrm m\). Der Vergleich mit 7 m ist eine geometrische Wegbetrachtung ohne Montagezuschlag.
+- Annahmen: Eine Leitungsführung über 3 m waagrecht und 4 m senkrecht ist entlang der Kanten 7 m lang; eine ideal mögliche direkte Diagonale ist 5 m. Ob sie montierbar ist, entscheidet nicht Pythagoras. Ein Grundriss mit unbekanntem Winkel erlaubt den Satz nicht ohne Weiteres.
+- Mögliche Fehler: Die Hypotenuse mit einer Kathete verwechseln. Pythagoras bei beliebigem Winkel anwenden oder a + b als Diagonale ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-trigonometry/grundlagen: Winkel, Trigonometrie und Gefälle · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-trig, geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Bei 4 m horizontal und 3 m Höhe ist \(s=\frac34=0{,}75=75\%\) und \(\alpha=\arctan(0{,}75)\approx36{,}870^\circ\). Die schräge Länge ist 5 m. Mit 2 % Gefälle auf 10 m horizontal ergibt sich 0,2 m Höhenunterschied und etwa 1,146°.
+- Annahmen: Prüfe zuerst, ob das Dreieck rechtwinklig ist, welchen Winkel du betrachtest und welche Seite gegenüberliegt. Die Rechenfunktionen dieses Lernkerns erwarten Bogenmaß. Ein negativer Höhenunterschied bezeichnet ein gerichtetes Gefälle; die Beispielaufgaben verwenden ausdrücklich positive Beträge.
+- Mögliche Fehler: Gradwerte direkt in eine rad-Funktion einsetzen. Prozentgefälle mit Grad gleichsetzen oder die schräge Länge statt der horizontalen Projektion verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-trigonometry/fachkraft: Winkel, Trigonometrie und Gefälle · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-trig, geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Bei 4 m horizontal und 3 m Höhe ist \(s=\frac34=0{,}75=75\%\) und \(\alpha=\arctan(0{,}75)\approx36{,}870^\circ\). Die schräge Länge ist 5 m. Mit 2 % Gefälle auf 10 m horizontal ergibt sich 0,2 m Höhenunterschied und etwa 1,146°.
+- Annahmen: Prüfe zuerst, ob das Dreieck rechtwinklig ist, welchen Winkel du betrachtest und welche Seite gegenüberliegt. Die Rechenfunktionen dieses Lernkerns erwarten Bogenmaß. Ein negativer Höhenunterschied bezeichnet ein gerichtetes Gefälle; die Beispielaufgaben verwenden ausdrücklich positive Beträge.
+- Mögliche Fehler: Gradwerte direkt in eine rad-Funktion einsetzen. Prozentgefälle mit Grad gleichsetzen oder die schräge Länge statt der horizontalen Projektion verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-trigonometry/meister: Winkel, Trigonometrie und Gefälle · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-trig, geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Bei 4 m horizontal und 3 m Höhe ist \(s=\frac34=0{,}75=75\%\) und \(\alpha=\arctan(0{,}75)\approx36{,}870^\circ\). Die schräge Länge ist 5 m. Mit 2 % Gefälle auf 10 m horizontal ergibt sich 0,2 m Höhenunterschied und etwa 1,146°.
+- Annahmen: Prüfe zuerst, ob das Dreieck rechtwinklig ist, welchen Winkel du betrachtest und welche Seite gegenüberliegt. Die Rechenfunktionen dieses Lernkerns erwarten Bogenmaß. Ein negativer Höhenunterschied bezeichnet ein gerichtetes Gefälle; die Beispielaufgaben verwenden ausdrücklich positive Beträge.
+- Mögliche Fehler: Gradwerte direkt in eine rad-Funktion einsetzen. Prozentgefälle mit Grad gleichsetzen oder die schräge Länge statt der horizontalen Projektion verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-domains/grundlagen: Bruchgleichungen, Wurzeln und Definitionsbereiche · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(\sqrt{x+1}=x-1\): Kandidat 0 scheitert an \(1\ne-1\), Kandidat 3 ergibt \(2=2\). Bei \(x(x-2)=0\) sind dagegen 0 und 2 Lösungen. Durch x zu teilen würde die erlaubte Nullstelle 0 entfernen; verwende das Nullprodukt.
+- Annahmen: Für technische Umstellungen dokumentierst du positive Größen und Nullbedingungen separat. Aus x² = 9 folgen mathematisch zwei reelle Werte ±3; eine geometrische Länge ist nur der positive. Durch x zu teilen kann die Lösung x = 0 verlieren. Eine Zahlenprobe allein beweist keine allgemeine Äquivalenz.
+- Mögliche Fehler: Die durch den Nenner ausgeschlossenen Werte nach dem Kürzen wieder zulassen. Quadratische Kandidaten ungeprüft übernehmen oder durch eine möglicherweise nullwertige Variable teilen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-domains/fachkraft: Bruchgleichungen, Wurzeln und Definitionsbereiche · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(\sqrt{x+1}=x-1\): Kandidat 0 scheitert an \(1\ne-1\), Kandidat 3 ergibt \(2=2\). Bei \(x(x-2)=0\) sind dagegen 0 und 2 Lösungen. Durch x zu teilen würde die erlaubte Nullstelle 0 entfernen; verwende das Nullprodukt.
+- Annahmen: Für technische Umstellungen dokumentierst du positive Größen und Nullbedingungen separat. Aus x² = 9 folgen mathematisch zwei reelle Werte ±3; eine geometrische Länge ist nur der positive. Durch x zu teilen kann die Lösung x = 0 verlieren. Eine Zahlenprobe allein beweist keine allgemeine Äquivalenz.
+- Mögliche Fehler: Die durch den Nenner ausgeschlossenen Werte nach dem Kürzen wieder zulassen. Quadratische Kandidaten ungeprüft übernehmen oder durch eine möglicherweise nullwertige Variable teilen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-domains/meister: Bruchgleichungen, Wurzeln und Definitionsbereiche · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(\sqrt{x+1}=x-1\): Kandidat 0 scheitert an \(1\ne-1\), Kandidat 3 ergibt \(2=2\). Bei \(x(x-2)=0\) sind dagegen 0 und 2 Lösungen. Durch x zu teilen würde die erlaubte Nullstelle 0 entfernen; verwende das Nullprodukt.
+- Annahmen: Für technische Umstellungen dokumentierst du positive Größen und Nullbedingungen separat. Aus x² = 9 folgen mathematisch zwei reelle Werte ±3; eine geometrische Länge ist nur der positive. Durch x zu teilen kann die Lösung x = 0 verlieren. Eine Zahlenprobe allein beweist keine allgemeine Äquivalenz.
+- Mögliche Fehler: Die durch den Nenner ausgeschlossenen Werte nach dem Kürzen wieder zulassen. Quadratische Kandidaten ungeprüft übernehmen oder durch eine möglicherweise nullwertige Variable teilen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-systems-quadratic/grundlagen: Lineare Systeme und quadratische Gleichungen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-system, algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Addition ergibt x = 2; Einsetzen in x + y = 5 liefert y = 3. Rückprobe: 2·2 − 3 = 1. Für x² − 5x + 6 sind 2 und 3 zulässig, weil 4 − 10 + 6 = 0 und 9 − 15 + 6 = 0. Die größere ist 3, die kleinere bleibt mathematisch erhalten.
+- Annahmen: Gleichungssysteme können Bilanzbeziehungen abbilden, aber nur bei konsistenten Annahmen. Quadratische Wurzeln müssen in die ursprünglichen Bedingungen eingesetzt werden. Beide mathematischen Lösungen sind anzugeben, bevor beispielsweise eine positive Länge oder ein zulässiger Betriebspunkt ausgewählt wird.
+- Mögliche Fehler: Zwei voneinander abhängige Gleichungen als eindeutiges System behandeln. Bei quadratischen Gleichungen das ± vergessen oder einen Kandidaten ohne Prüfung verwerfen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-systems-quadratic/fachkraft: Lineare Systeme und quadratische Gleichungen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-system, algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Addition ergibt x = 2; Einsetzen in x + y = 5 liefert y = 3. Rückprobe: 2·2 − 3 = 1. Für x² − 5x + 6 sind 2 und 3 zulässig, weil 4 − 10 + 6 = 0 und 9 − 15 + 6 = 0. Die größere ist 3, die kleinere bleibt mathematisch erhalten.
+- Annahmen: Gleichungssysteme können Bilanzbeziehungen abbilden, aber nur bei konsistenten Annahmen. Quadratische Wurzeln müssen in die ursprünglichen Bedingungen eingesetzt werden. Beide mathematischen Lösungen sind anzugeben, bevor beispielsweise eine positive Länge oder ein zulässiger Betriebspunkt ausgewählt wird.
+- Mögliche Fehler: Zwei voneinander abhängige Gleichungen als eindeutiges System behandeln. Bei quadratischen Gleichungen das ± vergessen oder einen Kandidaten ohne Prüfung verwerfen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-systems-quadratic/meister: Lineare Systeme und quadratische Gleichungen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-system, algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Addition ergibt x = 2; Einsetzen in x + y = 5 liefert y = 3. Rückprobe: 2·2 − 3 = 1. Für x² − 5x + 6 sind 2 und 3 zulässig, weil 4 − 10 + 6 = 0 und 9 − 15 + 6 = 0. Die größere ist 3, die kleinere bleibt mathematisch erhalten.
+- Annahmen: Gleichungssysteme können Bilanzbeziehungen abbilden, aber nur bei konsistenten Annahmen. Quadratische Wurzeln müssen in die ursprünglichen Bedingungen eingesetzt werden. Beide mathematischen Lösungen sind anzugeben, bevor beispielsweise eine positive Länge oder ein zulässiger Betriebspunkt ausgewählt wird.
+- Mögliche Fehler: Zwei voneinander abhängige Gleichungen als eindeutiges System behandeln. Bei quadratischen Gleichungen das ± vergessen oder einen Kandidaten ohne Prüfung verwerfen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-functions/grundlagen: Funktionen, Kennlinien und logarithmische Begriffe · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-interpolation, algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktive Punkte (0, 10) und (10, 30): bei x = 5 liegt die lineare Interpolation bei 20. In einem inversen Modell mit xy = 12 gehört zu x = 3 der Wert y = 4. Da 10³ = 1000 gilt \(\log_{10}1000=3\); der Logarithmus ist kein neuer Multiplikationsfaktor.
+- Annahmen: Eine reale Kennlinie darf zwischen Punkten gekrümmt sein. Lineare Interpolation liefert deshalb zunächst eine Näherung; ohne validierte Daten und Fehlerabschätzung keine Auslegung. Logarithmen werden später beim log-p-h-Diagramm wichtig. Der logarithmierte Zahlenwert benötigt eine definierte dimensionslose Bezugsgröße.
+- Mögliche Fehler: Einen Achsenabschnitt ignorieren oder Interpolation außerhalb des Datenbereichs behaupten. Den Logarithmus von null/negativen Zahlen im reellen Modell oder von einer unbezeichneten physikalischen Einheit verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-functions/fachkraft: Funktionen, Kennlinien und logarithmische Begriffe · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-interpolation, algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktive Punkte (0, 10) und (10, 30): bei x = 5 liegt die lineare Interpolation bei 20. In einem inversen Modell mit xy = 12 gehört zu x = 3 der Wert y = 4. Da 10³ = 1000 gilt \(\log_{10}1000=3\); der Logarithmus ist kein neuer Multiplikationsfaktor.
+- Annahmen: Eine reale Kennlinie darf zwischen Punkten gekrümmt sein. Lineare Interpolation liefert deshalb zunächst eine Näherung; ohne validierte Daten und Fehlerabschätzung keine Auslegung. Logarithmen werden später beim log-p-h-Diagramm wichtig. Der logarithmierte Zahlenwert benötigt eine definierte dimensionslose Bezugsgröße.
+- Mögliche Fehler: Einen Achsenabschnitt ignorieren oder Interpolation außerhalb des Datenbereichs behaupten. Den Logarithmus von null/negativen Zahlen im reellen Modell oder von einer unbezeichneten physikalischen Einheit verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:math-functions/meister: Funktionen, Kennlinien und logarithmische Begriffe · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: algebra-interpolation, algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktive Punkte (0, 10) und (10, 30): bei x = 5 liegt die lineare Interpolation bei 20. In einem inversen Modell mit xy = 12 gehört zu x = 3 der Wert y = 4. Da 10³ = 1000 gilt \(\log_{10}1000=3\); der Logarithmus ist kein neuer Multiplikationsfaktor.
+- Annahmen: Eine reale Kennlinie darf zwischen Punkten gekrümmt sein. Lineare Interpolation liefert deshalb zunächst eine Näherung; ohne validierte Daten und Fehlerabschätzung keine Auslegung. Logarithmen werden später beim log-p-h-Diagramm wichtig. Der logarithmierte Zahlenwert benötigt eine definierte dimensionslose Bezugsgröße.
+- Mögliche Fehler: Einen Achsenabschnitt ignorieren oder Interpolation außerhalb des Datenbereichs behaupten. Den Logarithmus von null/negativen Zahlen im reellen Modell oder von einer unbezeichneten physikalischen Einheit verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-wave/grundlagen: Wechselstrom: Sinus, Zeit und Effektivwert · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-period, ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein fiktiver Sinus mit Scheitelwert \(100\sqrt2\,\mathrm V\) hat \(100\,\mathrm V\) effektiv. Bei 50 Hz liegt das erste Maximum nach 5 ms. Ein um 30° nacheilender Strom erreicht seine entsprechenden Phasenpunkte erst um \(T/12=1{,}667\,\mathrm{ms}\) später. Das ist ein theoretischer Lernfall.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: Scheitelwert als Effektivwert einsetzen: die Leistung wird bei zwei Scheitelwerten um Faktor zwei falsch. Zeitlicher Mittelwert null mit fehlender Energieübertragung gleichsetzen; √2 auf beliebige Signalformen anwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-wave/fachkraft: Wechselstrom: Sinus, Zeit und Effektivwert · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-period, ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein fiktiver Sinus mit Scheitelwert \(100\sqrt2\,\mathrm V\) hat \(100\,\mathrm V\) effektiv. Bei 50 Hz liegt das erste Maximum nach 5 ms. Ein um 30° nacheilender Strom erreicht seine entsprechenden Phasenpunkte erst um \(T/12=1{,}667\,\mathrm{ms}\) später. Das ist ein theoretischer Lernfall.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: Scheitelwert als Effektivwert einsetzen: die Leistung wird bei zwei Scheitelwerten um Faktor zwei falsch. Zeitlicher Mittelwert null mit fehlender Energieübertragung gleichsetzen; √2 auf beliebige Signalformen anwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-wave/meister: Wechselstrom: Sinus, Zeit und Effektivwert · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-period, ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein fiktiver Sinus mit Scheitelwert \(100\sqrt2\,\mathrm V\) hat \(100\,\mathrm V\) effektiv. Bei 50 Hz liegt das erste Maximum nach 5 ms. Ein um 30° nacheilender Strom erreicht seine entsprechenden Phasenpunkte erst um \(T/12=1{,}667\,\mathrm{ms}\) später. Das ist ein theoretischer Lernfall.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: Scheitelwert als Effektivwert einsetzen: die Leistung wird bei zwei Scheitelwerten um Faktor zwei falsch. Zeitlicher Mittelwert null mit fehlender Energieübertragung gleichsetzen; √2 auf beliebige Signalformen anwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-reactance/grundlagen: Spule, Kondensator und Impedanz · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-reactance-l, ac-reactance-c, ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktiv R = 30 Ω und XL − XC = 40 Ω: \(Z=\sqrt{30^2+40^2}=50\,\Omega\). Bei 100 V effektiv folgt I = 2 A. Der Phasenwinkel hat cos φ = R/Z = 0,6. Bei ideal rein induktivem Zweig ist der mittlere Energieumsatz null, obwohl Strom fließt.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: XL und XC ohne Phasenbezug wie ohmsche Widerstände addieren. Reale Spulen als verlustfrei voraussetzen oder µF nicht in F umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-reactance/fachkraft: Spule, Kondensator und Impedanz · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-reactance-l, ac-reactance-c, ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktiv R = 30 Ω und XL − XC = 40 Ω: \(Z=\sqrt{30^2+40^2}=50\,\Omega\). Bei 100 V effektiv folgt I = 2 A. Der Phasenwinkel hat cos φ = R/Z = 0,6. Bei ideal rein induktivem Zweig ist der mittlere Energieumsatz null, obwohl Strom fließt.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: XL und XC ohne Phasenbezug wie ohmsche Widerstände addieren. Reale Spulen als verlustfrei voraussetzen oder µF nicht in F umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-reactance/meister: Spule, Kondensator und Impedanz · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-reactance-l, ac-reactance-c, ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktiv R = 30 Ω und XL − XC = 40 Ω: \(Z=\sqrt{30^2+40^2}=50\,\Omega\). Bei 100 V effektiv folgt I = 2 A. Der Phasenwinkel hat cos φ = R/Z = 0,6. Bei ideal rein induktivem Zweig ist der mittlere Energieumsatz null, obwohl Strom fließt.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: XL und XC ohne Phasenbezug wie ohmsche Widerstände addieren. Reale Spulen als verlustfrei voraussetzen oder µF nicht in F umrechnen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-power/grundlagen: Wirk-, Blind- und Scheinleistung · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive, ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: 100 V und 2 A effektiv, cos φ = 0,6 und induktiver Betrieb: S = 200 VA, P = 120 W, Q = 160 var. Prüfung: 120² + 160² = 200². In 2 h werden 240 Wh Wirkarbeit aufgenommen; die Blindleistung wird nicht als dauerhaft verbrauchte mechanische Energie interpretiert.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: VA, var und W als dieselbe Art von Leistung behandeln. cos φ als Wirkungsgrad oder als vollständigen Leistungsfaktor bei verzerrten Strömen ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-power/fachkraft: Wirk-, Blind- und Scheinleistung · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive, ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: 100 V und 2 A effektiv, cos φ = 0,6 und induktiver Betrieb: S = 200 VA, P = 120 W, Q = 160 var. Prüfung: 120² + 160² = 200². In 2 h werden 240 Wh Wirkarbeit aufgenommen; die Blindleistung wird nicht als dauerhaft verbrauchte mechanische Energie interpretiert.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: VA, var und W als dieselbe Art von Leistung behandeln. cos φ als Wirkungsgrad oder als vollständigen Leistungsfaktor bei verzerrten Strömen ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-ac-power/meister: Wirk-, Blind- und Scheinleistung · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive, ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: 100 V und 2 A effektiv, cos φ = 0,6 und induktiver Betrieb: S = 200 VA, P = 120 W, Q = 160 var. Prüfung: 120² + 160² = 200². In 2 h werden 240 Wh Wirkarbeit aufgenommen; die Blindleistung wird nicht als dauerhaft verbrauchte mechanische Energie interpretiert.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: VA, var und W als dieselbe Art von Leistung behandeln. cos φ als Wirkungsgrad oder als vollständigen Leistungsfaktor bei verzerrten Strömen ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-three-phase/grundlagen: Drehstrom: Leiter-, Stranggrößen und Leistung · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-star, ac-delta, ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktiv \(U_L=100\sqrt3\,\mathrm V\), \(I_L=2\,\mathrm A\), cos φ = 0,6: P = 360 W. Im Stern sind die Strangwerte 100 V und 2 A: 3 × 100 × 2 × 0,6 = 360 W. Im Dreieck gilt dagegen Ustr = UL und Istr = IL/√3; die Gesamtleistung bleibt gleich.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: Leiter- und Stranggrößen mischen oder den Faktor √3 in Stern und Dreieck auf die falsche Größe anwenden. Die symmetrische Formel für unbekannte unsymmetrische oder verzerrte Belastung verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-three-phase/fachkraft: Drehstrom: Leiter-, Stranggrößen und Leistung · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-star, ac-delta, ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktiv \(U_L=100\sqrt3\,\mathrm V\), \(I_L=2\,\mathrm A\), cos φ = 0,6: P = 360 W. Im Stern sind die Strangwerte 100 V und 2 A: 3 × 100 × 2 × 0,6 = 360 W. Im Dreieck gilt dagegen Ustr = UL und Istr = IL/√3; die Gesamtleistung bleibt gleich.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: Leiter- und Stranggrößen mischen oder den Faktor √3 in Stern und Dreieck auf die falsche Größe anwenden. Die symmetrische Formel für unbekannte unsymmetrische oder verzerrte Belastung verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:electric-three-phase/meister: Drehstrom: Leiter-, Stranggrößen und Leistung · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-star, ac-delta, ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Fiktiv \(U_L=100\sqrt3\,\mathrm V\), \(I_L=2\,\mathrm A\), cos φ = 0,6: P = 360 W. Im Stern sind die Strangwerte 100 V und 2 A: 3 × 100 × 2 × 0,6 = 360 W. Im Dreieck gilt dagegen Ustr = UL und Istr = IL/√3; die Gesamtleistung bleibt gleich.
+- Annahmen: Nur theoretische Lerninhalte und Simulationen. Keine Freigabe für Arbeiten an elektrischen Anlagen; fachliche Qualifikation, Arbeitsanweisung und Gefährdungsbeurteilung werden nicht ersetzt.
+- Mögliche Fehler: Leiter- und Stranggrößen mischen oder den Faktor √3 in Stern und Dreieck auf die falsche Größe anwenden. Die symmetrische Formel für unbekannte unsymmetrische oder verzerrte Belastung verwenden.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-states/grundlagen: Temperatur, Druck und spezifisches Volumen · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-pressure-abs, thermo-specific-volume, thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv 2,0 bar Überdruck bei ausdrücklich 1,0 bar Umgebung: 3,0 bar absolut = 300000 Pa. Aus −10 °C werden 263,15 K, während die Erwärmung auf −4 °C nur +6 K beträgt. Bei vorgegebener Dichte 800 kg/m³ ist \(v=0{,}00125\,\mathrm{m^3/kg}\).
+- Annahmen: Ein negativer Überdruck ist relativ zur Umgebung möglich, negativer Absolutdruck in diesem einfachen thermodynamischen Modell nicht. Die Zahlenaufgabe verwendet ausdrücklich positiven Überdruck. Ohne Druckreferenz dürfen keine Sättigungstemperaturen aus Tabellen ausgewählt werden; reale Stoffwerte werden hier nicht erfunden.
+- Mögliche Fehler: Überdruck ohne Umgebungsdruck als Absolutdruck verwenden. Celsiuswerte als absolute Temperaturverhältnisse oder Volumenstrom als Massenstrom einsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-states/fachkraft: Temperatur, Druck und spezifisches Volumen · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-pressure-abs, thermo-specific-volume, thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv 2,0 bar Überdruck bei ausdrücklich 1,0 bar Umgebung: 3,0 bar absolut = 300000 Pa. Aus −10 °C werden 263,15 K, während die Erwärmung auf −4 °C nur +6 K beträgt. Bei vorgegebener Dichte 800 kg/m³ ist \(v=0{,}00125\,\mathrm{m^3/kg}\).
+- Annahmen: Ein negativer Überdruck ist relativ zur Umgebung möglich, negativer Absolutdruck in diesem einfachen thermodynamischen Modell nicht. Die Zahlenaufgabe verwendet ausdrücklich positiven Überdruck. Ohne Druckreferenz dürfen keine Sättigungstemperaturen aus Tabellen ausgewählt werden; reale Stoffwerte werden hier nicht erfunden.
+- Mögliche Fehler: Überdruck ohne Umgebungsdruck als Absolutdruck verwenden. Celsiuswerte als absolute Temperaturverhältnisse oder Volumenstrom als Massenstrom einsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-states/meister: Temperatur, Druck und spezifisches Volumen · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-pressure-abs, thermo-specific-volume, thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv 2,0 bar Überdruck bei ausdrücklich 1,0 bar Umgebung: 3,0 bar absolut = 300000 Pa. Aus −10 °C werden 263,15 K, während die Erwärmung auf −4 °C nur +6 K beträgt. Bei vorgegebener Dichte 800 kg/m³ ist \(v=0{,}00125\,\mathrm{m^3/kg}\).
+- Annahmen: Ein negativer Überdruck ist relativ zur Umgebung möglich, negativer Absolutdruck in diesem einfachen thermodynamischen Modell nicht. Die Zahlenaufgabe verwendet ausdrücklich positiven Überdruck. Ohne Druckreferenz dürfen keine Sättigungstemperaturen aus Tabellen ausgewählt werden; reale Stoffwerte werden hier nicht erfunden.
+- Mögliche Fehler: Überdruck ohne Umgebungsdruck als Absolutdruck verwenden. Celsiuswerte als absolute Temperaturverhältnisse oder Volumenstrom als Massenstrom einsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-calorimetry/grundlagen: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: sensible-heat, math-heat-energy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiver Wärmeträger: ṁ = 0,5 kg/s, cp ausdrücklich 4000 J/(kg·K), Abkühlbetrag 5 K. Es werden 10000 W = 10 kW übertragen. In 60 s beträgt die durchströmende Masse 30 kg und die Wärmeenergie 600000 J. Verdoppelter Massenstrom verdoppelt die Modellleistung nur bei unverändertem cp und ΔT.
+- Annahmen: Bei stark veränderlichem cp ist ein Integral oder eine begründete mittlere Wärmekapazität nötig. Beim Phasenwechsel ist m cp ΔT allein falsch. Pumpenarbeit, Wärmeverluste und veränderte kinetische oder potenzielle Energie sind in diesem einfachen Wärmeträgerfall vernachlässigt. Ein Verdampferkältemittel benötigt häufig Enthalpiedifferenzen.
+- Mögliche Fehler: Energie in J mit Leistung in W oder kg mit kg/s verwechseln. Den Temperatur-Offset 273,15 auf ΔT anwenden oder bei Verdampfung nur cp ΔT benutzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-calorimetry/fachkraft: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: sensible-heat, math-heat-energy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiver Wärmeträger: ṁ = 0,5 kg/s, cp ausdrücklich 4000 J/(kg·K), Abkühlbetrag 5 K. Es werden 10000 W = 10 kW übertragen. In 60 s beträgt die durchströmende Masse 30 kg und die Wärmeenergie 600000 J. Verdoppelter Massenstrom verdoppelt die Modellleistung nur bei unverändertem cp und ΔT.
+- Annahmen: Bei stark veränderlichem cp ist ein Integral oder eine begründete mittlere Wärmekapazität nötig. Beim Phasenwechsel ist m cp ΔT allein falsch. Pumpenarbeit, Wärmeverluste und veränderte kinetische oder potenzielle Energie sind in diesem einfachen Wärmeträgerfall vernachlässigt. Ein Verdampferkältemittel benötigt häufig Enthalpiedifferenzen.
+- Mögliche Fehler: Energie in J mit Leistung in W oder kg mit kg/s verwechseln. Den Temperatur-Offset 273,15 auf ΔT anwenden oder bei Verdampfung nur cp ΔT benutzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-calorimetry/meister: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: sensible-heat, math-heat-energy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiver Wärmeträger: ṁ = 0,5 kg/s, cp ausdrücklich 4000 J/(kg·K), Abkühlbetrag 5 K. Es werden 10000 W = 10 kW übertragen. In 60 s beträgt die durchströmende Masse 30 kg und die Wärmeenergie 600000 J. Verdoppelter Massenstrom verdoppelt die Modellleistung nur bei unverändertem cp und ΔT.
+- Annahmen: Bei stark veränderlichem cp ist ein Integral oder eine begründete mittlere Wärmekapazität nötig. Beim Phasenwechsel ist m cp ΔT allein falsch. Pumpenarbeit, Wärmeverluste und veränderte kinetische oder potenzielle Energie sind in diesem einfachen Wärmeträgerfall vernachlässigt. Ein Verdampferkältemittel benötigt häufig Enthalpiedifferenzen.
+- Mögliche Fehler: Energie in J mit Leistung in W oder kg mit kg/s verwechseln. Den Temperatur-Offset 273,15 auf ΔT anwenden oder bei Verdampfung nur cp ΔT benutzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-phase/grundlagen: Phasenwechsel, innere Energie und latente Wärme · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiver Stoff: 2 kg durchlaufen genau den vorgegebenen Übergang mit L = 200 kJ/kg. Der Energiebedarf ist 400 kJ. Bei 10 kW konstanter zugeführter Wärmeleistung dauert der ideale Übergang 40 s. Wärmeverluste und sensible Erwärmung sind ausdrücklich nicht Teil dieses Modells.
+- Annahmen: Eine vollständige Energierechnung kann sensible Abschnitte und einen Phasenübergang addieren, wenn die Zustände sauber definiert sind. Unsere Aufgabe gibt L als rein fiktiven Lernwert vor; sie ordnet keinem echten Kältemittel einen Stoffwert zu. Für reale Zustände braucht die Plattform künftig validierte Stoffdaten und eine passende Systemgrenze.
+- Mögliche Fehler: Eine konstante Temperatur als Beweis für fehlende Wärmeübertragung ansehen. Eine vorgegebene latente Energie ohne Stoff-/Druckbezug auf reale Kältemittel übertragen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-phase/fachkraft: Phasenwechsel, innere Energie und latente Wärme · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiver Stoff: 2 kg durchlaufen genau den vorgegebenen Übergang mit L = 200 kJ/kg. Der Energiebedarf ist 400 kJ. Bei 10 kW konstanter zugeführter Wärmeleistung dauert der ideale Übergang 40 s. Wärmeverluste und sensible Erwärmung sind ausdrücklich nicht Teil dieses Modells.
+- Annahmen: Eine vollständige Energierechnung kann sensible Abschnitte und einen Phasenübergang addieren, wenn die Zustände sauber definiert sind. Unsere Aufgabe gibt L als rein fiktiven Lernwert vor; sie ordnet keinem echten Kältemittel einen Stoffwert zu. Für reale Zustände braucht die Plattform künftig validierte Stoffdaten und eine passende Systemgrenze.
+- Mögliche Fehler: Eine konstante Temperatur als Beweis für fehlende Wärmeübertragung ansehen. Eine vorgegebene latente Energie ohne Stoff-/Druckbezug auf reale Kältemittel übertragen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-phase/meister: Phasenwechsel, innere Energie und latente Wärme · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiver Stoff: 2 kg durchlaufen genau den vorgegebenen Übergang mit L = 200 kJ/kg. Der Energiebedarf ist 400 kJ. Bei 10 kW konstanter zugeführter Wärmeleistung dauert der ideale Übergang 40 s. Wärmeverluste und sensible Erwärmung sind ausdrücklich nicht Teil dieses Modells.
+- Annahmen: Eine vollständige Energierechnung kann sensible Abschnitte und einen Phasenübergang addieren, wenn die Zustände sauber definiert sind. Unsere Aufgabe gibt L als rein fiktiven Lernwert vor; sie ordnet keinem echten Kältemittel einen Stoffwert zu. Für reale Zustände braucht die Plattform künftig validierte Stoffdaten und eine passende Systemgrenze.
+- Mögliche Fehler: Eine konstante Temperatur als Beweis für fehlende Wärmeübertragung ansehen. Eine vorgegebene latente Energie ohne Stoff-/Druckbezug auf reale Kältemittel übertragen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-transfer/grundlagen: Wärmeleitung, Wärmewiderstand und U-Wert · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-conduction, thermo-resistance, thermo-layers, thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv λ = 0,04 W/(m·K), A = 2 m², d = 0,1 m und ΔT = 20 K: Rth = 1,25 K/W, also Q̇ = 16 W. Doppelte Dicke bei sonst gleichen Bedingungen ergibt 8 W. Das ist ein Modellvergleich, keine freigegebene Dämmungsauslegung oder Tauwasserprüfung.
+- Annahmen: Konvektion beschreibt den Energieaustausch mit strömendem Fluid; ein Wärmeübergangskoeffizient ist modell- und zustandsabhängig. Strahlung kann auch durch Vakuum übertragen werden und hängt unter anderem von absoluten Temperaturen und Oberflächen ab. Wärmebrücken, Feuchte, Kontaktwiderstände, instationäre Speicher und Zylindergeometrie sind im ebenen Rechenmodell nicht enthalten.
+- Mögliche Fehler: λ in W/(m·K) mit U in W/(m²·K) gleichsetzen. Das ebene stationäre Modell als vollständige Rohrdämm-, Feuchte- oder Wärmebrückenberechnung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-transfer/fachkraft: Wärmeleitung, Wärmewiderstand und U-Wert · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-conduction, thermo-resistance, thermo-layers, thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv λ = 0,04 W/(m·K), A = 2 m², d = 0,1 m und ΔT = 20 K: Rth = 1,25 K/W, also Q̇ = 16 W. Doppelte Dicke bei sonst gleichen Bedingungen ergibt 8 W. Das ist ein Modellvergleich, keine freigegebene Dämmungsauslegung oder Tauwasserprüfung.
+- Annahmen: Konvektion beschreibt den Energieaustausch mit strömendem Fluid; ein Wärmeübergangskoeffizient ist modell- und zustandsabhängig. Strahlung kann auch durch Vakuum übertragen werden und hängt unter anderem von absoluten Temperaturen und Oberflächen ab. Wärmebrücken, Feuchte, Kontaktwiderstände, instationäre Speicher und Zylindergeometrie sind im ebenen Rechenmodell nicht enthalten.
+- Mögliche Fehler: λ in W/(m·K) mit U in W/(m²·K) gleichsetzen. Das ebene stationäre Modell als vollständige Rohrdämm-, Feuchte- oder Wärmebrückenberechnung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-transfer/meister: Wärmeleitung, Wärmewiderstand und U-Wert · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-conduction, thermo-resistance, thermo-layers, thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv λ = 0,04 W/(m·K), A = 2 m², d = 0,1 m und ΔT = 20 K: Rth = 1,25 K/W, also Q̇ = 16 W. Doppelte Dicke bei sonst gleichen Bedingungen ergibt 8 W. Das ist ein Modellvergleich, keine freigegebene Dämmungsauslegung oder Tauwasserprüfung.
+- Annahmen: Konvektion beschreibt den Energieaustausch mit strömendem Fluid; ein Wärmeübergangskoeffizient ist modell- und zustandsabhängig. Strahlung kann auch durch Vakuum übertragen werden und hängt unter anderem von absoluten Temperaturen und Oberflächen ab. Wärmebrücken, Feuchte, Kontaktwiderstände, instationäre Speicher und Zylindergeometrie sind im ebenen Rechenmodell nicht enthalten.
+- Mögliche Fehler: λ in W/(m·K) mit U in W/(m²·K) gleichsetzen. Das ebene stationäre Modell als vollständige Rohrdämm-, Feuchte- oder Wärmebrückenberechnung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-cycle-balance/grundlagen: Systemgrenzen, Enthalpie und Kältekreislauf · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-first-law, thermo-enthalpy, thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv ṁ = 0,1 kg/s, h1 = 400, h2 = 450, h3 = h4 = 250 kJ/kg: Q̇0 = 15 kW, PFluid = 5 kW und Q̇k = 20 kW. Die Bilanz 15 + 5 = 20 besteht. Ohne Motorwirkungsgrad und Hilfsenergie ist daraus noch kein gemessener elektrischer COP einer realen Anlage bestimmt.
+- Annahmen: Die spätere log-p-h-Darstellung verwendet den Absolutdruck auf logarithmischer Skala und Enthalpie als zweite Koordinate. Dafür sind reale Zustandsdaten aus geprüften Stoffwertquellen nötig. Hier gibt es ausschließlich ausdrücklich fiktive Enthalpiewerte zur Bilanzübung und keine erfundene Kältemittelkennlinie oder professionelle Anlagenrechnung.
+- Mögliche Fehler: Elektrische Eingangsleistung ohne Verlustbilanz mit der an das Fluid übertragenen Leistung gleichsetzen. Fiktive Enthalpien als reale Kältemitteldaten oder h3 = h4 als universelle Bauteilbeziehung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-cycle-balance/fachkraft: Systemgrenzen, Enthalpie und Kältekreislauf · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-first-law, thermo-enthalpy, thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv ṁ = 0,1 kg/s, h1 = 400, h2 = 450, h3 = h4 = 250 kJ/kg: Q̇0 = 15 kW, PFluid = 5 kW und Q̇k = 20 kW. Die Bilanz 15 + 5 = 20 besteht. Ohne Motorwirkungsgrad und Hilfsenergie ist daraus noch kein gemessener elektrischer COP einer realen Anlage bestimmt.
+- Annahmen: Die spätere log-p-h-Darstellung verwendet den Absolutdruck auf logarithmischer Skala und Enthalpie als zweite Koordinate. Dafür sind reale Zustandsdaten aus geprüften Stoffwertquellen nötig. Hier gibt es ausschließlich ausdrücklich fiktive Enthalpiewerte zur Bilanzübung und keine erfundene Kältemittelkennlinie oder professionelle Anlagenrechnung.
+- Mögliche Fehler: Elektrische Eingangsleistung ohne Verlustbilanz mit der an das Fluid übertragenen Leistung gleichsetzen. Fiktive Enthalpien als reale Kältemitteldaten oder h3 = h4 als universelle Bauteilbeziehung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:thermo-cycle-balance/meister: Systemgrenzen, Enthalpie und Kältekreislauf · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-first-law, thermo-enthalpy, thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Fiktiv ṁ = 0,1 kg/s, h1 = 400, h2 = 450, h3 = h4 = 250 kJ/kg: Q̇0 = 15 kW, PFluid = 5 kW und Q̇k = 20 kW. Die Bilanz 15 + 5 = 20 besteht. Ohne Motorwirkungsgrad und Hilfsenergie ist daraus noch kein gemessener elektrischer COP einer realen Anlage bestimmt.
+- Annahmen: Die spätere log-p-h-Darstellung verwendet den Absolutdruck auf logarithmischer Skala und Enthalpie als zweite Koordinate. Dafür sind reale Zustandsdaten aus geprüften Stoffwertquellen nötig. Hier gibt es ausschließlich ausdrücklich fiktive Enthalpiewerte zur Bilanzübung und keine erfundene Kältemittelkennlinie oder professionelle Anlagenrechnung.
+- Mögliche Fehler: Elektrische Eingangsleistung ohne Verlustbilanz mit der an das Fluid übertragenen Leistung gleichsetzen. Fiktive Enthalpien als reale Kältemitteldaten oder h3 = h4 als universelle Bauteilbeziehung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-heat/grundlagen: Lernfall: Wärmeträgerstrom fachlich beurteilen · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-mass-volume, sensible-heat
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Alternative Kontrolle über 60 s: 30 kg durchströmen die Grenze. \(Q=30\cdot4000\cdot5=600000\,\mathrm J\); geteilt durch 60 s sind wieder 10000 W. Die alternative Betrachtung prüft den Zeitbezug und ersetzt keine Fachabnahme des Anlagenmodells.
+- Annahmen: Entscheidung: Eine Verdopplung des Massenstroms verdoppelt im Modell die Leistung, wenn cp und ΔT gleich bleiben. Ein realer Wärmeübertrager kann ΔT ändern; deshalb ist das keine garantierte Leistungssteigerung. Prüfe zusätzlich Phasenwechsel, Messzustände und Verluste, bevor du das Modell auf eine Anlage überträgst.
+- Mögliche Fehler: Volumenstrom ohne Dichte in die Wärmeleistungsformel einsetzen. Eine Modellproportionalität als garantierte reale Leistungsverdopplung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-heat/fachkraft: Lernfall: Wärmeträgerstrom fachlich beurteilen · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-mass-volume, sensible-heat
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Alternative Kontrolle über 60 s: 30 kg durchströmen die Grenze. \(Q=30\cdot4000\cdot5=600000\,\mathrm J\); geteilt durch 60 s sind wieder 10000 W. Die alternative Betrachtung prüft den Zeitbezug und ersetzt keine Fachabnahme des Anlagenmodells.
+- Annahmen: Entscheidung: Eine Verdopplung des Massenstroms verdoppelt im Modell die Leistung, wenn cp und ΔT gleich bleiben. Ein realer Wärmeübertrager kann ΔT ändern; deshalb ist das keine garantierte Leistungssteigerung. Prüfe zusätzlich Phasenwechsel, Messzustände und Verluste, bevor du das Modell auf eine Anlage überträgst.
+- Mögliche Fehler: Volumenstrom ohne Dichte in die Wärmeleistungsformel einsetzen. Eine Modellproportionalität als garantierte reale Leistungsverdopplung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-heat/meister: Lernfall: Wärmeträgerstrom fachlich beurteilen · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-mass-volume, sensible-heat
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Alternative Kontrolle über 60 s: 30 kg durchströmen die Grenze. \(Q=30\cdot4000\cdot5=600000\,\mathrm J\); geteilt durch 60 s sind wieder 10000 W. Die alternative Betrachtung prüft den Zeitbezug und ersetzt keine Fachabnahme des Anlagenmodells.
+- Annahmen: Entscheidung: Eine Verdopplung des Massenstroms verdoppelt im Modell die Leistung, wenn cp und ΔT gleich bleiben. Ein realer Wärmeübertrager kann ΔT ändern; deshalb ist das keine garantierte Leistungssteigerung. Prüfe zusätzlich Phasenwechsel, Messzustände und Verluste, bevor du das Modell auf eine Anlage überträgst.
+- Mögliche Fehler: Volumenstrom ohne Dichte in die Wärmeleistungsformel einsetzen. Eine Modellproportionalität als garantierte reale Leistungsverdopplung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-ac/grundlagen: Lernfall: Elektrischen Verbraucher bewerten · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zweiter Blick: \(P/S=120/200=0{,}6\); im vorgegebenen Sinusmodell stimmt dies mit cos φ überein. \(Q/S=160/200=0{,}8\). Der unbekannte mechanische Nutzen kann aus beiden Verhältnissen nicht rekonstruiert werden. Aussagen über Motorverluste bleiben damit offen.
+- Annahmen: Theorie ohne Arbeits- oder Anschlussanleitung; keine Freigabe für praktische elektrische Tätigkeiten.
+- Mögliche Fehler: S als Wirkleistung ausgeben, weil beide aus elektrischen Angaben stammen. Den Wirkungsgrad mit cos φ gleichsetzen oder Sinusbeziehungen auf beliebige Oberwellenströme übertragen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-ac/fachkraft: Lernfall: Elektrischen Verbraucher bewerten · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zweiter Blick: \(P/S=120/200=0{,}6\); im vorgegebenen Sinusmodell stimmt dies mit cos φ überein. \(Q/S=160/200=0{,}8\). Der unbekannte mechanische Nutzen kann aus beiden Verhältnissen nicht rekonstruiert werden. Aussagen über Motorverluste bleiben damit offen.
+- Annahmen: Theorie ohne Arbeits- oder Anschlussanleitung; keine Freigabe für praktische elektrische Tätigkeiten.
+- Mögliche Fehler: S als Wirkleistung ausgeben, weil beide aus elektrischen Angaben stammen. Den Wirkungsgrad mit cos φ gleichsetzen oder Sinusbeziehungen auf beliebige Oberwellenströme übertragen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-ac/meister: Lernfall: Elektrischen Verbraucher bewerten · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Zweiter Blick: \(P/S=120/200=0{,}6\); im vorgegebenen Sinusmodell stimmt dies mit cos φ überein. \(Q/S=160/200=0{,}8\). Der unbekannte mechanische Nutzen kann aus beiden Verhältnissen nicht rekonstruiert werden. Aussagen über Motorverluste bleiben damit offen.
+- Annahmen: Theorie ohne Arbeits- oder Anschlussanleitung; keine Freigabe für praktische elektrische Tätigkeiten.
+- Mögliche Fehler: S als Wirkleistung ausgeben, weil beide aus elektrischen Angaben stammen. Den Wirkungsgrad mit cos φ gleichsetzen oder Sinusbeziehungen auf beliebige Oberwellenströme übertragen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-pipe/grundlagen: Lernfall: Rohrgeometrie und Modellgrenzen · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-circle, geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Kontrolle in Millimetern: A_i = 314,159 mm² und L = 10000 mm liefern 3141590 mm³. Da 1 L = 1000000 mm³, sind das 3,14159 L. Die unabhängige Einheitendarstellung bestätigt den Faktor zwischen Länge, Fläche und Volumen.
+- Annahmen: Entscheidung: Das Volumen allein erlaubt keine Auswahl für ein reales Kältemittelsystem. Öltransport, Druckverlust, Betriebspunkte, Werkstoffanforderungen und Anschlüsse fehlen. Eine alternative Materialbetrachtung nutzt die Ringfläche: Außenzylinder minus Innenzylinder. Auch eine korrekt berechnete Materialmenge ersetzt keine Festigkeitsprüfung.
+- Mögliche Fehler: Den äußeren Durchmesser für das Innenvolumen einsetzen. Einen geometrischen Vergleich als validierte hydraulische oder kältetechnische Auslegung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-pipe/fachkraft: Lernfall: Rohrgeometrie und Modellgrenzen · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-circle, geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Kontrolle in Millimetern: A_i = 314,159 mm² und L = 10000 mm liefern 3141590 mm³. Da 1 L = 1000000 mm³, sind das 3,14159 L. Die unabhängige Einheitendarstellung bestätigt den Faktor zwischen Länge, Fläche und Volumen.
+- Annahmen: Entscheidung: Das Volumen allein erlaubt keine Auswahl für ein reales Kältemittelsystem. Öltransport, Druckverlust, Betriebspunkte, Werkstoffanforderungen und Anschlüsse fehlen. Eine alternative Materialbetrachtung nutzt die Ringfläche: Außenzylinder minus Innenzylinder. Auch eine korrekt berechnete Materialmenge ersetzt keine Festigkeitsprüfung.
+- Mögliche Fehler: Den äußeren Durchmesser für das Innenvolumen einsetzen. Einen geometrischen Vergleich als validierte hydraulische oder kältetechnische Auslegung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-pipe/meister: Lernfall: Rohrgeometrie und Modellgrenzen · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: geo-circle, geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Kontrolle in Millimetern: A_i = 314,159 mm² und L = 10000 mm liefern 3141590 mm³. Da 1 L = 1000000 mm³, sind das 3,14159 L. Die unabhängige Einheitendarstellung bestätigt den Faktor zwischen Länge, Fläche und Volumen.
+- Annahmen: Entscheidung: Das Volumen allein erlaubt keine Auswahl für ein reales Kältemittelsystem. Öltransport, Druckverlust, Betriebspunkte, Werkstoffanforderungen und Anschlüsse fehlen. Eine alternative Materialbetrachtung nutzt die Ringfläche: Außenzylinder minus Innenzylinder. Auch eine korrekt berechnete Materialmenge ersetzt keine Festigkeitsprüfung.
+- Mögliche Fehler: Den äußeren Durchmesser für das Innenvolumen einsetzen. Einen geometrischen Vergleich als validierte hydraulische oder kältetechnische Auslegung ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-conduction/grundlagen: Lernfall: Zwei thermische Modelle vergleichen · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-conduction, thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Alternativ mit flächenbezogenen Widerständen: Modell A hat 2,5 m²·K/W, Modell B 5 m²·K/W. Einsetzen von AΔT = 40 m²·K ergibt 40/2,5 = 16 W und 40/5 = 8 W. Beide Lösungswege verwenden dieselbe stationäre Systemgrenze.
+- Annahmen: Entscheidung: Im stationären ebenen Modell halbiert sich der Wärmestrom. Für eine reale Verbesserung sind Wärmebrücken, Feuchte, Kontakt- und Übergangswiderstände, temperaturabhängige λ-Werte sowie Geometrie und Zeitverhalten zu prüfen. Bei einem Rohr ist die Fläche radial nicht konstant; das ebene Modell kann deshalb nicht unverändert als Rohrdämmnachweis dienen.
+- Mögliche Fehler: Schichtenwiderstände ohne gemeinsame Fläche addieren. Eine Halbierung im idealen Modell als gemessene Einsparung einer realen Anlage ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-conduction/fachkraft: Lernfall: Zwei thermische Modelle vergleichen · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-conduction, thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Alternativ mit flächenbezogenen Widerständen: Modell A hat 2,5 m²·K/W, Modell B 5 m²·K/W. Einsetzen von AΔT = 40 m²·K ergibt 40/2,5 = 16 W und 40/5 = 8 W. Beide Lösungswege verwenden dieselbe stationäre Systemgrenze.
+- Annahmen: Entscheidung: Im stationären ebenen Modell halbiert sich der Wärmestrom. Für eine reale Verbesserung sind Wärmebrücken, Feuchte, Kontakt- und Übergangswiderstände, temperaturabhängige λ-Werte sowie Geometrie und Zeitverhalten zu prüfen. Bei einem Rohr ist die Fläche radial nicht konstant; das ebene Modell kann deshalb nicht unverändert als Rohrdämmnachweis dienen.
+- Mögliche Fehler: Schichtenwiderstände ohne gemeinsame Fläche addieren. Eine Halbierung im idealen Modell als gemessene Einsparung einer realen Anlage ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:case-conduction/meister: Lernfall: Zwei thermische Modelle vergleichen · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-conduction, thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Alternativ mit flächenbezogenen Widerständen: Modell A hat 2,5 m²·K/W, Modell B 5 m²·K/W. Einsetzen von AΔT = 40 m²·K ergibt 40/2,5 = 16 W und 40/5 = 8 W. Beide Lösungswege verwenden dieselbe stationäre Systemgrenze.
+- Annahmen: Entscheidung: Im stationären ebenen Modell halbiert sich der Wärmestrom. Für eine reale Verbesserung sind Wärmebrücken, Feuchte, Kontakt- und Übergangswiderstände, temperaturabhängige λ-Werte sowie Geometrie und Zeitverhalten zu prüfen. Bei einem Rohr ist die Fläche radial nicht konstant; das ebene Modell kann deshalb nicht unverändert als Rohrdämmnachweis dienen.
+- Mögliche Fehler: Schichtenwiderstände ohne gemeinsame Fläche addieren. Eine Halbierung im idealen Modell als gemessene Einsparung einer realen Anlage ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## formula:evaporator-power: Wärmeaufnahme im Verdampfer
 
 - Fachgebiet: fachuebergreifend
@@ -1976,6 +3926,531 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
 - Referenz / Rechnung: CH₄ + 2 O₂ → CO₂ + 2 H₂O; Koeffizienten sind Anzahlverhältnisse
 - Annahmen: Nur theoretische Atombilanz, keine praktische Durchführung oder Freisetzung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-circle: Kreis- und Rohrquerschnitt
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-circle
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: A = π d² / 4; A in m², d in m
+- Annahmen: Kreisförmiger Querschnitt, d ≥ 0; keine Dimensionierung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-annulus: Ringfläche
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: AR = π (da² − di²) / 4; m²
+- Annahmen: 0 ≤ d_i < d_a; gleichmäßig kreisrunde Wand.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-volume: Gerades Rohrvolumen
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-volume
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: V = π di² L / 4; m³
+- Annahmen: Konstanter kreisförmiger Innenquerschnitt.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-surface: Zylindermantel
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: AM = π d L; m²
+- Annahmen: Nur Mantel, keine Stirnflächen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-pythagoras: Satz des Pythagoras
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: c = √(a² + b²); m
+- Annahmen: Rechter Winkel zwischen a und b; nicht negative Längen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-trig: Seitenverhältnisse
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-trig
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: sin α = G/H, cos α = A/H, tan α = G/A; Seiten in gleicher Längeneinheit; Winkel in rad
+- Annahmen: Rechtwinkliges Dreieck; spitzer Winkel, A > 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:geo-slope: Steigung und Winkel
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: s = Δh / Lh = tan α; s dimensionslos; Winkel rad
+- Annahmen: Horizontale Länge > 0, keine normative Gefällevorgabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:algebra-domain: Äquivalenz und Definitionsbereich
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: 6/(x−1) = 3 genau dann, wenn x = 3 (x ≠ 1); dimensionslos
+- Annahmen: Reelle Werte; ursprünglicher Nenner bleibt ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:algebra-system: Lineares Zweiersystem
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: algebra-system
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: x = (ce − bf)/(ae − bd); Koeffizienten im konsistenten Gleichungssystem
+- Annahmen: ax+by=c, dx+ey=f; ae−bd ≠ 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:algebra-quadratic: Quadratische Gleichung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: x₁,₂ = (−b ± √(b²−4ac))/(2a); dimensionslos im Zahlenbeispiel
+- Annahmen: a ≠ 0, reelle Wurzeln nur bei Diskriminante ≥ 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:algebra-interpolation: Lineare Interpolation
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: algebra-interpolation
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: y = y₀ + (y₁−y₀)(x−x₀)/(x₁−x₀); Konsistente x- und y-Einheiten
+- Annahmen: Verschiedene x-Stützstellen, x innerhalb des Intervalls; lineares Näherungsmodell.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:algebra-log: Logarithmus
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: b hoch y = x entspricht y = log zur Basis b von x; dimensionslose Zahlen
+- Annahmen: b > 0, b ≠ 1, x > 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-period: Frequenz und Periodendauer
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-period
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: T = 1/f, ω = 2πf; T s, f Hz, ω rad/s
+- Annahmen: Periodischer reiner Sinus, f > 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-rms: Sinus-Effektivwert
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ueff = Û / √2 (reiner Sinus); V
+- Annahmen: Reiner Sinus über ganze Perioden, keine Verallgemeinerung auf andere Signalformen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-reactance-l: Induktiver Blindwiderstand
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-reactance-l
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: XL = 2πfL; Ω; f Hz, L H
+- Annahmen: Ideale lineare Spule, eingeschwungener Sinus.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-reactance-c: Kapazitiver Blindwiderstand
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-reactance-c
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: XC = 1/(2πfC); Ω; f Hz, C F
+- Annahmen: Idealer Kondensator, f und C > 0, eingeschwungener Sinus.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-impedance: Betrag der Serienimpedanz
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Z = √(R² + (XL−XC)²); Ω
+- Annahmen: Serien-RLC-Kreis, lineare ideale Bauteile und sinusförmiger stationärer Zustand.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-apparent: Scheinleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-apparent
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: S = Ueff Ieff; VA
+- Annahmen: Effektivwerte, Einphase. Die Aufgaben verwenden reine Sinusgrößen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-real: Wirkleistung im Sinusmodell
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-real
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: P = Ueff Ieff cos φ; W
+- Annahmen: Gleichfrequente reine Sinusspannung und Sinusstrom. Keine allgemeine Oberwellenformel.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-reactive: Blindleistung im Sinusmodell
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Q = Ueff Ieff sin φ; var
+- Annahmen: Sinusmodell, φ positiv induktiv. Numerische Aufgaben verwenden positive induktive Beträge.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-factor: Leistungsfaktor und Verschiebung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: λ = P/S, im reinen Sinusmodell auch cos φ; dimensionslos
+- Annahmen: S > 0; letzte Gleichheit nur für passende Sinusgrößen, nicht allgemeiner Wirkungsgrad.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-star: Stern: Leiter und Strang
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-star
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Stern: UL = √3 Ustr; IL = Istr; V und A
+- Annahmen: Symmetrische sinusförmige Dreiphasen-Sternschaltung. Eigene Zeigerableitung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-delta: Dreieck: Leiter und Strang
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-delta
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Dreieck: UL = Ustr; IL = √3 Istr; V und A
+- Annahmen: Symmetrische sinusförmige Dreieckschaltung. Eigene Zeigerableitung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:ac-three-power: Dreiphasige Wirkleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: P = 3 Ustr Istr cos φ = √3 UL IL cos φ; W
+- Annahmen: Symmetrische sinusförmige Last, Leitereffektivwerte UL und IL; eigene Ableitung aus Strangleistung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-pressure-abs: Absolut- und Überdruck
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-pressure-abs
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: pabs = pü + pamb; Pa
+- Annahmen: Gleicher Messort, Umgebungsdruck vorgegeben; numerische Aufgabe positiver Überdruck.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-specific-volume: Spezifisches Volumen
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-specific-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: v = V/m = 1/ρ; m³/kg
+- Annahmen: Homogene Dichte, Masse und Volumen positiv.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-mass-volume: Volumenstrom zu Massenstrom
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: ṁ = ρ V̇; kg/s
+- Annahmen: Dichte und Volumenstrom am selben Zustand und Ort, stationär.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-latent: Latente Energie
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Q = m L; J
+- Annahmen: Vorgegebener Übergangswert L für einen definierten Phasenwechsel; kein realer Stoffwert behauptet.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-conduction: Ebene Wärmeleitung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-conduction
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Q̇ = λ A ΔT / d; W
+- Annahmen: Stationär, eindimensional, homogen, ebene Schicht, λ konstant, keine inneren Quellen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-resistance: Wärmewiderstand
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-resistance
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Rth = d/(λ A); K/W
+- Annahmen: Ebene homogene Schicht, d, λ und A positiv.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-layers: Zwei leitende Schichten
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Q̇ = A ΔT / (d₁/λ₁ + d₂/λ₂); W
+- Annahmen: Gleiche Fläche, stationär, ideale Kontakte, keine Wärmeübergangswiderstände oder Wärmebrücken.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-u: Wärmedurchgangskoeffizient
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: U = 1/(1/αi + d₁/λ₁ + d₂/λ₂ + 1/αa); W/(m²·K)
+- Annahmen: Ebene stationäre Schichten, vorgegebene positive α- und λ-Werte, keine Feuchte oder Wärmebrücken.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-first-law: Erster Hauptsatz, geschlossen
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-first-law
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: ΔU = Q − W; J
+- Annahmen: Geschlossenes System, Q positiv hinein, W positiv vom System an Umgebung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-enthalpy: Spezifische Enthalpie
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-enthalpy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: h = u + p v; Q̇₀ = ṁ (h₁ − h₄); h J/kg, Q̇ W
+- Annahmen: Stationärer Verdampfer ohne Wellenarbeit; vernachlässigte kinetische/potenzielle Änderungen, geeignete Zustandsdaten.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:thermo-cycle: Ideale Kreislaufbilanz
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Q̇k = Q̇₀ + PFluid; W
+- Annahmen: Stationär, passende Fluid-Systemgrenze, keine weiteren Wärme-/Arbeitsflüsse; nicht automatisch elektrische Eingangsleistung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
 - Fachprüfer/in: ____________________
@@ -3182,6 +5657,906 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## question:math-geometry-q1: Wie lautet die Kreisfläche mit Durchmesser d?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der Radius ist d/2. Sein Quadrat bringt den Faktor 1/4; πd ist dagegen der Umfang, also eine Länge.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-geometry-q2: 24 mm außen, 2 mm Wand: Innendurchmesser?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Wand liegt auf beiden Seiten des Querschnitts: 24 − 2 × 2 = 20 mm. Innen- und Außenmaß müssen unterschieden werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-geometry-q3: Darf aus der Ringfläche allein ein Kältemittelrohr ausgewählt werden?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Geometrie beschreibt Maße. Druckverlust, Öltransport, Festigkeit und Betriebszustände erfordern eigene validierte Modelle und Daten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-pipe-volume-q1: Welcher Durchmesser bestimmt das geometrische Innenvolumen?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der nutzbare Innenraum wird vom inneren Kreis begrenzt. Der Außenkreis enthält zusätzlich das Wandmaterial und wäre für diesen Zweck falsch.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-pipe-volume-q2: Welche Einheit hat πdL?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: π ist dimensionslos und d sowie L sind Längen. Ihr Produkt ist daher eine Fläche, konkret die Mantelfläche des Zylinders.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-pipe-volume-q3: Was begrenzt V = AL bei einem Rohr?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Formel beschreibt ein geometrisches Modell unabhängig vom Füllstoff; Formstücke und Querschnittsänderungen müssen separat modelliert werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-triangles-q1: Rechtwinklig: 3 m und 4 m. Hypotenuse?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Erst quadrieren und addieren: 9 + 16 = 25 m². Die Wurzel liefert 5 m; 7 m wäre der Weg über beide Katheten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-triangles-q2: Wann gilt a² + b² = c²?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Beziehung setzt ein rechtwinkliges Dreieck voraus. c liegt dem rechten Winkel gegenüber; gleich lange Katheten sind nicht erforderlich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-triangles-q3: Sind 5 m Diagonale automatisch die bestellbare Rohrlänge?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Rechnung liefert nur die ideale geometrische Strecke. Bögen, Anschlüsse und bauliche Randbedingungen sind noch nicht berücksichtigt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-trigonometry-q1: Was bedeutet ein Gefälle von 2 % über 10 m horizontal?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: 2 Prozent sind 0,02. Der Höhenunterschied ist 10 m × 0,02 = 0,2 m. Der zugehörige Winkel beträgt arctan(0,02), nicht 2°.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-trigonometry-q2: 30° entsprechen welchem Bogenmaß?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Eine halbe Umdrehung ist π rad und 180°. Mit dem Faktor π/180 folgt für 30° genau π/6 rad; die Umrechnung ist vor Sinus/Tangens nötig.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-trigonometry-q3: Gegenkathete gesucht, Ankathete und Winkel gegeben: welche Beziehung?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der Tangens ist Gegenkathete geteilt durch Ankathete. Multiplikation beider Seiten mit der Ankathete isoliert die gesuchte Gegenkathete.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-domains-q1: 6/(x−1) = 3: zulässige Lösung?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zuerst x ≠ 1 festhalten. Nach Multiplikation mit x − 1 folgt 6 = 3x − 3, also x = 3. Die Originalprobe bestätigt 6/2 = 3.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-domains-q2: Warum ist x = 0 keine Lösung von √(x+1) = x−1?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der rechte Ausdruck muss nicht negativ sein. x = 0 entsteht als Scheinlösung beim Quadrieren und scheitert an der Originalgleichung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-domains-q3: x(x−2) = 0: Warum nicht sofort durch x teilen?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Division durch x setzt x ≠ 0 voraus. Das Nullprodukt berücksichtigt beide Faktoren und erhält die beiden Lösungen 0 und 2.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-systems-quadratic-q1: x+y=5 und 2x−y=1: welches Paar erfüllt beide?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Addition eliminiert y und liefert 3x = 6. x = 2 und y = 3 bestehen beide Originalgleichungen; allein die erste Gleichung reicht nicht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-systems-quadratic-q2: Welche reellen Nullstellen hat x²−5x+6?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: (x − 2)(x − 3) = 0 liefert zwei Nullstellen. Eine Aufgabe darf nach der größeren fragen, aber die andere ist dennoch mathematisch gültig.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-systems-quadratic-q3: Was bedeutet eine negative Diskriminante im reellen Modell?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die reelle Quadratwurzel einer negativen Zahl existiert nicht. Komplexe Zahlen wären ein anderes Modell und werden hier nicht verwendet.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-functions-q1: Welche Beziehung ist umgekehrt proportional?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Bei inverser Proportionalität bleibt das Produkt gleich. Verdopplung der einen Größe halbiert die andere; y/x konstant beschreibt direkte Proportionalität.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-functions-q2: Zwischen (0,10) und (10,30): linearer Wert bei x=5?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: x = 5 liegt genau in der Mitte. Bei linearer Interpolation liegt auch y in der Mitte: 10 + (30 − 10) × 5/10 = 20.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:math-functions-q3: Welche Voraussetzungen hat log_b(x) im reellen Modell?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Eine positive Basis ungleich eins liefert eine umkehrbare Exponentialfunktion mit positivem Wertebereich; ihr Logarithmus ist daher nur für x > 0 definiert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-wave-q1: Welche Periodendauer hat ein Sinus mit 50 Hz?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Periodendauer und Frequenz sind Kehrwerte: T = 1/50 s = 0,020 s. Hz bedeutet eine Periode pro Sekunde und ist keine Zeitangabe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-wave-q2: Warum ist Û/√2 nicht allgemein für jede Wechselspannung gültig?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der Effektivwert ist allgemein das quadratische Zeitmittel mit anschließender Wurzel. Nur der reine Sinus liefert den besonderen Faktor 1/√2.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-wave-q3: Normiertes Sinusdiagramm mit φ = 90°: Bei t = T/4 ist u/Û = 1. Welchen Wert hat der nacheilende Strom i/Î?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der Strom lautet sin(ωt−φ). Bei t=T/4 ist ωt=π/2 und φ=π/2, daher ist i/Î=sin(0)=0. Die Spannung erreicht gleichzeitig ihren positiven Scheitel; genau das zeigt die Viertelperiodenverschiebung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-reactance-q1: Was geschieht mit XL bei doppelter Frequenz und konstantem L?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: XL = 2πfL ist bei konstantem L direkt proportional zu f. Die Aussage gilt für das ideale lineare sinusförmige Spulenmodell.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-reactance-q2: Serienkreis: R=30 Ω, XL−XC=40 Ω. Betrag Z?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ohmscher und resultierender Blindanteil stehen im Zeigerdreieck senkrecht. Daher Z = √(30² + 40²) = 50 Ω und nicht die Summe der Beträge.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-reactance-q3: Warum gilt das ideale verlustfreie Spulenmodell nicht als reale Bauteilfreigabe?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Das Lehrmodell erklärt Phasenbeziehungen. Kupferverluste, magnetische Nichtlinearität und reale Spannungs-/Stromgrenzen benötigen passende Bauteildaten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-power-q1: 100 V, 2 A effektiv, cos φ=0,6: welche Wirkleistung?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: S = 100 × 2 = 200 VA, daraus P = S × 0,6 = 120 W. 160 var ist in diesem induktiven Sinusfall der Blindanteil, keine Wirkleistung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-power-q2: Ist cos φ immer der Gesamtleistungsfaktor?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Für gleiche reine Sinusfrequenz gilt λ = P/S = cos φ. Oberwellen und verzerrte Ströme verlangen eine allgemeinere Leistungsbetrachtung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-ac-power-q3: Reicht cos φ=0,6 aus, um den Motorwirkungsgrad zu bestimmen?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Wirkungsgrad vergleicht mechanische Ausgangs- und elektrische Wirkleistung. cos φ beschreibt im Sinusmodell eine Phasenbeziehung und ersetzt diese Daten nicht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-three-phase-q1: Welche Beziehung gilt im symmetrischen Stern?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Leiterspannung ist eine Zeigerdifferenz mit 120° Versatz und hat den √3-fachen Betrag. Der Außenleiterstrom ist zugleich der zugehörige Strangstrom.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-three-phase-q2: Welche Größen benötigt P=√3 UL IL cos φ?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Formel summiert drei gleiche Strangleistungen und ersetzt Stranggrößen durch Leitergrößen. Unsymmetrie und Signalverzerrung sind damit nicht allgemein abgedeckt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:electric-three-phase-q3: Warum kann der Neutralleiterstrom trotz Dreiphasensystem ungleich null sein?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Nullsumme gilt für drei gleich große reine Sinusströme mit 120° Versatz. Unsymmetrie oder Oberwellen verletzen diese Voraussetzung und benötigen eigene Analyse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-states-q1: 2 bar Überdruck, 1 bar Umgebung: Absolutdruck?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Überdruck ist die Differenz zum Umgebungsdruck. Deshalb werden für den Absolutdruck 2 + 1 = 3 bar verwendet; der Umgebungswert ist hier vorgegeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-states-q2: Von −10 °C auf −4 °C: Änderung?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Beide absoluten Temperaturen erhalten denselben Offset. Bei der Differenz hebt er sich auf: −4 − (−10) = +6 K. Die gerichtete Erwärmung ist positiv.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-states-q3: Wann darf ṁ = ρ V̇ eingesetzt werden?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die Dichte übersetzt das tatsächlich betrachtete Volumen in Masse. Ein Normvolumenstrom und eine Betriebsdichte dürfen ohne Umrechnung nicht einfach kombiniert werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-calorimetry-q1: 0,5 kg/s, cp=4000 J/(kg·K), ΔT=5 K: Wärmeleistung?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Das Produkt beträgt 10000 kg/s × J/(kg·K) × K = 10000 J/s = 10 kW. Eine Wärmemenge benötigt zusätzlich eine Zeit oder eine Masse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-calorimetry-q2: Wann reicht Q = m cp ΔT allein nicht?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die Formel setzt einen sensiblen Prozess mit geeignet konstantem cp voraus. Phasenwechsel braucht zusätzliche Energie ohne notwendige Temperaturänderung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-calorimetry-q3: Doppelter ṁ bei gleichem cp und ΔT: welcher Schluss ist zulässig?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die Proportionalität folgt aus dem Modell, aber reale Wärmeübertrager können ΔT, Stoffzustand und Übertragungsbedingungen verändern. Der Transfer braucht diese Prüfung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-phase-q1: Kann beim Verdampfen Wärme aufgenommen werden, obwohl die Temperatur konstant bleibt?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die zugeführte Energie kann einen Phasenwechsel bewirken. Bei reinem Stoff und konstantem Druck ist ein Temperaturplateau im Gleichgewicht möglich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-phase-q2: 2 kg mit vorgegebenem L=200 kJ/kg: latente Energie?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Masse mal spezifische Übergangsenergie ergibt 2 × 200 = 400 kJ. kW wäre eine Leistung; dafür müsste die Dauer zusätzlich bekannt sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-phase-q3: Darf ein fiktiver L-Wert als Kältemittel-Stoffwert genutzt werden?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Ein positiver Zahlenwert belegt keine Stoffeigenschaft. Reale Phasenwechselenergie benötigt nachvollziehbare Stoff-, Druck- und Zustandsdaten sowie eine validierte Quelle.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-transfer-q1: Bei gleicher λ, A und ΔT wird die Schicht doppelt so dick. Was folgt im Modell?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die Dicke steht im Nenner von Q̇ = λAΔT/d. Das Ergebnis gilt im stationären ebenen Modell, sofern alle anderen Randbedingungen wirklich gleich bleiben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-transfer-q2: Welche Einheit hat der Wärmewiderstand d/(λA)?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Eine Temperaturdifferenz geteilt durch einen Wärmestrom hat Einheit K/W. Das ist nicht die Wärmeleitfähigkeit und auch nicht der U-Wert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-transfer-q3: Was fehlt für eine reale Dämmfreigabe im ebenen Schichtenmodell?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Das Modell idealisiert stationäre eindimensionale Leitung. Reale Oberflächen, Feuchte, Anschlüsse und zylindrische Rohre benötigen zusätzliche Nachweise und Daten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-cycle-balance-q1: 15 kW Wärmeaufnahme und 5 kW Fluidverdichterleistung: ideale Wärmeabgabe?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Bei stationärem idealisiertem Kreislauf addieren sich Wärmeaufnahme und dem Fluid zugeführte Arbeit. Die elektrische Eingangsleistung ist ohne Verlustmodell nicht automatisch dieselbe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-cycle-balance-q2: Was bedeutet h3 = h4 im Drosselmodell?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Enthalpie bleibt nur unter den angegebenen Bilanzannahmen gleich. Druck und Temperatur können sich trotzdem ändern; es ist keine universelle Expansionseigenschaft.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:thermo-cycle-balance-q3: Genügen fiktive Enthalpiewerte für einen realen log-p-h-Nachweis?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Eine konsistente Zahlenbilanz prüft das Modell, bestätigt aber keine reale Stoffeigenschaft. Druckreferenz, Stoffdatenquelle und Systemgrenze müssen zusätzlich geklärt sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-heat-q1: Welche Größe wird aus ρV̇ erhalten?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Dichte in kg/m³ multipliziert mit Volumenstrom in m³/s ergibt kg/s. Nur diese Massengröße passt anschließend in die betrachtete Wärmeleistungsformel.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-heat-q2: Welche Kontrolle bestätigt 10 kW über 60 s?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Leistung mal Zeit ergibt Energie: 10 kJ/s × 60 s = 600 kJ. Die Rückdivision durch die Dauer liefert wieder die gleiche mittlere Leistung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-heat-q3: Ein realer Wärmeübertrager erhält doppelten Massenstrom. Ist doppelte Leistung bewiesen?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Die Formel ist bei festem cp und ΔT linear im Massenstrom. Ob ein realer Wärmeübertrager ΔT beibehält, ist aber eine zusätzliche fachliche Frage; Messzustand und Übertragungsverhalten fehlen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-ac-q1: Welche Größe beträgt 200 VA?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Das Produkt der vorgegebenen Effektivwerte U und I ist die Scheinleistung. Die Wirkleistung berücksichtigt im Sinusmodell zusätzlich cos φ und beträgt 120 W.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-ac-q2: Wie viel elektrische Wirkarbeit entsprechen konstanten 120 W über 2 h?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Energie ist Leistung mal Zeit. Watt mal Stunde ergibt Wattstunde, hier 120 × 2 = 240 Wh. Eine Leistung in W ist keine Energie.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-ac-q3: Welche fachliche Schlussfolgerung ist mit den Daten belegt?
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Die mechanische Ausgangsleistung ist nicht angegeben. Das Verhältnis P/S beschreibt im Sinusmodell den Leistungsfaktor, nicht die Umwandlung elektrischer Wirkleistung in mechanischen Nutzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-pipe-q1: Welche Größe nutzt der geometrische Inneninhalt?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Das Innenvolumen entsteht durch den freien inneren Querschnitt entlang der Länge. Der Außenmantel ist eine Fläche und beantwortet eine andere Frage.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-pipe-q2: Was geschieht bei doppeltem Innendurchmesser und gleicher Länge?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der Durchmesser geht quadratisch in die Kreisfläche ein. Ein Faktor zwei am Durchmesser liefert daher den Faktor vier beim Volumen, solange die Länge gleich bleibt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-pipe-q3: Welche Aussage ist fachlich begründet?
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Geometrische Größen beschreiben den Raum. Druckverlust, Öltransport, reale Stoffzustände und Materialanforderungen sind eigenständige Prüfungen und werden von diesen Zahlen nicht nachgewiesen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-conduction-q1: Welche Größe addiert sich bei seriellen Schichten mit gleicher Fläche?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Bei stationärem gleichem Wärmestrom addieren sich die Temperaturabfälle. Daraus folgt die Summe der Wärmewiderstände, nicht die einfache Summe der Leitfähigkeiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-conduction-q2: Modell A 16 W, Modell B 8 W: welches Verhältnis gilt?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Das Verhältnis vergleicht beide Wärmeströme bei derselben Fläche und Temperaturdifferenz. 8/16 = 0,5 bedeutet eine Halbierung innerhalb dieses Modells.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:case-conduction-q3: Darf aus dem Modellvergleich eine reale halbierte Anlagenenergie garantiert werden?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Die Rechnung kontrolliert ein stationäres eindimensionales Modell. Eine reale Anlage enthält weitere Wärmewege und zeitliche Betriebszustände; Tests sind weder Messungen noch fachliche Auslegungsfreigabe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## card:cycle-card1: Wie lautet die Bauteilreihenfolge ab dem Verdampfer?
 
 - Fachgebiet: kaelte
@@ -3925,6 +7300,606 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: —
 - Quellen: openstax-chemistry-v05: https://github.com/openstax/osbooks-chemistry-bundle/blob/db0a8e6027100ce082e67fc8879faab86f9a58a7/collections/chemistry-2e.collection.xml; m68667 Phases and Classification of Matter; m68692 Atomic Structure and Symbolism; m68693 Chemical Formulas; m68700 Formula Mass and the Mole Concept; m68709 Writing and Balancing Chemical Equations.
 - Referenz / Rechnung: g mit kg/mol kombinieren, ohne den Faktor 1000 umzurechnen. Zum Ausgleichen die Indizes einer Stoffformel verändern und damit einen anderen Stoff hinschreiben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-geometry-card1: Was ist die Grundidee: Maßstab, Flächen und Rohrquerschnitte?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Längen-, Flächen- und Volumenfaktoren unterscheiden sich. Innenkreis und Materialring beantworten unterschiedliche Fragen. Eine richtige geometrische Rechnung liefert noch keine zulässige Rohrleitungsdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-geometry-card2: Welchen Fehler vermeidest du bei Maßstab, Flächen und Rohrquerschnitte?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Den Durchmesser statt des Radius in πr² einsetzen: Ergebnis vierfach zu groß. 20 mm als 0,02 m umrechnen, aber den Flächenfaktor nicht quadrieren.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-pipe-volume-card1: Was ist die Grundidee: Rohrvolumen und Oberflächen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Innenvolumen, Materialvolumen und Oberflächen benötigen verschiedene geometrische Grenzen. Die geraden Zylinderformeln gelten bei konstantem Querschnitt; eine reale Leitungs- oder Stoffauslegung ist damit noch nicht durchgeführt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-pipe-volume-card2: Welchen Fehler vermeidest du bei Rohrvolumen und Oberflächen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Außendurchmesser für das Innenvolumen verwenden. Die beiden Stirnflächen unbemerkt zur Mantelfläche addieren oder Liter mit Kubikmetern gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-triangles-card1: Was ist die Grundidee: Pythagoras und geometrische Leitungswege?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Pythagoras verknüpft die Seiten eines rechtwinkligen Dreiecks. Die Diagonale ist mindestens so groß wie jede Kathete und höchstens so lang wie deren Summe. Geometrische Machbarkeit und technische Montage sind getrennt zu bewerten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-triangles-card2: Welchen Fehler vermeidest du bei Pythagoras und geometrische Leitungswege?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die Hypotenuse mit einer Kathete verwechseln. Pythagoras bei beliebigem Winkel anwenden oder a + b als Diagonale ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-trigonometry-card1: Was ist die Grundidee: Winkel, Trigonometrie und Gefälle?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Trigonometrie verbindet Winkel mit Seitenverhältnissen. Grad und Bogenmaß sind unterschiedliche Zahlenwerte desselben Winkels. Prozentsteigung bezieht sich auf die horizontale Strecke und liefert keine fachliche Installationsfreigabe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-trigonometry-card2: Welchen Fehler vermeidest du bei Winkel, Trigonometrie und Gefälle?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Gradwerte direkt in eine rad-Funktion einsetzen. Prozentgefälle mit Grad gleichsetzen oder die schräge Länge statt der horizontalen Projektion verwenden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-domains-card1: Was ist die Grundidee: Bruchgleichungen, Wurzeln und Definitionsbereiche?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Äquivalente Schritte erhalten genau die ursprüngliche Lösungsmenge. Definitionsbereich, Nullbedingungen und Rückprobe sind deshalb Teil der Lösung. Quadrieren kann Lösungen hinzufügen, Division durch eine Variable kann Lösungen entfernen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-domains-card2: Welchen Fehler vermeidest du bei Bruchgleichungen, Wurzeln und Definitionsbereiche?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Die durch den Nenner ausgeschlossenen Werte nach dem Kürzen wieder zulassen. Quadratische Kandidaten ungeprüft übernehmen oder durch eine möglicherweise nullwertige Variable teilen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-systems-quadratic-card1: Was ist die Grundidee: Lineare Systeme und quadratische Gleichungen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein lineares System benötigt unabhängige Beziehungen für eine eindeutige Lösung. Quadratische Gleichungen besitzen je nach Diskriminante null, eine oder zwei reelle Nullstellen. Erst danach folgt die fachliche Bewertung des Wertebereichs.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-systems-quadratic-card2: Welchen Fehler vermeidest du bei Lineare Systeme und quadratische Gleichungen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zwei voneinander abhängige Gleichungen als eindeutiges System behandeln. Bei quadratischen Gleichungen das ± vergessen oder einen Kandidaten ohne Prüfung verwerfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-functions-card1: Was ist die Grundidee: Funktionen, Kennlinien und logarithmische Begriffe?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Proportionale und inverse Beziehungen besitzen unterschiedliche Invarianten. Interpolation verbindet bekannte Stützstellen und benötigt ein Modell für den Zwischenbereich. Logarithmen invertieren Potenzen unter klaren Definitionsbedingungen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:math-functions-card2: Welchen Fehler vermeidest du bei Funktionen, Kennlinien und logarithmische Begriffe?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Einen Achsenabschnitt ignorieren oder Interpolation außerhalb des Datenbereichs behaupten. Den Logarithmus von null/negativen Zahlen im reellen Modell oder von einer unbezeichneten physikalischen Einheit verwenden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-ac-wave-card1: Was ist die Grundidee: Wechselstrom: Sinus, Zeit und Effektivwert?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Frequenz und Periodendauer beschreiben die Zeit, Phase die relative Verschiebung. Der Effektivwert beschreibt die gleiche mittlere Widerstandserwärmung wie Gleichstrom. Nur beim Sinus ist er der Scheitelwert geteilt durch √2.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-ac-wave-card2: Welchen Fehler vermeidest du bei Wechselstrom: Sinus, Zeit und Effektivwert?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Scheitelwert als Effektivwert einsetzen: die Leistung wird bei zwei Scheitelwerten um Faktor zwei falsch. Zeitlicher Mittelwert null mit fehlender Energieübertragung gleichsetzen; √2 auf beliebige Signalformen anwenden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-ac-reactance-card1: Was ist die Grundidee: Spule, Kondensator und Impedanz?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Induktivität und Kapazität speichern Energie in unterschiedlichen Feldern. Ihre zeitlichen Beziehungen erzeugen Phasenverschiebungen. Die Impedanz eines Serien-RLC-Kreises enthält die Differenz der Blindanteile und benötigt ein sinusförmiges eingeschwungenes Modell.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-ac-reactance-card2: Welchen Fehler vermeidest du bei Spule, Kondensator und Impedanz?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: XL und XC ohne Phasenbezug wie ohmsche Widerstände addieren. Reale Spulen als verlustfrei voraussetzen oder µF nicht in F umrechnen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-ac-power-card1: Was ist die Grundidee: Wirk-, Blind- und Scheinleistung?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Wirkleistung ist die mittlere Energieübertragungsrate. Blindleistung beschreibt den pendelnden Anteil im Sinusmodell, Scheinleistung das Produkt der Effektivwerte. Das einfache Dreieck und λ = cos φ benötigen sinusförmige Größen und passende Systemgrenzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-ac-power-card2: Welchen Fehler vermeidest du bei Wirk-, Blind- und Scheinleistung?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: VA, var und W als dieselbe Art von Leistung behandeln. cos φ als Wirkungsgrad oder als vollständigen Leistungsfaktor bei verzerrten Strömen ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-three-phase-card1: Was ist die Grundidee: Drehstrom: Leiter-, Stranggrößen und Leistung?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Stern und Dreieck besitzen unterschiedliche Leiter-Strang-Beziehungen. Im symmetrischen Sinusmodell ergeben beide dieselbe Gesamtformel mit Leitergrößen. Eine reale unsymmetrische Anlage oder ein Motor benötigt zusätzliche Angaben und fachliche Bewertung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:electric-three-phase-card2: Welchen Fehler vermeidest du bei Drehstrom: Leiter-, Stranggrößen und Leistung?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Leiter- und Stranggrößen mischen oder den Faktor √3 in Stern und Dreieck auf die falsche Größe anwenden. Die symmetrische Formel für unbekannte unsymmetrische oder verzerrte Belastung verwenden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-states-card1: Was ist die Grundidee: Temperatur, Druck und spezifisches Volumen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Druckreferenz, Temperaturskala und Dichtebezug sind Teil des Modells. Temperaturdifferenzen benötigen keinen Celsius-Offset, absolute Temperaturen schon. Volumenstrom wird erst durch eine passende Dichte zu einem Massenstrom.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-states-card2: Welchen Fehler vermeidest du bei Temperatur, Druck und spezifisches Volumen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Überdruck ohne Umgebungsdruck als Absolutdruck verwenden. Celsiuswerte als absolute Temperaturverhältnisse oder Volumenstrom als Massenstrom einsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-calorimetry-card1: Was ist die Grundidee: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Die einfache sensible Wärmeformel entsteht aus konstanter Wärmekapazität und einem passenden Prozess. Die Leistungsform nutzt den Massenstrom und stationäre Bedingungen. Phasenwechsel, erhebliche Stoffwertänderungen und zusätzliche Energieterme benötigen ein erweitertes Modell.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-calorimetry-card2: Welchen Fehler vermeidest du bei Wärmeenergie, Wärmeleistung und Wärmeträgerstrom?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Energie in J mit Leistung in W oder kg mit kg/s verwechseln. Den Temperatur-Offset 273,15 auf ΔT anwenden oder bei Verdampfung nur cp ΔT benutzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-phase-card1: Was ist die Grundidee: Phasenwechsel, innere Energie und latente Wärme?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeübertragung kann Temperatur oder Phase verändern. Q = mL beschreibt nur einen klar definierten Übergang; konstante Phasenwechseltemperatur benötigt zusätzliche Stoff-, Druck- und Gleichgewichtsbedingungen. Reale Stoffdaten dürfen nicht durch fiktive Lernwerte ersetzt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-phase-card2: Welchen Fehler vermeidest du bei Phasenwechsel, innere Energie und latente Wärme?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Eine konstante Temperatur als Beweis für fehlende Wärmeübertragung ansehen. Eine vorgegebene latente Energie ohne Stoff-/Druckbezug auf reale Kältemittel übertragen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-transfer-card1: Was ist die Grundidee: Wärmeleitung, Wärmewiderstand und U-Wert?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmewiderstände erlauben einen nachvollziehbaren stationären Schichtvergleich. Der U-Wert fasst Leitung und vorgegebene Wärmeübergänge pro Fläche zusammen. Geometrie, Stoffzustand, Zeitverhalten, Strahlung und Feuchte begrenzen die Übertragbarkeit des einfachen Modells.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-transfer-card2: Welchen Fehler vermeidest du bei Wärmeleitung, Wärmewiderstand und U-Wert?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: λ in W/(m·K) mit U in W/(m²·K) gleichsetzen. Das ebene stationäre Modell als vollständige Rohrdämm-, Feuchte- oder Wärmebrückenberechnung ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-cycle-balance-card1: Was ist die Grundidee: Systemgrenzen, Enthalpie und Kältekreislauf?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Systemgrenze und Vorzeichen machen die Energiebilanz eindeutig. Enthalpiedifferenzen ermöglichen durchströmte Modelle einschließlich Phasenwechsel. Ein idealer Kreislauf erklärt die Summe aus Kälteaufnahme und Fluidarbeit, ersetzt aber keine realen Stoffdaten und Wirkungsgradmessungen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:thermo-cycle-balance-card2: Welchen Fehler vermeidest du bei Systemgrenzen, Enthalpie und Kältekreislauf?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Elektrische Eingangsleistung ohne Verlustbilanz mit der an das Fluid übertragenen Leistung gleichsetzen. Fiktive Enthalpien als reale Kältemitteldaten oder h3 = h4 als universelle Bauteilbeziehung ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-heat-card1: Was ist die Grundidee: Lernfall: Wärmeträgerstrom fachlich beurteilen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Der Fall ist erst fachlich erklärt, wenn Dichtebezug, Zeitbezug und die Annahme konstanten cp ohne Phasenwechsel benannt sind. Das Ergebnis ist ein positiver Wärmeleistungsbetrag. Für reale Auslegung fehlen zusätzliche Betriebsdaten und Nachweise.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-heat-card2: Welchen Fehler vermeidest du bei Lernfall: Wärmeträgerstrom fachlich beurteilen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Volumenstrom ohne Dichte in die Wärmeleistungsformel einsetzen. Eine Modellproportionalität als garantierte reale Leistungsverdopplung ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-ac-card1: Was ist die Grundidee: Lernfall: Elektrischen Verbraucher bewerten?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Der Fall trennt Leistungsarten, Energie und Wirkungsgrad. Das Leistungsdreieck ist unter den angegebenen Sinusbedingungen konsistent. Eine fachliche Schlussfolgerung muss benennen, welche Aussagen wegen fehlender mechanischer Daten und unbekannter realer Signalformen offen bleiben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-ac-card2: Welchen Fehler vermeidest du bei Lernfall: Elektrischen Verbraucher bewerten?
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: S als Wirkleistung ausgeben, weil beide aus elektrischen Angaben stammen. Den Wirkungsgrad mit cos φ gleichsetzen oder Sinusbeziehungen auf beliebige Oberwellenströme übertragen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-pipe-card1: Was ist die Grundidee: Lernfall: Rohrgeometrie und Modellgrenzen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Eine saubere geometrische Lösung benennt Durchmesserbezug und Einheit bei jedem Schritt. Inhalt, Material und Mantelfläche sind verschiedene Ergebnisse. Die fachliche Bewertung erkennt fehlende Strömungs-, Betriebs- und Sicherheitsdaten anstatt aus dem richtigen Volumen eine Anlagenfreigabe abzuleiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-pipe-card2: Welchen Fehler vermeidest du bei Lernfall: Rohrgeometrie und Modellgrenzen?
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Den äußeren Durchmesser für das Innenvolumen einsetzen. Einen geometrischen Vergleich als validierte hydraulische oder kältetechnische Auslegung ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-conduction-card1: Was ist die Grundidee: Lernfall: Zwei thermische Modelle vergleichen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Zwei konsistente Rechenwege bestätigen den idealen Schichtvergleich. Die fachliche Leistung ist die begründete Trennung von Modellannahmen und realen Einflussgrößen. Eine reale Energieeinsparung oder Dämmfreigabe ist damit noch nicht nachgewiesen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:case-conduction-card2: Welchen Fehler vermeidest du bei Lernfall: Zwei thermische Modelle vergleichen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Schichtenwiderstände ohne gemeinsame Fläche addieren. Eine Halbierung im idealen Modell als gemessene Einsparung einer realen Anlage ausgeben.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -4877,6 +8852,516 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## numeric:geo-area-a: Innerer Rohrquerschnitt
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-circle
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(d_i=0{,}020\,\mathrm m\). / \(A=\frac\pi4\cdot0{,}020^2=0{,}000314159\,\mathrm{m^2}\approx314{,}159\,\mathrm{mm^2}\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:geo-ring-a: Materialquerschnitt eines Rohres
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(d_a=0{,}024\,\mathrm m,\ d_i=0{,}020\,\mathrm m\). / \(A_R=\frac\pi4(0{,}024^2-0{,}020^2)=0{,}000138230\,\mathrm{m^2}\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:geo-volume-a: Geometrischer Rohrinhalt
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-volume
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(A_i=\frac\pi4\cdot0{,}020^2\,\mathrm{m^2}\). / \(V=A_i\cdot10\,\mathrm m=0{,}00314159\,\mathrm{m^3}=3{,}14159\,\mathrm L\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:geo-surface-a: Äußere Mantelfläche
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(d_a=0{,}024\,\mathrm m\). / \(A_M=\pi\cdot0{,}024\cdot10\approx0{,}753982\,\mathrm{m^2}\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung. Nur äußerer Mantel.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:geo-diagonal-a: Montagediagonale im rechten Winkel
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-pythagoras
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(c^2=3^2+4^2=25\,\mathrm{m^2}\). / \(c=5\,\mathrm m\), statt 7 m Weg entlang der Schenkel.
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:geo-height-a: Höhe aus Winkel und horizontaler Strecke
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-trig
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(30^\circ=\frac\pi6\,\mathrm{rad}\). / \(h=4\tan(\frac\pi6)\approx2{,}30940\,\mathrm m\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:geo-angle-a: Winkel aus einer Steigung
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: geo-slope
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(s=\frac34=0{,}75\). / \(\alpha=\arctan(0{,}75)=0{,}643501\,\mathrm{rad}\approx36{,}8699^\circ\).
+- Annahmen: Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:alg-domain-a: Bruchgleichung 6 geteilt durch x minus 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Original: \(\frac6{x-1}=3\), Bereich \(x\ne1\). Daraus \(6=3x-3\). / \(x=3\); Probe \(6/(3-1)=3\).
+- Annahmen: Die gegebenen Koeffizienten beschreiben die umgeformte lineare Gleichung; Originalbedingung x ≠ 1 bleibt bestehen.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:alg-system-a: Lineares System: x aus x+y=5 und 2x−y=1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: algebra-system
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Addition: \(3x=6\Rightarrow x=2\). / \(y=3\); Probe \(2+3=5,\ 2\cdot2-3=1\).
+- Annahmen: Eindeutiges reelles lineares System; gesucht ist nur x.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:alg-quadratic-a: Größere Nullstelle von x²−5x+6
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(x^2-5x+6=(x-2)(x-3)=0\). / Beide Nullstellen: 2 und 3. Gefragt ist ausdrücklich die größere: \(3\).
+- Annahmen: Gesucht ist die größere reelle Nullstelle, nicht die vollständige Lösungsmenge.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:alg-interpolation-a: Lineare Zwischenwertschätzung
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: algebra-interpolation
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: \(y=10+(30-10)\frac{5-0}{10-0}\). / \(y=20\). Nur lineare Interpolation zwischen fiktiven Stützpunkten.
+- Annahmen: Fiktive dimensionslose Punkte; angenommener linearer Zusammenhang, keine Herstellerkennlinie.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:alg-log-a: Dekadischer Logarithmus
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: algebra-log
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Gesucht \(y=\log_{10}(1000)\). / \(10^3=1000\Rightarrow y=3\); positives dimensionsloses Argument.
+- Annahmen: Reelles positives Argument, Basis positiv und ungleich eins.
+- Mögliche Fehler: Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt. Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-period-a: Periodendauer eines 50-Hz-Sinus
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-period
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(T=\frac1f\). / \(T=\frac1{50}=0{,}020\,\mathrm s\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Periodischer Sinus.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-rms-a: Effektivwert aus 100 V Scheitelwert
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(U_\mathrm{eff}=\frac{\hat U}{\sqrt2}\). / \(U_\mathrm{eff}=100/\sqrt2\approx70{,}7107\,\mathrm V\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reiner Sinus, kein beliebiger Signalverlauf.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-xl-a: Induktiver Blindwiderstand
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-reactance-l
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(L=0{,}1\,\mathrm H\). / \(X_L=2\pi\cdot50\cdot0{,}1=31{,}4159\,\Omega\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Ideale lineare Spule.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-xc-a: Kapazitiver Blindwiderstand
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-reactance-c
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(C=0{,}0001\,\mathrm F\). / \(X_C=\frac1{2\pi\cdot50\cdot0{,}0001}=31{,}8310\,\Omega\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Idealer Kondensator.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-z-a: Betrag einer Serienimpedanz
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(Z=\sqrt{R^2+(X_L-X_C)^2}\). / \(Z=\sqrt{30^2+40^2}=50\,\Omega\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Eingeschwungener Sinus, idealer Serienkreis.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-s-a: Scheinleistung eines Sinusverbrauchers
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-apparent
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(S=UI\). / \(S=100\cdot2=200\,\mathrm{VA}\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reine Sinusgrößen, induktives Nacheilen, 0 ≤ cos φ ≤ 1.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-p-a: Wirkleistung eines Sinusverbrauchers
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-real
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(P=UI\cos\varphi\). / \(P=100\cdot2\cdot0{,}6=120\,\mathrm W\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reine Sinusgrößen, induktives Nacheilen, 0 ≤ cos φ ≤ 1.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-q-a: Induktive Blindleistung eines Sinusverbrauchers
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-reactive
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(\sin\varphi=\sqrt{1-0{,}6^2}=0{,}8\). / \(Q=100\cdot2\cdot0{,}8=160\,\mathrm{var}\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Reine Sinusgrößen, induktives Nacheilen, 0 ≤ cos φ ≤ 1.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-factor-a: Leistungsfaktor im Sinusmodell
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(\lambda=\frac PS\). / \(\lambda=\frac{120}{200}=0{,}6\); nur im Sinusmodell auch cos φ.
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Aufnehmender Verbraucher; S > 0.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-star-a: Leiterspannung aus Stern-Strangspannung
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-star
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(U_L=\sqrt3U_\mathrm{Str}\). / \(U_L=\sqrt3\cdot100=173{,}205\,\mathrm V\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Symmetrischer Stern, fiktive Spannungswerte.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-delta-a: Leiterstrom aus Dreieck-Strangstrom
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-delta
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(I_L=\sqrt3I_\mathrm{Str}\). / \(I_L=2\sqrt3=3{,}46410\,\mathrm A\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Symmetrisches Dreieck, Sinus.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:ac-three-a: Symmetrische Dreiphasen-Wirkleistung
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: \(P=\sqrt3U_LI_L\cos\varphi\). / \(P=\sqrt3\cdot400\cdot10\cdot0{,}8=5542{,}56\,\mathrm W\).
+- Annahmen: Theoretisches elektrisches Lehrmodell, keine Arbeits- oder Anschlussfreigabe. Symmetrische sinusförmige Last, ausdrücklich Leitergrößen.
+- Mögliche Fehler: Scheitel- und Effektivwert oder Leiter- und Stranggrößen verwechseln. Wirk-, Blind- und Scheinleistung bzw. Wirkungsgrad und Leistungsfaktor gleichsetzen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-pressure-a: Absolutdruck aus positivem Überdruck
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-pressure-abs
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(p_\mathrm{abs}=p_\mathrm{ü}+p_\mathrm{amb}\). / \(p_\mathrm{abs}=2+1=3\,\mathrm{bar}=300000\,\mathrm{Pa}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Keine Berechnung für Unterdruckwerte.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-volume-a: Spezifisches Volumen aus Dichte
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-specific-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(v=\frac1\rho\). / \(v=\frac1{800}=0{,}00125\,\mathrm{m^3/kg}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Homogener Stoff, vorgegebene Dichte.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-mass-flow-a: Massenstrom aus Betriebsvolumenstrom
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(\dot V=\frac{1{,}8}{3600}=0{,}0005\,\mathrm{m^3/s}\). / \(\dot m=1000\cdot0{,}0005=0{,}5\,\mathrm{kg/s}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Dichte vorgegeben, gleicher Ort und Zustand.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-heat-a: Wärmeträgerleistung mit vorgegebenem cp
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: sensible-heat
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(\dot Q=\dot m c_p\Delta T\). / \(\dot Q=0{,}5\cdot4000\cdot5=10000\,\mathrm W=10\,\mathrm{kW}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Sensible Abkühlung, kein Phasenwechsel, positiver Betrag.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-latent-a: Latente Energie eines fiktiven Übergangs
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-latent
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(L=200000\,\mathrm{J/kg}\). / \(Q=2\cdot200000=400000\,\mathrm J\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Nur der definierte Phasenwechsel, kein benannter realer Stoff.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-conduction-a: Wärmestrom durch eine ebene Schicht
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-conduction
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(\dot Q=\lambda A\Delta T/d\). / \(\dot Q=0{,}04\cdot2\cdot20/0{,}1=16\,\mathrm W\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-resistance-a: Wärmewiderstand einer Schicht
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-resistance
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(R_\mathrm{th}=d/(\lambda A)\). / \(R_\mathrm{th}=0{,}1/(0{,}04\cdot2)=1{,}25\,\mathrm{K/W}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-layer-a: Wärmestrom durch zwei Schichten
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-layers
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(d_1/\lambda_1+d_2/\lambda_2=2{,}5+2{,}5=5\,\mathrm{m^2K/W}\). / \(\dot Q=2\cdot20/5=8\,\mathrm W\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene Serienschichten mit idealem Kontakt, ohne Film- und Wärmebrückenanteil.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-u-a: U-Wert aus vorgegebenen Schicht- und Übergangswerten
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(R^{\prime\prime}=0{,}1+1+1+0{,}1=2{,}2\,\mathrm{m^2K/W}\). / \(U=1/2{,}2\approx0{,}454545\,\mathrm{W/(m^2K)}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Schichten, sämtliche Koeffizienten fiktiv vorgegeben.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:th-cycle-a: Ideale Wärmeabgabe am Verflüssiger
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: thermo-cycle
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: \(\dot Q_k=\dot Q_0+P_\mathrm{Fluid}\). / \(\dot Q_k=15+5=20\,\mathrm{kW}\).
+- Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Fluid-Systemgrenze ohne zusätzliche Verluste; keine Gleichsetzung mit elektrischer Eingangsleistung.
+- Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## term:enthalpie: Enthalpie
 
 - Fachgebiet: fachuebergreifend
@@ -5260,6 +9745,186 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: —
 - Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
 - Referenz / Rechnung: Masse pro Stoffmenge derselben Teilchenart, in SI kg/mol. Sie verbindet Masse und Stoffmenge über n = m/M für M > 0.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-rms: Effektivwert
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Wurzel aus dem zeitlichen Mittel des Quadrats einer periodischen Größe. Nur beim reinen Sinus gleich Scheitelwert geteilt durch √2; beschreibt die gleiche mittlere Widerstandserwärmung wie ein entsprechender Gleichwert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-peak: Scheitelwert
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Größter Betrag einer wechselnden Größe. Nicht mit ihrem Effektivwert oder einfachen zeitlichen Mittelwert gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-phase: Phasenverschiebung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Relative Verschiebung gleichfrequenter periodischer Verläufe. Hier ist φ positiv, wenn der sinusförmige Strom der Spannung nacheilt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-impedance: Impedanz
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Wechselstrom-Zusammenhang von Spannung und Strom einschließlich Phase. Der hier berechnete Betrag Z im idealen Serien-RLC-Modell ist √(R²+(XL−XC)²), in Ω.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-real-power: Wirkleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Zeitlicher Mittelwert der momentanen elektrischen Leistung, in W. Bei gleichfrequenten reinen Sinusgrößen P = Ueff Ieff cos φ; kein allgemeiner Motorwirkungsgrad.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-reactive-power: Blindleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Im Sinusmodell Q = Ueff Ieff sin φ, in var; bei der hier gewählten Konvention induktiv positiv und kapazitiv negativ. Nicht als mechanischer Energieverbrauch interpretieren.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-apparent-power: Scheinleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Produkt aus Effektivspannung und Effektivstrom, in VA. Im verwendeten Sinusmodell bilden P, Q und S ein rechtwinkliges Leistungsdreieck; bei Verzerrung ist dieses Modell nicht allgemein ausreichend.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-power-factor: Leistungsfaktor
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Gesamtleistungsfaktor λ = P/S bei S > 0. Er stimmt im passenden Sinusmodell mit cos φ überein; er ist nicht der Wirkungsgrad und wird bei verzerrten Signalen nicht allein durch den Verschiebungswinkel beschrieben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-absolute-pressure: Absolutdruck
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Druck mit dem Bezug Vakuum. Überdruck hat dagegen einen Umgebungsbezug; pabs = pü + pamb bei konsistenter Messreferenz. Umgebungsdruck muss angegeben sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-conductivity: Wärmeleitfähigkeit
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Stoff-/zustandsabhängige Größe λ in W/(m·K) im Wärmeleitungsmodell. Nicht mit dem flächenbezogenen Wärmedurchgangskoeffizienten U gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-thermal-resistance: Wärmewiderstand
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Temperaturdifferenz geteilt durch stationären Wärmestrom, in K/W. Für die ebene homogene Schicht Rth = d/(λA); gleiche stationäre Serienschichten addieren Widerstände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-u-value: U-Wert
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Wärmedurchgangskoeffizient in W/(m²·K). Das hier verwendete ebene stationäre Modell fasst Schichtleitung und vorgegebene Wärmeübergänge zusammen; reale Wärmebrücken, Feuchte und Geometrie benötigen zusätzliche Prüfung.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -5717,6 +10382,306 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## objective:math-geometry-objective: Längen, Flächen und Ringquerschnitte mit einer Skizze und Einheiten erklären.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-pipe-volume-objective: Innenvolumen, Mantelfläche und Stirnflächen eines idealen geraden Zylinders unterscheiden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-triangles-objective: Rechtwinklige Dreiecke erkennen und eine Diagonale von einem Weg über zwei Schenkel unterscheiden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-trigonometry-objective: Sinus, Kosinus, Tangens sowie Grad, Bogenmaß und Steigung mit rechtwinkligen Dreiecken anwenden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-domains-objective: Vor dem Umformen verbotene Werte festhalten und Scheinlösungen durch eine Probe erkennen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-systems-quadratic-objective: Zwei gekoppelte Gleichungen lösen und bei quadratischen Gleichungen alle reellen Lösungen bewerten.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:math-functions-objective: Proportionalität, Interpolation und Logarithmen als klar begrenzte mathematische Modelle verstehen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:electric-ac-wave-objective: Momentanwert, Scheitelwert und Effektivwert eines Sinus unterscheiden und die Phase lesen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:electric-ac-reactance-objective: Energiespeicher, Phasenverschiebung und Blindwiderstände im sinusförmigen RLC-Lehrmodell erklären.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:electric-ac-power-objective: Das Leistungsdreieck und seine Grenzen bei sinusförmigem Einphasenwechselstrom begründen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:electric-three-phase-objective: Stern und Dreieck im symmetrischen sinusförmigen Lehrmodell sauber unterscheiden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:thermo-states-objective: Zustandsgrößen und Bezugsniveaus vor einer thermodynamischen Rechnung festlegen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:thermo-calorimetry-objective: Q = m cp ΔT und Q̇ = ṁ cp ΔT herleiten und ihren Modellbereich beurteilen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:thermo-phase-objective: Sensible und latente Energie sowie die Bedeutung von Druck und Stoffsystem unterscheiden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:thermo-transfer-objective: Stationäre eindimensionale Wärmeübertragung mit Modellgrenzen und einem Schichtvergleich erklären.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:thermo-cycle-balance-objective: Energieflüsse im Kältekreislauf bilanzieren und eine spätere log-p-h-Auswertung vorbereiten.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:case-heat-objective: Volumenstrom umrechnen, Wärmeleistung berechnen und die Proportionalitätsannahme beurteilen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:case-ac-objective: Schein-, Wirk- und Blindleistung berechnen und Aussagen über Energie und Wirkungsgrad begrenzen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:case-pipe-objective: Querschnitt, geometrischen Inhalt und äußere Mantelfläche unterscheiden und die Aussagekraft beurteilen.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:case-conduction-objective: Wärmeströme vergleichen und zwischen Modellverbesserung und realem Dämmnachweis unterscheiden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## note:electric-power-note: Elektrische Wirkleistung im Gleichstromkreis
 
 - Fachgebiet: elektro
@@ -5753,7 +10718,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: ohm-resistance
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe I geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5768,7 +10733,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: ohm-current
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe R geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5783,7 +10748,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: dc-electric-power
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: didactic-exercises: Zahlen, Einheiten und Rechenwege durch unabhängige Referenztests abgesichert. Fiktive Lernfälle; keine Herstellerwerte. Unabhängige fachliche Freigabe ausstehend. Die direkten OpenStax-Webseiten waren per HTTP 403 gesperrt. Passende Grundbeziehungen wurden stattdessen im offiziellen GitHub-Quellarchiv tatsächlich nachgelesen; die konkreten Fundstellen sind separat registriert.; keine externe Fundstelle | openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe I geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5798,7 +10763,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: dc-electric-power
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: didactic-exercises: Zahlen, Einheiten und Rechenwege durch unabhängige Referenztests abgesichert. Fiktive Lernfälle; keine Herstellerwerte. Unabhängige fachliche Freigabe ausstehend. Die direkten OpenStax-Webseiten waren per HTTP 403 gesperrt. Passende Grundbeziehungen wurden stattdessen im offiziellen GitHub-Quellarchiv tatsächlich nachgelesen; die konkreten Fundstellen sind separat registriert.; keine externe Fundstelle | openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe U geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5813,7 +10778,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: math-heat-energy
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe c × ΔT geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5828,7 +10793,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: math-heat-energy
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe m × ΔT geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5843,7 +10808,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: math-heat-energy
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe m × c geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5858,7 +10823,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: physics-pressure
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Die Multiplikation mit A auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird A ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5873,7 +10838,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: physics-pressure
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Die Multiplikation mit A auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird A ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5888,7 +10853,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: physics-pressure
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe p geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5903,7 +10868,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: physics-density
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Die Multiplikation mit V auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird V ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5918,7 +10883,7 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: physics-density
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Die Multiplikation mit V auf beiden Seiten beseitigt den zugehörigen Nenner. Für die Äquivalenz wird V ungleich null vorausgesetzt; andere Nennerbedingungen bleiben bestehen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
@@ -5933,8 +10898,113 @@ Stand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Automatisch geprüft
 - Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
 - Formel-IDs: physics-density
-- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
 - Referenz / Rechnung: Eine Gleichheit bleibt erhalten, wenn beide Seiten durch dieselbe von null verschiedene Größe ρ geteilt werden. Anschließend werden gemeinsame Faktoren gekürzt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-circle-diameter-step1: A = πd²/4 → d (geometrisch): Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: geo-circle
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: 4/π ist ein fester von null verschiedener Faktor. Die Gleichheit bleibt erhalten, aber d² ist noch nicht d.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-circle-diameter-step2: A = πd²/4 → d (geometrisch): Schritt 2
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: geo-circle
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Auf d ≥ 0 ist das Quadrieren eindeutig umkehrbar. Ohne diese Einschränkung müssten beide Vorzeichen erhalten bleiben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-bracket-x-step1: a(x+b) = c → x: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Die Klammer ist ein ganzer Faktor. Division durch a setzt a ≠ 0 voraus und betrifft beide Seiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-bracket-x-step2: a(x+b) = c → x: Schritt 2
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Subtraktion desselben Summanden isoliert x. Die gleichwertige Form (c−ab)/a ist bei a ≠ 0 ebenfalls richtig.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-rational-domain-step1: 6/(x−1) = 3 → x: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Der Faktor x−1 ist im Originalbereich nicht null. Nach der Multiplikation bleibt dieser Bereich verbindlich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-rational-domain-step2: 6/(x−1) = 3 → x: Schritt 2
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: algebra-domain
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Zwei umkehrbare Schritte: 2 = x−1, dann x = 3. Der Kandidat liegt im Originalbereich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## trainer-question:trainer-zero-solutions-step1: x(x−2) = 0 → Lösungsmenge: Schritt 1
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.
+- Formel-IDs: algebra-quadratic
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Ein Produkt ist null, wenn mindestens einer seiner Faktoren null ist. So bleibt die vollständige Lösungsmenge erhalten.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?

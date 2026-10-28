@@ -1,32 +1,22 @@
-# Mathematik-Lehrplan · 0.5
+# Technische Mathematik · 0.6
 
-## Vollständig bearbeitbarer Kernkurs
+16 nutzbare Module einschließlich Rohr-Fallstudie, keine Behauptung eines vollständigen technischen Mathematikstudiums.
 
-| Reihenfolge | Modul-ID | Erklärungen / Übungen |
-| --- | --- | --- |
-| 1 | math-arithmetic | Zahlenarten, Vorzeichen, Dezimalzahlen, Grundrechenarten, Punkt-vor-Strich, Klammern und Überschlag; zwei Zahlenvarianten |
-| 2 | math-fractions | Bruchbedeutung, Kürzen/Erweitern, Addition/Subtraktion/Multiplikation/Division, Kehrwerte und Doppelbrüche; vier Zahlenaufgaben |
-| 3 | math-percent | Grundwert/Anteil/Prozentsatz, direkter Dreisatz, Proportionalität und wechselnde Grundwerte; drei Zahlenaufgaben |
-| 4 | math-algebra | Variablen, Terme, gleichartige Summanden, Einsetzen, Ausmultiplizieren und Ausklammern; zwei Zahlenvarianten |
-| 5 | math-equations | Lineare Gleichungen, beidseitige Äquivalenzoperationen, Nullfall und Probe; zwei Zahlenvarianten |
-| 6 | math-powers | Potenzregeln, negative Exponenten, Hauptwurzel/Betrag, wissenschaftliche Schreibweise; vier Zahlenaufgaben |
-| 7 | math-units | Größen/Zahlenwerte/Einheiten, SI, Vorsilben, Zeit/Energie/Massenstrom, Flächenfaktoren und Temperaturdifferenzen; zwei Zahlenaufgaben |
-| 8 | math-rearrange | Produkte/Quotienten umstellen, Zielvariable und Nullbedingungen; elf interaktive Zielfälle plus zwei Zahlenproben |
+## Erhalten und vertieft
 
-Die Voraussetzungen bilden einen gerichteten Graphen, keine technische Sperre. Einheiten folgt Potenzen, weil Quadrat-/Kubikfaktoren sonst unverständlich bleiben. Die mathematischen Kernlektionen sind eigenständig nutzbar und in der bestehenden Akademie integriert.
+Die acht Module aus 0.5 behalten IDs, alte Fragen und Lesestände: Rechenregeln, Brüche, Prozent/Dreisatz, Variablen/Terme, lineare Gleichungen, Potenzen/Wurzeln, SI-Einheiten, Formeln umstellen. Neue ergänzende Herleitungsschritte behandeln −2² gegenüber (−2)², einen zweiten Bruchdivisionsweg, Prozentpunkte/Grundwert null, ungleichartige Potenzen, a=0-Gleichungsfälle, ±-Lösungen und Temperaturdifferenzen. Das ist additive Vertiefung, kein doppelt angelegter Grundlagenkurs.
 
-Jede Lektion: Lernziel, Wofür/Praxisbezug, Einstieg, Regel im Formelkasten, begründete Herleitung, vollständig gerechnetetes Beispiel, Fehler, Zahlenübungen mit Lösungen, drei Selbsttestfragen und zwei Karten. Die drei vorhandenen Niveaus dienen hier als Einstieg, Begründung und technischer Transfer; sie sind keine Behauptung eines vollständig abgedeckten Meisterprüfungslehrplans.
+## Neuer zusammenhängender Pfad
 
-## Formelumstellungstrainer
+1. `math-geometry`: Maßstab und Potenzskalierung, Rechteck/Dreieck/Kreis, Ringfläche, Wanddicke und Innendurchmesser, Flächenumrechnung.
+2. `math-pipe-volume`: Innen-/Materialvolumen, innerer/äußerer Mantel, Stirnflächen, Grenzen realer Rohrdimensionierung.
+3. `math-triangles`: Pythagoras mit Flächenbeweis, Diagonale gegenüber Schenkelweg, technische Montagegrenzen.
+4. `math-trigonometry`: Ähnlichkeit, sin/cos/tan, Grad/rad, Winkelinverse, horizontale Projektion, Prozentsteigung/Gefälle.
+5. `math-domains`: Bruchgleichung, Wurzelgleichung, Bereich, Quadrieren, Originalprobe, Schein- und verlorene Lösungen.
+6. `math-systems-quadratic`: Addition/Elimination, Determinante, quadratische Ergänzung/Lösungsformel, Diskriminante und vollständige Lösungsmenge.
+7. `math-functions`: direkte/inverse Proportionalität, Funktion/Kennlinie, lineare Interpolation und Grenzen, logarithmische Umkehrung/Definitionsbereich.
+8. `case-pipe`: Drei Rechnungen plus fachliche Entscheidung, welche geometrischen Aussagen keine Anlagenfreigabe erlauben.
 
-U=RI nach R/I; P=UI nach U/I; Q=mcΔT nach m/c/ΔT; p=F/A nach F/A; ρ=m/V nach m/V. Elf Ziele, davon zwei mit mehreren Umformungsschritten. Der Nutzer wählt die zulässige Operation, erhält eine Begründung, sieht neue Gleichung/Vereinfachung und abschließend eine Probe. Falsche Antworten erklären fehlende Gleichbehandlung beider Seiten. Der Trainer speichert Lernversuche im vorhandenen Fortschritt; die momentane UI-Schrittauswahl ist nicht dauerhaft gespeichert.
+Zwölf neue Zahlenfälle haben unabhängige feste Sollwerte. Trainer 2.0 bietet 15 kuratierte Fälle/20 Schritte, vier davon neu. Die Formelauswahl enthält das Ziel. Gleichwertige Endschreibweisen werden erklärt, aber nicht beliebige Texte symbolisch geprüft. Hilfestufe, individuelle falsche Operationen, Definitionsbereich und Originalprobe sind nutzbar.
 
-## Vollständige weitere Struktur, ausdrücklich geplant
-
-- Algebra: Bruchgleichungen mit Definitionsmengen, weitere Potenz-/Wurzelgesetze, binomische Formeln, lineare Gleichungssysteme, quadratische Gleichungen.
-- Technisches Rechnen: prozentuale Abweichung, Messunsicherheit, signifikante Stellen/Runden, systematische Plausibilitätsprüfung und Diagrammauswertung.
-- Geometrie: Winkel, Dreiecke/Vierecke, Kreis, Fläche/Volumen, Pythagoras, Ähnlichkeit und Trigonometrie mit Sinus/Kosinus/Tangens.
-- Funktionen: Koordinaten, lineare/quadratische/exponentielle Funktionen, Logarithmen, Graphen, Proportionalität und Änderungsraten.
-- Oberstufe: Folgen, Grenzwerte, Ableitungen, einfache Integrale, Wahrscheinlichkeitsrechnung und Statistik. Darstellung von Integral/Summe ist bereits möglich; ein Lehrkurs dazu ist noch nicht implementiert.
-
-Technisch relevante Grundlagen gehen vor vollständiger Oberstufenbreite. Keine geplante Kategorie gilt als fertige Lektion. Quellen: tatsächlich eingesehene OpenStax-Abschnitte; eigene deutsche Erläuterungen. Fachprüfregister unterscheidet automatische Prüfung und noch offene unabhängige menschliche Abnahme.
+Bewusst offen: allgemeines CAS, umfassende Wurzel-/Bruchgleichungsfamilien, komplexe Zahlen, weiterführende nichtlineare Systeme, ausführliche Funktionsdiskussion, Analysis und Statistik. Menschliche mathematische Fachprüfung offen; Quellenabgleich gilt nur für die dokumentierten Teilbeziehungen.

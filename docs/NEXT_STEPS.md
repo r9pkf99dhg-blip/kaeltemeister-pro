@@ -1,50 +1,55 @@
-# Version 0.5 · Wiederaufnahme, Übernahme und iPad-Test
+# Version 0.6 · Sicherer Wiederaufnahmestand
 
-Feature-Branch: `feat/foundations-academy-v05`. Grundlage: main `163b9b7`, Version 0.4. Kein automatischer Merge.
+Branch: `feat/deep-learning-academy-v06`. Grundlage main `09a953b` (Merge #7, vollständige 0.5 `febd428`). Keine direkten main-Änderungen, kein automatischer Merge, kein Force-Push, keine Branchlöschung.
 
 ## Abgeschlossene Etappen
 
-| Etappe | Commit | Stand |
+| Etappe | Commit | Ergebnis |
 | --- | --- | --- |
-| A | 1d521d5 | Repository/Architektur/Roadmap analysiert, Basistests bestätigt, Unterbrechungsplan gesichert |
-| B | d5c2c35 | Professioneller lokaler Formelsatz, Migration und Fehlertests |
-| C | f9a3691 | Acht vollständige Mathematik-Kernlektionen und Umstellungstrainer |
-| D | 6cf7268 | Vier Physik-Kernlektionen mit zwölf Zahlenaufgaben |
-| E | 0ba0930 | Drei Chemie-Kernlektionen mit sechs Zahlenaufgaben |
-| F | 3784efc | Kompetenzverknüpfungen, Voraussetzungen und Fachgebiets-Audit |
-| G | 485e2b0 | Lernbrücke im Training mit erhaltener Originalantwort |
-| H | b1a2a34 | Echte 0.4-Backup-Kompatibilität, 262 Tests, Typprüfung und Build; 120 abschließende Chromium-Tests erfolgreich |
+| 1 Bestandsaufnahme | 4254dfe | Vollständige 0.5 in main geprüft; Ausgangslage: 262 Tests, Typprüfung, Build |
+| 2 Quellen/Nachweismodell | 8f32b63 | Reale Zugriffsergebnisse, Nachweisarten und Quellenbewertung; offene Rechts-/SI-/Sicherheitsquellen |
+| 3 Mathematik | 1f24fb8 | Sieben neue Module, zwölf Aufgaben, vier neue Trainerfälle; 278 Tests, Build/Typprüfung und Tabletfall grün |
+| 4 Elektro | 665aaea | Vier Module, zwölf Aufgaben, Diagramme; 292 Tests und zwei Tablet-Browserfälle grün |
+| 5 Thermodynamik | 52c286a | Fünf Module, zehn Aufgaben; 303 Tests und drei Tablet-Browserfälle grün |
+| 6 Lernbrücke | 552d050 | Konkrete Zahlenmuster, fortsetzbarer Entwurf, Neuladen/Backup; 315 Tests und vier Tablet-Browserfälle grün |
+| 7 Fallstudien | a7be9a3 | Vier aktive Lernfälle mit Entscheidung; 317 Tests und fünf Tablet-Browserfälle grün |
+| 8a Fach-/Regressionsprüfung | 550122d | Aussagenbelege, echte alte Backups, Variablen/Alternativtexte; 321 Tests, Typprüfung, Build, Workflow-Lint und 150 vollständige Chromium-Prüfungen grün |
+| 8b Gemeinsame Begriffe | 22a7525 | Zwölf neue Glossarbegriffe mit Modulverweisen/Suche; 322 Tests und 155 Chromium-Prüfungen grün |
+| 8c Abschlusskorrekturen | 05f53da | Thermo-Grundlagenprüfung, Diagrammfrage und WebKit-Umbruch; 323 Tests/24 Dateien, Typprüfung, Build, vollständiger Chromium-Lauf 155 grün; nach CSS-Korrektur 24 gezielte Browserfälle grün. Neueste vollständige CI zusätzlich prüfen |
 
-Alle technischen Etappen wurden normal auf GitHub gepusht. Die abschließende Dokumentation liegt im letzten Dokumentationscommit. Ein anfänglicher Ausfall der Cloud-Umgebung wurde vor dem ersten Commit erkannt; anschließend wurde der unveränderte Stand geprüft und sofort gesichert.
+Dokumentation und Veröffentlichungsvorbereitung: `508e287`. Die PR-Erstellung blieb trotz funktionierendem Push durch API-403 blockiert. Nach jeder Etappe wurde normal gepusht. Der letzte hochgeladene Commit ist die Wiederaufnahmebasis; dessen Identität vor Weiterarbeit tatsächlich mit `git ls-remote` vergleichen.
 
-## Noch zu erledigen / bewusst offen
+## Bestätigter Abschluss
 
-1. Automatischen PR anlegen, falls GitHub-API verfügbar. Bei HTTP 403 den direkten Vergleich öffnen und PULL_REQUEST_0_5.md verwenden.
-2. Den neuesten GitHub-Lauf einschließlich WebKit prüfen; vor dem Merge müssen die PR-Checks grün sein. CI-Konfiguration allein ist kein Testnachweis.
-3. Merge nur nach ausdrücklicher Nutzerfreigabe. main und gespeicherte Lerndaten nicht überschreiben; kein Force-Push.
-4. Echte iPad-/iPhone-Safari-Prüfung nach APPLE_TEST_PLAN; keine Hardwareprüfung wurde hier durchgeführt.
-5. Unabhängige Fachabnahme anhand REVIEW_REGISTER. Weiterführende Lehrplaninhalte sind ausdrücklich geplant (Curriculumsdateien/ROADMAP), keine halbfertigen angeblich fertigen Module.
-6. Eine dauerhaft gespeicherte unbewertete Eingabe/Trainerposition, tiefere Fehlerursachendiagnose, Cloud-Synchronisation und professionelle Rechner bleiben spätere Aufgaben.
+Korrigierter Code `05f53da`: [GitHub-Lauf 40656718539](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40656718539) erfolgreich. 248 Browserprüfungen ohne verbleibenden Fehler: 155 Chromium und 93 WebKit, einschließlich iPhone bei 200 Prozent Schrift. npm-Installation, TypeScript, 323 Tests und Build ebenfalls erfolgreich. Der zuvor gefundene WebKit-Überlauf ist damit im vollständigen Lauf behoben. Nachfolgende Commits dokumentieren diesen unveränderten Funktionsstand und die blockierte PR-Erstellung.
+
+Remotevergleich am Abschluss: main bleibt `09a953b`, Entwicklungsbranch ist konfliktfrei; Merge-Simulation ohne Konflikt. Keine tatsächliche Zusammenführung. Kein Force-Push oder Löschen. Letzten Dokumentations-HEAD vor Merge wie jeden neuen PR-Stand nochmals in Actions prüfen.
+
+## Noch manuell / fachlich abzuschließen
+
+- Vor dem späteren Merge sicherstellen, dass die neuesten PR-Checks weiterhin erfolgreich sind. Bestätigter vollständiger Code-Lauf einschließlich WebKit: siehe oben.
+- PR-Erstellung am Abschluss erneut mit autorisiertem gh versucht: GraphQL POST Forbidden (HTTP 403). Keine weitere verfügbare GitHub-Connector-Methode. Git-Push funktioniert; eine PR wurde nicht erstellt. Direkten Vergleichslink und docs/PULL_REQUEST_0_6.md verwenden.
+- Merge nur nach ausdrücklicher Freigabe; dann main-Pages-Lauf und 0.6 auf der Website prüfen.
+- Echte iPad/iPhone-Hardwareprüfung gemäß APPLE_TEST_PLAN; kein solcher Test hier behauptet.
+- Unabhängige menschliche Fachprüfung und gezielter externer Abgleich eigener Ableitungen; aktuelle Meister-/Ausbildungs-/KMK-/BIPM-/DGUV-Primärquellen waren technisch blockiert.
 
 ## Wiederaufnahme nach Unterbrechung
 
-1. `git status`, `git log` und diese Tabelle lesen. Fremde Änderungen erhalten.
-2. Vorhandenen Branch weiterverwenden, Remote-Stand holen und vergleichen. Keine neue Implementierung vom alten main beginnen.
+1. `git status`, `git log -12 --oneline`, diese Datei und RELEASE_V06 lesen. Fremde Änderungen erhalten.
+2. Remote main und Entwicklungsbranch holen und vergleichen; nicht von altem main neu implementieren, keinen Force-Push verwenden.
 3. `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`.
-4. Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`, wenn der Systembrowser vorhanden ist. Ansonsten Playwright-Browser installieren; vollständiger CI-Pool enthält Chromium und WebKit.
-5. Bei Fehlern erst Ursache beheben, erneut prüfen, dann committen/pushen. Erfolgreiche Commits/Pushes immer tatsächlich kontrollieren.
-6. `npm run docs:review` und `npm run docs:audit` erzeugen Berichte aus dem Katalog. Die echte historische Datei unter storage/fixtures nicht mit neuen Produktfunktionen überschreiben.
+4. Lokal vorhandener Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`. Ohne Systembrowser offizielle Playwright-Browser installieren. WebKit in GitHub CI prüfen, falls lokaler Download gesperrt bleibt.
+5. `npm run docs:review`, `npm run docs:audit`, beide Workflows mit actionlint prüfen. Erst Fehler beheben und erneut prüfen, dann committen/pushen.
+6. Historische Fixtures niemals mit neuen Exportern überschreiben. Schema 3 / Backupformat 1 erhalten. Neue Felder optional und geschützt validieren.
 
-## Auf dem iPad nach freigegebenem Merge
+## iPad, PR und Veröffentlichung
 
-Nach grünem main-Pages-Deploy Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/. Auf Version 0.5 achten und neu laden. Zuerst eigene Sicherung erstellen und in Dateien speichern.
+Vergleich: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/deep-learning-academy-v06?expand=1
 
-- **Mit Mathematik beginnen:** Rechenregeln → Brüche/Prozent → Algebra/Gleichungen → Potenzen/Einheiten → Formeln umstellen. Voraussetzungen sind verlinkt.
-- **Brüche:** Subtraktionsaufgabe 1/4 − 3/4 mit `-1/2` oder `-0,5` über die normale Minustaste lösen.
-- **Trainer:** p=F/A nach A wählen; beide Seiten mit A, anschließend durch p. Erklärung, Vereinfachung und Probe kontrollieren.
-- **Physik:** Druck mit 100 N und 20 cm² ergibt 50000 Pa = 0,5 bar.
-- **Chemie:** 9 g bei vorgegebenen 18 g/mol ergibt 0,5 mol = 500 mmol.
-- **Lernbrücke:** Wärmeleistung zuerst mit 1 kW falsch beantworten, empfohlene Grundlage öffnen, lesen/üben und zurückkehren. Antwort/Einheit bleiben erhalten; anschließend 10,45 kW prüfen.
-- **Backup:** Eigene alte 0.4-Sicherung nur nach zusätzlicher Sicherung des aktuellen Stands importieren. Vorschau lesen, Ersetzen ausdrücklich bestätigen, weitere Tabs schließen. Alte Daten bleiben kompatibel; neue Aufgabentypen benötigen 0.5 oder später.
+Auf dem iPad öffnen → **Create pull request** → base `main`, compare `feat/deep-learning-academy-v06` → Titel „Version 0.6: Fachliche Tiefenakademie, Elektrotechnik und intelligentes Problemlösen“ → vorbereiteten Beschreibungstext aus PULL_REQUEST_0_6.md einsetzen → **Create pull request**. Erst nach eigener Freigabe und grünen neuesten Checks **Merge pull request**, danach **Confirm merge**. Keinen Branch löschen müssen.
 
-Mehr Details und Fehlervorlage: APPLE_TEST_PLAN. Browseruhr und lokaler Lernstand sind manipulierbar; die Übungsprüfung ist selbst erstellt und nicht offiziell.
+Nach grünem Pages-Lauf: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ in Safari neu laden, Version 0.6 prüfen und zunächst Sicherung in Dateien speichern. Manuelle Testwerte stehen in RELEASE_V06. main und veröffentlichte Website bleiben bis zum freigegebenen Merge auf ihrem bisherigen Stand.
+
+## Bewusst später
+
+Vollständige unabhängige Fachfreigabe, umfassender Meisterlehrplan, allgemeines CAS, Motor-/Schutzpfad, unsymmetrische/verzerrte Netze, reale Stoffdaten/log-p-h und professionelle Anlagenrechner. Trainer-/Fall-Schrittpositionen und unbewertete Fallantworten sind sitzungsbezogen; ein letzter Zahlenübungs-/Lernbrückenentwurf ist dagegen jetzt gesichert.

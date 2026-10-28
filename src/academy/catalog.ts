@@ -1,3 +1,12 @@
+import { deepTerms } from "./deep/terms";
+import { case_lessons } from "./deep/case-lessons";
+import { thermal_lessons } from "./deep/thermal-lessons";
+import { thermal_formulas } from "./deep/thermal-formulas";
+import { electrical_lessons } from "./deep/electrical-lessons";
+import { electrical_formulas } from "./deep/electrical-formulas";
+import { math_lessons } from "./deep/math-lessons";
+import { math_formulas } from "./deep/math-formulas";
+import { deepSources } from "./deep/sources";
 import { foundationTerms } from "./foundations/terms";
 import { moduleFoundationLinks } from "./foundations/competencies";
 import { chemistryLessons, chemistryFormulas } from "./foundations/chemistry";
@@ -16,6 +25,10 @@ const foundationLessons = [
   ...mathematicsLessons,
   ...physicsLessons,
   ...chemistryLessons,
+  ...math_lessons,
+  ...electrical_lessons,
+  ...thermal_lessons,
+  ...case_lessons,
 ];
 import { formulaNotation } from "../math/notation";
 export { domains } from "./data/domains";
@@ -47,7 +60,7 @@ export const modules = [
   ...module,
   termIds: [
     ...module.termIds,
-    ...foundationTerms
+    ...[...foundationTerms, ...deepTerms]
       .filter((t) => t.moduleIds.includes(module.id))
       .map((t) => t.id),
   ],
@@ -74,6 +87,9 @@ export const formulas = [
   ...mathematicsFormulas,
   ...physicsFormulas,
   ...chemistryFormulas,
+  ...math_formulas,
+  ...electrical_formulas,
+  ...thermal_formulas,
 ].map((formula) => ({
   ...formula,
   tex: formula.tex ?? formulaNotation[formula.id],
@@ -82,13 +98,19 @@ export const sources = [
   ...baseSources,
   ...electricalSources,
   ...foundationSources,
+  ...deepSources,
 ];
 export const objectives = [
   ...baseObjectives,
   ...electricalObjectives,
   ...foundationLessons.map((l) => ({ id: `${l.id}-objective`, text: l.goal })),
 ];
-export const terms = [...baseTerms, ...electricalTerms, ...foundationTerms];
+export const terms = [
+  ...baseTerms,
+  ...electricalTerms,
+  ...foundationTerms,
+  ...deepTerms,
+];
 export { workedCycle } from "./data/registers";
 
 export { legacyBridges } from "./data/legacy";

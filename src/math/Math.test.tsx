@@ -130,3 +130,25 @@ it("alle kuratierten Antwortnotationen bleiben darstellbar", async () => {
   );
   expect(container.querySelector(".math-error")).toBeNull();
 });
+it("rendert neue Variablen, Fragen und Rückmeldungen auch mit expliziten TeX-Antworten", async () => {
+  const { academyQuestions } = await import("../academy/catalog");
+  const { container } = render(
+    <>
+      {formulas
+        .filter((f) => f.variables)
+        .map((f) => (
+          <VariableDefinitions key={f.id} variables={f.variables!} />
+        ))}
+      {academyQuestions
+        .flatMap((q) => [
+          q.prompt,
+          q.explanation,
+          ...q.options.map((o) => o.text),
+        ])
+        .map((text, i) => (
+          <MathText key={i} text={text} />
+        ))}
+    </>,
+  );
+  expect(container.querySelector(".math-error")).toBeNull();
+});

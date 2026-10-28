@@ -134,9 +134,19 @@ export interface AcademyProgressV2 {
   updatedAt: string | null;
 }
 
-export interface AcademyProgress
-  extends Omit<AcademyProgressV2, "schemaVersion"> {
+export interface AcademyProgress extends Omit<
+  AcademyProgressV2,
+  "schemaVersion"
+> {
   schemaVersion: 3;
+  exerciseDraft?: {
+    taskId: string;
+    revision: number;
+    answer: ItemAnswer;
+    bridgeLessonId: string | null;
+    checked: boolean;
+    updatedAt: string;
+  };
   performance: Record<string, Performance>;
   exerciseAnswers: Record<
     string,

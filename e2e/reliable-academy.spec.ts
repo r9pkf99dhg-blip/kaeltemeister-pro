@@ -169,7 +169,7 @@ test("Elektro-Lernpfad ist vollständig navigierbar, rechnet mit Komma und erhä
   await page.getByRole("button", { name: "Akademie", exact: true }).click();
   await page.getByLabel("Fachgebiet", { exact: true }).selectOption("elektro");
   await expect(page.getByRole("status")).toContainText(
-    "5 verfügbare Lernmodule",
+    "10 verfügbare Lernmodule",
   );
   for (const title of [
     "Elektrische Grundgrößen",

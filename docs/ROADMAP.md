@@ -1,52 +1,31 @@
-# ROADMAP · Version 0.5 und Gesamtplattform
+# ROADMAP · Version 0.6 und Gesamtplattform
 
-## Tatsächlich verfügbar
+## Verfügbar
 
-25 Module auf dem vorhandenen Niveausystem: fünf Kälte-, fünf Elektro-, acht Mathematik-, vier Physik- und drei Chemie-Module. 80 Modulfragen, 50 Karten, 63 Zahlenaufgaben und elf Umstellungsziele. Adaptive Wiederholung, Übungsprüfung, Lern-Dashboard, Backup/Restore, fachliches Prüfregister, professioneller Formelsatz und eine einfache intelligente Lernbrücke. Kein Inhalt behauptet eine unabhängige menschliche Fachfreigabe.
+45 Module, 140 Modulfragen, 90 Karten, 77 Formeln und 97 Zahlenaufgaben. Grundlagen plus technische Geometrie/Trigonometrie, vertiefte Algebra, Sinus-/Dreiphasenlehre, Thermodynamik, 15 kuratierte Umstellungsfälle und vier aktive Transferfälle. Adaptive Wiederholung, Prüfung, Dashboard, Backup, Lernbrücke mit Antwortmustern und lokalem Entwurf, 70 Aussagenbelege. Umfang und Grenzen: RELEASE_V06. main enthält 0.5; 0.6 wird ausschließlich über einen freigegebenen PR übernommen.
 
-Version 0.4 ist in main integriert. 0.5 entsteht in abgeschlossenen überprüften Etappen mit Commits/Pushes; NEXT_STEPS dokumentiert erledigte/offene Arbeiten. Keine automatische Veröffentlichung vor freigegebenem PR-Merge.
+## P0 · Fachfreigabe und echte Apple-Geräte
 
-## Prioritäten nach 0.5
+- Unabhängige Fachabnahme nach konkreten Aussagen/Revisionen: Mathematik, Elektro, Wärmeübertragung und Kältebilanz. Eigene Ableitungen gezielt extern abgleichen.
+- Aktuelle Meisterverordnung, Ausbildungsrahmenplan, KMK, SI-Broschüre und DGUV lesen; Abruf hier blockiert. Lehrplanzuordnung datieren, Ausbildung/Meister unterscheiden, keine vollständige Prüfungsabdeckung behaupten.
+- Echte iPad-/iPhone-Safari-Prüfung: Formelsatz, große Schrift, Tastatur/VoiceOver, Download/Import, Hintergrund und Speicherquote.
 
-### P0 · Verlässlichkeit und Fachabnahme
+## P1 · Version 0.7
 
-- Vollständiges Prüfregister durch qualifizierte Mathematik-/Physik-/Chemie-/Kälte-/Elektro-Fachpersonen prüfen lassen. Fundstelle, Person, Datum und Freigabeumfang je Revision dokumentieren.
-- Echte iPad-/iPhone-Safari-Tests für Formelsatz, Schriftvergrößerung, Tastatur, Download/Import und Hintergrundwechsel. WebKit ersetzt keine Hardwareprüfung.
-- Sicherungsverfahren unter echten Safari-Quoten prüfen; IndexedDB nur mit gesicherten Migrationen/Transaktionen ergänzen.
-- Sinnvoller gespeicherter Entwurfsvertrag für offene Übungen/Trainerschritte; heutige Brücke erhält Eingaben nur innerhalb des laufenden Trainings.
+Zusammenhängender Motorpfad mit nachvollziehbaren Quellen: Drehfeld, Asynchronmotor, Synchrondrehzahl/Polpaarzahl, Schlupf, Eingangs-/Ausgangsleistung/Wirkungsgrad, einfache Kennlinieninterpretation. Keine reale Motor-/Schutzdimensionierung ohne validierte Daten.
 
-### P1 · Zusammenhängende nächste Lernpfade
+Lernqualität vertiefen: gezielte unabhängige Fachbegründungen, zusätzliche typische Aufgabenvarianten und stärker abgestufte Hilfen. Nur beobachtbare Fehlermuster ergänzen. Fallposition/Trainerentwürfe erst mit sauberem optionalem Backupvertrag dauerhaft sichern; heute bleibt ihre unbewertete Position sitzungsbezogen.
 
-- Mathematik: Bruchgleichungen, lineare Gleichungssysteme, quadratische Gleichungen, binomische Formeln; danach technische Geometrie/Pythagoras/Trigonometrie.
-- Funktionen/Diagramme und technische Messunsicherheit; anschließend ausgewählte Ableitungs-/Integral-/Statistikgrundlagen. Vollständige Struktur in MATHEMATICS_CURRICULUM.
-- Physik: beschleunigte Bewegungen, quantitative Wärmeübertragung, Gasgesetze und Hauptsätze; vorhandene Elektro-Grundlagen um Wechselstrom/Leistungsfaktor/Drehstrom erweitern.
-- Chemie: Periodensystem/Bindungsmodelle, weiterführende Stöchiometrie, Säuren/Basen/Redox, dann organische und halogenierte Verbindungen sowie geprüfte Kältemitteleigenschaften.
-- Weitere Niveaus und Varianten fachlich vertiefen, statt viele oberflächliche leere Kategorien zu erzeugen.
+## P2 · Weiterführende Akademie
 
-### P2 · Lernbrücke und Lernleistung
+Analysis/Statistik, Messunsicherheit, komplexe Wechselstrommodelle und unsymmetrische Systeme, zweiter Hauptsatz/Entropie und reale Wärmeübertragung. Chemie vertiefen (Bindung, Stöchiometrie, Säuren/Basen/Redox, Organik). Klima, Lüftung, Regelung, Komponenten und Dämmtechnik als vollständige geprüfte Lernpfade ausarbeiten, statt eine Struktur als fertigen Kurs zu zählen.
 
-- Die einfache Brücke ist im Zahlentraining verfügbar: Aufgabe → Kompetenzen → begründete Grundlagenlektion → Rückkehr mit erhaltener Eingabe/Einheit.
-- Danach fehlertypbezogene Belege, Transferaufgaben, versionierte Übungsentwürfe und stärker differenzierte Kompetenzstatistik. Falsche Gesamtantworten niemals als sichere Einzelursache ausgeben.
-- Historische Fehler mit einem transparenten begrenzten Lernfenster evaluieren; bisherige aggregierte Historie nicht heimlich löschen.
-- Optionale Mehrgeräte-Synchronisierung erst mit Ereignisidentität, Reset-Generation, Konfliktregeln und freiwilliger Datenübertragung. Kein Konto für lokale Kernfunktionen.
+## P3 · Gemeinsame technische Plattform
 
-## Langfristige zehn Hauptmodule
+1. Validierte Stoffdaten mit Herkunft/Lizenz, Einheiten, Zustandsreferenz, Gültigkeit und numerischem Fehlerverhalten.
+2. log-p-h auf dieser Basis, später Bauteildatenbanken mit Version/Quelle.
+3. Fachrechner aus demselben SI-Kern, jeweils mit eigenständiger Modellvalidierung.
+4. Diagnose, Anlagenplanung und Projektdokumentation mit expliziten Mess-/Entscheidungs-/Sicherheitsverträgen.
+5. Optional IndexedDB/PWA/Synchronisation erst nach zuverlässigen Migrationen und fachlichem Bedarf. Keine Pflichtabos.
 
-| Hauptmodul | Stand / nächster Anschluss |
-| --- | --- |
-| Lernakademie | Grundlagen/Fachmodule, Formeln, Aufgaben, Kompetenzen; weiter fachlich vertiefen |
-| Fachbibliothek | Gemeinsame Begriffe, Quellen und IDs, breitere fachübergreifende Suche |
-| Professionelle Rechner | Wärmeleistungsrechner vorhanden; Elektro/COP/Kühl-/Wärmelast-, Rohrleitungs-, Druckverlust- und Wärmeübertragungsrechner benötigen geprüfte Randbedingungen über denselben Kern |
-| log-p-h-Diagramme | Verifizierte Stoff-/Zustandsmodelle, Rechte und Referenzzustände vor Implementierung |
-| Kältemittel-/Stoffdaten | Herkunft, Zustandsbezug, Unsicherheit, Rechte und Aktualisierung separat klären |
-| Bauteildaten | Geprüfte Herstellerinformationen statt fiktiver Lernwerte |
-| Diagnose/Fehlersuche | Lernbrücken-IDs wiederverwenden; mehrere Hypothesen und Messunsicherheit |
-| Planung/Auslegung | Validierte Systemgrenzen; Lernaufgaben nicht als Auslegungsnachweis missverstehen |
-| Wartung/Inbetriebnahme | Aktuelle Sicherheits-/Fachgrundlagen und qualifizierte Abnahme |
-| Technische Dokumentation | Lokale Projektfälle referenzieren dieselben Formeln, Quellen, Kompetenzen und Revisionen |
-
-Leere Fachgebiete behalten eine ehrliche Struktur. DOMAIN_AUDIT nennt verfügbare Module und offene Themen. Kein vorzeitiges Implementieren dieser Gesamtplattform als Attrappen.
-
-## Abnahme jeder Etappe
-
-Stabile IDs; tatsächliche Quellenbelege; getrennte unabhängige Referenzrechnungen; nachvollziehbare Modellgrenzen; Daten-/Backup-Kompatibilität; Typprüfung, Tests und Build; passende Browserchecks; dokumentierter Commit/Push. Freigabe des Merges und tatsächlicher main-Pages-Lauf bleiben getrennte abschließende Schritte.
+Stabile IDs für Begriffe, Quellen, Formeln, Kompetenzen und Aufgaben sind die Verbindung zwischen Akademie und späteren Werkzeugen. Intelligente Lernbrücke bleibt erklärbar und überspringbar; keine künstlich behauptete KI-Diagnose.

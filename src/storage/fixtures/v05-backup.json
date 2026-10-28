@@ -1,0 +1,872 @@
+{
+  "format": "kaeltemeister-pro-backup",
+  "schemaVersion": 1,
+  "appVersion": "0.5.0",
+  "exportedAt": "2026-10-28T10:04:00.000Z",
+  "data": {
+    "academy": {
+      "schemaVersion": 3,
+      "performance": {
+        "math-fractions-q1": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z"
+        },
+        "math-fractions-card1": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "card",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z"
+        },
+        "math-algebra-q1": {
+          "topicId": "math-algebra",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:01:00.000Z"
+        },
+        "math-fraction-add-a": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-28T10:01:00.000Z"
+        },
+        "math-algebra-q2": {
+          "topicId": "math-algebra",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:01:00.000Z"
+        },
+        "math-fraction-div-a": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-28T10:01:00.000Z"
+        },
+        "math-arithmetic-q1": {
+          "topicId": "math-arithmetic",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:01:00.000Z"
+        },
+        "math-fraction-mul-a": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-28T10:01:00.000Z"
+        }
+      },
+      "exerciseAnswers": {},
+      "recentModules": [
+        {
+          "moduleId": "math-fractions",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        },
+        {
+          "moduleId": "math-arithmetic",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        },
+        {
+          "moduleId": "math-algebra",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        }
+      ],
+      "activeExam": {
+        "id": "v05-historical-active",
+        "domainId": "chemie",
+        "level": "meister",
+        "startedAt": "2026-10-28T10:02:00.000Z",
+        "deadline": "2026-10-28T10:22:00.000Z",
+        "snapshots": [
+          {
+            "item": {
+              "id": "chemistry-amount-q1",
+              "revision": 1,
+              "kind": "choice",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "9 g bei vorgegebenen 18 g/mol ergeben …",
+              "prompt": "9 g bei vorgegebenen 18 g/mol ergeben …",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "options": [
+                {
+                  "id": "chemistry-amount-q1-option-1",
+                  "text": "162 mol"
+                },
+                {
+                  "id": "chemistry-amount-q1-option-2",
+                  "text": "2 mol"
+                },
+                {
+                  "id": "chemistry-amount-q1-option-0",
+                  "text": "0,5 mol"
+                }
+              ],
+              "correctOptionId": "chemistry-amount-q1-option-0",
+              "explanation": "Stoffmenge ist Masse geteilt durch molare Masse: 9/18 = 0,5 mol. Die Einheiten g/(g/mol) ergeben mol; eine Multiplikation wäre hier unpassend."
+            }
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-a",
+              "revision": 1,
+              "kind": "numeric",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "Stoffmenge mit gerundeter molarer Masse",
+              "prompt": "Für diesen Wasser-Lernfall ist M = 18 g/mol ausdrücklich gerundet vorgegeben. Welche Stoffmenge gehört zu 9 g?",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "formulaId": "chemistry-amount-rule",
+              "calculation": "amount",
+              "givens": [
+                {
+                  "id": "mass",
+                  "label": "Masse",
+                  "value": 9,
+                  "unit": "g",
+                  "quantity": "mass"
+                },
+                {
+                  "id": "molarMass",
+                  "label": "Vorgegebene molare Masse",
+                  "value": 18,
+                  "unit": "g/mol",
+                  "quantity": "molar-mass"
+                }
+              ],
+              "sought": "Stoffmenge mit gerundeter molarer Masse",
+              "quantity": "amount",
+              "answerUnit": "mol",
+              "absoluteToleranceSI": 1e-8,
+              "relativeTolerance": 0.0001,
+              "sourceIds": [
+                "openstax-chemistry-v05"
+              ],
+              "hint": "Prüfe die Teilchenart bzw. den Gesamtmassenbezug und kürze die Einheiten. Ein Index gilt nur für das zugehörige Elementsymbol.",
+              "steps": [
+                "\\(m=0{,}009\\,\\mathrm{kg},\\quad M=0{,}018\\,\\mathrm{kg/mol}\\).",
+                "\\(n=\\frac{0{,}009}{0{,}018}=0{,}5\\,\\mathrm{mol}\\)."
+              ],
+              "mistakes": [
+                "Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln.",
+                "Gramm und kg/mol ohne Umrechnung kombinieren."
+              ],
+              "assumptions": "Gerundeter Lernwert, keine hochgenaue Stofftabelle und kein praktischer Versuch.",
+              "review": "calculation-tested-expert-review-pending",
+              "requiredCompetencyIds": [
+                "competency-fractions",
+                "competency-si-units",
+                "competency-amount"
+              ]
+            },
+            "expectedSI": 0.5
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-q2",
+              "revision": 1,
+              "kind": "choice",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "fachkraft",
+              "title": "Was darf beim Ausgleichen einer chemischen Gleichung verändert werden?",
+              "prompt": "Was darf beim Ausgleichen einer chemischen Gleichung verändert werden?",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "options": [
+                {
+                  "id": "chemistry-amount-q2-option-2",
+                  "text": "Die Protonenzahl der Elemente."
+                },
+                {
+                  "id": "chemistry-amount-q2-option-0",
+                  "text": "Die Koeffizienten vor den Stoffformeln."
+                },
+                {
+                  "id": "chemistry-amount-q2-option-1",
+                  "text": "Beliebig die tiefgestellten Indizes."
+                }
+              ],
+              "correctOptionId": "chemistry-amount-q2-option-0",
+              "explanation": "Koeffizienten verändern die Anzahl ganzer Teilcheneinheiten. Formelindizes würden dagegen eine andere Zusammensetzung und damit andere Stoffe beschreiben; sie bleiben erhalten."
+            }
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-b",
+              "revision": 1,
+              "kind": "numeric",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "Zweite Stoffmengenvariante",
+              "prompt": "Ein theoretischer Stofffall gibt m = 44 g und M = 44 g/mol vor. Berechne n.",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "formulaId": "chemistry-amount-rule",
+              "calculation": "amount",
+              "givens": [
+                {
+                  "id": "mass",
+                  "label": "Masse",
+                  "value": 44,
+                  "unit": "g",
+                  "quantity": "mass"
+                },
+                {
+                  "id": "molarMass",
+                  "label": "Vorgegebene molare Masse",
+                  "value": 44,
+                  "unit": "g/mol",
+                  "quantity": "molar-mass"
+                }
+              ],
+              "sought": "Zweite Stoffmengenvariante",
+              "quantity": "amount",
+              "answerUnit": "mol",
+              "absoluteToleranceSI": 1e-8,
+              "relativeTolerance": 0.0001,
+              "sourceIds": [
+                "openstax-chemistry-v05"
+              ],
+              "hint": "Prüfe die Teilchenart bzw. den Gesamtmassenbezug und kürze die Einheiten. Ein Index gilt nur für das zugehörige Elementsymbol.",
+              "steps": [
+                "\\(n=\\frac m M\\).",
+                "\\(n=\\frac{44\\,\\mathrm g}{44\\,\\mathrm{g/mol}}=1\\,\\mathrm{mol}\\)."
+              ],
+              "mistakes": [
+                "Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln.",
+                "Gramm und kg/mol ohne Umrechnung kombinieren."
+              ],
+              "assumptions": "Ausdrücklich vorgegebener gerundeter Modellwert; keine Hersteller-/Kältemittelzuordnung.",
+              "review": "calculation-tested-expert-review-pending",
+              "requiredCompetencyIds": [
+                "competency-fractions",
+                "competency-si-units",
+                "competency-amount"
+              ]
+            },
+            "expectedSI": 1
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-q3",
+              "revision": 1,
+              "kind": "choice",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "meister",
+              "title": "Welcher O₂-Koeffizient passt zur Bilanz CH₄ + … O₂ → CO₂ + 2 H₂O?",
+              "prompt": "Welcher O₂-Koeffizient passt zur Bilanz CH₄ + … O₂ → CO₂ + 2 H₂O?",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "options": [
+                {
+                  "id": "chemistry-amount-q3-option-0",
+                  "text": "2"
+                },
+                {
+                  "id": "chemistry-amount-q3-option-1",
+                  "text": "1"
+                },
+                {
+                  "id": "chemistry-amount-q3-option-2",
+                  "text": "4"
+                }
+              ],
+              "correctOptionId": "chemistry-amount-q3-option-0",
+              "explanation": "Rechts stehen zwei O-Atome im CO₂ und zwei weitere in zwei H₂O, insgesamt vier. Links liefern zwei O₂-Moleküle genau diese vier O-Atome; C und H sind ebenfalls ausgeglichen."
+            }
+          },
+          {
+            "item": {
+              "id": "chemistry-atoms-a",
+              "revision": 1,
+              "kind": "numeric",
+              "topicId": "chemistry-atoms",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "Sauerstoffatome in CO₂ zählen",
+              "prompt": "Wie viele O-Atome enthalten fünf CO₂-Moleküle? Der Index 2 gehört zu O.",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-atoms"
+              },
+              "formulaId": "chemistry-atom-count",
+              "calculation": "math-term",
+              "givens": [
+                {
+                  "id": "a",
+                  "label": "O-Atome pro Molekül",
+                  "value": 2,
+                  "unit": "1",
+                  "quantity": "number"
+                },
+                {
+                  "id": "x",
+                  "label": "Moleküle",
+                  "value": 5,
+                  "unit": "1",
+                  "quantity": "number"
+                },
+                {
+                  "id": "b",
+                  "label": "Zusätzlicher Summand",
+                  "value": 0,
+                  "unit": "1",
+                  "quantity": "number"
+                }
+              ],
+              "sought": "Sauerstoffatome in CO₂ zählen",
+              "quantity": "number",
+              "answerUnit": "1",
+              "absoluteToleranceSI": 1e-8,
+              "relativeTolerance": 0.0001,
+              "sourceIds": [
+                "openstax-chemistry-v05"
+              ],
+              "hint": "Prüfe die Teilchenart bzw. den Gesamtmassenbezug und kürze die Einheiten. Ein Index gilt nur für das zugehörige Elementsymbol.",
+              "steps": [
+                "Jedes \\(\\ce{CO2}\\)-Molekül enthält zwei O-Atome.",
+                "\\(N_{\\mathrm O}=2\\cdot5=10\\)."
+              ],
+              "mistakes": [
+                "Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln.",
+                "Gramm und kg/mol ohne Umrechnung kombinieren."
+              ],
+              "assumptions": "Abstrakte Teilchenzählung, keine Stoffmengen- oder Volumenmessung.",
+              "review": "calculation-tested-expert-review-pending",
+              "requiredCompetencyIds": [
+                "competency-algebra",
+                "competency-atoms"
+              ]
+            },
+            "expectedSI": 10
+          }
+        ],
+        "responses": {
+          "chemistry-amount-q1": {
+            "value": "chemistry-amount-q1-option-0",
+            "unit": ""
+          }
+        }
+      },
+      "examHistory": [
+        {
+          "id": "v05-historical-finished",
+          "domainId": "mathematik",
+          "level": "fachkraft",
+          "startedAt": "2026-10-28T10:00:00.000Z",
+          "finishedAt": "2026-10-28T10:01:00.000Z",
+          "timedOut": false,
+          "correctCount": 3,
+          "total": 6,
+          "scorePercent": 50,
+          "results": [
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-algebra-q1",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "math-algebra",
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "title": "Was ist 3x + 2x?",
+                  "prompt": "Was ist 3x + 2x?",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-algebra"
+                  },
+                  "options": [
+                    {
+                      "id": "math-algebra-q1-option-1",
+                      "text": "5x²"
+                    },
+                    {
+                      "id": "math-algebra-q1-option-2",
+                      "text": "6x"
+                    },
+                    {
+                      "id": "math-algebra-q1-option-0",
+                      "text": "5x"
+                    }
+                  ],
+                  "correctOptionId": "math-algebra-q1-option-0",
+                  "explanation": "Beide Summanden enthalten denselben Faktor x. Es werden die Anzahlen 3 und 2 addiert; es entsteht kein zusätzliches x und deshalb keine Potenz x²."
+                }
+              },
+              "answer": {
+                "value": "math-algebra-q1-option-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-fraction-add-a",
+                  "topicId": "math-fractions",
+                  "title": "Brüche addieren",
+                  "calculation": "math-fraction-add",
+                  "quantity": "number",
+                  "answerUnit": "1",
+                  "prompt": "Berechne 1/2 + 1/4. Ein einfacher Bruch oder eine Dezimalzahl ist möglich.",
+                  "sought": "Brüche addieren",
+                  "kind": "numeric",
+                  "revision": 1,
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-fractions"
+                  },
+                  "formulaId": "math-fraction-rule",
+                  "givens": [
+                    {
+                      "id": "n1",
+                      "label": "Zähler 1",
+                      "value": 1,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "d1",
+                      "label": "Nenner 1",
+                      "value": 2,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "n2",
+                      "label": "Zähler 2",
+                      "value": 1,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "d2",
+                      "label": "Nenner 2",
+                      "value": 4,
+                      "unit": "1",
+                      "quantity": "number"
+                    }
+                  ],
+                  "absoluteToleranceSI": 1e-8,
+                  "relativeTolerance": 0.000001,
+                  "sourceIds": [
+                    "openstax-prealgebra-v05"
+                  ],
+                  "hint": "Schreibe die passende Regel auf und kontrolliere Vorzeichen, Nenner und Umrechnungsrichtung. Lies bei Bedarf die verknüpfte Grundlagenlektion.",
+                  "steps": [
+                    "\\(\\frac12=\\frac24\\). Gleiche Teilgrößen herstellen.",
+                    "\\(\\frac24+\\frac14=\\frac34=0{,}75\\)."
+                  ],
+                  "mistakes": [
+                    "Die Reihenfolge oder die Bedeutung des Nenners übersehen.",
+                    "Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren."
+                  ],
+                  "assumptions": "Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.",
+                  "review": "calculation-tested-expert-review-pending",
+                  "requiredCompetencyIds": [
+                    "competency-fractions"
+                  ]
+                },
+                "expectedSI": 0.75
+              },
+              "answer": {
+                "value": "-1/2",
+                "unit": "1"
+              },
+              "grade": {
+                "status": "incorrect",
+                "correct": false,
+                "answerSI": -0.5,
+                "message": "Noch nicht richtig. Prüfe Umrechnung, Formel und eingesetzte Werte."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-algebra-q2",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "math-algebra",
+                  "domainId": "mathematik",
+                  "level": "fachkraft",
+                  "title": "Welche Form ist gleich 3(x + 2)?",
+                  "prompt": "Welche Form ist gleich 3(x + 2)?",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-algebra"
+                  },
+                  "options": [
+                    {
+                      "id": "math-algebra-q2-option-2",
+                      "text": "5x"
+                    },
+                    {
+                      "id": "math-algebra-q2-option-0",
+                      "text": "3x + 6"
+                    },
+                    {
+                      "id": "math-algebra-q2-option-1",
+                      "text": "3x + 2"
+                    }
+                  ],
+                  "correctOptionId": "math-algebra-q2-option-0",
+                  "explanation": "Der Faktor 3 multipliziert beide Summanden: 3 × x und 3 × 2. Die zweite Multiplikation darf beim Auflösen der Klammer nicht verloren gehen."
+                }
+              },
+              "answer": {
+                "value": "math-algebra-q2-option-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-fraction-div-a",
+                  "topicId": "math-fractions",
+                  "title": "Durch einen Bruch teilen",
+                  "calculation": "math-fraction-divide",
+                  "quantity": "number",
+                  "answerUnit": "1",
+                  "prompt": "Berechne 2/3 geteilt durch 4/5.",
+                  "sought": "Durch einen Bruch teilen",
+                  "kind": "numeric",
+                  "revision": 1,
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-fractions"
+                  },
+                  "formulaId": "math-fraction-divide",
+                  "givens": [
+                    {
+                      "id": "n1",
+                      "label": "Zähler 1",
+                      "value": 2,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "d1",
+                      "label": "Nenner 1",
+                      "value": 3,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "n2",
+                      "label": "Zähler 2",
+                      "value": 4,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "d2",
+                      "label": "Nenner 2",
+                      "value": 5,
+                      "unit": "1",
+                      "quantity": "number"
+                    }
+                  ],
+                  "absoluteToleranceSI": 1e-8,
+                  "relativeTolerance": 0.0001,
+                  "sourceIds": [
+                    "openstax-prealgebra-v05"
+                  ],
+                  "hint": "Schreibe die passende Regel auf und kontrolliere Vorzeichen, Nenner und Umrechnungsrichtung. Lies bei Bedarf die verknüpfte Grundlagenlektion.",
+                  "steps": [
+                    "Kehrwert des Divisors: \\(\\frac54\\).",
+                    "\\(\\frac23\\cdot\\frac54=\\frac{10}{12}=\\frac56\\)."
+                  ],
+                  "mistakes": [
+                    "Die Reihenfolge oder die Bedeutung des Nenners übersehen.",
+                    "Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren."
+                  ],
+                  "assumptions": "Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.",
+                  "review": "calculation-tested-expert-review-pending",
+                  "requiredCompetencyIds": [
+                    "competency-fractions"
+                  ]
+                },
+                "expectedSI": 0.8333333333333333
+              },
+              "answer": {
+                "value": "-1/2",
+                "unit": "1"
+              },
+              "grade": {
+                "status": "incorrect",
+                "correct": false,
+                "answerSI": -0.5,
+                "message": "Noch nicht richtig. Prüfe Umrechnung, Formel und eingesetzte Werte."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-arithmetic-q1",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "math-arithmetic",
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "title": "Was ist 3 + 2 × 4?",
+                  "prompt": "Was ist 3 + 2 × 4?",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-arithmetic"
+                  },
+                  "options": [
+                    {
+                      "id": "math-arithmetic-q1-option-1",
+                      "text": "20"
+                    },
+                    {
+                      "id": "math-arithmetic-q1-option-2",
+                      "text": "24"
+                    },
+                    {
+                      "id": "math-arithmetic-q1-option-0",
+                      "text": "11"
+                    }
+                  ],
+                  "correctOptionId": "math-arithmetic-q1-option-0",
+                  "explanation": "Die zwei Vierergruppen ergeben zuerst 8. Dann wird 3 addiert: 11. 20 gehört zur anders geklammerten Aufgabe (3 + 2) × 4."
+                }
+              },
+              "answer": {
+                "value": "math-arithmetic-q1-option-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-fraction-mul-a",
+                  "topicId": "math-fractions",
+                  "title": "Brüche multiplizieren",
+                  "calculation": "math-fraction-multiply",
+                  "quantity": "number",
+                  "answerUnit": "1",
+                  "prompt": "Berechne 2/3 × 3/4.",
+                  "sought": "Brüche multiplizieren",
+                  "kind": "numeric",
+                  "revision": 1,
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-fractions"
+                  },
+                  "formulaId": "math-fraction-multiply",
+                  "givens": [
+                    {
+                      "id": "n1",
+                      "label": "Zähler 1",
+                      "value": 2,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "d1",
+                      "label": "Nenner 1",
+                      "value": 3,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "n2",
+                      "label": "Zähler 2",
+                      "value": 3,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "d2",
+                      "label": "Nenner 2",
+                      "value": 4,
+                      "unit": "1",
+                      "quantity": "number"
+                    }
+                  ],
+                  "absoluteToleranceSI": 1e-8,
+                  "relativeTolerance": 0.000001,
+                  "sourceIds": [
+                    "openstax-prealgebra-v05"
+                  ],
+                  "hint": "Schreibe die passende Regel auf und kontrolliere Vorzeichen, Nenner und Umrechnungsrichtung. Lies bei Bedarf die verknüpfte Grundlagenlektion.",
+                  "steps": [
+                    "\\(\\frac23\\cdot\\frac34=\\frac6{12}\\).",
+                    "Zähler und Nenner durch 6: \\(\\frac12=0{,}5\\)."
+                  ],
+                  "mistakes": [
+                    "Die Reihenfolge oder die Bedeutung des Nenners übersehen.",
+                    "Vorzeichen, Prozentfaktor oder Einheit bei der Umrechnung verlieren."
+                  ],
+                  "assumptions": "Ausdrücklich vorgegebene Zahlen und Modelle. Reelle Schulmathematik; technische Beispiele sind fiktiv, keine praktischen Arbeitsanweisungen.",
+                  "review": "calculation-tested-expert-review-pending",
+                  "requiredCompetencyIds": [
+                    "competency-fractions"
+                  ]
+                },
+                "expectedSI": 0.5
+              },
+              "answer": {
+                "value": "-1/2",
+                "unit": "1"
+              },
+              "grade": {
+                "status": "incorrect",
+                "correct": false,
+                "answerSI": -0.5,
+                "message": "Noch nicht richtig. Prüfe Umrechnung, Formel und eingesetzte Werte."
+              }
+            }
+          ]
+        }
+      ],
+      "read": {
+        "math-fractions": {
+          "revision": 1,
+          "levels": [
+            "grundlagen"
+          ]
+        },
+        "chemistry-amount": {
+          "revision": 1,
+          "levels": [
+            "fachkraft"
+          ]
+        }
+      },
+      "answers": {
+        "math-fractions-q1": {
+          "optionId": "math-fractions-q1-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:00:00.000Z"
+        },
+        "math-algebra-q1": {
+          "optionId": "math-algebra-q1-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:01:00.000Z"
+        },
+        "math-algebra-q2": {
+          "optionId": "math-algebra-q2-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:01:00.000Z"
+        },
+        "math-arithmetic-q1": {
+          "optionId": "math-arithmetic-q1-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:01:00.000Z"
+        }
+      },
+      "reviews": {
+        "math-fractions-card1": {
+          "cardRevision": 1,
+          "repetitions": 1,
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z",
+          "lastReviewedAt": "2026-10-28T10:00:00.000Z"
+        }
+      },
+      "legacySummary": null,
+      "updatedAt": "2026-10-28T10:01:00.000Z"
+    },
+    "legacy": {
+      "read": [
+        "kreislauf"
+      ],
+      "attempts": 3,
+      "best": 75,
+      "last": 50
+    },
+    "legacyV2": null,
+    "settings": {}
+  }
+}

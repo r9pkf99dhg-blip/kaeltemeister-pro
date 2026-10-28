@@ -31,3 +31,28 @@ it("erklärt falsche Operationen und führt eine zweistufige Umstellung zur Prob
   ).toBeInTheDocument();
   expect(setProgress).toHaveBeenCalledTimes(3);
 });
+
+it("unterscheidet verlorene Lösungen von einer zulässigen vollständigen Lösung", async () => {
+  const user = userEvent.setup();
+  render(<RearrangementTrainer setProgress={vi.fn()} />);
+  await user.selectOptions(
+    screen.getByLabelText("Formel und Zielvariable"),
+    "zero-solutions",
+  );
+  await user.click(
+    screen.getByRole("radio", {
+      name: "Durch x teilen und nur x = 2 behalten",
+    }),
+  );
+  await user.click(screen.getByRole("button", { name: "Umformung prüfen" }));
+  expect(screen.getByRole("status")).toHaveTextContent("Verlorene Lösung");
+  await user.click(
+    screen.getByRole("radio", {
+      name: "Nullprodukt: beide Faktoren getrennt gleich null setzen",
+    }),
+  );
+  await user.click(screen.getByRole("button", { name: "Umformung prüfen" }));
+  expect(
+    screen.getByRole("heading", { name: "Probe durch Einsetzen" }),
+  ).toBeInTheDocument();
+});

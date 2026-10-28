@@ -1,3 +1,5 @@
+Aktueller Ergänzungsstand: [Version 0.6](RELEASE_V06.md). Historische Grundlagen und Zahlen beziehen sich gegebenenfalls auf die bezeichnete frühere Version.
+
 # Version 0.5 · Grundlagenakademie und mathematischer Formelsatz
 
 ## Ausgangslage und gesicherte Etappen

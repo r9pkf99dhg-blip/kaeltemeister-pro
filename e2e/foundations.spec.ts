@@ -19,7 +19,7 @@ test("Mathematik-Kernpfad speichert negative Bruchantworten und einen mehrstufig
     .getByLabel("Fachgebiet", { exact: true })
     .selectOption("mathematik");
   await expect(page.getByRole("status")).toContainText(
-    "8 verfügbare Lernmodule",
+    "16 verfügbare Lernmodule",
   );
   await page
     .getByRole("button", { name: /MATHEMATIK.*Brüche verstehen und berechnen/ })

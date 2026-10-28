@@ -1,3 +1,5 @@
+import { deepClaims } from "../academy/deep/claims";
+import { evidenceStatusNames } from "./evidence";
 import { trainerQuestions } from "../academy/foundations/trainer-data";
 import { articles, questions } from "../content";
 import {
@@ -67,7 +69,7 @@ const entry = (
     "Sind Quellen passend und ausreichend für die gesamte Aussage?",
   ],
   independentReviewer: null,
-  reviewedAt: "2026-10-27",
+  reviewedAt: "2026-10-28",
   ...partial,
 });
 const referencedSource = (ids: string[]) =>
@@ -104,6 +106,22 @@ const formulaSourceChecked = (id: string, ids: string[]) =>
   sourceReviewedFormulaIds.has(id) && referencedSource(ids);
 /** Explizite Abdeckung; ein Quellenlink allein setzt niemals den Status auf fachlich freigegeben. */
 export const reviewRegister: ReviewEntry[] = [
+  ...deepClaims.map((c) =>
+    entry(c.id, c.statement, "claim", c.domainId, {
+      status: c.checks.includes("sourced")
+        ? "sourced"
+        : c.checks.includes("calculated")
+          ? "automatic"
+          : "draft",
+      scope: `${c.section} Nachweise: ${c.checks.map((s) => evidenceStatusNames[s]).join(", ")}. Menschliche Fachfreigabe offen.`,
+      formulaIds: c.formulaIds,
+      sourceIds: [c.sourceId],
+      reference: c.statement,
+      assumptions: c.assumptions,
+      risks: [c.limitations],
+      reviewedAt: c.checkedAt,
+    }),
+  ),
   ...articles.map((a) =>
     entry(a.id, a.title, "article", "kaelte", {
       reference: a.sections.map((s) => `${s.title}: ${s.text}`).join("\n"),
@@ -196,7 +214,11 @@ export const reviewRegister: ReviewEntry[] = [
     entry(q.id, q.title, "trainer-question", "mathematik", {
       status: "automatic",
       formulaIds: q.formulaId ? [q.formulaId] : [],
-      sourceIds: ["openstax-prealgebra-v05"],
+      sourceIds: q.formulaId
+        ? (formulas.find((f) => f.id === q.formulaId)?.sourceIds ?? [
+            "openstax-prealgebra-v05",
+          ])
+        : ["openstax-prealgebra-v05"],
       reference: q.explanation,
       scope:
         "Umformung, Nullbedingungen und Zahlenproben automatisch geprüft; unabhängige menschliche Abnahme offen.",
@@ -212,7 +234,7 @@ export const reviewRegister: ReviewEntry[] = [
 ];
 export function reviewMarkdown() {
   return (
-    "# Fachliches Prüfregister · Version 0.5\n\nStand: 27.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.\n\n" +
+    "# Fachliches Prüfregister · Version 0.6\n\nStand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.\n\n" +
     reviewRegister
       .map(
         (e) =>

@@ -227,3 +227,17 @@ it("bewertet ältere Snapshots historisch, ohne aktuelle Statistiken zu übersch
   expect(finished.examHistory[0].correctCount).toBe(1);
   expect(finished.performance).toEqual({});
 });
+it("stellt den neuen Thermodynamikpfad auf jedem angebotenen Niveau mit beiden Fragetypen bereit", () => {
+  for (const level of ["grundlagen", "fachkraft", "meister"] as const) {
+    const exam = createExam(
+      emptyAcademy(),
+      "thermodynamik",
+      level,
+      5,
+      new Date(),
+      "thermo-level-" + level,
+    );
+    expect(exam.snapshots.some((s) => s.item.kind === "numeric")).toBe(true);
+    expect(exam.snapshots.some((s) => s.item.kind === "choice")).toBe(true);
+  }
+});
