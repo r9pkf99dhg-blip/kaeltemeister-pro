@@ -89,6 +89,7 @@ export interface Flashcard {
   sourceIds: string[];
 }
 export interface Term {
+  detail?:{simple:string;technical:string;unit:string;example:string;mistake:string;sourceIds:string[]};
   id: string;
   title: string;
   definition: string;

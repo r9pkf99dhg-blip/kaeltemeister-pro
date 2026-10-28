@@ -2,19 +2,27 @@
 
 ## Ausgangspunkt und Schutzregeln
 
-main `908993d` enthält 0.7 vollständig über PR #9 (`be809aa` ist Vorfahr). Baseline vom 28.10.2026: 410 Tests/31 Dateien, Typprüfung und Build erfolgreich. Neuer freigegebener Arbeitsbranch `feat/refrigeration-learning-v08`; main nicht direkt ändern, kein automatischer Merge, kein Force-Push, keine Branchlöschung. Vor Übernahme Lerndaten sichern. Originale 0.4-/0.5-/0.6-Fixtures bleiben erhalten; echte 0.7-Referenz ergänzen.
+main `908993d` enthält 0.7 vollständig über PR #9 (`be809aa` ist Vorfahr). Baseline vom 28.10.2026: 410 Tests/31 Dateien, Typprüfung und Build erfolgreich. Neuer freigegebener Arbeitsbranch `feat/refrigeration-mastery-v08`; main nicht direkt ändern, kein automatischer Merge, kein Force-Push, keine Branchlöschung. Vor Übernahme Lerndaten sichern. Originale 0.4-/0.5-/0.6-Fixtures bleiben erhalten; echte 0.7-Referenz ergänzen.
 
-Der hochgeladene 0.8-Auftrag endet mitten in Abschnitt 14.5. Rückfrage nach weiteren Anforderungen ist gestellt; bis zu einer Ergänzung wird der vollständig sichtbare Auftrag umgesetzt. Keine späteren unbekannten Anforderungen als erfüllt ausgeben.
+## Vollständiger verbindlicher Auftrag
 
-## Plan mit eigenständig prüfbaren Etappen
+Die vollständige 30-Abschnitt-Fassung aus `file_00000000aed481f48874f8d7bc6c389f` ersetzt den zuvor abgeschnittenen Auftrag vollständig. Am 28.10.2026 erneut bestätigt: main `908993d` enthält V0.7 über PR #9. Gemäß neuer Fassung wird ausschließlich auf `feat/refrigeration-mastery-v08` weitergearbeitet; der Vorarbeitsbranch bleibt erhalten und wird weder gelöscht noch in main gemergt. Bestehende Vorarbeiten werden nur übernommen, soweit sie dem neuen Auftrag entsprechen.
 
-1. **Abgeschlossen:** main/0.7 geprüft, Architektur/Labor/Werkstatt/Grader/Fortschritt/Backup gelesen, Baseline geprüft; Forschung-/Datenzugriff untersucht, diesen Wiederaufnahmepunkt sichern.
-2. **Abgeschlossen:** 422 Tests/32 Dateien, Typprüfung/Build grün. Acht Katalogfälle, 201 Sättigungsknoten, fünf Isothermen und drei Qualitätslinien als reproduzierbares 118685-Byte-Artefakt mit SHA256; getrennte Ancillary-/Clapeyron-/Phasentests. Details REFRIGERANT_DATA. CoolProp 7.2.0, HEOS::R134a, MIT und offizielles Quellarchiv `98b3523d5daa98454618d381d2ae53f7471d216b`: reproduzierbarer begrenzter Fallkatalog, reale Sättigungskurven/ausgewählte Isolinien, explizites IIR-Referenzniveau, Herkunft/Einheiten/Modell-/Gültigkeitsgrenzen. Keine freie browserseitige Zustandsberechnung, keine Stoffwertinterpolation/-extrapolation, kein Pflichtbackend und keine Stoffeinsatzempfehlung. Generatorprüfung gegen feste Quellanker, Invarianten/Flash-Rückrechnung; unabhängige externe Stoffwert-/Fachfreigabe offen halten.
-3. Gemeinsamer SI-Kreislaufkern, geprüfte Bilanz-/COP-Aufgaben, fachliche Begriffe/Lektionen/Sprachpaare und Verknüpfungen. Bestehende IDs/Engine weiterverwenden.
-4. Interaktiver Kreislauf und echtes log-p-h aus den erzeugten Daten: Komponenten/Zustände/Energie, absolute logarithmische Druckachse, Zoom/Verschieben/Touch/Tastatur, Zustandstabelle/Textalternative, Prozessauswahl, Vorhersage vor Änderung. Begrenzte Katalogauswahl klar benennen.
-5. Missionen und beobachtbare Übungsnachweise aus demselben Kompetenz-/Aufgabenkatalog; gestufte Hilfen, unabhängige Anwendung/Transfer und zeitlich bestätigte Wiederholung. Keine bloßen Öffnungs-/Zeitabzeichen, kein unbegrenztes XP-Farmen, keine erzwungenen Serien oder Inhaltssperren. Gamification reduzier-/abschaltbar.
-6. Flexible frei gewählte Sitzungen/Zeitorientierung, tatsächliche Ergebniszusammenfassung, optionale Pause, Fortsetzen und persönliche Empfehlungen über bestehende Fälligkeiten/Fehler/Voraussetzungen. Neue optionale Metadaten im bisherigen Fortschritts-/Backupvertrag validieren; Altstände nicht als unbekannte Selbstständigkeit umdeuten.
-7. Alle sinnvollen Unit-/Integration-/Inhalts-/Backupprüfungen, numerischen Referenzen, vollständige Chromium-Regression, tatsächliche WebKit-CI, Typprüfung/Build, Pages-Konfiguration, Dokumentation/Roadmap/PR. Keine behaupteten echten Apple-Gerätetests oder menschliche Fachfreigabe. Regelmäßig normal committen/pushen.
+## Neun verbindliche Phasen
+
+1. **Bestandsaufnahme/Forschung:** main/0.7 und echte Inhalte geprüft; Baseline 410 Tests/Typprüfung/Build grün. Neuer Auftrag vollständig gelesen, Quellenzugriff erneut für Dunlosky/Sailer/Bai geprüft (HTTP 403). LEARNING_SCIENCE dokumentiert Entwurfsprinzipien und ausdrücklich nicht verifizierte Originalstudienbefunde. Bestehende Stoffdaten-Vorarbeiten sind konsistenzgeprüfte Referenzdaten, kein Nachweis eines freien Browser-Stoffdatenkerns.
+2. **Offen – Mastery:** optionale Motivationsmodi, freie Ziele, aus vorhandenen Aufgaben/Kompetenzen abgeleitete Stufen/Abzeichen; nur fehlende zeitliche Metadaten ergänzen. Keine erfundenen Nachweise aus Altständen.
+3. **Offen – Fachmissionen:** kurze/Standard-/Vertiefungsmissionen, bestehende Inhalte referenzieren, tatsächliche Abschlussregeln. Vollständiger sechsteiliger Kreisprozesspfad, dazu Wärme/Elektro-Missionen.
+4. **Offen – Dashboard/Wiedereinstieg:** eine nächste Aktion, sechs Fachbereiche mit beobachtbaren Stufen, nachvollziehbare Sitzungsergebnisse, Fortsetzen, freiwilliger Fokus/Pausenhinweis.
+5. **Offen – qualitativer Kreislauf:** Komponenten 1–4, Druck-/Energiepfade, Sprachebenen, schrittweise Interaktion/Textalternative, pausierbare/reduzierbare dezente Bewegung. Modell A klar ohne erfundene Zahlen.
+6. **Offen – Stoffdaten-Machbarkeit:** offizielles CoolProp-JavaScript/WASM prüfen, Lizenz/Modell/Referenz/Grenzen, Browser-/Pages-PoC. Erst nach Prüfung aktive quantitative Ansicht. Vorarbeiten: acht gepinnte HEOS::R134a/IIR-Fälle, 201 Sättigungsknoten, fünf Isothermen/Qualitätslinien, SHA256 und unabhängige Ancillary-/Clapeyron-/Bilanzprüfungen. 422 Tests/32 Dateien für Datenphase, 438/33 für Bilanzkern waren grün. Das ersetzt keine unabhängige experimentelle Stoffmodellvalidierung. Ggf. klar abgegrenztes Referenzbeispiel und vorbereitete Schnittstelle (Modell B), freie Liveberechnung C offen lassen.
+7. **Offen – log-p-h/Bilanz:** nur verlässliche tatsächliche Stoffdaten, absolute logarithmische p-Achse, h in kJ/kg, vier Zustände, Bilanz/COP und konkrete Modellgrenzen, interaktive zugängliche Diagrammaufgaben.
+8. **Offen – Integration/Qualität:** Lernbrücke 4.0, Werkstatt/Rechenblatt, Sprache, Missionen, sichere optionale Datenfelder, echte alte Backups 0.4–0.7; Performance, A11y, vollständige Chromium-/WebKit-Regression. Keine menschliche Fachfreigabe/echte Apple-Tests behaupten.
+9. **Offen – Abschluss/PR:** Dokumentation/Roadmap/25-Punkte-Releasebericht, aktuelle GitHub-Checks, PR gegen main versuchen. API bisher 403: bei Bedarf vollständig gepushter Branch, Vergleichslink, vorbereitete PR-Beschreibung und genaue iPad-Schritte. Kein automatischer Merge.
+
+## Vorarbeiten erhalten
+
+Commits `73a92cc` (alte Baseline/Recherche) und `3a79b44` (reproduzierbare Daten) stammen aus der anfänglichen Vorbereitung und sind auch im neuen Branch vorhanden. Die nicht eingebundenen Bilanz-/Inhaltsentwürfe werden jetzt am vollständigen Auftrag geprüft. 0.7-Funktionen bleiben maßgeblich; keine zweite Physik-, Fortschritts- oder Kompetenzdatenbank aufbauen.
 
 ## Tatsächlicher Quellenzugriff
 

@@ -1,0 +1,14 @@
+{
+  "refrig-basis-q0-v08": 152308.38977202965,
+  "refrig-basis-w-v08": 31735.29605590105,
+  "refrig-basis-cop-v08": 4.799337290055264,
+  "refrig-basis-power-v08": 7615.419488601483,
+  "refrig-kuehlraum-q0-v08": 151027.09806049085,
+  "refrig-kuehlraum-w-v08": 30571.16573992875,
+  "refrig-kuehlraum-cop-v08": 4.940181193785345,
+  "refrig-kuehlraum-power-v08": 7551.354903024543,
+  "refrig-transfer-q0-v08": 157426.91862395007,
+  "refrig-transfer-w-v08": 23035.0982892501,
+  "refrig-transfer-cop-v08": 6.834219530872037,
+  "refrig-transfer-power-v08": 7871.345931197504
+}
