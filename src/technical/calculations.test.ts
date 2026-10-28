@@ -11,6 +11,19 @@ import { calculateHeat } from "../logic";
 
 // Unabhängig vorgegebene Referenzergebnisse, nicht mit der Produktfunktion erzeugt.
 const references: Record<string, number> = {
+  "ac-period-a": 0.02,
+  "ac-rms-a": 70.71067811865476,
+  "ac-xl-a": 31.41592653589793,
+  "ac-xc-a": 31.830988618379067,
+  "ac-z-a": 50,
+  "ac-s-a": 200,
+  "ac-p-a": 120,
+  "ac-q-a": 160,
+  "ac-factor-a": 0.6,
+  "ac-star-a": 173.20508075688772,
+  "ac-delta-a": 3.4641016151377544,
+  "ac-three-a": 5542.562584220407,
+
   "geo-area-a": 0.0003141592653589793,
   "geo-ring-a": 0.0001382300767579509,
   "geo-volume-a": 0.0031415926535897933,

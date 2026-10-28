@@ -10,3 +10,19 @@ test('Geometriepfad und Winkelrechnung bleiben auf kleinen Bildschirmen lesbar',
  await expect(page.locator('.math-error')).toHaveCount(0);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
+test('Wechselstromdiagramm und Drehstromaufgabe unterscheiden Leitergrößen',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Akademie',exact:true}).click();
+ await page.getByLabel('Fachgebiet',{exact:true}).selectOption('elektro');
+ await page.getByRole('button',{name:/ELEKTRO.*Wechselstrom: Sinus, Zeit und Effektivwert/}).click();
+ await page.getByLabel('Strom nacheilend um',{exact:true}).selectOption('90');
+ await expect(page.getByRole('img',{name:'Normierte Spannung und um 90 Grad nacheilender Strom'})).toBeVisible();
+ await page.getByRole('button',{name:'Zur Modulübersicht',exact:true}).click();
+ await page.getByRole('button',{name:/ELEKTRO.*Drehstrom: Leiter-, Stranggrößen und Leistung/}).click();
+ await expect(page.getByRole('img',{name:'Drei normierte Sinusspannungen mit 120 Grad Phasenabstand'})).toBeVisible();
+ await page.getByLabel('Aufgabe wählen',{exact:true}).selectOption('ac-three-a');
+ await page.getByLabel('Dein Ergebnis: Symmetrische Dreiphasen-Wirkleistung',{exact:true}).fill('5542,56');
+ await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();
+ await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
+ await expect(page.locator('.math-error')).toHaveCount(0);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

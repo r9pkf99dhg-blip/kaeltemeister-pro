@@ -25,9 +25,14 @@ export const competencies: Competency[] = [
   ["trigonometry", "Winkel und Trigonometrie", "math-trigonometry"],
   ["domains", "Definitionsbereiche", "math-domains"],
   ["functions", "Kennlinien und Funktionen", "math-functions"],
+  ["ac-rms", "Effektivwert und Sinus", "electric-ac-wave"],
+  ["ac-reactance", "Impedanz und Phasenlage", "electric-ac-reactance"],
+  ["power-factor", "Leistungsarten im Sinusmodell", "electric-ac-power"],
+  ["three-phase", "Leiter- und Stranggrößen", "electric-three-phase"],
   ["dc-electric", "Gleichstromleistung", "electric-work"],
 ].map(([id, title, lessonId]) => ({ id: `competency-${id}`, title, lessonId }));
 const byCalculation: Record<string, string[]> = {
+ 'ac-period':['ac-rms','fractions'],'ac-rms':['ac-rms','powers'],'ac-xl':['ac-reactance','si-units'],'ac-xc':['ac-reactance','si-units','fractions'],'ac-impedance':['ac-reactance','powers'],'ac-apparent':['power-factor','si-units'],'ac-real':['power-factor','ac-rms'],'ac-reactive':['power-factor','trigonometry'],'ac-factor':['power-factor','fractions'],'ac-star-voltage':['three-phase','trigonometry'],'ac-delta-current':['three-phase','trigonometry'],'ac-three-power':['three-phase','power-factor'],
  "circle-area":["geometry","si-units"],"annulus-area":["geometry","si-units"],"cylinder-volume":["geometry","si-units"],"cylinder-surface":["geometry","si-units"],"pythagoras":["geometry","powers"],"triangle-side":["trigonometry","si-units"],"slope-angle":["trigonometry","percent"],"linear-system-x":["equations","domains"],"quadratic-larger-root":["powers","domains"],"interpolation":["functions"],"logarithm":["functions","powers"],
   heat: ["arithmetic", "si-units", "heat"],
   "mass-flow": ["fractions", "rearrangement", "si-units", "heat"],

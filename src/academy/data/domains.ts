@@ -482,3 +482,9 @@ domains.push({
 mathDomain.chapters.push({id:"mathematik-vertiefung-v06",title:"Geometrie und Algebra vertiefen",subchapters:[{id:"mathematik-geometrie-v06",title:"Geometrie und Trigonometrie",moduleIds:["math-geometry","math-pipe-volume","math-triangles","math-trigonometry"],plannedTopics:[]},{id:"mathematik-algebra-v06",title:"Gleichungen und Funktionen",moduleIds:["math-domains","math-systems-quadratic","math-functions"],plannedTopics:["Weitere nichtlineare Systeme und vertiefte Analysis"]}]});
 mathDomain.description="Grundlagen, technische Geometrie, Trigonometrie und vertiefte Algebra mit Modellgrenzen.";
 mathDomain.chapters[0].subchapters[1].plannedTopics=[];
+
+electricDomain.description="Fünf Gleichstrom-Grundlagenmodule sowie vier vertiefte Wechsel- und Drehstrommodule.";
+electricDomain.chapters[0].subchapters[1].moduleIds=["electric-ac-wave","electric-ac-reactance","electric-ac-power"];
+electricDomain.chapters[0].subchapters[1].plannedTopics=[];
+electricDomain.chapters[1].subchapters[0].moduleIds=["electric-three-phase"];
+electricDomain.chapters[1].subchapters[0].plannedTopics=["Drehfeld, Asynchronmotor, Schlupf und reale Motorkennlinien"];

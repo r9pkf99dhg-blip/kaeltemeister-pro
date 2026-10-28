@@ -14,7 +14,7 @@ import { levels } from "./model";
 
 it("enthält vierzehn strukturierte Fachgebiete, ausgearbeitete Module und stabile eindeutige IDs", () => {
   expect(domains).toHaveLength(14);
-  expect(modules).toHaveLength(32);
+  expect(modules).toHaveLength(36);
   const allIds = [
     ...domains,
     ...domains.flatMap((domain) => domain.chapters),

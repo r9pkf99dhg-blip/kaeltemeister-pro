@@ -1,3 +1,5 @@
+import { electrical_lessons } from "./deep/electrical-lessons";
+import { electrical_formulas } from "./deep/electrical-formulas";
 import { math_lessons } from "./deep/math-lessons";
 import { math_formulas } from "./deep/math-formulas";
 import { deepSources } from "./deep/sources";
@@ -20,6 +22,7 @@ const foundationLessons = [
   ...physicsLessons,
   ...chemistryLessons,
   ...math_lessons,
+  ...electrical_lessons,
 ];
 import { formulaNotation } from "../math/notation";
 export { domains } from "./data/domains";
@@ -79,6 +82,7 @@ export const formulas = [
   ...physicsFormulas,
   ...chemistryFormulas,
   ...math_formulas,
+  ...electrical_formulas,
 ].map((formula) => ({
   ...formula,
   tex: formula.tex ?? formulaNotation[formula.id],

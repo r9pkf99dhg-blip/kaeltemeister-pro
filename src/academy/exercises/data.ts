@@ -1,3 +1,4 @@
+import { electrical_tasks } from "../deep/electrical-tasks";
 import { math_tasks } from "../deep/math-tasks";
 import { taskCompetencies } from "../foundations/competencies";
 import { chemistryTasks } from "../foundations/chemistry-tasks";
@@ -421,6 +422,7 @@ numericTasks.push(...physicsTasks);
 
 numericTasks.push(...chemistryTasks);
 numericTasks.push(...math_tasks);
+numericTasks.push(...electrical_tasks);
 
 for (const task of numericTasks)
   task.requiredCompetencyIds = taskCompetencies(task);

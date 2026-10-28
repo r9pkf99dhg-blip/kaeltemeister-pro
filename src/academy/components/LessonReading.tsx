@@ -1,3 +1,4 @@
+import Diagrams from "../deep/Diagrams";
 import { ArrowRight } from "lucide-react";
 import { formulas } from "../catalog";
 import type { Module, Level } from "../model";
@@ -93,6 +94,7 @@ export default function LessonReading({
           ))}
         </ul>
       </section>
+      <Diagrams moduleId={module.id} />
       <section className="takeaway">
         <Heading>Zusammenfassung</Heading>
         <p>

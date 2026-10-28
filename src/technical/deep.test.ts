@@ -34,3 +34,27 @@ it('unterscheidet Quadrat-/Kubikvorsilben und Grad/Bogenmaß',()=>{
  expect(toSI(180,'°','angle')).toBeCloseTo(Math.PI,12);
  expect(fromSI(Math.PI/6,'°','angle')).toBeCloseTo(30,12);
 });
+it('prüft Sinusmittel, Leistung und dreiphasige Zeiger unabhängig',()=>{
+ // Numerische Periodenintegration als unabhängige Kontrolle der analytischen Formeln.
+ const N=3600,phi=Math.acos(.6);let square=0,power=0;
+ for(let i=0;i<N;i++){const t=2*Math.PI*i/N;const u=100*Math.SQRT2*Math.sin(t),j=2*Math.SQRT2*Math.sin(t-phi);square+=u*u/N;power+=u*j/N;}
+ expect(Math.sqrt(square)).toBeCloseTo(100,8);expect(power).toBeCloseTo(120,8);
+ expect(calculateDeep('ac-real',{voltage:100,current:2,factor:.6})).toBeCloseTo(power,8);
+ expect(calculateDeep('ac-reactive',{voltage:100,current:2,factor:.6})).toBeCloseTo(160,10);
+ expect(120**2+160**2).toBe(200**2);
+ const ux=100-100*Math.cos(2*Math.PI/3),uy=-100*Math.sin(2*Math.PI/3);
+ expect(Math.hypot(ux,uy)).toBeCloseTo(calculateDeep('ac-star-voltage',{phaseVoltage:100}),10);
+ expect(calculateDeep('ac-three-power',{voltage:100*Math.sqrt(3),current:2,factor:.6})).toBeCloseTo(3*100*2*.6,10);
+ expect(calculateDeep('ac-delta-current',{phaseCurrent:2/Math.sqrt(3)})).toBeCloseTo(2,10);
+ for(const phi of [0,.3,1])expect(Math.sin(phi)+Math.sin(phi-2*Math.PI/3)+Math.sin(phi-4*Math.PI/3)).toBeCloseTo(0,12);
+});
+it('bewahrt elektrische Einheiten und Grenzen des Sinusmodells',()=>{
+ expect(toSI(100,'µF','capacitance')).toBe(.0001);
+ expect(toSI(100,'mH','inductance')).toBe(.1);
+ expect(toSI(1,'kVA','apparent-power')).toBe(1000);
+ expect(()=>toSI(1,'VA','power')).toThrow();expect(()=>toSI(1,'W','reactive-power')).toThrow();
+ expect(()=>calculateDeep('ac-xc',{frequency:0,capacitance:1})).toThrow();
+ expect(()=>calculateDeep('ac-real',{voltage:100,current:2,factor:1.1})).toThrow();
+ expect(()=>calculateDeep('ac-factor',{power:201,apparent:200})).toThrow();
+ expect(calculateDeep('ac-reactive',{voltage:100,current:2,factor:1})).toBe(0);
+});

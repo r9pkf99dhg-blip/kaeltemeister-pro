@@ -1,11 +1,21 @@
 /** Geprüfte SI-Lehrmodelle; verwendbar von Aufgaben und späteren Rechnern. Kein eval/CAS. */
-export const deepKinds = ['circle-area','annulus-area','cylinder-volume','cylinder-surface','pythagoras','triangle-side','slope-angle','linear-system-x','quadratic-larger-root','interpolation','logarithm'] as const;
+export const deepKinds = ['ac-period','ac-rms','ac-xl','ac-xc','ac-impedance','ac-apparent','ac-real','ac-reactive','ac-factor','ac-star-voltage','ac-delta-current','ac-three-power','circle-area','annulus-area','cylinder-volume','cylinder-surface','pythagoras','triangle-side','slope-angle','linear-system-x','quadratic-larger-root','interpolation','logarithm'] as const;
 export type DeepKind = typeof deepKinds[number];
 export function calculateDeep(kind: DeepKind, values: Record<string,number>):number {
  const n=(id:string)=>{const v=values[id];if(!Number.isFinite(v))throw new Error('Fehlender oder nicht endlicher Wert.');return v;};
  const p=(id:string,zero=false)=>{const v=n(id);if(v<0||(!zero&&v===0))throw new Error('Positive Größe erforderlich.');return v;};
  let r:number;
  switch(kind){
+ case 'ac-period':r=1/p('frequency');break;
+ case 'ac-rms':r=p('peak',true)/Math.SQRT2;break;
+ case 'ac-xl':r=2*Math.PI*p('frequency')*p('inductance');break;
+ case 'ac-xc':r=1/(2*Math.PI*p('frequency')*p('capacitance'));break;
+ case 'ac-impedance':r=Math.hypot(p('resistance',true),p('xl',true)-p('xc',true));break;
+ case 'ac-apparent':r=p('voltage',true)*p('current',true);break;
+ case 'ac-real':case 'ac-reactive':case 'ac-three-power':{const f=p('factor',true);if(f>1)throw new Error('Leistungsfaktor außerhalb 0 bis 1.');r=p('voltage',true)*p('current',true)*(kind==='ac-reactive'?Math.sqrt((1-f)*(1+f)):f)*(kind==='ac-three-power'?Math.sqrt(3):1);break;}
+ case 'ac-factor':r=p('power',true)/p('apparent');if(r>1)throw new Error('Wirkleistung über Scheinleistung passt nicht zum Modell.');break;
+ case 'ac-star-voltage':r=Math.sqrt(3)*p('phaseVoltage',true);break;
+ case 'ac-delta-current':r=Math.sqrt(3)*p('phaseCurrent',true);break;
  case 'circle-area':r=Math.PI*p('diameter')**2/4;break;
  case 'annulus-area':{const d=p('outer'),i=p('inner',true);if(i>=d)throw new Error('Innendurchmesser muss kleiner sein.');r=Math.PI*(d-i)*(d+i)/4;break;}
  case 'cylinder-volume':r=Math.PI*p('diameter')**2*p('length')/4;break;

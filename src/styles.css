@@ -2562,3 +2562,6 @@ progress::-moz-progress-bar {
 .foundation-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1rem; }
 .foundation-actions .button { flex: 1 1 12rem; white-space: normal; }
 .task-solution details { margin-block: .4rem; }
+
+.technical-diagrams svg { display:block; width:100%; max-width:36rem; height:auto; margin:1rem auto; }
+.technical-diagrams select { margin:.5rem; }

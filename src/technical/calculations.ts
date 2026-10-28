@@ -53,7 +53,8 @@ export type Quantity =
   | "speed"
   | "amount"
   | "molar-mass"
-  | "angle";
+  | "angle"
+  | "frequency" | "inductance" | "capacitance" | "apparent-power" | "reactive-power";
 export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
@@ -75,6 +76,11 @@ export const units: Record<Quantity, string[]> = {
   length: ["m", "cm", "mm", "km"],
   area: ["m²", "cm²", "mm²"],
   angle: ["rad", "°"],
+  frequency: ["Hz", "kHz"],
+  inductance: ["H", "mH"],
+  capacitance: ["F", "µF"],
+  "apparent-power": ["VA", "kVA"],
+  "reactive-power": ["var", "kvar"],
   volume: ["m³", "L", "cm³"],
   pressure: ["Pa", "kPa", "bar"],
   density: ["kg/m³"],
@@ -86,6 +92,9 @@ export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (!Number.isFinite(value) || !units[quantity].includes(unit))
     throw new Error("Ungültiger Zahlenwert oder unpassende Einheit.");
   let result = value;
+  if (["kHz", "kVA", "kvar"].includes(unit)) result *= 1000;
+  if (unit === "mH") result /= 1000;
+  if (unit === "µF") result /= 1000000;
   if (unit === "°") result *= Math.PI / 180;
   if (unit === "mm²" || unit === "cm³") result /= 1000000;
   if (unit === "%") result /= 100;
@@ -116,6 +125,9 @@ export function fromSI(
 ): number {
   if (!units[quantity].includes(unit) || !Number.isFinite(value))
     throw new Error("Unpassende Einheit.");
+  if (["kHz", "kVA", "kvar"].includes(unit)) return value / 1000;
+  if (unit === "mH") return value * 1000;
+  if (unit === "µF") return value * 1000000;
   if (unit === "°") return value * 180 / Math.PI;
   if (unit === "mm²" || unit === "cm³") return value * 1000000;
   if (unit === "%") return value * 100;
