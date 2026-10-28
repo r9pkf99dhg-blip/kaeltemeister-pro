@@ -54,7 +54,7 @@ it("weist Nullnenner, nicht endliche Werte und nicht reelle Wurzeln zurück", ()
   ).toThrow();
 });
 it("sichert sämtliche im Umstellungstrainer verwendeten Proben unabhängig ab", () => {
-  expect(rearrangementCases).toHaveLength(11);
+  expect(rearrangementCases).toHaveLength(15);
   expect(120 * 0.2).toBe(24);
   expect(24 * 2).toBe(48);
   expect(1 * 4180 * 10).toBe(41800);

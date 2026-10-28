@@ -56,6 +56,7 @@ export default function RearrangementTrainer({
       </p>
       <BlockMath tex={step.before} />
       <p>{current.assumption}</p>
+      <details key={`${id}-${index}`}><summary>Hilfestufe: Was muss erhalten bleiben?</summary><p>{step.reason}</p><p>Nach jedem Schritt bleibt die Gleichheit auf dem angegebenen Definitionsbereich erhalten. Am Ende in die Originalgleichung einsetzen.</p></details>
       <fieldset>
         <legend>Welche Operation führt zum Ziel?</legend>
         {[...task.options]
@@ -95,7 +96,7 @@ export default function RearrangementTrainer({
           <p>
             {correct
               ? "Richtig."
-              : "Noch nicht richtig. Eine Operation nur auf einer Seite verändert die Gleichheit. Prüfe außerdem, ob die Operation den gesuchten Faktor wirklich isoliert."}
+              : `Noch nicht richtig. ${step.wrongFeedback?.[answer === "wrong-side" ? 0 : 1] ?? "Diese Operation isoliert die gesuchte Größe nicht gleichwertig auf beiden Seiten. Prüfe die genannte Nullbedingung und die Umkehroperation."}`}
           </p>
           <p>{step.reason}</p>
           {correct && (

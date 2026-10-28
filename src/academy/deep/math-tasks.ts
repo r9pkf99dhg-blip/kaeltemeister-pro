@@ -1,0 +1,671 @@
+import type { NumericTask } from "../exercises/model";
+export const math_tasks: NumericTask[] = [
+  {
+    "id": "geo-area-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-geometry",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Innerer Rohrquerschnitt",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Innerer Rohrquerschnitt.",
+    "article": {
+      "kind": "module",
+      "id": "math-geometry"
+    },
+    "formulaId": "geo-circle",
+    "calculation": "circle-area",
+    "givens": [
+      {
+        "id": "diameter",
+        "label": "Innendurchmesser",
+        "value": 20,
+        "unit": "mm",
+        "quantity": "length"
+      }
+    ],
+    "sought": "Innerer Rohrquerschnitt",
+    "quantity": "area",
+    "answerUnit": "mm²",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(d_i=0{,}020\\,\\mathrm m\\).",
+      "\\(A=\\frac\\pi4\\cdot0{,}020^2=0{,}000314159\\,\\mathrm{m^2}\\approx314{,}159\\,\\mathrm{mm^2}\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "geo-ring-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-geometry",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Materialquerschnitt eines Rohres",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Materialquerschnitt eines Rohres.",
+    "article": {
+      "kind": "module",
+      "id": "math-geometry"
+    },
+    "formulaId": "geo-annulus",
+    "calculation": "annulus-area",
+    "givens": [
+      {
+        "id": "outer",
+        "label": "Außendurchmesser",
+        "value": 24,
+        "unit": "mm",
+        "quantity": "length"
+      },
+      {
+        "id": "inner",
+        "label": "Innendurchmesser",
+        "value": 20,
+        "unit": "mm",
+        "quantity": "length"
+      }
+    ],
+    "sought": "Materialquerschnitt eines Rohres",
+    "quantity": "area",
+    "answerUnit": "mm²",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(d_a=0{,}024\\,\\mathrm m,\\ d_i=0{,}020\\,\\mathrm m\\).",
+      "\\(A_R=\\frac\\pi4(0{,}024^2-0{,}020^2)=0{,}000138230\\,\\mathrm{m^2}\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "geo-volume-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-pipe-volume",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Geometrischer Rohrinhalt",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Geometrischer Rohrinhalt.",
+    "article": {
+      "kind": "module",
+      "id": "math-pipe-volume"
+    },
+    "formulaId": "geo-volume",
+    "calculation": "cylinder-volume",
+    "givens": [
+      {
+        "id": "diameter",
+        "label": "Innendurchmesser",
+        "value": 20,
+        "unit": "mm",
+        "quantity": "length"
+      },
+      {
+        "id": "length",
+        "label": "Rohrlänge",
+        "value": 10,
+        "unit": "m",
+        "quantity": "length"
+      }
+    ],
+    "sought": "Geometrischer Rohrinhalt",
+    "quantity": "volume",
+    "answerUnit": "L",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(A_i=\\frac\\pi4\\cdot0{,}020^2\\,\\mathrm{m^2}\\).",
+      "\\(V=A_i\\cdot10\\,\\mathrm m=0{,}00314159\\,\\mathrm{m^3}=3{,}14159\\,\\mathrm L\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "geo-surface-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-pipe-volume",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Äußere Mantelfläche",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Äußere Mantelfläche.",
+    "article": {
+      "kind": "module",
+      "id": "math-pipe-volume"
+    },
+    "formulaId": "geo-surface",
+    "calculation": "cylinder-surface",
+    "givens": [
+      {
+        "id": "diameter",
+        "label": "Außendurchmesser",
+        "value": 24,
+        "unit": "mm",
+        "quantity": "length"
+      },
+      {
+        "id": "length",
+        "label": "Rohrlänge",
+        "value": 10,
+        "unit": "m",
+        "quantity": "length"
+      }
+    ],
+    "sought": "Äußere Mantelfläche",
+    "quantity": "area",
+    "answerUnit": "m²",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(d_a=0{,}024\\,\\mathrm m\\).",
+      "\\(A_M=\\pi\\cdot0{,}024\\cdot10\\approx0{,}753982\\,\\mathrm{m^2}\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung. Nur äußerer Mantel.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "geo-diagonal-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-triangles",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Montagediagonale im rechten Winkel",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Montagediagonale im rechten Winkel.",
+    "article": {
+      "kind": "module",
+      "id": "math-triangles"
+    },
+    "formulaId": "geo-pythagoras",
+    "calculation": "pythagoras",
+    "givens": [
+      {
+        "id": "a",
+        "label": "Horizontale Kathete",
+        "value": 3,
+        "unit": "m",
+        "quantity": "length"
+      },
+      {
+        "id": "b",
+        "label": "Vertikale Kathete",
+        "value": 4,
+        "unit": "m",
+        "quantity": "length"
+      }
+    ],
+    "sought": "Montagediagonale im rechten Winkel",
+    "quantity": "length",
+    "answerUnit": "m",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(c^2=3^2+4^2=25\\,\\mathrm{m^2}\\).",
+      "\\(c=5\\,\\mathrm m\\), statt 7 m Weg entlang der Schenkel."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "geo-height-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-trigonometry",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Höhe aus Winkel und horizontaler Strecke",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Höhe aus Winkel und horizontaler Strecke.",
+    "article": {
+      "kind": "module",
+      "id": "math-trigonometry"
+    },
+    "formulaId": "geo-trig",
+    "calculation": "triangle-side",
+    "givens": [
+      {
+        "id": "adjacent",
+        "label": "Horizontale Strecke",
+        "value": 4,
+        "unit": "m",
+        "quantity": "length"
+      },
+      {
+        "id": "angle",
+        "label": "Winkel",
+        "value": 30,
+        "unit": "°",
+        "quantity": "angle"
+      }
+    ],
+    "sought": "Höhe aus Winkel und horizontaler Strecke",
+    "quantity": "length",
+    "answerUnit": "m",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(30^\\circ=\\frac\\pi6\\,\\mathrm{rad}\\).",
+      "\\(h=4\\tan(\\frac\\pi6)\\approx2{,}30940\\,\\mathrm m\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "geo-angle-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-trigonometry",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Winkel aus einer Steigung",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Winkel aus einer Steigung.",
+    "article": {
+      "kind": "module",
+      "id": "math-trigonometry"
+    },
+    "formulaId": "geo-slope",
+    "calculation": "slope-angle",
+    "givens": [
+      {
+        "id": "height",
+        "label": "Höhenunterschied als Betrag",
+        "value": 3,
+        "unit": "m",
+        "quantity": "length"
+      },
+      {
+        "id": "horizontal",
+        "label": "Horizontale Strecke",
+        "value": 4,
+        "unit": "m",
+        "quantity": "length"
+      }
+    ],
+    "sought": "Winkel aus einer Steigung",
+    "quantity": "angle",
+    "answerUnit": "°",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(s=\\frac34=0{,}75\\).",
+      "\\(\\alpha=\\arctan(0{,}75)=0{,}643501\\,\\mathrm{rad}\\approx36{,}8699^\\circ\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reine Geometrie, kein Nachweis hydraulischer oder kältetechnischer Dimensionierung.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "alg-domain-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-domains",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Bruchgleichung 6 geteilt durch x minus 1",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Bruchgleichung 6 geteilt durch x minus 1.",
+    "article": {
+      "kind": "module",
+      "id": "math-domains"
+    },
+    "formulaId": "algebra-domain",
+    "calculation": "math-linear",
+    "givens": [
+      {
+        "id": "a",
+        "label": "Koeffizient nach Beseitigen des Nenners",
+        "value": 3,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "b",
+        "label": "Konstantes Glied nach Ausmultiplizieren",
+        "value": -3,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "c",
+        "label": "Rechte Seite",
+        "value": 6,
+        "unit": "1",
+        "quantity": "number"
+      }
+    ],
+    "sought": "Bruchgleichung 6 geteilt durch x minus 1",
+    "quantity": "number",
+    "answerUnit": "1",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "Original: \\(\\frac6{x-1}=3\\), Bereich \\(x\\ne1\\). Daraus \\(6=3x-3\\).",
+      "\\(x=3\\); Probe \\(6/(3-1)=3\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Die gegebenen Koeffizienten beschreiben die umgeformte lineare Gleichung; Originalbedingung x ≠ 1 bleibt bestehen.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "alg-system-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-systems-quadratic",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Lineares System: x aus x+y=5 und 2x−y=1",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Lineares System: x aus x+y=5 und 2x−y=1.",
+    "article": {
+      "kind": "module",
+      "id": "math-systems-quadratic"
+    },
+    "formulaId": "algebra-system",
+    "calculation": "linear-system-x",
+    "givens": [
+      {
+        "id": "a",
+        "label": "x-Koeffizient Gleichung 1",
+        "value": 1,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "b",
+        "label": "y-Koeffizient Gleichung 1",
+        "value": 1,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "c",
+        "label": "Rechte Seite Gleichung 1",
+        "value": 5,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "d",
+        "label": "x-Koeffizient Gleichung 2",
+        "value": 2,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "e",
+        "label": "y-Koeffizient Gleichung 2",
+        "value": -1,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "f",
+        "label": "Rechte Seite Gleichung 2",
+        "value": 1,
+        "unit": "1",
+        "quantity": "number"
+      }
+    ],
+    "sought": "Lineares System: x aus x+y=5 und 2x−y=1",
+    "quantity": "number",
+    "answerUnit": "1",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "Addition: \\(3x=6\\Rightarrow x=2\\).",
+      "\\(y=3\\); Probe \\(2+3=5,\\ 2\\cdot2-3=1\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Eindeutiges reelles lineares System; gesucht ist nur x.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "alg-quadratic-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-systems-quadratic",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Größere Nullstelle von x²−5x+6",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Größere Nullstelle von x²−5x+6.",
+    "article": {
+      "kind": "module",
+      "id": "math-systems-quadratic"
+    },
+    "formulaId": "algebra-quadratic",
+    "calculation": "quadratic-larger-root",
+    "givens": [
+      {
+        "id": "a",
+        "label": "Quadratischer Koeffizient",
+        "value": 1,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "b",
+        "label": "Linearer Koeffizient",
+        "value": -5,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "c",
+        "label": "Konstante",
+        "value": 6,
+        "unit": "1",
+        "quantity": "number"
+      }
+    ],
+    "sought": "Größere Nullstelle von x²−5x+6",
+    "quantity": "number",
+    "answerUnit": "1",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(x^2-5x+6=(x-2)(x-3)=0\\).",
+      "Beide Nullstellen: 2 und 3. Gefragt ist ausdrücklich die größere: \\(3\\)."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Gesucht ist die größere reelle Nullstelle, nicht die vollständige Lösungsmenge.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "alg-interpolation-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-functions",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Lineare Zwischenwertschätzung",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Lineare Zwischenwertschätzung.",
+    "article": {
+      "kind": "module",
+      "id": "math-functions"
+    },
+    "formulaId": "algebra-interpolation",
+    "calculation": "interpolation",
+    "givens": [
+      {
+        "id": "x0",
+        "label": "x0",
+        "value": 0,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "y0",
+        "label": "y0",
+        "value": 10,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "x1",
+        "label": "x1",
+        "value": 10,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "y1",
+        "label": "y1",
+        "value": 30,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "x",
+        "label": "x",
+        "value": 5,
+        "unit": "1",
+        "quantity": "number"
+      }
+    ],
+    "sought": "Lineare Zwischenwertschätzung",
+    "quantity": "number",
+    "answerUnit": "1",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "\\(y=10+(30-10)\\frac{5-0}{10-0}\\).",
+      "\\(y=20\\). Nur lineare Interpolation zwischen fiktiven Stützpunkten."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Fiktive dimensionslose Punkte; angenommener linearer Zusammenhang, keine Herstellerkennlinie.",
+    "review": "calculation-tested-expert-review-pending"
+  },
+  {
+    "id": "alg-log-a",
+    "revision": 1,
+    "kind": "numeric",
+    "topicId": "math-functions",
+    "domainId": "mathematik",
+    "level": "fachkraft",
+    "title": "Dekadischer Logarithmus",
+    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Dekadischer Logarithmus.",
+    "article": {
+      "kind": "module",
+      "id": "math-functions"
+    },
+    "formulaId": "algebra-log",
+    "calculation": "logarithm",
+    "givens": [
+      {
+        "id": "base",
+        "label": "Basis",
+        "value": 10,
+        "unit": "1",
+        "quantity": "number"
+      },
+      {
+        "id": "value",
+        "label": "Argument",
+        "value": 1000,
+        "unit": "1",
+        "quantity": "number"
+      }
+    ],
+    "sought": "Dekadischer Logarithmus",
+    "quantity": "number",
+    "answerUnit": "1",
+    "absoluteToleranceSI": 1e-10,
+    "relativeTolerance": 0.001,
+    "sourceIds": [
+      "openstax-precalculus-v06"
+    ],
+    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    "steps": [
+      "Gesucht \\(y=\\log_{10}(1000)\\).",
+      "\\(10^3=1000\\Rightarrow y=3\\); positives dimensionsloses Argument."
+    ],
+    "mistakes": [
+      "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+      "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+    ],
+    "assumptions": "Reelles positives Argument, Basis positiv und ungleich eins.",
+    "review": "calculation-tested-expert-review-pending"
+  }
+];

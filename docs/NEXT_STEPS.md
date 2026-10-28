@@ -9,8 +9,8 @@ Branch: `feat/deep-learning-academy-v06`. Ausgangspunkt: main `09a953b` (Merge #
 ## Etappen
 
 1. Bestandsaufnahme und Sicherung: abgeschlossen mit diesem Commit.
-2. Quellenprüfung und nachweisbare Aussagen: in Arbeit. Direkter Abruf der gewünschten Rechts-, KMK-, BIPM-, DGUV- und OpenStax-Webseiten scheitert an Netzwerk-HTTP 403. Originalquellen über offizielle GitHub-Repositorien prüfen, sonst ausdrücklich offen lassen; keine Rechts-/Normaussagen erfinden.
-3. Technische Mathematik: Geometrie, Trigonometrie, vertiefte Algebra, begrenzter geprüfter Trainer.
+2. Quellenprüfung und Nachweismodell: Commit `8f32b63`. Direkter Abruf der gewünschten Rechts-, KMK-, BIPM-, DGUV- und OpenStax-Webseiten scheitert an Netzwerk-HTTP 403. Originalquellen über offizielle GitHub-Repositorien prüfen, sonst ausdrücklich offen lassen; keine Rechts-/Normaussagen erfinden.
+3. Technische Mathematik: sieben neue Module, zwölf Aufgaben, vier zusätzliche geprüfte Trainerfälle. 278 Tests, Typprüfung und Build erfolgreich; Tablet-Browserprüfung siehe Etappenprotokoll.
 4. Wechselstrom und Drehstrom: Lernpfad, Diagramme, Rechenkern, unabhängige Zahlenreferenzen.
 5. Thermodynamik: Zustände, Energie, Wärmeübertragung, Kältebezug.
 6. Lernbrücke: beobachtbare Fehlermuster, passende Kompetenz und sichere Rückkehr.

@@ -1,3 +1,4 @@
+import { advancedCases } from "../deep/trainer";
 import type { ChoiceTask } from "../exercises/model";
 import type { Level } from "../model";
 export interface RearrangementStep {
@@ -6,6 +7,7 @@ export interface RearrangementStep {
   after: string;
   reason: string;
   wrong: [string, string];
+  wrongFeedback?: [string,string];
 }
 export interface RearrangementCase {
   id: string;
@@ -201,6 +203,7 @@ export const rearrangementCases: RearrangementCase[] = [
     assumption: "V > 0 und ρ ≠ 0; konstanter vorgegebener Dichtewert.",
   },
 ];
+rearrangementCases.push(...advancedCases);
 export const trainerQuestions: ChoiceTask[] = rearrangementCases.flatMap((c) =>
   c.steps.map((step, i) => ({
     id: `trainer-${c.id}-step${i + 1}`,

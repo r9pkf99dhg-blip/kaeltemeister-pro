@@ -478,3 +478,7 @@ domains.push({
     },
   ],
 });
+
+mathDomain.chapters.push({id:"mathematik-vertiefung-v06",title:"Geometrie und Algebra vertiefen",subchapters:[{id:"mathematik-geometrie-v06",title:"Geometrie und Trigonometrie",moduleIds:["math-geometry","math-pipe-volume","math-triangles","math-trigonometry"],plannedTopics:[]},{id:"mathematik-algebra-v06",title:"Gleichungen und Funktionen",moduleIds:["math-domains","math-systems-quadratic","math-functions"],plannedTopics:["Weitere nichtlineare Systeme und vertiefte Analysis"]}]});
+mathDomain.description="Grundlagen, technische Geometrie, Trigonometrie und vertiefte Algebra mit Modellgrenzen.";
+mathDomain.chapters[0].subchapters[1].plannedTopics=[];

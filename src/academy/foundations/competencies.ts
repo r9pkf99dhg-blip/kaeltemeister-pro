@@ -21,9 +21,14 @@ export const competencies: Competency[] = [
   ["matter", "Stoffe und Massenanteile", "chemistry-matter"],
   ["atoms", "Chemische Formelzeichen", "chemistry-atoms"],
   ["amount", "Stoffmenge und molare Masse", "chemistry-amount"],
+  ["geometry", "Rohrgeometrie", "math-geometry"],
+  ["trigonometry", "Winkel und Trigonometrie", "math-trigonometry"],
+  ["domains", "Definitionsbereiche", "math-domains"],
+  ["functions", "Kennlinien und Funktionen", "math-functions"],
   ["dc-electric", "Gleichstromleistung", "electric-work"],
 ].map(([id, title, lessonId]) => ({ id: `competency-${id}`, title, lessonId }));
 const byCalculation: Record<string, string[]> = {
+ "circle-area":["geometry","si-units"],"annulus-area":["geometry","si-units"],"cylinder-volume":["geometry","si-units"],"cylinder-surface":["geometry","si-units"],"pythagoras":["geometry","powers"],"triangle-side":["trigonometry","si-units"],"slope-angle":["trigonometry","percent"],"linear-system-x":["equations","domains"],"quadratic-larger-root":["powers","domains"],"interpolation":["functions"],"logarithm":["functions","powers"],
   heat: ["arithmetic", "si-units", "heat"],
   "mass-flow": ["fractions", "rearrangement", "si-units", "heat"],
   "temperature-difference": ["fractions", "rearrangement", "si-units", "heat"],

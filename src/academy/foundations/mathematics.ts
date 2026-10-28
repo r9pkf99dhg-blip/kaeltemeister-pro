@@ -570,3 +570,16 @@ mathematicsLessons.sort(
 mathematicsLessons
   .find((l) => l.id === "math-rearrange")!
   .prerequisites.push("math-units");
+
+// Additive Vertiefung: IDs, alte Fragen und gespeicherte Lesemarkierungen bleiben erhalten.
+const auditedDeepening: Record<string,string> = {
+ "math-arithmetic":String.raw`Selbstkontrolle: \((-2)^2=4\), aber \(-2^2=-4\), weil die Potenz vor dem vorangestellten Minus ausgewertet wird. Vorzeichen mit Klammern ausdrücklich festhalten.`,
+ "math-fractions":String.raw`Zweiter Weg: \(\frac23:\frac45=\frac{10}{15}:\frac{12}{15}=\frac{10}{12}=\frac56\). Gleiche Teilgrößen machen die Division als Verhältnis der Anzahlen sichtbar.`,
+ "math-percent":"Grenzfall: Bei Grundwert null ist der Prozentsatz W/G nicht definiert. Ein Anstieg von 20 % auf 25 % sind 5 Prozentpunkte, relativ zum Ausgangswert aber 25 % Zuwachs.",
+ "math-algebra":String.raw`Ausklammern prüft Ausmultiplizieren rückwärts: \(3x+6=3(x+2)\). Nicht gleichartig: \(3x+2x^2\) bleibt eine Summe unterschiedlicher Potenzen. Ein einzelner Zahlenvergleich ist kein allgemeiner Beweis.`,
+ "math-equations":"Grenzfälle ax+b=c: Bei a=0 und b=c ist jede reelle Zahl Lösung; bei a=0 und b≠c gibt es keine Lösung. Die Regel x=(c−b)/a darf dann nicht benutzt werden.",
+ "math-powers":String.raw`Für \(a\ne0\) folgt \(a^m/a^n=a^{m-n}\). Aus \(x^2=9\) ergeben sich zwei reelle Lösungen ±3; die Hauptwurzel \(\sqrt9=3\) ist dagegen definitionsgemäß nicht negativ.`,
+ "math-units":"Dimensionsprüfung: kg/s × J/(kg·K) × K = J/s = W. Eine Temperaturänderung von −5 °C auf +5 °C ist 10 K; Celsiuswerte sind keine absoluten Kelvinwerte und dürfen nicht als Temperaturverhältnisse behandelt werden.",
+ "math-rearrange":String.raw`Alternative Wärmeumstellung: erst durch \(c_p\), dann durch \(\Delta T\) teilen oder in einem Schritt durch \(c_p\Delta T\). Beides ist nur bei nicht verschwindenden Nennern äquivalent. Das Einsetzen in die Originalgleichung prüft eine konkrete Lösung.`,
+};
+for(const lesson of mathematicsLessons){lesson.derivation.push(auditedDeepening[lesson.id]);}

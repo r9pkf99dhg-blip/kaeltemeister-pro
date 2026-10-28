@@ -1,3 +1,5 @@
+import { math_lessons } from "./deep/math-lessons";
+import { math_formulas } from "./deep/math-formulas";
 import { deepSources } from "./deep/sources";
 import { foundationTerms } from "./foundations/terms";
 import { moduleFoundationLinks } from "./foundations/competencies";
@@ -17,6 +19,7 @@ const foundationLessons = [
   ...mathematicsLessons,
   ...physicsLessons,
   ...chemistryLessons,
+  ...math_lessons,
 ];
 import { formulaNotation } from "../math/notation";
 export { domains } from "./data/domains";
@@ -75,6 +78,7 @@ export const formulas = [
   ...mathematicsFormulas,
   ...physicsFormulas,
   ...chemistryFormulas,
+  ...math_formulas,
 ].map((formula) => ({
   ...formula,
   tex: formula.tex ?? formulaNotation[formula.id],

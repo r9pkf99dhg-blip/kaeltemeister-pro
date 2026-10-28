@@ -1,3 +1,4 @@
+import { deepKinds } from "../../technical/deep";
 import { schoolKinds } from "../../technical/foundations";
 import { units } from "../../technical/calculations";
 import { levels } from "../model";
@@ -49,6 +50,7 @@ export function validItem(value: unknown): value is LearningItem {
     value.kind === "numeric" &&
     [
       ...schoolKinds,
+      ...deepKinds,
       "amount",
       "speed",
       "force",

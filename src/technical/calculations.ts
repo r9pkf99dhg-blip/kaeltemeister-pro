@@ -1,6 +1,8 @@
+import { calculateDeep, deepKinds, type DeepKind } from "./deep";
 import { calculateSchool, schoolKinds, type SchoolKind } from "./foundations";
 /** Gemeinsame SI-Rechenfunktionen für Aufgaben und technische Rechner. */
 export type CalculationKind =
+  | DeepKind
   | SchoolKind
   | "heat"
   | "mass-flow"
@@ -50,7 +52,8 @@ export type Quantity =
   | "acceleration"
   | "speed"
   | "amount"
-  | "molar-mass";
+  | "molar-mass"
+  | "angle";
 export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
@@ -70,8 +73,9 @@ export const units: Record<Quantity, string[]> = {
   "molar-mass": ["kg/mol", "g/mol"],
   mass: ["kg", "g"],
   length: ["m", "cm", "mm", "km"],
-  area: ["m²", "cm²"],
-  volume: ["m³", "L"],
+  area: ["m²", "cm²", "mm²"],
+  angle: ["rad", "°"],
+  volume: ["m³", "L", "cm³"],
   pressure: ["Pa", "kPa", "bar"],
   density: ["kg/m³"],
   force: ["N", "kN"],
@@ -82,6 +86,8 @@ export function toSI(value: number, unit: string, quantity: Quantity): number {
   if (!Number.isFinite(value) || !units[quantity].includes(unit))
     throw new Error("Ungültiger Zahlenwert oder unpassende Einheit.");
   let result = value;
+  if (unit === "°") result *= Math.PI / 180;
+  if (unit === "mm²" || unit === "cm³") result /= 1000000;
   if (unit === "%") result /= 100;
   if (["g", "mm", "L", "mmol", "g/mol"].includes(unit)) result /= 1000;
   if (unit === "cm") result /= 100;
@@ -110,6 +116,8 @@ export function fromSI(
 ): number {
   if (!units[quantity].includes(unit) || !Number.isFinite(value))
     throw new Error("Unpassende Einheit.");
+  if (unit === "°") return value * 180 / Math.PI;
+  if (unit === "mm²" || unit === "cm³") return value * 1000000;
   if (unit === "%") return value * 100;
   if (["g", "mm", "L", "mmol", "g/mol"].includes(unit)) return value * 1000;
   if (unit === "cm") return value * 100;
@@ -131,6 +139,7 @@ export function calculateTechnical(
   kind: CalculationKind,
   values: Record<string, number>,
 ): number {
+  if (deepKinds.includes(kind as DeepKind)) return calculateDeep(kind as DeepKind, values);
   if (schoolKinds.includes(kind as SchoolKind))
     return calculateSchool(kind as SchoolKind, values);
   const get = (id: string, strictlyPositive = false) => {

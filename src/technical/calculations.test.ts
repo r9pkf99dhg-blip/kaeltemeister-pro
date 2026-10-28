@@ -11,6 +11,19 @@ import { calculateHeat } from "../logic";
 
 // Unabhängig vorgegebene Referenzergebnisse, nicht mit der Produktfunktion erzeugt.
 const references: Record<string, number> = {
+  "geo-area-a": 0.0003141592653589793,
+  "geo-ring-a": 0.0001382300767579509,
+  "geo-volume-a": 0.0031415926535897933,
+  "geo-surface-a": 0.7539822368615503,
+  "geo-diagonal-a": 5,
+  "geo-height-a": 2.309401076758503,
+  "geo-angle-a": 0.6435011087932844,
+  "alg-domain-a": 3,
+  "alg-system-a": 2,
+  "alg-quadratic-a": 3,
+  "alg-interpolation-a": 20,
+  "alg-log-a": 3,
+
   "calc-heat-water": 10450,
   "calc-mass-flow": 0.5,
   "calc-temperature-difference": 6,

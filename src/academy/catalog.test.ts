@@ -12,9 +12,9 @@ import {
 } from "./catalog";
 import { levels } from "./model";
 
-it("enthält vierzehn strukturierte Fachgebiete, fünfundzwanzig vollständige Module und stabile eindeutige IDs", () => {
+it("enthält vierzehn strukturierte Fachgebiete, ausgearbeitete Module und stabile eindeutige IDs", () => {
   expect(domains).toHaveLength(14);
-  expect(modules).toHaveLength(25);
+  expect(modules).toHaveLength(32);
   const allIds = [
     ...domains,
     ...domains.flatMap((domain) => domain.chapters),
