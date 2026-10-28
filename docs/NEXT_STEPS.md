@@ -12,7 +12,7 @@ Branch: `feat/deep-learning-academy-v06`. Ausgangspunkt: main `09a953b` (Merge #
 2. Quellenprüfung und Nachweismodell: Commit `8f32b63`. Direkter Abruf der gewünschten Rechts-, KMK-, BIPM-, DGUV- und OpenStax-Webseiten scheitert an Netzwerk-HTTP 403. Originalquellen über offizielle GitHub-Repositorien prüfen, sonst ausdrücklich offen lassen; keine Rechts-/Normaussagen erfinden.
 3. Technische Mathematik: sieben neue Module, zwölf Aufgaben, vier zusätzliche geprüfte Trainerfälle. 278 Tests, Typprüfung und Build erfolgreich; Tablet-Browserprüfung siehe Etappenprotokoll.
 4. Wechselstrom und Drehstrom: vier Module, zwölf Zahlenaufgaben, verstellbare und textlich beschriebene Diagramme. 292 Tests, Typprüfung, Build und zwei Tablet-Browserfälle erfolgreich. Mathematik-Etappe: `1f24fb8`.
-5. Thermodynamik: Zustände, Energie, Wärmeübertragung, Kältebezug.
+5. Thermodynamik: fünf zusammenhängende Module und zehn Zahlenaufgaben. 303 Tests, Typprüfung, Build und drei Tablet-Browserfälle erfolgreich. Elektro-Etappe: `665aaea`.
 6. Lernbrücke: beobachtbare Fehlermuster, passende Kompetenz und sichere Rückkehr.
 7. Vier mehrstufige Lernfälle mit fachlicher Bewertung.
 8. Regression, Altbackups, Browser, Quellen-/Formelprüfung.

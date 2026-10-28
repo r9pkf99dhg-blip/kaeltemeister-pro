@@ -29,9 +29,15 @@ export const competencies: Competency[] = [
   ["ac-reactance", "Impedanz und Phasenlage", "electric-ac-reactance"],
   ["power-factor", "Leistungsarten im Sinusmodell", "electric-ac-power"],
   ["three-phase", "Leiter- und Stranggrößen", "electric-three-phase"],
+  ["thermal-states", "Zustandsgrößen und Bezüge", "thermo-states"],
+  ["calorimetry", "Wärmeenergie und Wärmeträgerleistung", "thermo-calorimetry"],
+  ["phase-change", "Phasenwechsel und latente Energie", "thermo-phase"],
+  ["heat-transfer", "Wärmeübertragung und Schichten", "thermo-transfer"],
+  ["cycle-balance", "Systemgrenzen und Energiebilanzen", "thermo-cycle-balance"],
   ["dc-electric", "Gleichstromleistung", "electric-work"],
 ].map(([id, title, lessonId]) => ({ id: `competency-${id}`, title, lessonId }));
 const byCalculation: Record<string, string[]> = {
+ 'pressure-absolute':['thermal-states','si-units'],'specific-volume':['thermal-states','fractions'],'volume-to-mass':['thermal-states','si-units'],'latent-heat':['phase-change','energy'],'conduction':['heat-transfer','si-units'],'thermal-resistance':['heat-transfer','fractions'],'layered-conduction':['heat-transfer','fractions'],'overall-u':['heat-transfer','fractions'],'cycle-condenser':['cycle-balance','energy'],
  'ac-period':['ac-rms','fractions'],'ac-rms':['ac-rms','powers'],'ac-xl':['ac-reactance','si-units'],'ac-xc':['ac-reactance','si-units','fractions'],'ac-impedance':['ac-reactance','powers'],'ac-apparent':['power-factor','si-units'],'ac-real':['power-factor','ac-rms'],'ac-reactive':['power-factor','trigonometry'],'ac-factor':['power-factor','fractions'],'ac-star-voltage':['three-phase','trigonometry'],'ac-delta-current':['three-phase','trigonometry'],'ac-three-power':['three-phase','power-factor'],
  "circle-area":["geometry","si-units"],"annulus-area":["geometry","si-units"],"cylinder-volume":["geometry","si-units"],"cylinder-surface":["geometry","si-units"],"pythagoras":["geometry","powers"],"triangle-side":["trigonometry","si-units"],"slope-angle":["trigonometry","percent"],"linear-system-x":["equations","domains"],"quadratic-larger-root":["powers","domains"],"interpolation":["functions"],"logarithm":["functions","powers"],
   heat: ["arithmetic", "si-units", "heat"],

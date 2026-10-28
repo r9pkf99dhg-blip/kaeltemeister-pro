@@ -1,11 +1,20 @@
 /** Geprüfte SI-Lehrmodelle; verwendbar von Aufgaben und späteren Rechnern. Kein eval/CAS. */
-export const deepKinds = ['ac-period','ac-rms','ac-xl','ac-xc','ac-impedance','ac-apparent','ac-real','ac-reactive','ac-factor','ac-star-voltage','ac-delta-current','ac-three-power','circle-area','annulus-area','cylinder-volume','cylinder-surface','pythagoras','triangle-side','slope-angle','linear-system-x','quadratic-larger-root','interpolation','logarithm'] as const;
+export const deepKinds = ['pressure-absolute','specific-volume','volume-to-mass','latent-heat','conduction','thermal-resistance','layered-conduction','overall-u','cycle-condenser','ac-period','ac-rms','ac-xl','ac-xc','ac-impedance','ac-apparent','ac-real','ac-reactive','ac-factor','ac-star-voltage','ac-delta-current','ac-three-power','circle-area','annulus-area','cylinder-volume','cylinder-surface','pythagoras','triangle-side','slope-angle','linear-system-x','quadratic-larger-root','interpolation','logarithm'] as const;
 export type DeepKind = typeof deepKinds[number];
 export function calculateDeep(kind: DeepKind, values: Record<string,number>):number {
  const n=(id:string)=>{const v=values[id];if(!Number.isFinite(v))throw new Error('Fehlender oder nicht endlicher Wert.');return v;};
  const p=(id:string,zero=false)=>{const v=n(id);if(v<0||(!zero&&v===0))throw new Error('Positive Größe erforderlich.');return v;};
  let r:number;
  switch(kind){
+ case 'pressure-absolute':r=p('gauge',true)+p('ambient');break;
+ case 'specific-volume':r=1/p('density');break;
+ case 'volume-to-mass':r=p('density')*p('volumeFlow',true);break;
+ case 'latent-heat':r=p('mass',true)*p('latent');break;
+ case 'conduction':r=p('conductivity')*p('area')*p('deltaT',true)/p('thickness');break;
+ case 'thermal-resistance':r=p('thickness')/(p('conductivity')*p('area'));break;
+ case 'layered-conduction':r=p('area')*p('deltaT',true)/(p('d1')/p('lambda1')+p('d2')/p('lambda2'));break;
+ case 'overall-u':r=1/(1/p('inside')+p('d1')/p('lambda1')+p('d2')/p('lambda2')+1/p('outside'));break;
+ case 'cycle-condenser':r=p('coolingPower',true)+p('fluidPower',true);break;
  case 'ac-period':r=1/p('frequency');break;
  case 'ac-rms':r=p('peak',true)/Math.SQRT2;break;
  case 'ac-xl':r=2*Math.PI*p('frequency')*p('inductance');break;

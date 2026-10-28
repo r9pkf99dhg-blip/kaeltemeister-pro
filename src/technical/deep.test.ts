@@ -58,3 +58,18 @@ it('bewahrt elektrische Einheiten und Grenzen des Sinusmodells',()=>{
  expect(()=>calculateDeep('ac-factor',{power:201,apparent:200})).toThrow();
  expect(calculateDeep('ac-reactive',{voltage:100,current:2,factor:1})).toBe(0);
 });
+it('kontrolliert stationäre Wärmeübertragung, Bezugsdruck und Volumenstrom unabhängig',()=>{
+ expect(calculateDeep('pressure-absolute',{gauge:200000,ambient:100000})).toBe(300000);
+ expect(calculateDeep('volume-to-mass',{density:1000,volumeFlow:.0005})).toBe(.5);
+ expect(toSI(1.8,'m³/h','volume-flow')).toBe(.0005);
+ expect(toSI(30,'L/min','volume-flow')).toBe(.0005);
+ expect(calculateDeep('latent-heat',{mass:2,latent:200000})).toBe(400000);
+ const r=calculateDeep('thermal-resistance',{thickness:.1,conductivity:.04,area:2});expect(r).toBe(1.25);
+ const q=calculateDeep('conduction',{thickness:.1,conductivity:.04,area:2,deltaT:20});expect(q).toBe(16);expect(q*r).toBe(20);
+ expect(calculateDeep('layered-conduction',{d1:.1,lambda1:.04,d2:.1,lambda2:.04,area:2,deltaT:20})).toBe(8);
+ expect(calculateDeep('overall-u',{inside:10,outside:10,d1:.04,lambda1:.04,d2:.04,lambda2:.04})).toBeCloseTo(1/2.2,12);
+ expect(calculateDeep('cycle-condenser',{coolingPower:15000,fluidPower:5000})).toBe(20000);
+ expect(()=>calculateDeep('conduction',{thickness:0,conductivity:.04,area:2,deltaT:20})).toThrow();
+ expect(()=>calculateDeep('specific-volume',{density:0})).toThrow();
+ expect(()=>calculateDeep('overall-u',{inside:0,outside:10,d1:.04,lambda1:.04,d2:.04,lambda2:.04})).toThrow();
+});

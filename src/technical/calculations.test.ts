@@ -11,6 +11,17 @@ import { calculateHeat } from "../logic";
 
 // Unabhängig vorgegebene Referenzergebnisse, nicht mit der Produktfunktion erzeugt.
 const references: Record<string, number> = {
+  "th-pressure-a": 300000,
+  "th-volume-a": 0.00125,
+  "th-mass-flow-a": 0.5,
+  "th-heat-a": 10000,
+  "th-latent-a": 400000,
+  "th-conduction-a": 16,
+  "th-resistance-a": 1.25,
+  "th-layer-a": 8,
+  "th-u-a": 0.45454545454545453,
+  "th-cycle-a": 20000,
+
   "ac-period-a": 0.02,
   "ac-rms-a": 70.71067811865476,
   "ac-xl-a": 31.41592653589793,

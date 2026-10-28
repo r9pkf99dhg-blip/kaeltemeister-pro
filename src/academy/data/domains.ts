@@ -488,3 +488,13 @@ electricDomain.chapters[0].subchapters[1].moduleIds=["electric-ac-wave","electri
 electricDomain.chapters[0].subchapters[1].plannedTopics=[];
 electricDomain.chapters[1].subchapters[0].moduleIds=["electric-three-phase"];
 electricDomain.chapters[1].subchapters[0].plannedTopics=["Drehfeld, Asynchronmotor, Schlupf und reale Motorkennlinien"];
+
+const thermoDomain=domains.find(d=>d.id==="thermodynamik")!;
+thermoDomain.description="Zusammenhängender Pfad von Zuständen über Wärmeträger und Wärmeübertragung zur Kreislaufbilanz.";
+thermoDomain.chapters[0].subchapters[0].moduleIds=["thermo-states","thermo-calorimetry","thermo-phase"];
+thermoDomain.chapters[0].subchapters[0].plannedTopics=[];
+thermoDomain.chapters[0].subchapters[1].moduleIds=["thermo-transfer"];
+thermoDomain.chapters[0].subchapters[1].plannedTopics=[];
+thermoDomain.chapters[1].subchapters[1].moduleIds=["thermo-cycle-balance"];
+thermoDomain.chapters[1].subchapters[1].plannedTopics=["Reale Stoffwerte und validierte log-p-h-Darstellung"];
+domains.find(d=>d.id==='waerme')!.chapters[0].subchapters[0].plannedTopics=['Lehrmodell im Fachgebiet Thermodynamik: Wärmeleitung, Wärmewiderstand und U-Wert; Fachauslegung später.'];
