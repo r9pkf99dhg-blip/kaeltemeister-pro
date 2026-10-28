@@ -1,4 +1,64 @@
-import { toSI,fromSI,type Quantity } from '../technical/calculations';
-export const quantityNames:Record<Quantity,string>={power:'Wirk-/Wärmeleistung',energy:'Energie',length:'Länge',area:'Fläche',volume:'Volumen',mass:'Masse',time:'Zeit',temperature:'Absolute Temperatur','temperature-difference':'Temperaturdifferenz',pressure:'Druck (Bezug unverändert)','mass-flow':'Massenstrom','volume-flow':'Volumenstrom',voltage:'Spannung',current:'Strom',resistance:'Widerstand',charge:'Ladung','specific-heat':'Spezifische Wärmekapazität',ratio:'Dimensionsloses Verhältnis',number:'Reelle Zahl',percent:'Prozentanteil',amount:'Stoffmenge','molar-mass':'Molare Masse',angle:'Winkel',frequency:'Frequenz',inductance:'Induktivität',capacitance:'Kapazität','apparent-power':'Scheinleistung','reactive-power':'Blindleistung','specific-volume':'Spezifisches Volumen','specific-energy':'Spezifische Energie',conductivity:'Wärmeleitfähigkeit','thermal-resistance':'Wärmewiderstand',transmittance:'Wärmedurchgang / Wärmeübergang',density:'Dichte',force:'Kraft',acceleration:'Beschleunigung',speed:'Geschwindigkeit'};
-export function convertUnit(value:number,from:string,to:string,quantity:Quantity){const si=toSI(value,from,quantity);const result=fromSI(si,to,quantity);if(!Number.isFinite(result))throw new Error('Das Ergebnis liegt außerhalb des Zahlenbereichs.');return{si,result,sourceFactor:toSI(1,from,quantity)-toSI(0,from,quantity),sourceOffset:toSI(0,from,quantity),targetFactor:fromSI(1,to,quantity)-fromSI(0,to,quantity),targetOffset:fromSI(0,to,quantity)};}
-export const siUnit=(q:Quantity)=>q==='temperature'?'K':q==='percent'?'1':undefined;
+import { toSI, fromSI, type Quantity } from "../technical/calculations";
+export const quantityNames: Record<Quantity, string> = {
+  power: "Wirk-/Wärmeleistung",
+  energy: "Energie",
+  length: "Länge",
+  area: "Fläche",
+  volume: "Volumen",
+  mass: "Masse",
+  time: "Zeit",
+  temperature: "Absolute Temperatur",
+  "temperature-difference": "Temperaturdifferenz",
+  pressure: "Druck (Bezug unverändert)",
+  "mass-flow": "Massenstrom",
+  "volume-flow": "Volumenstrom",
+  voltage: "Spannung",
+  current: "Strom",
+  resistance: "Widerstand",
+  charge: "Ladung",
+  "specific-heat": "Spezifische Wärmekapazität",
+  ratio: "Dimensionsloses Verhältnis",
+  number: "Reelle Zahl",
+  percent: "Prozentanteil",
+  amount: "Stoffmenge",
+  "molar-mass": "Molare Masse",
+  angle: "Winkel",
+  frequency: "Frequenz",
+  inductance: "Induktivität",
+  capacitance: "Kapazität",
+  "apparent-power": "Scheinleistung",
+  "reactive-power": "Blindleistung",
+  "specific-volume": "Spezifisches Volumen",
+  "specific-energy": "Spezifische Energie",
+  conductivity: "Wärmeleitfähigkeit",
+  "thermal-resistance": "Wärmewiderstand",
+  transmittance: "Wärmedurchgang / Wärmeübergang",
+  density: "Dichte",
+  force: "Kraft",
+  acceleration: "Beschleunigung",
+  speed: "Geschwindigkeit",
+};
+export function convertUnit(
+  value: number,
+  from: string,
+  to: string,
+  quantity: Quantity,
+) {
+  const si = toSI(value, from, quantity);
+  const result = fromSI(si, to, quantity);
+  if (
+    (result === 0 && si !== 0 && quantity !== "temperature") ||
+    !Number.isFinite(result)
+  )
+    throw new Error("Das Ergebnis liegt außerhalb des Zahlenbereichs.");
+  return {
+    si,
+    result,
+    sourceFactor: toSI(1, from, quantity) - toSI(0, from, quantity),
+    sourceOffset: toSI(0, from, quantity),
+    targetFactor: fromSI(1, to, quantity) - fromSI(0, to, quantity),
+    targetOffset: fromSI(0, to, quantity),
+  };
+}
+export const siUnit = (q: Quantity) =>
+  q === "temperature" ? "K" : q === "percent" ? "1" : undefined;

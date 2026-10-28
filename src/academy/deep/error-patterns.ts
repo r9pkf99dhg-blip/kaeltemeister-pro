@@ -104,12 +104,33 @@ export function errorPatterns(
       "math-units",
       "Die Abweichung entspricht einer Zehnerpotenz. Prüfe Vorsilben und Umrechnungen; daraus lässt sich kein bestimmter Rechenfehler sicher ableiten.",
     );
-  if(task.id === 'workshop-conversion-temperature' && near(actual, task.givens[0].value))
-    add('celsius-kelvin','thermo-states','Die Zahl entspricht der gegebenen Celsiusanzeige, ausgewählt ist Kelvin. Bei absoluten Temperaturen ist der Offset 273,15 nötig. Das Zahlenmuster beweist deinen Rechenweg nicht.');
-  if(task.id === 'workshop-conversion-difference' && near(actual, expected + 273.15))
-    add('temperature-difference-offset','physics-heat','Deine Antwort enthält gegenüber dem Sollwert den Offset 273,15. Bei einer Temperaturdifferenz entfällt dieser Offset; eine Fehlerursache bleibt eine Vermutung.');
-  if(task.id === 'workshop-conversion-area' && near(actual, task.givens[0].value * .001))
-    add('area-prefix','math-units','Die Zahl passt zur einfachen Längen-Vorsilbenumrechnung statt zum quadrierten Flächenfaktor. Für mm² nach m² gilt (10⁻³)². Der tatsächliche Rechenweg ist unbekannt.');
+  if (
+    task.id === "workshop-conversion-temperature" &&
+    near(actual, task.givens[0].value)
+  )
+    add(
+      "celsius-kelvin",
+      "thermo-states",
+      "Die Zahl entspricht der gegebenen Celsiusanzeige, ausgewählt ist Kelvin. Bei absoluten Temperaturen ist der Offset 273,15 nötig. Das Zahlenmuster beweist deinen Rechenweg nicht.",
+    );
+  if (
+    task.id === "workshop-conversion-difference" &&
+    near(actual, expected + 273.15)
+  )
+    add(
+      "temperature-difference-offset",
+      "physics-heat",
+      "Deine Antwort enthält gegenüber dem Sollwert den Offset 273,15. Bei einer Temperaturdifferenz entfällt dieser Offset; eine Fehlerursache bleibt eine Vermutung.",
+    );
+  if (
+    task.id === "workshop-conversion-area" &&
+    near(actual, task.givens[0].value * 0.001)
+  )
+    add(
+      "area-prefix",
+      "math-units",
+      "Die Zahl passt zur einfachen Längen-Vorsilbenumrechnung statt zum quadrierten Flächenfaktor. Für mm² nach m² gilt (10⁻³)². Der tatsächliche Rechenweg ist unbekannt.",
+    );
   if (task.calculation === "ac-factor" && actual > 1)
     add(
       "implausible-factor",

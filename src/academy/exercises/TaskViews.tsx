@@ -17,7 +17,10 @@ export function TaskPrompt({ item }: { item: LearningItem }) {
     <>
       <h3>{item.title}</h3>
       <p>
-        <Explain simple={`Du suchst: ${item.title}. Lies die Angaben und die Modellbedingungen. ${item.prompt}`} technical={item.prompt}/>
+        <Explain
+          simple={`Du suchst: ${item.title}. Lies die Angaben und die Modellbedingungen. ${item.prompt}`}
+          technical={item.prompt}
+        />
       </p>
       {item.kind === "numeric" && (
         <>
@@ -55,7 +58,12 @@ export function TaskAnswer({
 }) {
   if (item.kind === "choice")
     return (
-      <fieldset id={`result-${item.id}`} tabIndex={-1} className="task-choices" disabled={disabled}>
+      <fieldset
+        id={`result-${item.id}`}
+        tabIndex={-1}
+        className="task-choices"
+        disabled={disabled}
+      >
         <legend>Deine Antwort zu „{item.title}“</legend>
         {item.options.map((option) => (
           <label className="module-option" key={option.id}>
@@ -80,7 +88,11 @@ export function TaskAnswer({
         <input
           id={`result-${item.id}`}
           maxLength={200}
-          inputMode={item.quantity === "number" || item.answerSyntax==="arithmetic" ? "text" : "decimal"}
+          inputMode={
+            item.quantity === "number" || item.answerSyntax === "arithmetic"
+              ? "text"
+              : "decimal"
+          }
           value={answer.value}
           disabled={disabled}
           onChange={(event) =>
@@ -137,7 +149,12 @@ export function TaskSolution({
   return (
     <div className="task-solution">
       <h4>Schrittweise Musterlösung</h4>
-      <p><Explain simple="Prüfe zuerst die gesuchte Größe und ihre Einheit. Lies dann jeden Rechenschritt. Vergleiche dein Ergebnis mit dem Modell und seinen Grenzen." technical="Modell, SI-Umrechnung und eingesetzte Größen schrittweise abgleichen; rechnerische Konsistenz ist keine fachliche Gesamtfreigabe."/></p>
+      <p>
+        <Explain
+          simple="Prüfe zuerst die gesuchte Größe und ihre Einheit. Lies dann jeden Rechenschritt. Vergleiche dein Ergebnis mit dem Modell und seinen Grenzen."
+          technical="Modell, SI-Umrechnung und eingesetzte Größen schrittweise abgleichen; rechnerische Konsistenz ist keine fachliche Gesamtfreigabe."
+        />
+      </p>
       <p>
         <strong>
           Ergebnis: {format(fromSI(value, item.answerUnit, item.quantity))}{" "}

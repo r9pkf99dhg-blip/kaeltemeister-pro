@@ -3,7 +3,12 @@ import { numericTasks } from "../exercises/data";
 import { errorPatterns } from "./error-patterns";
 const task = (id: string) => numericTasks.find((t) => t.id === id)!;
 it.each([
-  ["workshop-conversion-difference", "278.15", "K", "temperature-difference-offset"],
+  [
+    "workshop-conversion-difference",
+    "278.15",
+    "K",
+    "temperature-difference-offset",
+  ],
   ["workshop-conversion-area", "0.314", "m²", "area-prefix"],
   ["calc-heat-water", "10,45", "W", "unit-selection"],
   ["geo-area-a", "1256.637", "mm²", "radius-diameter"],
@@ -34,7 +39,14 @@ it("erfindet bei unbekannter, ungültiger oder richtiger Antwort keine Fehlerurs
   ).toEqual([]);
 });
 
-it('erkennt den fehlenden absoluten Temperatur-Offset bei einem gültigen Kelvinwert',()=>{
- const example={...task('workshop-conversion-temperature'),givens:[{...task('workshop-conversion-temperature').givens[0],value:20}]};
- expect(errorPatterns(example,{value:'20',unit:'K'}).map(p=>p.id)).toContain('celsius-kelvin');
+it("erkennt den fehlenden absoluten Temperatur-Offset bei einem gültigen Kelvinwert", () => {
+  const example = {
+    ...task("workshop-conversion-temperature"),
+    givens: [
+      { ...task("workshop-conversion-temperature").givens[0], value: 20 },
+    ],
+  };
+  expect(
+    errorPatterns(example, { value: "20", unit: "K" }).map((p) => p.id),
+  ).toContain("celsius-kelvin");
 });

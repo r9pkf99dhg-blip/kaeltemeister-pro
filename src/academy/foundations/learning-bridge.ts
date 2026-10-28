@@ -11,8 +11,20 @@ export function bridgeRecommendations(
   task: LearningItem,
   answer?: ItemAnswer,
 ) {
-  const patterns = answer && task.kind === "numeric" ? errorPatterns(task, answer) : [];
-  const needed = task.kind === "numeric" ? taskCompetencies(task) : competencies.filter(c => c.lessonId === task.topicId || (modules.find(m => m.id === task.topicId)?.prerequisites ?? []).includes(c.lessonId)).map(c => c.id);
+  const patterns =
+    answer && task.kind === "numeric" ? errorPatterns(task, answer) : [];
+  const needed =
+    task.kind === "numeric"
+      ? taskCompetencies(task)
+      : competencies
+          .filter(
+            (c) =>
+              c.lessonId === task.topicId ||
+              (
+                modules.find((m) => m.id === task.topicId)?.prerequisites ?? []
+              ).includes(c.lessonId),
+          )
+          .map((c) => c.id);
   const ids = [
     ...new Set([
       ...(task.requiredCompetencyIds ?? needed),

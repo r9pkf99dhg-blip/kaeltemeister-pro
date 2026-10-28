@@ -1,7 +1,11 @@
 import TechnicalLab from "./lab/TechnicalLab";
 import Workshop from "./workshop/Workshop";
 import { simpleArticles } from "./language/articles";
-import { Explain, ExplanationProvider, ExplanationPreference } from "./language/Explanation";
+import {
+  Explain,
+  ExplanationProvider,
+  ExplanationPreference,
+} from "./language/Explanation";
 import QualityPanel from "./quality/QualityPanel";
 import BackupPanel from "./storage/BackupPanel";
 import { recoverRestore, JOURNAL_KEY, dataKeys } from "./storage/backup";
@@ -40,7 +44,14 @@ import Academy from "./academy/Academy";
 import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
-type Page = "dashboard" | "lernen" | "quiz" | "rechner" | "akademie" | "werkstatt" | "labor";
+type Page =
+  | "dashboard"
+  | "lernen"
+  | "quiz"
+  | "rechner"
+  | "akademie"
+  | "werkstatt"
+  | "labor";
 const navigation = [
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
@@ -116,7 +127,10 @@ function Application({
   storageBlocked: boolean;
   onRestored: () => void;
 }) {
-  const [workshopInitialId,setWorkshopInitialId]=useState<string|null>(null);
+  const [labInitialId, setLabInitialId] = useState<string | null>(null);
+  const [workshopInitialId, setWorkshopInitialId] = useState<string | null>(
+    null,
+  );
   const [page, setPage] = useState<Page>("dashboard");
   const [navigationEpoch, setNavigationEpoch] = useState(0);
   useEffect(() => {
@@ -174,7 +188,7 @@ function Application({
     }
   }, [progress, initialProgress.readFailed, storageBlocked]);
   function navigate(next: Page) {
-    if(next!=="werkstatt")setWorkshopInitialId(null);
+    if (next !== "werkstatt") setWorkshopInitialId(null);
     window.history.pushState(
       { kaeltePage: next, moduleId: null },
       "",
@@ -201,501 +215,576 @@ function Application({
     articles.find((a) => !progress.read.includes(a.id)) ?? articles[0];
 
   return (
-    <ExplanationProvider level={academy.progress.preferences?.explanation??"technical"}>
-    <div className="app-shell">
-      <aside className="sidebar">
-        <a
-          className="brand"
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate("dashboard");
-          }}
-          aria-label="KälteMeister Pro – Dashboard"
-        >
-          <span className="brand-icon">
-            <Snowflake size={28} />
-          </span>
-          <span>
-            KälteMeister
-            <span className="brand-sub">PRO · DEIN LERNBEGLEITER</span>
-          </span>
-        </a>
-        <div className="sidebar-label">DEIN WERKZEUGKASTEN</div>
-        <nav aria-label="Hauptnavigation">
-          {navigation.map(({ id, label, icon: Icon }) => (
-            <button
-              key={id}
-              aria-current={page === id ? "page" : undefined}
-              className={`nav-item ${page === id ? "active" : ""}`}
-              onClick={() => {if(id==="werkstatt")setWorkshopInitialId(null);navigate(id);}}
-            >
-              <Icon size={20} />
-              <span>{label}</span>
-              {page === id && <span className="nav-dot" />}
-            </button>
-          ))}
-        </nav>
-        <div className="sidebar-tip">
-          <GraduationCap size={28} />
-          <h3>
-            Schritt für Schritt
-            <br />
-            zum Meister.
-          </h3>
-          <p>Ein bisschen Wissen jeden Tag macht den Unterschied.</p>
-          <span>DU HAST DAS DRAUF.</span>
-        </div>
-        <div className="sidebar-bottom">
-          <span className="avatar">KM</span>
-          <div>
-            Dein Lernplatz<small>Ohne Konto. Einfach loslegen.</small>
+    <ExplanationProvider
+      level={academy.progress.preferences?.explanation ?? "technical"}
+    >
+      <div className="app-shell">
+        <aside className="sidebar">
+          <a
+            className="brand"
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("dashboard");
+            }}
+            aria-label="KälteMeister Pro – Dashboard"
+          >
+            <span className="brand-icon">
+              <Snowflake size={28} />
+            </span>
+            <span>
+              KälteMeister
+              <span className="brand-sub">PRO · DEIN LERNBEGLEITER</span>
+            </span>
+          </a>
+          <div className="sidebar-label">DEIN WERKZEUGKASTEN</div>
+          <nav aria-label="Hauptnavigation">
+            {navigation.map(({ id, label, icon: Icon }) => (
+              <button
+                key={id}
+                aria-current={page === id ? "page" : undefined}
+                className={`nav-item ${page === id ? "active" : ""}`}
+                onClick={() => {
+                  if (id === "labor") setLabInitialId(null);
+                  if (id === "werkstatt") setWorkshopInitialId(null);
+                  navigate(id);
+                }}
+              >
+                <Icon size={20} />
+                <span>{label}</span>
+                {page === id && <span className="nav-dot" />}
+              </button>
+            ))}
+          </nav>
+          <div className="sidebar-tip">
+            <GraduationCap size={28} />
+            <h3>
+              Schritt für Schritt
+              <br />
+              zum Meister.
+            </h3>
+            <p>Ein bisschen Wissen jeden Tag macht den Unterschied.</p>
+            <span>DU HAST DAS DRAUF.</span>
           </div>
-        </div>
-      </aside>
-      <div className="main-shell">
-        <header className="topbar">
-          <span>
-            Fachakademie <ChevronRight size={14} />{" "}
-            <strong>{navigation.find((n) => n.id === page)?.label}</strong>
-          </span>
-          <span className="topbar-note">
-            <span className="status-dot" /> Bereit für deinen nächsten Schritt
-          </span>
-        </header>
-        <main ref={mainRef} tabIndex={-1} id="main-content">
-          <ExplanationPreference value={academy.progress.preferences?.explanation??"technical"} change={explanation=>academy.setProgress(p=>({...p,preferences:{...p.preferences,explanation}}))}/>
-          {storageError && (
-            <div role="alert" className="notice">
-              Dein Lernfortschritt konnte nicht geladen oder gespeichert werden.
-              Änderungen bleiben nur bis zum Schließen dieser Seite erhalten.
-              Bei einem Lesefehler werden vorhandene Daten nicht überschrieben.
-              Versuche, die Seite neu zu laden.
+          <div className="sidebar-bottom">
+            <span className="avatar">KM</span>
+            <div>
+              Dein Lernplatz<small>Ohne Konto. Einfach loslegen.</small>
             </div>
-          )}
-          {page === "dashboard" && (
-            <>
-              <div className="page-heading">
-                <div>
-                  <p className="eyebrow">WISSEN, DAS DICH WEITERBRINGT</p>
-                  <h1>
-                    Willkommen in deiner Werkstatt
-                    <span className="mint-dot">.</span>
-                  </h1>
-                  <p>
-                    Verstehen. Anwenden. Meister werden. Dein nächster Schritt
-                    beginnt hier.
-                  </p>
-                </div>
-                <span className="edition">
-                  MEISTERSCHULE EDITION <Snowflake size={15} />
-                </span>
+          </div>
+        </aside>
+        <div className="main-shell">
+          <header className="topbar">
+            <span>
+              Fachakademie <ChevronRight size={14} />{" "}
+              <strong>{navigation.find((n) => n.id === page)?.label}</strong>
+            </span>
+            <span className="topbar-note">
+              <span className="status-dot" /> Bereit für deinen nächsten Schritt
+            </span>
+          </header>
+          <main ref={mainRef} tabIndex={-1} id="main-content">
+            <ExplanationPreference
+              value={academy.progress.preferences?.explanation ?? "technical"}
+              change={(explanation) =>
+                academy.setProgress((p) => ({
+                  ...p,
+                  preferences: { ...p.preferences, explanation },
+                }))
+              }
+            />
+            {storageError && (
+              <div role="alert" className="notice">
+                Dein Lernfortschritt konnte nicht geladen oder gespeichert
+                werden. Änderungen bleiben nur bis zum Schließen dieser Seite
+                erhalten. Bei einem Lesefehler werden vorhandene Daten nicht
+                überschrieben. Versuche, die Seite neu zu laden.
               </div>
-              {academy.progress.exerciseDraft?.workspace==='workshop'&&<section className="notice"><p>Ein Werkstattentwurf ist gespeichert.</p><button className="button secondary" onClick={()=>{setWorkshopInitialId(null);navigate('werkstatt');}}>Werkstattentwurf fortsetzen</button></section>}
-              <LearningDashboard
+            )}
+            {page === "dashboard" && (
+              <>
+                <div className="page-heading">
+                  <div>
+                    <p className="eyebrow">WISSEN, DAS DICH WEITERBRINGT</p>
+                    <h1>
+                      Willkommen in deiner Werkstatt
+                      <span className="mint-dot">.</span>
+                    </h1>
+                    <p>
+                      Verstehen. Anwenden. Meister werden. Dein nächster Schritt
+                      beginnt hier.
+                    </p>
+                  </div>
+                  <span className="edition">
+                    MEISTERSCHULE EDITION <Snowflake size={15} />
+                  </span>
+                </div>
+                {academy.progress.exerciseDraft?.workspace === "workshop" && (
+                  <section className="notice">
+                    <p>Ein Werkstattentwurf ist gespeichert.</p>
+                    <button
+                      className="button secondary"
+                      onClick={() => {
+                        setWorkshopInitialId(null);
+                        navigate("werkstatt");
+                      }}
+                    >
+                      Werkstattentwurf fortsetzen
+                    </button>
+                  </section>
+                )}
+                <LearningDashboard
+                  progress={academy.progress}
+                  error={storageError ? null : academy.error}
+                  openModule={(id) => {
+                    setAcademyModuleId(id);
+                    setAcademyView("overview");
+                    navigate("akademie");
+                  }}
+                  openView={(view, taskId) => {
+                    setAcademyExerciseId(taskId ?? null);
+                    setAcademyModuleId(null);
+                    setAcademyView(view);
+                    navigate("akademie");
+                  }}
+                />
+                <section className="academy-entry">
+                  <div>
+                    <span className="pill">NEU · VERSION 0.7</span>
+                    <h2>Deine intelligente Lernakademie.</h2>
+                    <p>
+                      Grundlagen- und Fachmodule, drei Wissensstufen und
+                      Karteikarten mit Wiederholungsplan.
+                    </p>
+                  </div>
+                  <button
+                    className="button primary"
+                    onClick={() => navigate("akademie")}
+                  >
+                    Akademie öffnen <ArrowRight size={17} />
+                  </button>
+                </section>
+                <section className="academy-entry foundation-entry">
+                  <div>
+                    <span className="pill">NEU · GRUNDLAGEN</span>
+                    <h2>Von Anfang an verstehen.</h2>
+                    <p>
+                      Mathematik schrittweise lernen, dann Bewegung, Energie,
+                      Stoffe und chemische Formeln verstehen.
+                    </p>
+                  </div>
+                  <div className="foundation-actions">
+                    {[
+                      {
+                        id: "math-arithmetic",
+                        label: "Mit Mathematik beginnen",
+                      },
+                      { id: "physics-motion", label: "Mit Physik beginnen" },
+                      { id: "chemistry-matter", label: "Mit Chemie beginnen" },
+                    ].map((course) => (
+                      <button
+                        key={course.id}
+                        className="button primary"
+                        onClick={() => {
+                          setAcademyModuleId(course.id);
+                          setAcademyView("overview");
+                          navigate("akademie");
+                        }}
+                      >
+                        {course.label}
+                      </button>
+                    ))}
+                  </div>
+                </section>
+                <section className="hero">
+                  <div className="hero-copy">
+                    <span className="hero-badge">
+                      <Sparkles size={14} /> DEIN WEG ZUM MEISTER
+                    </span>
+                    <h2>
+                      Kühler Kopf.
+                      <br />
+                      <span>Starkes Fachwissen.</span>
+                    </h2>
+                    <p>
+                      Mach aus Theorie echtes Verständnis.
+                      <br />
+                      Mit kompakten Lerneinheiten und Wissen für die Praxis.
+                    </p>
+                    <button
+                      className="button light"
+                      onClick={() => {
+                        navigate("lernen");
+                        setArticleId(nextArticle.id);
+                      }}
+                    >
+                      Jetzt weiterlernen <ArrowRight size={18} />
+                    </button>
+                  </div>
+                  <CycleIllustration />
+                </section>
+                <div className="stats-grid">
+                  <Stat
+                    icon={<BookOpen size={22} />}
+                    label="Dein Lernfortschritt"
+                    value={`${progress.read.length} von ${articles.length}`}
+                    detail="Lerneinheiten abgeschlossen"
+                    tint="green"
+                  />
+                  <Stat
+                    icon={<Target size={22} />}
+                    label="Dein Quiz-Bestwert"
+                    value={
+                      progress.attempts ? `${progress.best} %` : "Noch offen"
+                    }
+                    detail={
+                      progress.attempts
+                        ? `Aus ${progress.attempts} abgeschlossenen Quiz`
+                        : "Zeig, was du schon weißt"
+                    }
+                    tint="orange"
+                  />
+                  <Stat
+                    icon={<Zap size={22} />}
+                    label="Wissen für die Praxis"
+                    value="5 Laborbereiche"
+                    detail="Gemeinsame Modelle lernen und berechnen"
+                    tint="blue"
+                  />
+                </div>
+                <div className="section-title">
+                  <div>
+                    <h2>Deine nächste Lerneinheit</h2>
+                    <p>Die Grundlagen sitzen. Der Rest baut darauf auf.</p>
+                  </div>
+                  <button
+                    className="text-button"
+                    onClick={() => navigate("lernen")}
+                  >
+                    Alle Lerneinheiten <ArrowRight size={16} />
+                  </button>
+                </div>
+                <div className="dashboard-lower">
+                  <section className="lesson-feature">
+                    <div className="lesson-art">
+                      <Snowflake size={64} strokeWidth={1} />
+                      <div className="orbit" />
+                      <span>01 / GRUNDLAGEN</span>
+                    </div>
+                    <div className="lesson-feature-copy">
+                      <span className="pill">{nextArticle.category}</span>
+                      <h3>{nextArticle.title}</h3>
+                      <p>{nextArticle.intro}</p>
+                      <div className="lesson-bottom">
+                        <span>{nextArticle.minutes} Min. Lesezeit</span>
+                        <button
+                          className="round-button"
+                          aria-label={`${nextArticle.title} öffnen`}
+                          onClick={() => {
+                            navigate("lernen");
+                            setArticleId(nextArticle.id);
+                          }}
+                        >
+                          <ArrowUpRight size={21} />
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                  <section className="quiz-teaser">
+                    <span className="icon-box">
+                      <Trophy size={25} />
+                    </span>
+                    <h3>Wie fit ist dein Fachwissen?</h3>
+                    <p>
+                      {questions.length} Fragen. Direktes Feedback.
+                      <br />
+                      Finde heraus, was schon sitzt.
+                    </p>
+                    <button
+                      className="text-button"
+                      onClick={() => navigate("quiz")}
+                    >
+                      Quiz starten <ArrowRight size={17} />
+                    </button>
+                  </section>
+                </div>
+              </>
+            )}
+            {page === "lernen" && (
+              <>
+                {activeArticle ? (
+                  <article className="article">
+                    <button
+                      className="text-button back"
+                      onClick={() => setArticleId(null)}
+                    >
+                      <ChevronLeft size={17} /> Alle Lerneinheiten
+                    </button>
+                    <p className="eyebrow">
+                      {activeArticle.category} · {activeArticle.minutes} MIN.
+                      LESEZEIT
+                    </p>
+                    <h1>{activeArticle.title}</h1>
+                    <p className="article-intro">{activeArticle.intro}</p>
+                    <p className="review-notice">
+                      Bestehender Lernartikel · unabhängige Fachprüfung noch
+                      offen. Das zugehörige Akademiemodul bietet zusätzliche
+                      Niveaus und transparente Quellenhinweise.
+                    </p>
+                    {legacyBridges.find((bridge) =>
+                      bridge.articleIds.some((id) => id === activeArticle.id),
+                    ) && (
+                      <button
+                        className="button secondary"
+                        onClick={() => {
+                          setAcademyModuleId(
+                            legacyBridges.find((bridge) =>
+                              bridge.articleIds.some(
+                                (id) => id === activeArticle.id,
+                              ),
+                            )!.moduleId,
+                          );
+                          navigate("akademie");
+                        }}
+                      >
+                        Dieses Thema in der Akademie vertiefen{" "}
+                        <ArrowRight size={17} />
+                      </button>
+                    )}
+                    {activeArticle.id === "kreislauf" && (
+                      <div className="article-cycle">
+                        <CycleIllustration />
+                      </div>
+                    )}
+                    {activeArticle.sections.map((section, sectionIndex) => (
+                      <section key={section.title}>
+                        <h2>{section.title}</h2>
+                        <p>
+                          <Explain
+                            simple={
+                              simpleArticles[activeArticle.id]?.[
+                                sectionIndex
+                              ] ?? section.text
+                            }
+                            technical={section.text}
+                          />
+                        </p>
+                      </section>
+                    ))}
+                    <aside className="takeaway">
+                      <span>
+                        <Sparkles size={21} /> Das nimmst du mit
+                      </span>
+                      <p>{activeArticle.takeaway}</p>
+                    </aside>
+                    <button
+                      className="button primary"
+                      disabled={progress.read.includes(activeArticle.id)}
+                      onClick={() =>
+                        setProgress((p) => ({
+                          ...p,
+                          read: [...new Set([...p.read, activeArticle.id])],
+                        }))
+                      }
+                    >
+                      <CheckCircle2 size={18} />
+                      {progress.read.includes(activeArticle.id)
+                        ? "Als gelesen gespeichert"
+                        : "Als gelesen markieren"}
+                    </button>
+                    <button
+                      className="text-button article-quiz"
+                      onClick={() => navigate("quiz")}
+                    >
+                      Wissen im Quiz festigen <ArrowRight size={17} />
+                    </button>
+                  </article>
+                ) : (
+                  <>
+                    <PageHeading
+                      eyebrow="DEIN WISSENSFUNDAMENT"
+                      title="Verstehen statt auswendig lernen."
+                      description="Kompakte Fachartikel, klare Beispiele und Wissen, das im Alltag hilft."
+                    />
+                    <div className="learning-progress">
+                      <span>
+                        <BookOpen size={20} /> {progress.read.length} von{" "}
+                        {articles.length} Lerneinheiten gelesen
+                      </span>
+                      <progress
+                        max={100}
+                        value={completed}
+                        aria-label="Lernfortschritt"
+                      />
+                      <strong>{completed} %</strong>
+                    </div>
+                    <div className="article-grid">
+                      {articles.map((article, i) => (
+                        <button
+                          className="article-card"
+                          key={article.id}
+                          onClick={() => setArticleId(article.id)}
+                        >
+                          <div className={`article-card-art art-${i}`}>
+                            <span>0{i + 1}</span>
+                            {i === 0 ? (
+                              <Snowflake size={56} />
+                            ) : i === 1 ? (
+                              <Flame size={56} />
+                            ) : (
+                              <Wind size={56} />
+                            )}
+                          </div>
+                          <div className="article-card-body">
+                            <div className="card-meta">
+                              <span className="pill">{article.category}</span>
+                              {progress.read.includes(article.id) && (
+                                <span className="read-badge">
+                                  <Check size={14} /> Gelesen
+                                </span>
+                              )}
+                            </div>
+                            <h2>{article.title}</h2>
+                            <p>{article.intro}</p>
+                            <div className="lesson-bottom">
+                              <span>{article.minutes} Min. Lesezeit</span>
+                              <ArrowUpRight size={20} />
+                            </div>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
+                    <div className="notice">
+                      <ShieldCheck size={20} /> Die Artikel dienen dem Lernen.
+                      Für Arbeiten an realen Anlagen gelten Herstellerangaben,
+                      Sicherheitsvorschriften und die erforderliche
+                      Qualifikation.
+                    </div>
+                  </>
+                )}
+              </>
+            )}
+            {page === "quiz" && (
+              <Quiz
+                onComplete={(score) =>
+                  setProgress((p) => ({
+                    ...p,
+                    attempts: p.attempts + 1,
+                    best: Math.max(p.best, score),
+                    last: score,
+                  }))
+                }
+              />
+            )}
+            {page === "labor" && (
+              <TechnicalLab
+                initialCalculatorId={labInitialId}
                 progress={academy.progress}
-                error={storageError ? null : academy.error}
+                setProgress={academy.setProgress}
                 openModule={(id) => {
                   setAcademyModuleId(id);
                   setAcademyView("overview");
                   navigate("akademie");
                 }}
-                openView={(view, taskId) => {
-                  setAcademyExerciseId(taskId ?? null);
+                practice={(id) => {
+                  setWorkshopInitialId(id);
+                  navigate("werkstatt");
+                }}
+              />
+            )}
+            {page === "werkstatt" && (
+              <Workshop
+                progress={academy.progress}
+                setProgress={academy.setProgress}
+                initialItemId={workshopInitialId}
+                openModule={(id) => {
+                  setAcademyModuleId(id);
+                  setAcademyView("overview");
+                  navigate("akademie");
+                }}
+                openExam={() => {
                   setAcademyModuleId(null);
-                  setAcademyView(view);
+                  setAcademyView("exam");
                   navigate("akademie");
                 }}
               />
-              <section className="academy-entry">
-                <div>
-                  <span className="pill">NEU · VERSION 0.6</span>
-                  <h2>Deine intelligente Lernakademie.</h2>
-                  <p>
-                    Grundlagen- und Fachmodule, drei Wissensstufen und
-                    Karteikarten mit Wiederholungsplan.
-                  </p>
-                </div>
-                <button
-                  className="button primary"
-                  onClick={() => navigate("akademie")}
-                >
-                  Akademie öffnen <ArrowRight size={17} />
-                </button>
-              </section>
-              <section className="academy-entry foundation-entry">
-                <div>
-                  <span className="pill">NEU · GRUNDLAGEN</span>
-                  <h2>Von Anfang an verstehen.</h2>
-                  <p>
-                    Mathematik schrittweise lernen, dann Bewegung, Energie,
-                    Stoffe und chemische Formeln verstehen.
-                  </p>
-                </div>
-                <div className="foundation-actions">
-                  {[
-                    { id: "math-arithmetic", label: "Mit Mathematik beginnen" },
-                    { id: "physics-motion", label: "Mit Physik beginnen" },
-                    { id: "chemistry-matter", label: "Mit Chemie beginnen" },
-                  ].map((course) => (
-                    <button
-                      key={course.id}
-                      className="button primary"
-                      onClick={() => {
-                        setAcademyModuleId(course.id);
-                        setAcademyView("overview");
-                        navigate("akademie");
-                      }}
-                    >
-                      {course.label}
-                    </button>
-                  ))}
-                </div>
-              </section>
-              <section className="hero">
-                <div className="hero-copy">
-                  <span className="hero-badge">
-                    <Sparkles size={14} /> DEIN WEG ZUM MEISTER
-                  </span>
-                  <h2>
-                    Kühler Kopf.
-                    <br />
-                    <span>Starkes Fachwissen.</span>
-                  </h2>
-                  <p>
-                    Mach aus Theorie echtes Verständnis.
-                    <br />
-                    Mit kompakten Lerneinheiten und Wissen für die Praxis.
-                  </p>
-                  <button
-                    className="button light"
-                    onClick={() => {
-                      navigate("lernen");
-                      setArticleId(nextArticle.id);
-                    }}
-                  >
-                    Jetzt weiterlernen <ArrowRight size={18} />
-                  </button>
-                </div>
-                <CycleIllustration />
-              </section>
-              <div className="stats-grid">
-                <Stat
-                  icon={<BookOpen size={22} />}
-                  label="Dein Lernfortschritt"
-                  value={`${progress.read.length} von ${articles.length}`}
-                  detail="Lerneinheiten abgeschlossen"
-                  tint="green"
-                />
-                <Stat
-                  icon={<Target size={22} />}
-                  label="Dein Quiz-Bestwert"
-                  value={
-                    progress.attempts ? `${progress.best} %` : "Noch offen"
-                  }
-                  detail={
-                    progress.attempts
-                      ? `Aus ${progress.attempts} abgeschlossenen Quiz`
-                      : "Zeig, was du schon weißt"
-                  }
-                  tint="orange"
-                />
-                <Stat
-                  icon={<Zap size={22} />}
-                  label="Wissen für die Praxis"
-                  value="5 Laborbereiche"
-                  detail="Gemeinsame Modelle lernen und berechnen"
-                  tint="blue"
-                />
-              </div>
-              <div className="section-title">
-                <div>
-                  <h2>Deine nächste Lerneinheit</h2>
-                  <p>Die Grundlagen sitzen. Der Rest baut darauf auf.</p>
-                </div>
-                <button
-                  className="text-button"
-                  onClick={() => navigate("lernen")}
-                >
-                  Alle Lerneinheiten <ArrowRight size={16} />
-                </button>
-              </div>
-              <div className="dashboard-lower">
-                <section className="lesson-feature">
-                  <div className="lesson-art">
-                    <Snowflake size={64} strokeWidth={1} />
-                    <div className="orbit" />
-                    <span>01 / GRUNDLAGEN</span>
-                  </div>
-                  <div className="lesson-feature-copy">
-                    <span className="pill">{nextArticle.category}</span>
-                    <h3>{nextArticle.title}</h3>
-                    <p>{nextArticle.intro}</p>
-                    <div className="lesson-bottom">
-                      <span>{nextArticle.minutes} Min. Lesezeit</span>
-                      <button
-                        className="round-button"
-                        aria-label={`${nextArticle.title} öffnen`}
-                        onClick={() => {
-                          navigate("lernen");
-                          setArticleId(nextArticle.id);
-                        }}
-                      >
-                        <ArrowUpRight size={21} />
-                      </button>
-                    </div>
-                  </div>
-                </section>
-                <section className="quiz-teaser">
-                  <span className="icon-box">
-                    <Trophy size={25} />
-                  </span>
-                  <h3>Wie fit ist dein Fachwissen?</h3>
-                  <p>
-                    {questions.length} Fragen. Direktes Feedback.
-                    <br />
-                    Finde heraus, was schon sitzt.
-                  </p>
-                  <button
-                    className="text-button"
-                    onClick={() => navigate("quiz")}
-                  >
-                    Quiz starten <ArrowRight size={17} />
-                  </button>
-                </section>
-              </div>
-            </>
-          )}
-          {page === "lernen" && (
-            <>
-              {activeArticle ? (
-                <article className="article">
-                  <button
-                    className="text-button back"
-                    onClick={() => setArticleId(null)}
-                  >
-                    <ChevronLeft size={17} /> Alle Lerneinheiten
-                  </button>
-                  <p className="eyebrow">
-                    {activeArticle.category} · {activeArticle.minutes} MIN.
-                    LESEZEIT
-                  </p>
-                  <h1>{activeArticle.title}</h1>
-                  <p className="article-intro">{activeArticle.intro}</p>
-                  <p className="review-notice">
-                    Bestehender Lernartikel · unabhängige Fachprüfung noch
-                    offen. Das zugehörige Akademiemodul bietet zusätzliche
-                    Niveaus und transparente Quellenhinweise.
-                  </p>
-                  {legacyBridges.find((bridge) =>
-                    bridge.articleIds.some((id) => id === activeArticle.id),
-                  ) && (
-                    <button
-                      className="button secondary"
-                      onClick={() => {
-                        setAcademyModuleId(
-                          legacyBridges.find((bridge) =>
-                            bridge.articleIds.some(
-                              (id) => id === activeArticle.id,
-                            ),
-                          )!.moduleId,
-                        );
-                        navigate("akademie");
-                      }}
-                    >
-                      Dieses Thema in der Akademie vertiefen{" "}
-                      <ArrowRight size={17} />
-                    </button>
-                  )}
-                  {activeArticle.id === "kreislauf" && (
-                    <div className="article-cycle">
-                      <CycleIllustration />
-                    </div>
-                  )}
-                  {activeArticle.sections.map((section, sectionIndex) => (
-                    <section key={section.title}>
-                      <h2>{section.title}</h2>
-                      <p><Explain simple={simpleArticles[activeArticle.id]?.[sectionIndex]??section.text} technical={section.text}/></p>
-                    </section>
-                  ))}
-                  <aside className="takeaway">
-                    <span>
-                      <Sparkles size={21} /> Das nimmst du mit
-                    </span>
-                    <p>{activeArticle.takeaway}</p>
-                  </aside>
-                  <button
-                    className="button primary"
-                    disabled={progress.read.includes(activeArticle.id)}
-                    onClick={() =>
-                      setProgress((p) => ({
-                        ...p,
-                        read: [...new Set([...p.read, activeArticle.id])],
-                      }))
-                    }
-                  >
-                    <CheckCircle2 size={18} />
-                    {progress.read.includes(activeArticle.id)
-                      ? "Als gelesen gespeichert"
-                      : "Als gelesen markieren"}
-                  </button>
-                  <button
-                    className="text-button article-quiz"
-                    onClick={() => navigate("quiz")}
-                  >
-                    Wissen im Quiz festigen <ArrowRight size={17} />
-                  </button>
-                </article>
-              ) : (
-                <>
-                  <PageHeading
-                    eyebrow="DEIN WISSENSFUNDAMENT"
-                    title="Verstehen statt auswendig lernen."
-                    description="Kompakte Fachartikel, klare Beispiele und Wissen, das im Alltag hilft."
-                  />
-                  <div className="learning-progress">
-                    <span>
-                      <BookOpen size={20} /> {progress.read.length} von{" "}
-                      {articles.length} Lerneinheiten gelesen
-                    </span>
-                    <progress
-                      max={100}
-                      value={completed}
-                      aria-label="Lernfortschritt"
-                    />
-                    <strong>{completed} %</strong>
-                  </div>
-                  <div className="article-grid">
-                    {articles.map((article, i) => (
-                      <button
-                        className="article-card"
-                        key={article.id}
-                        onClick={() => setArticleId(article.id)}
-                      >
-                        <div className={`article-card-art art-${i}`}>
-                          <span>0{i + 1}</span>
-                          {i === 0 ? (
-                            <Snowflake size={56} />
-                          ) : i === 1 ? (
-                            <Flame size={56} />
-                          ) : (
-                            <Wind size={56} />
-                          )}
-                        </div>
-                        <div className="article-card-body">
-                          <div className="card-meta">
-                            <span className="pill">{article.category}</span>
-                            {progress.read.includes(article.id) && (
-                              <span className="read-badge">
-                                <Check size={14} /> Gelesen
-                              </span>
-                            )}
-                          </div>
-                          <h2>{article.title}</h2>
-                          <p>{article.intro}</p>
-                          <div className="lesson-bottom">
-                            <span>{article.minutes} Min. Lesezeit</span>
-                            <ArrowUpRight size={20} />
-                          </div>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                  <div className="notice">
-                    <ShieldCheck size={20} /> Die Artikel dienen dem Lernen. Für
-                    Arbeiten an realen Anlagen gelten Herstellerangaben,
-                    Sicherheitsvorschriften und die erforderliche Qualifikation.
-                  </div>
-                </>
-              )}
-            </>
-          )}
-          {page === "quiz" && (
-            <Quiz
-              onComplete={(score) =>
-                setProgress((p) => ({
-                  ...p,
-                  attempts: p.attempts + 1,
-                  best: Math.max(p.best, score),
-                  last: score,
-                }))
-              }
-            />
-          )}
-          {page === "labor" && <TechnicalLab progress={academy.progress} setProgress={academy.setProgress} openModule={id=>{setAcademyModuleId(id);setAcademyView('overview');navigate('akademie');}} practice={id=>{setWorkshopInitialId(id);navigate('werkstatt');}}/>}
-          {page === "werkstatt" && <Workshop progress={academy.progress} setProgress={academy.setProgress} initialItemId={workshopInitialId} openModule={id=>{setAcademyModuleId(id);setAcademyView('overview');navigate('akademie');}} openExam={()=>{setAcademyModuleId(null);setAcademyView('exam');navigate('akademie');}}/>}
-          {page === "rechner" && <HeatCalculator />}
-          {page === "akademie" && (
-            <Academy
-              key={navigationEpoch}
-              initialModuleId={academyModuleId}
-              initialView={academyView}
-              initialExerciseId={academyExerciseId}
-              progress={academy.progress}
-              setProgress={academy.setProgress}
-              error={academy.error}
-              openCalculator={() => navigate("rechner")}
-            />
-          )}
-          <QualityPanel />
-          <BackupPanel
-            academy={academy.progress}
-            legacy={progress}
-            importBlocked={storageBlocked}
-            blocked={
-              storageBlocked || academy.blocked || initialProgress.readFailed
-            }
-            onRestored={onRestored}
-          />
-          <footer>
-            <span>
-              <Snowflake size={15} /> KälteMeister Pro
-            </span>
-            <span>Für dein Handwerk. Für deine Zukunft.</span>
-            <button
-              className="text-button"
-              onClick={() => setResetConfirm((v) => !v)}
-            >
-              Fortschritt zurücksetzen
-            </button>
-          </footer>
-          {resetConfirm && (
-            <div
-              className="reset-panel"
-              role="region"
-              aria-label="Fortschritt zurücksetzen"
-            >
-              <p>
-                Alle gelesenen Artikel, Quiz-Ergebnisse und Akademie-Lerndaten
-                in diesem Browser löschen?
-              </p>
-              {academy.blocked && (
-                <p>
-                  Nicht sicher lesbare Akademie-Daten bleiben geschützt und
-                  werden nicht automatisch gelöscht.
-                </p>
-              )}
-              <button
-                className="button danger"
-                onClick={() => {
-                  setProgress({ ...emptyProgress, read: [] });
-                  academy.reset();
-                  setResetConfirm(false);
+            )}
+            {page === "rechner" && <HeatCalculator />}
+            {page === "akademie" && (
+              <Academy
+                key={navigationEpoch}
+                initialModuleId={academyModuleId}
+                initialView={academyView}
+                initialExerciseId={academyExerciseId}
+                progress={academy.progress}
+                setProgress={academy.setProgress}
+                error={academy.error}
+                openCalculator={() => navigate("rechner")}
+                openLab={(id) => {
+                  setLabInitialId(id);
+                  navigate("labor");
                 }}
-              >
-                Ja, Fortschritt löschen
-              </button>
+              />
+            )}
+            <QualityPanel />
+            <BackupPanel
+              academy={academy.progress}
+              legacy={progress}
+              importBlocked={storageBlocked}
+              blocked={
+                storageBlocked || academy.blocked || initialProgress.readFailed
+              }
+              onRestored={onRestored}
+            />
+            <footer>
+              <span>
+                <Snowflake size={15} /> KälteMeister Pro
+              </span>
+              <span>Für dein Handwerk. Für deine Zukunft.</span>
               <button
                 className="text-button"
-                onClick={() => setResetConfirm(false)}
+                onClick={() => setResetConfirm((v) => !v)}
               >
-                Abbrechen
+                Fortschritt zurücksetzen
               </button>
-            </div>
-          )}
-        </main>
+            </footer>
+            {resetConfirm && (
+              <div
+                className="reset-panel"
+                role="region"
+                aria-label="Fortschritt zurücksetzen"
+              >
+                <p>
+                  Alle gelesenen Artikel, Quiz-Ergebnisse und Akademie-Lerndaten
+                  in diesem Browser löschen?
+                </p>
+                {academy.blocked && (
+                  <p>
+                    Nicht sicher lesbare Akademie-Daten bleiben geschützt und
+                    werden nicht automatisch gelöscht.
+                  </p>
+                )}
+                <button
+                  className="button danger"
+                  onClick={() => {
+                    setProgress({ ...emptyProgress, read: [] });
+                    academy.reset();
+                    setResetConfirm(false);
+                  }}
+                >
+                  Ja, Fortschritt löschen
+                </button>
+                <button
+                  className="text-button"
+                  onClick={() => setResetConfirm(false)}
+                >
+                  Abbrechen
+                </button>
+              </div>
+            )}
+          </main>
+        </div>
       </div>
-    </div>
     </ExplanationProvider>
   );
 }

@@ -53,7 +53,11 @@ export function gradeSnapshot(
   }
   try {
     const answerSI = toSI(
-      item.answerSyntax==="arithmetic"?parseArithmetic(answer.value):item.quantity === "number" ? parseSchoolAnswer(answer.value) : parseDecimal(answer.value),
+      item.answerSyntax === "arithmetic"
+        ? parseArithmetic(answer.value)
+        : item.quantity === "number"
+          ? parseSchoolAnswer(answer.value)
+          : parseDecimal(answer.value),
       answer.unit,
       item.quantity,
     );
@@ -90,14 +94,47 @@ export function gradeSnapshot(
 }
 
 /** Rückmeldung nutzt denselben Grader; keine zweite Entscheidung über Richtigkeit. */
-export function numericFeedback(snapshot: ExamSnapshot, answer: ItemAnswer): {number: string; unit: string} | null {
- const item = snapshot.item;
- if(item.kind !== 'numeric' || !answer.value.trim()) return null;
- const grade = gradeSnapshot(snapshot, answer);
- if(!units[item.quantity].includes(answer.unit)) return {number:'Zahlenwert nicht bewertet, solange die Einheit unpassend ist.',unit:`Die Einheit ${answer.unit || '(leer)'} gehört nicht zur gesuchten Größenart.`};
- if(grade.status === 'invalid') return {number:'Zahlenformat, endliche Arithmetik und Definitionsbereich prüfen.',unit:`${answer.unit} gehört zur gesuchten Größenart; der Zahlenwert ist noch nicht auswertbar.`};
- if(grade.correct) return {number:'Zahlenwert einschließlich Umrechnung liegt in der Rechentoleranz.',unit:`${answer.unit} ist für diese Größe passend; gleichwertige Einheiten sind zugelassen.`};
- const raw = item.answerSyntax === 'arithmetic' ? parseArithmetic(answer.value) : item.quantity === 'number' ? parseSchoolAnswer(answer.value) : parseDecimal(answer.value);
- const alternative = units[item.quantity].find(u => u !== answer.unit && gradeSnapshot(snapshot,{value:String(raw),unit:u}).correct);
- return {number:alternative?`Dein Zahlenwert passt zum Sollwert in ${alternative}. Der tatsächliche Rechenweg ist unbekannt.`:`Der umgerechnete Zahlenwert liegt außerhalb der Rechentoleranz. Prüfe Formel, Umstellung und Einsetzen.`,unit:alternative?`Ausgewählt ist ${answer.unit}; prüfe die Zuordnung von Zahlenwert und Einheit.`:`${answer.unit} gehört zur gesuchten Größenart. Das bestätigt die Umrechnung noch nicht.`};
+export function numericFeedback(
+  snapshot: ExamSnapshot,
+  answer: ItemAnswer,
+): { number: string; unit: string } | null {
+  const item = snapshot.item;
+  if (item.kind !== "numeric" || !answer.value.trim()) return null;
+  const grade = gradeSnapshot(snapshot, answer);
+  if (!units[item.quantity].includes(answer.unit))
+    return {
+      number: "Zahlenwert nicht bewertet, solange die Einheit unpassend ist.",
+      unit: `Die Einheit ${answer.unit || "(leer)"} gehört nicht zur gesuchten Größenart.`,
+    };
+  if (grade.status === "invalid")
+    return {
+      number:
+        "Zahlenformat, endliche Arithmetik und Definitionsbereich prüfen.",
+      unit: `${answer.unit} gehört zur gesuchten Größenart; der Zahlenwert ist noch nicht auswertbar.`,
+    };
+  if (grade.correct)
+    return {
+      number:
+        "Zahlenwert einschließlich Umrechnung liegt in der Rechentoleranz.",
+      unit: `${answer.unit} ist für diese Größe passend; gleichwertige Einheiten sind zugelassen.`,
+    };
+  const raw =
+    item.answerSyntax === "arithmetic"
+      ? parseArithmetic(answer.value)
+      : item.quantity === "number"
+        ? parseSchoolAnswer(answer.value)
+        : parseDecimal(answer.value);
+  const alternative = units[item.quantity].find(
+    (u) =>
+      u !== answer.unit &&
+      gradeSnapshot(snapshot, { value: String(raw), unit: u }).correct,
+  );
+  return {
+    number: alternative
+      ? `Dein Zahlenwert passt zum Sollwert in ${alternative}. Der tatsächliche Rechenweg ist unbekannt.`
+      : `Der umgerechnete Zahlenwert liegt außerhalb der Rechentoleranz. Prüfe Formel, Umstellung und Einsetzen.`,
+    unit: alternative
+      ? `Ausgewählt ist ${answer.unit}; prüfe die Zuordnung von Zahlenwert und Einheit.`
+      : `${answer.unit} gehört zur gesuchten Größenart. Das bestätigt die Umrechnung noch nicht.`,
+  };
 }

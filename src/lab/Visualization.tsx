@@ -1,19 +1,232 @@
-import{useId}from'react';import type{CalculatorDefinition}from'./model';import{calculateTechnical}from'../technical/calculations';import{displayNumber}from'./format';
-export default function LabVisualization({tool,values,changeMass}:{tool:CalculatorDefinition;values:Record<string,number>;changeMass:(massSI:number)=>void}){
- const id=useId();
- if(tool.id==='heat-power'){
-  const xmax=Math.max(1,values.massFlow*2);let samples:number[][];try{if(!Number.isFinite(xmax))throw new Error();samples=Array.from({length:21},(_,i)=>{const x=xmax*(i/20);return[x,calculateTechnical('heat',{...values,massFlow:x})]});}catch{return <p>Der gewählte Wertebereich lässt sich im endlichen Diagrammbereich nicht sicher darstellen. Ergebnis und Rechenweg bleiben maßgeblich; Wertebereich für das Diagramm verkleinern.</p>;}const ymax=Math.max(1,samples.at(-1)![1]);const path=samples.map(([x,y],i)=>`${i?'L':'M'}${45+300*x/xmax},${205-160*y/ymax}`).join(' ');
-  return <section className="lab-visualization"><h3>Wärmeleistung untersuchen</h3>{values.massFlow<=2?<label>Experimentierregler: Massenstrom 0 bis 2 kg/s<input aria-label="Experimentierregler Massenstrom" type="range" min="0" max="2" step="0.05" value={values.massFlow} onChange={e=>changeMass(Number(e.target.value))}/></label>:<p>Der Regler deckt 0 bis 2 kg/s ab. Für größere Modellwerte das Zahlenfeld verwenden.</p>}<svg viewBox="0 0 400 265" role="img" aria-labelledby={id}><title id={id}>Proportionaler Wärmeleistungsverlauf bei konstantem cp und konstanter Temperaturdifferenz</title><path d="M45 30 V205 H355" fill="none" stroke="currentColor"/><path d={path} fill="none" stroke="#0369a1" strokeWidth="3"/><circle cx={45+300*values.massFlow/xmax} cy={205-160*calculateTechnical('heat',values)/ymax} r="5" fill="#b45309"/><text x="5" y="25">Q̇ (kW)</text><text x="5" y="225">0</text><text x="200" y="250">ṁ (kg/s)</text></svg><p>Achsenbereich: 0 bis {displayNumber(xmax)} kg/s und 0 bis {displayNumber(ymax/1000)} kW. Orange markiert ist der aktuelle Punkt. Bei gleichem cp und gleicher Temperaturdifferenz verdoppelt doppelter Massenstrom die Modellleistung. Bei ΔT = 0 bleibt sie null. Das garantiert keine reale Leistungssteigerung eines Wärmeübertragers.</p></section>;
- }
- if(tool.group==='geometry'){
- const ring=tool.kind==='annulus-area';const d=ring?values.outer:values.diameter;const inner=ring?75*values.inner/d:0;
- return <section className="lab-visualization"><h3>Geometrischer Querschnitt</h3><svg viewBox="0 0 360 210" role="img" aria-labelledby={id}><title id={id}>{ring?'Rohrwand als Differenz von Außen- und Innenkreis':'Kreisquerschnitt mit dem angegebenen Durchmesser'}</title><circle cx="125" cy="105" r="75" fill="#b8c9c4" stroke="#235e4c" strokeWidth="2"/>{ring&&<circle cx="125" cy="105" r={inner} fill="white" stroke="#0369a1"/>}<path d="M50 105 H200" stroke="#213c35" strokeDasharray="4 4"/><text x="225" y="105">d</text></svg><p>Durchmesser: {displayNumber(d)} m{ring?`; Innendurchmesser: ${displayNumber(values.inner)} m`:''}. {ring?'Die eingefärbte Ringfläche ist der Materialquerschnitt.':'Die eingefärbte Kreisfläche verwendet den angegebenen Durchmesser; bei Innenvolumen ist dies der Innendurchmesser.'} Schematischer Querschnitt; eine Rohrlänge wird hier nicht als maßstäbliche Zeichnung dargestellt. Keine Leitungsdimensionierung.</p></section>;
- }
- if(['ac-real','ac-reactive','ac-reactive-capacitive'].includes(tool.kind)){
- const S=calculateTechnical('ac-apparent',values),P=calculateTechnical('ac-real',values),Q=calculateTechnical(tool.kind==='ac-reactive-capacitive'?'ac-reactive-capacitive':'ac-reactive',values);if(S===0)return <p>S = 0: Alle gezeigten Leistungsbeträge sind null. Aus P/S ist dann kein Leistungsfaktor bestimmbar.</p>;
- const x=55+130*P/S,y=150-130*Q/S;
- return <section className="lab-visualization"><h3>Leistungsdreieck im Sinusmodell</h3><svg viewBox="0 0 340 300" role="img" aria-labelledby={id}><title id={id}>Wirk-, Blind- und Scheinleistung mit induktiv positivem und kapazitiv negativem Blindanteil</title><path d="M55 5 V290 M35 150 H310" fill="none" stroke="currentColor"/><path d={`M55 150 H${x} V${y} Z`} fill="none" stroke="#0369a1" strokeWidth="3"/><text x="315" y="150">P</text><text x="30" y="20">Q</text></svg><p>P = {displayNumber(P)} W, Q = {displayNumber(Q)} var, S = {displayNumber(S)} VA. Gleicher Maßstab für beide Komponenten. Positives Q zeigt nach oben, negatives nach unten. Es gilt P² + Q² = S² nur im genannten Sinusmodell. Die Größen sind nicht beliebig ineinander umrechenbar.</p></section>;
- }
- if(tool.group==='transfer')return <section className="lab-visualization"><h3>Stationärer ebener Wärmepfad</h3><svg viewBox="0 0 360 180" role="img" aria-labelledby={id}><title id={id}>Schematische ebene Schichten: Wärmeübertragung vom warmen zum kalten Rand</title><rect x="55" y="25" width="105" height="115" fill="#f5d6b0" stroke="#92400e"/><rect x="160" y="25" width="105" height="115" fill="#cde4ed" stroke="#0369a1"/><path d="M20 82 H310 l-12 -7 m12 7 l-12 7" fill="none" stroke="currentColor" strokeWidth="3"/><text x="15" y="166">warm → kalt</text></svg><p>Schematische Orientierung, kein berechneter Temperaturverlauf und keine maßstäbliche Schichtzeichnung. Der positive Wärmestrombetrag folgt aus den eingegebenen Randbedingungen. Kontakte, Feuchte, Wärmebrücken und zeitliche Speicherung sind nicht enthalten.</p></section>;
- return null;
+import { useId } from "react";
+import type { CalculatorDefinition } from "./model";
+import { calculateTechnical } from "../technical/calculations";
+import { displayNumber } from "./format";
+export default function LabVisualization({
+  tool,
+  values,
+  changeMass,
+}: {
+  tool: CalculatorDefinition;
+  values: Record<string, number>;
+  changeMass: (massSI: number) => void;
+}) {
+  const id = useId();
+  if (tool.id === "heat-power") {
+    const xmax = Math.max(1, values.massFlow * 2);
+    let samples: number[][];
+    try {
+      if (!Number.isFinite(xmax)) throw new Error();
+      samples = Array.from({ length: 21 }, (_, i) => {
+        const x = xmax * (i / 20);
+        return [x, calculateTechnical("heat", { ...values, massFlow: x })];
+      });
+    } catch {
+      return (
+        <p>
+          Der gewählte Wertebereich lässt sich im endlichen Diagrammbereich
+          nicht sicher darstellen. Ergebnis und Rechenweg bleiben maßgeblich;
+          Wertebereich für das Diagramm verkleinern.
+        </p>
+      );
+    }
+    const ymax = Math.max(1, samples.at(-1)![1]);
+    const path = samples
+      .map(
+        ([x, y], i) =>
+          `${i ? "L" : "M"}${45 + (300 * x) / xmax},${205 - (160 * y) / ymax}`,
+      )
+      .join(" ");
+    return (
+      <section className="lab-visualization">
+        <h3>Wärmeleistung untersuchen</h3>
+        {values.massFlow <= 2 ? (
+          <label>
+            Experimentierregler: Massenstrom 0 bis 2 kg/s
+            <input
+              aria-label="Experimentierregler Massenstrom"
+              type="range"
+              min="0"
+              max="2"
+              step="0.05"
+              value={values.massFlow}
+              onChange={(e) => changeMass(Number(e.target.value))}
+            />
+          </label>
+        ) : (
+          <p>
+            Der Regler deckt 0 bis 2 kg/s ab. Für größere Modellwerte das
+            Zahlenfeld verwenden.
+          </p>
+        )}
+        <svg viewBox="0 0 400 265" role="img" aria-labelledby={id}>
+          <title id={id}>
+            Proportionaler Wärmeleistungsverlauf bei konstantem cp und
+            konstanter Temperaturdifferenz
+          </title>
+          <path d="M45 30 V205 H355" fill="none" stroke="currentColor" />
+          <path d={path} fill="none" stroke="#0369a1" strokeWidth="3" />
+          <circle
+            cx={45 + (300 * values.massFlow) / xmax}
+            cy={205 - (160 * calculateTechnical("heat", values)) / ymax}
+            r="5"
+            fill="#b45309"
+          />
+          <text x="5" y="25">
+            Q̇ (kW)
+          </text>
+          <text x="5" y="225">
+            0
+          </text>
+          <text x="200" y="250">
+            ṁ (kg/s)
+          </text>
+        </svg>
+        <p>
+          Achsenbereich: 0 bis {displayNumber(xmax)} kg/s und 0 bis{" "}
+          {displayNumber(ymax / 1000)} kW. Orange markiert ist der aktuelle
+          Punkt. Bei gleichem cp und gleicher Temperaturdifferenz verdoppelt
+          doppelter Massenstrom die Modellleistung. Bei ΔT = 0 bleibt sie null.
+          Das garantiert keine reale Leistungssteigerung eines Wärmeübertragers.
+        </p>
+      </section>
+    );
+  }
+  if (tool.group === "geometry") {
+    const ring = tool.kind === "annulus-area";
+    const d = ring ? values.outer : values.diameter;
+    const inner = ring ? (75 * values.inner) / d : 0;
+    return (
+      <section className="lab-visualization">
+        <h3>Geometrischer Querschnitt</h3>
+        <svg viewBox="0 0 360 210" role="img" aria-labelledby={id}>
+          <title id={id}>
+            {ring
+              ? "Rohrwand als Differenz von Außen- und Innenkreis"
+              : "Kreisquerschnitt mit dem angegebenen Durchmesser"}
+          </title>
+          <circle
+            cx="125"
+            cy="105"
+            r="75"
+            fill="#b8c9c4"
+            stroke="#235e4c"
+            strokeWidth="2"
+          />
+          {ring && (
+            <circle cx="125" cy="105" r={inner} fill="white" stroke="#0369a1" />
+          )}
+          <path d="M50 105 H200" stroke="#213c35" strokeDasharray="4 4" />
+          <text x="225" y="105">
+            d
+          </text>
+        </svg>
+        <p>
+          Durchmesser: {displayNumber(d)} m
+          {ring ? `; Innendurchmesser: ${displayNumber(values.inner)} m` : ""}.{" "}
+          {ring
+            ? "Die eingefärbte Ringfläche ist der Materialquerschnitt."
+            : "Die eingefärbte Kreisfläche verwendet den angegebenen Durchmesser; bei Innenvolumen ist dies der Innendurchmesser."}{" "}
+          Schematischer Querschnitt; eine Rohrlänge wird hier nicht als
+          maßstäbliche Zeichnung dargestellt. Keine Leitungsdimensionierung.
+        </p>
+      </section>
+    );
+  }
+  if (
+    ["ac-real", "ac-reactive", "ac-reactive-capacitive"].includes(tool.kind)
+  ) {
+    const S = calculateTechnical("ac-apparent", values),
+      P = calculateTechnical("ac-real", values),
+      Q = calculateTechnical(
+        tool.kind === "ac-reactive-capacitive"
+          ? "ac-reactive-capacitive"
+          : "ac-reactive",
+        values,
+      );
+    if (S === 0)
+      return (
+        <p>
+          S = 0: Alle gezeigten Leistungsbeträge sind null. Aus P/S ist dann
+          kein Leistungsfaktor bestimmbar.
+        </p>
+      );
+    const x = 55 + (130 * P) / S,
+      y = 150 - (130 * Q) / S;
+    return (
+      <section className="lab-visualization">
+        <h3>Leistungsdreieck im Sinusmodell</h3>
+        <svg viewBox="0 0 340 300" role="img" aria-labelledby={id}>
+          <title id={id}>
+            Wirk-, Blind- und Scheinleistung mit induktiv positivem und
+            kapazitiv negativem Blindanteil
+          </title>
+          <path d="M55 5 V290 M35 150 H310" fill="none" stroke="currentColor" />
+          <path
+            d={`M55 150 H${x} V${y} Z`}
+            fill="none"
+            stroke="#0369a1"
+            strokeWidth="3"
+          />
+          <text x="315" y="150">
+            P
+          </text>
+          <text x="30" y="20">
+            Q
+          </text>
+        </svg>
+        <p>
+          P = {displayNumber(P)} W, Q = {displayNumber(Q)} var, S ={" "}
+          {displayNumber(S)} VA. Gleicher Maßstab für beide Komponenten.
+          Positives Q zeigt nach oben, negatives nach unten. Es gilt P² + Q² =
+          S² nur im genannten Sinusmodell. Die Größen sind nicht beliebig
+          ineinander umrechenbar.
+        </p>
+      </section>
+    );
+  }
+  if (tool.group === "transfer")
+    return (
+      <section className="lab-visualization">
+        <h3>Stationärer ebener Wärmepfad</h3>
+        <svg viewBox="0 0 360 180" role="img" aria-labelledby={id}>
+          <title id={id}>
+            Schematische ebene Schichten: Wärmeübertragung vom warmen zum kalten
+            Rand
+          </title>
+          <rect
+            x="55"
+            y="25"
+            width="105"
+            height="115"
+            fill="#f5d6b0"
+            stroke="#92400e"
+          />
+          <rect
+            x="160"
+            y="25"
+            width="105"
+            height="115"
+            fill="#cde4ed"
+            stroke="#0369a1"
+          />
+          <path
+            d="M20 82 H310 l-12 -7 m12 7 l-12 7"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+          />
+          <text x="15" y="166">
+            warm → kalt
+          </text>
+        </svg>
+        <p>
+          Schematische Orientierung, kein berechneter Temperaturverlauf und
+          keine maßstäbliche Schichtzeichnung. Der positive Wärmestrombetrag
+          folgt aus den eingegebenen Randbedingungen. Kontakte, Feuchte,
+          Wärmebrücken und zeitliche Speicherung sind nicht enthalten.
+        </p>
+      </section>
+    );
+  return null;
 }

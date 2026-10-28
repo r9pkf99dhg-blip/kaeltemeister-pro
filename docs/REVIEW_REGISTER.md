@@ -2,6 +2,1896 @@
 
 Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.
 
+## language-module:math-arithmetic/grundlagen: Zahlen und Rechenregeln · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beim Rechnen hilft eine feste Reihenfolge. Kläre zuerst, welche Größe du suchst und was ein Vorzeichen bedeutet. / Eine Klammer fasst eine Rechnung zusammen. Rechne sie zuerst aus. Danach folgen Potenzen, dann Mal und Geteilt, zuletzt Plus und Minus. Bei 2 + 3 mal 4 wird zuerst 3 mal 4 gerechnet: Das ergibt 14. Mit (2 + 3) mal 4 erhältst du dagegen 20. Das Minuszeichen kann auch eine Richtung oder eine Änderung nach unten angeben. / In einer Wärmeleistungsrechnung zuerst die Einheiten angleichen. Erst dann die Faktoren multiplizieren. Ein Vorzeichen braucht eine erklärte Richtung; ein Betrag ist nicht negativ. / Klammern zuerst, dann Potenzen, dann Mal/Geteilt, dann Plus/Minus. Gleichrangiges von links nach rechts. Vorzeichen und Modellgrenzen zusätzlich prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-arithmetic/fachkraft: Zahlen und Rechenregeln · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beim Rechnen hilft eine feste Reihenfolge. Kläre zuerst, welche Größe du suchst und was ein Vorzeichen bedeutet. / Gleichrangige Rechnungen wie Mal und Geteilt bearbeitest du von links nach rechts. Beim Multiplizieren zweier negativer Zahlen entsteht eine positive Zahl. Beim Subtrahieren einer negativen Zahl wird addiert. Notiere Vorzeichen und Klammern ausdrücklich. Zum Beispiel ist −2² gleich −4, aber (−2)² gleich 4. Ein Rechner darf diese beiden Eingaben nicht gleich behandeln. / In einer Wärmeleistungsrechnung zuerst die Einheiten angleichen. Erst dann die Faktoren multiplizieren. Ein Vorzeichen braucht eine erklärte Richtung; ein Betrag ist nicht negativ. / Klammern zuerst, dann Potenzen, dann Mal/Geteilt, dann Plus/Minus. Gleichrangiges von links nach rechts. Vorzeichen und Modellgrenzen zusätzlich prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-arithmetic/meister: Zahlen und Rechenregeln · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-order-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Beim Rechnen hilft eine feste Reihenfolge. Kläre zuerst, welche Größe du suchst und was ein Vorzeichen bedeutet. / Die Rechenregeln sagen noch nicht, ob ein Ergebnis zum Modell passt. Eine negative Zahl kann eine Richtung beschreiben; eine Länge im Betragsmodell kann dagegen nicht negativ sein. Teile niemals durch null. Rechne nach Möglichkeit ohne Zwischenrundung und prüfe am Ende Einheit und Größenordnung. Sehr große oder kleine Rechnerzahlen können den endlichen Zahlenbereich überschreiten. / In einer Wärmeleistungsrechnung zuerst die Einheiten angleichen. Erst dann die Faktoren multiplizieren. Ein Vorzeichen braucht eine erklärte Richtung; ein Betrag ist nicht negativ. / Klammern zuerst, dann Potenzen, dann Mal/Geteilt, dann Plus/Minus. Gleichrangiges von links nach rechts. Vorzeichen und Modellgrenzen zusätzlich prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-algebra/grundlagen: Variablen und Terme · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ein Buchstabe hält den Platz für einen Zahlenwert oder eine Größe frei. So kannst du denselben Zusammenhang für mehrere Beispiele verwenden. / Ein Term ist ein Rechenausdruck, zum Beispiel 3x + 2. Erst wenn du x kennst, kannst du ihn vollständig ausrechnen. Bei x = 4 wird daraus 3 mal 4 plus 2, also 14. Drei gleiche x und zwei weitere x ergeben zusammen fünf x. x und x² sind dagegen verschiedene Bausteine und dürfen nicht einfach zusammengezählt werden. / Technische Formeln bestehen aus Termen. Beim Umstellen müssen Gleichheit, zulässige Nenner und Bedeutung der Größen erhalten bleiben. / Nur gleichartige Terme zusammenfassen. Klammern vollständig ausmultiplizieren. Aus Summen nicht beliebig kürzen; ursprüngliche Nullbedingungen behalten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-algebra/fachkraft: Variablen und Terme · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ein Buchstabe hält den Platz für einen Zahlenwert oder eine Größe frei. So kannst du denselben Zusammenhang für mehrere Beispiele verwenden. / Ausmultiplizieren bedeutet, dass ein Faktor jeden Teil in der Klammer multipliziert: 2(x + 3) wird 2x + 6. Beim Ausklammern gehst du diesen Weg zurück. Kürzen ist nur bei gemeinsamen Faktoren im ganzen Zähler und Nenner erlaubt. In (x + 2)/x darfst du x nicht aus der Summe streichen. Bei einem Nenner x muss x ungleich null sein. / Technische Formeln bestehen aus Termen. Beim Umstellen müssen Gleichheit, zulässige Nenner und Bedeutung der Größen erhalten bleiben. / Nur gleichartige Terme zusammenfassen. Klammern vollständig ausmultiplizieren. Aus Summen nicht beliebig kürzen; ursprüngliche Nullbedingungen behalten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-algebra/meister: Variablen und Terme · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-distributive
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Ein Buchstabe hält den Platz für einen Zahlenwert oder eine Größe frei. So kannst du denselben Zusammenhang für mehrere Beispiele verwenden. / Eine technische Formel verwendet Buchstaben für physikalische Größen mit Einheiten. Du kannst nur gleichartige Größen addieren. Aus einer algebraischen Umformung allein folgt keine physikalische Gültigkeit. Halte den ursprünglichen Definitionsbereich fest. Auch wenn sich ein Nenner wegkürzt, bleiben ursprünglich ausgeschlossene Werte ausgeschlossen, bis sie im Ausgangsausdruck gesondert geprüft sind. / Technische Formeln bestehen aus Termen. Beim Umstellen müssen Gleichheit, zulässige Nenner und Bedeutung der Größen erhalten bleiben. / Nur gleichartige Terme zusammenfassen. Klammern vollständig ausmultiplizieren. Aus Summen nicht beliebig kürzen; ursprüngliche Nullbedingungen behalten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-powers/grundlagen: Potenzen, Wurzeln und Zehnerpotenzen · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Potenzen verkürzen wiederholtes Multiplizieren. Wurzeln fragen nach einem passenden Ausgangswert. Beides brauchst du bei Flächen, Volumen und Vorsilben. / Drei hoch zwei bedeutet drei mal drei und ergibt neun. Die Quadratwurzel von neun ist als Hauptwurzel die nicht negative Zahl drei. Hoch drei bedeutet drei gleiche Faktoren. Ein Millimeter ist ein Tausendstel Meter. Für einen Quadratmillimeter musst du diesen Faktor zweimal anwenden: Ein Quadratmillimeter ist ein Millionstel Quadratmeter. / Bei Flächen werden Längenfaktoren quadriert, bei Volumen hoch drei genommen. Beim Rückrechnen eines Durchmessers wählst du die nicht negative geometrische Wurzel. / Potenzen und Wurzeln mit passendem Definitionsbereich verwenden. Einheitenfaktoren für Fläche und Volumen ebenfalls potenzieren. Lösungskandidaten in der Originalgleichung prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-powers/fachkraft: Potenzen, Wurzeln und Zehnerpotenzen · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Potenzen verkürzen wiederholtes Multiplizieren. Wurzeln fragen nach einem passenden Ausgangswert. Beides brauchst du bei Flächen, Volumen und Vorsilben. / Bei gleicher Basis addierst du beim Multiplizieren die Exponenten. Zwei hoch drei mal zwei hoch zwei ergibt zwei hoch fünf. Ein negativer ganzzahliger Exponent bildet einen Kehrwert: Zwei hoch minus drei ist ein Achtel. Die Basis darf dafür nicht null sein. Ziehst du eine reelle Quadratwurzel, muss der Wert unter der Wurzel nicht negativ sein. / Bei Flächen werden Längenfaktoren quadriert, bei Volumen hoch drei genommen. Beim Rückrechnen eines Durchmessers wählst du die nicht negative geometrische Wurzel. / Potenzen und Wurzeln mit passendem Definitionsbereich verwenden. Einheitenfaktoren für Fläche und Volumen ebenfalls potenzieren. Lösungskandidaten in der Originalgleichung prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-powers/meister: Potenzen, Wurzeln und Zehnerpotenzen · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-power-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Potenzen verkürzen wiederholtes Multiplizieren. Wurzeln fragen nach einem passenden Ausgangswert. Beides brauchst du bei Flächen, Volumen und Vorsilben. / Die Hauptwurzel von x² ist der Betrag von x. Aus x² = 9 folgen deshalb x = 3 und x = −3. Wenn x eine nicht negative Länge beschreibt, bleibt nur die passende Länge. Beim Quadrieren können zusätzliche Lösungen entstehen: Setze Kandidaten in die Ausgangsgleichung ein. Eine Rechnerausgabe prüft Definitionsbereich und physikalische Bedeutung nicht automatisch. / Bei Flächen werden Längenfaktoren quadriert, bei Volumen hoch drei genommen. Beim Rückrechnen eines Durchmessers wählst du die nicht negative geometrische Wurzel. / Potenzen und Wurzeln mit passendem Definitionsbereich verwenden. Einheitenfaktoren für Fläche und Volumen ebenfalls potenzieren. Lösungskandidaten in der Originalgleichung prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-fractions/grundlagen: Brüche verstehen und berechnen · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Brüche verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Stell dir einen ganzen Kuchen vor. Der Nenner sagt, in wie viele gleich große Teile er geteilt wird. Der Zähler zählt diese Teile. Ein Nenner darf nie null sein. Ein halber und ein Viertelkuchen ergeben zusammen drei Viertel. / Technikbezug: Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen. / Stell dir einen ganzen Kuchen vor. Der Nenner sagt, in wie viele gleich große Teile er geteilt wird. Der Zähler zählt diese Teile. Ein Nenner darf nie null sein. Ein halber und ein Viertelkuchen ergeben zusammen drei Viertel. Wichtig für die Anwendung: Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-fractions/fachkraft: Brüche verstehen und berechnen · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Brüche verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Beim Addieren brauchst du gleich große Teile. Aus einem Halb werden deshalb zwei Viertel. Beim Multiplizieren werden Zähler miteinander und Nenner miteinander multipliziert. Beim Teilen drehst du den zweiten Bruch um; er darf nicht null sein. / Technikbezug: Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen. / Stell dir einen ganzen Kuchen vor. Der Nenner sagt, in wie viele gleich große Teile er geteilt wird. Der Zähler zählt diese Teile. Ein Nenner darf nie null sein. Ein halber und ein Viertelkuchen ergeben zusammen drei Viertel. Wichtig für die Anwendung: Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-fractions/meister: Brüche verstehen und berechnen · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-fraction-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Brüche verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen. / Technikbezug: Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen. / Stell dir einen ganzen Kuchen vor. Der Nenner sagt, in wie viele gleich große Teile er geteilt wird. Der Zähler zählt diese Teile. Ein Nenner darf nie null sein. Ein halber und ein Viertelkuchen ergeben zusammen drei Viertel. Wichtig für die Anwendung: Kürzen heißt, Zähler und Nenner durch denselben von null verschiedenen Faktor zu teilen. Aus einer Summe darfst du nicht einfach einen Summanden wegkürzen. Ein Doppelbruch kann eine technische Formel beschreiben. Ob diese Formel zum Bauteil passt, musst du zusätzlich prüfen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-percent/grundlagen: Prozentrechnung und Dreisatz · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-percent-rule, math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Prozent und Dreisatz: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Prozent bedeutet von hundert. 15 Prozent sind 15 von 100, also 0,15. Wenn du 15 Prozent von 200 suchst, rechnest du 200 mal 0,15. Du erhältst 30. Benenne zuerst, worauf sich der Prozentwert bezieht. / Technikbezug: Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert. / Prozent bedeutet von hundert. 15 Prozent sind 15 von 100, also 0,15. Wenn du 15 Prozent von 200 suchst, rechnest du 200 mal 0,15. Du erhältst 30. Benenne zuerst, worauf sich der Prozentwert bezieht. Wichtig für die Anwendung: Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-percent/fachkraft: Prozentrechnung und Dreisatz · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-percent-rule, math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Prozent und Dreisatz: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Beim direkten Dreisatz gehst du zunächst auf eine Einheit zurück. Kosten drei gleiche Teile zusammen 12, kostet eines 4. Fünf kosten dann 20. Das geht nur, wenn der Preis pro Teil wirklich gleich bleibt. Technische Größen sind nicht automatisch proportional. / Technikbezug: Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert. / Prozent bedeutet von hundert. 15 Prozent sind 15 von 100, also 0,15. Wenn du 15 Prozent von 200 suchst, rechnest du 200 mal 0,15. Du erhältst 30. Benenne zuerst, worauf sich der Prozentwert bezieht. Wichtig für die Anwendung: Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-percent/meister: Prozentrechnung und Dreisatz · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-percent-rule, math-proportion-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Prozent und Dreisatz: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert. / Technikbezug: Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert. / Prozent bedeutet von hundert. 15 Prozent sind 15 von 100, also 0,15. Wenn du 15 Prozent von 200 suchst, rechnest du 200 mal 0,15. Du erhältst 30. Benenne zuerst, worauf sich der Prozentwert bezieht. Wichtig für die Anwendung: Ein Anstieg von 20 auf 25 Prozent sind fünf Prozentpunkte. Bezogen auf den Anfangswert ist das ein Zuwachs um 25 Prozent. Plus zehn Prozent und danach minus zehn Prozent heben sich nicht auf: Der zweite Grundwert ist bereits verändert. Bei Grundwert null ist ein relativer Anteil nicht definiert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-equations/grundlagen: Gleichungen Schritt für Schritt lösen · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gleichungen lösen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine Gleichung sagt: Links und rechts steht derselbe Wert. Wenn du auf beiden Seiten dieselbe Zahl addierst oder abziehst, bleibt die Gleichheit erhalten. Bei 2x + 5 = 17 ziehst du zuerst auf beiden Seiten 5 ab. Dann teilst du beide Seiten durch 2. / Technikbezug: Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte. / Eine Gleichung sagt: Links und rechts steht derselbe Wert. Wenn du auf beiden Seiten dieselbe Zahl addierst oder abziehst, bleibt die Gleichheit erhalten. Bei 2x + 5 = 17 ziehst du zuerst auf beiden Seiten 5 ab. Dann teilst du beide Seiten durch 2. Wichtig für die Anwendung: Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-equations/fachkraft: Gleichungen Schritt für Schritt lösen · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gleichungen lösen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Dein Ziel ist, die gesuchte Zahl allein auf eine Seite zu bringen. Dabei darfst du nur durch eine Zahl teilen, die nicht null ist. Setze dein Ergebnis danach in die ursprüngliche Gleichung ein. Stimmen beide Seiten überein, besteht die Zahlenprobe. / Technikbezug: Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte. / Eine Gleichung sagt: Links und rechts steht derselbe Wert. Wenn du auf beiden Seiten dieselbe Zahl addierst oder abziehst, bleibt die Gleichheit erhalten. Bei 2x + 5 = 17 ziehst du zuerst auf beiden Seiten 5 ab. Dann teilst du beide Seiten durch 2. Wichtig für die Anwendung: Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-equations/meister: Gleichungen Schritt für Schritt lösen · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-linear-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Gleichungen lösen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte. / Technikbezug: Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte. / Eine Gleichung sagt: Links und rechts steht derselbe Wert. Wenn du auf beiden Seiten dieselbe Zahl addierst oder abziehst, bleibt die Gleichheit erhalten. Bei 2x + 5 = 17 ziehst du zuerst auf beiden Seiten 5 ab. Dann teilst du beide Seiten durch 2. Wichtig für die Anwendung: Bei ax + b = c musst du den Fall a = 0 getrennt prüfen. Falls dann b = c ist, passt jede reelle Zahl. Falls b und c verschieden sind, gibt es keine Lösung. Eine Probe bestätigt eine eingesetzte Zahl, aber nicht automatisch die Gleichwertigkeit aller Umformungsschritte.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-rearrange/grundlagen: Technische Formeln umstellen · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-resistance, ohm-voltage, math-heat-energy, physics-pressure, physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Technische Formeln umstellen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine technische Formel ist eine Gleichung mit Größen. Du darfst dieselben erlaubten Rechenschritte auf beiden Seiten machen. Bei U = R mal I und gesuchtem R teilst du beide Seiten durch I. Das ist nur erlaubt, wenn I nicht null ist. / Technikbezug: Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler. / Eine technische Formel ist eine Gleichung mit Größen. Du darfst dieselben erlaubten Rechenschritte auf beiden Seiten machen. Bei U = R mal I und gesuchtem R teilst du beide Seiten durch I. Das ist nur erlaubt, wenn I nicht null ist. Wichtig für die Anwendung: Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-rearrange/fachkraft: Technische Formeln umstellen · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-resistance, ohm-voltage, math-heat-energy, physics-pressure, physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Technische Formeln umstellen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Finde zuerst die gesuchte Größe und den gesamten Faktor, der noch bei ihr steht. In Q = m mal c mal ΔT musst du für m durch das ganze Produkt c mal ΔT teilen. Klammern zeigen, welche Größen gemeinsam im Nenner stehen. Prüfe anschließend die Einheit. / Technikbezug: Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler. / Eine technische Formel ist eine Gleichung mit Größen. Du darfst dieselben erlaubten Rechenschritte auf beiden Seiten machen. Bei U = R mal I und gesuchtem R teilst du beide Seiten durch I. Das ist nur erlaubt, wenn I nicht null ist. Wichtig für die Anwendung: Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-rearrange/meister: Technische Formeln umstellen · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-resistance, ohm-voltage, math-heat-energy, physics-pressure, physics-density
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Technische Formeln umstellen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler. / Technikbezug: Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler. / Eine technische Formel ist eine Gleichung mit Größen. Du darfst dieselben erlaubten Rechenschritte auf beiden Seiten machen. Bei U = R mal I und gesuchtem R teilst du beide Seiten durch I. Das ist nur erlaubt, wenn I nicht null ist. Wichtig für die Anwendung: Umformen und physikalisch anwenden sind zwei Aufgaben. Die Division braucht nicht verschwindende Nenner. Zusätzlich muss das Modell passen, etwa konstante Wärmekapazität ohne Phasenwechsel. Setze die gefundene Größe in die Originalformel ein. So erkennst du viele Rechen- und Einheitenfehler.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-units/grundlagen: SI-Einheiten und Umrechnungen · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Einheiten sicher umrechnen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Zahl und Einheit gehören zusammen. Ein Kilowatt sind tausend Watt. Eine Stunde hat 3600 Sekunden. Daher teilst du einen Massenstrom in Kilogramm pro Stunde durch 3600, wenn du Kilogramm pro Sekunde brauchst. Schreibe die Einheit bei jedem Zwischenschritt dazu. / Technikbezug: Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist. / Zahl und Einheit gehören zusammen. Ein Kilowatt sind tausend Watt. Eine Stunde hat 3600 Sekunden. Daher teilst du einen Massenstrom in Kilogramm pro Stunde durch 3600, wenn du Kilogramm pro Sekunde brauchst. Schreibe die Einheit bei jedem Zwischenschritt dazu. Wichtig für die Anwendung: Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-units/fachkraft: SI-Einheiten und Umrechnungen · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Einheiten sicher umrechnen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei Flächen wird auch der Längenfaktor quadriert, bei Volumen wird er hoch drei genommen. Ein Millimeter ist ein Tausendstel Meter. Ein Quadratmillimeter ist deshalb ein Millionstel Quadratmeter. Energie und Leistung sind verschieden: Watt ist Joule pro Sekunde. / Technikbezug: Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist. / Zahl und Einheit gehören zusammen. Ein Kilowatt sind tausend Watt. Eine Stunde hat 3600 Sekunden. Daher teilst du einen Massenstrom in Kilogramm pro Stunde durch 3600, wenn du Kilogramm pro Sekunde brauchst. Schreibe die Einheit bei jedem Zwischenschritt dazu. Wichtig für die Anwendung: Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-units/meister: SI-Einheiten und Umrechnungen · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-unit-rule
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Einheiten sicher umrechnen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist. / Technikbezug: Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist. / Zahl und Einheit gehören zusammen. Ein Kilowatt sind tausend Watt. Eine Stunde hat 3600 Sekunden. Daher teilst du einen Massenstrom in Kilogramm pro Stunde durch 3600, wenn du Kilogramm pro Sekunde brauchst. Schreibe die Einheit bei jedem Zwischenschritt dazu. Wichtig für die Anwendung: Absolute Temperatur und Temperaturänderung sind verschieden. Minus zehn Grad Celsius entsprechen 263,15 Kelvin. Eine Erwärmung von minus zehn auf minus vier Grad Celsius beträgt dagegen sechs Kelvin. Bei einer Differenz fällt der gleiche Offset auf beiden Seiten weg. Prüfe immer, welche Größe gefragt ist.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-quantities/grundlagen: Elektrische Grundgrößen · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: electric-current-charge
+- Quellen: openstax-current-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42341/index.cnxml; eip-926, eip-108: I = ΔQ/Δt; A = C/s | openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Elektrische Grundgrößen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Elektrische Ladung ist eine eigene Größe. Strom sagt dir, wie viel Ladung pro Zeit durch einen Querschnitt transportiert wird. Spannung beschreibt Energie pro Ladung. Ein Widerstand begrenzt im einfachen ohmschen Modell den Strom. Die Einheiten sind Coulomb, Ampere, Volt und Ohm. / Technikbezug: Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis. / Elektrische Ladung ist eine eigene Größe. Strom sagt dir, wie viel Ladung pro Zeit durch einen Querschnitt transportiert wird. Spannung beschreibt Energie pro Ladung. Ein Widerstand begrenzt im einfachen ohmschen Modell den Strom. Die Einheiten sind Coulomb, Ampere, Volt und Ohm. Wichtig für die Anwendung: Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-quantities/fachkraft: Elektrische Grundgrößen · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: electric-current-charge
+- Quellen: openstax-current-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42341/index.cnxml; eip-926, eip-108: I = ΔQ/Δt; A = C/s | openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Elektrische Grundgrößen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Ein größeres Strommesssignal bedeutet nicht automatisch eine größere Spannung. Benenne zuerst die Größen und die betrachtete Schaltung. Im stationären Gleichstrommodell gilt I = Q durch t. Die Zeit muss zur Einheit des Stroms passen: Ein Ampere ist ein Coulomb pro Sekunde. / Technikbezug: Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis. / Elektrische Ladung ist eine eigene Größe. Strom sagt dir, wie viel Ladung pro Zeit durch einen Querschnitt transportiert wird. Spannung beschreibt Energie pro Ladung. Ein Widerstand begrenzt im einfachen ohmschen Modell den Strom. Die Einheiten sind Coulomb, Ampere, Volt und Ohm. Wichtig für die Anwendung: Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-quantities/meister: Elektrische Grundgrößen · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: electric-current-charge
+- Quellen: openstax-current-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42341/index.cnxml; eip-926, eip-108: I = ΔQ/Δt; A = C/s | openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Elektrische Grundgrößen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis. / Technikbezug: Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis. / Elektrische Ladung ist eine eigene Größe. Strom sagt dir, wie viel Ladung pro Zeit durch einen Querschnitt transportiert wird. Spannung beschreibt Energie pro Ladung. Ein Widerstand begrenzt im einfachen ohmschen Modell den Strom. Die Einheiten sind Coulomb, Ampere, Volt und Ohm. Wichtig für die Anwendung: Diese Grundbegriffe erklären ein Modell. Daraus folgt keine Erlaubnis, eine echte elektrische Anlage anzuschließen oder zu messen. Reale Bauteile und Schutzmaßnahmen brauchen passende Daten und fachliche Qualifikation. Auch eine kleine angegebene Spannung ist für sich kein Sicherheitsnachweis.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-uir/grundlagen: Spannung, Strom und Widerstand · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-current, ohm-resistance
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: Spannung, Strom und Widerstand: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Stell dir Spannung, Strom und Widerstand zunächst als drei verschiedene Größen vor. Bei einem passenden ohmschen Bauteil gilt U = R mal I. Wenn der Widerstand gleich bleibt und die Spannung steigt, steigt im Modell auch der Strom. / Technikbezug: Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter. / Stell dir Spannung, Strom und Widerstand zunächst als drei verschiedene Größen vor. Bei einem passenden ohmschen Bauteil gilt U = R mal I. Wenn der Widerstand gleich bleibt und die Spannung steigt, steigt im Modell auch der Strom. Wichtig für die Anwendung: Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-uir/fachkraft: Spannung, Strom und Widerstand · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-current, ohm-resistance
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: Spannung, Strom und Widerstand: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Aus U = R mal I kannst du I = U durch R oder R = U durch I machen. Der jeweilige Nenner darf nicht null sein. Volt durch Ohm ergibt Ampere. Volt durch Ampere ergibt Ohm. Die Einheit zeigt dir, ob du die richtige Größe berechnet hast. / Technikbezug: Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter. / Stell dir Spannung, Strom und Widerstand zunächst als drei verschiedene Größen vor. Bei einem passenden ohmschen Bauteil gilt U = R mal I. Wenn der Widerstand gleich bleibt und die Spannung steigt, steigt im Modell auch der Strom. Wichtig für die Anwendung: Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-uir/meister: Spannung, Strom und Widerstand · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-current, ohm-resistance
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: Spannung, Strom und Widerstand: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter. / Technikbezug: Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter. / Stell dir Spannung, Strom und Widerstand zunächst als drei verschiedene Größen vor. Bei einem passenden ohmschen Bauteil gilt U = R mal I. Wenn der Widerstand gleich bleibt und die Spannung steigt, steigt im Modell auch der Strom. Wichtig für die Anwendung: Das ohmsche Modell ist keine universelle Beschreibung jedes Bauteils. Temperatur, Kennlinie und Betriebszustand können den Widerstand verändern. Eine rechnerisch richtige Beziehung erlaubt noch keine reale Auswahl oder elektrische Arbeit. Die Annahmen des jeweiligen Lernfalls gelten weiter.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ohm/grundlagen: Ohmsches Gesetz sicher anwenden · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-current, ohm-voltage, ohm-resistance
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: Ohmsches Gesetz anwenden: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Du suchst eine der Größen Spannung, Strom oder Widerstand. Schreibe die beiden bekannten Größen mit Einheiten auf. Wähle dann die passende Umstellung von U = R mal I. Rechne Vorsilben wie Milli und Kilo zuerst sorgfältig um. / Technikbezug: Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung. / Du suchst eine der Größen Spannung, Strom oder Widerstand. Schreibe die beiden bekannten Größen mit Einheiten auf. Wähle dann die passende Umstellung von U = R mal I. Rechne Vorsilben wie Milli und Kilo zuerst sorgfältig um. Wichtig für die Anwendung: Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ohm/fachkraft: Ohmsches Gesetz sicher anwenden · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-current, ohm-voltage, ohm-resistance
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: Ohmsches Gesetz anwenden: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei 24 Volt und 120 Ohm liefert I = U durch R den Strom 0,2 Ampere. Zur Kontrolle multiplizierst du 0,2 Ampere mit 120 Ohm und erhältst wieder 24 Volt. Diese Probe kontrolliert die Zahl und die Einheit im gegebenen Modell. / Technikbezug: Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung. / Du suchst eine der Größen Spannung, Strom oder Widerstand. Schreibe die beiden bekannten Größen mit Einheiten auf. Wähle dann die passende Umstellung von U = R mal I. Rechne Vorsilben wie Milli und Kilo zuerst sorgfältig um. Wichtig für die Anwendung: Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ohm/meister: Ohmsches Gesetz sicher anwenden · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ohm-current, ohm-voltage, ohm-resistance
+- Quellen: openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: Ohmsches Gesetz anwenden: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung. / Technikbezug: Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung. / Du suchst eine der Größen Spannung, Strom oder Widerstand. Schreibe die beiden bekannten Größen mit Einheiten auf. Wähle dann die passende Umstellung von U = R mal I. Rechne Vorsilben wie Milli und Kilo zuerst sorgfältig um. Wichtig für die Anwendung: Bei Widerstand null darfst du die Formel I = U durch R nicht verwenden. Ebenso darfst du beim Berechnen von R nicht durch Strom null teilen. Ob ein echtes Bauteil ohmsch ist, muss zum Betriebszustand passen. Das Lernmodell ersetzt weder Bauteildaten noch Schutzbemessung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-work/grundlagen: Elektrische Leistung und Arbeit · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: dc-electric-power, electric-energy
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Elektrische Leistung und Energie: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Leistung sagt, wie schnell Energie übertragen wird. Im stationären Gleichstromfall rechnest du Spannung mal Strom: P = U mal I. Das Ergebnis hat die Einheit Watt. Energie erhältst du, wenn du eine konstante Leistung mit ihrer Dauer multiplizierst. / Technikbezug: Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen. / Leistung sagt, wie schnell Energie übertragen wird. Im stationären Gleichstromfall rechnest du Spannung mal Strom: P = U mal I. Das Ergebnis hat die Einheit Watt. Energie erhältst du, wenn du eine konstante Leistung mit ihrer Dauer multiplizierst. Wichtig für die Anwendung: Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-work/fachkraft: Elektrische Leistung und Arbeit · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: dc-electric-power, electric-energy
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Elektrische Leistung und Energie: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Ein Gerät mit 120 Watt nimmt in zwei Stunden 240 Wattstunden Energie auf. Watt und Wattstunde sind nicht dieselbe Größe. Verwende für Joule die Zeit in Sekunden. Ein Watt ist ein Joule pro Sekunde; eine Wattstunde sind 3600 Joule. / Technikbezug: Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen. / Leistung sagt, wie schnell Energie übertragen wird. Im stationären Gleichstromfall rechnest du Spannung mal Strom: P = U mal I. Das Ergebnis hat die Einheit Watt. Energie erhältst du, wenn du eine konstante Leistung mit ihrer Dauer multiplizierst. Wichtig für die Anwendung: Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-work/meister: Elektrische Leistung und Arbeit · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: dc-electric-power, electric-energy
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Elektrische Leistung und Energie: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen. / Technikbezug: Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen. / Leistung sagt, wie schnell Energie übertragen wird. Im stationären Gleichstromfall rechnest du Spannung mal Strom: P = U mal I. Das Ergebnis hat die Einheit Watt. Energie erhältst du, wenn du eine konstante Leistung mit ihrer Dauer multiplizierst. Wichtig für die Anwendung: Die einfache Gleichstromformel ist nicht pauschal die Wirkleistungsformel jedes Wechselstromverbrauchers. Dort können Phasenverschiebung und Signalform eine Rolle spielen. Elektrische Eingangsleistung ist außerdem nicht automatisch mechanische Ausgangsleistung. Die Verluste müssen zur Systemgrenze passen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-wave/grundlagen: Wechselstrom: Sinus, Zeit und Effektivwert · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-period, ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Wechselstrom verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei Wechselstrom ändern sich Strom oder Spannung mit der Zeit. Ein reiner Sinus wiederholt seinen Verlauf nach einer Periodendauer. Die Frequenz sagt, wie viele Wiederholungen pro Sekunde stattfinden. 50 Hertz bedeuten eine Periodendauer von 0,02 Sekunden. / Technikbezug: Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein. / Bei Wechselstrom ändern sich Strom oder Spannung mit der Zeit. Ein reiner Sinus wiederholt seinen Verlauf nach einer Periodendauer. Die Frequenz sagt, wie viele Wiederholungen pro Sekunde stattfinden. 50 Hertz bedeuten eine Periodendauer von 0,02 Sekunden. Wichtig für die Anwendung: Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-wave/fachkraft: Wechselstrom: Sinus, Zeit und Effektivwert · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-period, ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Wechselstrom verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Der Scheitelwert ist der größte Betrag der Sinuskurve. Der Effektivwert beschreibt dagegen die gleiche mittlere Erwärmung eines Widerstands wie ein entsprechender Gleichwert. Nur beim reinen Sinus teilst du den Scheitelwert durch die Wurzel aus zwei. Der einfache Mittelwert über eine ganze Sinusperiode ist null. / Technikbezug: Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein. / Bei Wechselstrom ändern sich Strom oder Spannung mit der Zeit. Ein reiner Sinus wiederholt seinen Verlauf nach einer Periodendauer. Die Frequenz sagt, wie viele Wiederholungen pro Sekunde stattfinden. 50 Hertz bedeuten eine Periodendauer von 0,02 Sekunden. Wichtig für die Anwendung: Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-wave/meister: Wechselstrom: Sinus, Zeit und Effektivwert · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-period, ac-rms
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Wechselstrom verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein. / Technikbezug: Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein. / Bei Wechselstrom ändern sich Strom oder Spannung mit der Zeit. Ein reiner Sinus wiederholt seinen Verlauf nach einer Periodendauer. Die Frequenz sagt, wie viele Wiederholungen pro Sekunde stattfinden. 50 Hertz bedeuten eine Periodendauer von 0,02 Sekunden. Wichtig für die Anwendung: Eine zeitliche Verschiebung zwischen Strom und Spannung heißt Phasenverschiebung. Hier bedeutet ein positiver Winkel: Der Strom kommt später als die Spannung. Gleiche normierte Kurvenhöhe bedeutet nicht, dass Volt und Ampere gleich sind. Bei verzerrten Kurven gilt die besondere Wurzel-zwei-Regel nicht allgemein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-reactance/grundlagen: Spule, Kondensator und Impedanz · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-reactance-l, ac-reactance-c, ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Spule und Kondensator: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine ideale Spule speichert Energie im Magnetfeld. Eine Stromänderung wirkt auf ihre Spannung. Ein idealer Kondensator speichert Energie im elektrischen Feld; sein Strom verändert die Spannung. Deshalb erreichen Strom und Spannung ihre Maxima oft nicht gleichzeitig. / Technikbezug: Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen. / Eine ideale Spule speichert Energie im Magnetfeld. Eine Stromänderung wirkt auf ihre Spannung. Ein idealer Kondensator speichert Energie im elektrischen Feld; sein Strom verändert die Spannung. Deshalb erreichen Strom und Spannung ihre Maxima oft nicht gleichzeitig. Wichtig für die Anwendung: Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-reactance/fachkraft: Spule, Kondensator und Impedanz · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-reactance-l, ac-reactance-c, ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Spule und Kondensator: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Beim Sinusmodell steigt der induktive Blindwiderstand mit der Frequenz. Der kapazitive Blindwiderstand sinkt mit ihr. Im idealen Serienkreis werden diese Blindanteile mit ihrem Phasenbezug kombiniert. Du darfst nicht alle Beträge einfach wie gewöhnliche Widerstände addieren. / Technikbezug: Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen. / Eine ideale Spule speichert Energie im Magnetfeld. Eine Stromänderung wirkt auf ihre Spannung. Ein idealer Kondensator speichert Energie im elektrischen Feld; sein Strom verändert die Spannung. Deshalb erreichen Strom und Spannung ihre Maxima oft nicht gleichzeitig. Wichtig für die Anwendung: Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-reactance/meister: Spule, Kondensator und Impedanz · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-reactance-l, ac-reactance-c, ac-impedance
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Spule und Kondensator: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen. / Technikbezug: Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen. / Eine ideale Spule speichert Energie im Magnetfeld. Eine Stromänderung wirkt auf ihre Spannung. Ein idealer Kondensator speichert Energie im elektrischen Feld; sein Strom verändert die Spannung. Deshalb erreichen Strom und Spannung ihre Maxima oft nicht gleichzeitig. Wichtig für die Anwendung: Die Impedanz beschreibt im Wechselstrommodell Spannung und Strom mit ihrer Phasenbeziehung. Ihr Betrag im Serienkreis folgt aus dem rechtwinkligen Dreieck der Anteile. Reale Spulen und Kondensatoren besitzen zusätzliche Verluste und Belastungsgrenzen. Das Modell ist keine Anleitung zum Anschließen oder Auslegen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-power/grundlagen: Wirk-, Blind- und Scheinleistung · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive, ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Leistungsarten unterscheiden: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei einem Sinusverbraucher ist Spannung mal Strom die Scheinleistung S in VA. Für die Wirkleistung P in Watt kommt der Faktor cos φ dazu. Der Blindanteil Q wird in var angegeben. Die drei Größen beantworten unterschiedliche Fragen. / Technikbezug: Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus. / Bei einem Sinusverbraucher ist Spannung mal Strom die Scheinleistung S in VA. Für die Wirkleistung P in Watt kommt der Faktor cos φ dazu. Der Blindanteil Q wird in var angegeben. Die drei Größen beantworten unterschiedliche Fragen. Wichtig für die Anwendung: Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-power/fachkraft: Wirk-, Blind- und Scheinleistung · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive, ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Leistungsarten unterscheiden: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Im passenden Sinusmodell bilden P, Q und S ein rechtwinkliges Leistungsdreieck. Der Wirkanteil ist S mal cos φ, der Blindanteil S mal sin φ. Hier ist der Winkel bei nacheilendem Strom positiv; die Blindleistung ist dann induktiv positiv. Kapazitiv wäre sie negativ. / Technikbezug: Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus. / Bei einem Sinusverbraucher ist Spannung mal Strom die Scheinleistung S in VA. Für die Wirkleistung P in Watt kommt der Faktor cos φ dazu. Der Blindanteil Q wird in var angegeben. Die drei Größen beantworten unterschiedliche Fragen. Wichtig für die Anwendung: Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-ac-power/meister: Wirk-, Blind- und Scheinleistung · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-apparent, ac-real, ac-reactive, ac-factor
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Leistungsarten unterscheiden: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus. / Technikbezug: Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus. / Bei einem Sinusverbraucher ist Spannung mal Strom die Scheinleistung S in VA. Für die Wirkleistung P in Watt kommt der Faktor cos φ dazu. Der Blindanteil Q wird in var angegeben. Die drei Größen beantworten unterschiedliche Fragen. Wichtig für die Anwendung: Der Leistungsfaktor P durch S ist nicht der Motorwirkungsgrad. Dafür fehlt die mechanische Ausgangsleistung. Bei verzerrten Strom- oder Spannungskurven ist der Gesamtleistungsfaktor nicht allgemein gleich cos φ. Das einfache Dreieck setzt die angegebenen Sinusbedingungen voraus.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-three-phase/grundlagen: Drehstrom: Leiter-, Stranggrößen und Leistung · einfach · grundlagen
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-star, ac-delta, ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Drehstrom Schritt für Schritt: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Drehstrom hat im betrachteten Modell drei gleiche Sinusspannungen mit jeweils 120 Grad Abstand. Ein Strang ist ein einzelner Verbraucherzweig. Leitergrößen beziehen sich dagegen auf die Außenleiter. Diese Größen darfst du nicht miteinander verwechseln. / Technikbezug: Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung. / Drehstrom hat im betrachteten Modell drei gleiche Sinusspannungen mit jeweils 120 Grad Abstand. Ein Strang ist ein einzelner Verbraucherzweig. Leitergrößen beziehen sich dagegen auf die Außenleiter. Diese Größen darfst du nicht miteinander verwechseln. Wichtig für die Anwendung: Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-three-phase/fachkraft: Drehstrom: Leiter-, Stranggrößen und Leistung · einfach · fachkraft
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-star, ac-delta, ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Drehstrom Schritt für Schritt: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Im symmetrischen Stern ist die Leiterspannung die Wurzel aus drei mal Strangspannung; Leiterstrom und Strangstrom sind gleich. Im symmetrischen Dreieck ist die Leiterspannung gleich der Strangspannung; der Leiterstrom ist die Wurzel aus drei mal Strangstrom. Das folgt aus den versetzten Zeigern. / Technikbezug: Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung. / Drehstrom hat im betrachteten Modell drei gleiche Sinusspannungen mit jeweils 120 Grad Abstand. Ein Strang ist ein einzelner Verbraucherzweig. Leitergrößen beziehen sich dagegen auf die Außenleiter. Diese Größen darfst du nicht miteinander verwechseln. Wichtig für die Anwendung: Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:electric-three-phase/meister: Drehstrom: Leiter-, Stranggrößen und Leistung · einfach · meister
+
+- Fachgebiet: elektro
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: ac-star, ac-delta, ac-three-power
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance. | openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Drehstrom Schritt für Schritt: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung. / Technikbezug: Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung. / Drehstrom hat im betrachteten Modell drei gleiche Sinusspannungen mit jeweils 120 Grad Abstand. Ein Strang ist ein einzelner Verbraucherzweig. Leitergrößen beziehen sich dagegen auf die Außenleiter. Diese Größen darfst du nicht miteinander verwechseln. Wichtig für die Anwendung: Die Gesamtwirkleistung kannst du mit drei gleichen Strangleistungen oder mit der Formel über Leitergrößen berechnen. Beide Wege müssen dasselbe ergeben. Das gilt hier nur für symmetrische sinusförmige Verhältnisse. Bei Unsymmetrie oder Oberwellen genügt diese einfache Betrachtung nicht. Es ist keine Verdrahtungsanleitung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:physics-heat/grundlagen: Temperatur, Wärme und Phasenwechsel · einfach · grundlagen
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-heat-energy, physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Temperatur und Wärme: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Temperatur beschreibt einen Zustand. Wärme beschreibt dagegen Energie, die wegen eines Temperaturunterschieds übertragen wird. Ein Körper speichert innere Energie, keinen Wärmestoff. Bei Erwärmung innerhalb einer Phase kann die Temperatur steigen. / Technikbezug: Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug. / Temperatur beschreibt einen Zustand. Wärme beschreibt dagegen Energie, die wegen eines Temperaturunterschieds übertragen wird. Ein Körper speichert innere Energie, keinen Wärmestoff. Bei Erwärmung innerhalb einer Phase kann die Temperatur steigen. Wichtig für die Anwendung: Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:physics-heat/fachkraft: Temperatur, Wärme und Phasenwechsel · einfach · fachkraft
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-heat-energy, physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Temperatur und Wärme: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Für einen passenden sensiblen Prozess mit konstanter spezifischer Wärmekapazität gilt Q = m mal c mal ΔT. Größere Masse oder größerer Temperaturunterschied benötigen im Modell mehr Energie. Die Wärmekapazität muss zum Stoff und zum Prozess passen. / Technikbezug: Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug. / Temperatur beschreibt einen Zustand. Wärme beschreibt dagegen Energie, die wegen eines Temperaturunterschieds übertragen wird. Ein Körper speichert innere Energie, keinen Wärmestoff. Bei Erwärmung innerhalb einer Phase kann die Temperatur steigen. Wichtig für die Anwendung: Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:physics-heat/meister: Temperatur, Wärme und Phasenwechsel · einfach · meister
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: math-heat-energy, physics-power
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Temperatur und Wärme: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug. / Technikbezug: Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug. / Temperatur beschreibt einen Zustand. Wärme beschreibt dagegen Energie, die wegen eines Temperaturunterschieds übertragen wird. Ein Körper speichert innere Energie, keinen Wärmestoff. Bei Erwärmung innerhalb einer Phase kann die Temperatur steigen. Wichtig für die Anwendung: Bei einem Phasenwechsel kann Energie übertragen werden, ohne dass die Temperatur eines reinen Stoffes bei konstantem Druck weiter steigt. Dann reicht m mal c mal ΔT allein nicht. Energie in Joule und Wärmeleistung in Watt bleiben verschieden. Die Leistungsformel braucht den Zeitbezug.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:physics-pressure-density/grundlagen: Druck und Dichte verstehen · einfach · grundlagen
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: physics-pressure, physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Druck und Dichte: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Druck sagt im einfachen Modell, welche senkrechte Kraft auf eine Fläche wirkt. Dichte sagt, welche Masse in einem Volumen steckt. Beides sind unterschiedliche Größen. Druck hat die Einheit Pascal, Dichte Kilogramm pro Kubikmeter. / Technikbezug: Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung. / Druck sagt im einfachen Modell, welche senkrechte Kraft auf eine Fläche wirkt. Dichte sagt, welche Masse in einem Volumen steckt. Beides sind unterschiedliche Größen. Druck hat die Einheit Pascal, Dichte Kilogramm pro Kubikmeter. Wichtig für die Anwendung: Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:physics-pressure-density/fachkraft: Druck und Dichte verstehen · einfach · fachkraft
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: physics-pressure, physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Druck und Dichte: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Für Druck teilst du die senkrechte Kraft durch die belastete Fläche. Für Dichte teilst du die Masse durch das Volumen. Flächenumrechnungen enthalten ein Quadrat, Volumenumrechnungen eine dritte Potenz. Schreibe deshalb zuerst die SI-Einheiten auf. / Technikbezug: Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung. / Druck sagt im einfachen Modell, welche senkrechte Kraft auf eine Fläche wirkt. Dichte sagt, welche Masse in einem Volumen steckt. Beides sind unterschiedliche Größen. Druck hat die Einheit Pascal, Dichte Kilogramm pro Kubikmeter. Wichtig für die Anwendung: Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:physics-pressure-density/meister: Druck und Dichte verstehen · einfach · meister
+
+- Fachgebiet: physik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: physics-pressure, physics-density
+- Quellen: openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Druck und Dichte: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung. / Technikbezug: Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung. / Druck sagt im einfachen Modell, welche senkrechte Kraft auf eine Fläche wirkt. Dichte sagt, welche Masse in einem Volumen steckt. Beides sind unterschiedliche Größen. Druck hat die Einheit Pascal, Dichte Kilogramm pro Kubikmeter. Wichtig für die Anwendung: Bei Druck braucht jede Anwendung einen klaren Bezug: absolut zum Vakuum oder relativ zur Umgebung. Eine Dichte muss zum Stoffzustand passen. Beliebige Dichtewerte dürfen nicht für einen anderen Zustand verwendet werden. Diese einfachen Beziehungen sind keine Druckbehälter- oder Rohrdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-states/grundlagen: Temperatur, Druck und spezifisches Volumen · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-pressure-abs, thermo-specific-volume, thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Zustände und Bezugsgrößen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine Zahl für Druck oder Temperatur ist ohne ihren Bezug nicht eindeutig. Absolutdruck bezieht sich auf Vakuum, Überdruck auf die angegebene Umgebung. Für Kelvin addierst du bei einer absoluten Celsius-Temperatur 273,15. Bei einer Temperaturdifferenz machst du das nicht. / Technikbezug: Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden. / Eine Zahl für Druck oder Temperatur ist ohne ihren Bezug nicht eindeutig. Absolutdruck bezieht sich auf Vakuum, Überdruck auf die angegebene Umgebung. Für Kelvin addierst du bei einer absoluten Celsius-Temperatur 273,15. Bei einer Temperaturdifferenz machst du das nicht. Wichtig für die Anwendung: Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-states/fachkraft: Temperatur, Druck und spezifisches Volumen · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-pressure-abs, thermo-specific-volume, thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Zustände und Bezugsgrößen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Dichte ist Masse geteilt durch Volumen. Das spezifische Volumen ist der Kehrwert der Dichte. Einen Betriebsvolumenstrom rechnest du erst mit einer Dichte in einen Massenstrom um. Beide Angaben müssen zum selben Ort und Zustand gehören. / Technikbezug: Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden. / Eine Zahl für Druck oder Temperatur ist ohne ihren Bezug nicht eindeutig. Absolutdruck bezieht sich auf Vakuum, Überdruck auf die angegebene Umgebung. Für Kelvin addierst du bei einer absoluten Celsius-Temperatur 273,15. Bei einer Temperaturdifferenz machst du das nicht. Wichtig für die Anwendung: Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-states/meister: Temperatur, Druck und spezifisches Volumen · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-pressure-abs, thermo-specific-volume, thermo-mass-volume
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Zustände und Bezugsgrößen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden. / Technikbezug: Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden. / Eine Zahl für Druck oder Temperatur ist ohne ihren Bezug nicht eindeutig. Absolutdruck bezieht sich auf Vakuum, Überdruck auf die angegebene Umgebung. Für Kelvin addierst du bei einer absoluten Celsius-Temperatur 273,15. Bei einer Temperaturdifferenz machst du das nicht. Wichtig für die Anwendung: Negativer Überdruck ist relativ zur Umgebung möglich. Negativer Absolutdruck gehört nicht zu diesem einfachen Modell. Die Zahlenaufgabe verwendet positiven Überdruck. Bei realen Stofftabellen musst du den richtigen Druckbezug kennen. Normvolumen und Betriebsvolumen dürfen nicht still gleichgesetzt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-calorimetry/grundlagen: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: sensible-heat, math-heat-energy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeleistung verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine Wärmemenge ist Energie. Wärmeleistung sagt, wie viel davon pro Zeit übertragen wird. Masse ist eine Stoffmenge in Kilogramm, Massenstrom dagegen Kilogramm pro Sekunde. Diese Unterscheidung entscheidet, ob dein Ergebnis Joule oder Watt ist. / Technikbezug: Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten. / Eine Wärmemenge ist Energie. Wärmeleistung sagt, wie viel davon pro Zeit übertragen wird. Masse ist eine Stoffmenge in Kilogramm, Massenstrom dagegen Kilogramm pro Sekunde. Diese Unterscheidung entscheidet, ob dein Ergebnis Joule oder Watt ist. Wichtig für die Anwendung: Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-calorimetry/fachkraft: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: sensible-heat, math-heat-energy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeleistung verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Für einen passenden sensiblen Strom rechnest du Massenstrom mal spezifische Wärmekapazität mal Temperaturunterschied. Kilogramm pro Sekunde mal Joule pro Kilogramm und Kelvin mal Kelvin ergibt Joule pro Sekunde, also Watt. Hier betrachten wir positive übertragene Beträge. / Technikbezug: Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten. / Eine Wärmemenge ist Energie. Wärmeleistung sagt, wie viel davon pro Zeit übertragen wird. Masse ist eine Stoffmenge in Kilogramm, Massenstrom dagegen Kilogramm pro Sekunde. Diese Unterscheidung entscheidet, ob dein Ergebnis Joule oder Watt ist. Wichtig für die Anwendung: Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-calorimetry/meister: Wärmeenergie, Wärmeleistung und Wärmeträgerstrom · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: sensible-heat, math-heat-energy
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeleistung verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten. / Technikbezug: Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten. / Eine Wärmemenge ist Energie. Wärmeleistung sagt, wie viel davon pro Zeit übertragen wird. Masse ist eine Stoffmenge in Kilogramm, Massenstrom dagegen Kilogramm pro Sekunde. Diese Unterscheidung entscheidet, ob dein Ergebnis Joule oder Watt ist. Wichtig für die Anwendung: Das Modell braucht eine geeignete stationäre Bilanz und näherungsweise konstantes cp. Ein Phasenwechsel, stark wechselndes cp oder zusätzliche Energieterme erfordern ein erweitertes Modell. Im Kältemittelverdampfer wird deshalb oft mit Enthalpiedifferenzen gerechnet. Fiktive Beispielwerte sind keine realen Stoffdaten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-transfer/grundlagen: Wärmeleitung, Wärmewiderstand und U-Wert · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-conduction, thermo-resistance, thermo-layers, thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeübertragung verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Wärme kann durch Materialleitung, durch bewegtes Fluid und durch Strahlung übertragen werden. Der einfache Schichtrechner betrachtet nur eine ebene stationäre Leitung. Das bedeutet: Die Temperaturen ändern sich im Modell nicht mit der Zeit. / Technikbezug: Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten. / Wärme kann durch Materialleitung, durch bewegtes Fluid und durch Strahlung übertragen werden. Der einfache Schichtrechner betrachtet nur eine ebene stationäre Leitung. Das bedeutet: Die Temperaturen ändern sich im Modell nicht mit der Zeit. Wichtig für die Anwendung: Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-transfer/fachkraft: Wärmeleitung, Wärmewiderstand und U-Wert · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-conduction, thermo-resistance, thermo-layers, thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeübertragung verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Bei gleicher Fläche, Leitfähigkeit und Temperaturdifferenz lässt eine dickere Schicht weniger Wärme pro Zeit hindurch. Der Wärmewiderstand beschreibt, wie schwer dieser Weg ist. Bei gleichen seriellen Flächen addieren sich die Widerstände. Für einen U-Wert kommen vorgegebene Wärmeübergänge dazu. / Technikbezug: Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten. / Wärme kann durch Materialleitung, durch bewegtes Fluid und durch Strahlung übertragen werden. Der einfache Schichtrechner betrachtet nur eine ebene stationäre Leitung. Das bedeutet: Die Temperaturen ändern sich im Modell nicht mit der Zeit. Wichtig für die Anwendung: Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:thermo-transfer/meister: Wärmeleitung, Wärmewiderstand und U-Wert · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-conduction, thermo-resistance, thermo-layers, thermo-u
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics. | openstax-physics-v05: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42073 Newton; m42146 Arbeit; m42151 Energieerhaltung; m42187 Dichte; m42189 Druck; m42224 eip-644 Wärme Q=mcΔT.
+- Referenz / Rechnung: Wärmeübertragung verstehen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten. / Technikbezug: Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten. / Wärme kann durch Materialleitung, durch bewegtes Fluid und durch Strahlung übertragen werden. Der einfache Schichtrechner betrachtet nur eine ebene stationäre Leitung. Das bedeutet: Die Temperaturen ändern sich im Modell nicht mit der Zeit. Wichtig für die Anwendung: Ein reales Rohr ist nicht dieselbe Geometrie wie eine ebene Platte. Wärmebrücken, Feuchte, Kontakte und zeitliche Speicherung können zusätzlich wichtig sein. Ein richtig gerechneter Modellwert ist deshalb noch keine reale Dämmfreigabe. Wärmeleitfähigkeit λ und U-Wert haben unterschiedliche Einheiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-geometry/grundlagen: Maßstab, Flächen und Rohrquerschnitte · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: geo-circle, geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Flächen und Rohrquerschnitte: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Eine Fläche beschreibt nicht dieselbe Größe wie eine Länge. Beim Kreis ist der Radius der halbe Durchmesser. Der freie Rohrquerschnitt braucht den Innendurchmesser. Die Rohrwand ist dagegen eine Ringfläche zwischen Innen- und Außenkreis. / Technikbezug: Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe. / Eine Fläche beschreibt nicht dieselbe Größe wie eine Länge. Beim Kreis ist der Radius der halbe Durchmesser. Der freie Rohrquerschnitt braucht den Innendurchmesser. Die Rohrwand ist dagegen eine Ringfläche zwischen Innen- und Außenkreis. Wichtig für die Anwendung: Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-geometry/fachkraft: Maßstab, Flächen und Rohrquerschnitte · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: geo-circle, geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Flächen und Rohrquerschnitte: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Für den Kreis rechnest du π mal Durchmesser zum Quadrat geteilt durch vier. Die Ringfläche ist Außenkreis minus Innenkreis. Die Wand liegt auf beiden Seiten: Innendurchmesser ist Außendurchmesser minus zweimal Wanddicke. Rechne Millimeter vor dem Quadrieren richtig in Meter um. / Technikbezug: Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe. / Eine Fläche beschreibt nicht dieselbe Größe wie eine Länge. Beim Kreis ist der Radius der halbe Durchmesser. Der freie Rohrquerschnitt braucht den Innendurchmesser. Die Rohrwand ist dagegen eine Ringfläche zwischen Innen- und Außenkreis. Wichtig für die Anwendung: Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-geometry/meister: Maßstab, Flächen und Rohrquerschnitte · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: geo-circle, geo-annulus
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Flächen und Rohrquerschnitte: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe. / Technikbezug: Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe. / Eine Fläche beschreibt nicht dieselbe Größe wie eine Länge. Beim Kreis ist der Radius der halbe Durchmesser. Der freie Rohrquerschnitt braucht den Innendurchmesser. Die Rohrwand ist dagegen eine Ringfläche zwischen Innen- und Außenkreis. Wichtig für die Anwendung: Ein Maßstab verändert Längen, Flächen und Volumen mit unterschiedlichen Potenzen. Eine geometrische Fläche allein sagt noch nicht, welches Rohr für eine Kälteanlage passt. Druckverlust, Öltransport, Werkstoff und Betriebspunkt brauchen weitere geprüfte Modelle. Die gemeinsame Formel bleibt in beiden Sprachebenen dieselbe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-pipe-volume/grundlagen: Rohrvolumen und Oberflächen · einfach · grundlagen
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Rohrinhalt und Oberflächen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Der Innenraum eines geraden Rohres entsteht, wenn du den inneren Querschnitt über die Länge fortsetzt. Daher ist sein geometrisches Volumen Querschnitt mal Länge. Für den Außenmantel brauchst du dagegen den äußeren Umfang mal Länge. / Technikbezug: Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung. / Der Innenraum eines geraden Rohres entsteht, wenn du den inneren Querschnitt über die Länge fortsetzt. Daher ist sein geometrisches Volumen Querschnitt mal Länge. Für den Außenmantel brauchst du dagegen den äußeren Umfang mal Länge. Wichtig für die Anwendung: Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-pipe-volume/fachkraft: Rohrvolumen und Oberflächen · einfach · fachkraft
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Rohrinhalt und Oberflächen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Den Mantel kannst du dir als abgerolltes Rechteck vorstellen. Seine eine Seite ist der Kreisumfang, die andere die Rohrlänge. Stirnflächen zählen nicht zum Mantel. Der Materialinhalt ergibt sich aus Ringquerschnitt mal Länge, nicht aus dem inneren freien Querschnitt. / Technikbezug: Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung. / Der Innenraum eines geraden Rohres entsteht, wenn du den inneren Querschnitt über die Länge fortsetzt. Daher ist sein geometrisches Volumen Querschnitt mal Länge. Für den Außenmantel brauchst du dagegen den äußeren Umfang mal Länge. Wichtig für die Anwendung: Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:math-pipe-volume/meister: Rohrvolumen und Oberflächen · einfach · meister
+
+- Fachgebiet: mathematik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: geo-volume, geo-surface
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Rohrinhalt und Oberflächen: Du klärst zuerst die Bedeutung der Größen. Danach gehst du den Rechenweg Schritt für Schritt durch. Formeln, gemeinsame Beispiele und Modellgrenzen gelten unverändert auch in der Fachsprache. / Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung. / Technikbezug: Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung. / Der Innenraum eines geraden Rohres entsteht, wenn du den inneren Querschnitt über die Länge fortsetzt. Daher ist sein geometrisches Volumen Querschnitt mal Länge. Für den Außenmantel brauchst du dagegen den äußeren Umfang mal Länge. Wichtig für die Anwendung: Innenvolumen, Materialvolumen und Oberfläche beantworten verschiedene Fragen. Die Formeln gelten hier bei konstantem Querschnitt für den ideal geraden Abschnitt. Bögen, Formstücke, reale Stoffverteilung und zulässige Füllmengen sind damit nicht geprüft. Geometrie ist keine Rohrleitungsdimensionierung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-article:kreislauf: Artikel einfach: kreislauf
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Eine Kälteanlage transportiert Wärme. Das Kältemittel nimmt im Verdampfer Wärme aus dem kalten Bereich auf und gibt sie im Verflüssiger wieder ab. Der Verdichter braucht dafür Antriebsenergie. / Nach dem Expansionsorgan liegt im beschriebenen Modell ein Flüssigkeits-Dampf-Gemisch bei niedrigem Druck vor. Im Verdampfer nimmt es Wärme auf. Flüssigkeit wird zu Dampf. Im normalen betrachteten Betrieb verlässt trockener, etwas überhitzter Dampf den Verdampfer. / Der Verdichter erhöht Druck und Temperatur des Dampfes durch Arbeit. Flüssigkeit soll nicht hinein gelangen: Sie lässt sich kaum zusammendrücken und kann Schäden verursachen. Die elektrische Energie wird dem System zugeführt; reale Verluste und Systemgrenzen sind zu beachten. / Im Verflüssiger gibt der heiße Dampf Wärme ab und wird flüssig. Die abgegebene Wärme enthält näherungsweise die zuvor aufgenommene Kältewärme und die zugeführte Verdichterenergie. Danach kann die Flüssigkeit weiter abkühlen. / Das Expansionsorgan senkt den Druck durch Drosseln. Im idealisierten Modell bleibt die spezifische Enthalpie dabei gleich. Das heißt nicht, dass die Temperatur gleich bleibt. Ein Teil der Flüssigkeit verdampft; das Gemisch gelangt wieder zum Verdampfer.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-article:ueberhitzung: Artikel einfach: ueberhitzung
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Du vergleichst die wirkliche Dampftemperatur mit der Sättigungstemperatur beim örtlichen Druck. Dampftemperatur minus Sättigungstemperatur heißt Überhitzung. Das Ergebnis ist ein Temperaturunterschied in Kelvin. / Die vorgegebene Sättigungstemperatur ist −10 °C, die gemessene Rohrtemperatur am selben Ort −4 °C. Du rechnest −4 − (−10) = 6 K. Druckverluste können wichtig sein. Werte von verschiedenen Orten dürfen nicht einfach zusammen verwendet werden. / Eine passende Überhitzung hilft, trockenen Dampf am Verdampferausgang zu erhalten. Sehr wenig kann auf mitgerissene Flüssigkeit hinweisen. Viel Überhitzung kann zum Beispiel durch geringe Zufuhr oder zusätzliche Saugleitungserwärmung entstehen. Ein einzelner Wert beweist keine bestimmte Ursache. / Bei zeotropen Gemischen ist für die Überhitzung der Taupunkt, auch Dew genannt, maßgeblich. Messgerät, Kältemittel und Druckbezug müssen passen. Temperaturmessungen benötigen guten Kontakt und passende Abschirmung gegen Umgebungseinflüsse. Sollwerte hängen von Hersteller und Betriebszustand ab; praktische Arbeiten erfordern Qualifikation.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-article:unterkuehlung: Artikel einfach: unterkuehlung
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Nach vollständigem Verflüssigen kann die Flüssigkeit weiter abkühlen. Du rechnest Sättigungstemperatur minus Flüssigkeitstemperatur. Dieser Temperaturunterschied ist die Unterkühlung und wird in Kelvin angegeben. / Sind beim örtlichen Druck 40 °C Sättigungstemperatur vorgegeben und an derselben Stelle 35 °C Flüssigkeitstemperatur, ergibt das 40 − 35 = 5 K. Verwende zusammengehörige Druck- und Temperaturwerte. / Unterkühlung schafft im Modell eine Reserve gegen frühe Dampfblasen. Druckverlust und zusätzliche Wärme können diese Reserve verkleinern. Dampf vor dem Expansionsorgan kann die Versorgung stören. Welche Unterkühlung passt, hängt von Anlage und Hersteller ab. / Bei zeotropen Gemischen verwendest du für Unterkühlung den Siedepunkt, auch Bubble genannt. Ein einzelner Unterkühlungswert beweist keine bestimmte Füllmenge. Aufbau, Sammler, Last und Messort beeinflussen ihn. Am echten Kältekreis dürfen nur entsprechend qualifizierte Personen arbeiten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Enthalpie: Enthalpie einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Die spezifische Enthalpie h ist eine Zustandsgröße pro Masse. Sie hilft bei Energieübertragungen strömender Stoffe. Es gilt h = u + pv, mit innerer Energie u, Absolutdruck p und spezifischem Volumen v. Einheit J/kg. Für reale Zustände brauchst du passende Stoffdaten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Druck: Druck einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Im einfachen Modell teilst du eine senkrechte Kraft durch die Fläche. Das Ergebnis ist Druck in Pascal. Für eine technische Verwendung muss der Bezug klar sein: absolut zum Vakuum oder relativ zur Umgebung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Dichte: Dichte einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Dichte sagt, welche Masse in einem Volumen steckt. Du teilst Kilogramm durch Kubikmeter. Die Dichte muss zum Stoff und Zustand passen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Wärmemenge: Wärmemenge einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Als Wärme übertragene Energie, gemessen in Joule. Wärmeleistung ist dagegen Energie pro Zeit in Watt. Temperatur und innere Energie sind ebenfalls eigene Größen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Effektivwert: Effektivwert einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Dieser Wert beschreibt dieselbe mittlere Widerstandserwärmung wie ein entsprechender Gleichwert. Nur beim reinen Sinus teilst du den Scheitelwert durch √2.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Scheitelwert: Scheitelwert einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Das ist der größte Betrag einer wechselnden Größe. Er ist nicht derselbe Wert wie der Effektivwert oder der einfache zeitliche Mittelwert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Leistungsfaktor: Leistungsfaktor einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Das Verhältnis aus Wirkleistung P und Scheinleistung S, wenn S größer null ist. Nur im passenden Sinusmodell ist es auch cos φ. Es ist nicht der Wirkungsgrad eines Motors.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Blindleistung: Blindleistung einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Im Sinusmodell ein eigener Leistungsanteil in var. Hier gilt: induktiv positiv, kapazitiv negativ. Er ist kein direkt als mechanischer Nutzen verbrauchter Energieanteil.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Scheinleistung: Scheinleistung einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Das Produkt aus Effektivspannung und Effektivstrom in VA. Für Wirkleistung und Blindleistung brauchst du im Sinusmodell zusätzlich die passende Phasenbeziehung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Wirkleistung: Wirkleistung einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Die über eine Periode gemittelte elektrische Leistung in Watt. Im passenden Sinusmodell ist sie Spannung mal Strom mal cos φ; daraus folgt noch keine mechanische Ausgangsleistung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:Absolutdruck: Absolutdruck einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Druck mit dem Bezug Vakuum. Überdruck hat einen anderen Bezug: die angegebene Umgebung. Für eine Umrechnung zwischen den Bezügen brauchst du deshalb den Umgebungsdruck.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-term:U-Wert: U-Wert einfach
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Dieser Wert beschreibt im geeigneten Modell den Wärmedurchgang pro Fläche und Temperaturunterschied. Einheit W/(m²·K). Wärmebrücken, Feuchte und reale Geometrie brauchen zusätzliche Prüfung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:heat-power: Sensible Wärmeleistung
+
+- Fachgebiet: heat
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: sensible-heat
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: massFlow=0.5 kg/s; cp=4.18 kJ/(kg·K); deltaT=5 K.
+- Annahmen: Stationär, cp konstant, keine latente Wärme und keine zusätzlichen relevanten Arbeits-/kinetischen/potenziellen Energieterme. Inverse Berechnung nur auf dem gültigen Definitionsbereich.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:heat-flow: Massenstrom aus Wärmeleistung
+
+- Fachgebiet: heat
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: sensible-mass-flow
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: heat=10.45 kW; cp=4.18 kJ/(kg·K); deltaT=5 K.
+- Annahmen: Stationär, cp konstant, keine latente Wärme und keine zusätzlichen relevanten Arbeits-/kinetischen/potenziellen Energieterme. Inverse Berechnung nur auf dem gültigen Definitionsbereich.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:heat-difference: Temperaturdifferenz aus Wärmeleistung
+
+- Fachgebiet: heat
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: sensible-temperature-difference
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: heat=10.45 kW; massFlow=0.5 kg/s; cp=4.18 kJ/(kg·K).
+- Annahmen: Stationär, cp konstant, keine latente Wärme und keine zusätzlichen relevanten Arbeits-/kinetischen/potenziellen Energieterme. Inverse Berechnung nur auf dem gültigen Definitionsbereich.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:heat-cp: Spezifische Wärmekapazität
+
+- Fachgebiet: heat
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: lab-heat-cp
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: heat=10.45 kW; massFlow=0.5 kg/s; deltaT=5 K.
+- Annahmen: Stationär, cp konstant, keine latente Wärme und keine zusätzlichen relevanten Arbeits-/kinetischen/potenziellen Energieterme. Inverse Berechnung nur auf dem gültigen Definitionsbereich.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ohm-voltage: Gleichspannung aus R und I
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ohm-voltage
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: resistance=120 Ω; current=0.2 A.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ohm-current: Gleichstrom aus U und R
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ohm-current
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=24 V; resistance=120 Ω.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ohm-resistance: Widerstand aus U und I
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ohm-resistance
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=24 V; current=0.2 A.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:dc-power: Gleichstromleistung U mal I
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: dc-electric-power
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=24 V; current=0.2 A.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:dc-i2r: Ohmsche Leistung I²R
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: lab-dc-i2r
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: current=0.2 A; resistance=120 Ω.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:dc-u2r: Ohmsche Leistung U²/R
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: lab-dc-u2r
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=24 V; resistance=120 Ω.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ac-apparent: Scheinleistung im Sinusmodell
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ac-apparent
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=100 V; current=2 A.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ac-real: Wirkleistung im Sinusmodell
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ac-real
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=100 V; current=2 A; factor=0.6 1.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ac-inductive: Induktive Blindleistung (positiv)
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ac-reactive
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=100 V; current=2 A; factor=0.6 1.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ac-capacitive: Kapazitive Blindleistung (negativ)
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: lab-capacitive-q
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=100 V; current=2 A; factor=0.6 1.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:three-power: Symmetrische Drehstrom-Wirkleistung
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ac-three-power
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: voltage=400 V; current=10 A; factor=0.8 1.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:star-voltage: Stern: Leiterspannung aus Strangspannung
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ac-star
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: phaseVoltage=100 V.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:delta-current: Dreieck: Leiterstrom aus Strangstrom
+
+- Fachgebiet: electrical
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: ac-delta
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: phaseCurrent=2 A.
+- Annahmen: Keine Freigabe für elektrische Tätigkeiten, keine Leitungs-/Schutzbemessung. Die jeweils angegebene Formel setzt passende Signalform, Symmetrie und Systemgrenze voraus; Oberwellen/Unsymmetrie bleiben ausgeschlossen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:circle: Innerer Kreisquerschnitt
+
+- Fachgebiet: geometry
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: geo-circle
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: diameter=22 mm.
+- Annahmen: Keine hydraulische oder kältetechnische Dimensionierung. Geometrische Volumina und Oberflächen sind keine Stoffmengen-, Festigkeits- oder Betriebsfreigabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:ring: Material-Ringfläche
+
+- Fachgebiet: geometry
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: geo-annulus
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: outer=24 mm; inner=22 mm.
+- Annahmen: Keine hydraulische oder kältetechnische Dimensionierung. Geometrische Volumina und Oberflächen sind keine Stoffmengen-, Festigkeits- oder Betriebsfreigabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:volume: Geometrisches Rohrinnenvolumen
+
+- Fachgebiet: geometry
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: geo-volume
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: diameter=22 mm; length=10 m.
+- Annahmen: Keine hydraulische oder kältetechnische Dimensionierung. Geometrische Volumina und Oberflächen sind keine Stoffmengen-, Festigkeits- oder Betriebsfreigabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:mantle: Zylindermantel ohne Stirnflächen
+
+- Fachgebiet: geometry
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: geo-surface
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: diameter=22 mm; length=10 m.
+- Annahmen: Keine hydraulische oder kältetechnische Dimensionierung. Geometrische Volumina und Oberflächen sind keine Stoffmengen-, Festigkeits- oder Betriebsfreigabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:total-surface: Geschlossener Vollzylinder: gesamte Oberfläche
+
+- Fachgebiet: geometry
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: lab-cylinder-total
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: diameter=22 mm; length=10 m.
+- Annahmen: Keine hydraulische oder kältetechnische Dimensionierung. Geometrische Volumina und Oberflächen sind keine Stoffmengen-, Festigkeits- oder Betriebsfreigabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:conduction: Wärmestrom durch eine ebene Schicht
+
+- Fachgebiet: transfer
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: thermo-conduction
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: conductivity=0.04 W/(m·K); area=2 m²; thickness=0.1 m; deltaT=20 K.
+- Annahmen: Keine Feuchte-/Tauwasser-/Wärmebrückenberechnung und keine vollständige bauphysikalische oder anlagentechnische Auslegung. Alle Koeffizienten sind Eingaben, keine behaupteten Materialtabellen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:resistance: Wärmewiderstand einer Schicht
+
+- Fachgebiet: transfer
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: thermo-resistance
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: conductivity=0.04 W/(m·K); area=2 m²; thickness=0.1 m.
+- Annahmen: Keine Feuchte-/Tauwasser-/Wärmebrückenberechnung und keine vollständige bauphysikalische oder anlagentechnische Auslegung. Alle Koeffizienten sind Eingaben, keine behaupteten Materialtabellen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:layers: Wärmestrom durch zwei Serienschichten
+
+- Fachgebiet: transfer
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: thermo-layers
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: area=2 m²; deltaT=20 K; d1=0.1 m; lambda1=0.04 W/(m·K); d2=0.1 m; lambda2=0.04 W/(m·K).
+- Annahmen: Keine Feuchte-/Tauwasser-/Wärmebrückenberechnung und keine vollständige bauphysikalische oder anlagentechnische Auslegung. Alle Koeffizienten sind Eingaben, keine behaupteten Materialtabellen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:u-value: U-Wert aus Schichten und Wärmeübergängen
+
+- Fachgebiet: transfer
+- Status: Automatisch geprüft
+- Prüfumfang: Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.
+- Formel-IDs: thermo-u
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: inside=10 W/(m²·K); outside=10 W/(m²·K); d1=0.1 m; lambda1=0.04 W/(m·K); d2=0.1 m; lambda2=0.04 W/(m·K).
+- Annahmen: Keine Feuchte-/Tauwasser-/Wärmebrückenberechnung und keine vollständige bauphysikalische oder anlagentechnische Auslegung. Alle Koeffizienten sind Eingaben, keine behaupteten Materialtabellen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## laboratory:units: Einheitenumrechner
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Umrechnung rechnerisch getestet; aktueller SI-Primärquellenabgleich wegen Zugriffssperre offen.
+- Formel-IDs: unit-conversion-affine
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Unabhängige Zahlen-/Offset-/Flächen-/Zeitfaktorprüfungen in src/lab/validation.test.ts; alle registrierten Einheiten auf Identität geprüft.
+- Annahmen: Gleiche Größenart und gleicher Druckbezug; absolute Temperatur und Differenz getrennt.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-formula-heat: Formelwahl: Wärmeleistung
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Die Leistungsform benötigt den Massenstrom. Masse mal cp mal ΔT liefert Energie; UI beschreibt im Gleichstrommodell elektrische Leistung. Die Prozessannahmen bleiben nötig.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-formula-pressure: Formelwahl: Druck
+
+- Fachgebiet: physik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Druck ist hier Kraft pro Fläche. Masse pro Volumen ist Dichte; Kraft mal Fläche hat nicht die Druckeinheit Pa = N/m².
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-error-prefix: Fehler finden: Kilowatt
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Kilo bedeutet den Faktor tausend. Der Zahlenwert wird beim Übergang von kW zu W mit 1000 multipliziert; die Leistung selbst bleibt gleich. Korrigiere anschließend die Zahlenaufgabe.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-error-radius: Fehler finden: Rohrdurchmesser
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Der Radius ist d/2. Quadrieren erzeugt den Faktor 1/4. Das Beispiel ist eine eindeutig vorgegebene fehlerhafte Rechnung, keine Diagnose deines Denkwegs. Rechne anschließend selbst.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-error-factor: Fehler finden: Leistungsfaktor
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Der Gesamtleistungsfaktor P/S ist bei verzerrten Signalen nicht allein durch den Verschiebungswinkel bestimmt. Das einfache Sinusmodell benötigt passende Spannung und Strom; der Wirkungsgrad ist ein anderes Verhältnis.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-decision-model: Fachliche Entscheidung: Phasenwechsel
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Sensible Wärme ist nur ein Teilmodell. Bei Phasenwechsel kann Energie ohne Temperaturänderung übertragen werden. Benötigt werden passende Stoff- und Zustandsdaten; keine realen Stoffwerte werden hier erfunden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-step-given: Schritt 1: Gegeben und gesucht
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: kg/s kennzeichnet einen Massenstrom. In der sensiblen stationären Aufgabe wird daraus mit cp und ΔT eine Wärmeleistung. Einheiten und Modell helfen bei der Zuordnung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-step-formula: Schritt 2: Zusammenhang
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Die Formel benötigt Massenstrom und einen geeigneten konstanten cp-Wert. Phasenwechsel und weitere Energieterme sind nicht eingeschlossen; eine Zahlenübereinstimmung ersetzt diese Bedingungen nicht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## workshop-question:workshop-step-unit: Schritt 3: Einheiten vorbereiten
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Das Präfix kilo bringt den Faktor 1000. Ein Celsiusoffset gehört nicht zu einer spezifischen Wärmekapazität. Danach liefern kg/s × J/(kg·K) × K die Einheit Watt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-lab-heat-cp: Spezifische Wärmekapazität aus Wärmeleistung: cp = Q̇/(ṁ ΔT)
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: lab-heat-cp
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Spezifische Wärmekapazität aus Wärmeleistung: cp = Q̇/(ṁ ΔT)
+- Annahmen: Stationärer sensibler Betrag, Q̇, ṁ und ΔT positiv, cp konstant, kein Phasenwechsel.
+- Mögliche Fehler: Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-lab-dc-i2r: Ohmsche Gleichstromleistung über Strom: P = I² R
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: lab-dc-i2r
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Ohmsche Gleichstromleistung über Strom: P = I² R
+- Annahmen: Stationäres ohmsches Gleichstrommodell, R > 0; keine Bauteil-/Schutzdimensionierung.
+- Mögliche Fehler: Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-lab-dc-u2r: Ohmsche Gleichstromleistung über Spannung: P = U²/R
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: lab-dc-u2r
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9
+- Referenz / Rechnung: Ohmsche Gleichstromleistung über Spannung: P = U²/R
+- Annahmen: Stationäres ohmsches Gleichstrommodell, R > 0.
+- Mögliche Fehler: Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-lab-cylinder-total: Geschlossene Vollzylinderoberfläche: A = πdL + πd²/2
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: lab-cylinder-total
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: Geschlossene Vollzylinderoberfläche: A = πdL + πd²/2
+- Annahmen: Gerader geschlossener Vollzylinder, Mantel plus zwei Kreisflächen. Kein offenes Rohr und keine hydraulische Auslegung.
+- Mögliche Fehler: Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-lab-capacitive-q: Kapazitive Blindleistung im Sinusmodell: Q = −UI√(1−cos²φ)
+
+- Fachgebiet: elektro
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: lab-capacitive-q
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Kapazitive Blindleistung im Sinusmodell: Q = −UI√(1−cos²φ)
+- Annahmen: Passive reine Sinusgrößen, kapazitiver voreilender Strom, −90° ≤ φ ≤ 0°. cos φ von 0 bis 1; Q induktiv positiv, kapazitiv negativ. Keine Oberwellenverallgemeinerung.
+- Mögliche Fehler: Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## claim:claim-unit-conversion-affine: Größe über SI umrechnen: SI-Wert = Ausgangswert × Faktor + Offset
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Eigene mathematische Umstellung, Kombination oder Vorzeichenkonvention auf Basis der zugeordneten Grundbeziehungen. Kein behaupteter neuer direkter Kapitelabgleich. Feste unabhängige Zahlenreferenzen in src/lab/validation.test.ts und src/technical/calculations.test.ts. Nachweise: Rechnerisch unabhängig geprüft, Menschliche Fachprüfung erforderlich. Menschliche Fachfreigabe offen.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größe über SI umrechnen: SI-Wert = Ausgangswert × Faktor + Offset
+- Annahmen: Derselbe Größen- und Druckbezug bleibt erhalten. Offset nur bei absoluten Temperaturskalen; kein Offset für Temperaturdifferenzen.
+- Mögliche Fehler: Unabhängiger Rechentest ist keine menschliche Fachfreigabe. Quellenzuordnung unterstützt Grundbeziehungen, nicht automatisch diese gesamte Ableitung oder die reale Anwendbarkeit. SI-Primärquellenabgleich aktuell teilweise blockiert.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## claim:claim-geo-circle: Kreis- und Rohrquerschnitt: A = π d² / 4
 
 - Fachgebiet: mathematik
@@ -3297,6 +5187,96 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Referenz / Rechnung: Alternativ mit flächenbezogenen Widerständen: Modell A hat 2,5 m²·K/W, Modell B 5 m²·K/W. Einsetzen von AΔT = 40 m²·K ergibt 40/2,5 = 16 W und 40/5 = 8 W. Beide Lösungswege verwenden dieselbe stationäre Systemgrenze.
 - Annahmen: Entscheidung: Im stationären ebenen Modell halbiert sich der Wärmestrom. Für eine reale Verbesserung sind Wärmebrücken, Feuchte, Kontakt- und Übergangswiderstände, temperaturabhängige λ-Werte sowie Geometrie und Zeitverhalten zu prüfen. Bei einem Rohr ist die Fläche radial nicht konstant; das ebene Modell kann deshalb nicht unverändert als Rohrdämmnachweis dienen.
 - Mögliche Fehler: Schichtenwiderstände ohne gemeinsame Fläche addieren. Eine Halbierung im idealen Modell als gemessene Einsparung einer realen Anlage ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:unit-conversion-affine: Größe über SI umrechnen
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: SI-Wert = Ausgangswert × Faktor + Offset; Zur gewählten Größe passende Einheiten; Faktor und Offset aus dem gemeinsamen Einheitenregister.
+- Annahmen: Derselbe Größen- und Druckbezug bleibt erhalten. Offset nur bei absoluten Temperaturskalen; kein Offset für Temperaturdifferenzen.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:lab-heat-cp: Spezifische Wärmekapazität aus Wärmeleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: lab-heat-cp
+- Quellen: openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: cp = Q̇/(ṁ ΔT); J/(kg·K)
+- Annahmen: Stationärer sensibler Betrag, Q̇, ṁ und ΔT positiv, cp konstant, kein Phasenwechsel.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:lab-dc-i2r: Ohmsche Gleichstromleistung über Strom
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: lab-dc-i2r
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9 | openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: P = I² R; W
+- Annahmen: Stationäres ohmsches Gleichstrommodell, R > 0; keine Bauteil-/Schutzdimensionierung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:lab-dc-u2r: Ohmsche Gleichstromleistung über Spannung
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: lab-dc-u2r
+- Quellen: openstax-electric-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42714/index.cnxml; Modul m42714, Gleichungen eip-489 und eip-9 | openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
+- Referenz / Rechnung: P = U²/R; W
+- Annahmen: Stationäres ohmsches Gleichstrommodell, R > 0.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:lab-cylinder-total: Geschlossene Vollzylinderoberfläche
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: lab-cylinder-total
+- Quellen: openstax-precalculus-v06: https://github.com/openstax/osbooks-college-algebra-bundle/blob/463991614337632b0e02cbb6c76223cbb0d423d3/collections/precalculus-2e.collection.xml; m51283 Angles; m51284 Right Triangle Trigonometry; m51256 Quadratic Equations; m49301 Functions and Function Notation; m49326 Modeling with Linear Functions; m49363 Logarithmic Functions. Kapitel im gemeinsamen offiziellen Bucharchiv.
+- Referenz / Rechnung: A = πdL + πd²/2; m²
+- Annahmen: Gerader geschlossener Vollzylinder, Mantel plus zwei Kreisflächen. Kein offenes Rohr und keine hydraulische Auslegung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:lab-capacitive-q: Kapazitive Blindleistung im Sinusmodell
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: lab-capacitive-q
+- Quellen: openstax-ac-v06: https://github.com/openstax/osbooks-university-physics-bundle/blob/2300d5b8ca2571dacc6ec25ebef56ba8d49000a2/collections/university-physics-volume-2.collection.xml; m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Self-Inductance and Inductors; m58448 Capacitors and Capacitance.
+- Referenz / Rechnung: Q = −UI√(1−cos²φ); var
+- Annahmen: Passive reine Sinusgrößen, kapazitiver voreilender Strom, −90° ≤ φ ≤ 0°. cos φ von 0 bis 1; Q induktiv positiv, kapazitiv negativ. Keine Oberwellenverallgemeinerung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
 - Fachprüfer/in: ____________________
 - Datum / Fundstelle / Freigabeumfang: ____________________
@@ -9357,6 +11337,126 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Referenz / Rechnung: \(\dot Q_k=\dot Q_0+P_\mathrm{Fluid}\). / \(\dot Q_k=15+5=20\,\mathrm{kW}\).
 - Annahmen: Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Fluid-Systemgrenze ohne zusätzliche Verluste; keine Gleichsetzung mit elektrischer Eingangsleistung.
 - Mögliche Fehler: Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln. Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-power: kW in W
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-flow: kg/h in kg/s
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-volume: Liter in Kubikmeter
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-pressure: bar in Pa ohne Bezugswechsel
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-length: Millimeter in Meter
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-temperature: Celsius in Kelvin (absolut)
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-difference: Temperaturdifferenz in °C
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:workshop-conversion-area: Quadratmillimeter in Quadratmeter
+
+- Fachgebiet: mathematik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: unit-conversion-affine
+- Quellen: openstax-prealgebra-v05: https://github.com/openstax/osbooks-prealgebra-bundle/blob/ad40c7e3c9a909cde81a24c526f52fe26a51fb14/collections/prealgebra-2e.collection.xml; m81270 Ausdrücke; m81285/m81286/m81287/m81288 Brüche; m81306 Prozent; m81320/m81321 Gleichungen; m81335 Potenzen, m81315 rationale/irrationale Zahlen.
+- Referenz / Rechnung: Größenart und Bezugsniveau festhalten, dann Ausgangswert in SI umrechnen. / Den unveränderten SI-Wert in die gefragte Einheit zurückrechnen; Temperaturdifferenzen benötigen keinen Offset.
+- Annahmen: Reine Einheitenumrechnung; keine Änderung des Druckbezugs, kein Austausch von W, VA und var.
+- Mögliche Fehler: Absolute Temperatur und Temperaturdifferenz oder Druckbezug verwechseln. Vorsilben-/Zeitfaktor in die falsche Richtung anwenden oder Flächenfaktor nicht quadrieren.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
 - Fachprüfer/in: ____________________
 - Datum / Fundstelle / Freigabeumfang: ____________________

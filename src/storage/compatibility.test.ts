@@ -142,12 +142,32 @@ it("importiert die echte 0.5-Sicherung inklusive Karten, Kompetenzversuchen und 
     ).data,
   ).toEqual(b.data);
 });
-it('importiert die echte 0.6-Sicherung mit Lernbrückenentwurf und allen historischen Prüfungs-/Kartendaten unverändert',()=>{
- const raw=readFileSync(resolve('src/storage/fixtures/v06-backup.json'),'utf8');const backup=parseBackup(raw);
- expect(backup.appVersion).toBe('0.6.0');expect(backup.data.academy.activeExam?.id).toBe('v06-historical-active');
- expect(backup.data.academy.exerciseDraft).toMatchObject({taskId:'ac-three-a',answer:{value:'3200',unit:'W'},bridgeLessonId:'electric-three-phase',checked:true});
- expect(backup.data.academy.examHistory).toHaveLength(1);expect(Object.keys(backup.data.academy.reviews)).toHaveLength(1);
- expect(backup.data.academy.preferences).toBeUndefined();restoreBackup(backup,localStorage);
- expect(JSON.parse(localStorage.getItem(ACADEMY_KEY)!)).toEqual(backup.data.academy);
- expect(parseBackup(JSON.stringify(createBackup(backup.data.academy,backup.data.legacy,localStorage))).data).toEqual(backup.data);
+it("importiert die echte 0.6-Sicherung mit Lernbrückenentwurf und allen historischen Prüfungs-/Kartendaten unverändert", () => {
+  const raw = readFileSync(
+    resolve("src/storage/fixtures/v06-backup.json"),
+    "utf8",
+  );
+  const backup = parseBackup(raw);
+  expect(backup.appVersion).toBe("0.6.0");
+  expect(backup.data.academy.activeExam?.id).toBe("v06-historical-active");
+  expect(backup.data.academy.exerciseDraft).toMatchObject({
+    taskId: "ac-three-a",
+    answer: { value: "3200", unit: "W" },
+    bridgeLessonId: "electric-three-phase",
+    checked: true,
+  });
+  expect(backup.data.academy.examHistory).toHaveLength(1);
+  expect(Object.keys(backup.data.academy.reviews)).toHaveLength(1);
+  expect(backup.data.academy.preferences).toBeUndefined();
+  restoreBackup(backup, localStorage);
+  expect(JSON.parse(localStorage.getItem(ACADEMY_KEY)!)).toEqual(
+    backup.data.academy,
+  );
+  expect(
+    parseBackup(
+      JSON.stringify(
+        createBackup(backup.data.academy, backup.data.legacy, localStorage),
+      ),
+    ).data,
+  ).toEqual(backup.data);
 });

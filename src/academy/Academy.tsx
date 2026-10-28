@@ -1,5 +1,10 @@
+import { calculators as laboratoryModels } from "../lab/catalog";
 import { simpleTerms } from "../language/terms";
-import { Explain, useExplanation, LessonExplanation } from "../language/Explanation";
+import {
+  Explain,
+  useExplanation,
+  LessonExplanation,
+} from "../language/Explanation";
 import CaseStudy from "./deep/CaseStudy";
 import RearrangementTrainer from "./foundations/RearrangementTrainer";
 import { MathText } from "../math/Math";
@@ -50,12 +55,14 @@ type Props = {
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   error: string | null;
   openCalculator: () => void;
+  openLab?: (id: string) => void;
 };
 export default function Academy({
   progress,
   setProgress,
   error,
   openCalculator,
+  openLab,
   initialModuleId,
   initialView = "overview",
   initialExerciseId,
@@ -132,6 +139,7 @@ export default function Academy({
             );
             setModuleId(null);
           }}
+          openLab={openLab}
           openCalculator={openCalculator}
           openModule={open}
         />
@@ -139,7 +147,7 @@ export default function Academy({
         <>
           <div className="page-heading">
             <div>
-              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.6</p>
+              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.7</p>
               <h1>Lernakademie</h1>
               <p>
                 Mathematische Grundlagen und technische Fachmodule. Drei
@@ -336,7 +344,21 @@ export default function Academy({
                     .map((term) => (
                       <div className="glossary-entry" key={term.id}>
                         <h3>{term.title}</h3>
-                        <p>{simpleTerms[term.title]?<Explain simple={simpleTerms[term.title]} technical={term.definition}/>:<>{term.definition} <span className="small-muted">Ursprüngliche Begriffsdefinition.</span></>}</p>
+                        <p>
+                          {simpleTerms[term.title] ? (
+                            <Explain
+                              simple={simpleTerms[term.title]}
+                              technical={term.definition}
+                            />
+                          ) : (
+                            <>
+                              {term.definition}{" "}
+                              <span className="small-muted">
+                                Ursprüngliche Begriffsdefinition.
+                              </span>
+                            </>
+                          )}
+                        </p>
                         <div>
                           {term.moduleIds.map((id) => (
                             <button
@@ -426,6 +448,7 @@ function ModuleView({
   setProgress,
   back,
   openCalculator,
+  openLab,
   openModule,
 }: {
   module: Module;
@@ -435,6 +458,7 @@ function ModuleView({
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   back: () => void;
   openCalculator: () => void;
+  openLab?: (id: string) => void;
   openModule: (id: string) => void;
 }) {
   const content = module.levels[level];
@@ -449,171 +473,208 @@ function ModuleView({
   return (
     <article className="learning-module">
       <LessonExplanation lessonId={module.id}>
-      <button className="text-button back" onClick={back}>
-        <ArrowLeft size={17} /> Zur Modulübersicht
-      </button>
-      <p className="eyebrow">
-        {domains.find((d) => d.id === module.domainId)?.title} ·{" "}
-        {levelNames[level]} · REVISION {module.revision}
-      </p>
-      <h1>{module.title}</h1>
-      <p className="article-intro">{module.description}</p>
-      <div className="level-switch" aria-label="Wissensstufe wählen">
-        {levels.map((item) => (
-          <button
-            className={`button ${level === item ? "primary" : "secondary"}`}
-            aria-pressed={level === item}
-            key={item}
-            onClick={() => setLevel(item)}
-          >
-            {levelNames[item]}
-          </button>
-        ))}
-      </div>
-      <p className="review-notice">
-        Fachprüfung offen: Rechenwege geprüft, einzelne Grundbeziehungen mit
-        Quellen abgeglichen. Noch keine unabhängige fachliche Freigabe.
-        Quellenstatus und Modellgrenzen stehen am Modulende.
-      </p>
-      {module.safety && <p className="notice">{module.safety}</p>}
-      {!!module.prerequisites?.length && (
-        <section>
-          <h2>Empfohlene Voraussetzungen</h2>
-          {module.prerequisites.map((id) => (
+        <button className="text-button back" onClick={back}>
+          <ArrowLeft size={17} /> Zur Modulübersicht
+        </button>
+        <p className="eyebrow">
+          {domains.find((d) => d.id === module.domainId)?.title} ·{" "}
+          {levelNames[level]} · REVISION {module.revision}
+        </p>
+        <h1>{module.title}</h1>
+        <p className="article-intro">{module.description}</p>
+        <div className="level-switch" aria-label="Wissensstufe wählen">
+          {levels.map((item) => (
             <button
-              key={id}
-              className="text-button"
-              onClick={() => openModule(id)}
+              className={`button ${level === item ? "primary" : "secondary"}`}
+              aria-pressed={level === item}
+              key={item}
+              onClick={() => setLevel(item)}
             >
-              {modules.find((m) => m.id === id)?.title}
+              {levelNames[item]}
             </button>
           ))}
+        </div>
+        <p className="review-notice">
+          Fachprüfung offen: Rechenwege geprüft, einzelne Grundbeziehungen mit
+          Quellen abgeglichen. Noch keine unabhängige fachliche Freigabe.
+          Quellenstatus und Modellgrenzen stehen am Modulende.
+        </p>
+        {module.safety && <p className="notice">{module.safety}</p>}
+        {!!module.prerequisites?.length && (
+          <section>
+            <h2>Empfohlene Voraussetzungen</h2>
+            {module.prerequisites.map((id) => (
+              <button
+                key={id}
+                className="text-button"
+                onClick={() => openModule(id)}
+              >
+                {modules.find((m) => m.id === id)?.title}
+              </button>
+            ))}
+          </section>
+        )}
+        <section>
+          <h2>Lernziele</h2>
+          <ul>
+            {module.objectiveIds.map((id) => (
+              <li key={id}>
+                {objectives.find((objective) => objective.id === id)?.text}
+              </li>
+            ))}
+          </ul>
         </section>
-      )}
-      <section>
-        <h2>Lernziele</h2>
-        <ul>
-          {module.objectiveIds.map((id) => (
-            <li key={id}>
-              {objectives.find((objective) => objective.id === id)?.text}
-            </li>
-          ))}
-        </ul>
-      </section>
-      <CaseStudy
-        key={module.id}
-        moduleId={module.id}
-        setProgress={setProgress}
-      />
-      <LessonReading
-        module={module}
-        level={level}
-        openCalculator={openCalculator}
-      />
-      <button
-        className="button primary"
-        disabled={moduleRead(progress, module.id, level)}
-        onClick={() =>
-          setProgress((current) => markRead(current, module.id, level))
-        }
-      >
-        <CheckCircle2 size={18} />
-        {moduleRead(progress, module.id, level)
-          ? "Dieses Niveau ist gelesen"
-          : "Niveau als gelesen markieren"}
-      </button>
-      <p className="field-hint">
-        „Gelesen“ gilt pro Niveau und ist kein Nachweis, dass du das Thema
-        bereits beherrschst.
-      </p>
-      <section>
-        <h2>Verständnisfragen</h2>
-        <ModuleQuiz
-          key={`${module.id}-${level}`}
-          moduleId={module.id}
-          level={level}
-          progress={progress}
-          setProgress={setProgress}
-        />
-      </section>
-      <section>
-        <h2>Karteikarten</h2>
-        <ReviewCards
+        <CaseStudy
           key={module.id}
           moduleId={module.id}
-          progress={progress}
           setProgress={setProgress}
         />
-      </section>
-      {module.id === "math-rearrange" && (
-        <RearrangementTrainer setProgress={setProgress} />
-      )}
-      {numericTasks.some((t) => t.topicId === module.id) && (
-        <Exercises
-          key={`exercises-${module.id}`}
-          moduleId={module.id}
-          progress={progress}
-          setProgress={setProgress}
-          openModule={openModule}
-        />
-      )}
-      <section>
-        <h2>Vertiefung</h2>
-        <p>
-          <MathText text={content.deepening} />
-        </p>
-        <div className="related-links">
-          {module.related.map((related) =>
-            related.available && related.kind === "calculator" ? (
-              <button
-                key={related.id}
-                className="text-button"
-                onClick={openCalculator}
-              >
-                {related.label} <ArrowRight size={16} />
-              </button>
-            ) : (
-              <p key={related.id}>
-                {related.label} · Erweiterungspunkt, noch nicht implementiert
+        {openLab &&
+          (module.id === "math-units" ||
+            laboratoryModels.some((c) => c.moduleId === module.id)) && (
+            <details className="academy-panel">
+              <summary>Dieses Modell im Techniklabor untersuchen</summary>
+              <p>
+                Eigene Werte verändern und den gemeinsamen Rechenkern
+                nachvollziehen. Die Laboransicht zeigt Ergebnisse;
+                selbstständiges Üben erfolgt separat.
               </p>
-            ),
+              <div className="lab-links">
+                {module.id === "math-units" && (
+                  <button
+                    className="button secondary"
+                    onClick={() => openLab("units")}
+                  >
+                    Einheitenumrechner öffnen
+                  </button>
+                )}
+                {laboratoryModels
+                  .filter((c) => c.moduleId === module.id)
+                  .map((c) => (
+                    <button
+                      key={c.id}
+                      className="button secondary"
+                      onClick={() => openLab(c.id)}
+                    >
+                      {c.title} im Labor öffnen
+                    </button>
+                  ))}
+              </div>
+            </details>
           )}
-        </div>
-      </section>
-      <section className="module-sources">
-        <h2>Quellen und fachlicher Prüfstatus</h2>
-        <p>
-          <strong>Status: unabhängige Fachprüfung ausstehend.</strong> Die
-          folgenden Referenzen sind kein Nachweis einer abgeschlossenen Prüfung.
-          Die Lerntexte sind eigenständig formuliert, keine übernommenen
-          Fachbuchkapitel.
+        <LessonReading
+          module={module}
+          level={level}
+          openCalculator={openCalculator}
+        />
+        <button
+          className="button primary"
+          disabled={moduleRead(progress, module.id, level)}
+          onClick={() =>
+            setProgress((current) => markRead(current, module.id, level))
+          }
+        >
+          <CheckCircle2 size={18} />
+          {moduleRead(progress, module.id, level)
+            ? "Dieses Niveau ist gelesen"
+            : "Niveau als gelesen markieren"}
+        </button>
+        <p className="field-hint">
+          „Gelesen“ gilt pro Niveau und ist kein Nachweis, dass du das Thema
+          bereits beherrschst.
         </p>
-        {moduleSourceIds.map((id) => {
-          const source = sources.find((item) => item.id === id)!;
-          return (
-            <div key={id}>
-              <h3>{source.title}</h3>
-              <p>{source.note}</p>
-              {source.locator && (
-                <p>
-                  <strong>Fundstelle:</strong> {source.locator}
+        <section>
+          <h2>Verständnisfragen</h2>
+          <ModuleQuiz
+            key={`${module.id}-${level}`}
+            moduleId={module.id}
+            level={level}
+            progress={progress}
+            setProgress={setProgress}
+          />
+        </section>
+        <section>
+          <h2>Karteikarten</h2>
+          <ReviewCards
+            key={module.id}
+            moduleId={module.id}
+            progress={progress}
+            setProgress={setProgress}
+          />
+        </section>
+        {module.id === "math-rearrange" && (
+          <RearrangementTrainer setProgress={setProgress} />
+        )}
+        {numericTasks.some((t) => t.topicId === module.id) && (
+          <Exercises
+            key={`exercises-${module.id}`}
+            moduleId={module.id}
+            progress={progress}
+            setProgress={setProgress}
+            openModule={openModule}
+          />
+        )}
+        <section>
+          <h2>Vertiefung</h2>
+          <p>
+            <MathText text={content.deepening} />
+          </p>
+          <div className="related-links">
+            {module.related.map((related) =>
+              related.available && related.kind === "calculator" ? (
+                <button
+                  key={related.id}
+                  className="text-button"
+                  onClick={openCalculator}
+                >
+                  {related.label} <ArrowRight size={16} />
+                </button>
+              ) : (
+                <p key={related.id}>
+                  {related.label} · Erweiterungspunkt, noch nicht implementiert
                 </p>
-              )}
-              {source.supports && (
-                <p>
-                  <strong>Prüfumfang:</strong> {source.supports}
-                </p>
-              )}
-              {source.url && (
-                <a href={source.url} target="_blank" rel="noopener noreferrer">
-                  Referenz zur späteren Prüfung öffnen ↗
-                </a>
-              )}
-            </div>
-          );
-        })}
-      </section>
-    </LessonExplanation>
+              ),
+            )}
+          </div>
+        </section>
+        <section className="module-sources">
+          <h2>Quellen und fachlicher Prüfstatus</h2>
+          <p>
+            <strong>Status: unabhängige Fachprüfung ausstehend.</strong> Die
+            folgenden Referenzen sind kein Nachweis einer abgeschlossenen
+            Prüfung. Die Lerntexte sind eigenständig formuliert, keine
+            übernommenen Fachbuchkapitel.
+          </p>
+          {moduleSourceIds.map((id) => {
+            const source = sources.find((item) => item.id === id)!;
+            return (
+              <div key={id}>
+                <h3>{source.title}</h3>
+                <p>{source.note}</p>
+                {source.locator && (
+                  <p>
+                    <strong>Fundstelle:</strong> {source.locator}
+                  </p>
+                )}
+                {source.supports && (
+                  <p>
+                    <strong>Prüfumfang:</strong> {source.supports}
+                  </p>
+                )}
+                {source.url && (
+                  <a
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Referenz zur späteren Prüfung öffnen ↗
+                  </a>
+                )}
+              </div>
+            );
+          })}
+        </section>
+      </LessonExplanation>
     </article>
   );
 }

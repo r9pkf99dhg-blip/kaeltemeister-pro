@@ -1,3 +1,5 @@
+import { calculators } from "../lab/catalog";
+import { simpleCores } from "../language/core";
 import { expect, it } from "vitest";
 import { articles, questions } from "../content";
 import {
@@ -51,4 +53,13 @@ it("behauptet keine menschliche Fachprüfung und hält Belege getrennt", () => {
       ).toBe(true);
   }
   expect(reviewMarkdown()).toContain("Fachprüfer/in: ____________________");
+});
+
+it("inventarisiert sämtliche Laborvarianten und beide sprachlichen Kernfassungen ohne Fachfreigabe", () => {
+  expect(
+    reviewRegister.filter((e) => e.kind === "language-module"),
+  ).toHaveLength(simpleCores.length * 3);
+  expect(reviewRegister.filter((e) => e.kind === "laboratory")).toHaveLength(
+    calculators.length + 1,
+  );
 });

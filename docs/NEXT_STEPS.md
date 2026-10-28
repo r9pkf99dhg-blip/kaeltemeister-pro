@@ -24,14 +24,14 @@ Jede abgeschlossene Etappe wurde normal auf GitHub gepusht. Dies sind historisch
 - Echte zusätzliche Referenzsicherung aus unverändertem 0.6-Exporter `8a1ba77` erzeugt: `src/storage/fixtures/v06-backup.json`. Unveränderter Import/Reexport mit Karten, Prüfungshistorie, laufender Prüfung und offenem Lernbrückenentwurf geprüft. 0.4-/0.5-Referenzen bleiben unverändert.
 - Neue Backupprüfung für Labor, Sprachpräferenz, Rechenblatt, Hilfe, Antworten und Trainerposition; beschädigte optionale Felder werden vor Import abgewiesen.
 - Trainer-Wiederaufnahme korrigiert: dessen Container-ID ist bewusst kein normaler Zahlenaufgaben-Identifier. Revisionen vor Wiederaufnahme kontrollieren.
-- 401 Unit-/Integrationstests in 31 Dateien, TypeScript und Build bestanden (lokale Logs `/tmp/km-stable-*`).
-- GitHub fand zwei echte Darstellungsregressionen: 1 px WebKit-Überstand bei 200 % Schrift sowie sieben Navigationspunkte in bisher fünf mobilen Spalten. Umbruch-/Minimalbreiten begrenzt und Navigation auf sieben passende Spalten korrigiert; kein Ausblenden des gesamten Überlaufs, keine Tests deaktiviert. Vollständigen korrigierten Lauf noch bestätigen.
+- 409 Unit-/Integrationstests in 31 Dateien, frische Installation, TypeScript und Build bestanden (lokale Logs `/tmp/km-stable-*`).
+- GitHub fand zwei echte Darstellungsregressionen: 1 px WebKit-Überstand bei 200 % Schrift sowie sieben Navigationspunkte in bisher fünf mobilen Spalten. Umbruch-/Minimalbreiten begrenzt und Navigation auf sieben passende Spalten korrigiert; kein Ausblenden des gesamten Überlaufs, keine Tests deaktiviert. Vollständiger korrigierter Chromium-Lauf: 185/185 erfolgreich. Statistik-Karten zusätzlich gegen intrinsischen Überstand abgesichert. WebKit-Status für diesen neuen Stand noch bestätigen.
 - Neuer Browserablauf: falsche Einheit → einfache Lernbrücke → Rückkehr mit Eingabe, Einheit, Rechenblatt und unveränderter globaler Präferenz; große Schrift auch in neuen Ansichten.
 
 ## Noch abzuschließen
 
-1. Vollständige Chromium-Regression und GitHub Chromium/WebKit für korrigierten Stand abwarten, jeden verbleibenden Fehler untersuchen; keine grünen Ergebnisse vorwegnehmen.
-2. Sprach-/Laborinhalte im Fachprüfregister aufnehmen, dokumentierte Nachweisgrenzen beibehalten. Quellenzugriff: BIPM/PTB sowie genannte Lernstudienseiten lieferten HTTP 403; kein behaupteter Volltextzugriff. Bestehende tatsächlich gelesene OpenStax-Fundstellen weiterverwenden, eigene Ableitungen kennzeichnen.
+1. Vollständige Chromium-Regression bestanden; GitHub Chromium/WebKit für korrigierten Stand abwarten, jeden verbleibenden Fehler untersuchen; keine grünen Ergebnisse vorwegnehmen.
+2. Sprach-/Laborinhalte im Fachprüfregister erfasst: 876 Einträge, 76 Aussagenbelege. Sprachkern auf 23 Module ergänzt. Theorie→Labor-Verweise und numerische Unterlaufkontrollen separat getestet. Dokumentierte Nachweisgrenzen beibehalten. Quellenzugriff: BIPM/PTB sowie genannte Lernstudienseiten lieferten HTTP 403; kein behaupteter Volltextzugriff. Bestehende tatsächlich gelesene OpenStax-Fundstellen weiterverwenden, eigene Ableitungen kennzeichnen.
 3. Architektur, Lernsystem, Datenmodell, Quellen, Roadmap, Labor-, Werkstatt-, Sprach-/Validierungsanleitungen und Release/PR-Beschreibung auf tatsächlichen 0.7-Stand bringen. App-/Backupversion anpassen.
 4. Nach grünen Prüfungen Commit/normaler Push; aktuellen Remote-main-Vergleich und Merge-Konflikte prüfen. PR mit vorbereitetem Text versuchen. Git-HTTPS funktioniert, GitHub API bisher HTTP 403. Bei fehlender Berechtigung direkten Vergleichslink und genaue manuelle Schritte bereitstellen.
 

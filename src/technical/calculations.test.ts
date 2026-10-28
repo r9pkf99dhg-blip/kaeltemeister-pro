@@ -11,7 +11,14 @@ import { calculateHeat } from "../logic";
 
 // Unabhängig vorgegebene Referenzergebnisse, nicht mit der Produktfunktion erzeugt.
 const references: Record<string, number> = {
- "workshop-conversion-power":1500,"workshop-conversion-flow":.5,"workshop-conversion-volume":.01,"workshop-conversion-pressure":200000,"workshop-conversion-length":.022,"workshop-conversion-temperature":263.15,"workshop-conversion-difference":5,"workshop-conversion-area":.000314,
+  "workshop-conversion-power": 1500,
+  "workshop-conversion-flow": 0.5,
+  "workshop-conversion-volume": 0.01,
+  "workshop-conversion-pressure": 200000,
+  "workshop-conversion-length": 0.022,
+  "workshop-conversion-temperature": 263.15,
+  "workshop-conversion-difference": 5,
+  "workshop-conversion-area": 0.000314,
   "th-pressure-a": 300000,
   "th-volume-a": 0.00125,
   "th-mass-flow-a": 0.5,

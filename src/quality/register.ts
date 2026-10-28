@@ -1,3 +1,7 @@
+import { simpleCores } from "../language/core";
+import { simpleArticles } from "../language/articles";
+import { simpleTerms } from "../language/terms";
+import { calculators } from "../lab/catalog";
 import { workshopQuestions } from "../workshop/data";
 import { deepClaims } from "../academy/deep/claims";
 import { evidenceStatusNames } from "./evidence";
@@ -107,7 +111,68 @@ const formulaSourceChecked = (id: string, ids: string[]) =>
   sourceReviewedFormulaIds.has(id) && referencedSource(ids);
 /** Explizite Abdeckung; ein Quellenlink allein setzt niemals den Status auf fachlich freigegeben. */
 export const reviewRegister: ReviewEntry[] = [
- ...workshopQuestions.map(q=>entry(q.id,q.title,"workshop-question",q.domainId,{status:"automatic",reference:q.explanation,scope:"Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen."})),
+  ...simpleCores.flatMap((c) =>
+    levels.map((level) => {
+      const module = modules.find((m) => m.id === c.id)!;
+      return entry(
+        `${c.id}/${level}`,
+        `${module.title} · einfach · ${level}`,
+        "language-module",
+        module.domainId,
+        {
+          reference: [
+            c.introduction,
+            c.levels[level],
+            c.connections,
+            c.summary,
+          ].join("\n"),
+          formulaIds: module.formulaIds,
+          sourceIds: module.sourceIds,
+          scope:
+            "Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.",
+        },
+      );
+    }),
+  ),
+  ...Object.entries(simpleArticles).map(([id, texts]) =>
+    entry(id, `Artikel einfach: ${id}`, "language-article", "kaelte", {
+      reference: texts.join("\n"),
+    }),
+  ),
+  ...Object.entries(simpleTerms).map(([title, text]) =>
+    entry(title, `${title} einfach`, "language-term", "fachuebergreifend", {
+      reference: text,
+    }),
+  ),
+  ...calculators.map((c) =>
+    entry(c.id, c.title, "laboratory", c.group, {
+      status: "automatic",
+      formulaIds: [c.formulaId],
+      reference: `Unabhängiger SI-Sollwert je ID: src/lab/validation.test.ts. Eingaben: ${c.inputs.map((f) => `${f.id}=${f.value} ${f.unit}`).join("; ")}.`,
+      assumptions: c.limits.technical,
+      scope:
+        "Eigener eingeschränkter Laborfall, gemeinsamer SI-Kern. Feste unabhängige Zahlenreferenz und Fehlereingaben geprüft; keine reale Auslegungsfreigabe.",
+    }),
+  ),
+  entry("units", "Einheitenumrechner", "laboratory", "fachuebergreifend", {
+    status: "automatic",
+    formulaIds: ["unit-conversion-affine"],
+    reference:
+      "Unabhängige Zahlen-/Offset-/Flächen-/Zeitfaktorprüfungen in src/lab/validation.test.ts; alle registrierten Einheiten auf Identität geprüft.",
+    assumptions:
+      "Gleiche Größenart und gleicher Druckbezug; absolute Temperatur und Differenz getrennt.",
+    scope:
+      "Umrechnung rechnerisch getestet; aktueller SI-Primärquellenabgleich wegen Zugriffssperre offen.",
+  }),
+
+  ...workshopQuestions.map((q) =>
+    entry(q.id, q.title, "workshop-question", q.domainId, {
+      status: "automatic",
+      reference: q.explanation,
+      scope:
+        "Kuratierte Auswahl/Fehlerkorrektur; Optionen und Bewertungsfunktion geprüft, unabhängige Fachfreigabe offen.",
+    }),
+  ),
   ...deepClaims.map((c) =>
     entry(c.id, c.statement, "claim", c.domainId, {
       status: c.checks.includes("sourced")

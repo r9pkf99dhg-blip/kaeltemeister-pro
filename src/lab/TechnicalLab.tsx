@@ -1,30 +1,384 @@
 import LabVisualization from "./Visualization";
 import { fromSI } from "../technical/calculations";
 import { fallbackVariables } from "./symbols";
-import {useEffect,useMemo,useState,type Dispatch,type SetStateAction}from'react';
-import {calculators,labGroupNames}from'./catalog';import {initialLabValues,runCalculator}from'./engine';import type{CalculatorDefinition}from'./model';import{displayNumber,substitutionTex,numberTex}from'./format';import{siUnit}from'./units';
-import{units}from'../technical/calculations';import{formulas,sources,modules}from'../academy/catalog';import type{AcademyProgress}from'../academy/model';import type{ItemAnswer}from'../academy/exercises/model';import {Explain}from'../language/Explanation';import{BlockMath,VariableDefinitions}from'../math/Math';import UnitConverter from'./UnitConverter';
-export default function TechnicalLab({progress,setProgress,openModule,practice}:{progress:AcademyProgress;setProgress:Dispatch<SetStateAction<AcademyProgress>>;openModule:(id:string)=>void;practice:(id:string)=>void}){
- const[id,setId]=useState(progress.labDraft?.calculatorId&&calculators.some(c=>c.id===progress.labDraft!.calculatorId)?progress.labDraft.calculatorId:'units');const c=calculators.find(c=>c.id===id);
- return <section className="technical-lab"><h1>Techniklabor</h1><p><Explain simple="Verändere eigene Werte und untersuche, was das Modell berechnet. Zum selbstständigen Üben wechselst du in die Werkstatt: Dort bleibt die Lösung zunächst verborgen." technical="Gemeinsamer SI-Kern für Lernaufgaben und definierte Fachmodelle. Experimentieren zeigt Ergebnisse; Werkstatt und Übungsprüfung verwenden getrennte Bearbeitungsansichten ohne vorweggenommene Lösung."/></p>
- <label className="lab-picker">Rechner wählen<select aria-label="Labor-Rechner" value={id} onChange={e=>setId(e.target.value)}><option value="units">Einheitenumrechner</option>{(['heat','electrical','geometry','transfer']as const).map(g=><optgroup key={g} label={labGroupNames[g]}>{calculators.filter(c=>c.group===g).map(c=><option key={c.id} value={c.id}>{c.title}</option>)}</optgroup>)}</select></label>
- {c?<Calculator key={c.id} tool={c} progress={progress} setProgress={setProgress} openModule={openModule} practice={practice}/>:<UnitConverter progress={progress} setProgress={setProgress} openModule={openModule} practice={practice}/>}
- </section>;
+import {
+  useEffect,
+  useMemo,
+  useState,
+  type Dispatch,
+  type SetStateAction,
+} from "react";
+import { calculators, labGroupNames } from "./catalog";
+import { initialLabValues, runCalculator } from "./engine";
+import type { CalculatorDefinition } from "./model";
+import { displayNumber, substitutionTex, numberTex } from "./format";
+import { siUnit } from "./units";
+import { units } from "../technical/calculations";
+import { formulas, sources, modules } from "../academy/catalog";
+import type { AcademyProgress } from "../academy/model";
+import type { ItemAnswer } from "../academy/exercises/model";
+import { Explain } from "../language/Explanation";
+import { BlockMath, VariableDefinitions } from "../math/Math";
+import UnitConverter from "./UnitConverter";
+export default function TechnicalLab({
+  progress,
+  setProgress,
+  openModule,
+  practice,
+  initialCalculatorId,
+}: {
+  progress: AcademyProgress;
+  setProgress: Dispatch<SetStateAction<AcademyProgress>>;
+  openModule: (id: string) => void;
+  practice: (id: string) => void;
+  initialCalculatorId?: string | null;
+}) {
+  const [id, setId] = useState(
+    initialCalculatorId &&
+      (initialCalculatorId === "units" ||
+        calculators.some((c) => c.id === initialCalculatorId))
+      ? initialCalculatorId
+      : progress.labDraft?.calculatorId &&
+          calculators.some((c) => c.id === progress.labDraft!.calculatorId)
+        ? progress.labDraft.calculatorId
+        : "units",
+  );
+  const c = calculators.find((c) => c.id === id);
+  return (
+    <section className="technical-lab">
+      <h1>Techniklabor</h1>
+      <p>
+        <Explain
+          simple="Verändere eigene Werte und untersuche, was das Modell berechnet. Zum selbstständigen Üben wechselst du in die Werkstatt: Dort bleibt die Lösung zunächst verborgen."
+          technical="Gemeinsamer SI-Kern für Lernaufgaben und definierte Fachmodelle. Experimentieren zeigt Ergebnisse; Werkstatt und Übungsprüfung verwenden getrennte Bearbeitungsansichten ohne vorweggenommene Lösung."
+        />
+      </p>
+      <label className="lab-picker">
+        Rechner wählen
+        <select
+          aria-label="Labor-Rechner"
+          value={id}
+          onChange={(e) => setId(e.target.value)}
+        >
+          <option value="units">Einheitenumrechner</option>
+          {(["heat", "electrical", "geometry", "transfer"] as const).map(
+            (g) => (
+              <optgroup key={g} label={labGroupNames[g]}>
+                {calculators
+                  .filter((c) => c.group === g)
+                  .map((c) => (
+                    <option key={c.id} value={c.id}>
+                      {c.title}
+                    </option>
+                  ))}
+              </optgroup>
+            ),
+          )}
+        </select>
+      </label>
+      {c ? (
+        <Calculator
+          key={c.id}
+          tool={c}
+          progress={progress}
+          setProgress={setProgress}
+          openModule={openModule}
+          practice={practice}
+        />
+      ) : (
+        <UnitConverter
+          progress={progress}
+          setProgress={setProgress}
+          openModule={openModule}
+          practice={practice}
+        />
+      )}
+    </section>
+  );
 }
-function Calculator({tool,progress,setProgress,openModule,practice}:{tool:CalculatorDefinition;progress:AcademyProgress;setProgress:Dispatch<SetStateAction<AcademyProgress>>;openModule:(id:string)=>void;practice:(id:string)=>void}){
- const[values,setValues]=useState<Record<string,ItemAnswer>>(()=>progress.labDraft?.calculatorId===tool.id?{...initialLabValues(tool),...progress.labDraft.values}:initialLabValues(tool)),[output,setOutput]=useState(tool.answerUnit),[attempted,setAttempted]=useState(false),[live,setLive]=useState(false);
- const formula=formulas.find(f=>f.id===tool.formulaId)!;
- useEffect(()=>setProgress(p=>p.labDraft?.calculatorId===tool.id&&JSON.stringify(p.labDraft.values)===JSON.stringify(values)?p:{...p,labDraft:{calculatorId:tool.id,values,updatedAt:new Date().toISOString()}}),[tool.id,values,setProgress]);
- const result=useMemo(()=>{try{return{ok:runCalculator(tool,values,output),error:''};}catch(e){return{ok:null,error:(e as Error).message};}},[tool,values,output]);
- return <div className="lab-layout"><section className="academy-panel lab-inputs"><h2>{tool.title}</h2><p><Explain {...tool.explanation}/></p><form noValidate onSubmit={e=>{e.preventDefault();setAttempted(true);}}><div className="lab-fields">{tool.inputs.map(f=><div key={f.id}><label>{f.label}<input aria-label={`Labor: ${f.label}`} inputMode="text" maxLength={200} value={values[f.id]?.value??''} onChange={e=>{setValues(v=>({...v,[f.id]:{...v[f.id],value:e.target.value}}));setAttempted(false);}}/></label><label>Einheit<select aria-label={`Laboreinheit: ${f.label}`} value={values[f.id]?.unit??f.unit} onChange={e=>{setValues(v=>({...v,[f.id]:{...v[f.id],unit:e.target.value}}));setAttempted(false);}}>{units[f.quantity].map(u=><option key={u}>{u}</option>)}</select></label></div>)}</div>
- <label>Ergebniseinheit<select aria-label="Labor-Ergebniseinheit" value={output} onChange={e=>setOutput(e.target.value)}>{units[tool.quantity].map(u=><option key={u}>{u}</option>)}</select></label><button className="button primary" type="submit">Laborwert berechnen</button>
- <label className="live-control"><input type="checkbox" checked={live} onChange={e=>setLive(e.target.checked)}/>Mit eigenen Werten experimentieren: sofort neu berechnen</label><p>Dezimalkomma, wissenschaftliche Schreibweise oder begrenzte Arithmetik mit Klammern; Einheiten separat wählen.</p></form>
- {(attempted||live)&&result.error&&<p role="alert" className="notice">{result.error}</p>}
- <h3>Voraussetzungen und Modellgrenzen</h3><p>{formula.assumptions}</p><p><Explain {...tool.limits}/></p><p className="review-notice">Rechenmodell getestet; unabhängige menschliche Fachfreigabe offen. Keine reale Anlagen- oder elektrische Arbeitsfreigabe.</p>
- <div className="lab-links"><button className="button secondary" onClick={()=>openModule(tool.moduleId)}>Grundlagen verstehen</button><button className="button secondary" onClick={()=>practice(tool.exerciseId)}>Rechnung selbst üben</button><button className="text-button" onClick={()=>openModule(tool.group==='heat'?'case-heat':tool.group==='geometry'?'case-pipe':tool.group==='transfer'?'case-conduction':'case-ac')}>Schwierigere Aufgabe bearbeiten</button></div><p>Die Werkstatt verwendet eigene vollständige Übungsangaben. Ein Laborergebnis wird nicht als Antwort übernommen.</p>
- </section><section className="academy-panel lab-output" aria-label="Laborergebnis und Rechenweg"><h2>Formel und Größen</h2><h3>{formula.title}</h3><BlockMath tex={formula.tex??formula.expression} label={formula.expression}/><VariableDefinitions variables={formula.variables??fallbackVariables(tool)}/><p>{formula.units}</p>
- {(attempted||live)&&result.ok?<><div className="lab-result" role="status"><h3>Berechnungsergebnis</h3><strong>{displayNumber(result.ok.result)} {output}</strong></div><h3>Nachvollziehbarer Rechenweg</h3><ol><li>Gesucht ist {tool.title}. Die angezeigte Formel ist bereits nach der Zielgröße angeordnet.</li>{tool.inputs.map(f=><li key={f.id}>{f.label}: {values[f.id].value} {values[f.id].unit} → {displayNumber(result.ok!.values[f.id])} {siUnit(f.quantity)??units[f.quantity][0]}.</li>)}<li>SI-Zahlenwerte in die gemeinsame Formel einsetzen:<BlockMath tex={substitutionTex(tool.kind,result.ok.values)}/></li><li>SI-Ergebnis: <BlockMath tex={numberTex(result.ok.resultSI)}/> {siUnit(tool.quantity)??units[tool.quantity][0]}; danach in {output} umrechnen.</li></ol><LabVisualization tool={tool} values={result.ok.values} changeMass={massSI=>{setValues(v=>({...v,massFlow:{...v.massFlow,value:String(fromSI(massSI,v.massFlow.unit,'mass-flow'))}}));setLive(true);}}/>
- <h3>Plausibilitätskontrolle und Interpretation</h3><ul>{result.ok.checks.map(c=><li key={c}>{c}</li>)}</ul><p><Explain {...tool.limits}/></p><p>Erst die Anzeige wird gerundet. Die angezeigten Stellen sind keine Aussage über Mess- oder Stoffwertgenauigkeit.</p></>:<p>Werte eingeben und berechnen oder den Experimentiermodus einschalten.</p>}
- <details><summary>Quellen und Prüfumfang</summary>{formula.sourceIds.map(id=>{const s=sources.find(s=>s.id===id);return s?<div key={id}><h3>{s.title}</h3><p>{s.locator??s.note}</p><p>{s.supports??'Eigene mathematische Ableitung; gezielter externer Fachabgleich offen.'}</p>{s.url&&<a href={s.url} target="_blank" rel="noreferrer">Fundstelle öffnen</a>}</div>:null;})}<p>Grundgleichungen, eigene Ableitungen und unabhängige Zahlenreferenzen sind getrennte Nachweise. Keine unabhängige menschliche Fachabnahme.</p></details>
- </section></div>;
+function Calculator({
+  tool,
+  progress,
+  setProgress,
+  openModule,
+  practice,
+}: {
+  tool: CalculatorDefinition;
+  progress: AcademyProgress;
+  setProgress: Dispatch<SetStateAction<AcademyProgress>>;
+  openModule: (id: string) => void;
+  practice: (id: string) => void;
+}) {
+  const [values, setValues] = useState<Record<string, ItemAnswer>>(() =>
+      progress.labDraft?.calculatorId === tool.id
+        ? { ...initialLabValues(tool), ...progress.labDraft.values }
+        : initialLabValues(tool),
+    ),
+    [output, setOutput] = useState(tool.answerUnit),
+    [attempted, setAttempted] = useState(false),
+    [live, setLive] = useState(false);
+  const formula = formulas.find((f) => f.id === tool.formulaId)!;
+  useEffect(
+    () =>
+      setProgress((p) =>
+        p.labDraft?.calculatorId === tool.id &&
+        JSON.stringify(p.labDraft.values) === JSON.stringify(values)
+          ? p
+          : {
+              ...p,
+              labDraft: {
+                calculatorId: tool.id,
+                values,
+                updatedAt: new Date().toISOString(),
+              },
+            },
+      ),
+    [tool.id, values, setProgress],
+  );
+  const result = useMemo(() => {
+    try {
+      return { ok: runCalculator(tool, values, output), error: "" };
+    } catch (e) {
+      return { ok: null, error: (e as Error).message };
+    }
+  }, [tool, values, output]);
+  return (
+    <div className="lab-layout">
+      <section className="academy-panel lab-inputs">
+        <h2>{tool.title}</h2>
+        <p>
+          <Explain {...tool.explanation} />
+        </p>
+        <form
+          noValidate
+          onSubmit={(e) => {
+            e.preventDefault();
+            setAttempted(true);
+          }}
+        >
+          <div className="lab-fields">
+            {tool.inputs.map((f) => (
+              <div key={f.id}>
+                <label>
+                  {f.label}
+                  <input
+                    aria-label={`Labor: ${f.label}`}
+                    inputMode="text"
+                    maxLength={200}
+                    value={values[f.id]?.value ?? ""}
+                    onChange={(e) => {
+                      setValues((v) => ({
+                        ...v,
+                        [f.id]: { ...v[f.id], value: e.target.value },
+                      }));
+                      setAttempted(false);
+                    }}
+                  />
+                </label>
+                <label>
+                  Einheit
+                  <select
+                    aria-label={`Laboreinheit: ${f.label}`}
+                    value={values[f.id]?.unit ?? f.unit}
+                    onChange={(e) => {
+                      setValues((v) => ({
+                        ...v,
+                        [f.id]: { ...v[f.id], unit: e.target.value },
+                      }));
+                      setAttempted(false);
+                    }}
+                  >
+                    {units[f.quantity].map((u) => (
+                      <option key={u}>{u}</option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+            ))}
+          </div>
+          <label>
+            Ergebniseinheit
+            <select
+              aria-label="Labor-Ergebniseinheit"
+              value={output}
+              onChange={(e) => setOutput(e.target.value)}
+            >
+              {units[tool.quantity].map((u) => (
+                <option key={u}>{u}</option>
+              ))}
+            </select>
+          </label>
+          <button className="button primary" type="submit">
+            Laborwert berechnen
+          </button>
+          <label className="live-control">
+            <input
+              type="checkbox"
+              checked={live}
+              onChange={(e) => setLive(e.target.checked)}
+            />
+            Mit eigenen Werten experimentieren: sofort neu berechnen
+          </label>
+          <p>
+            Dezimalkomma, wissenschaftliche Schreibweise oder begrenzte
+            Arithmetik mit Klammern; Einheiten separat wählen.
+          </p>
+        </form>
+        {(attempted || live) && result.error && (
+          <p role="alert" className="notice">
+            {result.error}
+          </p>
+        )}
+        <h3>Voraussetzungen und Modellgrenzen</h3>
+        <p>{formula.assumptions}</p>
+        <p>
+          <Explain {...tool.limits} />
+        </p>
+        <p className="review-notice">
+          Rechenmodell getestet; unabhängige menschliche Fachfreigabe offen.
+          Keine reale Anlagen- oder elektrische Arbeitsfreigabe.
+        </p>
+        <div className="lab-links">
+          <button
+            className="button secondary"
+            onClick={() => openModule(tool.moduleId)}
+          >
+            Grundlagen verstehen
+          </button>
+          <button
+            className="button secondary"
+            onClick={() => practice(tool.exerciseId)}
+          >
+            Rechnung selbst üben
+          </button>
+          <button
+            className="text-button"
+            onClick={() =>
+              openModule(
+                tool.group === "heat"
+                  ? "case-heat"
+                  : tool.group === "geometry"
+                    ? "case-pipe"
+                    : tool.group === "transfer"
+                      ? "case-conduction"
+                      : "case-ac",
+              )
+            }
+          >
+            Schwierigere Aufgabe bearbeiten
+          </button>
+        </div>
+        <p>
+          Die Werkstatt verwendet eigene vollständige Übungsangaben. Ein
+          Laborergebnis wird nicht als Antwort übernommen.
+        </p>
+      </section>
+      <section
+        className="academy-panel lab-output"
+        aria-label="Laborergebnis und Rechenweg"
+      >
+        <h2>Formel und Größen</h2>
+        <h3>{formula.title}</h3>
+        <BlockMath
+          tex={formula.tex ?? formula.expression}
+          label={formula.expression}
+        />
+        <VariableDefinitions
+          variables={formula.variables ?? fallbackVariables(tool)}
+        />
+        <p>{formula.units}</p>
+        {(attempted || live) && result.ok ? (
+          <>
+            <div className="lab-result" role="status">
+              <h3>Berechnungsergebnis</h3>
+              <strong>
+                {displayNumber(result.ok.result)} {output}
+              </strong>
+            </div>
+            <h3>Nachvollziehbarer Rechenweg</h3>
+            <ol>
+              <li>
+                Gesucht ist {tool.title}. Die angezeigte Formel ist bereits nach
+                der Zielgröße angeordnet.
+              </li>
+              {tool.inputs.map((f) => (
+                <li key={f.id}>
+                  {f.label}: {values[f.id].value} {values[f.id].unit} →{" "}
+                  {displayNumber(result.ok!.values[f.id])}{" "}
+                  {siUnit(f.quantity) ?? units[f.quantity][0]}.
+                </li>
+              ))}
+              <li>
+                SI-Zahlenwerte in die gemeinsame Formel einsetzen:
+                <BlockMath tex={substitutionTex(tool.kind, result.ok.values)} />
+              </li>
+              <li>
+                SI-Ergebnis: <BlockMath tex={numberTex(result.ok.resultSI)} />{" "}
+                {siUnit(tool.quantity) ?? units[tool.quantity][0]}; danach in{" "}
+                {output} umrechnen.
+              </li>
+            </ol>
+            <LabVisualization
+              tool={tool}
+              values={result.ok.values}
+              changeMass={(massSI) => {
+                setValues((v) => ({
+                  ...v,
+                  massFlow: {
+                    ...v.massFlow,
+                    value: String(fromSI(massSI, v.massFlow.unit, "mass-flow")),
+                  },
+                }));
+                setLive(true);
+              }}
+            />
+            <h3>Plausibilitätskontrolle und Interpretation</h3>
+            <ul>
+              {result.ok.checks.map((c) => (
+                <li key={c}>{c}</li>
+              ))}
+            </ul>
+            <p>
+              <Explain {...tool.limits} />
+            </p>
+            <p>
+              Erst die Anzeige wird gerundet. Die angezeigten Stellen sind keine
+              Aussage über Mess- oder Stoffwertgenauigkeit.
+            </p>
+          </>
+        ) : (
+          <p>
+            Werte eingeben und berechnen oder den Experimentiermodus
+            einschalten.
+          </p>
+        )}
+        <details>
+          <summary>Quellen und Prüfumfang</summary>
+          {formula.sourceIds.map((id) => {
+            const s = sources.find((s) => s.id === id);
+            return s ? (
+              <div key={id}>
+                <h3>{s.title}</h3>
+                <p>{s.locator ?? s.note}</p>
+                <p>
+                  {s.supports ??
+                    "Eigene mathematische Ableitung; gezielter externer Fachabgleich offen."}
+                </p>
+                {s.url && (
+                  <a href={s.url} target="_blank" rel="noreferrer">
+                    Fundstelle öffnen
+                  </a>
+                )}
+              </div>
+            ) : null;
+          })}
+          <p>
+            Grundgleichungen, eigene Ableitungen und unabhängige
+            Zahlenreferenzen sind getrennte Nachweise. Keine unabhängige
+            menschliche Fachabnahme.
+          </p>
+        </details>
+      </section>
+    </div>
+  );
 }

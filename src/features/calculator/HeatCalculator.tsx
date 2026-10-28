@@ -27,7 +27,12 @@ export default function HeatCalculator() {
         title="Von der Formel zur Lösung."
         description="Berechne die sensible Wärmeleistung – mit klaren Einheiten und jedem Rechenschritt."
       />
-      <p><Explain simple="Du berechnest, wie viel Wärme pro Sekunde ein Stoffstrom bei einer Temperaturänderung überträgt. Du brauchst Massenstrom, Wärmekapazität und Temperaturunterschied. Das einfache Modell gilt ohne Phasenwechsel." technical="Stationärer sensibler Wärmestrom bei näherungsweise konstantem cp, ohne Phasenwechsel; Ergebnis als positiver Übertragungsbetrag."/></p>
+      <p>
+        <Explain
+          simple="Du berechnest, wie viel Wärme pro Sekunde ein Stoffstrom bei einer Temperaturänderung überträgt. Du brauchst Massenstrom, Wärmekapazität und Temperaturunterschied. Das einfache Modell gilt ohne Phasenwechsel."
+          technical="Stationärer sensibler Wärmestrom bei näherungsweise konstantem cp, ohne Phasenwechsel; Ergebnis als positiver Übertragungsbetrag."
+        />
+      </p>
       <div className="calculator-layout">
         <section className="calculator-card">
           <div className="card-heading">
@@ -145,7 +150,10 @@ export default function HeatCalculator() {
         <div>
           <section className="formula-card">
             <p className="eyebrow">DIE FORMEL</p>
-            <BlockMath tex={formulas.find(f => f.id === 'sensible-heat')!.tex!} label="Q Punkt gleich m Punkt mal cp mal Delta T" />
+            <BlockMath
+              tex={formulas.find((f) => f.id === "sensible-heat")!.tex!}
+              label="Q Punkt gleich m Punkt mal cp mal Delta T"
+            />
             <p>
               Die Leistung steigt mit dem Massenstrom, der Wärmekapazität und
               der Temperaturdifferenz.

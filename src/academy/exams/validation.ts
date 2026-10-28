@@ -48,7 +48,7 @@ export function validItem(value: unknown): value is LearningItem {
     );
   return (
     value.kind === "numeric" &&
-    (value.answerSyntax===undefined||value.answerSyntax==="arithmetic") &&
+    (value.answerSyntax === undefined || value.answerSyntax === "arithmetic") &&
     [
       ...schoolKinds,
       ...deepKinds,

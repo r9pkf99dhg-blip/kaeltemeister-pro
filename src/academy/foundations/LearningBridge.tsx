@@ -4,7 +4,11 @@ import { modules } from "../catalog";
 import type { AcademyProgress } from "../model";
 import type { LearningItem } from "../exercises/model";
 import { useState, type Dispatch, type SetStateAction } from "react";
-import { ExplanationProvider, useExplanation, type ExplanationLevel } from "../../language/Explanation";
+import {
+  ExplanationProvider,
+  useExplanation,
+  type ExplanationLevel,
+} from "../../language/Explanation";
 import { bridgeRecommendations } from "./learning-bridge";
 import LessonReading from "../components/LessonReading";
 import ModuleQuiz from "../components/ModuleQuiz";
@@ -54,8 +58,24 @@ export default function LearningBridge({
           <p>
             <strong>{suggestions[0].title}</strong>: {suggestions[0].reason}
           </p>
-          <button className="button secondary" onClick={() => { setExplanation("simple"); openLesson(suggestions[0].lessonId); }}>Soll ich dir das einfach erklären?</button>
-          <button className="button secondary" onClick={() => { setExplanation("technical"); openLesson(suggestions[0].lessonId); }}>Fachliche Erklärung ansehen</button>
+          <button
+            className="button secondary"
+            onClick={() => {
+              setExplanation("simple");
+              openLesson(suggestions[0].lessonId);
+            }}
+          >
+            Soll ich dir das einfach erklären?
+          </button>
+          <button
+            className="button secondary"
+            onClick={() => {
+              setExplanation("technical");
+              openLesson(suggestions[0].lessonId);
+            }}
+          >
+            Fachliche Erklärung ansehen
+          </button>
           <button
             className="button secondary"
             onClick={() => openLesson(suggestions[0].lessonId)}
@@ -97,7 +117,9 @@ export default function LearningBridge({
           <button className="button primary" onClick={closeLesson}>
             Zur ursprünglichen Aufgabe zurück
           </button>
-          <ExplanationProvider level={explanation}><LessonReading module={lesson} level="grundlagen" embedded /></ExplanationProvider>
+          <ExplanationProvider level={explanation}>
+            <LessonReading module={lesson} level="grundlagen" embedded />
+          </ExplanationProvider>
           <button
             className="button secondary"
             disabled={moduleRead(progress, lesson.id, "grundlagen")}
