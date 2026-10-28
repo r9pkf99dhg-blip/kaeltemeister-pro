@@ -15,7 +15,7 @@ import { workshopEntries,workshopKindNames } from './entries';
 const labels={given:'Gegeben',sought:'Gesucht',formula:'Verwendete Formel',transformed:'Umgestellte Formel',conversion:'Einheitenumrechnung',substitution:'Eingesetzte Zahlenwerte',plausibility:'Plausibilitätskontrolle und Begründung'};
 export default function Workshop({progress,setProgress,openModule,openExam,initialItemId}:{progress:AcademyProgress;setProgress:Dispatch<SetStateAction<AcademyProgress>>;openModule:(id:string)=>void;openExam:()=>void;initialItemId?:string|null}){
  const candidate=!initialItemId&&progress.exerciseDraft?.workspace==='workshop'?progress.exerciseDraft:undefined;
- const saved=candidate&&learningItems.some(i=>i.id===candidate.taskId&&i.revision===candidate.revision)&&workshopEntries.some(e=>e.id===candidate.workshop?.entryId)?candidate:undefined;
+ const saved=candidate&&(candidate.taskId==='workshop-trainer'&&candidate.revision===1||learningItems.some(i=>i.id===candidate.taskId&&i.revision===candidate.revision))&&workshopEntries.some(e=>e.id===candidate.workshop?.entryId)?candidate:undefined;
  const initial=workshopEntries.find(e=>e.id===(initialItemId??saved?.workshop?.entryId))??workshopEntries[0];
  const [entryId,setEntryId]=useState(initial.id),[domain,setDomain]=useState('all'),[topic,setTopic]=useState('all'),[level,setLevel]=useState('all'),[kind,setKind]=useState('all');
  const [state,setState]=useState<WorkshopState>(saved?.workshop??{entryId:initial.id,kind:initial.kind,mode:'independent',fields:emptyWorksheet(),help:0,step:0,choices:{},solutionOpen:false,responses:{},checkedIds:[]});
@@ -36,6 +36,7 @@ export default function Workshop({progress,setProgress,openModule,openExam,initi
  const numericDetails=snapshot&&checked?numericFeedback(snapshot,answer):null;
  const [validation,setValidation]=useState('');
  return <section className="workshop"><h1>Übungswerkstatt</h1><p><Explain simple="Hier rechnest du selbst. Wähle eine Aufgabe, notiere deinen Weg und prüfe erst danach dein Ergebnis. Dein letzter Entwurf wird in diesem Browser gesichert." technical="Aufgaben, Grader und Wiederholungslogik sind mit der Akademie verbunden. Freie Notizen werden gespeichert, aber nicht als symbolisch oder fachlich geprüft ausgegeben."/></p>
+ {candidate&&!saved&&<p className="notice">Der gespeicherte Aufgabenstand gehört zu einer früheren Aufgabenfassung. Der Lernverlauf bleibt erhalten; die aktuelle Aufgabe startet mit leerer Antwort.</p>}
  <div className="workshop-filters">
  <label>Fachgebiet<select aria-label="Werkstatt-Fachgebiet" value={domain} onChange={e=>{setDomain(e.target.value);setTopic('all');}}><option value="all">Alle</option>{domains.filter(d=>workshopEntries.some(e=>e.domainId===d.id)).map(d=><option key={d.id} value={d.id}>{d.title}</option>)}</select></label>
  <label>Thema<select aria-label="Werkstatt-Thema" value={topic} onChange={e=>setTopic(e.target.value)}><option value="all">Alle</option>{modules.filter(m=>domain==='all'||m.domainId===domain).map(m=><option key={m.id} value={m.id}>{m.title}</option>)}</select></label>

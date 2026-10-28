@@ -2588,8 +2588,8 @@ progress::-moz-progress-bar {
 .technical-diagrams label { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
 .technical-diagrams select { min-width: 0; max-width: 100%; margin: 0; }
 
-.language-preference { border:1px solid #c6d4d2; border-radius:.8rem; padding:1rem; display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.5rem; min-width:0; }
-.language-preference legend { padding:0 .5rem; font-weight:700; }
+.language-preference { border:1px solid #c6d4d2; border-radius:.8rem; padding:1rem; display:flex; flex-wrap:wrap; gap:.5rem; margin:0 0 1.5rem; min-width:0; max-width:100%; }
+.language-preference legend { padding:0 .5rem; font-weight:700; min-width:0; max-width:100%; white-space:normal; overflow-wrap:anywhere; }
 .language-preference p { flex-basis:100%; font-size:.85rem; margin:.3rem 0 0; }
 .lesson-language { display:grid; gap:.5rem; margin:1rem 0; }
 .lesson-language select { min-width:0; max-width:100%; width:100%; padding:.8rem; border:1px solid #c6d4d2; border-radius:.5rem; }
@@ -2603,7 +2603,7 @@ progress::-moz-progress-bar {
 .worksheet textarea {resize:vertical;min-height:4rem;font-weight:400;}
 .workshop-help {display:flex;gap:.7rem;flex-wrap:wrap;margin:1rem 0;}
 @media(max-width:1000px){.workshop-body{grid-template-columns:1fr;}}
-@media(max-width:700px){.sidebar nav{gap:0;}.nav-item{min-width:0;flex:1;padding:9px 2px;font-size:9px;}.nav-item>span:not(.nav-dot){overflow-wrap:anywhere;line-height:1.15;}}
+@media(max-width:700px){.sidebar nav{gap:0;grid-template-columns:repeat(7,minmax(0,1fr));}.nav-item{min-width:0;flex:1;padding:9px 2px;font-size:9px;}.nav-item>span:not(.nav-dot){overflow-wrap:anywhere;line-height:1.15;}}
 @media(max-width:700px){.sidebar{height:84px;}.nav-item{min-height:76px;padding:7px 2px;}html{scroll-padding-bottom:calc(104px + env(safe-area-inset-bottom));}button,input,select,textarea{scroll-margin-block:104px;}#main-content{padding-bottom:calc(115px + env(safe-area-inset-bottom));}}
 
 .technical-lab select,.technical-lab input:not([type=checkbox]){width:100%;max-width:100%;min-width:0;border:1px solid #b8c9c4;border-radius:.5rem;padding:.75rem;background:white;color:#213c35;}
@@ -2615,3 +2615,8 @@ progress::-moz-progress-bar {
 .lab-result strong{font-size:1.6rem;}.lab-links{display:flex;flex-wrap:wrap;gap:.7rem;margin-block:1rem;}
 .lab-inputs .live-control{display:flex;align-items:flex-start;gap:.75rem;}.live-control input{width:1.3rem;height:1.3rem;flex:0 0 auto;}
 @media(max-width:1000px){.lab-layout{grid-template-columns:1fr;}}
+
+/* Legend/Flex intrinsic widths must not enlarge the WebKit viewport at 200% text. */
+.language-preference > * { min-width:0; max-width:100%; overflow-wrap:anywhere; }
+.language-preference button { white-space:normal; }
+textarea:focus-visible { outline:3px solid #2a8b6b; outline-offset:4px; }

@@ -10,3 +10,9 @@ it('sichert Rechenblatt, Schrittposition, Hilfe, Einheiten und Sprache im vorhan
  expect(validateProgress({...p,exerciseDraft:{...p.exerciseDraft,workshop:{...p.exerciseDraft.workshop,help:'1'}}})).toBe(false);
  expect(validateProgress({...p,exerciseDraft:{...p.exerciseDraft,workshop:{...p.exerciseDraft.workshop,fields:{...emptyWorksheet(),given:'x'.repeat(2001)}}}})).toBe(false);
 });
+it('bewahrt Laborzustand und Trainerposition und blockiert beschädigte optionale Felder vor Import',()=>{
+ const p=emptyAcademy();const now=new Date().toISOString();p.labDraft={calculatorId:'heat-power',updatedAt:now,values:{massFlow:{value:'1800/3600',unit:'kg/s'}}};
+ p.exerciseDraft={taskId:'workshop-trainer',revision:1,updatedAt:now,checked:true,bridgeLessonId:null,answer:{value:'divide',unit:''},workspace:'workshop',workshop:{entryId:'workshop-trainer',kind:'rearrangement',mode:'independent',fields:emptyWorksheet(),help:1,step:2,choices:{},solutionOpen:false},trainer:{caseId:'heat-m',index:2,answer:'divide',checked:true,correct:true}};
+ const b=createBackup(p,{read:[],attempts:0,best:0,last:null},localStorage);expect(parseBackup(JSON.stringify(b)).data.academy).toEqual(p);
+ for(const mutate of [(v:typeof p)=>{v.labDraft!.values.massFlow.value='x'.repeat(201);},(v:typeof p)=>{v.exerciseDraft!.trainer!.index=-1;},(v:typeof p)=>{v.exerciseDraft!.workshop!.responses={bad:{value:'x'.repeat(201),unit:'W'}};}]){const broken=structuredClone(b);mutate(broken.data.academy);expect(()=>parseBackup(JSON.stringify(broken))).toThrow();}
+});
