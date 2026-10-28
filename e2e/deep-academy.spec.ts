@@ -237,13 +237,11 @@ test("Aussagenbelege sind datiert und bei großer Schrift per Tastatur zugängli
   const summary = page.locator(".claim-evidence > summary");
   await summary.focus();
   await page.keyboard.press("Enter");
-  const claim = page
-    .locator(".claim-evidence details")
-    .filter({
-      has: page.getByText("claim-ac-rms · Vereinfachtes Rechenmodell", {
-        exact: true,
-      }),
-    });
+  const claim = page.locator(".claim-evidence details").filter({
+    has: page.getByText("claim-ac-rms · Vereinfachtes Rechenmodell", {
+      exact: true,
+    }),
+  });
   await claim.locator("summary").click();
   await expect(claim).toContainText("m58490");
   await expect(claim).toContainText("2026-10-28");
@@ -258,4 +256,24 @@ test("Aussagenbelege sind datiert und bei großer Schrift per Tastatur zugängli
     ),
   ).toBe(true);
   await expect(page.locator(".math-error")).toHaveCount(0);
+});
+test("Suche nach Leistungsfaktor führt über das gemeinsame Glossar zu den Fachmodulen", async ({
+  page,
+}) => {
+  await page.goto("./");
+  await page.getByRole("button", { name: "Akademie", exact: true }).click();
+  await page
+    .getByRole("searchbox", {
+      name: "Module oder Fachbegriffe suchen",
+      exact: true,
+    })
+    .fill("Leistungsfaktor");
+  await expect(
+    page.getByRole("heading", { name: "Leistungsfaktor", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("button", {
+      name: /ELEKTRO.*Wirk-, Blind- und Scheinleistung/,
+    }),
+  ).toBeVisible();
 });

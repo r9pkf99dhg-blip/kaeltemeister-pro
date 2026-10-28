@@ -125,3 +125,10 @@ it("kennzeichnet Quellenzugriff ehrlich und hält das Modell numerisch konsisten
     expectedKw.condenser,
   );
 });
+it("macht neue Fachbegriffe über dieselben stabilen Module auffindbar", () => {
+  const term = terms.find((t) => t.title === "Leistungsfaktor")!;
+  expect(term.id).toBe("term-v06-power-factor");
+  for (const id of term.moduleIds)
+    expect(modules.find((m) => m.id === id)?.termIds).toContain(term.id);
+  expect(terms.filter((t) => t.title === "Enthalpie")).toHaveLength(1);
+});

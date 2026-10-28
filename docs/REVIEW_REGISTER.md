@@ -9752,6 +9752,186 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## term:term-v06-rms: Effektivwert
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Wurzel aus dem zeitlichen Mittel des Quadrats einer periodischen Größe. Nur beim reinen Sinus gleich Scheitelwert geteilt durch √2; beschreibt die gleiche mittlere Widerstandserwärmung wie ein entsprechender Gleichwert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-peak: Scheitelwert
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Größter Betrag einer wechselnden Größe. Nicht mit ihrem Effektivwert oder einfachen zeitlichen Mittelwert gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-phase: Phasenverschiebung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Relative Verschiebung gleichfrequenter periodischer Verläufe. Hier ist φ positiv, wenn der sinusförmige Strom der Spannung nacheilt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-impedance: Impedanz
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Wechselstrom-Zusammenhang von Spannung und Strom einschließlich Phase. Der hier berechnete Betrag Z im idealen Serien-RLC-Modell ist √(R²+(XL−XC)²), in Ω.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-real-power: Wirkleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Zeitlicher Mittelwert der momentanen elektrischen Leistung, in W. Bei gleichfrequenten reinen Sinusgrößen P = Ueff Ieff cos φ; kein allgemeiner Motorwirkungsgrad.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-reactive-power: Blindleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Im Sinusmodell Q = Ueff Ieff sin φ, in var; bei der hier gewählten Konvention induktiv positiv und kapazitiv negativ. Nicht als mechanischer Energieverbrauch interpretieren.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-apparent-power: Scheinleistung
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Produkt aus Effektivspannung und Effektivstrom, in VA. Im verwendeten Sinusmodell bilden P, Q und S ein rechtwinkliges Leistungsdreieck; bei Verzerrung ist dieses Modell nicht allgemein ausreichend.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-power-factor: Leistungsfaktor
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Gesamtleistungsfaktor λ = P/S bei S > 0. Er stimmt im passenden Sinusmodell mit cos φ überein; er ist nicht der Wirkungsgrad und wird bei verzerrten Signalen nicht allein durch den Verschiebungswinkel beschrieben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-absolute-pressure: Absolutdruck
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Druck mit dem Bezug Vakuum. Überdruck hat dagegen einen Umgebungsbezug; pabs = pü + pamb bei konsistenter Messreferenz. Umgebungsdruck muss angegeben sein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-conductivity: Wärmeleitfähigkeit
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Stoff-/zustandsabhängige Größe λ in W/(m·K) im Wärmeleitungsmodell. Nicht mit dem flächenbezogenen Wärmedurchgangskoeffizienten U gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-thermal-resistance: Wärmewiderstand
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Temperaturdifferenz geteilt durch stationären Wärmestrom, in K/W. Für die ebene homogene Schicht Rth = d/(λA); gleiche stationäre Serienschichten addieren Widerstände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:term-v06-u-value: U-Wert
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Wärmedurchgangskoeffizient in W/(m²·K). Das hier verwendete ebene stationäre Modell fasst Schichtleitung und vorgegebene Wärmeübergänge zusammen; reale Wärmebrücken, Feuchte und Geometrie benötigen zusätzliche Prüfung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## objective:cycle-order: Die vier Hauptbauteile in der Strömungsrichtung nennen und Wärmeaufnahme von Wärmeabgabe unterscheiden.
 
 - Fachgebiet: fachuebergreifend

@@ -1,3 +1,4 @@
+import { deepTerms } from "./deep/terms";
 import { case_lessons } from "./deep/case-lessons";
 import { thermal_lessons } from "./deep/thermal-lessons";
 import { thermal_formulas } from "./deep/thermal-formulas";
@@ -59,7 +60,7 @@ export const modules = [
   ...module,
   termIds: [
     ...module.termIds,
-    ...foundationTerms
+    ...[...foundationTerms, ...deepTerms]
       .filter((t) => t.moduleIds.includes(module.id))
       .map((t) => t.id),
   ],
@@ -104,7 +105,12 @@ export const objectives = [
   ...electricalObjectives,
   ...foundationLessons.map((l) => ({ id: `${l.id}-objective`, text: l.goal })),
 ];
-export const terms = [...baseTerms, ...electricalTerms, ...foundationTerms];
+export const terms = [
+  ...baseTerms,
+  ...electricalTerms,
+  ...foundationTerms,
+  ...deepTerms,
+];
 export { workedCycle } from "./data/registers";
 
 export { legacyBridges } from "./data/legacy";
