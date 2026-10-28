@@ -1,0 +1,15 @@
+# R134a-Fallkatalog · 0.8
+
+CoolProp 7.2.0, Git `98b3523d5daa98454618d381d2ae53f7471d216b`, HEOS::R134a, MIT. Offizielle HighLevelAPI-/Plotting-Dokumentation und R134a-JSON/EOS-Metadaten im Archiv dieses Tags tatsächlich eingesehen. Modell: Tillner-Roth/Baehr 1994, DOI 10.1063/1.555958; bibliographischen Eintrag gelesen, Originalarbeit nicht abgerufen. Lizenz unverändert unter public/licenses/CoolProp-MIT.txt.
+
+Referenz IIR explizit vor Erzeugung: Sattflüssigkeit bei 273,15 K mit h=200000 J/kg, s=1000 J/(kg·K). SI: p in Pa absolut, h J/kg, T K, s J/(kg·K), rho kg/m³. Qualität ist Dampfmasse/Gesamtmasse nur im Zweiphasengebiet, sonst null. Zustände 1 Verdichtereintritt, 2 Verdichteraustritt, 3 Verflüssigeraustritt, 4 Verdampfereintritt nach isenthalper Drossel.
+
+Acht geschlossene Betriebsfälle: Verdampfung −10/−5/0/5 °C, Verflüssigung 35/40/45 °C in den jeweils katalogisierten Kombinationen; Überhitzung 5/7/10 K, Unterkühlung 3/4/5/8 K, ηis 1 oder im einen ausdrücklich benannten Fall 0,75. Diese Angaben bilden kein frei kombinierbares Interpolationsgitter. Außerhalb der vorhandenen Fall-IDs wird nichts berechnet. Keine Gemische, kein REFPROP, kein Pflichtbackend. Darstellung ist keine Empfehlung für heutigen realen R134a-Einsatz.
+
+201 echte Sättigungsknoten von 220 bis 365 K, Abstand zum kritischen Bereich (Modellkritisch ca. 374,212 K/4,05928 MPa). Fünf Isothermen in getrennten Flüssigkeits-, Zweiphasen- und Dampfsegmenten; keine irreführende Verbindung über einen Phasensprung. Qualitätslinien x=0,25/0,5/0,75. Für ideale Verdichtung werden 41 echte Punkte mit konstantem s berechnet. Beim ηis-Fall ist nur der Endzustand bekannt; eine gezeichnete direkte Endpunktverbindung darf nicht als tatsächlicher Prozessverlauf ausgegeben werden.
+
+Erzeugung: `python -m pip install -r scripts/requirements-refrigerants.txt`, dann `python scripts/generate-refrigerant-data.py`. Keine Pythoninstallation für Appnutzer. JSON und SHA256 sind versioniert; Erzeugungsdatum ist für reproduzierbare Ausgabe fest auf 28.10.2026 gesetzt. Der Generator erzwingt Bibliotheksversion/Gitrevision und setzt IIR einmal beim Start.
+
+Prüfumfang: festes Quell-Kritischanker, getrennte reine Auswertung der veröffentlichten Ancillary-Koeffizienten mit deren Näherungsfehlerbereich, Clapeyron-Identität über unabhängige Differenzenquotienten, Phasen-/Qualitäts-/Referenzkonsistenz, Flash-Rückrechnung über anderes Zustandspaar (dieselbe EOS), isentrope Bedingung und Energiebilanzen. Numerische Konsistenz ist keine unabhängige experimentelle Validierung des Stoffmodells und keine menschliche Fachfreigabe.
+
+Polylinien verbinden reale Stützpunkte nur zum Zeichnen. Keine freie Stoffwerteinterpolation, keine Extrapolation oder neue Zustandsermittlung durch Zoom. Für Sättigungslinien gemessene maximale Abweichung an den 200 Segmentmittelpunkten: etwa 7,341 J/kg bzw. 0,000018673 log10(P). Das ist eine Stichprobenprüfung der Darstellung, keine garantierte globale Modell-/Messunsicherheit. Vollständige Stoffdaten-/Auslegungsfreigabe und unabhängige Fachprüfung bleiben offen.
