@@ -7,7 +7,7 @@ export interface RearrangementStep {
   after: string;
   reason: string;
   wrong: [string, string];
-  wrongFeedback?: [string,string];
+  wrongFeedback?: [string, string];
 }
 export interface RearrangementCase {
   id: string;

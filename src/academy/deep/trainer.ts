@@ -1,19 +1,156 @@
-import type { RearrangementCase } from '../foundations/trainer-data';
+import type { RearrangementCase } from "../foundations/trainer-data";
 /** Endlicher Katalog, keine freie symbolische Texteingabe oder Stichproben-Äquivalenzbehauptung. */
 export const advancedCases: RearrangementCase[] = [
- {id:'circle-diameter',title:'A = πd²/4 → d (geometrisch)',target:'d',level:'fachkraft',formulaId:'geo-circle',assumption:'A ≥ 0, d ≥ 0. Bei rein reellem d ohne Längenbedingung gäbe es ±; eine Länge ist nicht negativ.',steps:[
- {before:String.raw`A=\frac{\pi d^2}{4}`,operation:'Beide Seiten mit 4/π multiplizieren',after:String.raw`\frac{4A}\pi=d^2`,reason:'4/π ist ein fester von null verschiedener Faktor. Die Gleichheit bleibt erhalten, aber d² ist noch nicht d.',wrong:['Nur die rechte Seite mit 4/π multiplizieren','Schon d = 4A/π als Endergebnis verwenden'],wrongFeedback:['Die Gleichheit wird verändert, wenn der Faktor nur rechts wirkt.','Unvollständige Umformung: Der Ausdruck ist d², nicht d. Die Einheit wäre m² statt m.']},
- {before:String.raw`d^2=\frac{4A}\pi`,operation:'Nicht negative Wurzel wählen, weil d eine Länge ist',after:String.raw`d=\sqrt{\frac{4A}\pi}`,reason:'Auf d ≥ 0 ist das Quadrieren eindeutig umkehrbar. Ohne diese Einschränkung müssten beide Vorzeichen erhalten bleiben.',wrong:['d = 4A/π ohne Wurzel setzen','Nur die negative Wurzel als Rohrdurchmesser wählen'],wrongFeedback:['Quadrat und Wurzel sind hier Umkehroperationen; die Zielgröße ist noch nicht isoliert.','Ein negativer Durchmesser liegt außerhalb des geometrischen Definitionsbereichs. Im rein algebraischen Modell wären beide Vorzeichen Lösungen.']}
- ],result:String.raw`d=\sqrt{\frac{4A}\pi}`,probe:String.raw`A=\pi\,\mathrm{m^2}\Rightarrow d=2\,\mathrm m;\quad\frac{\pi\cdot2^2}{4}=\pi`,},
- {id:'bracket-x',title:'a(x+b) = c → x',target:'x',level:'fachkraft',formulaId:'math-distributive',assumption:'Reelle Zahlen, a ≠ 0. Alternativ zuerst ausmultiplizieren und dann ab subtrahieren.',steps:[
- {before:'a(x+b)=c',operation:'Beide Seiten durch a teilen (a ≠ 0)',after:String.raw`x+b=\frac ca`,reason:'Die Klammer ist ein ganzer Faktor. Division durch a setzt a ≠ 0 voraus und betrifft beide Seiten.',wrong:['Nur x durch a teilen und b unverändert lassen','Auch bei a = 0 durch a teilen'],wrongFeedback:['Der Faktor a multipliziert die gesamte Klammer. Ein einzelner Summand darf nicht anders behandelt werden.','Verbotene Division durch null: Bei a = 0 ist die ursprüngliche Gleichung separat zu untersuchen.']},
- {before:String.raw`x+b=\frac ca`,operation:'Auf beiden Seiten b subtrahieren',after:String.raw`x=\frac ca-b`,reason:'Subtraktion desselben Summanden isoliert x. Die gleichwertige Form (c−ab)/a ist bei a ≠ 0 ebenfalls richtig.',wrong:['Nur rechts b addieren','x + b = c/a bereits als isoliertes x melden'],wrongFeedback:['Addition ist nicht die Umkehroperation zu +b; außerdem müssen beide Seiten gleich behandelt werden.','Die Gleichung ist äquivalent, aber die Umformung nach x noch unvollständig.']}
- ],result:String.raw`x=\frac ca-b=\frac{c-ab}{a}`,probe:String.raw`a=2,b=3,c=10:\ x=2;\quad2(2+3)=10`,},
- {id:'rational-domain',title:'6/(x−1) = 3 → x',target:'x',level:'fachkraft',formulaId:'algebra-domain',assumption:'Originalbereich x ≠ 1. Der Ausschluss bleibt nach Beseitigen des Nenners bestehen.',steps:[
- {before:String.raw`\frac6{x-1}=3\quad(x\ne1)`,operation:'Mit x−1 auf beiden Seiten multiplizieren und den Bereich erhalten',after:'6=3(x-1)',reason:'Der Faktor x−1 ist im Originalbereich nicht null. Nach der Multiplikation bleibt dieser Bereich verbindlich.',wrong:['x = 1 als Lösung zulassen, weil der Nenner jetzt weg ist','Die 6 durch 3 teilen und x = 2 als Endergebnis setzen'],wrongFeedback:['x = 1 bleibt im Original unzulässig. Algebraisches Kürzen erweitert den ursprünglichen Definitionsbereich nicht.','6/3 = 2 liefert x−1 = 2, nicht x = 2. Ein weiterer Schritt ist nötig.']},
- {before:'6=3(x-1)',operation:'Durch 3 teilen und auf beiden Seiten 1 addieren',after:'x=3',reason:'Zwei umkehrbare Schritte: 2 = x−1, dann x = 3. Der Kandidat liegt im Originalbereich.',wrong:['x = 1 wählen','x = −1 wählen'],wrongFeedback:['Verbotener Originalnenner null.','Einsetzen liefert 6/(−2) = −3 und widerlegt den Kandidaten.']}
- ],result:'x=3',probe:String.raw`\frac6{3-1}=3`,},
- {id:'zero-solutions',title:'x(x−2) = 0 → Lösungsmenge',target:'alle reellen x',level:'fachkraft',formulaId:'algebra-quadratic',assumption:'Reelle x, keine zusätzliche technische Einschränkung. Null ist hier erlaubt.',steps:[
- {before:'x(x-2)=0',operation:'Nullprodukt: beide Faktoren getrennt gleich null setzen',after:String.raw`x=0\quad\text{oder}\quad x=2`,reason:'Ein Produkt ist null, wenn mindestens einer seiner Faktoren null ist. So bleibt die vollständige Lösungsmenge erhalten.',wrong:['Durch x teilen und nur x = 2 behalten','Nur x = 0 behalten'],wrongFeedback:['Verlorene Lösung: Division durch x setzt x ≠ 0 voraus und verwirft die zulässige Nullstelle 0.','Auch x−2 kann null sein. Die einzelne richtige Zahl 0 ist noch keine vollständige Lösungsmenge.']}
- ],result:String.raw`L=\{0,2\}`,probe:String.raw`0(0-2)=0;\qquad2(2-2)=0`,},
+  {
+    id: "circle-diameter",
+    title: "A = πd²/4 → d (geometrisch)",
+    target: "d",
+    level: "fachkraft",
+    formulaId: "geo-circle",
+    assumption:
+      "A ≥ 0, d ≥ 0. Bei rein reellem d ohne Längenbedingung gäbe es ±; eine Länge ist nicht negativ.",
+    steps: [
+      {
+        before: String.raw`A=\frac{\pi d^2}{4}`,
+        operation: "Beide Seiten mit 4/π multiplizieren",
+        after: String.raw`\frac{4A}\pi=d^2`,
+        reason:
+          "4/π ist ein fester von null verschiedener Faktor. Die Gleichheit bleibt erhalten, aber d² ist noch nicht d.",
+        wrong: [
+          "Nur die rechte Seite mit 4/π multiplizieren",
+          "Schon d = 4A/π als Endergebnis verwenden",
+        ],
+        wrongFeedback: [
+          "Die Gleichheit wird verändert, wenn der Faktor nur rechts wirkt.",
+          "Unvollständige Umformung: Der Ausdruck ist d², nicht d. Die Einheit wäre m² statt m.",
+        ],
+      },
+      {
+        before: String.raw`d^2=\frac{4A}\pi`,
+        operation: "Nicht negative Wurzel wählen, weil d eine Länge ist",
+        after: String.raw`d=\sqrt{\frac{4A}\pi}`,
+        reason:
+          "Auf d ≥ 0 ist das Quadrieren eindeutig umkehrbar. Ohne diese Einschränkung müssten beide Vorzeichen erhalten bleiben.",
+        wrong: [
+          "d = 4A/π ohne Wurzel setzen",
+          "Nur die negative Wurzel als Rohrdurchmesser wählen",
+        ],
+        wrongFeedback: [
+          "Quadrat und Wurzel sind hier Umkehroperationen; die Zielgröße ist noch nicht isoliert.",
+          "Ein negativer Durchmesser liegt außerhalb des geometrischen Definitionsbereichs. Im rein algebraischen Modell wären beide Vorzeichen Lösungen.",
+        ],
+      },
+    ],
+    result: String.raw`d=\sqrt{\frac{4A}\pi}`,
+    probe: String.raw`A=\pi\,\mathrm{m^2}\Rightarrow d=2\,\mathrm m;\quad\frac{\pi\cdot2^2}{4}=\pi`,
+  },
+  {
+    id: "bracket-x",
+    title: "a(x+b) = c → x",
+    target: "x",
+    level: "fachkraft",
+    formulaId: "math-distributive",
+    assumption:
+      "Reelle Zahlen, a ≠ 0. Alternativ zuerst ausmultiplizieren und dann ab subtrahieren.",
+    steps: [
+      {
+        before: "a(x+b)=c",
+        operation: "Beide Seiten durch a teilen (a ≠ 0)",
+        after: String.raw`x+b=\frac ca`,
+        reason:
+          "Die Klammer ist ein ganzer Faktor. Division durch a setzt a ≠ 0 voraus und betrifft beide Seiten.",
+        wrong: [
+          "Nur x durch a teilen und b unverändert lassen",
+          "Auch bei a = 0 durch a teilen",
+        ],
+        wrongFeedback: [
+          "Der Faktor a multipliziert die gesamte Klammer. Ein einzelner Summand darf nicht anders behandelt werden.",
+          "Verbotene Division durch null: Bei a = 0 ist die ursprüngliche Gleichung separat zu untersuchen.",
+        ],
+      },
+      {
+        before: String.raw`x+b=\frac ca`,
+        operation: "Auf beiden Seiten b subtrahieren",
+        after: String.raw`x=\frac ca-b`,
+        reason:
+          "Subtraktion desselben Summanden isoliert x. Die gleichwertige Form (c−ab)/a ist bei a ≠ 0 ebenfalls richtig.",
+        wrong: [
+          "Nur rechts b addieren",
+          "x + b = c/a bereits als isoliertes x melden",
+        ],
+        wrongFeedback: [
+          "Addition ist nicht die Umkehroperation zu +b; außerdem müssen beide Seiten gleich behandelt werden.",
+          "Die Gleichung ist äquivalent, aber die Umformung nach x noch unvollständig.",
+        ],
+      },
+    ],
+    result: String.raw`x=\frac ca-b=\frac{c-ab}{a}`,
+    probe: String.raw`a=2,b=3,c=10:\ x=2;\quad2(2+3)=10`,
+  },
+  {
+    id: "rational-domain",
+    title: "6/(x−1) = 3 → x",
+    target: "x",
+    level: "fachkraft",
+    formulaId: "algebra-domain",
+    assumption:
+      "Originalbereich x ≠ 1. Der Ausschluss bleibt nach Beseitigen des Nenners bestehen.",
+    steps: [
+      {
+        before: String.raw`\frac6{x-1}=3\quad(x\ne1)`,
+        operation:
+          "Mit x−1 auf beiden Seiten multiplizieren und den Bereich erhalten",
+        after: "6=3(x-1)",
+        reason:
+          "Der Faktor x−1 ist im Originalbereich nicht null. Nach der Multiplikation bleibt dieser Bereich verbindlich.",
+        wrong: [
+          "x = 1 als Lösung zulassen, weil der Nenner jetzt weg ist",
+          "Die 6 durch 3 teilen und x = 2 als Endergebnis setzen",
+        ],
+        wrongFeedback: [
+          "x = 1 bleibt im Original unzulässig. Algebraisches Kürzen erweitert den ursprünglichen Definitionsbereich nicht.",
+          "6/3 = 2 liefert x−1 = 2, nicht x = 2. Ein weiterer Schritt ist nötig.",
+        ],
+      },
+      {
+        before: "6=3(x-1)",
+        operation: "Durch 3 teilen und auf beiden Seiten 1 addieren",
+        after: "x=3",
+        reason:
+          "Zwei umkehrbare Schritte: 2 = x−1, dann x = 3. Der Kandidat liegt im Originalbereich.",
+        wrong: ["x = 1 wählen", "x = −1 wählen"],
+        wrongFeedback: [
+          "Verbotener Originalnenner null.",
+          "Einsetzen liefert 6/(−2) = −3 und widerlegt den Kandidaten.",
+        ],
+      },
+    ],
+    result: "x=3",
+    probe: String.raw`\frac6{3-1}=3`,
+  },
+  {
+    id: "zero-solutions",
+    title: "x(x−2) = 0 → Lösungsmenge",
+    target: "alle reellen x",
+    level: "fachkraft",
+    formulaId: "algebra-quadratic",
+    assumption:
+      "Reelle x, keine zusätzliche technische Einschränkung. Null ist hier erlaubt.",
+    steps: [
+      {
+        before: "x(x-2)=0",
+        operation: "Nullprodukt: beide Faktoren getrennt gleich null setzen",
+        after: String.raw`x=0\quad\text{oder}\quad x=2`,
+        reason:
+          "Ein Produkt ist null, wenn mindestens einer seiner Faktoren null ist. So bleibt die vollständige Lösungsmenge erhalten.",
+        wrong: ["Durch x teilen und nur x = 2 behalten", "Nur x = 0 behalten"],
+        wrongFeedback: [
+          "Verlorene Lösung: Division durch x setzt x ≠ 0 voraus und verwirft die zulässige Nullstelle 0.",
+          "Auch x−2 kann null sein. Die einzelne richtige Zahl 0 ist noch keine vollständige Lösungsmenge.",
+        ],
+      },
+    ],
+    result: String.raw`L=\{0,2\}`,
+    probe: String.raw`0(0-2)=0;\qquad2(2-2)=0`,
+  },
 ];

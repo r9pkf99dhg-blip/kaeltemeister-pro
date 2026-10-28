@@ -479,24 +479,84 @@ domains.push({
   ],
 });
 
-mathDomain.chapters.push({id:"mathematik-vertiefung-v06",title:"Geometrie und Algebra vertiefen",subchapters:[{id:"mathematik-geometrie-v06",title:"Geometrie und Trigonometrie",moduleIds:["math-geometry","math-pipe-volume","math-triangles","math-trigonometry"],plannedTopics:[]},{id:"mathematik-algebra-v06",title:"Gleichungen und Funktionen",moduleIds:["math-domains","math-systems-quadratic","math-functions"],plannedTopics:["Weitere nichtlineare Systeme und vertiefte Analysis"]}]});
-mathDomain.description="Grundlagen, technische Geometrie, Trigonometrie und vertiefte Algebra mit Modellgrenzen.";
-mathDomain.chapters[0].subchapters[1].plannedTopics=[];
+mathDomain.chapters.push({
+  id: "mathematik-vertiefung-v06",
+  title: "Geometrie und Algebra vertiefen",
+  subchapters: [
+    {
+      id: "mathematik-geometrie-v06",
+      title: "Geometrie und Trigonometrie",
+      moduleIds: [
+        "math-geometry",
+        "math-pipe-volume",
+        "math-triangles",
+        "math-trigonometry",
+      ],
+      plannedTopics: [],
+    },
+    {
+      id: "mathematik-algebra-v06",
+      title: "Gleichungen und Funktionen",
+      moduleIds: ["math-domains", "math-systems-quadratic", "math-functions"],
+      plannedTopics: ["Weitere nichtlineare Systeme und vertiefte Analysis"],
+    },
+  ],
+});
+mathDomain.description =
+  "Grundlagen, technische Geometrie, Trigonometrie und vertiefte Algebra mit Modellgrenzen.";
+mathDomain.chapters[0].subchapters[1].plannedTopics = [];
 
-electricDomain.description="Fünf Gleichstrom-Grundlagenmodule sowie vier vertiefte Wechsel- und Drehstrommodule.";
-electricDomain.chapters[0].subchapters[1].moduleIds=["electric-ac-wave","electric-ac-reactance","electric-ac-power"];
-electricDomain.chapters[0].subchapters[1].plannedTopics=[];
-electricDomain.chapters[1].subchapters[0].moduleIds=["electric-three-phase"];
-electricDomain.chapters[1].subchapters[0].plannedTopics=["Drehfeld, Asynchronmotor, Schlupf und reale Motorkennlinien"];
+electricDomain.description =
+  "Fünf Gleichstrom-Grundlagenmodule sowie vier vertiefte Wechsel- und Drehstrommodule.";
+electricDomain.chapters[0].subchapters[1].moduleIds = [
+  "electric-ac-wave",
+  "electric-ac-reactance",
+  "electric-ac-power",
+];
+electricDomain.chapters[0].subchapters[1].plannedTopics = [];
+electricDomain.chapters[1].subchapters[0].moduleIds = ["electric-three-phase"];
+electricDomain.chapters[1].subchapters[0].plannedTopics = [
+  "Drehfeld, Asynchronmotor, Schlupf und reale Motorkennlinien",
+];
 
-const thermoDomain=domains.find(d=>d.id==="thermodynamik")!;
-thermoDomain.description="Zusammenhängender Pfad von Zuständen über Wärmeträger und Wärmeübertragung zur Kreislaufbilanz.";
-thermoDomain.chapters[0].subchapters[0].moduleIds=["thermo-states","thermo-calorimetry","thermo-phase"];
-thermoDomain.chapters[0].subchapters[0].plannedTopics=[];
-thermoDomain.chapters[0].subchapters[1].moduleIds=["thermo-transfer"];
-thermoDomain.chapters[0].subchapters[1].plannedTopics=[];
-thermoDomain.chapters[1].subchapters[1].moduleIds=["thermo-cycle-balance"];
-thermoDomain.chapters[1].subchapters[1].plannedTopics=["Reale Stoffwerte und validierte log-p-h-Darstellung"];
-domains.find(d=>d.id==='waerme')!.chapters[0].subchapters[0].plannedTopics=['Lehrmodell im Fachgebiet Thermodynamik: Wärmeleitung, Wärmewiderstand und U-Wert; Fachauslegung später.'];
+const thermoDomain = domains.find((d) => d.id === "thermodynamik")!;
+thermoDomain.description =
+  "Zusammenhängender Pfad von Zuständen über Wärmeträger und Wärmeübertragung zur Kreislaufbilanz.";
+thermoDomain.chapters[0].subchapters[0].moduleIds = [
+  "thermo-states",
+  "thermo-calorimetry",
+  "thermo-phase",
+];
+thermoDomain.chapters[0].subchapters[0].plannedTopics = [];
+thermoDomain.chapters[0].subchapters[1].moduleIds = ["thermo-transfer"];
+thermoDomain.chapters[0].subchapters[1].plannedTopics = [];
+thermoDomain.chapters[1].subchapters[1].moduleIds = ["thermo-cycle-balance"];
+thermoDomain.chapters[1].subchapters[1].plannedTopics = [
+  "Reale Stoffwerte und validierte log-p-h-Darstellung",
+];
+domains.find(
+  (d) => d.id === "waerme",
+)!.chapters[0].subchapters[0].plannedTopics = [
+  "Lehrmodell im Fachgebiet Thermodynamik: Wärmeleitung, Wärmewiderstand und U-Wert; Fachauslegung später.",
+];
 
-for(const [domainId,moduleIds] of [['mathematik',['case-pipe']],['elektro',['case-ac']],['thermodynamik',['case-heat','case-conduction']]] as const){domains.find(d=>d.id===domainId)!.chapters.push({id:`${domainId}-faelle-v06`,title:'Fachübergreifende Lernfälle',subchapters:[{id:`${domainId}-fallstudien-v06`,title:'Selbst erstellte Transferübungen mit Bewertung',moduleIds:[...moduleIds],plannedTopics:[]}]});}
+for (const [domainId, moduleIds] of [
+  ["mathematik", ["case-pipe"]],
+  ["elektro", ["case-ac"]],
+  ["thermodynamik", ["case-heat", "case-conduction"]],
+] as const) {
+  domains
+    .find((d) => d.id === domainId)!
+    .chapters.push({
+      id: `${domainId}-faelle-v06`,
+      title: "Fachübergreifende Lernfälle",
+      subchapters: [
+        {
+          id: `${domainId}-fallstudien-v06`,
+          title: "Selbst erstellte Transferübungen mit Bewertung",
+          moduleIds: [...moduleIds],
+          plannedTopics: [],
+        },
+      ],
+    });
+}

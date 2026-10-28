@@ -120,10 +120,12 @@ export function TaskSolution({
       <div className="task-solution">
         <p>
           <strong>Richtige Antwort:</strong>{" "}
-          {
-            item.options.find((option) => option.id === item.correctOptionId)
-              ?.text
-          }
+          <OptionMath
+            text={
+              item.options.find((option) => option.id === item.correctOptionId)
+                ?.text ?? ""
+            }
+          />
         </p>
         <p>
           <MathText text={item.explanation} />

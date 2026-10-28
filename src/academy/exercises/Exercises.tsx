@@ -30,19 +30,47 @@ export default function Exercises({
   const tasks = moduleId
     ? numericTasks.filter((t) => t.topicId === moduleId)
     : numericTasks;
-  const saved=progress.exerciseDraft;
-  const draft=(!initialTaskId || initialTaskId===saved?.taskId) && saved && tasks.some(t=>t.id===saved.taskId && t.revision===saved.revision)?saved:undefined;
+  const saved = progress.exerciseDraft;
+  const draft =
+    (!initialTaskId || initialTaskId === saved?.taskId) &&
+    saved &&
+    tasks.some((t) => t.id === saved.taskId && t.revision === saved.revision)
+      ? saved
+      : undefined;
   const [taskId, setTaskId] = useState(
-    tasks.find((item) => item.id === initialTaskId)?.id ?? draft?.taskId ?? tasks[0].id,
+    tasks.find((item) => item.id === initialTaskId)?.id ??
+      draft?.taskId ??
+      tasks[0].id,
   );
   const task = numericTasks.find((item) => item.id === taskId)!;
-  const [answer, setAnswer] = useState<ItemAnswer>(draft?.answer ?? emptyAnswer(task));
-  const [grade, setGrade] = useState<Grade | null>(draft?.checked ? gradeSnapshot(snapshotItem(task),draft.answer):null);
+  const [answer, setAnswer] = useState<ItemAnswer>(
+    draft?.answer ?? emptyAnswer(task),
+  );
+  const [grade, setGrade] = useState<Grade | null>(
+    draft?.checked ? gradeSnapshot(snapshotItem(task), draft.answer) : null,
+  );
   const [hint, setHint] = useState(false);
-  const [bridgeLesson, setBridgeLesson] = useState<string | null>(draft?.bridgeLessonId??null);
-  const [bridgeDismissed,setBridgeDismissed]=useState(false);
-  function saveDraft(nextAnswer:ItemAnswer,lessonId:string|null,checked:boolean,nextTask=task){
-    setProgress(p=>({...p,exerciseDraft:{taskId:nextTask.id,revision:nextTask.revision,answer:nextAnswer,bridgeLessonId:lessonId,checked,updatedAt:new Date().toISOString()}}));
+  const [bridgeLesson, setBridgeLesson] = useState<string | null>(
+    draft?.bridgeLessonId ?? null,
+  );
+  const [bridgeDismissed, setBridgeDismissed] = useState(false);
+  function saveDraft(
+    nextAnswer: ItemAnswer,
+    lessonId: string | null,
+    checked: boolean,
+    nextTask = task,
+  ) {
+    setProgress((p) => ({
+      ...p,
+      exerciseDraft: {
+        taskId: nextTask.id,
+        revision: nextTask.revision,
+        answer: nextAnswer,
+        bridgeLessonId: lessonId,
+        checked,
+        updatedAt: new Date().toISOString(),
+      },
+    }));
   }
   const variant = tasks.find(
     (t) =>
@@ -54,7 +82,7 @@ export default function Exercises({
     const next = tasks.find((item) => item.id === id);
     if (!next) return;
     setBridgeDismissed(false);
-    saveDraft(emptyAnswer(next),null,false,next);
+    saveDraft(emptyAnswer(next), null, false, next);
     setTaskId(next.id);
     setAnswer(emptyAnswer(next));
     setGrade(null);
@@ -65,7 +93,7 @@ export default function Exercises({
     const result = gradeSnapshot(snapshotItem(task), answer);
     setGrade(result);
     setBridgeDismissed(false);
-    saveDraft(answer,bridgeLesson,true);
+    saveDraft(answer, bridgeLesson, true);
     if (result.status === "invalid" || result.status === "unanswered") return;
     const now = new Date();
     setProgress((current) =>
@@ -92,9 +120,10 @@ export default function Exercises({
     <section className="academy-panel exercises">
       <h2>Technische Rechenaufgaben</h2>
       <p>
-        {tasks.length} klar abgegrenzte Aufgaben. Ein letzter Aufgabenentwurf mit Eingabe und geöffneter Lernbrücke wird lokal gesichert. Erst selbst rechnen, dann
-        Ergebnis und Einheit prüfen. Dezimalkomma oder Punkt, keine
-        Tausendertrenner.
+        {tasks.length} klar abgegrenzte Aufgaben. Ein letzter Aufgabenentwurf
+        mit Eingabe und geöffneter Lernbrücke wird lokal gesichert. Erst selbst
+        rechnen, dann Ergebnis und Einheit prüfen. Dezimalkomma oder Punkt,
+        keine Tausendertrenner.
       </p>
       <label className="task-picker" htmlFor="exercise-select">
         Aufgabe wählen
@@ -128,7 +157,7 @@ export default function Exercises({
             setAnswer(next);
             setGrade(null);
             setBridgeLesson(null);
-            saveDraft(next,null,false);
+            saveDraft(next, null, false);
           }}
         />
         <div className="task-controls">
@@ -182,14 +211,22 @@ export default function Exercises({
           <LearningBridge
             task={task}
             answer={answer}
-            skip={()=>{setBridgeDismissed(true);setBridgeLesson(null);saveDraft(answer,null,true);document.getElementById(`result-${task.id}`)?.focus();}}
+            skip={() => {
+              setBridgeDismissed(true);
+              setBridgeLesson(null);
+              saveDraft(answer, null, true);
+              document.getElementById(`result-${task.id}`)?.focus();
+            }}
             progress={progress}
             setProgress={setProgress}
             lessonId={bridgeLesson}
-            openLesson={id=>{setBridgeLesson(id);saveDraft(answer,id,true);}}
+            openLesson={(id) => {
+              setBridgeLesson(id);
+              saveDraft(answer, id, true);
+            }}
             closeLesson={() => {
               setBridgeLesson(null);
-              saveDraft(answer,null,true);
+              saveDraft(answer, null, true);
               document.getElementById(`result-${task.id}`)?.focus();
             }}
           />

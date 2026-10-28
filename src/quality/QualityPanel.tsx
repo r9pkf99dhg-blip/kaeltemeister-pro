@@ -26,9 +26,9 @@ export default function QualityPanel() {
             />
           </label>
           <p>
-            {reviewRegister.length} Inhalte und Niveaus erfasst. Alle fünf
-            Prüfstatus sind vorbereitet; „Unabhängig fachlich geprüft“ wird erst
-            mit dokumentierter Fachfreigabe vergeben.
+            {reviewRegister.length} Inhalte und Niveaus erfasst. Quellen- und
+            Rechennachweise sind getrennt dokumentiert; „Unabhängig fachlich
+            geprüft“ wird erst mit dokumentierter Fachfreigabe vergeben.
           </p>
           {reviewRegister
             .filter((e) =>

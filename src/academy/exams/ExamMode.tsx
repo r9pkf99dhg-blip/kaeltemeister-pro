@@ -1,3 +1,4 @@
+import { OptionMath } from "../../math/Math";
 import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { domains } from "../catalog";
 import { levels, levelNames, type AcademyProgress, type Level } from "../model";
@@ -221,11 +222,17 @@ function ExamAnalysis({
           </h4>
           <p>
             Deine Antwort:{" "}
-            {entry.snapshot.item.kind === "choice"
-              ? (entry.snapshot.item.options.find(
-                  (option) => option.id === entry.answer.value,
-                )?.text ?? "Keine Antwort")
-              : `${entry.answer.value || "Keine Antwort"} ${entry.answer.unit}`}
+            {entry.snapshot.item.kind === "choice" ? (
+              <OptionMath
+                text={
+                  entry.snapshot.item.options.find(
+                    (option) => option.id === entry.answer.value,
+                  )?.text ?? "Keine Antwort"
+                }
+              />
+            ) : (
+              `${entry.answer.value || "Keine Antwort"} ${entry.answer.unit}`
+            )}
           </p>
           <TaskSolution
             item={entry.snapshot.item}

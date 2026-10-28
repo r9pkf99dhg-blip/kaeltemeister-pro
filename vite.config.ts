@@ -10,6 +10,10 @@ export default defineConfig({
       output: {
         codeSplitting: {
           groups: [
+            {
+              name: "academy-content-v06",
+              test: /src[\\/]academy[\\/]deep[\\/](?:math|electrical|thermal|case)-(?:lessons|formulas|tasks)\.ts$/,
+            },
             { name: "formula-renderer", test: /node_modules[\\/]katex[\\/]/ },
             {
               name: "react-vendor",

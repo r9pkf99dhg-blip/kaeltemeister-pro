@@ -101,7 +101,10 @@ test("Akademie migriert Altfortschritt und zeigt alle drei Niveaus", async ({
   ).toBeVisible();
   await page.getByText("Elektrotechnik", { exact: true }).last().click();
   await expect(
-    page.getByText("Gleichstrom und Wechselstrom · Noch nicht ausgearbeitet"),
+    page.getByRole("button", {
+      name: "Wechselstrom: Sinus, Zeit und Effektivwert",
+      exact: true,
+    }),
   ).toBeVisible();
   await noOverflow(page);
 });

@@ -54,7 +54,17 @@ export type Quantity =
   | "amount"
   | "molar-mass"
   | "angle"
-  | "frequency" | "inductance" | "capacitance" | "apparent-power" | "reactive-power" | "volume-flow" | "specific-volume" | "specific-energy" | "conductivity" | "thermal-resistance" | "transmittance";
+  | "frequency"
+  | "inductance"
+  | "capacitance"
+  | "apparent-power"
+  | "reactive-power"
+  | "volume-flow"
+  | "specific-volume"
+  | "specific-energy"
+  | "conductivity"
+  | "thermal-resistance"
+  | "transmittance";
 export const units: Record<Quantity, string[]> = {
   power: ["W", "kW"],
   "mass-flow": ["kg/s", "kg/h"],
@@ -140,7 +150,7 @@ export function fromSI(
   if (["kHz", "kVA", "kvar"].includes(unit)) return value / 1000;
   if (unit === "mH") return value * 1000;
   if (unit === "µF") return value * 1000000;
-  if (unit === "°") return value * 180 / Math.PI;
+  if (unit === "°") return (value * 180) / Math.PI;
   if (unit === "mm²" || unit === "cm³") return value * 1000000;
   if (unit === "%") return value * 100;
   if (["g", "mm", "L", "mmol", "g/mol"].includes(unit)) return value * 1000;
@@ -163,7 +173,8 @@ export function calculateTechnical(
   kind: CalculationKind,
   values: Record<string, number>,
 ): number {
-  if (deepKinds.includes(kind as DeepKind)) return calculateDeep(kind as DeepKind, values);
+  if (deepKinds.includes(kind as DeepKind))
+    return calculateDeep(kind as DeepKind, values);
   if (schoolKinds.includes(kind as SchoolKind))
     return calculateSchool(kind as SchoolKind, values);
   const get = (id: string, strictlyPositive = false) => {

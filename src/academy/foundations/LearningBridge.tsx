@@ -33,8 +33,14 @@ export default function LearningBridge({
   return (
     <aside className="learning-bridge" aria-label="Intelligente Lernbrücke">
       <h3>Eine mögliche Grundlage auffrischen</h3>
-      <button className="text-button" onClick={skip}>Lernbrücke überspringen</button>
-      {errorPatterns(task,answer).map(p=><p className="notice" key={p.id}>{p.observation}</p>)}
+      <button className="text-button" onClick={skip}>
+        Lernbrücke überspringen
+      </button>
+      {errorPatterns(task, answer).map((p) => (
+        <p className="notice" key={p.id}>
+          {p.observation}
+        </p>
+      ))}
       <p>
         Eine falsche Antwort zeigt noch nicht, welche Grundlage fehlt. Diese
         Empfehlungen nutzen die Anforderungen der Aufgabe und deinen bisherigen

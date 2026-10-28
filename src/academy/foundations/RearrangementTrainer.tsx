@@ -56,7 +56,15 @@ export default function RearrangementTrainer({
       </p>
       <BlockMath tex={step.before} />
       <p>{current.assumption}</p>
-      <details key={`${id}-${index}`}><summary>Hilfestufe: Was muss erhalten bleiben?</summary><p>{step.reason}</p><p>Nach jedem Schritt bleibt die Gleichheit auf dem angegebenen Definitionsbereich erhalten. Am Ende in die Originalgleichung einsetzen.</p></details>
+      <details key={`${id}-${index}`}>
+        <summary>Hilfestufe: Was muss erhalten bleiben?</summary>
+        <p>{step.reason}</p>
+        <p>
+          Nach jedem Schritt bleibt die Gleichheit auf dem angegebenen
+          Definitionsbereich erhalten. Am Ende in die Originalgleichung
+          einsetzen.
+        </p>
+      </details>
       <fieldset>
         <legend>Welche Operation führt zum Ziel?</legend>
         {[...task.options]

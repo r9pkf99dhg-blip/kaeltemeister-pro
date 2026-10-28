@@ -1,597 +1,597 @@
 import type { NumericTask } from "../exercises/model";
 export const thermal_tasks: NumericTask[] = [
   {
-    "id": "th-pressure-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-states",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Absolutdruck aus positivem Überdruck",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Absolutdruck aus positivem Überdruck.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-states"
+    id: "th-pressure-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-states",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Absolutdruck aus positivem Überdruck",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Absolutdruck aus positivem Überdruck.",
+    article: {
+      kind: "module",
+      id: "thermo-states",
     },
-    "formulaId": "thermo-pressure-abs",
-    "calculation": "pressure-absolute",
-    "givens": [
+    formulaId: "thermo-pressure-abs",
+    calculation: "pressure-absolute",
+    givens: [
       {
-        "id": "gauge",
-        "label": "Positiver Überdruck",
-        "value": 2,
-        "unit": "bar",
-        "quantity": "pressure"
+        id: "gauge",
+        label: "Positiver Überdruck",
+        value: 2,
+        unit: "bar",
+        quantity: "pressure",
       },
       {
-        "id": "ambient",
-        "label": "Vorgegebener Umgebungsdruck",
-        "value": 1,
-        "unit": "bar",
-        "quantity": "pressure"
-      }
+        id: "ambient",
+        label: "Vorgegebener Umgebungsdruck",
+        value: 1,
+        unit: "bar",
+        quantity: "pressure",
+      },
     ],
-    "sought": "Absolutdruck aus positivem Überdruck",
-    "quantity": "pressure",
-    "answerUnit": "bar",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Absolutdruck aus positivem Überdruck",
+    quantity: "pressure",
+    answerUnit: "bar",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(p_\\mathrm{abs}=p_\\mathrm{ü}+p_\\mathrm{amb}\\).",
-      "\\(p_\\mathrm{abs}=2+1=3\\,\\mathrm{bar}=300000\\,\\mathrm{Pa}\\)."
+      "\\(p_\\mathrm{abs}=2+1=3\\,\\mathrm{bar}=300000\\,\\mathrm{Pa}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Keine Berechnung für Unterdruckwerte.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Keine Berechnung für Unterdruckwerte.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-volume-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-states",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Spezifisches Volumen aus Dichte",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Spezifisches Volumen aus Dichte.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-states"
+    id: "th-volume-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-states",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Spezifisches Volumen aus Dichte",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Spezifisches Volumen aus Dichte.",
+    article: {
+      kind: "module",
+      id: "thermo-states",
     },
-    "formulaId": "thermo-specific-volume",
-    "calculation": "specific-volume",
-    "givens": [
+    formulaId: "thermo-specific-volume",
+    calculation: "specific-volume",
+    givens: [
       {
-        "id": "density",
-        "label": "Vorgegebene fiktive Dichte",
-        "value": 800,
-        "unit": "kg/m³",
-        "quantity": "density"
-      }
+        id: "density",
+        label: "Vorgegebene fiktive Dichte",
+        value: 800,
+        unit: "kg/m³",
+        quantity: "density",
+      },
     ],
-    "sought": "Spezifisches Volumen aus Dichte",
-    "quantity": "specific-volume",
-    "answerUnit": "m³/kg",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Spezifisches Volumen aus Dichte",
+    quantity: "specific-volume",
+    answerUnit: "m³/kg",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(v=\\frac1\\rho\\).",
-      "\\(v=\\frac1{800}=0{,}00125\\,\\mathrm{m^3/kg}\\)."
+      "\\(v=\\frac1{800}=0{,}00125\\,\\mathrm{m^3/kg}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Homogener Stoff, vorgegebene Dichte.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Homogener Stoff, vorgegebene Dichte.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-mass-flow-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-states",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Massenstrom aus Betriebsvolumenstrom",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Massenstrom aus Betriebsvolumenstrom.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-states"
+    id: "th-mass-flow-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-states",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Massenstrom aus Betriebsvolumenstrom",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Massenstrom aus Betriebsvolumenstrom.",
+    article: {
+      kind: "module",
+      id: "thermo-states",
     },
-    "formulaId": "thermo-mass-volume",
-    "calculation": "volume-to-mass",
-    "givens": [
+    formulaId: "thermo-mass-volume",
+    calculation: "volume-to-mass",
+    givens: [
       {
-        "id": "volumeFlow",
-        "label": "Betriebsvolumenstrom",
-        "value": 1.8,
-        "unit": "m³/h",
-        "quantity": "volume-flow"
+        id: "volumeFlow",
+        label: "Betriebsvolumenstrom",
+        value: 1.8,
+        unit: "m³/h",
+        quantity: "volume-flow",
       },
       {
-        "id": "density",
-        "label": "Dichte am selben Zustand",
-        "value": 1000,
-        "unit": "kg/m³",
-        "quantity": "density"
-      }
+        id: "density",
+        label: "Dichte am selben Zustand",
+        value: 1000,
+        unit: "kg/m³",
+        quantity: "density",
+      },
     ],
-    "sought": "Massenstrom aus Betriebsvolumenstrom",
-    "quantity": "mass-flow",
-    "answerUnit": "kg/s",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Massenstrom aus Betriebsvolumenstrom",
+    quantity: "mass-flow",
+    answerUnit: "kg/s",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(\\dot V=\\frac{1{,}8}{3600}=0{,}0005\\,\\mathrm{m^3/s}\\).",
-      "\\(\\dot m=1000\\cdot0{,}0005=0{,}5\\,\\mathrm{kg/s}\\)."
+      "\\(\\dot m=1000\\cdot0{,}0005=0{,}5\\,\\mathrm{kg/s}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Dichte vorgegeben, gleicher Ort und Zustand.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Dichte vorgegeben, gleicher Ort und Zustand.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-heat-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-calorimetry",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Wärmeträgerleistung mit vorgegebenem cp",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmeträgerleistung mit vorgegebenem cp.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-calorimetry"
+    id: "th-heat-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-calorimetry",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Wärmeträgerleistung mit vorgegebenem cp",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmeträgerleistung mit vorgegebenem cp.",
+    article: {
+      kind: "module",
+      id: "thermo-calorimetry",
     },
-    "formulaId": "sensible-heat",
-    "calculation": "heat",
-    "givens": [
+    formulaId: "sensible-heat",
+    calculation: "heat",
+    givens: [
       {
-        "id": "massFlow",
-        "label": "Massenstrom",
-        "value": 0.5,
-        "unit": "kg/s",
-        "quantity": "mass-flow"
+        id: "massFlow",
+        label: "Massenstrom",
+        value: 0.5,
+        unit: "kg/s",
+        quantity: "mass-flow",
       },
       {
-        "id": "cp",
-        "label": "Vorgegebenes konstantes cp",
-        "value": 4000,
-        "unit": "J/(kg·K)",
-        "quantity": "specific-heat"
+        id: "cp",
+        label: "Vorgegebenes konstantes cp",
+        value: 4000,
+        unit: "J/(kg·K)",
+        quantity: "specific-heat",
       },
       {
-        "id": "deltaT",
-        "label": "Abkühlbetrag",
-        "value": 5,
-        "unit": "K",
-        "quantity": "temperature-difference"
-      }
+        id: "deltaT",
+        label: "Abkühlbetrag",
+        value: 5,
+        unit: "K",
+        quantity: "temperature-difference",
+      },
     ],
-    "sought": "Wärmeträgerleistung mit vorgegebenem cp",
-    "quantity": "power",
-    "answerUnit": "kW",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Wärmeträgerleistung mit vorgegebenem cp",
+    quantity: "power",
+    answerUnit: "kW",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(\\dot Q=\\dot m c_p\\Delta T\\).",
-      "\\(\\dot Q=0{,}5\\cdot4000\\cdot5=10000\\,\\mathrm W=10\\,\\mathrm{kW}\\)."
+      "\\(\\dot Q=0{,}5\\cdot4000\\cdot5=10000\\,\\mathrm W=10\\,\\mathrm{kW}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Sensible Abkühlung, kein Phasenwechsel, positiver Betrag.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Sensible Abkühlung, kein Phasenwechsel, positiver Betrag.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-latent-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-phase",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Latente Energie eines fiktiven Übergangs",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Latente Energie eines fiktiven Übergangs.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-phase"
+    id: "th-latent-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-phase",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Latente Energie eines fiktiven Übergangs",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Latente Energie eines fiktiven Übergangs.",
+    article: {
+      kind: "module",
+      id: "thermo-phase",
     },
-    "formulaId": "thermo-latent",
-    "calculation": "latent-heat",
-    "givens": [
+    formulaId: "thermo-latent",
+    calculation: "latent-heat",
+    givens: [
       {
-        "id": "mass",
-        "label": "Masse",
-        "value": 2,
-        "unit": "kg",
-        "quantity": "mass"
+        id: "mass",
+        label: "Masse",
+        value: 2,
+        unit: "kg",
+        quantity: "mass",
       },
       {
-        "id": "latent",
-        "label": "Fiktive spezifische Übergangsenergie",
-        "value": 200,
-        "unit": "kJ/kg",
-        "quantity": "specific-energy"
-      }
+        id: "latent",
+        label: "Fiktive spezifische Übergangsenergie",
+        value: 200,
+        unit: "kJ/kg",
+        quantity: "specific-energy",
+      },
     ],
-    "sought": "Latente Energie eines fiktiven Übergangs",
-    "quantity": "energy",
-    "answerUnit": "J",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Latente Energie eines fiktiven Übergangs",
+    quantity: "energy",
+    answerUnit: "J",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(L=200000\\,\\mathrm{J/kg}\\).",
-      "\\(Q=2\\cdot200000=400000\\,\\mathrm J\\)."
+      "\\(Q=2\\cdot200000=400000\\,\\mathrm J\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Nur der definierte Phasenwechsel, kein benannter realer Stoff.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Nur der definierte Phasenwechsel, kein benannter realer Stoff.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-conduction-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-transfer",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Wärmestrom durch eine ebene Schicht",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmestrom durch eine ebene Schicht.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-transfer"
+    id: "th-conduction-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-transfer",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Wärmestrom durch eine ebene Schicht",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmestrom durch eine ebene Schicht.",
+    article: {
+      kind: "module",
+      id: "thermo-transfer",
     },
-    "formulaId": "thermo-conduction",
-    "calculation": "conduction",
-    "givens": [
+    formulaId: "thermo-conduction",
+    calculation: "conduction",
+    givens: [
       {
-        "id": "conductivity",
-        "label": "Vorgegebene Wärmeleitfähigkeit",
-        "value": 0.04,
-        "unit": "W/(m·K)",
-        "quantity": "conductivity"
+        id: "conductivity",
+        label: "Vorgegebene Wärmeleitfähigkeit",
+        value: 0.04,
+        unit: "W/(m·K)",
+        quantity: "conductivity",
       },
       {
-        "id": "area",
-        "label": "Fläche",
-        "value": 2,
-        "unit": "m²",
-        "quantity": "area"
+        id: "area",
+        label: "Fläche",
+        value: 2,
+        unit: "m²",
+        quantity: "area",
       },
       {
-        "id": "deltaT",
-        "label": "Temperaturdifferenz als Betrag",
-        "value": 20,
-        "unit": "K",
-        "quantity": "temperature-difference"
+        id: "deltaT",
+        label: "Temperaturdifferenz als Betrag",
+        value: 20,
+        unit: "K",
+        quantity: "temperature-difference",
       },
       {
-        "id": "thickness",
-        "label": "Schichtdicke",
-        "value": 0.1,
-        "unit": "m",
-        "quantity": "length"
-      }
+        id: "thickness",
+        label: "Schichtdicke",
+        value: 0.1,
+        unit: "m",
+        quantity: "length",
+      },
     ],
-    "sought": "Wärmestrom durch eine ebene Schicht",
-    "quantity": "power",
-    "answerUnit": "W",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Wärmestrom durch eine ebene Schicht",
+    quantity: "power",
+    answerUnit: "W",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(\\dot Q=\\lambda A\\Delta T/d\\).",
-      "\\(\\dot Q=0{,}04\\cdot2\\cdot20/0{,}1=16\\,\\mathrm W\\)."
+      "\\(\\dot Q=0{,}04\\cdot2\\cdot20/0{,}1=16\\,\\mathrm W\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-resistance-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-transfer",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Wärmewiderstand einer Schicht",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmewiderstand einer Schicht.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-transfer"
+    id: "th-resistance-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-transfer",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Wärmewiderstand einer Schicht",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmewiderstand einer Schicht.",
+    article: {
+      kind: "module",
+      id: "thermo-transfer",
     },
-    "formulaId": "thermo-resistance",
-    "calculation": "thermal-resistance",
-    "givens": [
+    formulaId: "thermo-resistance",
+    calculation: "thermal-resistance",
+    givens: [
       {
-        "id": "conductivity",
-        "label": "Vorgegebene Wärmeleitfähigkeit",
-        "value": 0.04,
-        "unit": "W/(m·K)",
-        "quantity": "conductivity"
+        id: "conductivity",
+        label: "Vorgegebene Wärmeleitfähigkeit",
+        value: 0.04,
+        unit: "W/(m·K)",
+        quantity: "conductivity",
       },
       {
-        "id": "area",
-        "label": "Fläche",
-        "value": 2,
-        "unit": "m²",
-        "quantity": "area"
+        id: "area",
+        label: "Fläche",
+        value: 2,
+        unit: "m²",
+        quantity: "area",
       },
       {
-        "id": "deltaT",
-        "label": "Temperaturdifferenz als Betrag",
-        "value": 20,
-        "unit": "K",
-        "quantity": "temperature-difference"
+        id: "deltaT",
+        label: "Temperaturdifferenz als Betrag",
+        value: 20,
+        unit: "K",
+        quantity: "temperature-difference",
       },
       {
-        "id": "thickness",
-        "label": "Schichtdicke",
-        "value": 0.1,
-        "unit": "m",
-        "quantity": "length"
-      }
+        id: "thickness",
+        label: "Schichtdicke",
+        value: 0.1,
+        unit: "m",
+        quantity: "length",
+      },
     ],
-    "sought": "Wärmewiderstand einer Schicht",
-    "quantity": "thermal-resistance",
-    "answerUnit": "K/W",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Wärmewiderstand einer Schicht",
+    quantity: "thermal-resistance",
+    answerUnit: "K/W",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(R_\\mathrm{th}=d/(\\lambda A)\\).",
-      "\\(R_\\mathrm{th}=0{,}1/(0{,}04\\cdot2)=1{,}25\\,\\mathrm{K/W}\\)."
+      "\\(R_\\mathrm{th}=0{,}1/(0{,}04\\cdot2)=1{,}25\\,\\mathrm{K/W}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Leitung, konstante λ, keine Filmwiderstände.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-layer-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-transfer",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Wärmestrom durch zwei Schichten",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmestrom durch zwei Schichten.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-transfer"
+    id: "th-layer-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-transfer",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Wärmestrom durch zwei Schichten",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Wärmestrom durch zwei Schichten.",
+    article: {
+      kind: "module",
+      id: "thermo-transfer",
     },
-    "formulaId": "thermo-layers",
-    "calculation": "layered-conduction",
-    "givens": [
+    formulaId: "thermo-layers",
+    calculation: "layered-conduction",
+    givens: [
       {
-        "id": "area",
-        "label": "Gleiche Fläche",
-        "value": 2,
-        "unit": "m²",
-        "quantity": "area"
+        id: "area",
+        label: "Gleiche Fläche",
+        value: 2,
+        unit: "m²",
+        quantity: "area",
       },
       {
-        "id": "deltaT",
-        "label": "Temperaturdifferenz",
-        "value": 20,
-        "unit": "K",
-        "quantity": "temperature-difference"
+        id: "deltaT",
+        label: "Temperaturdifferenz",
+        value: 20,
+        unit: "K",
+        quantity: "temperature-difference",
       },
       {
-        "id": "d1",
-        "label": "Dicke Schicht 1",
-        "value": 0.1,
-        "unit": "m",
-        "quantity": "length"
+        id: "d1",
+        label: "Dicke Schicht 1",
+        value: 0.1,
+        unit: "m",
+        quantity: "length",
       },
       {
-        "id": "lambda1",
-        "label": "Leitfähigkeit Schicht 1",
-        "value": 0.04,
-        "unit": "W/(m·K)",
-        "quantity": "conductivity"
+        id: "lambda1",
+        label: "Leitfähigkeit Schicht 1",
+        value: 0.04,
+        unit: "W/(m·K)",
+        quantity: "conductivity",
       },
       {
-        "id": "d2",
-        "label": "Dicke Schicht 2",
-        "value": 0.1,
-        "unit": "m",
-        "quantity": "length"
+        id: "d2",
+        label: "Dicke Schicht 2",
+        value: 0.1,
+        unit: "m",
+        quantity: "length",
       },
       {
-        "id": "lambda2",
-        "label": "Leitfähigkeit Schicht 2",
-        "value": 0.04,
-        "unit": "W/(m·K)",
-        "quantity": "conductivity"
-      }
+        id: "lambda2",
+        label: "Leitfähigkeit Schicht 2",
+        value: 0.04,
+        unit: "W/(m·K)",
+        quantity: "conductivity",
+      },
     ],
-    "sought": "Wärmestrom durch zwei Schichten",
-    "quantity": "power",
-    "answerUnit": "W",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Wärmestrom durch zwei Schichten",
+    quantity: "power",
+    answerUnit: "W",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(d_1/\\lambda_1+d_2/\\lambda_2=2{,}5+2{,}5=5\\,\\mathrm{m^2K/W}\\).",
-      "\\(\\dot Q=2\\cdot20/5=8\\,\\mathrm W\\)."
+      "\\(\\dot Q=2\\cdot20/5=8\\,\\mathrm W\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene Serienschichten mit idealem Kontakt, ohne Film- und Wärmebrückenanteil.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene Serienschichten mit idealem Kontakt, ohne Film- und Wärmebrückenanteil.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-u-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-transfer",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "U-Wert aus vorgegebenen Schicht- und Übergangswerten",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: U-Wert aus vorgegebenen Schicht- und Übergangswerten.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-transfer"
+    id: "th-u-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-transfer",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "U-Wert aus vorgegebenen Schicht- und Übergangswerten",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: U-Wert aus vorgegebenen Schicht- und Übergangswerten.",
+    article: {
+      kind: "module",
+      id: "thermo-transfer",
     },
-    "formulaId": "thermo-u",
-    "calculation": "overall-u",
-    "givens": [
+    formulaId: "thermo-u",
+    calculation: "overall-u",
+    givens: [
       {
-        "id": "inside",
-        "label": "Innerer Wärmeübergangskoeffizient",
-        "value": 10,
-        "unit": "W/(m²·K)",
-        "quantity": "transmittance"
+        id: "inside",
+        label: "Innerer Wärmeübergangskoeffizient",
+        value: 10,
+        unit: "W/(m²·K)",
+        quantity: "transmittance",
       },
       {
-        "id": "outside",
-        "label": "Äußerer Wärmeübergangskoeffizient",
-        "value": 10,
-        "unit": "W/(m²·K)",
-        "quantity": "transmittance"
+        id: "outside",
+        label: "Äußerer Wärmeübergangskoeffizient",
+        value: 10,
+        unit: "W/(m²·K)",
+        quantity: "transmittance",
       },
       {
-        "id": "d1",
-        "label": "Dicke Schicht 1",
-        "value": 0.04,
-        "unit": "m",
-        "quantity": "length"
+        id: "d1",
+        label: "Dicke Schicht 1",
+        value: 0.04,
+        unit: "m",
+        quantity: "length",
       },
       {
-        "id": "lambda1",
-        "label": "Leitfähigkeit Schicht 1",
-        "value": 0.04,
-        "unit": "W/(m·K)",
-        "quantity": "conductivity"
+        id: "lambda1",
+        label: "Leitfähigkeit Schicht 1",
+        value: 0.04,
+        unit: "W/(m·K)",
+        quantity: "conductivity",
       },
       {
-        "id": "d2",
-        "label": "Dicke Schicht 2",
-        "value": 0.04,
-        "unit": "m",
-        "quantity": "length"
+        id: "d2",
+        label: "Dicke Schicht 2",
+        value: 0.04,
+        unit: "m",
+        quantity: "length",
       },
       {
-        "id": "lambda2",
-        "label": "Leitfähigkeit Schicht 2",
-        "value": 0.04,
-        "unit": "W/(m·K)",
-        "quantity": "conductivity"
-      }
+        id: "lambda2",
+        label: "Leitfähigkeit Schicht 2",
+        value: 0.04,
+        unit: "W/(m·K)",
+        quantity: "conductivity",
+      },
     ],
-    "sought": "U-Wert aus vorgegebenen Schicht- und Übergangswerten",
-    "quantity": "transmittance",
-    "answerUnit": "W/(m²·K)",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "U-Wert aus vorgegebenen Schicht- und Übergangswerten",
+    quantity: "transmittance",
+    answerUnit: "W/(m²·K)",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(R^{\\prime\\prime}=0{,}1+1+1+0{,}1=2{,}2\\,\\mathrm{m^2K/W}\\).",
-      "\\(U=1/2{,}2\\approx0{,}454545\\,\\mathrm{W/(m^2K)}\\)."
+      "\\(U=1/2{,}2\\approx0{,}454545\\,\\mathrm{W/(m^2K)}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Schichten, sämtliche Koeffizienten fiktiv vorgegeben.",
-    "review": "calculation-tested-expert-review-pending"
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Ebene stationäre Schichten, sämtliche Koeffizienten fiktiv vorgegeben.",
+    review: "calculation-tested-expert-review-pending",
   },
   {
-    "id": "th-cycle-a",
-    "revision": 1,
-    "kind": "numeric",
-    "topicId": "thermo-cycle-balance",
-    "domainId": "thermodynamik",
-    "level": "fachkraft",
-    "title": "Ideale Wärmeabgabe am Verflüssiger",
-    "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Ideale Wärmeabgabe am Verflüssiger.",
-    "article": {
-      "kind": "module",
-      "id": "thermo-cycle-balance"
+    id: "th-cycle-a",
+    revision: 1,
+    kind: "numeric",
+    topicId: "thermo-cycle-balance",
+    domainId: "thermodynamik",
+    level: "fachkraft",
+    title: "Ideale Wärmeabgabe am Verflüssiger",
+    prompt:
+      "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Ideale Wärmeabgabe am Verflüssiger.",
+    article: {
+      kind: "module",
+      id: "thermo-cycle-balance",
     },
-    "formulaId": "thermo-cycle",
-    "calculation": "cycle-condenser",
-    "givens": [
+    formulaId: "thermo-cycle",
+    calculation: "cycle-condenser",
+    givens: [
       {
-        "id": "coolingPower",
-        "label": "Wärmeaufnahme",
-        "value": 15,
-        "unit": "kW",
-        "quantity": "power"
+        id: "coolingPower",
+        label: "Wärmeaufnahme",
+        value: 15,
+        unit: "kW",
+        quantity: "power",
       },
       {
-        "id": "fluidPower",
-        "label": "Arbeitszufuhr an das Fluid",
-        "value": 5,
-        "unit": "kW",
-        "quantity": "power"
-      }
+        id: "fluidPower",
+        label: "Arbeitszufuhr an das Fluid",
+        value: 5,
+        unit: "kW",
+        quantity: "power",
+      },
     ],
-    "sought": "Ideale Wärmeabgabe am Verflüssiger",
-    "quantity": "power",
-    "answerUnit": "kW",
-    "absoluteToleranceSI": 1e-10,
-    "relativeTolerance": 0.001,
-    "sourceIds": [
-      "openstax-thermal-v06"
-    ],
-    "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
-    "steps": [
+    sought: "Ideale Wärmeabgabe am Verflüssiger",
+    quantity: "power",
+    answerUnit: "kW",
+    absoluteToleranceSI: 1e-10,
+    relativeTolerance: 0.001,
+    sourceIds: ["openstax-thermal-v06"],
+    hint: "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+    steps: [
       "\\(\\dot Q_k=\\dot Q_0+P_\\mathrm{Fluid}\\).",
-      "\\(\\dot Q_k=15+5=20\\,\\mathrm{kW}\\)."
+      "\\(\\dot Q_k=15+5=20\\,\\mathrm{kW}\\).",
     ],
-    "mistakes": [
+    mistakes: [
       "Energie und Leistung, absolute Temperatur und Temperaturdifferenz oder Masse und Volumen verwechseln.",
-      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen."
+      "Dichtebezug, Phasenwechsel, Systemgrenze oder die Grenzen des stationären ebenen Modells übersehen.",
     ],
-    "assumptions": "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Fluid-Systemgrenze ohne zusätzliche Verluste; keine Gleichsetzung mit elektrischer Eingangsleistung.",
-    "review": "calculation-tested-expert-review-pending"
-  }
+    assumptions:
+      "Fiktiver thermodynamischer Lernfall, keine freigegebene Anlagenauslegung. Fluid-Systemgrenze ohne zusätzliche Verluste; keine Gleichsetzung mit elektrischer Eingangsleistung.",
+    review: "calculation-tested-expert-review-pending",
+  },
 ];

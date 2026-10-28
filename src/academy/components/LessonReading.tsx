@@ -1,3 +1,4 @@
+import ClaimEvidencePanel from "../../quality/ClaimEvidencePanel";
 import Diagrams from "../deep/Diagrams";
 import { ArrowRight } from "lucide-react";
 import { formulas } from "../catalog";
@@ -94,6 +95,7 @@ export default function LessonReading({
           ))}
         </ul>
       </section>
+      <ClaimEvidencePanel moduleId={module.id} />
       <Diagrams moduleId={module.id} />
       <section className="takeaway">
         <Heading>Zusammenfassung</Heading>

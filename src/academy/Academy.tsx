@@ -137,7 +137,7 @@ export default function Academy({
         <>
           <div className="page-heading">
             <div>
-              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.5</p>
+              <p className="eyebrow">LERNEN MIT SYSTEM · VERSION 0.6</p>
               <h1>Lernakademie</h1>
               <p>
                 Mathematische Grundlagen und technische Fachmodule. Drei
@@ -497,7 +497,11 @@ function ModuleView({
           ))}
         </ul>
       </section>
-      <CaseStudy key={module.id} moduleId={module.id} setProgress={setProgress} />
+      <CaseStudy
+        key={module.id}
+        moduleId={module.id}
+        setProgress={setProgress}
+      />
       <LessonReading
         module={module}
         level={level}

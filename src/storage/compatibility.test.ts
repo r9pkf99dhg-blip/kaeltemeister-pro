@@ -89,11 +89,56 @@ it("weist ungültige neue optionale Snapshot-Felder vor jeder Wiederherstellung 
   expect(() => parseBackup(JSON.stringify(b))).toThrow();
   expect(localStorage.length).toBe(0);
 });
-it('erhält einen neuen Aufgabenentwurf über Backup und weist beschädigte Entwürfe zurück',()=>{
- const p=emptyAcademy();p.exerciseDraft={taskId:'calc-heat-water',revision:1,answer:{value:'1',unit:'kW'},bridgeLessonId:'math-units',checked:true,updatedAt:new Date().toISOString()};
- const b=createBackup(p,{read:[],attempts:0,best:0,last:null},localStorage);
- expect(parseBackup(JSON.stringify(b)).data.academy.exerciseDraft).toEqual(p.exerciseDraft);
- const broken=structuredClone(b);(broken.data.academy.exerciseDraft as unknown as {checked:unknown}).checked='yes';
- expect(()=>parseBackup(JSON.stringify(broken))).toThrow();
- expect(validateProgress({...p,exerciseDraft:{...p.exerciseDraft,answer:{value:'x'.repeat(201),unit:'kW'}}})).toBe(false);
+it("erhält einen neuen Aufgabenentwurf über Backup und weist beschädigte Entwürfe zurück", () => {
+  const p = emptyAcademy();
+  p.exerciseDraft = {
+    taskId: "calc-heat-water",
+    revision: 1,
+    answer: { value: "1", unit: "kW" },
+    bridgeLessonId: "math-units",
+    checked: true,
+    updatedAt: new Date().toISOString(),
+  };
+  const b = createBackup(
+    p,
+    { read: [], attempts: 0, best: 0, last: null },
+    localStorage,
+  );
+  expect(parseBackup(JSON.stringify(b)).data.academy.exerciseDraft).toEqual(
+    p.exerciseDraft,
+  );
+  const broken = structuredClone(b);
+  (
+    broken.data.academy.exerciseDraft as unknown as { checked: unknown }
+  ).checked = "yes";
+  expect(() => parseBackup(JSON.stringify(broken))).toThrow();
+  expect(
+    validateProgress({
+      ...p,
+      exerciseDraft: {
+        ...p.exerciseDraft,
+        answer: { value: "x".repeat(201), unit: "kW" },
+      },
+    }),
+  ).toBe(false);
+});
+it("importiert die echte 0.5-Sicherung inklusive Karten, Kompetenzversuchen und laufender Prüfung ohne Änderung", () => {
+  const raw = readFileSync(
+    resolve("src/storage/fixtures/v05-backup.json"),
+    "utf8",
+  );
+  const b = parseBackup(raw);
+  expect(b.appVersion).toBe("0.5.0");
+  expect(b.data.academy.activeExam?.id).toBe("v05-historical-active");
+  expect(b.data.academy.examHistory).toHaveLength(1);
+  expect(Object.keys(b.data.academy.reviews)).toHaveLength(1);
+  restoreBackup(b, localStorage);
+  expect(JSON.parse(localStorage.getItem(ACADEMY_KEY)!)).toEqual(
+    b.data.academy,
+  );
+  expect(
+    parseBackup(
+      JSON.stringify(createBackup(b.data.academy, b.data.legacy, localStorage)),
+    ).data,
+  ).toEqual(b.data);
 });
