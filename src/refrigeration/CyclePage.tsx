@@ -1,3 +1,4 @@
+import ReferenceNotice from "./ReferenceNotice";
 import { useState, type Dispatch, type SetStateAction } from "react";
 import type { AcademyProgress } from "../academy/model";
 import { Explain } from "../language/Explanation";
@@ -115,6 +116,7 @@ export default function CyclePage({
           </button>
         </div>
       </section>
+      <ReferenceNotice />
       <p>
         Modell C mit freien Stoffzuständen wird erst nach belastbarem
         Browser-Stoffdaten-Nachweis freigegeben. Kein Anlagenplanungswerkzeug
