@@ -36,9 +36,9 @@ Jede abgeschlossene Etappe wurde normal auf GitHub gepusht. Dies sind historisch
 - main `8a1ba77` erneut abgeglichen: vor Abschlussdokumentation 0 fremde main-Commits / zehn eigene Commits; Feature-Remote und lokal identisch. `git merge-tree --write-tree origin/main HEAD` erfolgreich ohne Konflikte. Kein Merge ausgeführt.
 - PR-Versuch `gh pr create --repo r9pkf99dhg-blip/kaeltemeister-pro --base main --head feat/interactive-technical-lab-v07 --body-file docs/PULL_REQUEST_0_7.md`: GitHub API HTTP 403/Forbidden (auch CONNECT zu api.github.com bestätigt). Andere verfügbare Tools bieten keine autorisierte GitHub-PR-Erstellung. Öffentliche PR-Suche zeigte null Treffer für diesen Quellbranch. Kein PR-Link erfunden, keine unsichere Umgehung.
 
-## Verbleibende Veröffentlichungsschritte
+## Abschlussstatus und verbleibende Veröffentlichungsschritte
 
-1. Der Dokumentationscommit `070b93e` ist normal hochgeladen und im GitHub-Lauf 40726984245 vollständig grün (296 Browserfälle). Anschließend wurde ein zusätzlicher Extremwertfehler in SVG-Zwischenprodukten durch zuerst normierte Koordinaten behoben: neuer Test scheiterte vorher mit `LInfinity`, danach 410 Tests/Typprüfung/Build und zwölf gezielte Browserfälle erfolgreich. Diese Korrektur ebenfalls normal hochladen; den neuesten vollständigen Branchcheck vor Merge kontrollieren.
+1. Der Dokumentationscommit `070b93e` ist normal hochgeladen und im GitHub-Lauf 40726984245 vollständig grün (296 Browserfälle). Anschließend wurde ein zusätzlicher Extremwertfehler in SVG-Zwischenprodukten durch zuerst normierte Koordinaten behoben: neuer Test scheiterte vorher mit `LInfinity`, danach 410 Tests/Typprüfung/Build und zwölf gezielte Browserfälle erfolgreich. **Erledigt:** Korrektur als `772cb82` normal hochgeladen; [GitHub-Lauf 40728217824](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40728217824) bestätigt Installation, Typprüfung, **410 Tests**, Build und **296/296 Browserfälle (185 Chromium + 111 WebKit)**. Arbeitsstand und Remote identisch, keine offenen lokalen Änderungen und keine Konflikte mit main. Dieser abschließende Dokumentationsvermerk ändert keinen Funktionscode; auch sein aktueller Branchcheck muss vor einem späteren Merge grün sein.
 2. Vergleich öffnen: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/interactive-technical-lab-v07?expand=1
 3. Auf dem iPad **Create pull request**, Titel aus RELEASE_V07 und Beschreibung aus PULL_REQUEST_0_7.md übernehmen, erneut **Create pull request**. `main` als Ziel, bestehenden Branch als Quelle belassen.
 4. Nur nach deiner ausdrücklichen Freigabe/grünen Checks **Merge pull request → Confirm merge**. Dies wird hier nicht automatisch ausgeführt. Branch nicht löschen.
@@ -67,3 +67,7 @@ npm run docs:audit
 ```
 
 WebKit lokal: `npm run test:e2e:webkit`, sofern Browserpaket verfügbar; gegenwärtig Download blockiert, GitHub CI separat bestätigen. Port 4175 muss frei sein. Logs sind Hilfsmittel, die versionierte Dokumentation und Commits sind der dauerhafte Wiederaufnahmepunkt. Veröffentlichungsanleitung folgt in RELEASE_V07.
+
+## Entwicklungsabschluss
+
+Phasen 1–9 des realistisch abgeschlossenen 0.7-Umfangs sind implementiert und dokumentiert. Keine weitere Programmierphase fortsetzen oder einen neuen Branch anlegen. Nächste Schritte betreffen ausschließlich manuelle PR-Erstellung wegen API-403, ausdrückliche Merge-Freigabe, automatisches Pages-Deployment und echte iPad-/Fachprüfung. Bei späterer Fortsetzung zuerst Remote-/Git-Status und aktuellen CI-Lauf prüfen; nicht bereits erledigte Funktionen neu implementieren.
