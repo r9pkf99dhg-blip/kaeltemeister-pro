@@ -1,3 +1,5 @@
+import LabVisualization from "./Visualization";
+import { calculators } from "./catalog";
 import { it, expect, beforeEach, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
@@ -72,4 +74,22 @@ it("verbindet Fachlektion und passenden Laborrechner in beiden Richtungen", asyn
     }),
   );
   expect(screen.getByLabelText("Labor-Rechner")).toHaveValue("heat-flow");
+});
+it("zeichnet auch bei endlichen extremen Modellwerten ausschließlich endliche Diagrammkoordinaten", () => {
+  for (const [id, values] of [
+    ["heat-power", { massFlow: 1e307, cp: 1e-300, deltaT: 1 }],
+    ["ac-real", { voltage: 1e154, current: 1e154, factor: 0.8 }],
+  ] as const) {
+    const view = render(
+      <LabVisualization
+        tool={calculators.find((c) => c.id === id)!}
+        values={values}
+        changeMass={() => {}}
+      />,
+    );
+    for (const node of view.container.querySelectorAll("path,circle"))
+      for (const attribute of ["d", "cx", "cy"])
+        expect(node.getAttribute(attribute) ?? "").not.toMatch(/NaN|Infinity/);
+    view.unmount();
+  }
 });

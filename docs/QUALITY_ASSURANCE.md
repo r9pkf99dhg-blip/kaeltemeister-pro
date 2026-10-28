@@ -21,7 +21,7 @@ Für keinen Inhalt liegt eine unabhängige menschliche Gesamtfreigabe vor. Kein 
 
 ## Tatsächliche lokale Ergebnisse
 
-Frische Installation `npm ci --cache /tmp/kaeltemeister-npm-cache`, TypeScript, **409 Tests in 31 Dateien**, Produktionsbuild und **185 Chromium-Prüfungen (37 Abläufe × fünf Ansichtsgrößen)** erfolgreich. Größen: 320×740, 390×844, 820×1180, 1180×820, 1440×1050. Workflow-Lint mit actionlint und `git diff --check` erfolgreich. Der Inhaltschunk für Sprachfassungen reduziert den Hauptchunk auf rund 451 kB; kein höheres Warnlimit und keine entfernte Prüfung.
+Frische Installation `npm ci --cache /tmp/kaeltemeister-npm-cache`, TypeScript, **410 Tests in 31 Dateien**, Produktionsbuild und **185 Chromium-Prüfungen (37 Abläufe × fünf Ansichtsgrößen)** erfolgreich. Größen: 320×740, 390×844, 820×1180, 1180×820, 1440×1050. Workflow-Lint mit actionlint und `git diff --check` erfolgreich. Der Inhaltschunk für Sprachfassungen reduziert den Hauptchunk auf rund 451 kB; kein höheres Warnlimit und keine entfernte Prüfung.
 
 Während der Entwicklung fanden die vollständigen Browserläufe echte Regressionen: WebKit überstand bei 200 % Schrift um 1 px; mobile Navigation hatte fünf Spalten für sieben Punkte; langer neuer Statistiktext verbreiterte die Seite und beeinträchtigte Touch-Treffer. Legenden/Flex-Minimalbreiten, sieben mobile Spalten und umbruchfähige Statistik-Karten wurden korrigiert. Kein globales Verstecken des Seitenüberlaufs und keine abgeschalteten Tests. Die frühere fehlgeschlagene Prüfung bleibt in der Git-Historie/Actions sichtbar.
 
@@ -34,3 +34,7 @@ Echte Apple-Hardware, reales Safari/VoiceOver, Bildschirmtastatur, iPad-Datei-/H
 CI prüft Branch-Pushes/PRs. Pages erhält Installation, Typprüfung, Tests, Build und Chromium/WebKit und veröffentlicht ausschließlich main mit offiziellen Pages-Actions. Kein automatischer Merge, keine Branchlöschung, keine Umgehung roter Qualitätsprüfungen.
 
 Die Laboransicht wurde zusätzlich in emulierten 1180×820, 390×844 und 320×740 visuell geprüft: passende Spalten-/Stapelung, Formelsatz, Ergebnis/Kurve und keine Seitenverbreiterung. Keine physische Apple-Hardware.
+
+## Abschließender Extremwertfall
+
+Nach dem ebenfalls vollständig grünen Dokumentationsstand `070b93e` (GitHub-Lauf 40726984245, 296 Browserfälle) wurde ein zusätzlicher Randfall nachgewiesen: Eine endliche große Modellzahl konnte beim Zwischenprodukt der SVG-Skalierung unendlich werden. Zuerst normierte Verhältnisse und danach Pixelmaßstab vermeiden diesen Überlauf. Der neue Test scheiterte vor der Korrektur mit `LInfinity` und besteht danach für Wärme und Sinusleistung. Nun 410 Unit-/Integrationstests, TypeScript/Build und zwölf gezielte Smartphone-/Tablet-Browserprüfungen erfolgreich; die volle CI prüft den neuen Branchstand erneut. Die bisherigen bestätigten CI-Läufe enthielten 409 Unit-/Integrationstests.

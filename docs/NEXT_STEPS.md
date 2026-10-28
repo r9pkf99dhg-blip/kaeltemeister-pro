@@ -24,7 +24,7 @@ Jede abgeschlossene Etappe wurde normal auf GitHub gepusht. Dies sind historisch
 - Echte zusätzliche Referenzsicherung aus unverändertem 0.6-Exporter `8a1ba77` erzeugt: `src/storage/fixtures/v06-backup.json`. Unveränderter Import/Reexport mit Karten, Prüfungshistorie, laufender Prüfung und offenem Lernbrückenentwurf geprüft. 0.4-/0.5-Referenzen bleiben unverändert.
 - Neue Backupprüfung für Labor, Sprachpräferenz, Rechenblatt, Hilfe, Antworten und Trainerposition; beschädigte optionale Felder werden vor Import abgewiesen.
 - Trainer-Wiederaufnahme korrigiert: dessen Container-ID ist bewusst kein normaler Zahlenaufgaben-Identifier. Revisionen vor Wiederaufnahme kontrollieren.
-- 409 Unit-/Integrationstests in 31 Dateien, frische Installation, TypeScript und Build bestanden (lokale Logs `/tmp/km-stable-*`).
+- 410 Unit-/Integrationstests in 31 Dateien, frische Installation, TypeScript und Build bestanden (lokale Logs `/tmp/km-stable-*`).
 - GitHub fand zwei echte Darstellungsregressionen: 1 px WebKit-Überstand bei 200 % Schrift sowie sieben Navigationspunkte in bisher fünf mobilen Spalten. Umbruch-/Minimalbreiten begrenzt und Navigation auf sieben passende Spalten korrigiert; kein Ausblenden des gesamten Überlaufs, keine Tests deaktiviert. Vollständiger korrigierter Chromium-Lauf: 185/185 erfolgreich. Statistik-Karten zusätzlich gegen intrinsischen Überstand abgesichert. WebKit-Status für diesen neuen Stand noch bestätigen.
 - Neuer Browserablauf: falsche Einheit → einfache Lernbrücke → Rückkehr mit Eingabe, Einheit, Rechenblatt und unveränderter globaler Präferenz; große Schrift auch in neuen Ansichten.
 
@@ -38,7 +38,7 @@ Jede abgeschlossene Etappe wurde normal auf GitHub gepusht. Dies sind historisch
 
 ## Verbleibende Veröffentlichungsschritte
 
-1. Aktuellen Dokumentationscommit normal pushen und seinen vollständigen CI-Status prüfen. Funktionscode ist bereits vollständig grün; neuester Check muss vor Merge ebenfalls grün sein.
+1. Der Dokumentationscommit `070b93e` ist normal hochgeladen und im GitHub-Lauf 40726984245 vollständig grün (296 Browserfälle). Anschließend wurde ein zusätzlicher Extremwertfehler in SVG-Zwischenprodukten durch zuerst normierte Koordinaten behoben: neuer Test scheiterte vorher mit `LInfinity`, danach 410 Tests/Typprüfung/Build und zwölf gezielte Browserfälle erfolgreich. Diese Korrektur ebenfalls normal hochladen; den neuesten vollständigen Branchcheck vor Merge kontrollieren.
 2. Vergleich öffnen: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/interactive-technical-lab-v07?expand=1
 3. Auf dem iPad **Create pull request**, Titel aus RELEASE_V07 und Beschreibung aus PULL_REQUEST_0_7.md übernehmen, erneut **Create pull request**. `main` als Ziel, bestehenden Branch als Quelle belassen.
 4. Nur nach deiner ausdrücklichen Freigabe/grünen Checks **Merge pull request → Confirm merge**. Dies wird hier nicht automatisch ausgeführt. Branch nicht löschen.

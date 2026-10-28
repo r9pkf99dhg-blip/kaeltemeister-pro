@@ -11,9 +11,9 @@ Version 0.7 verbindet eigene technische Rechnungen mit derselben Lernakademie, d
 
 ## Prüfung
 
-- Frische Installation, TypeScript, **409 Unit-/Integrationstests in 31 Dateien**, Produktionsbuild erfolgreich.
+- Frische Installation, TypeScript, **410 Unit-/Integrationstests in 31 Dateien**, Produktionsbuild erfolgreich.
 - Vollständige lokale Chromium-Regression: **185/185** (37 Abläufe × fünf Bildschirmgrößen).
-- GitHub CI auf `f744aa2`: **Success**, **296/296 Browserprüfungen (185 Chromium + 111 WebKit)**; Installation, TypeScript, 409 Tests und Build erfolgreich. [GitHub-Lauf 40725723803](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40725723803). Abschließende Dokumentation/Backup-Hinweis durchlaufen dieselben Checks; Merge erst bei tatsächlich grünen aktuellen Checks.
+- GitHub CI auf `f744aa2`: **Success**, **296/296 Browserprüfungen (185 Chromium + 111 WebKit)**; Installation, TypeScript, 409 Tests und Build erfolgreich. [GitHub-Lauf 40725723803](https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/actions/runs/40725723803). Auch Dokumentationsstand `070b93e` ist vollständig grün (Lauf 40726984245). Anschließend wurde die Diagrammnormierung für extreme endliche Werte abgesichert: 410 Tests sowie zwölf gezielte Browserfälle lokal grün; der neueste Branchstand durchläuft dieselben vollständigen Checks. Merge erst bei tatsächlich grünen aktuellen Checks.
 - actionlint, `git diff --check`, Generierung des Fachprüfregisters und Fachgebietsaudit erfolgreich.
 - Vier zentrale Referenzen: 10,45 kW sensible Wärme; ca. 5,54256 kW symmetrischer Drehstrom; ca. 3,80133 L Innenvolumen; 16 W ebene Wärmeleitung. Voraussetzungen und weitere Sollwerte in CALCULATOR_VALIDATION.
 

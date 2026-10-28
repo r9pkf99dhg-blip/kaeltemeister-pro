@@ -35,3 +35,5 @@ Fehlende/falsche Zahlen oder Einheiten, Nullnenner, negative unzulässige Werte,
 Zusätzlich erhalten: numerisches Zeitmittel für Sinus-RMS/Wirkleistung, 120°-/Leiter-Strangkontrollen, Geometrie-/Schichtverhältnisse, Definitionsbereiche/Originalproben, Toleranzgrenzen und Einheitenumrechnung. Die Wärmekurve verdoppelt bei festem cp/ΔT und doppeltem ṁ die Modellleistung; Diagramme berechnen denselben Kern.
 
 Erst die Anzeige wird gerundet (in der Laboransicht bis acht signifikante Stellen bzw. wissenschaftliche Schreibweise). Antworttoleranz, Maschinenpräzision, Messunsicherheit und signifikante Messstellen sind getrennte Begriffe. Der Rechner besitzt keine Unsicherheitsfortpflanzung. Auch erfolgreiche Zahlenreferenzen sind keine unabhängige Fachfreigabe für reale Anlagen oder elektrische Arbeiten.
+
+Diagrammskalierung: Extreme, aber endliche Wärme-/AC-Modellwerte werden zuerst auf die Achsendomäne normiert und erst danach mit dem Pixelmaßstab multipliziert. So bleibt auch der Darstellungszwischenschritt endlich. Ein nachweislich vor der Korrektur fehlgeschlagener Regressionstest prüft Wärme-Kurve und Leistungsdreieck; kein allgemeines Verstecken von SVG-Fehlern.

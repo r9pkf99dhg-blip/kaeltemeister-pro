@@ -34,7 +34,7 @@ export default function LabVisualization({
     const path = samples
       .map(
         ([x, y], i) =>
-          `${i ? "L" : "M"}${45 + (300 * x) / xmax},${205 - (160 * y) / ymax}`,
+          `${i ? "L" : "M"}${45 + 300 * (x / xmax)},${205 - 160 * (y / ymax)}`,
       )
       .join(" ");
     return (
@@ -67,8 +67,8 @@ export default function LabVisualization({
           <path d="M45 30 V205 H355" fill="none" stroke="currentColor" />
           <path d={path} fill="none" stroke="#0369a1" strokeWidth="3" />
           <circle
-            cx={45 + (300 * values.massFlow) / xmax}
-            cy={205 - (160 * calculateTechnical("heat", values)) / ymax}
+            cx={45 + 300 * (values.massFlow / xmax)}
+            cy={205 - 160 * (calculateTechnical("heat", values) / ymax)}
             r="5"
             fill="#b45309"
           />
@@ -151,8 +151,8 @@ export default function LabVisualization({
           kein Leistungsfaktor bestimmbar.
         </p>
       );
-    const x = 55 + (130 * P) / S,
-      y = 150 - (130 * Q) / S;
+    const x = 55 + 130 * (P / S),
+      y = 150 - 130 * (Q / S);
     return (
       <section className="lab-visualization">
         <h3>Leistungsdreieck im Sinusmodell</h3>
