@@ -14,7 +14,7 @@ Branch: `feat/deep-learning-academy-v06`. Ausgangspunkt: main `09a953b` (Merge #
 4. Wechselstrom und Drehstrom: vier Module, zwölf Zahlenaufgaben, verstellbare und textlich beschriebene Diagramme. 292 Tests, Typprüfung, Build und zwei Tablet-Browserfälle erfolgreich. Mathematik-Etappe: `1f24fb8`.
 5. Thermodynamik: fünf zusammenhängende Module und zehn Zahlenaufgaben. 303 Tests, Typprüfung, Build und drei Tablet-Browserfälle erfolgreich. Elektro-Etappe: `665aaea`.
 6. Lernbrücke: neun konkret getestete Zahlenmuster, alternative Grundlagen, Überspringen, lokal gespeicherter Aufgabenentwurf inklusive offener Lernbrücke. 315 Tests, Typprüfung, Build und vier Tablet-Browserfälle erfolgreich. Thermodynamik: `52c286a`.
-7. Vier mehrstufige Lernfälle mit fachlicher Bewertung.
+7. Vier mehrstufige Lernfälle: Wärmeträger, Einphasenverbraucher, Rohrgeometrie und Schichtenvergleich; 317 Tests, Typprüfung, Build und fünf Tablet-Browserfälle erfolgreich. Lernbrücke: `552d050`.
 8. Regression, Altbackups, Browser, Quellen-/Formelprüfung.
 9. Dokumentation, Push, PR-Versuch. API bislang HTTP 403; ggf. Vergleichslink und vorbereiteten PR-Text bereitstellen.
 

@@ -1,3 +1,4 @@
+import CaseStudy from "./deep/CaseStudy";
 import RearrangementTrainer from "./foundations/RearrangementTrainer";
 import { MathText } from "../math/Math";
 import LessonReading from "./components/LessonReading";
@@ -496,6 +497,7 @@ function ModuleView({
           ))}
         </ul>
       </section>
+      <CaseStudy key={module.id} moduleId={module.id} setProgress={setProgress} />
       <LessonReading
         module={module}
         level={level}

@@ -54,3 +54,21 @@ test('Lernbrücke übersteht Neuladen und erhält Antwort und Einheit',async({pa
  await page.getByRole('button',{name:'Ergebnis prüfen',exact:true}).click();
  await expect(page.getByText('Richtig innerhalb der Rechentoleranz.',{exact:true})).toBeVisible();
 });
+test('Eine Fallstudie verlangt neben Rechnungen eine fachliche Entscheidung',async({page})=>{
+ await page.goto('./');await page.getByRole('button',{name:'Akademie',exact:true}).click();
+ await page.getByLabel('Fachgebiet',{exact:true}).selectOption('thermodynamik');
+ await page.getByRole('button',{name:/Lernfall: Zwei thermische Modelle vergleichen/}).click();
+ const flow=page.getByRole('region',{name:'Mehrstufige Fallstudie'});
+ await flow.getByLabel('Dein Ergebnis: Wärmestrom durch eine ebene Schicht',{exact:true}).fill('16');
+ await flow.getByRole('button',{name:'Fallschritt prüfen',exact:true}).click();
+ await flow.getByRole('button',{name:'Nächster Fallschritt',exact:true}).click();
+ await flow.getByLabel('Dein Ergebnis: Wärmestrom durch zwei Schichten',{exact:true}).fill('8');
+ await flow.getByRole('button',{name:'Fallschritt prüfen',exact:true}).click();
+ await flow.getByRole('button',{name:'Nächster Fallschritt',exact:true}).click();
+ await flow.getByRole('radio',{name:'Nein, reale Wärmewege, Feuchte und Betriebsbedingungen sind zusätzlich zu prüfen.',exact:true}).check();
+ await flow.getByRole('button',{name:'Fallschritt prüfen',exact:true}).click();
+ await flow.getByRole('button',{name:'Fall auswerten',exact:true}).click();
+ await expect(flow).toContainText('3 von 3 zuletzt geprüften Antworten richtig');
+ await expect(page.locator('.math-error')).toHaveCount(0);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

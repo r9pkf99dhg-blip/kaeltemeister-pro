@@ -1,3 +1,4 @@
+import { case_lessons } from "./deep/case-lessons";
 import { thermal_lessons } from "./deep/thermal-lessons";
 import { thermal_formulas } from "./deep/thermal-formulas";
 import { electrical_lessons } from "./deep/electrical-lessons";
@@ -26,6 +27,7 @@ const foundationLessons = [
   ...math_lessons,
   ...electrical_lessons,
   ...thermal_lessons,
+  ...case_lessons,
 ];
 import { formulaNotation } from "../math/notation";
 export { domains } from "./data/domains";

@@ -498,3 +498,5 @@ thermoDomain.chapters[0].subchapters[1].plannedTopics=[];
 thermoDomain.chapters[1].subchapters[1].moduleIds=["thermo-cycle-balance"];
 thermoDomain.chapters[1].subchapters[1].plannedTopics=["Reale Stoffwerte und validierte log-p-h-Darstellung"];
 domains.find(d=>d.id==='waerme')!.chapters[0].subchapters[0].plannedTopics=['Lehrmodell im Fachgebiet Thermodynamik: Wärmeleitung, Wärmewiderstand und U-Wert; Fachauslegung später.'];
+
+for(const [domainId,moduleIds] of [['mathematik',['case-pipe']],['elektro',['case-ac']],['thermodynamik',['case-heat','case-conduction']]] as const){domains.find(d=>d.id===domainId)!.chapters.push({id:`${domainId}-faelle-v06`,title:'Fachübergreifende Lernfälle',subchapters:[{id:`${domainId}-fallstudien-v06`,title:'Selbst erstellte Transferübungen mit Bewertung',moduleIds:[...moduleIds],plannedTopics:[]}]});}
