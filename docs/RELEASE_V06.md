@@ -4,7 +4,7 @@ Ausgangspunkt: main `09a953b` (Merge #7, vollständige 0.5 `febd428`). Entwicklu
 
 ## Tatsächlich implementiert
 
-- 45 nutzbare Module: fünf Kälte, neun Elektro, sechzehn Mathematik einschließlich Rohrfall, vier Physik, drei Chemie und acht Thermodynamik einschließlich zweier Fälle. 140 Modulfragen, 90 Karten, 77 Formeln, 97 Zahlenaufgaben und 38 gemeinsame Fachbegriffe. Fachgebiete ohne ausgearbeitete Module bleiben geplant.
+- 45 nutzbare Module: fünf Kälte, zehn Elektro, sechzehn Mathematik einschließlich Rohrfall, vier Physik, drei Chemie und sieben Thermodynamik einschließlich zweier Fälle. 140 Modulfragen, 90 Karten, 77 Formeln, 97 Zahlenaufgaben und 38 gemeinsame Fachbegriffe. Fachgebiete ohne ausgearbeitete Module bleiben geplant.
 - Sieben neue Mathematikmodule: Maßstab/Flächen/Ringflächen, Rohrvolumen/Oberflächen, Pythagoras, Trigonometrie/Grad/Bogenmaß/Gefälle, Bruch-/Wurzelgleichungen und Definitionsbereiche, lineare Systeme/quadratische Gleichungen, Funktionen/Interpolation/Logarithmen. Acht bisherige Grundlagen additiv um Gegenbeispiele/Grenzfälle vertieft.
 - 15 kuratierte Umstellungsfälle mit 20 bewertbaren Schritten: vier neue Fälle behandeln Wurzeln/Längenbereich, Klammern, variable Nenner und verlorene Lösungen. Hilfestufe, konkretes Feedback, alternative äquivalente Endform und Originalprobe. Kein freies CAS und keine behauptete allgemeine Symbolprüfung.
 - Vier neue Elektromodule: Sinus-/Effektivwerte, Phasenverschiebung und Diagramminterpretation, ideale L/C und Serien-RLC, P/Q/S, Wirkfaktor und Grenzen bei Verzerrung, symmetrische Stern-/Dreiecksysteme. Verstellbare normierte Kurven, textliche Diagrammbeschreibung und Leistungsdreieck. Ausschließlich sichere Theorie.

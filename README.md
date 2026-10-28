@@ -4,7 +4,7 @@ Kostenloser Lernbegleiter für die Kältemeisterschule auf iPad, Smartphone und 
 
 ## Was funktioniert
 
-- **Lernakademie:** 45 Module: fünf Kälte-, neun Elektro-, sechzehn Mathematik-, vier Physik-, drei Chemie- und acht Thermodynamik-Module mit Grundlagen-, Fachkraft- und Meisterniveau; 14 strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
+- **Lernakademie:** 45 Module: fünf Kälte-, zehn Elektro-, sechzehn Mathematik-, vier Physik-, drei Chemie- und sieben Thermodynamik-Module mit Grundlagen-, Fachkraft- und Meisterniveau; 14 strukturierte Fachgebiete. Andere Inhalte bleiben deutlich als in Vorbereitung gekennzeichnet.
 - **Adaptives Lernen:** richtige/falsche Versuche, Themenlücken, transparente Empfehlungen und Wiederholungsabstände nach Leistung und Zeit. Keine KI-Diagnose oder offizieller Kompetenznachweis.
 - **Rechenaufgaben:** 97 Varianten, darunter Ohmsches Gesetz, elektrische Arbeit, Reihen-/Parallelschaltungen sowie Wärmeleistung, Massenstrom, Temperaturdifferenz, Überhitzung, Unterkühlung, elektrische Gleichstromleistung, Kälteleistungszahl und Heiz-COP. Mit Einheiten, Toleranz, Hinweis, Schritten und Fehlererklärung.
 - **Übungsprüfung:** selbst erstellte gemischte Auswahl-/Zahlenaufgaben, Fachgebiet, Niveaugrenze, Zeitlimit, Neuladen mit gleicher Endzeit, automatische Abgabe und Ergebnisanalyse. Keine offiziellen Meisterprüfungsaufgaben.
