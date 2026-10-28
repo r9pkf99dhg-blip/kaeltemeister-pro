@@ -1,3 +1,25 @@
+# Quellenprüfung · Ergänzung Version 0.6
+
+Tatsächlich am 28.10.2026 gelesen: offizielle OpenStax-Gitarchive, eigene deutsche Texte und Zeichnungen, keine Volltextübernahme.
+
+| Quelle | Festgeschriebener Stand | Eingesehener Umfang |
+| --- | --- | --- |
+| Precalculus 2e / Algebra and Trigonometry 2e, gemeinsames College-Algebra-Archiv | 463991614337632b0e02cbb6c76223cbb0d423d3 | m51283 Winkel; m51284 rechtwinklige Trigonometrie; m51256 quadratische Gleichungen; m49301 Funktionen; m49326 lineare Modelle; m49363 Logarithmen |
+| University Physics Vol. 2 | 2300d5b8ca2571dacc6ec25ebef56ba8d49000a2 | m58485 Simple AC Circuits; m58658 RLC Series Circuits with AC; m58490 Power in an AC Circuit; m58748 Selbstinduktion; m58448 Kapazität |
+| College Physics 2e | 66fcef29596e3a32818162b837dd0c85b754cbad | m42224 Wärmekapazität; m42225 Phasenwechsel; m42226 Übertragungsarten; m42228 Wärmeleitung; m42229 Konvektion; m42230 Strahlung; m42232 erster Hauptsatz |
+
+Vollständige URLs, Datum, Lizenz und eingeschränkter Unterstützungsumfang stehen in academy/deep/sources.ts. Quellenbewertungen unterscheiden Autorität, Eignung, Aktualität, Grenzen und offenen Widerspruchsabgleich. Lehrbücher sind keine Normen. Originalarchive nennen CC BY-NC-SA 4.0; unsere Erklärungen, Zahlenfälle und Diagramme sind selbst erstellt, keine Buchkapitel oder Abbildungen kopiert.
+
+## Nicht einsehbare angefragte Primärquellen
+
+Die angegebenen URLs zur Kälteanlagenbauermeisterverordnung, zum Ausbildungsrahmenplan, zur KMK-Sammlung, BIPM-SI-Broschüre und DGUV-Sicherheit wurden tatsächlich versucht, aber mit Netzwerk-HTTP 403 blockiert. Sie tragen access unavailable, keine falschen Kapitel-/Seitenzahlen oder aktuellen Rechtsaussagen. Aktueller Prüfungsberufsbild-/Rechtsabgleich und sicherheitstechnische Fachabnahme bleiben offen. Ausbildung, Meister-Transfer und offizielle Prüfung sind nicht gleichgesetzt.
+
+## Prüfumfang
+
+70 neue Aussagenbelege: für jede neue Formel und jeden neuen Zahlenfall sowie den Temperaturbezug. Direkte Kapitelabgleiche, eigene Herleitungen und rechnerische Kontrollen sind getrennt. Stern/Dreieck und Dreiphasenleistung werden aus Zeigergeometrie und einphasiger Sinusleistung hergeleitet; keine erfundene direkte Dreiphasenfundstelle im OpenStax-Kapitel. Ähnlich sind U-Wert/Serienschichten und offene Enthalpiebilanzen begrenzte eigene Ableitungen mit offener gezielter externer Fachprüfung. Menschliche unabhängige Gesamtfreigabe offen.
+
+## Bereits dokumentierte Quellen früherer Versionen
+
 # Quellen und fachliche Qualität · Version 0.5
 
 ## Was tatsächlich geprüft wurde

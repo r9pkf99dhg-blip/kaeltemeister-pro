@@ -1,37 +1,27 @@
-# Fach- und Datenmodell · Version 0.5
+# Fach- und Datenmodell · Version 0.6
 
-## Gemeinsamer Katalog
+## Ein gemeinsamer Katalog
 
-14 Fachgebiete, 25 Module, drei Niveaus, 80 Modulfragen, 50 Karten, 63 Zahlenaufgaben und elf Umstellungsziele. Neue Fachgebiete Physik/Chemie ergänzen die bestehenden zwölf; die acht Mathematiklektionen gehören zum vorhandenen Mathematik-Fachgebiet. Alte IDs werden weder gelöscht noch umgedeutet. Ein Katalogadapter erzeugt aus strukturierten FoundationLesson-Inhalten die vorhandenen Module/Fragen/Karten.
+14 Fachgebiete, 45 Module, 140 Modulfragen, 90 Karten, 77 Formeln und 97 Zahlenaufgaben. Module besitzen Grundlagen-, Fachkraft- und Transfertexte; die Bezeichnung Meisterniveau behauptet keine offizielle Prüfungsabdeckung. Alte IDs bleiben erhalten. `FoundationLesson` beschreibt Ziel, Nutzen, Inhalt/Begründung/Transfer, Beispiel, Herleitung, Fehler, Zusammenfassung, Voraussetzungen, Formeln, Quellen und Selbsttest. Vorhandene Adapter erzeugen daraus die regulären Module/Fragen/Karten.
 
-FoundationLesson beschreibt Ziel, Nutzen/Praxisbezug, einfachen Inhalt, Begründung, Transfer, Beispiel, Herleitung, Fehler, Zusammenfassung, Voraussetzungen, Formeln, Quellen und Selbsttest. Die drei bestehenden Niveaus werden als Einstieg, Begründung und technischer Transfer genutzt; kein vollständiger Oberstufen-/Meisterprüfungsumfang wird dadurch behauptet.
+Voraussetzungen sind gerichtete Empfehlungen, keine Zugangssperren. Der Modulgraph wird auf gültige IDs und Zyklen geprüft. Ein Kompetenzziel verweist auf eine vorhandene Lektion; Aufgaben benötigen mehrere Teilkompetenzen. Der Kompetenzgraph leitet Formeln, Aufgaben und Quellen ab, statt einen widersprüchlichen zweiten Fortschrittscache zu speichern.
 
-Neue Fachbegriffe liegen im gemeinsamen Register und verweisen auf Module. Voraussetzungen sind gerichtete Empfehlungen, keine Zugangssperren. Das automatisch erzeugte DOMAIN_AUDIT trennt verfügbare Module von geplanten Themen.
+## Formeln, Aufgaben und Größen
 
-## Formel- und Aufgabenvertrag
+`Formula`: stabile ID, Titel, Textausdruck, explizites TeX, Variablenbedeutung/Einheit, Gültigkeit und Quellen. Darstellung führt keine Programme aus. `NumericTask`: Modell-ID, gegebene Größen/Einheiten, gesuchte Größe, Toleranz, Hinweis, Musterlösung, Fehler, Modellannahmen, Artikel/Formelbezug und Kompetenzen. `ChoiceTask`: Optionen und erklärter Lösungsschlüssel. Prüfungen speichern vollständige Snapshots mit damaligem SI-Sollwert; neue Kataloginhalte schreiben alte Prüfungen nicht um.
 
-Formula ergänzt optional `tex` und Variablendefinitionen. Der Textausdruck und stabile IDs bleiben erhalten. NumericTask ergänzt optionale `texSteps`, ItemBase optionale `requiredCompetencyIds`. Alte Prüfungssnapshots benötigen diese Felder nicht. Optionale Felder werden beim Import geprüft; beliebige Objekte statt Textlisten werden abgewiesen.
+Der gemeinsame Größenvertrag ergänzt Winkel, Frequenz, Induktivität, Kapazität, Schein-/Blindleistung, Volumenstrom, spezifisches Volumen/spezifische Energie, Wärmeleitfähigkeit, Wärmewiderstand und Wärmedurchgang. W, VA und var sind verschiedene Ergebnisgrößen. Negative reelle Antworten sind auf quantity `number` beschränkt; gerichtete thermische/elektrische Modelle sind hier nicht allgemein gelöst. Aufgabenbereiche und numerische Grenzen werden explizit validiert.
 
-Neue numerische Typen beschreiben begrenzte Schuloperationen (Rechenreihenfolge, vier Bruchoperationen, Prozent/Dreisatz, Term, lineare Gleichung, Potenz/Hauptwurzel, Einheitenidentität) sowie Geschwindigkeit, Kraft, mechanische Arbeit, Leistung aus Energie, Druck, Dichte, sensible Wärmemenge und Stoffmenge. Rechenfunktionen werden geteilt; Formeltext wird nie ausgeführt.
+## Fachliche Nachweise
 
-Neue Mengenarten: reine mathematische Zahl, Prozent, Masse, Länge, Fläche, Volumen, Druck, Dichte, Kraft, Beschleunigung, Geschwindigkeit, Stoffmenge, molare Masse. SI-Umrechnungen sind explizit; Temperaturdifferenzen bleiben vom absoluten Offset getrennt. Nur mathematische Zahlen dürfen negativ sein. Einfache Bruchantworten werden nur im ausdrücklich numerischen Mathematikfeld erkannt, nicht in normalen Texten oder als beliebige Formelprogramme.
+`ClaimEvidence`: Aussage, Fachgebiet/Module/Formeln, Quellentyp/-ID/Fundstelle, Prüfdatum, Modellart, Annahmen, Grenzen und getrennte Nachweisarten. `humanReview` ist überall null; keine unabhängige Freigabe wird vergeben. `SourceEvaluation`: Autorität, Eignung, Aktualität, Grenzen und offener Widerspruchsabgleich. Ein gelesener Lehrbuchlink ist keine Norm und kein Volltextnachweis der ganzen Lektion.
 
-## Kompetenzbeziehungen
+## Lernfortschritt und Sicherung
 
-Competency hat stabile ID, Titel und lessonId. Aufgaben tragen benötigte Kompetenz-IDs; eine Aufgabe kann mehrere Anforderungen besitzen. Lernleistung wird aus aktuellen Aufgabenrevisionen und bestehenden Antworten/Leseständen abgeleitet. Kein zusätzlicher persistierter Kompetenzcache, keine doppelte Lernhistorie. Ein falsches Gesamtergebnis belegt keine einzelne Ursache; die Empfehlung nennt Belege und Unsicherheit.
+Fortschritt bleibt Schema 3 unter dem bisherigen v3-Schlüssel: `read`, `answers`, `reviews`, `legacySummary`, `performance`, `exerciseAnswers`, `recentModules`, `activeExam`, `examHistory`, `updatedAt`. Bisherige Grenzen (fünf letzte Module, 20 Prüfungsergebnisse) bleiben bestehen. Keine erfundene historische Versuchszahl aus einer alten Einzelantwort.
 
-Der Trainer normalisiert seine Operationen als ChoiceTask-IDs. Auch diese werden in Prüfung/Statistik/Qualitätsregister wiederverwendet. Der aktuelle UI-Schritt ist nicht dauerhaft gespeichert.
+Neu ist der optionale `exerciseDraft`: taskId, revision, answer {value, unit}, bridgeLessonId, checked, updatedAt. Genau ein letzter Entwurf, validierte Struktur und Textlängen. Aktueller Grader wertet den erhaltenen Entwurf nach Neuladen neu aus; geänderte Revisionen werden nicht als aktueller Entwurf aktiviert. Alte 0.4-/0.5-Dateien ohne dieses Feld bleiben gültig.
 
-## Fortschritt und Sicherung
+Exportformat 1 und Wiederherstellungsjournal bleiben erhalten. Historische echte 0.4-/0.5-Exporterfixtures prüfen Karten, Lernstände, Termine, alte Snapshots und aktive/abgeschlossene Prüfungen. Neue Aufgabentypen benötigen 0.6 oder später; keine Zusage für den Import neuer Inhalte in alte Apps. Unbekannte/beschädigte Daten werden geschützt, nicht automatisch überschrieben. Keine Gerätesynchronisation.
 
-**Unverändert:** Fortschrittsschema 3 unter v3, Backup-Dateiformat 1, v1/v2-Migrationspfade und unberührte Rückfallbestände. `read`, `answers`, `reviews`, `legacySummary`, `performance`, `exerciseAnswers`, `recentModules`, `activeExam`, `examHistory`, `updatedAt` bleiben der Vertrag. Keine erfundenen historischen Versuche.
-
-Tests verwenden eine echte mit main 0.4 erzeugte Sicherung samt historischen Snapshots ohne TeX-/Kompetenzfelder. Neue negative Mathematik-Snapshots und molare Einheiten sind durch denselben Export-/Importpfad gedeckt. Ältere Apps kennen neue Aufgabentypen nicht; aktuelle Sicherungen deshalb nicht mit 0.4 wiederherstellen. Unbekannte Formate bleiben geschützt statt still ersetzt.
-
-Prüfungssnapshots bewahren die damaligen Aufgaben und Antworten. Maximal 20 Ergebnisse, fünf letzte Module und letzte numerische Trainingsantwort je Aufgabe bleiben die vorhandenen Grenzen. Keine vollständige Ereignishistorie, kein Konto und keine Gerätesynchronisation.
-
-## Qualität und spätere Module
-
-42 Formeldefinitionen besitzen expliziten Formelsatz. Prüfevidenz ist von Darstellung getrennt: automatisch getestet, konkret quellenbasiert abgeglichen oder noch Entwurf; überall unabhängige menschliche Freigabe offen. Nicht jede verlinkte Quelle bedeutet einen vollständigen Aussagenabgleich.
-
-Professionelle Rechner, Diagramme, reale Stoff-/Bauteildaten, Diagnose, Planung und Dokumentation sollen dieselben Definitionen/IDs referenzieren. Reale Daten benötigen zusätzliche Herkunfts-, Zustands-, Rechte- und Aktualisierungsverträge.
+Trainer-/Fall-Schrittpositionen und unbewertete Fallantworten sind sitzungsbezogen; bewertete Versuche landen im gleichen Lernvertrag. Quellen/Formeln/Kompetenzen sind für spätere Rechner, log-p-h, Diagnose und Planung vorbereitet, reale Daten benötigen eigene geprüfte Verträge.

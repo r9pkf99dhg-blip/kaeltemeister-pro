@@ -1,3 +1,5 @@
+Aktueller Ergänzungsstand: [Version 0.6](RELEASE_V06.md). Historische Grundlagen und Zahlen beziehen sich gegebenenfalls auf die bezeichnete frühere Version.
+
 # Datensicherung und Wiederherstellung · Version 0.5
 
 ## Am iPad, iPhone oder Computer
@@ -69,3 +71,7 @@ Dateiformat 1 und Fortschrittsschema 3 bleiben unverändert. Neue Module, Fragen
 Die Testdatei `src/storage/fixtures/v04-backup.json` wurde mit den echten Funktionen aus main `163b9b7` erzeugt, nicht mit dem neuen Code rekonstruiert. Sie enthält ausschließlich fiktive Lernantworten und prüft das Beibehalten von altem Quizaggregat, v2-Rückfallkopie, Karten und vollständiger Prüfungshistorie. Neue negative Mathematik-Snapshots werden ebenfalls exportiert, importiert und bewertet.
 
 Neue Sicherungen können neue Aufgabentypen enthalten, die eine alte App 0.4 nicht kennt. Deshalb für solche Sicherungen 0.5 oder später verwenden. Eine vollständige Rückwärtskompatibilität neuer Daten zu älteren Apps wird nicht versprochen. Unbekannte Versionen/Datentypen werden geschützt statt still überschrieben. Die offene Brückenlektion, temporäre Filter und die aktuelle Trainerschrittauswahl werden nicht als dauerhafte Benutzereinstellungen gespeichert.
+
+## Version 0.6
+
+Echte unveränderte Exportfixtures aus 0.4 und 0.5 sichern Vorwärtskompatibilität ab. Exportformat 1 / Fortschrittsschema 3 bleiben bestehen. Ein optionaler letzter Aufgabenentwurf enthält Antwort, Einheit und geöffnete Lernbrücke und ist Teil der Sicherung. Karten, Termine, Kompetenzversuche und aktive/abgeschlossene Prüfungssnapshots bleiben erhalten. Neue Aufgabenmodelle benötigen eine App ab 0.6. Keine Abwärtslesbarkeit der neuen Inhalte in 0.4/0.5 versprochen. Fall-Schrittposition und unbewertete Trainerantworten bleiben sitzungsbezogen.

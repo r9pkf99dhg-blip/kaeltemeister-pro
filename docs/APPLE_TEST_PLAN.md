@@ -1,4 +1,6 @@
-# iPad-/iPhone-Testplan · Version 0.5
+Aktueller Ergänzungsstand: [Version 0.6](RELEASE_V06.md). Historische Grundlagen und Zahlen beziehen sich gegebenenfalls auf die bezeichnete frühere Version.
+
+# iPad-/iPhone-Testplan · Version 0.6
 
 ## Was automatisch geprüft wird
 
@@ -20,7 +22,7 @@ Zuerst eigene Lerndaten als Datei sichern. Möglichst mit Test-Lernstand arbeite
 
 | Schritt | Erwartetes Ergebnis |
 | --- | --- |
-| Nach PR-Merge und erfolgreichem Pages-Lauf Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ | Version 0.5 wird angezeigt, keine leere Seite |
+| Nach PR-Merge und erfolgreichem Pages-Lauf Safari öffnen: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ | Version 0.6 wird angezeigt, keine leere Seite |
 | iPad hoch/quer drehen; iPhone und Split View, soweit vorhanden | Navigation, Text und Formeln bleiben lesbar, keine abgeschnittenen Bedienelemente |
 | In Safari Schrift vergrößern | Texte umbrechen; Felder und Buttons bleiben erreichbar |
 | Akademie → Elektrotechnik → Elektrische Grundgrößen | Ziele, drei Niveaus, Fragen, Karten und Zahlenaufgaben vorhanden |
@@ -75,4 +77,8 @@ Fehler mit diesen Angaben als GitHub-Issue melden. Persönliche Sicherungsdateie
 | Chemie: Stoffmenge 9 g bei 18 g/mol | 0,5 mol bzw. 500 mmol; chemische Formeln mit korrekten Indizes |
 | Eigene 0.4-Sicherung erst nach zusätzlicher Sicherung importieren | Alte Lesestände/Antworten/Karten/Prüfungen unverändert vorhanden |
 
-Ein echter Apple-Gerätetest ist weiterhin durch den Nutzer erforderlich. Die tatsächlichen automatischen Resultate für diese Version stehen in VERSION_0_5 bzw. im verlinkten CI-Lauf; Konfiguration allein ist kein Nachweis.
+Ein echter Apple-Gerätetest ist weiterhin durch den Nutzer erforderlich. Die tatsächlichen automatischen Resultate für diese Version stehen in RELEASE_V06 bzw. im verlinkten CI-Lauf; Konfiguration allein ist kein Nachweis.
+
+## Ergänzungen 0.6
+
+Nach Backup: neue Geometrie-/Winkelaufgabe (36,87°), verlorene Nullstelle im Trainer, Sinusdiagramm bei 0/30/60/90°, Dreiphasenleistung (5542,56 W), zwei Wärmeschichten (8 W), vollständige Fallentscheidung und sichtbare Aussagenbelege prüfen. Einheitenmuster 10,45 W statt kW → Lernbrücke öffnen → Safari neu laden → Dashboard Fortsetzen → gleiche Antwort/Einheit/offene Lektion. Zurück fokussiert das Ergebnisfeld. Textvergrößerung, Hoch-/Querformat, Hardwaretastatur und VoiceOver besonders an den Diagrammen und Formeln testen. Keine echte Apple-Hardwareprüfung ist hier erfolgt.

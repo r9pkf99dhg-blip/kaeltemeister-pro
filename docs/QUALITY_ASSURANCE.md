@@ -1,50 +1,37 @@
-# Fachqualität und technische Prüfung · Version 0.5
+# Fachqualität und technische Prüfung · 0.6
 
-## Ehrlicher Prüfstatus
+## Getrennte Nachweise
 
-| Status | Bedeutung |
-| --- | --- |
-| Entwurf | Inhalt nutzbar zum Lernen, vollständiger fachlicher Aussagenabgleich noch offen |
-| Automatisch geprüft | Dokumentierte Zahlen-, Einheiten-, Struktur- oder Bewertungsprüfungen; Umfang pro Eintrag |
-| Quellenbasiert geprüft | Genau benannte Grundbeziehung mit tatsächlich eingesehener Fundstelle abgeglichen |
-| Unabhängig fachlich geprüft | Erst nach dokumentierter Prüfung durch qualifizierte externe Fachperson; derzeit **kein** Inhalt |
-| Überarbeitung erforderlich | Für künftig festgestellten Korrekturbedarf vorgesehen; keine erfundene Beanstandung |
+Das Gesamtregister inventarisiert 736 Einträge einschließlich alter Artikel, aller Modulniveaus, Formeln, Fragen/Karten, Zahlenfälle, Begriffe/Ziele, Trainer und neuer Aussagenbelege. `npm run docs:review` erzeugt REVIEW_REGISTER; `npm run docs:audit` den tatsächlichen Fachgebietsstand. Aussagenbelege sind in neuen Lektionen aufklappbar.
 
-Das zentrale Register `src/quality/register.ts` inventarisiert bestehende Artikel, alle Modulniveaus, Formeln, Quizfragen (auch altes Quiz), Karten, Zahlenaufgaben, Fachbegriffe, Lernziele und Fachnotizen. In der App lässt es sich unter **Fachliches Prüfregister** durchsuchen. Quellenzugriff, automatische Prüfung und unabhängige Fachabnahme sind verschiedene Belege. Ein Quellenlink allein ist keine Freigabe.
+`ClaimEvidence` unterscheidet Entwurf, Recherche, konkreten Quellenabgleich, unabhängige Rechenreferenz, redaktionelle Prüfung, benötigte menschliche Prüfung, tatsächliche Freigabe und Überarbeitungsbedarf. Diese Nachweise sind keine pauschale Rangfolge: Ein Rechentest ersetzt keinen Quellenabgleich, ein Quellenlink keine Fachfreigabe. Das vorhandene gröbere Gesamtregister bleibt kompatibel und zeigt den begrenzten Prüfumfang.
 
-Der vollständig ausgefüllte Ausgangsbericht mit Bearbeitungsfeldern für Fachprüfer steht in [REVIEW_REGISTER.md](REVIEW_REGISTER.md). Er wird mit `npm run docs:review` aus demselben Register erzeugt. Pro Inhalt: stabile ID, Fachgebiet, Formel-IDs, Quellen/Fundstellen, Rechnung oder Referenztext, Annahmen, mögliche Fehler, Status, offene Fragen sowie Felder für Name, Datum und Entscheidung.
+Für keinen Inhalt liegt eine unabhängige menschliche Fachfreigabe vor. Es werden keine Prüfer, aktuellen Rechts-/Norminhalte, Stoff-/Herstellerwerte oder Messungen erfunden. Eigene Ableitungen (u. a. Stern/Dreieck, Schichten-U-Wert, offene Enthalpiebilanzen) sind ausdrücklich von direkt gelesenen Kapitelbeziehungen getrennt. CONTENT_REVIEW und SOURCES nennen offene gezielte Abgleiche. Die angefragten Rechts-/KMK-/BIPM-/DGUV-Seiten waren durch Netzwerk-403 blockiert.
 
-## Durchgeführte fachliche Arbeit
+## Technischer Prüfumfang
 
-- Alle 63 Zahlenaufgaben besitzen separat vorgegebene SI-Referenzergebnisse; diese Werte werden nicht aus der zu prüfenden Produktfunktion erzeugt.
-- Wärme-, Massenstrom-, Temperatur-, COP- und Elektrobeispiele bleiben klar begrenzte fiktive Lernfälle.
-- SI-Umrechnungen einschließlich kg/h, °C/K, mA, mV, kΩ, Minuten/Stunden und J/Wh/kWh; Toleranzgrenzen und falsche Einheiten sind getestet.
-- Fehlende/negative/nicht endliche Werte, Nullnenner, Überlauf und falsches Temperaturvorzeichen werden geprüft. Der Parallelrechner verwendet eine skalierte Form, damit große Einzelwiderstände nicht unnötig einen Produktüberlauf erzeugen.
-- Die idealisierte Kältekreisbilanz und Zahlen aus alten Musterlösungen werden separat nachgerechnet.
-- OpenStax-Grundgleichungen für Ladungsstrom, Ohm, Leistung/Energie und Widerstandsschaltungen wurden im offiziellen, gepinnten Quellarchiv eingesehen. Quellen und konkrete Fundstellen stehen in [SOURCES.md](SOURCES.md).
-- Der Altbestandsleser schützt nun auch beschädigte v1-Zeichenfolgen vor automatischem Überschreiben. Bereinigte Werte können vorübergehend angezeigt werden; Originale bleiben geschützt.
+- Alle 97 Zahlenfälle haben separate feste SI-Sollwerte. Der Test verlangt exakte Mengenübereinstimmung der Fall-IDs, damit neue Aufgaben ohne Referenz nicht unbemerkt bleiben.
+- Zusätzlich: numerische Sinus-Periodenintegration für Effektivwert und Wirkleistung, 120°-Zeigerkontrolle und Leiter-/Strangäquivalenz, Geometrie-/Schichtverhältnisse, Definitionsbereiche, Nullnenner, Rundung/Toleranzen, nicht endliche Zwischenwerte.
+- SI-Umrechnung einschließlich mm²/cm³/Grad/rad, H/mH, F/µF, VA/kVA, var/kvar, m³/h und L/min. W/VA/var sind als unterschiedliche Größen nicht austauschbar. Temperaturdifferenzen verwenden keinen Celsiusoffset.
+- Inhalt/ID-/Quellenverweise und azyklische Voraussetzungen; Kompetenzzuordnung und keine vorgetäuschte menschliche Freigabe.
+- Kuratierter Trainer mit verlorenen Lösungen, konkretem Fehlerschrittfeedback, Hilfen und Originalprobe. Kein allgemeines CAS.
+- Lernbrücke: erkannte Zahlenmuster, unbekannte Ursachen, bestehende Eingaben/Einheiten, Rückkehrfokus, Neuladen und Backup des letzten Entwurfs.
+- Thermodynamikprüfungen haben auf Grundlagen-, Fachkraft- und Meisterniveau jeweils Zahlen- und Auswahlfragen; Einstiegsaufgaben sind passend zugeordnet.
+- Vier Fallsequenzen mit echter fachlicher Schlussentscheidung; Zahlen- und Auswahlversuche nutzen gleichen Fortschritt. Auswahlentscheidungen sind auch im Modulquiz konsistent gespeichert.
+- Historische echte Exporte aus unverändertem 0.4- und 0.5-Code mit Karten, Intervallen, Antworten und Prüfungssnapshots; geschützter Import/Journal und alle bisherigen Fehlertests bleiben bestehen.
+- KaTeX für alle Registerformeln, Variablen, Lerntexte, Fragen/Antworten und Musterlösungen, einschließlich Fehlerfallbacks. Lokale Fonts, keine CDN-Abhängigkeit.
+- Browser prüfen Navigation, Altfortschritt, Quiz, Rechner, Sicherung, Prüfung, neue Pfade/Diagramme/Fälle, Lernbrücken-Neuladen und Nachweise mit Tastatur/großer Schrift. Fünf Chromium- und drei WebKit-Konfigurationen. Echte Apple-Hardware und vollständiges WCAG-Audit bleiben offen.
 
-## Offen für qualifizierte Fachpersonen
+## Testresultate
 
-**Keine unabhängige menschliche Prüfung wurde durchgeführt.** Kältetechnische Messvoraussetzungen (Dew/Bubble, Druckbezug, Messort), Diagnosegrenzen, alle vollständigen Lerntexte, die Elektro-Praxisübertragung und sicherheitsbezogene Formulierungen benötigen Fachabnahme. Nicht eingesehene externe Aussagen bleiben entsprechend markiert. Eine intern rechnerisch geprüfte Musterlösung garantiert keine Eignung zur realen Anlagenauslegung.
+Die abschließenden Ergebnisse und CI-Links werden im Release-/Wiederaufnahmeprotokoll nach tatsächlichem Abschluss festgehalten. Ein anfänglicher Gesamtbrowserlauf fand zwei veraltete Erwartungen (Wechselstrom angeblich geplant, fünf statt zehn Elektromodule). Die Tests wurden auf die vorhandenen neuen Inhalte angepasst; keine Qualitätsprüfung abgeschaltet. Ein neuer Belegtest traf zwei IDs mit demselben Präfix; er wurde auf den konkreten Formelbeleg präzisiert. Fachliche oder technische Erfolge werden erst nach dem jeweiligen grünen Lauf behauptet.
 
-Elektrische Beispiele sind keine Arbeitsanweisungen an spannungsführenden Anlagen. Es werden keine pauschalen Schutz-, Verdrahtungs-, Leitungs- oder Sicherungswerte genannt. Auch kleine Spannungsangaben sind kein Sicherheitsnachweis.
+CI und Pages-Workflow erhalten unverändert ihre Qualitätsprüfungen. Pages deployt ausschließlich main nach erfolgreich geprüften Build/Browserjobs. `actionlint`, TypeScript, Unit-/Integrationstests, Produktionsbuild und Browserläufe gehören zum Abschluss. Keine automatische Zusammenführung oder Branchlöschung.
 
-## Prüfprozess
+### Lokaler Abschlussstand
 
-1. Fachprüfer erhält Register und App-Stand/Commit.
-2. Jede Aussage und Modellgrenze gegen passende autoritative Quelle prüfen; Fundstelle ergänzen.
-3. Referenzrechnung unabhängig reproduzieren; Fehler und offene Punkte erfassen.
-4. Korrekturen im PR mit Revision und Migrationsauswirkung prüfen.
-5. Erst dokumentierte Freigabe mit Person, Datum und Umfang erlaubt den Status „Unabhängig fachlich geprüft“.
+323 Unit-/Integrationstests in 24 Dateien, TypeScript und Build erfolgreich. `npm ci --cache /tmp/kaeltemeister-npm-cache` reproduzierbar erfolgreich; Workflow-Lint und Diff-Prüfung ebenfalls. Vollständiger letzter Chromium-Regressionslauf vor der abschließenden CSS-Umbruchkorrektur: 155 erfolgreich. Danach 24 gezielte neue Akademie-/Formelszenarien auf kleinem Smartphone, Smartphone und Tablet erfolgreich. Die neueste vollständige CI prüft nochmals alle 155 Chromium- und 93 WebKit-Szenarien.
 
-Automatische Prüfungen und echte Geräteprüfung bleiben ergänzende, getrennte Nachweise. Siehe [APPLE_TEST_PLAN.md](APPLE_TEST_PLAN.md) und Versionsbericht.
+GitHub-Lauf 40655646060 meldete zuvor 239 erfolgreiche und eine fehlgeschlagene WebKit-iPhone-Prüfung: horizontaler Überlauf der neuen Ansicht bei großer Schrift. CSS-Umbruch/Flex-Minimalgrößen und die natürliche Umbruchfähigkeit von Belegen/Variablendefinitionen wurden korrigiert; kein globales Ausblenden oder Abschalten der Überlaufprüfung. Der Browsertest liefert im Fehlerfall zusätzlich die tatsächlich überstehenden Elemente. Der korrigierte Stand wird erst nach erneuter vollständiger CI als WebKit-grün bezeichnet.
 
-
-## Ergänzungen 0.5
-
-25 Module, 42 Formeldefinitionen, 63 Zahlenaufgaben und 13 normalisierte Trainer-Schrittfragen werden gemeinsam inventarisiert. Neue Begriffe, Herleitungen und alte Sicherungssnapshots sind Teil der Prüfungen. Das Register ist für UI und Bericht dieselbe Quelle.
-
-Ein Quellenlink allein reicht nicht für den Status „Quellenbasiert geprüft“. Die Implementierung führt eine ausdrückliche Liste konkret abgeglichener Beziehungen; übrige Formeln bleiben automatisch geprüft und verlangen weiteren Aussagenabgleich. Vollständige Grundlagentexte bleiben zur unabhängigen menschlichen Prüfung offen. Die Darstellbarkeit in KaTeX ist eine andere Prüfung als mathematische oder fachliche Richtigkeit.
-
-Separat getestete neue Aspekte: Bruchantworten, negative mathematische Ergebnisse, Prozentwerte, Potenz-/Wurzelgrenzen, alle Modultexte/Formeln, 11 Umstellungsziele mit Zahlenproben, Kraft/Druck/Dichte/Wärmemenge/mol, Kompetenzreferenzen und azyklische Voraussetzungen. Eine echte mit dem main-Stand 0.4 erzeugte Sicherung dient als unveränderte Rückwärtsreferenz für den Import nach 0.5.
+Screenshots der normierten Sinusdarstellung wurden in 820×1180 und 390×844 visuell geprüft. Das sind emulierte Ansichten im System-Chromium, keine echte Apple-Hardware.

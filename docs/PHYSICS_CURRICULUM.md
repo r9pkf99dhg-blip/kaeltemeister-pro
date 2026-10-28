@@ -1,3 +1,5 @@
+Aktueller Ergänzungsstand: [Version 0.6](RELEASE_V06.md). Historische Grundlagen und Zahlen beziehen sich gegebenenfalls auf die bezeichnete frühere Version.
+
 # Physik-Lehrplan · 0.5
 
 ## Vollständig nutzbarer Kern

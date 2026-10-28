@@ -1,21 +1,49 @@
-# Version 0.6 · Wiederaufnahme
+# Version 0.6 · Sicherer Wiederaufnahmestand
 
-Branch: `feat/deep-learning-academy-v06`. Ausgangspunkt: main `09a953b` (Merge #7, vollständige Version 0.5 `febd428`). main wird nicht direkt geändert; kein automatischer Merge, kein Force-Push.
+Branch: `feat/deep-learning-academy-v06`. Grundlage main `09a953b` (Merge #7, vollständige 0.5 `febd428`). Keine direkten main-Änderungen, kein automatischer Merge, kein Force-Push, keine Branchlöschung.
 
-## Geprüfte Ausgangslage
+## Abgeschlossene Etappen
 
-25 Module, 63 Zahlenaufgaben, lokaler KaTeX-Satz, Umstellungstrainer, Lernbrücke, Schema 3 / Backupformat 1 sind vorhanden. Baseline: 262 Tests, Typprüfung und Produktionsbuild erfolgreich am 28.10.2026. GitHub-Pages-Basispfad und Workflows bleiben erhalten.
+| Etappe | Commit | Ergebnis |
+| --- | --- | --- |
+| 1 Bestandsaufnahme | 4254dfe | Vollständige 0.5 in main geprüft; Ausgangslage: 262 Tests, Typprüfung, Build |
+| 2 Quellen/Nachweismodell | 8f32b63 | Reale Zugriffsergebnisse, Nachweisarten und Quellenbewertung; offene Rechts-/SI-/Sicherheitsquellen |
+| 3 Mathematik | 1f24fb8 | Sieben neue Module, zwölf Aufgaben, vier neue Trainerfälle; 278 Tests, Build/Typprüfung und Tabletfall grün |
+| 4 Elektro | 665aaea | Vier Module, zwölf Aufgaben, Diagramme; 292 Tests und zwei Tablet-Browserfälle grün |
+| 5 Thermodynamik | 52c286a | Fünf Module, zehn Aufgaben; 303 Tests und drei Tablet-Browserfälle grün |
+| 6 Lernbrücke | 552d050 | Konkrete Zahlenmuster, fortsetzbarer Entwurf, Neuladen/Backup; 315 Tests und vier Tablet-Browserfälle grün |
+| 7 Fallstudien | a7be9a3 | Vier aktive Lernfälle mit Entscheidung; 317 Tests und fünf Tablet-Browserfälle grün |
+| 8a Fach-/Regressionsprüfung | 550122d | Aussagenbelege, echte alte Backups, Variablen/Alternativtexte; 321 Tests, Typprüfung, Build, Workflow-Lint und 150 vollständige Chromium-Prüfungen grün |
+| 8b Gemeinsame Begriffe | 22a7525 | Zwölf neue Glossarbegriffe mit Modulverweisen/Suche; 322 Tests und 155 Chromium-Prüfungen grün |
+| 8c Abschlusskorrekturen | 05f53da | Thermo-Grundlagenprüfung, Diagrammfrage und WebKit-Umbruch; 323 Tests/24 Dateien, Typprüfung, Build, vollständiger Chromium-Lauf 155 grün; nach CSS-Korrektur 24 gezielte Browserfälle grün. Neueste vollständige CI zusätzlich prüfen |
 
-## Etappen
+Weitere abgeschlossene Prüf-/Dokumentationsetappen stehen in der folgenden Commit-Historie. Nach jeder Etappe wurde normal gepusht. Der letzte hochgeladene Commit ist die Wiederaufnahmebasis; dessen Identität vor Weiterarbeit tatsächlich mit `git ls-remote` vergleichen.
 
-1. Bestandsaufnahme und Sicherung: abgeschlossen mit diesem Commit.
-2. Quellenprüfung und Nachweismodell: Commit `8f32b63`. Direkter Abruf der gewünschten Rechts-, KMK-, BIPM-, DGUV- und OpenStax-Webseiten scheitert an Netzwerk-HTTP 403. Originalquellen über offizielle GitHub-Repositorien prüfen, sonst ausdrücklich offen lassen; keine Rechts-/Normaussagen erfinden.
-3. Technische Mathematik: sieben neue Module, zwölf Aufgaben, vier zusätzliche geprüfte Trainerfälle. 278 Tests, Typprüfung und Build erfolgreich; Tablet-Browserprüfung siehe Etappenprotokoll.
-4. Wechselstrom und Drehstrom: vier Module, zwölf Zahlenaufgaben, verstellbare und textlich beschriebene Diagramme. 292 Tests, Typprüfung, Build und zwei Tablet-Browserfälle erfolgreich. Mathematik-Etappe: `1f24fb8`.
-5. Thermodynamik: fünf zusammenhängende Module und zehn Zahlenaufgaben. 303 Tests, Typprüfung, Build und drei Tablet-Browserfälle erfolgreich. Elektro-Etappe: `665aaea`.
-6. Lernbrücke: neun konkret getestete Zahlenmuster, alternative Grundlagen, Überspringen, lokal gespeicherter Aufgabenentwurf inklusive offener Lernbrücke. 315 Tests, Typprüfung, Build und vier Tablet-Browserfälle erfolgreich. Thermodynamik: `52c286a`.
-7. Vier mehrstufige Lernfälle: Wärmeträger, Einphasenverbraucher, Rohrgeometrie und Schichtenvergleich; 317 Tests, Typprüfung, Build und fünf Tablet-Browserfälle erfolgreich. Lernbrücke: `552d050`.
-8. Regression, Altbackups, Browser, Quellen-/Formelprüfung.
-9. Dokumentation, Push, PR-Versuch. API bislang HTTP 403; ggf. Vergleichslink und vorbereiteten PR-Text bereitstellen.
+## Noch abzuschließen
 
-Nach jeder fertigen Etappe: Typprüfung, Tests und Build; Commit und normaler Push. Bei Unterbrechung zuerst `git status`, `git log`, diese Datei lesen, tatsächlichen Remote-Stand abgleichen. Fremde Änderungen erhalten. Testbefehle: `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`, lokal `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`. WebKit in CI prüfen. Keine behauptete menschliche Fachfreigabe oder Hardwareprüfung.
+- Neueste GitHub-Prüfung einschließlich WebKit auf dem Dokumentations-HEAD prüfen. 323 lokale Tests, reproduzierbare npm-Installation, Typprüfung, Build und actionlint sind erfolgreich. Komplettlauf: 155 Chromium-Szenarien; nach gezielter WebKit-CSS-Korrektur 24 fokussierte Fälle erneut erfolgreich. GitHub hatte zuvor genau einen iPhone-WebKit-Überlauf bei großer Schrift gemeldet, der ausdrücklich behoben und erneut zu prüfen ist.
+- Pull Request mit docs/PULL_REQUEST_0_6.md erstellen. API bisher HTTP 403; wenn erneut blockiert, Vergleichslink verwenden.
+- Merge nur nach ausdrücklicher Freigabe; dann main-Pages-Lauf und 0.6 auf der Website prüfen.
+- Echte iPad/iPhone-Hardwareprüfung gemäß APPLE_TEST_PLAN; kein solcher Test hier behauptet.
+- Unabhängige menschliche Fachprüfung und gezielter externer Abgleich eigener Ableitungen; aktuelle Meister-/Ausbildungs-/KMK-/BIPM-/DGUV-Primärquellen waren technisch blockiert.
+
+## Wiederaufnahme nach Unterbrechung
+
+1. `git status`, `git log -12 --oneline`, diese Datei und RELEASE_V06 lesen. Fremde Änderungen erhalten.
+2. Remote main und Entwicklungsbranch holen und vergleichen; nicht von altem main neu implementieren, keinen Force-Push verwenden.
+3. `npm ci --cache /tmp/kaeltemeister-npm-cache`, `npm run typecheck`, `npm test`, `npm run build`.
+4. Lokal vorhandener Browser: `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e:chromium`. Ohne Systembrowser offizielle Playwright-Browser installieren. WebKit in GitHub CI prüfen, falls lokaler Download gesperrt bleibt.
+5. `npm run docs:review`, `npm run docs:audit`, beide Workflows mit actionlint prüfen. Erst Fehler beheben und erneut prüfen, dann committen/pushen.
+6. Historische Fixtures niemals mit neuen Exportern überschreiben. Schema 3 / Backupformat 1 erhalten. Neue Felder optional und geschützt validieren.
+
+## iPad, PR und Veröffentlichung
+
+Vergleich: https://github.com/r9pkf99dhg-blip/kaeltemeister-pro/compare/main...feat/deep-learning-academy-v06?expand=1
+
+Auf dem iPad öffnen → **Create pull request** → base `main`, compare `feat/deep-learning-academy-v06` → Titel „Version 0.6: Fachliche Tiefenakademie, Elektrotechnik und intelligentes Problemlösen“ → vorbereiteten Beschreibungstext aus PULL_REQUEST_0_6.md einsetzen → **Create pull request**. Erst nach eigener Freigabe und grünen neuesten Checks **Merge pull request**, danach **Confirm merge**. Keinen Branch löschen müssen.
+
+Nach grünem Pages-Lauf: https://r9pkf99dhg-blip.github.io/kaeltemeister-pro/ in Safari neu laden, Version 0.6 prüfen und zunächst Sicherung in Dateien speichern. Manuelle Testwerte stehen in RELEASE_V06. main und veröffentlichte Website bleiben bis zum freigegebenen Merge auf ihrem bisherigen Stand.
+
+## Bewusst später
+
+Vollständige unabhängige Fachfreigabe, umfassender Meisterlehrplan, allgemeines CAS, Motor-/Schutzpfad, unsymmetrische/verzerrte Netze, reale Stoffdaten/log-p-h und professionelle Anlagenrechner. Trainer-/Fall-Schrittpositionen und unbewertete Fallantworten sind sitzungsbezogen; ein letzter Zahlenübungs-/Lernbrückenentwurf ist dagegen jetzt gesichert.
