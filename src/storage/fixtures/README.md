@@ -11,3 +11,7 @@ Die Datei enthält das echte damalige Dateiformat 1, v3-Lernstand, v2-Rückfallz
 ## Version 0.6
 
 `v06-backup.json` stammt aus dem unveränderten main `8a1ba77` (Merge #8, Exporter 0.6.0), erneut per `git archive` in `/tmp/km-v06-compat`. Die alten Funktionen erzeugten gelesene Module, Quizantwort, Karte, abgeschlossene und laufende Übungsprüfung. Der damals unterstützte Lernbrückenentwurf enthält `ac-three-a`, eigene falsche Antwort `3200 W` und offene Lektion `electric-three-phase`. Fiktive Daten; keine Nutzerdaten. Sprachpräferenz, Werkstatt und Labor existierten damals nicht und wurden nicht nachträglich in die Referenz geschrieben. Der Test verlangt den vollständigen, unveränderten Dateninhalt auch nach Wiederexport.
+
+## Version 0.7
+
+`v07-backup.json` wurde mit dem unveränderten main `908993d` (Merge #9, tatsächlicher Exporter 0.7.0) über `git archive` in `/tmp/km-v07-compat` und die damaligen Vite-SSR-Funktionen erzeugt. Enthält fiktive Lesestände, Antworten, Karte, abgeschlossene und laufende Prüfung, einfache Sprache, Werkstattnotizen und Hilfe, Laborentwurf `heat-power` sowie damalige unabhängige/Hilfe-Metadaten (`hint` bei einer Wärmeaufgabe). Keine nachträglich erfundenen Mastery-/Kreislauf-Felder. Import und Wiederexport müssen den vollständigen Dateninhalt unverändert erhalten. Die alten Dateien 0.4–0.6 bleiben erhalten.

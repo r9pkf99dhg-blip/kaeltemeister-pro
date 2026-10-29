@@ -1,0 +1,938 @@
+{
+  "format": "kaeltemeister-pro-backup",
+  "schemaVersion": 1,
+  "appVersion": "0.7.0",
+  "exportedAt": "2026-10-28T10:04:00.000Z",
+  "data": {
+    "academy": {
+      "schemaVersion": 3,
+      "performance": {
+        "math-fractions-q1": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z"
+        },
+        "math-fractions-card1": {
+          "topicId": "math-fractions",
+          "itemRevision": 1,
+          "kind": "card",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z"
+        },
+        "case-pipe-q1": {
+          "topicId": "case-pipe",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:01:00.000Z"
+        },
+        "alg-domain-a": {
+          "topicId": "math-domains",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-28T10:01:00.000Z"
+        },
+        "case-pipe-q2": {
+          "topicId": "case-pipe",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:01:00.000Z"
+        },
+        "alg-interpolation-a": {
+          "topicId": "math-functions",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-28T10:01:00.000Z"
+        },
+        "math-algebra-q1": {
+          "topicId": "math-algebra",
+          "itemRevision": 1,
+          "kind": "choice",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 1,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:01:00.000Z"
+        },
+        "alg-log-a": {
+          "topicId": "math-functions",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 0,
+          "streak": 0,
+          "lastCorrect": false,
+          "lastAttemptAt": "2026-10-28T10:01:00.000Z",
+          "intervalDays": 0,
+          "dueAt": "2026-10-28T10:01:00.000Z"
+        },
+        "calc-heat-water": {
+          "support": {
+            "independent": 0,
+            "hint": 1,
+            "worked": 0,
+            "last": "hint"
+          },
+          "topicId": "cycle-basics",
+          "itemRevision": 1,
+          "kind": "numeric",
+          "attempts": 1,
+          "correctCount": 1,
+          "streak": 0,
+          "lastCorrect": true,
+          "lastAttemptAt": "2026-10-28T10:00:00.000Z",
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z"
+        }
+      },
+      "exerciseAnswers": {},
+      "recentModules": [
+        {
+          "moduleId": "cycle-basics",
+          "openedAt": "2026-10-28T10:00:00.000Z"
+        },
+        {
+          "moduleId": "math-functions",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        },
+        {
+          "moduleId": "math-algebra",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        },
+        {
+          "moduleId": "case-pipe",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        },
+        {
+          "moduleId": "math-domains",
+          "openedAt": "2026-10-28T10:01:00.000Z"
+        }
+      ],
+      "activeExam": {
+        "id": "v07-historical-active",
+        "domainId": "chemie",
+        "level": "meister",
+        "startedAt": "2026-10-28T10:02:00.000Z",
+        "deadline": "2026-10-28T10:22:00.000Z",
+        "snapshots": [
+          {
+            "item": {
+              "id": "chemistry-amount-q1",
+              "revision": 1,
+              "kind": "choice",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "9 g bei vorgegebenen 18 g/mol ergeben …",
+              "prompt": "9 g bei vorgegebenen 18 g/mol ergeben …",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "options": [
+                {
+                  "id": "chemistry-amount-q1-option-1",
+                  "text": "162 mol"
+                },
+                {
+                  "id": "chemistry-amount-q1-option-2",
+                  "text": "2 mol"
+                },
+                {
+                  "id": "chemistry-amount-q1-option-0",
+                  "text": "0,5 mol"
+                }
+              ],
+              "correctOptionId": "chemistry-amount-q1-option-0",
+              "explanation": "Stoffmenge ist Masse geteilt durch molare Masse: 9/18 = 0,5 mol. Die Einheiten g/(g/mol) ergeben mol; eine Multiplikation wäre hier unpassend."
+            }
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-a",
+              "revision": 1,
+              "kind": "numeric",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "Stoffmenge mit gerundeter molarer Masse",
+              "prompt": "Für diesen Wasser-Lernfall ist M = 18 g/mol ausdrücklich gerundet vorgegeben. Welche Stoffmenge gehört zu 9 g?",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "formulaId": "chemistry-amount-rule",
+              "calculation": "amount",
+              "givens": [
+                {
+                  "id": "mass",
+                  "label": "Masse",
+                  "value": 9,
+                  "unit": "g",
+                  "quantity": "mass"
+                },
+                {
+                  "id": "molarMass",
+                  "label": "Vorgegebene molare Masse",
+                  "value": 18,
+                  "unit": "g/mol",
+                  "quantity": "molar-mass"
+                }
+              ],
+              "sought": "Stoffmenge mit gerundeter molarer Masse",
+              "quantity": "amount",
+              "answerUnit": "mol",
+              "absoluteToleranceSI": 1e-8,
+              "relativeTolerance": 0.0001,
+              "sourceIds": [
+                "openstax-chemistry-v05"
+              ],
+              "hint": "Prüfe die Teilchenart bzw. den Gesamtmassenbezug und kürze die Einheiten. Ein Index gilt nur für das zugehörige Elementsymbol.",
+              "steps": [
+                "\\(m=0{,}009\\,\\mathrm{kg},\\quad M=0{,}018\\,\\mathrm{kg/mol}\\).",
+                "\\(n=\\frac{0{,}009}{0{,}018}=0{,}5\\,\\mathrm{mol}\\)."
+              ],
+              "mistakes": [
+                "Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln.",
+                "Gramm und kg/mol ohne Umrechnung kombinieren."
+              ],
+              "assumptions": "Gerundeter Lernwert, keine hochgenaue Stofftabelle und kein praktischer Versuch.",
+              "review": "calculation-tested-expert-review-pending",
+              "requiredCompetencyIds": [
+                "competency-fractions",
+                "competency-si-units",
+                "competency-amount"
+              ]
+            },
+            "expectedSI": 0.5
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-q2",
+              "revision": 1,
+              "kind": "choice",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "fachkraft",
+              "title": "Was darf beim Ausgleichen einer chemischen Gleichung verändert werden?",
+              "prompt": "Was darf beim Ausgleichen einer chemischen Gleichung verändert werden?",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "options": [
+                {
+                  "id": "chemistry-amount-q2-option-2",
+                  "text": "Die Protonenzahl der Elemente."
+                },
+                {
+                  "id": "chemistry-amount-q2-option-0",
+                  "text": "Die Koeffizienten vor den Stoffformeln."
+                },
+                {
+                  "id": "chemistry-amount-q2-option-1",
+                  "text": "Beliebig die tiefgestellten Indizes."
+                }
+              ],
+              "correctOptionId": "chemistry-amount-q2-option-0",
+              "explanation": "Koeffizienten verändern die Anzahl ganzer Teilcheneinheiten. Formelindizes würden dagegen eine andere Zusammensetzung und damit andere Stoffe beschreiben; sie bleiben erhalten."
+            }
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-b",
+              "revision": 1,
+              "kind": "numeric",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "Zweite Stoffmengenvariante",
+              "prompt": "Ein theoretischer Stofffall gibt m = 44 g und M = 44 g/mol vor. Berechne n.",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "formulaId": "chemistry-amount-rule",
+              "calculation": "amount",
+              "givens": [
+                {
+                  "id": "mass",
+                  "label": "Masse",
+                  "value": 44,
+                  "unit": "g",
+                  "quantity": "mass"
+                },
+                {
+                  "id": "molarMass",
+                  "label": "Vorgegebene molare Masse",
+                  "value": 44,
+                  "unit": "g/mol",
+                  "quantity": "molar-mass"
+                }
+              ],
+              "sought": "Zweite Stoffmengenvariante",
+              "quantity": "amount",
+              "answerUnit": "mol",
+              "absoluteToleranceSI": 1e-8,
+              "relativeTolerance": 0.0001,
+              "sourceIds": [
+                "openstax-chemistry-v05"
+              ],
+              "hint": "Prüfe die Teilchenart bzw. den Gesamtmassenbezug und kürze die Einheiten. Ein Index gilt nur für das zugehörige Elementsymbol.",
+              "steps": [
+                "\\(n=\\frac m M\\).",
+                "\\(n=\\frac{44\\,\\mathrm g}{44\\,\\mathrm{g/mol}}=1\\,\\mathrm{mol}\\)."
+              ],
+              "mistakes": [
+                "Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln.",
+                "Gramm und kg/mol ohne Umrechnung kombinieren."
+              ],
+              "assumptions": "Ausdrücklich vorgegebener gerundeter Modellwert; keine Hersteller-/Kältemittelzuordnung.",
+              "review": "calculation-tested-expert-review-pending",
+              "requiredCompetencyIds": [
+                "competency-fractions",
+                "competency-si-units",
+                "competency-amount"
+              ]
+            },
+            "expectedSI": 1
+          },
+          {
+            "item": {
+              "id": "chemistry-amount-q3",
+              "revision": 1,
+              "kind": "choice",
+              "topicId": "chemistry-amount",
+              "domainId": "chemie",
+              "level": "meister",
+              "title": "Welcher O₂-Koeffizient passt zur Bilanz CH₄ + … O₂ → CO₂ + 2 H₂O?",
+              "prompt": "Welcher O₂-Koeffizient passt zur Bilanz CH₄ + … O₂ → CO₂ + 2 H₂O?",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-amount"
+              },
+              "options": [
+                {
+                  "id": "chemistry-amount-q3-option-0",
+                  "text": "2"
+                },
+                {
+                  "id": "chemistry-amount-q3-option-1",
+                  "text": "1"
+                },
+                {
+                  "id": "chemistry-amount-q3-option-2",
+                  "text": "4"
+                }
+              ],
+              "correctOptionId": "chemistry-amount-q3-option-0",
+              "explanation": "Rechts stehen zwei O-Atome im CO₂ und zwei weitere in zwei H₂O, insgesamt vier. Links liefern zwei O₂-Moleküle genau diese vier O-Atome; C und H sind ebenfalls ausgeglichen."
+            }
+          },
+          {
+            "item": {
+              "id": "chemistry-atoms-a",
+              "revision": 1,
+              "kind": "numeric",
+              "topicId": "chemistry-atoms",
+              "domainId": "chemie",
+              "level": "grundlagen",
+              "title": "Sauerstoffatome in CO₂ zählen",
+              "prompt": "Wie viele O-Atome enthalten fünf CO₂-Moleküle? Der Index 2 gehört zu O.",
+              "article": {
+                "kind": "module",
+                "id": "chemistry-atoms"
+              },
+              "formulaId": "chemistry-atom-count",
+              "calculation": "math-term",
+              "givens": [
+                {
+                  "id": "a",
+                  "label": "O-Atome pro Molekül",
+                  "value": 2,
+                  "unit": "1",
+                  "quantity": "number"
+                },
+                {
+                  "id": "x",
+                  "label": "Moleküle",
+                  "value": 5,
+                  "unit": "1",
+                  "quantity": "number"
+                },
+                {
+                  "id": "b",
+                  "label": "Zusätzlicher Summand",
+                  "value": 0,
+                  "unit": "1",
+                  "quantity": "number"
+                }
+              ],
+              "sought": "Sauerstoffatome in CO₂ zählen",
+              "quantity": "number",
+              "answerUnit": "1",
+              "absoluteToleranceSI": 1e-8,
+              "relativeTolerance": 0.0001,
+              "sourceIds": [
+                "openstax-chemistry-v05"
+              ],
+              "hint": "Prüfe die Teilchenart bzw. den Gesamtmassenbezug und kürze die Einheiten. Ein Index gilt nur für das zugehörige Elementsymbol.",
+              "steps": [
+                "Jedes \\(\\ce{CO2}\\)-Molekül enthält zwei O-Atome.",
+                "\\(N_{\\mathrm O}=2\\cdot5=10\\)."
+              ],
+              "mistakes": [
+                "Komponentenmasse und Gesamtmasse oder Index und Koeffizient verwechseln.",
+                "Gramm und kg/mol ohne Umrechnung kombinieren."
+              ],
+              "assumptions": "Abstrakte Teilchenzählung, keine Stoffmengen- oder Volumenmessung.",
+              "review": "calculation-tested-expert-review-pending",
+              "requiredCompetencyIds": [
+                "competency-algebra",
+                "competency-atoms"
+              ]
+            },
+            "expectedSI": 10
+          }
+        ],
+        "responses": {
+          "chemistry-amount-q1": {
+            "value": "chemistry-amount-q1-option-0",
+            "unit": ""
+          }
+        }
+      },
+      "examHistory": [
+        {
+          "id": "v07-historical-finished",
+          "domainId": "mathematik",
+          "level": "fachkraft",
+          "startedAt": "2026-10-28T10:00:00.000Z",
+          "finishedAt": "2026-10-28T10:01:00.000Z",
+          "timedOut": false,
+          "correctCount": 3,
+          "total": 6,
+          "scorePercent": 50,
+          "results": [
+            {
+              "snapshot": {
+                "item": {
+                  "id": "case-pipe-q1",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "case-pipe",
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "title": "Welche Größe nutzt der geometrische Inneninhalt?",
+                  "prompt": "Welche Größe nutzt der geometrische Inneninhalt?",
+                  "article": {
+                    "kind": "module",
+                    "id": "case-pipe"
+                  },
+                  "options": [
+                    {
+                      "id": "case-pipe-q1-option-1",
+                      "text": "Außenmantel und Wanddicke ohne Innenmaß"
+                    },
+                    {
+                      "id": "case-pipe-q1-option-2",
+                      "text": "Nur die Länge"
+                    },
+                    {
+                      "id": "case-pipe-q1-option-0",
+                      "text": "Innenquerschnitt und Länge"
+                    }
+                  ],
+                  "correctOptionId": "case-pipe-q1-option-0",
+                  "explanation": "Das Innenvolumen entsteht durch den freien inneren Querschnitt entlang der Länge. Der Außenmantel ist eine Fläche und beantwortet eine andere Frage."
+                }
+              },
+              "answer": {
+                "value": "case-pipe-q1-option-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "alg-domain-a",
+                  "revision": 1,
+                  "kind": "numeric",
+                  "topicId": "math-domains",
+                  "domainId": "mathematik",
+                  "level": "fachkraft",
+                  "title": "Bruchgleichung 6 geteilt durch x minus 1",
+                  "prompt": "Löse die ursprüngliche Bruchgleichung \\(\\frac6{x-1}=3\\) auf dem Bereich x ≠ 1. Die gegebenen Koeffizienten beschreiben die äquivalente lineare Form 3x−3=6. Gesucht ist x; prüfe im Original.",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-domains"
+                  },
+                  "formulaId": "algebra-domain",
+                  "calculation": "math-linear",
+                  "givens": [
+                    {
+                      "id": "a",
+                      "label": "Koeffizient nach Beseitigen des Nenners",
+                      "value": 3,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "b",
+                      "label": "Konstantes Glied nach Ausmultiplizieren",
+                      "value": -3,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "c",
+                      "label": "Rechte Seite",
+                      "value": 6,
+                      "unit": "1",
+                      "quantity": "number"
+                    }
+                  ],
+                  "sought": "Bruchgleichung 6 geteilt durch x minus 1",
+                  "quantity": "number",
+                  "answerUnit": "1",
+                  "absoluteToleranceSI": 1e-10,
+                  "relativeTolerance": 0.001,
+                  "sourceIds": [
+                    "openstax-precalculus-v06"
+                  ],
+                  "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+                  "steps": [
+                    "Original: \\(\\frac6{x-1}=3\\), Bereich \\(x\\ne1\\). Daraus \\(6=3x-3\\).",
+                    "\\(x=3\\); Probe \\(6/(3-1)=3\\)."
+                  ],
+                  "mistakes": [
+                    "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+                    "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+                  ],
+                  "assumptions": "Die gegebenen Koeffizienten beschreiben die umgeformte lineare Gleichung; Originalbedingung x ≠ 1 bleibt bestehen.",
+                  "review": "calculation-tested-expert-review-pending",
+                  "requiredCompetencyIds": [
+                    "competency-equations",
+                    "competency-domains"
+                  ]
+                },
+                "expectedSI": 3
+              },
+              "answer": {
+                "value": "-1/2",
+                "unit": "1"
+              },
+              "grade": {
+                "status": "incorrect",
+                "correct": false,
+                "answerSI": -0.5,
+                "message": "Noch nicht richtig. Prüfe Umrechnung, Formel und eingesetzte Werte."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "case-pipe-q2",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "case-pipe",
+                  "domainId": "mathematik",
+                  "level": "fachkraft",
+                  "title": "Was geschieht bei doppeltem Innendurchmesser und gleicher Länge?",
+                  "prompt": "Was geschieht bei doppeltem Innendurchmesser und gleicher Länge?",
+                  "article": {
+                    "kind": "module",
+                    "id": "case-pipe"
+                  },
+                  "options": [
+                    {
+                      "id": "case-pipe-q2-option-2",
+                      "text": "Halbes Innenvolumen"
+                    },
+                    {
+                      "id": "case-pipe-q2-option-0",
+                      "text": "Vierfaches geometrisches Innenvolumen"
+                    },
+                    {
+                      "id": "case-pipe-q2-option-1",
+                      "text": "Doppeltes Innenvolumen"
+                    }
+                  ],
+                  "correctOptionId": "case-pipe-q2-option-0",
+                  "explanation": "Der Durchmesser geht quadratisch in die Kreisfläche ein. Ein Faktor zwei am Durchmesser liefert daher den Faktor vier beim Volumen, solange die Länge gleich bleibt."
+                }
+              },
+              "answer": {
+                "value": "case-pipe-q2-option-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "alg-interpolation-a",
+                  "revision": 1,
+                  "kind": "numeric",
+                  "topicId": "math-functions",
+                  "domainId": "mathematik",
+                  "level": "fachkraft",
+                  "title": "Lineare Zwischenwertschätzung",
+                  "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Lineare Zwischenwertschätzung.",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-functions"
+                  },
+                  "formulaId": "algebra-interpolation",
+                  "calculation": "interpolation",
+                  "givens": [
+                    {
+                      "id": "x0",
+                      "label": "x0",
+                      "value": 0,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "y0",
+                      "label": "y0",
+                      "value": 10,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "x1",
+                      "label": "x1",
+                      "value": 10,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "y1",
+                      "label": "y1",
+                      "value": 30,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "x",
+                      "label": "x",
+                      "value": 5,
+                      "unit": "1",
+                      "quantity": "number"
+                    }
+                  ],
+                  "sought": "Lineare Zwischenwertschätzung",
+                  "quantity": "number",
+                  "answerUnit": "1",
+                  "absoluteToleranceSI": 1e-10,
+                  "relativeTolerance": 0.001,
+                  "sourceIds": [
+                    "openstax-precalculus-v06"
+                  ],
+                  "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+                  "steps": [
+                    "\\(y=10+(30-10)\\frac{5-0}{10-0}\\).",
+                    "\\(y=20\\). Nur lineare Interpolation zwischen fiktiven Stützpunkten."
+                  ],
+                  "mistakes": [
+                    "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+                    "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+                  ],
+                  "assumptions": "Fiktive dimensionslose Punkte; angenommener linearer Zusammenhang, keine Herstellerkennlinie.",
+                  "review": "calculation-tested-expert-review-pending",
+                  "requiredCompetencyIds": [
+                    "competency-functions"
+                  ]
+                },
+                "expectedSI": 20
+              },
+              "answer": {
+                "value": "-1/2",
+                "unit": "1"
+              },
+              "grade": {
+                "status": "incorrect",
+                "correct": false,
+                "answerSI": -0.5,
+                "message": "Noch nicht richtig. Prüfe Umrechnung, Formel und eingesetzte Werte."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "math-algebra-q1",
+                  "revision": 1,
+                  "kind": "choice",
+                  "topicId": "math-algebra",
+                  "domainId": "mathematik",
+                  "level": "grundlagen",
+                  "title": "Was ist 3x + 2x?",
+                  "prompt": "Was ist 3x + 2x?",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-algebra"
+                  },
+                  "options": [
+                    {
+                      "id": "math-algebra-q1-option-1",
+                      "text": "5x²"
+                    },
+                    {
+                      "id": "math-algebra-q1-option-2",
+                      "text": "6x"
+                    },
+                    {
+                      "id": "math-algebra-q1-option-0",
+                      "text": "5x"
+                    }
+                  ],
+                  "correctOptionId": "math-algebra-q1-option-0",
+                  "explanation": "Beide Summanden enthalten denselben Faktor x. Es werden die Anzahlen 3 und 2 addiert; es entsteht kein zusätzliches x und deshalb keine Potenz x²."
+                }
+              },
+              "answer": {
+                "value": "math-algebra-q1-option-0",
+                "unit": ""
+              },
+              "grade": {
+                "status": "correct",
+                "correct": true,
+                "message": "Richtig."
+              }
+            },
+            {
+              "snapshot": {
+                "item": {
+                  "id": "alg-log-a",
+                  "revision": 1,
+                  "kind": "numeric",
+                  "topicId": "math-functions",
+                  "domainId": "mathematik",
+                  "level": "fachkraft",
+                  "title": "Dekadischer Logarithmus",
+                  "prompt": "Eigenständig rechnen und das Ergebnis anhand des geometrischen bzw. mathematischen Modells prüfen: Dekadischer Logarithmus.",
+                  "article": {
+                    "kind": "module",
+                    "id": "math-functions"
+                  },
+                  "formulaId": "algebra-log",
+                  "calculation": "logarithm",
+                  "givens": [
+                    {
+                      "id": "base",
+                      "label": "Basis",
+                      "value": 10,
+                      "unit": "1",
+                      "quantity": "number"
+                    },
+                    {
+                      "id": "value",
+                      "label": "Argument",
+                      "value": 1000,
+                      "unit": "1",
+                      "quantity": "number"
+                    }
+                  ],
+                  "sought": "Dekadischer Logarithmus",
+                  "quantity": "number",
+                  "answerUnit": "1",
+                  "absoluteToleranceSI": 1e-10,
+                  "relativeTolerance": 0.001,
+                  "sourceIds": [
+                    "openstax-precalculus-v06"
+                  ],
+                  "hint": "Skizze bzw. Definitionsbereich festlegen, in SI umrechnen und erst am Ende runden.",
+                  "steps": [
+                    "Gesucht \\(y=\\log_{10}(1000)\\).",
+                    "\\(10^3=1000\\Rightarrow y=3\\); positives dimensionsloses Argument."
+                  ],
+                  "mistakes": [
+                    "Einheiten vor dem Quadrieren nicht umgerechnet oder einen Durchmesser als Radius eingesetzt.",
+                    "Definitionsbereich, Winkelmaß oder die zweite Lösung nicht beachtet."
+                  ],
+                  "assumptions": "Reelles positives Argument, Basis positiv und ungleich eins.",
+                  "review": "calculation-tested-expert-review-pending",
+                  "requiredCompetencyIds": [
+                    "competency-functions",
+                    "competency-powers"
+                  ]
+                },
+                "expectedSI": 2.9999999999999996
+              },
+              "answer": {
+                "value": "-1/2",
+                "unit": "1"
+              },
+              "grade": {
+                "status": "incorrect",
+                "correct": false,
+                "answerSI": -0.5,
+                "message": "Noch nicht richtig. Prüfe Umrechnung, Formel und eingesetzte Werte."
+              }
+            }
+          ]
+        }
+      ],
+      "read": {
+        "math-fractions": {
+          "revision": 1,
+          "levels": [
+            "grundlagen"
+          ]
+        },
+        "chemistry-amount": {
+          "revision": 1,
+          "levels": [
+            "fachkraft"
+          ]
+        }
+      },
+      "answers": {
+        "math-fractions-q1": {
+          "optionId": "math-fractions-q1-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:00:00.000Z"
+        },
+        "case-pipe-q1": {
+          "optionId": "case-pipe-q1-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:01:00.000Z"
+        },
+        "case-pipe-q2": {
+          "optionId": "case-pipe-q2-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:01:00.000Z"
+        },
+        "math-algebra-q1": {
+          "optionId": "math-algebra-q1-option-0",
+          "correct": true,
+          "questionRevision": 1,
+          "answeredAt": "2026-10-28T10:01:00.000Z"
+        }
+      },
+      "reviews": {
+        "math-fractions-card1": {
+          "cardRevision": 1,
+          "repetitions": 1,
+          "intervalDays": 1,
+          "dueAt": "2026-10-29T10:00:00.000Z",
+          "lastReviewedAt": "2026-10-28T10:00:00.000Z"
+        }
+      },
+      "legacySummary": null,
+      "updatedAt": "2026-10-28T10:00:00.000Z",
+      "exerciseDraft": {
+        "taskId": "ac-three-a",
+        "revision": 1,
+        "answer": {
+          "value": "3200",
+          "unit": "W"
+        },
+        "bridgeLessonId": "electric-three-phase",
+        "checked": true,
+        "updatedAt": "2026-10-28T10:03:00.000Z",
+        "workspace": "workshop",
+        "workshop": {
+          "entryId": "ac-three-a",
+          "kind": "numeric",
+          "mode": "independent",
+          "fields": {
+            "given": "U = 400 V; I = 8 A",
+            "sought": "",
+            "formula": "",
+            "transformed": "",
+            "conversion": "",
+            "substitution": "",
+            "plausibility": "Historische eigene Notiz"
+          },
+          "help": 1,
+          "step": 0,
+          "choices": {},
+          "solutionOpen": false,
+          "responses": {
+            "ac-three-a": {
+              "value": "3200",
+              "unit": "W"
+            }
+          },
+          "checkedIds": [
+            "ac-three-a"
+          ]
+        }
+      },
+      "preferences": {
+        "explanation": "simple"
+      },
+      "labDraft": {
+        "calculatorId": "heat-power",
+        "values": {
+          "massFlow": {
+            "value": "0,25",
+            "unit": "kg/s"
+          }
+        },
+        "updatedAt": "2026-10-28T10:00:00.000Z"
+      }
+    },
+    "legacy": {
+      "read": [
+        "kreislauf"
+      ],
+      "attempts": 3,
+      "best": 75,
+      "last": 50
+    },
+    "legacyV2": null,
+    "settings": {}
+  }
+}

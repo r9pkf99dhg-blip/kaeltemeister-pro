@@ -1,6 +1,771 @@
-# Fachliches Prüfregister · Version 0.6
+# Fachliches Prüfregister · Version 0.8
 
 Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.
+
+## property-case:r134a-basis-v1: Basiskreis: −10 / 35 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-kuehlraum-v1: Vergleich: −5 / 40 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-verdampfung-v1: Höheres Verdampfungsniveau: 0 / 35 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-verfluessigung-v1: Höheres Verflüssigungsniveau: −10 / 45 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-ueberhitzung-v1: Mehr Überhitzung: −10 / 35 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-unterkuehlung-v1: Mehr Unterkühlung: −10 / 35 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-eta075-v1: Endzustand mit ηis = 0,75
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-case:r134a-transfer-v1: Transferfall: 5 / 40 °C
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.
+- Annahmen: Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.
+- Mögliche Fehler: Keine Freigabe für Anlagenplanung oder R134a-Verwendung. Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-component-compressor-v08: Bauteil zuordnen: Verdichter
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Der Verdichter führt Arbeit zu und erhöht vom Nieder- auf das Hochdruckniveau.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-component-condenser-v08: Bauteil zuordnen: Verflüssiger
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Die Wärmeabgabe 2→3 umfasst im Modell Enthitzung, Kondensation und Unterkühlung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-component-valve-v08: Bauteil zuordnen: Expansionsorgan
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Die adiabatische Drossel ohne Wellenarbeit ist bei vernachlässigter Geschwindigkeits-/Höhenänderung isenthalp.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-component-evaporator-v08: Bauteil zuordnen: Verdampfer
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Die Strecke 4→1 nimmt Wärme auf; die Systemgrenze schließt hier zugeordnete Überhitzung ein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-diagram-evap-v08: Diagramm-Challenge: Verdampfung
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: 4→1 ist im idealen Modell die isobare niederdruckseitige Wärmeaufnahme.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-diagram-throttle-v08: Diagramm-Challenge: Drosselung
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Druck fällt auf der logarithmischen Achse, h3=h4 bleibt die horizontale Koordinate.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-diagram-high-v08: Diagramm-Challenge: Hochdruckseite
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Im Modell liegen Verdichteraustritt und Verflüssigeraustritt auf dem hohen gemeinsamen Druckniveau.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-error-reference-v08: Fehleranalyse: Bezugsniveau
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Erst ein gemeinsamer Bezug erlaubt die passende Differenz. Der Fehler ist im vorgegebenen Rechenweg erkennbar; keine Diagnose deines eigenen Denkwegs.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-error-cp-v08: Fehleranalyse: Phasenwechsel
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Ein Phasenwechsel kann bei konstanter Sättigungstemperatur Wärme aufnehmen; cpΔT allein genügt nicht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-transfer-electric-v08: Transfer: Fluid und Gesamtanlage
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Die Fluidbilanz bestimmt nicht automatisch den elektrischen Gesamtbedarf. Zusätzliche reale Beiträge müssen separat bilanziert werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-predict-increase-v08: Ergebnis vorhersagen: Massenstrom
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Q̇0=ṁq0: Bei festen Zuständen bleibt q0 konstant. Die Leistung ändert sich proportional; der fluidbezogene COP bleibt gleich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-predict-decrease-v08: Ergebnis vorhersagen: Massenstrom
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Q̇0=ṁq0: Bei festen Zuständen bleibt q0 konstant. Die Leistung ändert sich proportional; der fluidbezogene COP bleibt gleich.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-compare-v08: Prozessvergleich: höhere Verflüssigungstemperatur
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Nur die genannten Katalogfälle sind gemeint: q0 etwa 152,308→137,541 kJ/kg, w etwa 31,735→37,594 kJ/kg. Das folgt aus ihren berechneten Zuständen, nicht aus einer pauschalen Aussage für beliebige Anlagen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-question:refrig-order-v08: Prozessreihenfolge ab Zustand 1
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Vom Verdichtereintritt folgen Verdichter, Verflüssiger, Expansionsorgan und Verdampfer. Danach ist wieder Zustand 1 erreicht. Die Anfangsposition ist ausdrücklich festgelegt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-1/simple: Kreislauf-Erklärung 1 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Der Verdichter braucht Antriebsenergie. Er saugt Dampf an und verdichtet ihn auf höheren Druck. Der Dampf wird dabei im betrachteten Modell wärmer. Flüssigkeit gehört hier nicht hinein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-1/technical: Kreislauf-Erklärung 1 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: 1 → 2: adiabate Verdichtung von überhitztem Dampf auf Verflüssigungsdruck. Die spezifische Fluidarbeit ist w = h₂ − h₁ > 0. Im ideal-isentropen Vergleich bleibt s konstant. Elektrische Verluste sind darin nicht enthalten.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-2/simple: Kreislauf-Erklärung 2 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Hier gibt das Kältemittel Wärme an die Umgebung ab: Der Dampf kühlt ab, wird flüssig und wird im Referenzmodell anschließend etwas unterkühlt. Bei der Verflüssigung ändert sich die Temperatur eines reinen Stoffs bei gleichem Druck nicht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-2/technical: Kreislauf-Erklärung 2 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: 2 → 3: isobare Wärmeabgabe im verlustfreien Modell: Enthitzung, Kondensation und Unterkühlung. Für das reine Kältemittel ist die Kondensation bei konstantem Druck isotherm. qₖ = h₂ − h₃; das ist abgegebene Wärme pro Masse, keine elektrische Leistung.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-3/simple: Kreislauf-Erklärung 3 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: An der Drossel fällt der Druck ab. Ein Teil der Flüssigkeit verdampft. Im Modell wird weder Arbeit gewonnen noch Wärme übertragen. Die Enthalpie bleibt gleich, obwohl Temperatur und Flüssigkeitsanteil sich ändern.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-3/technical: Kreislauf-Erklärung 3 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: 3 → 4: stationäre adiabate Drossel ohne Wellenarbeit; Änderungen kinetischer und potenzieller Energie vernachlässigt. Daraus folgt h₄ = h₃. Der Austritt ist hier ein Nassdampfgemisch, keine isentrope Expansion.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-4/simple: Kreislauf-Erklärung 4 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Das kalte Gemisch nimmt Wärme auf. Flüssigkeit verdampft. Danach wird der Dampf im Modell noch etwas überhitzt, damit am Verdichter Dampf ankommt. Wärme wird transportiert; Kälte wird nicht als Stoff erzeugt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-4/technical: Kreislauf-Erklärung 4 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: 4 → 1: isobare Wärmezufuhr mit Verdampfung und anschließender Überhitzung. q₀ = h₁ − h₄ > 0 umfasst die modellierte gesamte Verdampferstrecke. Ob alle Anteile dem Nutzkühlraum zugutekommen, hängt von der realen Systemgrenze ab.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-5/simple: Kreislauf-Erklärung 5 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Der Dampf hat Wärme aufgenommen und strömt zum Verdichter. Er ist wärmer als die Siedetemperatur bei diesem Druck.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-5/technical: Kreislauf-Erklärung 5 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Zustand 1: überhitzter Dampf auf Verdampfungsdruck. Überhitzung = T₁ − T_sat(p₁); die Temperatur allein legt den Phasenzustand nicht fest.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-6/simple: Kreislauf-Erklärung 6 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Der Dampf steht nach dem Verdichten unter hohem Druck. Die zugeführte Arbeit hat seine Energie erhöht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-6/technical: Kreislauf-Erklärung 6 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Zustand 2: überhitzter Dampf auf Verflüssigungsdruck. h₂ liegt wegen der zugeführten Fluidarbeit über h₁; der reale Vergleichsfall mit η_is = 0,75 braucht bei gleichen Ein-/Austrittsdrücken mehr Fluidarbeit als der isentrope Fall.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-7/simple: Kreislauf-Erklärung 7 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Das Kältemittel ist flüssig. Es ist kälter als die Siedetemperatur bei diesem hohen Druck.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-7/technical: Kreislauf-Erklärung 7 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Zustand 3: unterkühlte Flüssigkeit auf Verflüssigungsdruck. Unterkühlung = T_sat(p₃) − T₃. Die im Referenzfall festgelegte Unterkühlung wird nicht mit der Überhitzung verwechselt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-8/simple: Kreislauf-Erklärung 8 · simple
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Nach der Drossel liegen Flüssigkeit und Dampf gleichzeitig vor. Das Gemisch kann im Verdampfer Wärme aufnehmen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## cycle-language:cycle-explanation-8/technical: Kreislauf-Erklärung 8 · technical
+
+- Fachgebiet: kaelte
+- Status: Entwurf
+- Prüfumfang: Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Zustand 4: Zweiphasengemisch bei Verdampfungsdruck mit h₄ = h₃. Der Dampfgehalt x ist ein Massenanteil zwischen 0 und 1; er ist für überhitzten Dampf oder unterkühlte Flüssigkeit nicht definiert.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## property-diagram:r134a-ph-v1: R134a log-p-h-Diagramm
+
+- Fachgebiet: kaelte
+- Status: Automatisch geprüft
+- Prüfumfang: SHA256, Endlichkeit, log-p-Skalierung, konstante p/h-Prozesse, begrenzte Mittelpunkt-Zeichnungsabweichungen getestet. Kein neuer Zustand durch Zeichnungsinterpolation.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: 201 Sättigungsknoten 220–365 K, drei Dampfgehaltslinien, fünf Isothermen, echte isentrope Verdichtungspunkte; Pa absolut und J/kg intern.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: ηis=0,75: gestrichelte Endpunktverbindung ist kein berechneter Pfad. Keine kritische Kurvenschließung, keine experimentelle Stoffdatenvalidierung.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-state-v08/grundlagen: Zustände, Enthalpie und Referenzniveau · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-enthalpy, refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-state-v08/fachkraft: Zustände, Enthalpie und Referenzniveau · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-enthalpy, refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur. Prüfe zusätzlich Einheit, Phase und denselben Bezug aller Zahlen. Zwei richtig aussehende Zahlen dürfen nicht aus verschiedenen Quellenkonventionen zusammengerechnet werden. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-state-v08/meister: Zustände, Enthalpie und Referenzniveau · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: thermo-enthalpy, refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur. Für den Transfer begründest du selbst, welche Vereinfachung verwendet wird und welche zusätzlichen Angaben eine reale Anlage erfordern würde. Ein richtiges Modellergebnis ersetzt keine Messung oder Fachfreigabe. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-phase-v08/grundlagen: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-q0, evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-phase-v08/fachkraft: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-q0, evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt. Prüfe zusätzlich Einheit, Phase und denselben Bezug aller Zahlen. Zwei richtig aussehende Zahlen dürfen nicht aus verschiedenen Quellenkonventionen zusammengerechnet werden. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-phase-v08/meister: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-q0, evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt. Für den Transfer begründest du selbst, welche Vereinfachung verwendet wird und welche zusätzlichen Angaben eine reale Anlage erfordern würde. Ein richtiges Modellergebnis ersetzt keine Messung oder Fachfreigabe. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-cycle-v08/grundlagen: Kreisprozess und echtes log-p-h lesen · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-q0, refrig-specific-w, refrig-specific-qk, refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-cycle-v08/fachkraft: Kreisprozess und echtes log-p-h lesen · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-q0, refrig-specific-w, refrig-specific-qk, refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse. Prüfe zusätzlich Einheit, Phase und denselben Bezug aller Zahlen. Zwei richtig aussehende Zahlen dürfen nicht aus verschiedenen Quellenkonventionen zusammengerechnet werden. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-cycle-v08/meister: Kreisprozess und echtes log-p-h lesen · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-q0, refrig-specific-w, refrig-specific-qk, refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse. Für den Transfer begründest du selbst, welche Vereinfachung verwendet wird und welche zusätzlichen Angaben eine reale Anlage erfordern würde. Ein richtiges Modellergebnis ersetzt keine Messung oder Fachfreigabe. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-compression-v08/grundlagen: Entropie, ideale Verdichtung und ηis · einfach · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-w, refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-compression-v08/fachkraft: Entropie, ideale Verdichtung und ηis · einfach · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-w, refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen. Prüfe zusätzlich Einheit, Phase und denselben Bezug aller Zahlen. Zwei richtig aussehende Zahlen dürfen nicht aus verschiedenen Quellenkonventionen zusammengerechnet werden. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## language-module:refrig-compression-v08/meister: Entropie, ideale Verdichtung und ηis · einfach · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Eigene sprachliche Ergänzung zur gemeinsamen Fachgrundlage. Struktur, Referenzen und unveränderte gemeinsame Rechenbeispiele getestet; unabhängige sprachliche und fachliche Gesamtprüfung offen.
+- Formel-IDs: refrig-specific-w, refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Du verfolgst dieselben vier Zustandspunkte. Zuerst klärst du die Bedeutung jeder Größe; anschließend vergleichst du einen nachvollziehbaren Modellfall mit seinen ausdrücklich genannten Grenzen. / Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen. Für den Transfer begründest du selbst, welche Vereinfachung verwendet wird und welche zusätzlichen Angaben eine reale Anlage erfordern würde. Ein richtiges Modellergebnis ersetzt keine Messung oder Fachfreigabe. / Die grafische Betrachtung, die Zustandsgrößen und die Bilanz gehören zusammen. Erst eine richtige Systemgrenze, passende Quelle und gültige Einheit machen eine Zahl interpretierbar. Technische Freigaben entstehen daraus nicht automatisch. / Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
 
 ## language-module:math-arithmetic/grundlagen: Zahlen und Rechenregeln · einfach · grundlagen
 
@@ -3617,6 +4382,186 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## module:refrig-state-v08/grundlagen: Zustände, Enthalpie und Referenzniveau · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-enthalpy, refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Ein ausdrücklich synthetisches Bilanzbeispiel mit gemeinsamem Bezug verwendet h1 = 400 und h4 = 250 kJ/kg: Die Differenz beträgt 150 kJ/kg. Werden beide Werte um 100 kJ/kg verschoben, bleibt die Differenz 150 kJ/kg. Diese runden Werte sind kein R134a-Stoffwertdatensatz.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-state-v08/fachkraft: Zustände, Enthalpie und Referenzniveau · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-enthalpy, refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Ein ausdrücklich synthetisches Bilanzbeispiel mit gemeinsamem Bezug verwendet h1 = 400 und h4 = 250 kJ/kg: Die Differenz beträgt 150 kJ/kg. Werden beide Werte um 100 kJ/kg verschoben, bleibt die Differenz 150 kJ/kg. Diese runden Werte sind kein R134a-Stoffwertdatensatz.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-state-v08/meister: Zustände, Enthalpie und Referenzniveau · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: thermo-enthalpy, refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Ein ausdrücklich synthetisches Bilanzbeispiel mit gemeinsamem Bezug verwendet h1 = 400 und h4 = 250 kJ/kg: Die Differenz beträgt 150 kJ/kg. Werden beide Werte um 100 kJ/kg verschoben, bleibt die Differenz 150 kJ/kg. Diese runden Werte sind kein R134a-Stoffwertdatensatz.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-phase-v08/grundlagen: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-q0, evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Im synthetischen Beispiel seien hfl = 200 und hd = 400 kJ/kg am selben Druck vorgegeben. Bei x = 0,25 folgt h = 250 kJ/kg. Diese Zahlen erklären die Massenmischungsbeziehung, nicht reale R134a-Eigenschaften. Echte Modellwerte zeigt der gekennzeichnete CoolProp-Katalog.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-phase-v08/fachkraft: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-q0, evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Im synthetischen Beispiel seien hfl = 200 und hd = 400 kJ/kg am selben Druck vorgegeben. Bei x = 0,25 folgt h = 250 kJ/kg. Diese Zahlen erklären die Massenmischungsbeziehung, nicht reale R134a-Eigenschaften. Echte Modellwerte zeigt der gekennzeichnete CoolProp-Katalog.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-phase-v08/meister: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-q0, evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Im synthetischen Beispiel seien hfl = 200 und hd = 400 kJ/kg am selben Druck vorgegeben. Bei x = 0,25 folgt h = 250 kJ/kg. Diese Zahlen erklären die Massenmischungsbeziehung, nicht reale R134a-Eigenschaften. Echte Modellwerte zeigt der gekennzeichnete CoolProp-Katalog.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-cycle-v08/grundlagen: Kreisprozess und echtes log-p-h lesen · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-q0, refrig-specific-w, refrig-specific-qk, refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Synthetisches Rechenmodell: h1 = 400, h2 = 450 und h3 = h4 = 250 kJ/kg. Dann q0 = 150, w = 50 und qk = 200 kJ/kg; COP = 3. Bei 0,05 kg/s folgen 7,5 kW Wärmeaufnahme und 2,5 kW Fluidverdichterleistung. Reale R134a-Zahlen bleiben davon getrennt im versionierten Katalog.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-cycle-v08/fachkraft: Kreisprozess und echtes log-p-h lesen · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-q0, refrig-specific-w, refrig-specific-qk, refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Synthetisches Rechenmodell: h1 = 400, h2 = 450 und h3 = h4 = 250 kJ/kg. Dann q0 = 150, w = 50 und qk = 200 kJ/kg; COP = 3. Bei 0,05 kg/s folgen 7,5 kW Wärmeaufnahme und 2,5 kW Fluidverdichterleistung. Reale R134a-Zahlen bleiben davon getrennt im versionierten Katalog.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-cycle-v08/meister: Kreisprozess und echtes log-p-h lesen · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-q0, refrig-specific-w, refrig-specific-qk, refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Synthetisches Rechenmodell: h1 = 400, h2 = 450 und h3 = h4 = 250 kJ/kg. Dann q0 = 150, w = 50 und qk = 200 kJ/kg; COP = 3. Bei 0,05 kg/s folgen 7,5 kW Wärmeaufnahme und 2,5 kW Fluidverdichterleistung. Reale R134a-Zahlen bleiben davon getrennt im versionierten Katalog.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-compression-v08/grundlagen: Entropie, ideale Verdichtung und ηis · grundlagen
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-w, refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Für ein synthetisches Beispiel mit h1 = 400 und h2s = 440 kJ/kg führt ηis = 0,8 zu h2 = 450 kJ/kg. Die zusätzliche Fluidenthalpie beträgt 50 statt 40 kJ/kg. Das allein bestimmt noch keine elektrische Aufnahmeleistung und ist kein realer R134a-Datensatz.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-compression-v08/fachkraft: Entropie, ideale Verdichtung und ηis · fachkraft
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-w, refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Für ein synthetisches Beispiel mit h1 = 400 und h2s = 440 kJ/kg führt ηis = 0,8 zu h2 = 450 kJ/kg. Die zusätzliche Fluidenthalpie beträgt 50 statt 40 kJ/kg. Das allein bestimmt noch keine elektrische Aufnahmeleistung und ist kein realer R134a-Datensatz.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## module:refrig-compression-v08/meister: Entropie, ideale Verdichtung und ηis · meister
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Struktur und Referenzen automatisch geprüft; Teilbeziehungen ggf. quellenbasiert. Vollständiger Text einschließlich Praxisbezug ist noch Entwurf zur Fachabnahme.
+- Formel-IDs: refrig-specific-w, refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Für ein synthetisches Beispiel mit h1 = 400 und h2s = 440 kJ/kg führt ηis = 0,8 zu h2 = 450 kJ/kg. Die zusätzliche Fluidenthalpie beträgt 50 statt 40 kJ/kg. Das allein bestimmt noch keine elektrische Aufnahmeleistung und ist kein realer R134a-Datensatz.
+- Annahmen: Eigene Lernmodelle, keine offizielle Prüfungsaufgabe, kein Stoffeinsatz- oder Auslegungsnachweis. Unabhängige menschliche Fachprüfung offen.
+- Mögliche Fehler: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## module:math-arithmetic/grundlagen: Zahlen und Rechenregeln · grundlagen
 
 - Fachgebiet: mathematik
@@ -5187,6 +6132,81 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Referenz / Rechnung: Alternativ mit flächenbezogenen Widerständen: Modell A hat 2,5 m²·K/W, Modell B 5 m²·K/W. Einsetzen von AΔT = 40 m²·K ergibt 40/2,5 = 16 W und 40/5 = 8 W. Beide Lösungswege verwenden dieselbe stationäre Systemgrenze.
 - Annahmen: Entscheidung: Im stationären ebenen Modell halbiert sich der Wärmestrom. Für eine reale Verbesserung sind Wärmebrücken, Feuchte, Kontakt- und Übergangswiderstände, temperaturabhängige λ-Werte sowie Geometrie und Zeitverhalten zu prüfen. Bei einem Rohr ist die Fläche radial nicht konstant; das ebene Modell kann deshalb nicht unverändert als Rohrdämmnachweis dienen.
 - Mögliche Fehler: Schichtenwiderstände ohne gemeinsame Fläche addieren. Eine Halbierung im idealen Modell als gemessene Einsparung einer realen Anlage ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:refrig-specific-q0: Spezifischer niederdruckseitiger Wärmeeintrag
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: q0 = h1 − h4; J/kg
+- Annahmen: Stationäres Fluidmodell, gleiche Referenz; gesamte Modellstrecke 4→1 einschließlich zugeordneter Überhitzung, keine automatische Nutzwärmezuordnung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:refrig-specific-w: Spezifische Fluidverdichterarbeit
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: refrig-specific-w
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: w = h2 − h1; J/kg
+- Annahmen: Stationär, adiabatisch, Änderungen kinetischer/potenzieller Energie vernachlässigt; keine elektrische Gesamtleistung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:refrig-specific-qk: Spezifische hochdruckseitige Wärmeabgabe
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: refrig-specific-qk
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: qk = h2 − h3 = q0 + w; J/kg
+- Annahmen: Betrag der stationären Fluidwärmeabgabe, gleiche Referenzen und isenthalpe Drossel h4=h3; weitere Energieterme vernachlässigt.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:refrig-cycle-cop: Fluidbezogene Kälteleistungszahl
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-cop-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42236/index.cnxml; Modul m42236, Gleichungen eip-462, fs-id1169736588910 und eip-304
+- Referenz / Rechnung: COP = q0 / w; 1
+- Annahmen: q0>0 und w>0 im selben Modell; kein Gesamt-COP einschließlich Motor/Nebenaggregaten.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## formula:refrig-isentropic-efficiency: Isentroper Verdichtervergleich
+
+- Fachgebiet: fachuebergreifend
+- Status: Automatisch geprüft
+- Prüfumfang: Rechenbeispiele und Einheiten automatisch geprüft. Externer Aussagenabgleich insbesondere für Messvoraussetzungen offen.
+- Formel-IDs: refrig-isentropic-efficiency
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: ηis = (h2s−h1)/(h2−h1); 1
+- Annahmen: Adiabatisches stationäres Fluidmodell, gleicher Ein-/Austrittsdruck und Bezugszustand; 0<ηis≤1; keine elektrische Anlagenwirkungsgradangabe.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
 - Fachprüfer/in: ____________________
 - Datum / Fundstelle / Freigabeumfang: ____________________
@@ -6955,6 +7975,186 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: —
 - Quellen: openstax-circuits-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42356/index.cnxml; eip-288, eip-801, eip-531: Reihensumme, Knotenbilanz und Kehrwertsumme | openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
 - Referenz / Rechnung: Bei zwei gleichen parallelen Widerständen verdoppelt sich der Leitwert. Der Ersatzwiderstand halbiert sich daher auf 50 Ω; in Reihe wären es dagegen 200 Ω.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-state-v08-q1: Was bleibt bei gemeinsamer Verschiebung aller Enthalpiereferenzen gleich?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Eine konstante gemeinsame Verschiebung hebt sich in hA − hB auf; unterschiedliche Bezugskonventionen dürfen nicht gemischt werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-state-v08-q2: Welche Angaben reichen im Zweiphasengleichgewicht eines reinen Stoffes nicht allein aus?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Druck und Sättigungstemperatur sind gekoppelt; die Dampfmasse ist damit noch nicht festgelegt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-state-v08-q3: Was bedeutet das IIR-Niveau bei 0 °C Sattflüssigkeit?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Absolute h-Werte sind bezogen; passende Differenzen innerhalb derselben Konvention gehen in Bilanzen ein.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-phase-v08-q1: Was beschreibt x = 0,25 im Zweiphasengebiet?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: x ist der Dampf-Massenanteil, kein Volumenanteil. Entscheidend sind die angegebenen Modellbedingungen und das gemeinsame Bezugsniveau der Zustände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-phase-v08-q2: Welche Rechnung reicht über einen Phasenwechsel nicht allgemein aus?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Latente Wärme kann ohne Temperaturänderung übertragen werden. Entscheidend sind die angegebenen Modellbedingungen und das gemeinsame Bezugsniveau der Zustände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-phase-v08-q3: Kann ein Gesamtwärmeeintrag 4→1 automatisch als nützliche Raumkälteleistung gelten?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Leitungswärme und andere Beiträge müssen bei realen Anlagen getrennt zugeordnet werden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-cycle-v08-q1: Welcher Zustand liegt direkt nach dem Expansionsorgan?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Unsere Konvention setzt 4 an den Verdampfereintritt nach der Drossel. Entscheidend sind die angegebenen Modellbedingungen und das gemeinsame Bezugsniveau der Zustände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-cycle-v08-q2: Welche Beziehung gilt für die adiabatische Drossel ohne Wellenarbeit?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Das vereinfachte stationäre Drosselmodell ist isenthalp; Temperatur und Entropie müssen nicht gleich bleiben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-cycle-v08-q3: Was bedeuten gleiche vertikale Abstände im log-p-h?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Auf der logarithmischen Achse sind zum Beispiel 1→2 und 2→4 bar gleich weit. Entscheidend sind die angegebenen Modellbedingungen und das gemeinsame Bezugsniveau der Zustände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-compression-v08-q1: Wann ist die Verdichtung im hier idealen Modell isentrop?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Beide Idealisierungen sind nötig; Wärmeisolierung allein beseitigt Irreversibilität nicht.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-compression-v08-q2: Was ist der Bezug für h2s?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Der isentrope Endzustand nutzt dieselbe Stoffquelle und Entropiereferenz. Entscheidend sind die angegebenen Modellbedingungen und das gemeinsame Bezugsniveau der Zustände.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## question:refrig-compression-v08-q3: Was beschreibt ηis hier nicht?
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Optionen, Lösungsreferenz und Erklärung strukturell geprüft; Zahlenfälle durch separate Referenztests. Formulierungs- und Transferprüfung durch Fachperson offen.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Motor, Nebenaggregate und weitere Verluste sind getrennt zu modellieren. Entscheidend sind die angegebenen Modellbedingungen und das gemeinsame Bezugsniveau der Zustände.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -8830,6 +10030,126 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Formel-IDs: —
 - Quellen: openstax-circuits-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42356/index.cnxml; eip-288, eip-801, eip-531: Reihensumme, Knotenbilanz und Kehrwertsumme | openstax-ohm-github: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/modules/m42344/index.cnxml; eip-218, eip-702, eip-486: I = U/R, Ω = V/A, U = IR
 - Referenz / Rechnung: Symmetrie und Grenzfälle unterstützen die Ergebnisprüfung. Der Ersatzwiderstand bildet das äußere Strom-Spannungs-Verhalten des Modells ab, enthält aber keine Freigabe von Schutzmaßnahmen oder Bauteilbelastbarkeit.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-state-v08-card1: Was ist die Grundidee: Zustände, Enthalpie und Referenzniveau?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Ein Zustand beschreibt einen Stoff an einer bestimmten Stelle. Druck und Temperatur gehören dazu. Im Flüssigkeits- oder Dampfgebiet reichen zwei geeignete unabhängige Angaben, um weitere Stoffwerte zu bestimmen. Bei Sättigung sind Druck und Temperatur gekoppelt; dann brauchst du zusätzlich zum Beispiel den Dampfgehalt. Die spezifische Enthalpie h wird pro Kilogramm angegeben. Sie ist keine Temperatur.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-state-v08-card2: Welchen Fehler vermeidest du bei Zustände, Enthalpie und Referenzniveau?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-phase-v08-card1: Was ist die Grundidee: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Flüssigkeit und Dampf können bei passendem Druck zusammen vorkommen. Sattflüssigkeit steht am Beginn der Verdampfung, Sattdampf an ihrem Ende. Dazwischen beschreibt der Dampfgehalt x den Anteil der Dampfmasse. x = 0 bedeutet Sattflüssigkeit, x = 1 Sattdampf. Das ist kein Volumenanteil. Beim Verdampfen kann ein Stoff Wärme aufnehmen, obwohl seine Sättigungstemperatur bei konstantem Druck gleich bleibt.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-phase-v08-card2: Welchen Fehler vermeidest du bei Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-cycle-v08-card1: Was ist die Grundidee: Kreisprozess und echtes log-p-h lesen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Folge dem Kältemittel: 1 liegt vor dem Verdichter, 2 danach, 3 nach dem Verflüssiger und 4 nach dem Expansionsorgan. Der Verdichter benötigt Arbeit. Auf der Hochdruckseite wird Wärme abgegeben. Nach der Drosselung nimmt der Stoff auf der Niederdruckseite Wärme auf. Im Diagramm steht h waagerecht; p ist ein Absolutdruck auf einer logarithmischen Achse. Gleiche Abstände bedeuten gleiche Druckverhältnisse.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-cycle-v08-card2: Welchen Fehler vermeidest du bei Kreisprozess und echtes log-p-h lesen?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-compression-v08-card1: Was ist die Grundidee: Entropie, ideale Verdichtung und ηis?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Entropie ist eine eigene Zustandsgröße. Sie ist weder Temperatur noch einfach eine Wärmemenge. Bei einer idealen adiabatischen und reversiblen Verdichtung bleibt die spezifische Entropie s gleich. Der Druck steigt, und der Verdichter muss Arbeit zuführen. Eine reale Verdichtung ist nicht schon deshalb ideal, weil sie gut gedämmt ist. Reibung und andere irreversible Vorgänge können Entropie erzeugen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## card:refrig-compression-v08-card2: Welchen Fehler vermeidest du bei Entropie, ideale Verdichtung und ηis?
+
+- Fachgebiet: thermodynamik
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994. | openstax-thermal-v06: https://github.com/openstax/osbooks-college-physics-bundle/blob/66fcef29596e3a32818162b837dd0c85b754cbad/collections/college-physics-2e.collection.xml; m42224 Temperature Change and Heat Capacity; m42225 Phase Change and Latent Heat; m42226 Heat Transfer Methods; m42228 Conduction; m42229 Convection; m42230 Radiation; m42232 The First Law of Thermodynamics.
+- Referenz / Rechnung: Stoffwerte verschiedener Referenzniveaus oder Phasen unbemerkt mischen. Eine Modellbilanz als reale Anlagenfreigabe oder elektrischen Gesamt-COP ausgeben.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11462,14 +12782,239 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## numeric:refrig-basis-q0-v08: Spezifischer Wärmeeintrag · Basiskreis: −10 / 35 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4; die gesuchte spezifische Energie trägt J/kg. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-basis-qk-v08: Spezifische Wärmeabgabe · Basiskreis: −10 / 35 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-qk
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / qk=h2−h3; die hochdruckseitige spezifische Wärmeabgabe ist ein positiver Modellbetrag. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-basis-w-v08: Spezifische Fluidverdichterarbeit · Basiskreis: −10 / 35 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-w
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / w=h2−h1; dies ist spezifische Fluidarbeit. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-basis-cop-v08: Fluidbezogener Kälte-COP · Basiskreis: −10 / 35 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4 und w=h2−h1 bilden, danach COP=q0/w. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-basis-power-v08: Modell-Wärmeleistung · Basiskreis: −10 / 35 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4, danach Q̇0=ṁq0. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-kuehlraum-q0-v08: Spezifischer Wärmeeintrag · Vergleich: −5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4; die gesuchte spezifische Energie trägt J/kg. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-kuehlraum-qk-v08: Spezifische Wärmeabgabe · Vergleich: −5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-qk
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / qk=h2−h3; die hochdruckseitige spezifische Wärmeabgabe ist ein positiver Modellbetrag. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-kuehlraum-w-v08: Spezifische Fluidverdichterarbeit · Vergleich: −5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-w
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / w=h2−h1; dies ist spezifische Fluidarbeit. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-kuehlraum-cop-v08: Fluidbezogener Kälte-COP · Vergleich: −5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4 und w=h2−h1 bilden, danach COP=q0/w. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-kuehlraum-power-v08: Modell-Wärmeleistung · Vergleich: −5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4, danach Q̇0=ṁq0. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-transfer-q0-v08: Spezifischer Wärmeeintrag · Transferfall: 5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-q0
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4; die gesuchte spezifische Energie trägt J/kg. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-transfer-qk-v08: Spezifische Wärmeabgabe · Transferfall: 5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-qk
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / qk=h2−h3; die hochdruckseitige spezifische Wärmeabgabe ist ein positiver Modellbetrag. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-transfer-w-v08: Spezifische Fluidverdichterarbeit · Transferfall: 5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-specific-w
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / w=h2−h1; dies ist spezifische Fluidarbeit. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-transfer-cop-v08: Fluidbezogener Kälte-COP · Transferfall: 5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: refrig-cycle-cop
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4 und w=h2−h1 bilden, danach COP=q0/w. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## numeric:refrig-transfer-power-v08: Modell-Wärmeleistung · Transferfall: 5 / 40 °C
+
+- Fachgebiet: thermodynamik
+- Status: Automatisch geprüft
+- Prüfumfang: Jedes Soll-Ergebnis mit unabhängig festgelegtem Referenzwert, Einheiten und Bewertungstoleranz getestet. Teilformeln quellenbasiert, vollständiger Anwendungsfall noch nicht menschlich freigegeben.
+- Formel-IDs: evaporator-power
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Gegeben: vier spezifische Enthalpien desselben Stoffes und IIR-Bezugs. Gesucht: die benannte Größe. / h-Werte nötigenfalls von kJ/kg in J/kg umrechnen; h4=h3 und positive Verdichterarbeit kontrollieren. / q0=h1−h4, danach Q̇0=ṁq0. / Erst das Endergebnis in die Zieleinheit umrechnen; Größenordnung und Modellgrenzen nennen.
+- Annahmen: Stationärer geschlossener Fluidkreislauf, keine Druckverluste, adiabatischer Verdichter und Drossel, letztere ohne Wellenarbeit; Änderungen von Geschwindigkeit/Höhe vernachlässigt. Reines R134a, IIR. Q̇0 umfasst die ganze Modellstrecke 4→1 und ist nicht automatisch nutzbare Raumkälte.
+- Mögliche Fehler: kJ/kg und J/kg oder spezifische Energie und Leistung verwechseln. Enthalpiereferenzen mischen oder Fluid-COP als elektrischen Anlagen-COP ausgeben.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## term:enthalpie: Enthalpie
 
 - Fachgebiet: fachuebergreifend
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Zustandsgröße h in kJ/kg. Ihre Differenz beschreibt hier den Energieumsatz je Kilogramm im stationären Durchfluss.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Zustandsgröße h in kJ/kg. Ihre Differenz beschreibt hier den Energieumsatz je Kilogramm im stationären Durchfluss. / Die Enthalpie H gehört zur betrachteten Stoffmenge; pro Kilogramm heißt sie h. / Extensive Enthalpie H = U + pV; spezifische Enthalpie h = H/m. Referenzabhängige Absolutwerte sind nicht automatisch nutzbare Wärme. / H in J; h in J/kg / Bei gleichen Zuständen wächst H mit der Masse; h bleibt gleich. / H in J mit h in J/kg oder mit Temperatur verwechseln.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11483,8 +13028,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Übergang von Flüssigkeit zu Dampf unter Wärmeaufnahme.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Übergang von Flüssigkeit zu Dampf unter Wärmeaufnahme. / Der Stoff nimmt Wärme auf und geht von Flüssigkeit zu Dampf über. / Im idealisierten Verdampfer erfolgt Wärmeaufnahme auf niedrigem konstantem Druckniveau; gesamte Modellstrecke q0 = h1 − h4. / q0 J/kg; Q̇0 W / Bei konstantem ṁ verdoppelt doppelte passende Enthalpiedifferenz die Modellleistung. / Den Phasenwechsel allein mit cpΔT beschreiben.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11498,8 +13043,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Übergang von Dampf zu Flüssigkeit unter Wärmeabgabe.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Übergang von Dampf zu Flüssigkeit unter Wärmeabgabe. / Der Dampf gibt Wärme ab und wird wieder flüssig. / Die idealisierte Hochdruckstrecke umfasst Enthitzung, Kondensation und hier zugeordnete Unterkühlung; qk = h2 − h3. / qk J/kg; Q̇k W / Im selben stationären Modell ist die Wärmeabgabe gleich Wärmeaufnahme plus Fluidverdichterarbeit. / Nur q0 als Verflüssigerwärme ansetzen und die Verdichterarbeit vergessen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11513,8 +13058,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Temperaturabstand eines Dampfes oberhalb der zum örtlichen Druck gehörenden Sättigungstemperatur.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Temperaturabstand eines Dampfes oberhalb der zum örtlichen Druck gehörenden Sättigungstemperatur. / Der Dampf ist wärmer als die passende Sättigungstemperatur. / Differenz von Dampftemperatur und zugehöriger Sattdampftemperatur bei passendem Druck; bei Gemischen passenden Dew-Bezug beachten. / K / Zustand 1 liegt im Basiskatalog 5 K über der R134a-Verdampfungstemperatur. / Beliebigen Messdruck oder bei Gemischen den falschen Sättigungsbezug verwenden.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11528,8 +13073,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Temperaturabstand einer Flüssigkeit unterhalb der zum örtlichen Druck gehörenden Sättigungstemperatur.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Temperaturabstand einer Flüssigkeit unterhalb der zum örtlichen Druck gehörenden Sättigungstemperatur. / Die Flüssigkeit ist kälter als die passende Sättigungsflüssigkeit. / Differenz der passenden Sattflüssigkeitstemperatur und Flüssigkeitstemperatur; bei Gemischen Bubble-Bezug beachten. / K / Zustand 3 liegt im Basiskatalog 3 K unter der Verflüssigungstemperatur. / Unterkühlung als negativen absoluten Temperaturwert interpretieren.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11543,8 +13088,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Druckerhöhung des gasförmigen Kältemittels durch zugeführte Arbeit.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Druckerhöhung des gasförmigen Kältemittels durch zugeführte Arbeit. / Der Verdichter erhöht den Druck und benötigt dafür Arbeit. / Im hier adiabatischen stationären Modell steigt h um die spezifische Fluidverdichterarbeit; ideal gilt s2s = s1. / p in Pa, w in J/kg / 1→2 führt vom Nieder- zum Hochdruckniveau. / Fluidarbeit mit der gesamten elektrischen Anlagenaufnahme gleichsetzen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11573,8 +13118,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Druckabsenkung am Expansionsorgan, näherungsweise bei konstanter spezifischer Enthalpie.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Druckabsenkung am Expansionsorgan, näherungsweise bei konstanter spezifischer Enthalpie. / Das Expansionsorgan senkt den Druck; im Modell bleibt h gleich. / Adiabatischer stationärer Drosselprozess ohne Wellenarbeit und relevante Änderungen kinetischer/potenzieller Energie: h4 = h3. / h in J/kg, p in Pa / 3→4 ist im log-p-h bei gleichem h eine vertikale Linie nach unten. / Isenthalp mit isentrop oder allgemein isotherm gleichsetzen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11723,8 +13268,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Im einfachen Modell senkrechte Kraft pro Fläche. SI-Einheit Pa = N/m²; absolute und relative Druckbezüge unterscheiden.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Im einfachen Modell senkrechte Kraft pro Fläche. SI-Einheit Pa = N/m²; absolute und relative Druckbezüge unterscheiden. / Druck beschreibt die Belastung einer Fläche. Der Bezug muss bekannt sein. / Im einfachen Modell ist p die senkrechte Kraft pro Fläche; im Diagramm gilt Absolutdruck. / Pa; bar = 100000 Pa / 2 bar absolut sind 200000 Pa absolut. / Überdruck und Absolutdruck sind nicht dieselben Bezugsgrößen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -11738,8 +13283,8 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Status: Entwurf
 - Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
 - Formel-IDs: —
-- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
-- Referenz / Rechnung: Masse pro Volumen desselben Stoffzustands, SI-Einheit kg/m³. Kein allgemeiner konstanter Wert für beliebige Drücke oder Temperaturen.
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Masse pro Volumen desselben Stoffzustands, SI-Einheit kg/m³. Kein allgemeiner konstanter Wert für beliebige Drücke oder Temperaturen. / Dichte sagt, welche Masse in einem bestimmten Volumen steckt. / Massendichte ρ = m/V ist stoff- und zustandsabhängig. / kg/m³ / Im Katalog unterscheiden sich Flüssigkeits- und Dampfdichte am selben Sättigungsdruck stark. / Eine einzige konstante Dichte für Flüssigkeit und Dampf annehmen.
 - Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
 - Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
 - Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
@@ -12032,6 +13577,171 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Datum / Fundstelle / Freigabeumfang: ____________________
 - Korrekturbedarf / Entscheidung: ____________________
 
+## term:refrig-state: Thermodynamischer Zustand
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Ein thermodynamischer Gleichgewichtszustand wird durch geeignete unabhängige Zustandsgrößen beschrieben. / Zustand heißt: So ist der Stoff gerade an dieser Stelle. / Ein thermodynamischer Gleichgewichtszustand wird durch geeignete unabhängige Zustandsgrößen beschrieben. / abhängig von Größe / Reines R134a außerhalb der Sättigung kann etwa durch p und T bestimmt sein. / P und T legen im Zweiphasengleichgewicht x nicht zusätzlich fest.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-temperature: Temperatur
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Temperatur ist eine intensive Zustandsgröße; bei Phasenwechsel kann bei konstantem Druck Wärme ohne Temperaturänderung übertragen werden. / Temperatur beschreibt den thermischen Zustand, nicht eine gespeicherte Wärmemenge. / Temperatur ist eine intensive Zustandsgröße; bei Phasenwechsel kann bei konstantem Druck Wärme ohne Temperaturänderung übertragen werden. / K bzw. °C / 0 °C entspricht 273,15 K. / Temperatur mit Wärmeenergie oder Enthalpie gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-absolute-temperature: Absolute Temperatur
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Thermodynamische absolute Temperatur T; zur Celsiusskala gilt T/K = t/°C + 273,15. / Kelvin beginnt beim absoluten Temperaturnullpunkt. / Thermodynamische absolute Temperatur T; zur Celsiusskala gilt T/K = t/°C + 273,15. / K / −10 °C entsprechen 263,15 K; eine Differenz von 5 °C entspricht 5 K. / Den Offset auf Temperaturdifferenzen anwenden oder negative Kelvin verwenden.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-specific-volume: Spezifisches Volumen
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Spezifisches Volumen v = V/m = 1/ρ für positive Dichte. / Das ist der Platz, den ein Kilogramm des Stoffes einnimmt. / Spezifisches Volumen v = V/m = 1/ρ für positive Dichte. / m³/kg / Bei vorgegebener Dichte 1000 kg/m³ ist v = 0,001 m³/kg; dies ist ein Rechenbeispiel, kein universeller R134a-Wert. / Volumen, Volumenstrom und spezifisches Volumen verwechseln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-specific-enthalpy: Spezifische Enthalpie
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: h = u + pv; Differenzen bei gleicher Referenz gehen in geeignete stationäre offene Energiebilanzen ein. / h hilft, die Energieänderung pro Kilogramm zwischen zwei Zuständen zu bilanzieren. / h = u + pv; Differenzen bei gleicher Referenz gehen in geeignete stationäre offene Energiebilanzen ein. / J/kg oder kJ/kg / IIR setzt Sattflüssigkeit bei 0 °C auf 200 kJ/kg. Eine gemeinsame Referenzverschiebung ändert passende Differenzen nicht. / IIR- und ASHRAE-Werte unbemerkt in einer Differenz mischen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-entropy: Spezifische Entropie
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Für reversible Wärmeübertragung ist dS = δQrev/T; im idealen adiabatischen reversiblen Fluidprozess ist s konstant. Irreversibilität erzeugt Entropie. / s ist eine eigene Zustandsgröße. Bei idealer adiabatischer und reversibler Verdichtung bleibt sie gleich. / Für reversible Wärmeübertragung ist dS = δQrev/T; im idealen adiabatischen reversiblen Fluidprozess ist s konstant. Irreversibilität erzeugt Entropie. / J/(kg·K) für s; J/K für S / Der ideale Endzustand 2s wird aus p2 und s1 bestimmt. / Adiabatisch allein mit reversibel oder isentrop gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-phase-boundary: Phasengrenze
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Sättigungsgrenzen trennen im dargestellten subkritischen Reinstoffmodell Flüssigkeits-, Zweiphasen- und Dampfgebiet. / Hier beginnt oder endet der Übergang zwischen Flüssigkeit und Dampf. / Sättigungsgrenzen trennen im dargestellten subkritischen Reinstoffmodell Flüssigkeits-, Zweiphasen- und Dampfgebiet. / Zustände mit p, T, h / Die beiden Kurven sind Sattflüssigkeits- und Sattdampfgrenze aus HEOS::R134a. / Beliebige dekorative Kurven als reale Stoffgrenzen zeichnen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-saturated-liquid: Sattflüssigkeit
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Grenzzustand x = 0 im Flüssigkeits-Dampf-Gleichgewicht eines reinen Stoffes. / Die Flüssigkeit steht unter den passenden Bedingungen am Beginn der Verdampfung. / Grenzzustand x = 0 im Flüssigkeits-Dampf-Gleichgewicht eines reinen Stoffes. / x = 0; h in J/kg / Der Generator verwendet das Zustandspaar T,Q=0 statt eines mehrdeutigen P,T-Paares genau auf der Sättigung. / Sattflüssigkeit mit unterkühlter Flüssigkeit gleichsetzen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-saturated-vapor: Sattdampf
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Grenzzustand x = 1 an der Sattdampfgrenze; weitere Erwärmung bei gleichem Druck führt zu Überhitzung. / Der letzte Flüssigkeitsanteil ist gerade verdampft. / Grenzzustand x = 1 an der Sattdampfgrenze; weitere Erwärmung bei gleichem Druck führt zu Überhitzung. / x = 1; h in J/kg / Der Generator nutzt T,Q=1 für die Sattdampflinie. / Sattdampf ohne zusätzliche Angabe als überhitzt bezeichnen.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-wet-region: Nassdampfgebiet
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: Zweiphasengebiet des reinen Stoffes zwischen x = 0 und x = 1 bei Gleichgewichtsbedingungen. / Hier sind Flüssigkeit und Dampf gemeinsam vorhanden. / Zweiphasengebiet des reinen Stoffes zwischen x = 0 und x = 1 bei Gleichgewichtsbedingungen. / 0 ≤ x ≤ 1 / Zustand 4 liegt in den gewählten Katalogfällen in diesem Gebiet. / P und T als zwei unabhängige Größen betrachten oder das Gemisch als ideale Gasphase behandeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## term:refrig-quality: Dampfgehalt
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: coolprop-r134a-v08: https://github.com/CoolProp/CoolProp/tree/v7.2.0; Web/coolprop/HighLevelAPI.rst: Vapor/Liquid/Saturation, Reference States; python-plotting.rst; dev/fluids/R134a.json; CoolPropBibTeXLibrary.bib: TillnerRoth-JPCRD-1994.
+- Referenz / Rechnung: x = mDampf/(mFlüssigkeit + mDampf); bei gleichem Sättigungsdruck gilt h = hfl + x(hd − hfl). / x ist der Anteil der Dampfmasse an der gesamten Masse. / x = mDampf/(mFlüssigkeit + mDampf); bei gleichem Sättigungsdruck gilt h = hfl + x(hd − hfl). / 1 bzw. Massenanteil / x = 0,25 bedeutet 25 % Dampfmasse, nicht 25 % Volumen. / x außerhalb des Zweiphasengebiets als physikalischen Prozentwert ausgeben.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
 ## objective:cycle-order: Die vier Hauptbauteile in der Strömungsrichtung nennen und Wärmeaufnahme von Wärmeabgabe unterscheiden.
 
 - Fachgebiet: fachuebergreifend
@@ -12243,6 +13953,66 @@ Stand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automati
 - Korrekturbedarf / Entscheidung: ____________________
 
 ## objective:el-circuits-objective: Reihen- und Parallelschaltungen unterscheiden und Ersatzwiderstände plausibilisieren.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:refrig-state-v08-objective: Zustände, Enthalpie und Referenzniveau: Stoffgrößen, gemeinsame Referenzen und ausdrücklich begrenzte Modelle unterscheiden und in nachvollziehbaren Lernrechnungen anwenden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:refrig-phase-v08-objective: Phasengrenzen, Dampfgehalt und Enthalpiedifferenzen: Stoffgrößen, gemeinsame Referenzen und ausdrücklich begrenzte Modelle unterscheiden und in nachvollziehbaren Lernrechnungen anwenden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:refrig-cycle-v08-objective: Kreisprozess und echtes log-p-h lesen: Stoffgrößen, gemeinsame Referenzen und ausdrücklich begrenzte Modelle unterscheiden und in nachvollziehbaren Lernrechnungen anwenden.
+
+- Fachgebiet: fachuebergreifend
+- Status: Entwurf
+- Prüfumfang: Bestandsaufnahme und Strukturprüfung. Keine vollständige fachliche Freigabe.
+- Formel-IDs: —
+- Quellen: Keine belastbare externe Fundstelle zugeordnet; Aussagenabgleich offen.
+- Referenz / Rechnung: Keine eigene numerische Referenz für diesen Inhalt; siehe verknüpfte Aufgaben und Formeln.
+- Annahmen: Didaktischer Lerninhalt, keine Anlagenplanung und keine praktische Arbeitsanweisung.
+- Mögliche Fehler: Modellgrenzen können übersehen werden. Fachliche Aussagen ohne eingesehene Fundstelle bleiben ungeprüft.
+- Offene Fragen: Sind Formulierung, Praxisbezug und alle Randbedingungen fachlich korrekt? Sind Quellen passend und ausreichend für die gesamte Aussage?
+- Fachprüfer/in: ____________________
+- Datum / Fundstelle / Freigabeumfang: ____________________
+- Korrekturbedarf / Entscheidung: ____________________
+
+## objective:refrig-compression-v08-objective: Entropie, ideale Verdichtung und ηis: Stoffgrößen, gemeinsame Referenzen und ausdrücklich begrenzte Modelle unterscheiden und in nachvollziehbaren Lernrechnungen anwenden.
 
 - Fachgebiet: fachuebergreifend
 - Status: Entwurf

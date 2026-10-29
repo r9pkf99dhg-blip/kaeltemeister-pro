@@ -1,3 +1,9 @@
+import { refrigerationCases } from "../refrigeration/data";
+import { refrigerationQuestions } from "../refrigeration/tasks";
+import {
+  componentExplanations,
+  stateDescriptions,
+} from "../refrigeration/qualitative";
 import { simpleCores } from "../language/core";
 import { simpleArticles } from "../language/articles";
 import { simpleTerms } from "../language/terms";
@@ -111,6 +117,59 @@ const formulaSourceChecked = (id: string, ids: string[]) =>
   sourceReviewedFormulaIds.has(id) && referencedSource(ids);
 /** Explizite Abdeckung; ein Quellenlink allein setzt niemals den Status auf fachlich freigegeben. */
 export const reviewRegister: ReviewEntry[] = [
+  ...refrigerationCases.map((c) =>
+    entry(c.id, c.title, "property-case", "kaelte", {
+      status: "automatic",
+      sourceIds: ["coolprop-r134a-v08"],
+      reference:
+        "CoolProp 7.2.0 / HEOS / IIR, vier vollständige Zustände im SHA256-geprüften Datenartefakt.",
+      scope:
+        "Herkunft, Referenzanker, Phasen, Bibliotheksrückrechnung, Bilanz und unabhängige mathematische Identitäten geprüft. Keine unabhängige experimentelle EOS-Validierung.",
+      assumptions:
+        "Stationär, keine Druckverluste, adiabater Verdichter, isenthalpe Drossel. Exakt katalogisierte Eingaben; keine freie Interpolation.",
+      risks: [
+        "Keine Freigabe für Anlagenplanung oder R134a-Verwendung.",
+        "Menschliche Fachfreigabe und externer Stoffmodellvergleich offen.",
+      ],
+    }),
+  ),
+  ...refrigerationQuestions.map((q) =>
+    entry(q.id, q.title, "cycle-question", q.domainId, {
+      status: "automatic",
+      sourceIds: ["coolprop-r134a-v08"],
+      reference: q.explanation,
+      scope:
+        "Antwortschlüssel und Bezüge strukturell getestet. Didaktische und fachliche menschliche Freigabe offen.",
+    }),
+  ),
+  ...[...componentExplanations, ...stateDescriptions].flatMap((e, i) =>
+    (["simple", "technical"] as const).map((level) =>
+      entry(
+        `cycle-explanation-${i + 1}/${level}`,
+        `Kreislauf-Erklärung ${i + 1} · ${level}`,
+        "cycle-language",
+        "kaelte",
+        {
+          reference: e[level],
+          sourceIds: ["coolprop-r134a-v08"],
+          scope:
+            "Redaktioneller Entwurf mit gemeinsamen Modellannahmen. Beide sprachlichen Fassungen im Register, keine menschliche Fachfreigabe.",
+        },
+      ),
+    ),
+  ),
+  entry("r134a-ph-v1", "R134a log-p-h-Diagramm", "property-diagram", "kaelte", {
+    status: "automatic",
+    sourceIds: ["coolprop-r134a-v08"],
+    reference:
+      "201 Sättigungsknoten 220–365 K, drei Dampfgehaltslinien, fünf Isothermen, echte isentrope Verdichtungspunkte; Pa absolut und J/kg intern.",
+    scope:
+      "SHA256, Endlichkeit, log-p-Skalierung, konstante p/h-Prozesse, begrenzte Mittelpunkt-Zeichnungsabweichungen getestet. Kein neuer Zustand durch Zeichnungsinterpolation.",
+    risks: [
+      "ηis=0,75: gestrichelte Endpunktverbindung ist kein berechneter Pfad.",
+      "Keine kritische Kurvenschließung, keine experimentelle Stoffdatenvalidierung.",
+    ],
+  }),
   ...simpleCores.flatMap((c) =>
     levels.map((level) => {
       const module = modules.find((m) => m.id === c.id)!;
@@ -264,7 +323,17 @@ export const reviewRegister: ReviewEntry[] = [
   ),
   ...terms.map((t) =>
     entry(t.id, t.title, "term", "fachuebergreifend", {
-      reference: t.definition,
+      reference: t.detail
+        ? [
+            t.definition,
+            t.detail.simple,
+            t.detail.technical,
+            t.detail.unit,
+            t.detail.example,
+            t.detail.mistake,
+          ].join("\n")
+        : t.definition,
+      sourceIds: t.detail?.sourceIds ?? [],
     }),
   ),
   ...objectives.map((o) =>
@@ -301,7 +370,7 @@ export const reviewRegister: ReviewEntry[] = [
 ];
 export function reviewMarkdown() {
   return (
-    "# Fachliches Prüfregister · Version 0.6\n\nStand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.\n\n" +
+    "# Fachliches Prüfregister · Version 0.8\n\nStand: 28.10.2026. Keine unabhängige menschliche Fachprüfung erfolgt. Automatische Tests sind keine fachliche Freigabe. Status „quellenbasiert“ gilt ausschließlich für den angegebenen Prüfumfang. Entwurf ist nutzbarer Lerninhalt mit offener Fachabnahme.\n\n" +
     reviewRegister
       .map(
         (e) =>

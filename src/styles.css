@@ -3185,3 +3185,10 @@ textarea:focus-visible {
 .refrigeration-page tr[aria-selected="true"] {
   background: #e6f1e8;
 }
+/* Fieldsets have an intrinsic minimum width in mobile browsers. Let their
+   contents wrap so the reference model cannot enlarge the layout viewport. */
+.refrigeration-page fieldset {
+  min-inline-size: 0;
+}
+.refrigeration-page { overflow-wrap: anywhere; }
+.refrigeration-page .table-scroll { overflow-wrap: normal; }

@@ -532,7 +532,7 @@ thermoDomain.chapters[0].subchapters[1].moduleIds = ["thermo-transfer"];
 thermoDomain.chapters[0].subchapters[1].plannedTopics = [];
 thermoDomain.chapters[1].subchapters[1].moduleIds = ["thermo-cycle-balance"];
 thermoDomain.chapters[1].subchapters[1].plannedTopics = [
-  "Reale Stoffwerte und validierte log-p-h-Darstellung",
+  "Freie Browser-Stoffdatenberechnung und zusätzliche validierte Stoffe (Referenzmodell bereits verfügbar)",
 ];
 domains.find(
   (d) => d.id === "waerme",

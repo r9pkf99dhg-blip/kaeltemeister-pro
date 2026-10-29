@@ -1,3 +1,4 @@
+import PageHeading from "../components/PageHeading";
 import ReferencePanel from "./ReferencePanel";
 import { referenceProof } from "./backend";
 import ReferenceNotice from "./ReferenceNotice";
@@ -41,13 +42,11 @@ export default function CyclePage({
   const state = stateDescriptions[d.point - 1];
   return (
     <div className="refrigeration-page">
-      <div className="page-heading">
-        <span className="eyebrow">VERSTEHEN · RECHNEN · ANWENDEN</span>
-        <h1>Der interaktive Kältekreislauf</h1>
-        <p>
-          Vier Bauteile, vier Zustände und eine nachvollziehbare Energiebilanz.
-        </p>
-      </div>
+      <PageHeading
+        eyebrow="VERSTEHEN · RECHNEN · ANWENDEN"
+        title="Der interaktive Kältekreislauf"
+        description="Vier Bauteile, vier Zustände und eine nachvollziehbare Energiebilanz."
+      />
       {saved && saved.datasetRevision !== 1 && (
         <p role="status">
           Die gespeicherte Stoffdatenrevision ist hier nicht verfügbar. Die
@@ -96,11 +95,17 @@ export default function CyclePage({
         <CycleSchematic
           component={d.component}
           point={d.point}
-          selectComponent={(component) => update({ component })}
-          selectPoint={(point) => update({ point })}
+          selectComponent={(component) =>
+            update({ component, point: component + 1 })
+          }
+          selectPoint={(point) => update({ point, component: point - 1 })}
           moving={moving}
         />
         <h3>{componentNames[d.component]}</h3>
+        <p>
+          Eintritt: Zustand {d.component + 1} → Austritt: Zustand{" "}
+          {((d.component + 1) % 4) + 1}.
+        </p>
         <Explain {...componentExplanations[d.component]} />
         <h3>
           Zustand {d.point}: {state.title}

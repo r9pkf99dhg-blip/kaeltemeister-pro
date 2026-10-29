@@ -21,9 +21,7 @@ test("Qualitativer Kreislauf bleibt ohne erfundene Zahlen bedienbar und speicher
       exact: true,
     }),
   ).toBeVisible();
-  await page
-    .getByRole("button", { name: "Expansionsorgan", exact: true })
-    .click();
+  await page.getByRole("button", { name: "Verdampfer", exact: true }).click();
   await page
     .getByRole("button", { name: "Strömungsrichtung animieren", exact: true })
     .click();
@@ -43,12 +41,14 @@ test("Qualitativer Kreislauf bleibt ohne erfundene Zahlen bedienbar und speicher
     page.getByRole("button", { name: "Zustand 4", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await expect(
-    page.getByRole("button", { name: "Expansionsorgan", exact: true }),
+    page.getByRole("button", { name: "Verdampfer", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   await page.addStyleTag({ content: "html{font-size:200%}" });
   expect(
     await page.evaluate(
-      () => document.documentElement.scrollWidth <= innerWidth,
+      () =>
+        document.documentElement.scrollWidth <=
+        document.documentElement.clientWidth,
     ),
   ).toBe(true);
   expect(errors).toEqual([]);
@@ -182,8 +182,74 @@ test("Referenzkreis: echte Daten, sichere Grenzen, Massenstromexperiment und Dia
   await page.addStyleTag({ content: "html{font-size:200%}" });
   expect(
     await page.evaluate(
-      () => document.documentElement.scrollWidth <= innerWidth,
+      () =>
+        document.documentElement.scrollWidth <=
+        document.documentElement.clientWidth,
     ),
   ).toBe(true);
   expect(errors).toEqual([]);
+});
+
+test("Lernbrücke 4.0 erhält die ursprüngliche Kreisrechnung auch beim Erkunden des Diagramms", async ({
+  page,
+}) => {
+  await page.goto("./");
+  await page
+    .getByRole("button", { name: "Übungswerkstatt", exact: true })
+    .click();
+  await page
+    .getByLabel("Werkstatt-Aufgabe", { exact: true })
+    .selectOption("refrig-basis-q0-v08");
+  await page
+    .getByLabel("Rechenblatt: Verwendete Formel", { exact: true })
+    .fill("Noch prüfen: h2-h1?");
+  await page
+    .getByLabel("Dein Ergebnis: Spezifischer Wärmeeintrag", { exact: true })
+    .fill("31,735296");
+  await page
+    .getByRole("button", { name: "Werkstatt-Ergebnis prüfen", exact: true })
+    .click();
+  await expect(
+    page
+      .getByText(/Deine Zahl passt zur Verdichterarbeit oder zur Wärmeabgabe/)
+      .first(),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Empfohlene Grundlage öffnen", exact: true })
+    .click();
+  await page
+    .getByRole("button", {
+      name: "Zur ursprünglichen Aufgabe zurück",
+      exact: true,
+    })
+    .click();
+  await expect(
+    page.getByLabel("Dein Ergebnis: Spezifischer Wärmeeintrag", {
+      exact: true,
+    }),
+  ).toHaveValue("31,735296");
+  await page
+    .getByRole("button", { name: "Kältekreislauf", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "B · R134a-Referenzfälle", exact: true })
+    .click();
+  expect(
+    await page.evaluate(
+      () =>
+        document.documentElement.scrollWidth <=
+        document.documentElement.clientWidth,
+    ),
+  ).toBe(true);
+  await page
+    .getByRole("button", { name: "Übungswerkstatt", exact: true })
+    .click();
+  await expect(
+    page.getByLabel("Rechenblatt: Verwendete Formel", { exact: true }),
+  ).toHaveValue("Noch prüfen: h2-h1?");
+  await expect(
+    page.getByLabel("Dein Ergebnis: Spezifischer Wärmeeintrag", {
+      exact: true,
+    }),
+  ).toHaveValue("31,735296");
 });

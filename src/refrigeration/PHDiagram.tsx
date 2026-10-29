@@ -252,7 +252,7 @@ export default function PHDiagram({
           {c.points.map((p, i) => {
             const a = plotPoint(p, v);
             return (
-              <g key={i} onClick={() => update({ point: i + 1 })}>
+              <g key={i} onClick={() => update({ point: i + 1, component: i })}>
                 <circle
                   cx={a.x}
                   cy={a.y}

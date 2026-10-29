@@ -171,3 +171,28 @@ it("importiert die echte 0.6-Sicherung mit Lernbrückenentwurf und allen histori
     ).data,
   ).toEqual(backup.data);
 });
+
+it("erhält die echte 0.7-Sicherung mit Sprache, Werkstatt, Labor und damaligen Hilfen unverändert", () => {
+  const b = parseBackup(
+    readFileSync(resolve("src/storage/fixtures/v07-backup.json"), "utf8"),
+  );
+  expect(b.appVersion).toBe("0.7.0");
+  expect(b.data.academy.preferences?.explanation).toBe("simple");
+  expect(b.data.academy.exerciseDraft?.workshop?.fields.plausibility).toBe(
+    "Historische eigene Notiz",
+  );
+  expect(b.data.academy.labDraft?.calculatorId).toBe("heat-power");
+  expect(b.data.academy.performance["calc-heat-water"].support?.hint).toBe(1);
+  expect(b.data.academy.activeExam?.id).toBe("v07-historical-active");
+  expect(b.data.academy.mastery).toBeUndefined();
+  expect(b.data.academy.cycleDraft).toBeUndefined();
+  restoreBackup(b, localStorage);
+  expect(JSON.parse(localStorage.getItem(ACADEMY_KEY)!)).toEqual(
+    b.data.academy,
+  );
+  expect(
+    parseBackup(
+      JSON.stringify(createBackup(b.data.academy, b.data.legacy, localStorage)),
+    ).data,
+  ).toEqual(b.data);
+});

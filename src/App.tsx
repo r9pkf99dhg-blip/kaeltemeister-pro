@@ -381,7 +381,7 @@ function Application({
                 />
                 <section className="academy-entry">
                   <div>
-                    <span className="pill">NEU · VERSION 0.7</span>
+                    <span className="pill">NEU · VERSION 0.8</span>
                     <h2>Deine intelligente Lernakademie.</h2>
                     <p>
                       Grundlagen- und Fachmodule, drei Wissensstufen und

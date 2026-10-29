@@ -134,7 +134,7 @@ export default function ReferencePanel({
                 <th scope="row">
                   <button
                     className="text-button"
-                    onClick={() => update({ point: i + 1 })}
+                    onClick={() => update({ point: i + 1, component: i })}
                   >
                     Punkt {i + 1}
                   </button>

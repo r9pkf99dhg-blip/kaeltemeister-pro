@@ -1,11 +1,11 @@
-# Fachgebiets-Bestandsaufnahme · 0.6
+# Fachgebiets-Bestandsaufnahme · 0.8
 
 Aus demselben Fachkatalog erzeugt: npm run docs:audit. Ein Modul ist verfügbar, wenn seine Inhalte, Fragen und Karten im Katalog vorliegen; das ist keine unabhängige fachliche Freigabe. Leere Fachgebiete zählen nicht als abgeschlossen.
 
 | Fachgebiet | Module | Modulfragen | Zahlenaufgaben | Weitere Themen, ausdrücklich geplant |
 | --- | ---: | ---: | ---: | --- |
 | Kältetechnik und Kältekreislauf | 5 | 20 | 7 | Expansionsorgane im Detail; Diagnosefälle und Betriebsprotokolle |
-| Thermodynamik | 7 | 21 | 10 | Lernmodul: Hauptsätze; Reale Stoffwerte und validierte log-p-h-Darstellung |
+| Thermodynamik | 11 | 33 | 25 | Lernmodul: Hauptsätze; Freie Browser-Stoffdatenberechnung und zusätzliche validierte Stoffe (Referenzmodell bereits verfügbar); Freie validierte Browser-Stoffwertberechnung und zusätzliche Stoffe |
 | Elektrotechnik | 10 | 30 | 29 | Drehfeld, Asynchronmotor, Schlupf und reale Motorkennlinien; Elektrische Schutzmaßnahmen; Messgeräte und elektrische Messtechnik; Sensoren und Aktoren; Grundlagen der Steuerungstechnik; Elektrische Schaltpläne; Fehlersuche an Kälteanlagen |
 | Steuerungs- und Regelungstechnik | 0 | 0 | 0 | Lernmodul: Signale und Sensoren; Lernmodul: Schaltlogik; Lernmodul: Regelgrößen; Lernmodul: Regler und Dynamik |
 | Klimatechnik | 0 | 0 | 0 | Lernmodul: Feuchtebegriffe; Lernmodul: h-x-Diagramm; Lernmodul: Sensible Lasten; Lernmodul: Latente Lasten |
