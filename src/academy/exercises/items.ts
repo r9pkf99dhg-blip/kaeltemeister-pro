@@ -1,3 +1,4 @@
+import { refrigerationQuestions } from "../../refrigeration/tasks";
 import { workshopQuestions } from "../../workshop/data";
 import { trainerQuestions } from "../foundations/trainer-data";
 import { academyQuestions, modules } from "../catalog";
@@ -46,6 +47,7 @@ export const electricalQuestions: ChoiceTask[] = [
   },
 ];
 export const choiceTasks: ChoiceTask[] = [
+  ...refrigerationQuestions,
   ...academyQuestions.map((question) => ({
     id: question.id,
     revision: question.revision,

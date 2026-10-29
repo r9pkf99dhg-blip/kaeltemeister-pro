@@ -532,7 +532,7 @@ thermoDomain.chapters[0].subchapters[1].moduleIds = ["thermo-transfer"];
 thermoDomain.chapters[0].subchapters[1].plannedTopics = [];
 thermoDomain.chapters[1].subchapters[1].moduleIds = ["thermo-cycle-balance"];
 thermoDomain.chapters[1].subchapters[1].plannedTopics = [
-  "Reale Stoffwerte und validierte log-p-h-Darstellung",
+  "Freie Browser-Stoffdatenberechnung und zusätzliche validierte Stoffe (Referenzmodell bereits verfügbar)",
 ];
 domains.find(
   (d) => d.id === "waerme",
@@ -560,3 +560,23 @@ for (const [domainId, moduleIds] of [
       ],
     });
 }
+
+thermoDomain.chapters.push({
+  id: "thermodynamik-kreis-v08",
+  title: "Kältekreisprozess und Referenzzustände",
+  subchapters: [
+    {
+      id: "thermodynamik-heos-v08",
+      title: "Zustände, Phasen und Fluidbilanz",
+      moduleIds: [
+        "refrig-state-v08",
+        "refrig-phase-v08",
+        "refrig-cycle-v08",
+        "refrig-compression-v08",
+      ],
+      plannedTopics: [
+        "Freie validierte Browser-Stoffwertberechnung und zusätzliche Stoffe",
+      ],
+    },
+  ],
+});

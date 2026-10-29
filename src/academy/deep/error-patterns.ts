@@ -25,6 +25,32 @@ export function errorPatterns(
     const g = task.givens.find((g) => g.id === id);
     return g ? toSI(g.value, g.unit, g.quantity) : NaN;
   };
+  if (task.calculation.startsWith("refrigeration-")) {
+    const q0 = value("h1") - value("h4"),
+      w = value("h2") - value("h1"),
+      qk = value("h2") - value("h3");
+    if (
+      task.calculation === "refrigeration-q0" &&
+      (near(actual, w) || near(actual, qk))
+    )
+      add(
+        "cycle-enthalpy-pair",
+        "refrig-cycle-v08",
+        "Deine Zahl passt zur Verdichterarbeit oder zur Wärmeabgabe statt zur Wärmeaufnahme. Kontrolliere die Zustände 4→1 und h₁ − h₄. Mehrere Rechenwege können zu derselben Zahl führen; dies ist keine sichere Diagnose.",
+      );
+    if (task.calculation === "refrigeration-q0-power" && near(actual, q0))
+      add(
+        "cycle-specific-power",
+        "refrig-cycle-v08",
+        "Deine Zahl entspricht dem spezifischen Wärmeeintrag in J/kg. Für die Leistung in W gehört der Massenstrom dazu. Gleiche Zahlen mit unterschiedlichen Dimensionen sind ein Hinweis, kein Beweis für den Denkweg.",
+      );
+    if (task.calculation === "refrigeration-cop" && near(actual, w / q0))
+      add(
+        "cycle-cop-inverse",
+        "math-fractions",
+        "Die Antwort passt zum Kehrwert w/q₀. Beim Kälte-COP steht die Wärmeaufnahme im Zähler und die Fluidarbeit im Nenner. Prüfe Systemgrenze und Bruch; die Ursache bleibt offen.",
+      );
+  }
   const raw = fromSI(actual, answer.unit, task.quantity);
   const other = units[task.quantity].find(
     (u) => u !== answer.unit && near(raw, fromSI(expected, u, task.quantity)),

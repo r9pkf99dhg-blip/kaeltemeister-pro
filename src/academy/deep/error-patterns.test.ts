@@ -50,3 +50,33 @@ it("erkennt den fehlenden absoluten Temperatur-Offset bei einem gültigen Kelvin
     errorPatterns(example, { value: "20", unit: "K" }).map((p) => p.id),
   ).toContain("celsius-kelvin");
 });
+
+it("Lernbrücke 4.0 unterscheidet falsche Enthalpiestrecken, spezifische Energie und inversen COP konservativ", () => {
+  expect(
+    errorPatterns(task("refrig-basis-q0-v08"), {
+      value: "31.735296",
+      unit: "kJ/kg",
+    }).map((p) => p.id),
+  ).toContain("cycle-enthalpy-pair");
+  expect(
+    errorPatterns(task("refrig-basis-power-v08"), {
+      value: "152308.389772",
+      unit: "W",
+    }).map((p) => p.id),
+  ).toContain("cycle-specific-power");
+  expect(
+    errorPatterns(task("refrig-basis-cop-v08"), {
+      value: String(1 / 4.79933729),
+      unit: "1",
+    }).map((p) => p.id),
+  ).toContain("cycle-cop-inverse");
+  expect(
+    errorPatterns(task("refrig-basis-q0-v08"), {
+      value: "152.30839",
+      unit: "kJ/kg",
+    }),
+  ).toEqual([]);
+  expect(
+    errorPatterns(task("refrig-basis-q0-v08"), { value: "123", unit: "kJ/kg" }),
+  ).toEqual([]);
+});

@@ -1,10 +1,10 @@
-# Erklärungsebenen · Version 0.7
+# Erklärungsebenen · Version 0.8
 
 **Einfach erklärt | Fachsprache** oberhalb des Inhalts gilt für die App. Die Präferenz wird im bestehenden Akademiefortschritt und Backup gespeichert. **Darstellung dieser Lektion** erlaubt eine vorübergehende Ausnahme; die globale Einstellung bleibt bestehen. Sprachauswahl ist unabhängig von Grundlagen/Fachkraft/Meister und verändert weder Formeln, Einheiten, Aufgabenanforderungen, Toleranzen noch Bewertung. Der Leser wird beim Umschalten nicht neu montiert; die gewählte Lektion bleibt erhalten. Unterschiedliche Textlängen können den natürlichen Zeilenumbruch verändern.
 
 ## Tatsächliche Modulabdeckung
 
-23 von 45 Modulen haben in allen drei Lesestufen eine kuratierte einfache Erklärung mit Einstieg, Zusammenhang und Zusammenfassung; fachliche Texte bleiben die bisherigen Inhalte. Gemeinsame Rechenbeispiele, Herleitungen, Formeln, Grenzen/Sicherheit und Quellen sind unverändert in beiden Fassungen nutzbar. Diese Zahl bedeutet nicht, dass jede einzelne gemeinsame Beispielzeile separat umgeschrieben wurde.
+27 von 49 Modulen haben in allen drei Lesestufen eine kuratierte einfache Erklärung mit Einstieg, Zusammenhang und Zusammenfassung; fachliche Texte bleiben die bisherigen Inhalte. Gemeinsame Rechenbeispiele, Herleitungen, Formeln, Grenzen/Sicherheit und Quellen sind unverändert in beiden Fassungen nutzbar. Diese Zahl bedeutet nicht, dass jede einzelne gemeinsame Beispielzeile separat umgeschrieben wurde.
 
 | Bereich | Module mit beiden Erklärpfaden |
 | --- | --- |
@@ -23,3 +23,7 @@ Die übrigen 22 Module zeigen bei einfacher Auswahl deutlich die **ursprünglich
 ## Fachliche Qualität
 
 Ein Sprachpaar besteht aus Texten zu denselben IDs, kein zweiter Physikkatalog. Gemeinsame Beispiele/Herleitungen und Modellbedingungen werden nicht in zwei unabhängige Fassungen kopiert. Einfache Fassung darf keine Grenzen aufheben. 69 sprachliche Modul-/Niveaueinträge sowie Artikel/Begriffe sind separat im Fachprüfregister erfasst; automatische Struktur- und Referenztests sind keine unabhängige sprachliche/menschliche Fachfreigabe. Vollständige Übersetzung aller vertiefenden Inhalte bleibt offen.
+
+## Ergänzungen 0.8
+
+Vier neue Kreislaufmodule besitzen jeweils drei eigene einfache Erklärstufen: Zustandsgrößen/Enthalpie, Phasenwechsel, Kreisbilanz, Verdichtervergleich. 20 verknüpfte Fachbegriffe ergänzen Definition, Einheit, Beispiel und typischen Fehler; neun vorhandene IDs werden wiederverwendet. Kreislaufbauteile/Zustände besitzen eigene einfache/fachsprachliche Paare. Gemeinsame Formeln und Rechenbeispiele ändern sich durch Sprache nicht. Beide Fassungen sind im Prüfregister, unabhängige menschliche Fachfreigabe offen.

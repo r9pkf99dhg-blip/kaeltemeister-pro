@@ -1,0 +1,17 @@
+# KälteMeister Mastery · 0.8
+
+Optionale Darstellung über dem bestehenden Akademiefortschritt. Keine zweite Kompetenz-/Bewertungsdatenbank: aktuelle LearningItems, Revisionen, Performance und derselbe Kompetenzgraph bestimmen den Status. Lesen heißt kennengelernt, bewertete Versuche geübt. Mindestens zwei verschiedene aktuelle Aufgaben mit dokumentiertem unabhängigem Erfolg erlauben die begrenzte Aussage „selbstständig angewendet“. Transfer verlangt zusätzlich kuratierte Transferaufgaben. Eine freie Erklärung wird ohne fachliche Bewertungsgrundlage nie als objektiv sicher bewertet.
+
+Neues optionales `mastery`-Objekt (interne Revision 1, Fortschrittsschema 3 und Backupformat 1 bleiben): Motivation enabled/reduced/disabled, freiwilliges Ziel, Fokus/Zeitorientierung, Missionsposition, eine laufende Lerneinheit und zehn Ergebniszusammenfassungen. Datiertes `evidence` ergänzt nur die bislang fehlenden Zeitpunkte ausdrücklich unabhängig richtiger Versuche. Keine Rekonstruktion solcher Nachweise aus alten unklassifizierten Erfolgen.
+
+Wiederholt bestätigt verlangt einen tatsächlich erneut unabhängig richtigen Versuch derselben Aufgabenrevision mindestens 24 Stunden nach dem ersten. Bloßes Öffnen, Zeitablauf und Wiederholungen innerhalb desselben kurzen Zeitfensters genügen nicht. Vorhandene Fälligkeit/Intervalle bleiben maßgeblich; es entsteht kein zweiter Terminplan.
+
+Lernmeilensteine referenzieren unterschiedliche konkrete Aufgaben: SI-Umrechnung, sensible Wärmeleistung, Leistungsarten, Kreisbilanz/Transfer und zeitversetzte Bestätigung. Voraussetzungen sind aufklappbar. Jedes Abzeichen erscheint höchstens einmal, keine XP-Zähler oder Klickbelohnungen. Aufgabenrevisionen müssen aktuell sein; frühere Nachweise werden nicht als Bestätigung neuer Inhalte ausgegeben. Unterbrechung oder Motivationsmoduswechsel verursacht keinen Strafverlust. Keine Berufsqualifikation, kein Meisterprüfungsnachweis.
+
+Sitzungen speichern einen begrenzten Ausgangssnapshot vorhandener Aufgabenstatistiken. Am Ende werden tatsächliche neue unabhängige/Hinweis-/Musterlösungserfolge nach unterschiedlichen IDs sowie verbesserte frühere Fehler genannt. Drei Wiederholungen derselben Frage gelten nicht als drei unterschiedliche Aufgaben. Ergebnisabschluss ist idempotent; Bildschirmzeit verleiht keine Erfolge. Pause und freiwillige Fokusansicht sind ergonomische Angebote ohne medizinische Wirkungsaussage. Fehlerhafte optionale Daten werden vor Import zurückgewiesen.
+
+## Integration des Abschlussstands
+
+Neun Missionen verwenden gemeinsame LearningItems, Formula-/Quellen-/Kompetenz-IDs. Sechs Kreismissionen bilden Komponenten → Zustände → Enthalpie → Berechnung → Interpretation → Transfer. Wärme-, Elektro- und Einheitenmission ergänzen freie Wahl. `newlyCompletedMissions` vergleicht echte Bedingungen mit dem Sitzungsbeginn; bereits erfüllte Missionen werden nicht erneut als neue Abschlüsse ausgegeben. Fällige bearbeitete IDs stammen aus der Ausgangsfälligkeit, Karten bleiben Selbsteinschätzung.
+
+Dashboard empfiehlt die konkrete fortsetzbare bzw. nächste passende Mission mit Begründung. Niveau-/Umfangsauswahl ist freiwillig; nach beobachteten Einheitenfehlern passt eine Einheitenmission, eingeführte verwandte Themen können freiwillig gemischt werden. Aufgabenerfolg wird nur vom vorhandenen Grader erfasst, nicht vom Scrollen/Öffnen eines Schemas. Zeitmetadaten sind begrenzt, revidiert und importvalidiert; Uhrmanipulation kann dieses lokale Selbstlernsystem nicht verhindern.

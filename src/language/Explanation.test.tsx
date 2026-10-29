@@ -17,9 +17,9 @@ beforeEach(() => {
   localStorage.clear();
   window.scrollTo = vi.fn();
 });
-it("23 Kernmodule besitzen drei echte einfache Erklärungen, gemeinsame Beispiele/Formeln bleiben unverändert", () => {
-  expect(simpleCores).toHaveLength(23);
-  expect(new Set(simpleCores.map((c) => c.id)).size).toBe(23);
+it("27 Kernmodule besitzen drei echte einfache Erklärungen, gemeinsame Beispiele/Formeln bleiben unverändert", () => {
+  expect(simpleCores).toHaveLength(27);
+  expect(new Set(simpleCores.map((c) => c.id)).size).toBe(27);
   for (const core of simpleCores) {
     const m = modules.find((m) => m.id === core.id)!;
     expect(m).toBeTruthy();

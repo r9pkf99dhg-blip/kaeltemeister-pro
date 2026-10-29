@@ -75,3 +75,9 @@ Neue Sicherungen können neue Aufgabentypen enthalten, die eine alte App 0.4 nic
 ## Version 0.6
 
 Echte unveränderte Exportfixtures aus 0.4 und 0.5 sichern Vorwärtskompatibilität ab. Exportformat 1 / Fortschrittsschema 3 bleiben bestehen. Ein optionaler letzter Aufgabenentwurf enthält Antwort, Einheit und geöffnete Lernbrücke und ist Teil der Sicherung. Karten, Termine, Kompetenzversuche und aktive/abgeschlossene Prüfungssnapshots bleiben erhalten. Neue Aufgabenmodelle benötigen eine App ab 0.6. Keine Abwärtslesbarkeit der neuen Inhalte in 0.4/0.5 versprochen. Fall-Schrittposition und unbewertete Trainerantworten bleiben sitzungsbezogen.
+
+## Version 0.8
+
+Schema 3 / Dateiformat 1 / bestehende Schlüssel bleiben. Optional enthalten: Mastery-Motivationsmodus, Ziel/Fokus, Niveaupräferenz, aktuelle Mission/Schritt, unabhängige datierte Evidenz, laufende Sitzung/zehn Zusammenfassungen und Kreislaufentwurf. Abzeichen und Empfehlungen werden aus aktuellen Nachweisen abgeleitet. Keine zweite Bewertungs-/Fälligkeitsdatenbank. Neue optionale Felder werden begrenzt validiert; unbekannte Aufgaben-/Datenrevisionen dürfen keine aktuellen Fachnachweise vortäuschen.
+
+Echte alte Sicherungen 0.4–0.7 wurden mit ihren unveränderten damaligen Exportern erzeugt und importieren/reexportieren den vollständigen Dateninhalt unverändert. Frühere Fixtures wurden nicht ersetzt. Die 0.7-Datei enthält Sprache, Werkstattnotiz, Hilfestatus, Labor und Prüfungen, jedoch keine erfundenen 0.8-Metadaten. Neue 0.8-Sicherungen benötigen eine aktuelle App; keine Abwärtslesbarkeit in 0.7 versprochen. Vor Übernahme sichern und andere Tabs schließen. Es gibt weiterhin jeweils nur einen letzten Werkstatt-, Labor- und Kreislaufentwurf, kein allgemeines Arbeitsheft.

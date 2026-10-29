@@ -1,3 +1,4 @@
+import { refrigerationKinds } from "../../technical/refrigeration";
 import { deepKinds } from "../../technical/deep";
 import { schoolKinds } from "../../technical/foundations";
 import { units, allowsSignedSI } from "../../technical/calculations";
@@ -50,6 +51,7 @@ export function validItem(value: unknown): value is LearningItem {
     value.kind === "numeric" &&
     (value.answerSyntax === undefined || value.answerSyntax === "arithmetic") &&
     [
+      ...refrigerationKinds,
       ...schoolKinds,
       ...deepKinds,
       "amount",

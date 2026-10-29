@@ -1,3 +1,5 @@
+import { MasterySummary } from "./mastery/Summary";
+import AsyncView from "./components/AsyncView";
 import TechnicalLab from "./lab/TechnicalLab";
 import Workshop from "./workshop/Workshop";
 import { simpleArticles } from "./language/articles";
@@ -10,7 +12,7 @@ import QualityPanel from "./quality/QualityPanel";
 import BackupPanel from "./storage/BackupPanel";
 import { recoverRestore, JOURNAL_KEY, dataKeys } from "./storage/backup";
 import LearningDashboard from "./academy/adaptive/LearningDashboard";
-import { useEffect, useRef, useState } from "react";
+import { lazy, useEffect, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowRight,
@@ -44,7 +46,12 @@ import Academy from "./academy/Academy";
 import { legacyBridges } from "./academy/catalog";
 import { useAcademyProgress } from "./academy/useAcademyProgress";
 
+const CyclePage = lazy(() => import("./refrigeration/CyclePage"));
+const MasteryPage = lazy(() => import("./mastery/MasteryPage"));
+
 type Page =
+  | "kreislauf"
+  | "mastery"
   | "dashboard"
   | "lernen"
   | "quiz"
@@ -53,6 +60,8 @@ type Page =
   | "werkstatt"
   | "labor";
 const navigation = [
+  { id: "kreislauf" as const, label: "Kältekreislauf", icon: Snowflake },
+  { id: "mastery" as const, label: "Mastery", icon: Target },
   { id: "dashboard" as const, label: "Dashboard", icon: LayoutDashboard },
   { id: "akademie" as const, label: "Akademie", icon: GraduationCap },
   { id: "werkstatt" as const, label: "Übungswerkstatt", icon: Calculator },
@@ -218,7 +227,9 @@ function Application({
     <ExplanationProvider
       level={academy.progress.preferences?.explanation ?? "technical"}
     >
-      <div className="app-shell">
+      <div
+        className={`app-shell ${academy.progress.mastery?.focus ? "focus-mode" : ""}`}
+      >
         <aside className="sidebar">
           <a
             className="brand"
@@ -283,6 +294,22 @@ function Application({
               <span className="status-dot" /> Bereit für deinen nächsten Schritt
             </span>
           </header>
+          {academy.progress.mastery?.focus && (
+            <div className="notice focus-exit">
+              <span>Fokusansicht aktiv</span>
+              <button
+                className="button secondary"
+                onClick={() =>
+                  academy.setProgress((p) => ({
+                    ...p,
+                    mastery: { ...p.mastery!, focus: false },
+                  }))
+                }
+              >
+                Fokusansicht beenden
+              </button>
+            </div>
+          )}
           <main ref={mainRef} tabIndex={-1} id="main-content">
             <ExplanationPreference
               value={academy.progress.preferences?.explanation ?? "technical"}
@@ -333,6 +360,10 @@ function Application({
                     </button>
                   </section>
                 )}
+                <MasterySummary
+                  progress={academy.progress}
+                  open={() => navigate("mastery")}
+                />
                 <LearningDashboard
                   progress={academy.progress}
                   error={storageError ? null : academy.error}
@@ -350,7 +381,7 @@ function Application({
                 />
                 <section className="academy-entry">
                   <div>
-                    <span className="pill">NEU · VERSION 0.7</span>
+                    <span className="pill">NEU · VERSION 0.8</span>
                     <h2>Deine intelligente Lernakademie.</h2>
                     <p>
                       Grundlagen- und Fachmodule, drei Wissensstufen und
@@ -708,6 +739,47 @@ function Application({
                   navigate("akademie");
                 }}
               />
+            )}
+            {page === "mastery" && (
+              <AsyncView>
+                <MasteryPage
+                  progress={academy.progress}
+                  setProgress={academy.setProgress}
+                  practice={(id) => {
+                    setWorkshopInitialId(id);
+                    navigate("werkstatt");
+                  }}
+                  openModule={(id) => {
+                    setAcademyModuleId(id);
+                    setAcademyView("overview");
+                    navigate("akademie");
+                  }}
+                  openExam={() => {
+                    setAcademyModuleId(null);
+                    setAcademyView("exam");
+                    navigate("akademie");
+                  }}
+                  openCycle={() => navigate("kreislauf")}
+                />
+              </AsyncView>
+            )}
+            {page === "kreislauf" && (
+              <AsyncView>
+                <CyclePage
+                  progress={academy.progress}
+                  setProgress={academy.setProgress}
+                  openModule={(id) => {
+                    setAcademyModuleId(id);
+                    setAcademyView("overview");
+                    navigate("akademie");
+                  }}
+                  practice={(id) => {
+                    setWorkshopInitialId(id);
+                    navigate("werkstatt");
+                  }}
+                  openMissions={() => navigate("mastery")}
+                />
+              </AsyncView>
             )}
             {page === "rechner" && <HeatCalculator />}
             {page === "akademie" && (

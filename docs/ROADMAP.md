@@ -1,32 +1,28 @@
-# ROADMAP · Version 0.7 und langfristige Plattform
+# ROADMAP · Version 0.8 und langfristige Plattform
 
 ## Tatsächlich nutzbar
 
-45 Module, 140 Modulfragen, 90 Karten, 83 Formeln, 105 Zahlenaufgaben, 38 Begriffe/29 Kompetenzen; 23 sprachliche Kernpfade, Übungswerkstatt mit acht Arten/Rechenblatt, fünf Laborbereiche mit 26 Varianten plus Einheitenumrechnung, freiwillige Lernbrücke 3.0, adaptive Hilfe-/Wiederholungsdaten und bestehende Übungsprüfung. 76 Aussagenbelege und 876 Inventareinträge mit offener unabhängiger Fachabnahme. Stand/Tests/Grenzen: RELEASE_V07. main enthält 0.6; Übernahme von 0.7 ausschließlich über ausdrücklich freigegebenen PR.
+Basis main enthält 0.7 über PR #9; Version 0.8 wird ausschließlich über einen geprüften PR freigegeben. 49 Module, 152 Modulfragen, 98 Karten, 88 Formeln, 120 Zahlenaufgaben, 49 Begriffe/33 Kompetenzen, 27 einfache Kernmodule. Vorhandene Werkstatt, Techniklabor, Übungsprüfung, Datenbackup und Quellenbelege bleiben. Neu: optionales Mastery, neun Missionen mit sechsteiligem Kreisprozesspfad, fünf transparente Lernmeilensteine, freiwillige Sitzungen/Fokus, Lernbrücke 4.0, qualitatives Schema und begrenztes quantitatives R134a-Referenzmodell mit echtem log-p-h. Kein frei rechnender Stoffdatenkern. Umfang/Tests/Grenzen: RELEASE_V08, QA_V08, NEXT_STEPS.
 
-## P0 · Fachqualität und Apple
+## P0 · Fachqualität und echte Apple-Geräte
 
-Unabhängige Abnahme konkreter Aussagen und Revisionen in Mathematik, Elektro, Thermodynamik/Kälte und beiden Sprachfassungen. Gesperrte aktuelle SI-/Berufsbildungs-/Meister-/DGUV-Quellen nachlesen, Fundstellen/Stand/Geltungsbereich dokumentieren. Echte Safari-Tests auf iPad/iPhone, VoiceOver/Tastatur, Hintergrund/Dateien/Speicherquote. Keine automatische Freigabe aufgrund grüner Tests.
+Qualifizierte unabhängige Abnahme konkreter Aussagen und Revisionen in Mathematik, Elektro, Thermodynamik/Kälte und beiden Sprachfassungen. Stoffmodell mit unabhängigem Referenz-/Messdatensatz vergleichen. Gesperrte Originalstudien und aktuelle SI-/Berufsbildungs-/Meister-/DGUV-Quellen tatsächlich nachlesen und begrenzte Fundstellen dokumentieren. Echte Safari-/VoiceOver-/Touch-/Dateien-/Speicher-/Hintergrundtests auf iPad/iPhone. Grüne Browsertests sind keine physische Geräte- oder Fachfreigabe.
 
-## Version 0.8 · Kältetechnischer Datenpfad
+## Version 0.9 · Konsolidierung vor freier Berechnung
 
-1. Reale Kältemitteldaten erst nach Auswahl einer zulässig nutzbaren Quelle: Herkunft/Lizenz, Stoff-/Gemisch-ID, Revision, Zustand, Druck-/Enthalpiebezug, Einheiten, Gültigkeit und Fehlerbereich.
-2. Kleine validierte Zustandspunkte und begrenzte log-p-h-Darstellung mit unabhängigen Referenzen; bei fehlenden freigegebenen Daten zunächst nur klar gekennzeichnetes didaktisches Schema. Keine erfundenen Stoffwerte.
-3. Wärmeleistungs-/Kreislauflernweg an dieselben Formeln/Kompetenzen und Werkstatt anbinden, Dew/Bubble und Überhitzung/Unterkühlung sauber unterscheiden.
-4. Sprachabdeckung und gezielte Fehlerkorrektur nach fachlichem Review erweitern; motorischer Elektro-Lernpfad aus früherer Planung bleibt im Backlog, kein stiller Umfangstausch.
-
-## Version 0.9 · Messwerte und Diagnose
-
-Explizite Messgrößen/Einheiten/Zeit/Systemgrenze, Unsicherheiten und Plausibilität; nachvollziehbare mögliche Ursachen mit fehlenden Messungen und Sicherheitsgrenzen. Komponenten-/Fehlerdaten nur mit Herkunft/Revision. Keine sichere Ferndiagnose oder automatische Arbeitsfreigabe. Lernbrücke kann passende Grundkompetenzen empfehlen.
+1. Mit Lernenden die neun Missionen und Erklärungen testen; konkrete Missverständnisse und Unterbrechungen verbessern. Lernleistung und langfristiges Erinnern von Motivation/Nutzungsdauer trennen, keine Wirksamkeit behaupten ohne Untersuchung.
+2. Reproduzierbarer gepinnter CoolProp-JS/WASM-/Worker-Prototyp: Lizenz/Referenzzustand, Paketgröße, Pages-Pfade/MIME, Initialisierung, Speicher, Laufzeit, sichere Zustandspaare, Phasen-/Konvergenzfehler und Abbruch. Erst nach Nachweis Modell C freigeben. Keine freien Stoffwerte durch ungeprüfte Kurveninterpolation.
+3. Mehrere benannte Rechenblätter erst mit sicherem Speicher-, Import- und Revisionsvertrag. Aktuell genau ein Werkstatt-/Labor-/Kreislaufentwurf, keine versteckte Cloudabhängigkeit.
+4. Kleiner Messwerte-/Diagnose-Lehrfall mit expliziten Größen, Zeit, Systemgrenze, Unsicherheit und fehlenden Messungen. Nachvollziehbare Möglichkeiten, keine sichere Ferndiagnose oder Arbeitsfreigabe.
 
 ## Version 1.0 · Gemeinsame Plattform
 
-Akademie, validierte Rechner, Stoff-/Bauteildaten, log-p-h, Diagnose, Anlagenplanung/Auslegung und technische Projektdokumentation unter gemeinsamen stabilen IDs. Projekte referenzieren versionierte Eingaben/Formeln/Quellen/Ergebnisse. Reale Auslegungen benötigen eigene Modellvalidierung und fachliche Freigabe.
+Akademie, technische Werkzeuge, Stoff-/Bauteildaten, Diagramme, Fehlersuche, Anlagenplanung und Projektdokumentation unter gemeinsamen Fachbegriffen, Formeln und stabilen IDs. Projekte referenzieren versionierte Eingaben/Modelle/Quellen/Ergebnisse. Reale Auslegung benötigt eigene Modellvalidierung, Komponenten-/Herstellerdaten, reale Betriebsgrenzen und fachliche Abnahme.
 
-## Weiterer fachlicher Ausbau
+## Fachlicher Ausbau
 
-Klima, Lüftung, Regelung und Dämmtechnik als zusammenhängende geprüfte Kurse; Motoren/Drehfeld/Schlupf/Wirkungsgrad, komplexe Netze, Messunsicherheit, Analysis/Statistik, Entropie und reale Wärmeübertragung, vertiefte Chemie. Strukturierte Fachgebiete nicht als fertige Lehrgänge zählen.
+Klima, Lüftung, Regelung und Dämmtechnik als geprüfte Lernpfade; Motoren/Drehfeld/Schlupf/Wirkungsgrad aus früherer Planung bleibt im Backlog. Messunsicherheit, Strömung, vertiefte Wärmeübertragung, Entropie, Chemie und Elektrotechnik schrittweise. Leere Fachgebiete zählen nicht als fertige Lehrgänge. Gemische erst mit Zusammensetzung, Tau-/Blasenpunkt und Temperaturgleit; zusätzliche Reinstoffe erst mit Herkunft, Bezug und unabhängiger Referenzprüfung.
 
-## Infrastruktur nur nach Bedarf
+## Infrastruktur nach Bedarf
 
-Mehrere benannte Rechenblätter/Entwürfe, IndexedDB, Offline/PWA, optionale Gerätesynchronisation und zugängliche Projektexporte erst mit zuverlässigen Migrationen und Speicherverträgen. Kein Pflichtabo. Freies CAS und automatische Langtextbewertung bleiben separate begründungsbedürftige Vorhaben. Nach jeder abgeschlossenen Etappe Tests, Commit, normaler Push und aktualisierte NEXT_STEPS; kein automatischer Merge.
+IndexedDB, PWA/Offline, optionale Gerätesynchronisation und Projektexporte erst mit zuverlässigen Migrationen. Keine Pflichtabos. Freies CAS und automatische fachliche Langtextbewertung bleiben separate Vorhaben. Keine manipulativen Streaks/Ranglisten/Glücksspielbelohnungen. Nach abgeschlossenen Etappen Tests, Commit, normaler Push und aktualisierte NEXT_STEPS; kein automatischer Merge.

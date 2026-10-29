@@ -1,3 +1,4 @@
+import refrigerationReferences from "../refrigeration/task-references.json";
 import { describe, expect, it } from "vitest";
 import { calculateTechnical, fromSI, toSI } from "./calculations";
 import { numericTasks, learningNotes } from "../academy/exercises/data";
@@ -11,6 +12,7 @@ import { calculateHeat } from "../logic";
 
 // Unabhängig vorgegebene Referenzergebnisse, nicht mit der Produktfunktion erzeugt.
 const references: Record<string, number> = {
+  ...refrigerationReferences,
   "workshop-conversion-power": 1500,
   "workshop-conversion-flow": 0.5,
   "workshop-conversion-volume": 0.01,

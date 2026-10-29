@@ -1,3 +1,4 @@
+import { refrigerationTasks } from "../../refrigeration/tasks";
 import { conversionTasks } from "../../workshop/data";
 import { thermal_tasks } from "../deep/thermal-tasks";
 import { electrical_tasks } from "../deep/electrical-tasks";
@@ -427,6 +428,12 @@ numericTasks.push(...math_tasks);
 numericTasks.push(...electrical_tasks);
 numericTasks.push(...thermal_tasks);
 numericTasks.push(...conversionTasks);
+numericTasks.push(...refrigerationTasks);
 
 for (const task of numericTasks)
-  task.requiredCompetencyIds = taskCompetencies(task);
+  task.requiredCompetencyIds = [
+    ...new Set([
+      ...(task.requiredCompetencyIds ?? []),
+      ...taskCompetencies(task),
+    ]),
+  ];

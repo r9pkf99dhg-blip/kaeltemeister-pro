@@ -1,8 +1,8 @@
-# Fach- und Datenmodell · Version 0.7
+# Fach- und Datenmodell · Version 0.8
 
 ## Gemeinsamer Bestand
 
-14 strukturierte Fachgebiete, 45 ausgearbeitete Module, 140 Modulfragen, 90 Karten, 83 Formeln, 105 Zahlenaufgaben, 38 Begriffe und 29 Kompetenzen. Fachgebiete ohne ausgearbeitete Lektionen bleiben geplant. Eine Bezeichnung „Meisterniveau“ behauptet keine offizielle Prüfungsabdeckung. Die Werkstatt bietet 255 Auswahl-/Aufgabeneinträge aus demselben Bestand, keine 255 neuen unabhängigen Zahlenmodelle.
+14 strukturierte Fachgebiete, 49 ausgearbeitete Module, 152 Modulfragen, 98 Karten, 88 Formeln, 120 Zahlenaufgaben, 49 Begriffe und 33 Kompetenzen. Fachgebiete ohne ausgearbeitete Lektionen bleiben geplant. Eine Bezeichnung „Meisterniveau“ behauptet keine offizielle Prüfungsabdeckung. Die Werkstatt bietet 296 Auswahl-/Aufgabeneinträge aus demselben Bestand, keine 296 neuen unabhängigen Zahlenmodelle.
 
 `Formula` hält stabile ID, Ausdruck/TeX, Variablen, Einheit, Gültigkeit und Quellen. `NumericTask` referenziert Modell, gegebene Größen, Ziel, Toleranzen, Schritte/Fehler und Fachartikel. `ChoiceTask` hält Optionen und Erklärung. Vollständige Prüfungssnapshots sind von späteren Katalogänderungen getrennt.
 
@@ -34,3 +34,17 @@ Die Struktur ist begrenzt (u. a. Zahlenausdruck 200 Zeichen, Notizfeld 2000), op
 ## Kompatibilität
 
 Echte Fixtures aus main 0.4 `163b9b7`, 0.5 `09a953b`, 0.6 `8a1ba77` wurden mit dem jeweiligen alten Exporter erzeugt. Vollständiger unveränderter Import und Wiederexport werden getestet, einschließlich Karten, Termine, historische und laufende Prüfungen und 0.6-Lernbrückenentwurf. Neue optionalen Metadaten benötigen keine destruktive Migration; neue Sicherungen gehören in eine aktuelle App. Daten sind ausschließlich im Browserprofil derselben Origin gespeichert.
+
+## Erweiterungen 0.8 · bestehende Verträge bleiben
+
+49 Fachmodule, 152 Modulfragen, 98 Karten, 88 Formeln, 120 Zahlenaufgaben, 49 Begriffe, 33 Kompetenzen. Neue Kreislaufobjekte erweitern den bestehenden Katalog. Neun der 20 erweiterten Begriffe verwenden vorhandene IDs; keine zweite Begriffsdatenbank.
+
+`Fachmission`: ID/Revision, Fachgebiet, Niveau, Länge/ungefähre Minuten, Ziele, Kompetenzvoraussetzungen, Quellen und Schritte. Schritte referenzieren Modul-/Aufgaben-IDs. Objektive Abschlussbedingungen werden aus aktuellen tatsächlichen Ergebnissen abgeleitet. Passive Schritte und offene Begründungen bleiben Selbsteinschätzung, kein objektiv bestätigtes Fachwissen.
+
+`MasteryState` (intern Version 1, optional): Modus, Fokus, freiwilliges Ziel, Minutenorientierung, Niveaupräferenz, aktuelle Mission/Position/gesehene passive Schritte, laufende Sitzung und zehn Zusammenfassungen. Zeitliche Evidenz je Aufgabe enthält Revision und erste/letzte unabhängige Bestätigung; `spacedAt` verlangt mindestens 24 Stunden Abstand. Zusammenfassungen speichern verschiedene unabhängige/Hilfe-/Musterlösungs-, Transfer-, Fehlerverbesserungs-, fällige und neu erfüllte Missions-IDs. Keine Anwesenheitspunkte. Aktuelle Aufgabenrevision bleibt maßgeblich; unbekannte historische Hilfen bleiben unbekannt.
+
+`CycleDraft` (intern Version 1/Datenrevision 1, optional): A/B, Fall-ID, Zustand 1–4/Komponente 0–3, Massenstromrohtext und letzter bestätigter Massenstrom, Linien, Zoom 1–6 und begrenzter Pan. Neue Felder sind begrenzt und validiert. Unbekannte Datenrevision führt sichtbar zur qualitativen Ansicht, kein stiller Stoffwertwechsel. Ein ungültiger Rohtext ist ein erhaltener Entwurf, kein gültiger Rechenwert.
+
+`RefrigerationCase`: stabile Fall-ID, fest berechnete Eingaben, vier SI-Zustände p/T/h/s/rho/Qualität, isentroper Vergleichsaustritt und gegebenenfalls echter isentroper Pfad. Datenmetadata: Bibliothek/Version/Gitrevision, Lizenz, Stoff/EOS, IIR-Bezug, Einheiten, Grenzen und Prüfstatus. `PropertyResult` enthält Wert oder verständlichen Fehler; Fähigkeiten erlauben nur Fall/Zustand, keine freien Zustandspaare oder Gemische. Zeichenpolylinien sind keine zusätzliche Stoffdatenabfrage.
+
+Historische Sicherungen aus main 0.4 `163b9b7`, 0.5 `09a953b`, 0.6 `8a1ba77` und 0.7 `908993d` stammen aus ihren echten Exportern. Vorhandene Schlüssel/Schema/Journale bleiben erhalten; neue 0.8-Daten werden nicht als in alten Apps rückwärtslesbar beworben.

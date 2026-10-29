@@ -11,6 +11,10 @@ export default defineConfig({
         codeSplitting: {
           groups: [
             {
+              name: "refrigeration-content-v08",
+              test: /src[\\/]refrigeration[\\/](?:data|catalog|concepts|language|tasks)\.ts$|src[\\/]refrigeration[\\/]data[\\/].*\.json$/,
+            },
+            {
               name: "language-content-v07",
               test: /src[\\/]language[\\/](?:core|articles|terms)\.ts$/,
             },

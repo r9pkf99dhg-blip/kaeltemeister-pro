@@ -42,12 +42,16 @@ export default function Workshop({
   openModule,
   openExam,
   initialItemId,
+  embedded = false,
+  initialMode,
 }: {
   progress: AcademyProgress;
   setProgress: Dispatch<SetStateAction<AcademyProgress>>;
   openModule: (id: string) => void;
   openExam: () => void;
   initialItemId?: string | null;
+  embedded?: boolean;
+  initialMode?: PracticeMode;
 }) {
   const candidate =
     !initialItemId && progress.exerciseDraft?.workspace === "workshop"
@@ -75,7 +79,7 @@ export default function Workshop({
     saved?.workshop ?? {
       entryId: initial.id,
       kind: initial.kind,
-      mode: "independent",
+      mode: initialMode ?? "independent",
       fields: emptyWorksheet(),
       help: 0,
       step: 0,
@@ -228,7 +232,7 @@ export default function Workshop({
   const [validation, setValidation] = useState("");
   return (
     <section className="workshop">
-      <h1>Übungswerkstatt</h1>
+      {!embedded && <h1>Übungswerkstatt</h1>}
       <p>
         <Explain
           simple="Hier rechnest du selbst. Wähle eine Aufgabe, notiere deinen Weg und prüfe erst danach dein Ergebnis. Dein letzter Entwurf wird in diesem Browser gesichert."
@@ -242,7 +246,30 @@ export default function Workshop({
           startet mit leerer Antwort.
         </p>
       )}
-      <div className="workshop-filters">
+      {embedded && (
+        <button
+          className="text-button"
+          onClick={() => {
+            if (!item) return;
+            const fresh = emptyAnswer(item);
+            setAnswer(fresh);
+            setState((s) => ({
+              ...s,
+              mode: "independent",
+              help: 0,
+              solutionOpen: false,
+              checkedIds: s.checkedIds?.filter((id) => id !== item.id),
+              responses: { ...s.responses, [item.id]: fresh },
+            }));
+            setBridge(null);
+            setSkipBridge(false);
+            setValidation("");
+          }}
+        >
+          Neuen Abrufversuch ohne geöffnete Hilfe beginnen
+        </button>
+      )}
+      <div className="workshop-filters" hidden={embedded}>
         <label>
           Fachgebiet
           <select
@@ -336,7 +363,7 @@ export default function Workshop({
         {filtered.length} passende Aufgaben. Filtern erhält den offenen Entwurf;
         eine neue Aufgabenauswahl ersetzt ihn.
       </p>
-      <label className="workshop-picker">
+      <label className="workshop-picker" hidden={embedded}>
         Aufgabe wählen
         <select
           aria-label="Werkstatt-Aufgabe"

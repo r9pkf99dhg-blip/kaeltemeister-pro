@@ -2912,3 +2912,283 @@ textarea:focus-visible {
 .stat-card > div {
   min-width: 0;
 }
+
+.mastery {
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mastery > .academy-panel {
+  margin-block: 1.2rem;
+}
+.mastery select,
+.mastery input[type="number"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #b8c9c4;
+  border-radius: 0.6rem;
+  background: white;
+  margin-block: 0.5rem 1rem;
+}
+.mastery p {
+  margin-block: 0.6rem;
+  line-height: 1.6;
+}
+.mastery details {
+  margin-block: 0.8rem;
+}
+.mastery summary {
+  cursor: pointer;
+  font-weight: 650;
+  padding: 0.7rem 0;
+}
+.mastery-actions,
+.mastery-summary {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mastery-summary > div {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+.mastery-domains {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+  margin-block: 1rem;
+}
+.mastery-domains > div {
+  padding: 1rem;
+  border: 1px solid #d8e4df;
+  border-radius: 0.7rem;
+  min-width: 0;
+}
+.mastery-check {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.mastery-check input {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.focus-mode .sidebar-tip,
+.focus-mode .hero,
+.focus-mode .stats-grid,
+.focus-mode .dashboard-lower {
+  display: none;
+}
+.focus-exit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mastery-enabled .mastery-success {
+    animation: mastery-confirm 0.2s ease-out;
+  }
+  @keyframes mastery-confirm {
+    from {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .sidebar nav {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+  .sidebar .nav-item {
+    flex: 0 0 74px;
+    width: 74px;
+    min-width: 74px;
+    scroll-snap-align: center;
+  }
+}
+.mission-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+}
+.mission-cards > article {
+  border: 1px solid #d8e4df;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  min-width: 0;
+}
+.active-mission {
+  margin-top: 1.5rem;
+  border-top: 2px solid #d8e4df;
+  padding-top: 1.5rem;
+}
+.mission-recommendation,
+.worked-example {
+  background: #f1f6f2;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+.active-mission > .workshop {
+  margin-block: 1rem;
+}
+.task-choices label:has(select) {
+  display: grid;
+  gap: 0.5rem;
+  margin-block: 1rem;
+  min-width: 0;
+}
+.task-choices {
+  min-width: 0;
+}
+/* v0.8: Kreislauf und Diagramm bleiben auch bei großer Schrift im Inhaltsbereich. */
+.refrigeration-page {
+  min-width: 0;
+}
+.refrigeration-page .academy-panel {
+  margin-block: 1.25rem;
+  min-width: 0;
+}
+.refrigeration-schematic {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 520px;
+  margin-block: 1rem;
+  color: #263f36;
+}
+.refrigeration-schematic text {
+  font:
+    16px system-ui,
+    sans-serif;
+}
+.cycle-pipe {
+  fill: none;
+  stroke-width: 6;
+}
+.cycle-pipe.high {
+  stroke: #aa583b;
+}
+.cycle-pipe.low {
+  stroke: #246f9a;
+  stroke-dasharray: 12 7;
+}
+.flow-running .cycle-pipe {
+  stroke-dasharray: 14 7;
+  animation: cycle-flow 2s linear infinite;
+}
+.flow-running .cycle-pipe.low {
+  animation-direction: normal;
+}
+@keyframes cycle-flow {
+  to {
+    stroke-dashoffset: -42;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-running .cycle-pipe {
+    animation: none;
+  }
+}
+.refrigeration-page .button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 1rem;
+}
+.refrigeration-page .button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.refrigeration-page select,
+.refrigeration-page input {
+  max-width: 100%;
+  min-width: 0;
+}
+.cycle-model {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.ph-plot {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  touch-action: none;
+  user-select: none;
+  background: #f7faf7;
+  border-radius: 0.7rem;
+}
+.ph-plot text {
+  font:
+    13px system-ui,
+    sans-serif;
+  fill: #253e33;
+}
+.ph-plot:focus-visible {
+  outline: 3px solid #397b60;
+  outline-offset: 3px;
+}
+.diagram-options {
+  display: grid;
+  gap: 0.75rem;
+}
+.diagram-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.refrigeration-page .field {
+  display: grid;
+  gap: 0.5rem;
+  margin-block: 1rem;
+  max-width: 650px;
+}
+.refrigeration-page select,
+.refrigeration-page input:not([type="checkbox"]) {
+  padding: 0.75rem;
+  border: 1px solid #a2b4ab;
+  border-radius: 0.5rem;
+  background: white;
+  font: inherit;
+  width: 100%;
+}
+.refrigeration-page .table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.refrigeration-page table {
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.refrigeration-page th,
+.refrigeration-page td {
+  padding: 0.65rem;
+  text-align: left;
+  border-bottom: 1px solid #dce7df;
+}
+.refrigeration-page tr[aria-selected="true"] {
+  background: #e6f1e8;
+}
+/* Fieldsets have an intrinsic minimum width in mobile browsers. Let their
+   contents wrap so the reference model cannot enlarge the layout viewport. */
+.refrigeration-page fieldset {
+  min-inline-size: 0;
+}
+.refrigeration-page { overflow-wrap: anywhere; }
+.refrigeration-page .table-scroll { overflow-wrap: normal; }
