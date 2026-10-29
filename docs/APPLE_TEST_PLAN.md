@@ -1,4 +1,4 @@
-Aktueller Ergänzungsstand: [Version 0.7](RELEASE_V07.md). Historische Grundlagen und Zahlen beziehen sich gegebenenfalls auf die bezeichnete frühere Version.
+Aktueller Ergänzungsstand: [Version 0.8](RELEASE_V08.md). Historische Grundlagen und Zahlen beziehen sich gegebenenfalls auf die bezeichnete frühere Version.
 
 # iPad-/iPhone-Testplan · Version 0.7
 
@@ -86,3 +86,17 @@ Nach Backup: neue Geometrie-/Winkelaufgabe (36,87°), verlorene Nullstelle im Tr
 ## Zusätzliche 0.7-Geräteschritte
 
 Sprachumschaltung global/lokal, eigenes Rechenblatt mit Neuladen, Werkstatttrainer-Position, Lernbrücke mit unveränderter Einheit und alle fünf Laborbereiche samt Kurve prüfen. Konkrete Referenzwerte und vollständiger Ablauf stehen in RELEASE_V07. Safari-Split-View, Bildschirmtastatur und VoiceOver bleiben echte manuelle Prüfaufgaben, keine bereits erledigten Gerätetests.
+
+## Version 0.8 · zusätzliche Geräteprüfung
+
+Aktueller Bericht und konkrete Werte: [RELEASE_V08, Abschnitt 23](RELEASE_V08.md#23-wie-teste-ich-auf-dem-ipad). Zuerst JSON-Sicherung in Dateien speichern. Die öffentliche Website zeigt 0.8 erst nach deiner Freigabe, Merge und erfolgreichem main-Deployment.
+
+- Mastery auf Aktiviert/Reduziert/Deaktiviert stellen, Fokus verlassen, Sitzung pausieren/fortsetzen und beenden. Unbekannte Bereiche nicht als Schwäche ausgeben; keine Erfolge allein durch Öffnen.
+- Eine Kurzmission und den sechsteiligen Kreisprozesspfad prüfen; Aufgabe mit Hilfe und neue unabhängige Variante unterscheiden. Unterbrechen/neuladen; eigene Rechenblattnotizen und Position bleiben.
+- Qualitativer Kreislauf: Bauteile, vier Zustände, Sprachebenen, Bewegung pausieren und systemseitig reduzieren. Navigation auf iPhone auch horizontal schieben; sie darf vom Diagramm nicht überlagert werden.
+- R134a-Referenzfälle: Basis-Fluid-COP 4,79934; Massenstrom 0,05→0,1 kg/s verdoppelt Leistungen bei gleichem COP. Ungültiger Rohtext erhält bestätigten Wert. η_is=0,75: COP etwa 3,59950, Endpunktverbindung gekennzeichnet.
+- log-p-h vergrößern/mit Finger verschieben/zurücksetzen; externe Tastatur mit Pfeilen/Pos1. Punkte auch über Buttons/Tabelle, Diagrammfragen über Textalternativen bedienen.
+- 200%-Schrift, Hoch-/Querformat und Split View; kein Seitenüberlauf. Tabelle darf nur lokal horizontal scrollen. VoiceOver-Reihenfolge und Beschriftung auf echter Hardware prüfen.
+- Sicherung mit neuen Einstellungen/Positionen exportieren und nach Vorschau bewusst importieren. Alte Dateien 0.4–0.7 dürfen erhalten bleiben. Kein vorgetäuschter Gerätesynchronisationsdienst.
+
+Lokale neue Gesamtergebnisse und beobachtete GitHub-WebKit-Checks: [QA_V08](QA_V08.md). **Bislang keine physische Apple-Geräteprüfung durchgeführt.**

@@ -137,3 +137,9 @@ Am 28.10.2026 waren die gewünschten neuen Primär-/Forschungsseiten per HTTP 40
 Kein Volltextzugriff, keine daraus behauptete konkrete Effektgröße oder Wirksamkeitsmessung. Aktives Abrufen, zeitliche Wiederholung, Beispiele, freiwillige gestufte Hilfe und Transfer sind nachvollziehbare Entwurfsprinzipien. Der Algorithmus ist einfach und offen dokumentiert, keine verifizierte individuelle Kompetenzdiagnose. Aktueller deutscher Berufsbildungs-/Meister-/Rechts-/Normabgleich bleibt nach den bereits dokumentierten Zugriffssperren offen. Keine erfundenen Norminhalte oder unabhängigen Prüfer.
 
 Das Gesamtregister enthält 876 Einträge, darunter 69 einfache Modul-/Niveaufassungen, drei einfache Artikel, zwölf einfache Begriffe und 27 Laborfälle. 76 Aussagenbelege trennen Nachweisarten. Alle menschlichen Freigaben sind weiterhin offen.
+
+## Ergänzung 0.8 · Stoffdaten und Lernforschung
+
+Tatsächlich gelesen: CoolProp-Gitarchiv v7.2.0 / Git `98b3523d5daa98454618d381d2ae53f7471d216b`, MIT-Lizenz, HighLevelAPI mit Referenz-/Phasen-/SI-Angaben, Plotting, JavaScript-Wrapper, R134a-JSON und bibliographischer EOS-Eintrag. EOS Tillner-Roth/Baehr 1994 DOI 10.1063/1.555958; Originalarbeit nicht eingesehen. IIR/HEOS/reines R134a, genaue Referenz und Prüfumfang: [REFRIGERANT_DATA](REFRIGERANT_DATA.md), [PROPERTY_BACKEND](PROPERTY_BACKEND.md), [CYCLE_VALIDATION](CYCLE_VALIDATION.md).
+
+Die DOI-/Verlags-/PMC-Abrufe zu Dunlosky 2013, Sailer/Homner 2020, Bai/Hew/Huang 2020 und ergänzender Lernforschung waren HTTP 403 gesperrt. Keine Volltextbefunde oder Effektstärken behauptet. [LEARNING_SCIENCE](LEARNING_SCIENCE.md) trennt didaktische Entwurfsannahmen, erwartete Wirkungen und offenen Evidenzabgleich. Aktuelle BIPM-/OpenStax-Webseiten waren ebenfalls gesperrt; ältere tatsächlich gelesene Git-Fundstellen bleiben mit ihrem ursprünglichen Umfang dokumentiert. Quellenlinks allein ergeben keine Fachfreigabe.
